@@ -1,0 +1,365 @@
+$btn-bg: map-get($colors, "primary");
+$btn-text-color: $white;
+$btn-font-weight: map-get($font-weights, "semibold");
+$btn-font-size: map-get($font-sizes, "base");
+$btn-padding-x: 12px;
+$btn-padding-y: 8px;
+$btn-border-color: map-get($colors, "primary");
+$btn-border-width: 1px;
+$btn-border-radius: 8px;
+
+$btn-hover-bg: darken(map-get($colors, "primary"), 10%);
+$btn-hover-text-color: $white;
+$btn-hover-border-color: map-get($colors, "primary");
+$btn-height: 40px;
+
+// BUTTON COLOR VARIANTS
+$button-variants: (
+  "primary": (
+    bg: color("primary"),
+    text: color("white"),
+    border-color: color("primary"),
+    // hover-bg: darken(color("primary"), 10%),
+    hover-bg: color("night"),
+    hover-text-color: color("white"),
+    // hover-border-color: darken(color("primary"), 10%)
+    hover-border-color: color("night")
+  ),
+  "primary-outline": (
+    bg: transparent,
+    text: color("primary"),
+    border-color: color("primary"),
+    hover-bg: color("primary"),
+    hover-text-color: color("white"),
+    hover-border-color: color("primary")
+  ),
+  "transparent": (
+    bg: transparent,
+    text: color("primary"),
+    border-color: transparent,
+    // hover-bg: transparent,
+    hover-bg: color("white"),
+    hover-text-color: darken(color("primary"), 10%),
+    // hover-border-color: transparent
+    hover-border-color: color("primary")
+  ),
+  "transparent-white": (
+    bg: transparent,
+    text: color("white"),
+    border-color: transparent,
+    hover-bg: transparent,
+    hover-text-color: darken(color("white"), 10%),
+    hover-border-color: transparent
+  ),
+  "white-primary": (
+    bg: color("white"),
+    text: color("primary"),
+    border-color: color("grey-2"),
+    hover-bg: color("primary"),
+    hover-text-color: color("white"),
+    hover-border-color: color("primary")
+  ),
+  "white-black": (
+    bg: color("white"),
+    text: color("night"),
+    border-color: color("grey-2"),
+    // hover-bg: transparent,
+    hover-bg: color("white"),
+    hover-text-color: color("primary"),
+    // hover-border-color: color("grey-2")
+    hover-border-color: color("primary")
+  ),
+  "white-primary-outline": (
+    bg: color("white"),
+    text: color("night"),
+    border-color: color("grey-2"),
+    hover-bg: transparent,
+    hover-text-color: color("night"),
+    hover-border-color: color("primary")
+  ),
+  "grey-2-outline": (
+    bg: color("white"),
+    text: color("primary"),
+    border-color: color("grey-2"),
+    hover-bg: color("p-green-50"),
+    hover-text-color: color("primary"),
+    hover-border-color: color("grey-2")
+  ),
+  "transparent-white-outline": (
+    bg: transparent,
+    text: color("white"),
+    border-color: color("grey-2"),
+    hover-bg: color("white"),
+    hover-text-color: color("primary"),
+    hover-border-color: color("white")
+  )
+);
+
+.btn {
+  @extend %flex-inline-center;
+  text-align: center;
+  font-weight: $btn-font-weight;
+  font-family: $font-family-karla;
+  font-size: $btn-font-size;
+  border-radius: $btn-border-radius;
+  column-gap: 4px;
+  height: $btn-height;
+  white-space: nowrap;
+  padding: $btn-padding-y $btn-padding-x;
+  border: $btn-border-width solid $btn-border-color;
+  background-color: $btn-bg;
+  color: $btn-text-color;
+  vertical-align: middle;
+  transition: $default-transition;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  touch-action: manipulation;
+  background-image: none;
+  transform-origin: bottom;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  @include breakpoint-down(xxs) {
+    white-space: wrap;
+    height: auto !important;
+  }
+
+  // EFFECTS
+  &:hover,
+  &:focus,
+  &.focus {
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    background: $btn-hover-bg !important;
+    color: $btn-hover-text-color;
+    border-color: $btn-hover-border-color;
+    opacity: 1 !important;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: no-drop;
+    background: $btn-bg;
+  }
+
+  &.no-shadow {
+    box-shadow: none;
+    &:hover,
+    &:focus,
+    &.focus {
+      opacity: 0.8;
+      box-shadow: none;
+      transform: none;
+    }
+  }
+
+  // BUTTON INNER ELEMENTS
+  &-text {
+    font-weight: $btn-font-weight;
+  }
+
+  // BUTTON SIZE VARIANTS
+  &.btn-xl {
+    height: 56px;
+    min-width: 150px;
+
+    @include breakpoint-down(lg) {
+      height: 52px;
+    }
+
+    @include breakpoint-down(md) {
+      height: 48px;
+    }
+
+    @include breakpoint-down(sm) {
+      height: 44px;
+    }
+  }
+
+  &.btn-lg {
+    height: 52px;
+    min-width: 146px;
+
+    @include breakpoint-down(lg) {
+      height: 48px;
+    }
+
+    @include breakpoint-down(md) {
+      height: 44px;
+    }
+
+    @include breakpoint-down(sm) {
+      height: 40px;
+    }
+  }
+
+  &.btn-sm {
+    font-size: map-get($font-sizes, "sm");
+    height: 36px;
+
+    @include breakpoint-down(md) {
+      height: 34px;
+    }
+
+    @include breakpoint-down(sm) {
+      height: 32px;
+    }
+  }
+
+  &.btn-xs {
+    font-size: map-get($font-sizes, "xs");
+    height: 34px;
+
+    @include breakpoint-down(md) {
+      height: 32px;
+    }
+  }
+
+  // BUTTON WIDTH VARIANTS
+  &.btn-narrow {
+    min-width: 100px;
+  }
+  &.btn-quarter-middle{
+    min-width: 140px;
+  }
+  &.btn-semi-middle {
+    min-width: 160px;
+  }
+  &.btn-middle {
+    min-width: 180px;
+  }
+  &.btn-quarter-wide {
+    min-width: 220px;
+  }
+  &.btn-wide {
+    min-width: 260px;
+  }
+}
+
+@each $variant, $props in $button-variants {
+  .btn-#{$variant} {
+    background: map-get($props, bg) !important;
+    color: map-get($props, text) !important;
+    border: $btn-border-width solid map-get($props, border-color) !important;
+
+    .btn-icon {
+      transition: $default-transition;
+    }
+
+    &:hover {
+      .btn-icon {
+        // margin-left: 4px;
+      }
+    }
+
+    &:hover,
+    &:focus,
+    &:disabled,
+    &:active,
+    &.disabled,
+    &.active {
+      background: map-get($props, hover-bg) !important;
+      border-color: map-get($props, hover-border-color) !important;
+      color: map-get($props, hover-text-color) !important;
+
+      .btn-text {
+        color: map-get($props, hover-text-color) !important;
+      }
+    }
+
+    &:disabled,
+    &.disabled {
+      opacity: 0.8;
+    }
+  }
+}
+
+// BUTTON BLOCK - FULL WIDTH
+.btn-block {
+  display: flex;
+  width: 100%;
+}
+
+// Vertically space out multiple block buttons
+.btn-block + .btn-block {
+  margin-top: 0.5rem;
+}
+
+// BUTTON LINK
+.btn-link {
+  color: map-get($colors, "primary");
+  font-size: map-get($font-sizes, "sm");
+  font-weight: map-get($font-weights, "normal");
+  font-style: normal;
+  @extend %flex-inline-center;
+  column-gap: 8px;
+  background: transparent;
+  transition: $default-transition;
+
+  &:hover {
+    color: map-get($colors, "primary") !important;
+    font-weight: 600;
+  }
+
+  .btn-icon {
+    width: 24px;
+    height: 24px;
+    @extend %flex-inline-center;
+  }
+}
+
+// MISC BUTTON STYLINGS
+.icon-btn {
+  transition: $default-transition;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    opacity: 0.8;
+
+    img {
+      &:not(.hovered-state) {
+        display: none;
+      }
+      &.hovered-state {
+        display: inline-flex !important;
+      }
+    }
+  }
+}
+
+.icon-btn {
+  &-white {
+    &:hover {
+      background: color("p-green-50");
+    }
+  }
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}
+
+.btn-see-how {
+  gap: 10px;
+  border: none !important;
+
+  .btn-text {
+    color: rgba(141, 194, 218, 1);
+  }
+}

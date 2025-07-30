@@ -1,0 +1,152 @@
+@use "sass:color";
+
+// DEFAULT COLOR
+$white: #fff;
+$black: #000;
+$theme: #3797d5;
+$theme-light: color.adjust($theme, $lightness: 20%);
+$theme-dark: darken($theme, 20%);
+
+// PRIMARY COLORSCALE
+$primary-50: #ebf5fb;
+$primary-100: #d7eaf7;
+$primary-150: #c3e0f2;
+$primary-200: #afd5ee;
+$primary-300: #87c1e6;
+$primary-400: #5facdd;
+$primary-500: #3797d5;
+$primary-600: #2c79aa;
+$primary-700: #215b80;
+$primary-800: #163c55;
+$primary-850: #112d40;
+$primary-900: #0b1e2b;
+$primary-950: #060f15;
+
+// GRAY COLORSCALE
+$gray-25: #fdfdfd;
+$gray-50: #fafafa;
+$gray-100: #f5f5f5;
+$gray-200: #e9eaeb;
+$gray-300: #d5d7da;
+$gray-400: #a4a7ae;
+$gray-500: #717680;
+$gray-600: #535862;
+$gray-700: #414651;
+$gray-800: #252b37;
+$gray-900: #101828;
+
+// ONYX COLORSCALE
+$onyx-0: #d4d4d4;
+$onyx-50: #c5c5c5;
+$onyx-100: #b6b6b6;
+$onyx-150: #a8a8a8;
+$onyx-200: #999999;
+$onyx-300: #7b7b7b;
+$onyx-400: #5e5e5e;
+$onyx-500: #404040;
+$onyx-600: #333333;
+$onyx-700: #262626;
+$onyx-800: #1a1a1a;
+$onyx-850: #131313;
+$onyx-900: #0d0d0d;
+$onyx-950: #060606;
+
+// MISC COLORS
+$turquoise: #1ee2cf;
+$turquoise-light: #ddfbf8;
+$blue-violet: #8b40e5;
+$blue-violet-light: #eee3fb;
+$coral: #ff885a;
+$coral-light: #ffede6;
+$emerald: #0cd68a;
+$emerald-light: #dbf9ee;
+$blue-de-france: #0d88ff;
+$blue-de-france-light: #dbedff;
+$school-bus-yellow: #fcdc02;
+$school-bus-yellow-light: #fffad9;
+$crayole: #fd346e;
+$crayola-light: #ffe1e9;
+
+// ALERT COLORS
+$success: $emerald;
+$info: $blue-de-france;
+$warning: $school-bus-yellow;
+$error: $crayole;
+
+// MAP OF ALL COLORS
+$colors: (
+  // PRIMARY COLORSCALE
+  "primary-50": $primary-50,
+  "primary-100": $primary-100,
+  "primary-150": $primary-150,
+  "primary-200": $primary-200,
+  "primary-300": $primary-300,
+  "primary-400": $primary-400,
+  "primary-500": $primary-500,
+  "primary-600": $primary-600,
+  "primary-700": $primary-700,
+  "primary-800": $primary-800,
+  "primary-850": $primary-850,
+  "primary-900": $primary-900,
+  "primary-950": $primary-950,
+
+  // GRAY COLORSCALE
+  "gray-25": $gray-25,
+  "gray-50": $gray-50,
+  "gray-100": $gray-100,
+  "gray-200": $gray-200,
+  "gray-300": $gray-300,
+  "gray-400": $gray-400,
+  "gray-500": $gray-500,
+  "gray-600": $gray-600,
+  "gray-700": $gray-700,
+  "gray-800": $gray-800,
+  "gray-900": $gray-900,
+
+  // ONYX COLORSCALE
+  "onyx-0": $onyx-0,
+  "onyx-50": $onyx-50,
+  "onyx-100": $onyx-100,
+  "onyx-150": $onyx-150,
+  "onyx-200": $onyx-200,
+  "onyx-300": $onyx-300,
+  "onyx-400": $onyx-400,
+  "onyx-500": $onyx-500,
+  "onyx-600": $onyx-600,
+  "onyx-700": $onyx-700,
+  "onyx-800": $onyx-800,
+  "onyx-850": $onyx-850,
+  "onyx-900": $onyx-900,
+  "onyx-950": $onyx-950,
+
+  // MISC COLORS
+  "turquoise": $turquoise,
+  "turquoise-light": $turquoise-light,
+  "blue-violet": $blue-violet,
+  "blue-violet-light": $blue-violet-light,
+  "coral": $coral,
+  "coral-light": $coral-light,
+  "emerald": $emerald,
+  "emerald-light": $emerald-light,
+  "blue-de-france": $blue-de-france,
+  "blue-de-france-light": $blue-de-france-light,
+  "school-bus-yellow": $school-bus-yellow,
+  "school-bus-yellow-light": $school-bus-yellow-light,
+  "crayole": $crayole,
+  "crayola-light": $crayola-light,
+
+  // ALERT COLORS
+  "success": $emerald,
+  "info": $blue-de-france,
+  "warning": $school-bus-yellow,
+  "error": $crayole
+);
+
+// UTILITY FUNCTION FOR COLOR RETRIEVAL
+@function color($name, $map: $colors) {
+  @if map-has-key($map, $name) {
+    @return map-get($map, $name);
+  }
+  @warn "Color `#{$name}` not found in the specified map.";
+  @return null;
+}

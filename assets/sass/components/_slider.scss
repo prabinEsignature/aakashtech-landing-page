@@ -1,0 +1,104 @@
+.slider-container {
+    max-width: 1480px !important;
+
+    @include breakpoint-down(xxxl) {
+        max-width: 1320px !important;
+    }
+
+    .slider-segment {
+        margin-left: 6%;
+
+        @include breakpoint-down(xxxl) {
+            margin-left: 0;
+        }
+    }
+}
+
+.slick-slider {
+    &.slick-initialized {
+        visibility: visible!important;
+        opacity: 1!important;
+    }
+
+    .slick-prev,
+    .slick-next {
+        &::before {
+            display: none !important;
+        }
+
+        &:hover {
+            background: color("primary") !important;
+            border-color: darken(color("primary"), 10%) !important;
+
+            img {
+                filter: brightness(0) invert(1);
+            }
+        }
+
+        @include breakpoint-down(xxl) {
+            min-width: 40px !important;
+            min-height: 40px !important;
+            width: 40px !important;
+            height: 40px !important;
+            border-radius: 8px !important;
+        }
+    }
+
+    .slick-slider-btn {
+        z-index: 10;
+    }
+
+    .slick-dots {
+        bottom: -52px !important;
+
+        li {
+            button {
+                width: 12px;
+                height: 12px;
+                background: rgba-color(color("black"), 0.25);
+                border-radius: 100%;
+
+                &::before {
+                    color: transparent !important;
+                }
+            }
+
+            &.slick-active {
+                button {
+                    background: color("primary");
+                }
+            }
+        }
+    }
+}
+
+.slider-container {
+    .slick-prev {
+        top: -38%;
+        right: 65px;
+        left: auto;
+
+        @include breakpoint-down(xl) {
+            top: -30%;
+        }
+    }
+
+    .slick-next {
+        top: -38%;
+        right: 0;
+
+        @include breakpoint-down(xl) {
+            top: -30%;
+        }
+    }
+}
+
+.slider-cards {
+    .card {
+        @include breakpoint-down(md) {
+            max-width: 100% !important;
+            min-height: 400px;
+            height: 100% !important;
+        }
+    }
+}

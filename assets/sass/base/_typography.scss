@@ -1,0 +1,163 @@
+// Configuration Variables
+$text-config: (
+  "font-family": $font-family-base,
+  "font-weight": map-get($font-weights, "semibold"),
+  "color": $gray,
+  "base-font-size": $font-size-base,
+  "base-line-height": $leading-base,
+  "letter-spacing": $tracking-base,
+);
+
+// Base Typography Styles
+html {
+  font-family: map-get($text-config, "font-family");
+  font-size: map-get($text-config, "base-font-size");
+  line-height: map-get($text-config, "base-line-height");
+  font-weight: $font-weight-base;
+  letter-spacing: normal;
+}
+
+// Placeholder Selector for Text Styles
+%text-base {
+  font-family: map-get($text-config, "font-family");
+  font-weight: map-get($text-config, "font-weight");
+  color: map-get($text-config, "color");
+  letter-spacing: map-get($text-config, "letter-spacing");
+}
+
+// Text Size Mappings
+$text-sizes: (
+  xs: (
+    null: "xs",
+    md: "2xs",
+  ),
+  sm: (
+    null: "sm",
+    md: "xs",
+  ),
+  base: (
+    null: "base",
+    md: "sm",
+  ),
+  lg: (
+    null: "lg",
+    md: "base",
+  ),
+  xl: (
+    null: "xl",
+    md: "lg",
+  ),
+  "2xl": (
+    null: "2xl",
+    md: "xl",
+    sm: "lg",
+  ),
+  "3xl": (
+    null: "3xl",
+    lg: "2xl",
+    sm: "xl",
+  ),
+  "4xl": (
+    null: "4xl",
+    lg: "3xl",
+    sm: "2xl",
+  ),
+  "5xl": (
+    null: "5xl",
+    lg: "4xl",
+    sm: "3xl",
+  ),
+  "6xl": (
+    null: "6xl",
+    lg: "5xl",
+    sm: "4xl",
+    xs: "3xl",
+  ),
+  "7xl": (
+    null: "7xl",
+    xxl: "6xl",
+    xl: "5xl",
+    lg: "4xl",
+    sm: "3xl",
+    xs: "2xl",
+    xxs: "xl",
+    xxxs: "lg",
+  ),
+  "8xl": (
+    null: "8xl",
+    xxl: "7xl",
+    xl: "6xl",
+    lg: "5xl",
+    md: "4xl",
+    sm: "3xl",
+    xs: "2xl",
+    xxs: "xl"
+  ),
+);
+
+// Mixin for Text Font Sizes
+@mixin text-font-sizes($size-map, $breakpoints: $breakpoints-down) {
+  @extend %text-base;
+  @each $breakpoint, $font-size-key in $size-map {
+    $font-size-value: map-get($font-sizes, $font-size-key);
+
+    @if $breakpoint == null {
+      font-size: $font-size-value !important;
+    } @else if map-has-key($breakpoints, $breakpoint) {
+      @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+        font-size: $font-size-value !important;
+      }
+    }
+  }
+}
+
+// Generate Classes for Text Sizes
+@each $text-class, $size-map in $text-sizes {
+  .text-#{$text-class} {
+    @include text-font-sizes($size-map);
+  }
+}
+
+/* #### HEADINGS #### */
+@each $heading, $font-size in map-get($headings-config, "font-sizes") {
+  #{$heading},
+  .#{$heading},
+  .#{str-slice($heading, 1)} {
+    font-size: $font-size;
+    margin-bottom: map-get($headings-config, "margin-bottom");
+    font-family: map-get($headings-config, "font-family");
+    font-weight: map-get($headings-config, "font-weight")!important;
+    line-height: map-get($headings-config, "line-height");
+    color: map-get($headings-config, "color");
+    letter-spacing: map-get($headings-config, "letter-spacing")!important;
+  }
+}
+
+// Apply margin-top to headings when preceded by other elements
+@each $heading in map-keys(map-get($headings-config, "font-sizes")) {
+  * + #{$heading},
+  * + .#{$heading},
+  * + .#{str-slice($heading, 1)} {
+    margin-top: 12px;
+  }
+}
+
+// Paragraph Styles
+p {
+  @extend %text-base;
+}
+
+a {
+  text-decoration: $link-decoration;
+  color: $link-color; // or unset can be used
+  -webkit-text-decoration-skip: objects; // Remove gaps in links underline in iOS 8+ and Safari 8+.
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: $line-hover-decoration;
+  }
+
+  &:visited,
+  &:link {
+    text-decoration: none;
+  }
+}

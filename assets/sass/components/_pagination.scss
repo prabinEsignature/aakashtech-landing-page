@@ -1,0 +1,23 @@
+.pagination-block {
+    .page-link,
+    .page-numbers {
+        width: 28px;
+        min-width: 28px;
+        height: 28px;
+        min-height: 28px;
+        @include flex-center;
+        border-radius: 6px;
+        box-shadow: none !important;
+
+        &:hover,
+        &.active,
+        &.current {
+            background: color("p-green-50") !important;
+            color: color("primary") !important;
+
+            .page-num {
+                color: color("primary") !important;
+            }
+        }
+    }
+}

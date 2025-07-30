@@ -1,0 +1,43 @@
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  overscroll-behavior-y: none; // Prevent pull-to-refresh behavior
+  touch-action: manipulation; // Improve scrolling performance on touch devices
+  overflow-y: auto; // Ensure scrollbars appear as needed
+  height: 100%;
+  width: 100%;
+  font-family: $font-family-base; /* Set default font family to sans-serif */
+  font-size: 100%; // Ensures consistent font size across devices
+  line-height: $leading-base;
+  color-scheme: light dark; // Support dark and light themes
+  -webkit-overflow-scrolling: touch; // Smooth scrolling on iOS
+  // iOS specific adjustments
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+
+  &.no-scroll {
+    overflow: hidden; 
+    touch-action: none; // Prevent touch events for better control
+  }
+}
+
+.page-wrapper {
+  position: relative;
+  min-height: 100vh; 
+}
+
+// ACCESSIBILITY IMPORVEMENTS
+:focus-visible {
+  outline: 2px solid color("primary"); // Focus outline for keyboard accessibility
+  outline-offset: 2px;
+}
+
+
