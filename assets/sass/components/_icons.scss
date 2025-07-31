@@ -1,3 +1,8 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/placeholder" as *;
+
 // ICONS
 %icon-common {
     display: inline-flex;

@@ -1,15 +1,19 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 ::selection {
-  background: color("primary") !important;
+  background: color("primary-500") !important;
   color: color("white");
   text-shadow: none;
 }
 ::-moz-selection {
-  background: color("primary");
+  background: color("primary-500");
   color: color("white");
   text-shadow: none;
 }
 ::-webkit-selection {
-  background: color("primary");
+  background: color("primary-500");
   color: color("white");
   text-shadow: none;
 }
@@ -54,7 +58,7 @@
   background: transparent;
   pointer-events: none;
   z-index: 999;
-  border: 1px solid color("grey-2");
+  border: 1px solid color("onyx-100");
   transition: all 0.2s ease-out;
   animation: moveCursor1 0.5s infinite alternate;
 }
@@ -62,7 +66,7 @@
 .expand {
   background: transparent;
   animation: moveCursor2 0.5s forwards;
-  border: 1px solid color("primary");
+  border: 1px solid color("primary-500");
 }
 
 @keyframes moveCursor1 {
@@ -109,7 +113,7 @@
   margin: 20px auto;
   position: relative;
   background: currentColor;
-  color: color("primary");
+  color: color("primary-500");
   box-sizing: border-box;
   animation: animloader 0.3s 0.3s linear infinite alternate;
   z-index: 1002;

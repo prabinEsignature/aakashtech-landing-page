@@ -1,19 +1,26 @@
+@use 'sass:map';
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../mixins/scrollbar" as *;
+@use "../abstracts/placeholder" as *;
+
 // FORM & FORM ELEMS CUSTOMIZATION
 .form-custom {
   %form-input-common {
     height: 52px !important;
-    border: 1px solid color("grey-2");
+    border: 1px solid color("onyx-200");
     border-radius: 8px !important;
     padding-left: 12px !important;
     padding-right: 12px !important;
-    color: color("gray") !important;
+    color: color("onyx-500") !important;
     box-shadow: none;
     font-weight: 600;
     outline: none;
     font-size: 16px;
 
     &::placeholder {
-      color: color("grey-4") !important;
+      color: color("onyx-300") !important;
       letter-spacing: 0.03em;
     }
 
@@ -50,7 +57,7 @@
       font-weight: 600;
       font-size: 16px;
       font-family: inherit;
-      color: color("grey-4");
+      color: color("onyx-300");
     }
   }
 
@@ -77,7 +84,7 @@
   font-size: 14px;
   font-weight: 600;
   font-style: normal;
-  color: color("gray");
+  color: color("onyx-500");
   margin-bottom: 0 !important;
 
   @include breakpoint-down(md) {
@@ -87,7 +94,7 @@
 
 .form-elem-ttl {
   margin-bottom: 12px;
-  color: $night;
+  color: $onyx-500;
 }
 
 .form-check-input {
@@ -118,13 +125,13 @@
     .form-control{
       border-radius: 0!important;
       border: none;
-      border-bottom: 1px solid color("grey-3")!important;
+      border-bottom: 1px solid color("onyx-200")!important;
     }
   }
 }
 
 .form-link {
-  color: color("primary");
+  color: color("primary-500");
   text-decoration: underline;
   transition: $default-transition;
 
@@ -135,7 +142,7 @@
 
 .form-error-text {
   font-size: 12px;
-  color: map-get($colors, "danger");
+  color: map.get($colors, "danger");
   font-weight: 400;
 }
 
@@ -153,8 +160,8 @@
     }
 
     &:checked {
-      background-color: color("primary") !important;
-      border-color: color("primary") !important;
+      background-color: color("primary-500") !important;
+      border-color: color("primary-500") !important;
     }
   }
 }
@@ -209,7 +216,7 @@
 }
 
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
-  background-color: color("primary") !important;
+  background-color: color("primary-500") !important;
 
   .flag-text {
     color: color("white") !important;
@@ -225,7 +232,7 @@
     .flag-text {
       margin-left: 12px !important;
       font-size: 16px;
-      color: color("gray");
+      color: color("onyx-500");
     }
   }
 
@@ -242,14 +249,14 @@
 
   .select2-results__option {
     &__option--highlighted {
-      background: color("primary") !important;
+      background: color("primary-500") !important;
     }
 
     .flag-text {
       margin-left: 6px;
       font-family: $font-family-karla;
       font-size: 16px;
-      color: color("gray");
+      color: color("onyx-500");
 
       @include breakpoint-down(sm) {
         font-size: 14px;
@@ -288,7 +295,7 @@
 .select2-container--default .select2-selection--single .select2-selection__clear{
   width: 20px;
   height: 20px!important;
-  background-color: color("red-500")!important;
+  background-color: color("error")!important;
   border-radius: 4px;
   margin-right: 0!important;
   @include flex-center;
@@ -296,7 +303,7 @@
 
 input:-webkit-autofill{
   -webkit-background-clip: text!important;
-  -webkit-text-fill-color: color("gray");
+  -webkit-text-fill-color: color("onyx-500");
   transition: background-color 5000s ease-in-out 0s;
   box-shadow: 0 0 0px 1000px color("white") inset;
   -webkit-box-shadow: 0 0 0px 1000px color("white") inset;

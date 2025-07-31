@@ -1,3 +1,7 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 $table-bg-color: $white !default;
 $table-bg-color-accent: #f9f9f9 !default; // Background color used for `.table-striped`.
 $table-bg-color-hover: inherit !default;
@@ -44,7 +48,7 @@ table {
 
   tbody {
     td {
-      border-bottom: 1px solid $gray;
+      border-bottom: 1px solid $onyx-100;
       vertical-align: middle;
       text-align: center;
     }

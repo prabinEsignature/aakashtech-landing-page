@@ -1,8 +1,16 @@
+@use 'sass:map';
+@use "sass:color";
+@use "sass:string";
+@use "../abstracts/variables" as *;
+@use "../abstracts/colors" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/placeholder" as *;
+
 // Configuration Variables
 $text-config: (
   "font-family": $font-family-base,
-  "font-weight": map-get($font-weights, "semibold"),
-  "color": $gray,
+  "font-weight": map.get($font-weights, "semibold"),
+  "color": $onyx-500,
   "base-font-size": $font-size-base,
   "base-line-height": $leading-base,
   "letter-spacing": $tracking-base,
@@ -10,19 +18,19 @@ $text-config: (
 
 // Base Typography Styles
 html {
-  font-family: map-get($text-config, "font-family");
-  font-size: map-get($text-config, "base-font-size");
-  line-height: map-get($text-config, "base-line-height");
+  font-family: map.get($text-config, "font-family");
+  font-size: map.get($text-config, "base-font-size");
+  line-height: map.get($text-config, "base-line-height");
   font-weight: $font-weight-base;
   letter-spacing: normal;
 }
 
 // Placeholder Selector for Text Styles
 %text-base {
-  font-family: map-get($text-config, "font-family");
-  font-weight: map-get($text-config, "font-weight");
-  color: map-get($text-config, "color");
-  letter-spacing: map-get($text-config, "letter-spacing");
+  font-family: map.get($text-config, "font-family");
+  font-weight: map.get($text-config, "font-weight");
+  color: map.get($text-config, "color");
+  letter-spacing: map.get($text-config, "letter-spacing");
 }
 
 // Text Size Mappings
@@ -99,12 +107,12 @@ $text-sizes: (
 @mixin text-font-sizes($size-map, $breakpoints: $breakpoints-down) {
   @extend %text-base;
   @each $breakpoint, $font-size-key in $size-map {
-    $font-size-value: map-get($font-sizes, $font-size-key);
+    $font-size-value: map.get($font-sizes, $font-size-key);
 
     @if $breakpoint == null {
       font-size: $font-size-value !important;
-    } @else if map-has-key($breakpoints, $breakpoint) {
-      @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+    } @else if map.has-key($breakpoints, $breakpoint) {
+      @media screen and (max-width: map.get($breakpoints, $breakpoint)) {
         font-size: $font-size-value !important;
       }
     }
@@ -119,25 +127,25 @@ $text-sizes: (
 }
 
 /* #### HEADINGS #### */
-@each $heading, $font-size in map-get($headings-config, "font-sizes") {
+@each $heading, $font-size in map.get($headings-config, "font-sizes") {
   #{$heading},
   .#{$heading},
-  .#{str-slice($heading, 1)} {
+  .#{string.slice($heading, 1)} {
     font-size: $font-size;
-    margin-bottom: map-get($headings-config, "margin-bottom");
-    font-family: map-get($headings-config, "font-family");
-    font-weight: map-get($headings-config, "font-weight")!important;
-    line-height: map-get($headings-config, "line-height");
-    color: map-get($headings-config, "color");
-    letter-spacing: map-get($headings-config, "letter-spacing")!important;
+    margin-bottom: map.get($headings-config, "margin-bottom");
+    font-family: map.get($headings-config, "font-family");
+    font-weight: map.get($headings-config, "font-weight")!important;
+    line-height: map.get($headings-config, "line-height");
+    color: map.get($headings-config, "color");
+    letter-spacing: map.get($headings-config, "letter-spacing")!important;
   }
 }
 
 // Apply margin-top to headings when preceded by other elements
-@each $heading in map-keys(map-get($headings-config, "font-sizes")) {
+@each $heading in map.keys(map.get($headings-config, "font-sizes")) {
   * + #{$heading},
   * + .#{$heading},
-  * + .#{str-slice($heading, 1)} {
+  * + .#{string.slice($heading, 1)} {
     margin-top: 12px;
   }
 }

@@ -1,10 +1,14 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 .modal-customized {
     @include breakpoint-down(sm){
         padding-right: 0!important;
         padding-left: 0px!important;
     }
     .modal-content {
-        border: 1px solid color("grey-2");
+        border: 1px solid color("onyx-100");
         border-radius: 20px;
         margin-left: auto;
         margin-right: auto;
@@ -15,7 +19,7 @@
     }
     .modal-header {
         padding: 28px 40px 20px 40px;
-        background: color("p-green-50");
+        background: color("primary-500");
         border: 0;
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
@@ -63,7 +67,7 @@
         background: transparent
             url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e")
             center/1em auto no-repeat;
-        background-color: color("primary");
+        background-color: color("primary-500");
         transition: $default-transition;
 
         
@@ -98,7 +102,7 @@
 
         &::-webkit-scrollbar-thumb {
             border-radius: 10px;
-            background-color: $timberwolf;
+            background-color: $onyx-500;
         }
     }
 
@@ -151,8 +155,8 @@
         .nav-tabs{
           .nav-link{
             &.active{
-                border-bottom: 2px solid color("primary")!important;
-                color: color("primary")!important;
+                border-bottom: 2px solid color("primary-500")!important;
+                color: color("primary-500")!important;
             }
           }  
         }

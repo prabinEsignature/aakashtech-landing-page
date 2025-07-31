@@ -1,3 +1,7 @@
+@use 'sass:map';
+@use 'sass:color';
+@use 'colors' as *;
+
 // FONT STACK
 $font-family-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans",
   "Droid Sans", "Helvetica Neue", sans-serif;
@@ -36,8 +40,8 @@ $font-weights: (
 
 // BASE FONT
 $font-family-base: $font-family-karla;
-$font-weight-base: map-get($font-weights, "semibold");
-$font-size-base: map-get($font-sizes, "base");
+$font-weight-base: map.get($font-weights, "semibold");
+$font-size-base: map.get($font-sizes, "base");
 // LEADING & TRACKING
 $leading-base: 1.4;
 $tracking-base: -0.03em;
@@ -73,13 +77,13 @@ $text-color: $onyx-500 !default;
 $link-color: $onyx-500;
 $link-visited-color: $onyx-500;
 $link-decoration: none;
-$link-hover-color: darken($link-color, 10%);
-$link-active-color: darken($link-color, 10%);
+$link-hover-color: color.adjust($link-color, $lightness: 10%);
+$link-active-color: color.adjust($link-color, $lightness: 10%);
 $line-hover-decoration: underline;
 
 @mixin font-settings($weight, $size, $line-height: $leading-base, $tracking: $tracking-base) {
-  font-weight: map-get($font-weights, $weight);
-  font-size: map-get($font-sizes, $size);
+  font-weight: map.get($font-weights, $weight);
+  font-size: map.get($font-sizes, $size);
   line-height: $line-height;
   letter-spacing: $tracking;
 }
@@ -91,9 +95,9 @@ $paragraph-margin-bottom: 0;
 $headings-config: (
   "margin-bottom": 0,
   "font-family": $font-family-base,
-  "font-weight": map-get($font-weights, "bold"),
+  "font-weight": map.get($font-weights, "bold"),
   "line-height": 1.2,
-  "color": $night,
+  "color": $onyx-700,
   "letter-spacing": -0.06em,
   "font-sizes": (
     "h1": 2 * $font-size-base,
@@ -107,13 +111,13 @@ $headings-config: (
 
 // MIXIN TO APPLY HEADING STYLES
 @mixin heading-styles($level) {
-  margin-bottom: map-get($headings-config, "margin-bottom");
-  font-family: map-get($headings-config, "font-family");
-  font-weight: map-get($headings-config, "font-weight");
-  line-height: map-get($headings-config, "line-height");
-  color: map-get($headings-config, "color");
-  font-size: map-get(map-get($headings-config, "font-sizes"), $level);
-  letter-spacing: map-get($headings-config, "letter-spacing");
+  margin-bottom: map.get($headings-config, "margin-bottom");
+  font-family: map.get($headings-config, "font-family");
+  font-weight: map.get($headings-config, "font-weight");
+  line-height: map.get($headings-config, "line-height");
+  color: map.get($headings-config, "color");
+  font-size: map.get(map.get($headings-config, "font-sizes"), $level);
+  letter-spacing: map.get($headings-config, "letter-spacing");
 }
 
 // ADVANCED Z-INDEX CONFIGURATION

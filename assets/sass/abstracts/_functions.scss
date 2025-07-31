@@ -1,8 +1,7 @@
 @use "sass:math";
 @use "sass:color";
-
-// Configuration Variables
-$font-size-base: 16px; 
+@use 'sass:map';
+@use 'sass:string';
 
 // Color Utility Functions
 @function set-text-color($color, $light-threshold: 40%) {
@@ -81,7 +80,7 @@ $font-size-base: 16px;
 }
 
 // Conversion Functions
-@function convert-to-rem($px-value) {
+@function convert-to-rem($px-value, $font-size-base: 16px) {
   $rem-value: math.div($px-value, $font-size-base);
   $zero-safe-rem-value: if($px-value == 0, 0, $rem-value);
   @return $zero-safe-rem-value;
@@ -120,7 +119,7 @@ $font-size-base: 16px;
   @if $index {
     @return str-slice($string, 1, $index - 1) + $replace +
       str-replace(
-        str-slice($string, $index + str-length($search)),
+        string.slice($string, $index + str-length($search)),
         $search,
         $replace
       );
@@ -129,7 +128,7 @@ $font-size-base: 16px;
 }
 
 @function capitalize($string) {
-  @return to-upper-case(str-slice($string, 1, 1)) + str-slice($string, 2);
+  @return to-upper-case(string.slice($string, 1, 1)) + string.slice($string, 2);
 }
 
 @function to-kebab-case($string) {
@@ -148,8 +147,8 @@ $font-size-base: 16px;
 
 // Easing Function
 @function ease($key) {
-  @if map-has-key($ease, $key) {
-    @return map-get($ease, $key);
+  @if map.has-key($ease, $key) {
+    @return map.get($ease, $key);
   }
 
   @warn "Unkown '#{$key}' in $ease-map.";
@@ -176,7 +175,7 @@ $font-size-base: 16px;
 
 // Function to get a darker shade of a color
 @function darken-color($color-name, $percentage) {
-  @return darken(color($color-name), $percentage);
+  @return color.adjust(color($color-name), $lightness: -$percentage);
 }
 
 // Function to adjust the alpha of a color

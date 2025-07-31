@@ -1,3 +1,7 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 .checkbox {
   position: relative;
   overflow: hidden;
@@ -6,7 +10,7 @@
 
   &:hover {
     .icon {
-      background: color("grey-1") !important;
+      background: color("primary-500") !important;
     }
   }
 

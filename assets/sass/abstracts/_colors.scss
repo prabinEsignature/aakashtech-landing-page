@@ -1,11 +1,12 @@
 @use "sass:color";
+@use 'sass:map';
 
 // DEFAULT COLOR
-$white: #fff;
-$black: #000;
+$white: #ffffff;
+$black: #000000;
 $theme: #3797d5;
 $theme-light: color.adjust($theme, $lightness: 20%);
-$theme-dark: darken($theme, 20%);
+$theme-dark: color.adjust($theme, $lightness: -20%);
 
 // PRIMARY COLORSCALE
 $primary-50: #ebf5fb;
@@ -75,6 +76,9 @@ $error: $crayole;
 
 // MAP OF ALL COLORS
 $colors: (
+  "white": $white,
+  "black": $black,
+  
   // PRIMARY COLORSCALE
   "primary-50": $primary-50,
   "primary-100": $primary-100,
@@ -144,8 +148,8 @@ $colors: (
 
 // UTILITY FUNCTION FOR COLOR RETRIEVAL
 @function color($name, $map: $colors) {
-  @if map-has-key($map, $name) {
-    @return map-get($map, $name);
+  @if map.has-key($map, $name) {
+    @return map.get($map, $name);
   }
   @warn "Color `#{$name}` not found in the specified map.";
   @return null;

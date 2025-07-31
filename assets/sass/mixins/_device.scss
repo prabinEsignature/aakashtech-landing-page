@@ -1,3 +1,7 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 $breakpoints: (
   "phone": 400px,
   "phone-wide": 480px,

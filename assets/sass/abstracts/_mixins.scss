@@ -1,4 +1,7 @@
 @use "sass:math";
+@use 'sass:map';
+@use 'sass:meta';
+@use "variables" as *;
 
 /* ##### FONT IMPORTS ##### */
 @mixin font-face($font-name, $file-path, $weight: normal, $style: normal) {
@@ -19,26 +22,26 @@
 
 /* ##### MEDIA QUERY MIXINS ##### */
 @mixin breakpoint-up($size) {
-  @if (type-of($size) == number) {
+  @if (meta.type-of($size) == number) {
     $size: #{$size}px;
     @media (min-width: $size) {
       @content;
     }
   } @else {
-    @media (min-width: map-get($breakpoints-up, $size)) {
+    @media (min-width: map.get($breakpoints-up, $size)) {
       @content;
     }
   }
 }
 
 @mixin breakpoint-down($size) {
-  @if (type-of($size) == number) {
+  @if (meta.type-of($size) == number) {
     $size: #{$size}px;
     @media (max-width: $size) {
       @content;
     }
   } @else {
-    @media (max-width: map-get($breakpoints-down, $size)) {
+    @media (max-width: map.get($breakpoints-down, $size)) {
       @content;
     }
   }

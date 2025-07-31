@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "colors" as *;
+
 html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -36,7 +39,7 @@ body {
 
 // ACCESSIBILITY IMPORVEMENTS
 :focus-visible {
-  outline: 2px solid color("primary"); // Focus outline for keyboard accessibility
+  outline: 2px solid color("primary-500"); // Focus outline for keyboard accessibility
   outline-offset: 2px;
 }
 

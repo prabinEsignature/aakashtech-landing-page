@@ -1,7 +1,12 @@
+@use 'sass:color';
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 // Define your color variables
-$scrollbar-thumb-color: color("primary");
+$scrollbar-thumb-color: color("primary-500");
 $scrollbar-track-color: color("white");
-$scrollbar-hover-color: darken($scrollbar-thumb-color, 10%);
+$scrollbar-hover-color: color.adjust($scrollbar-thumb-color, $lightness: -10%);
 
 // Mixin to generate scrollbar styles
 @mixin scrollbar(

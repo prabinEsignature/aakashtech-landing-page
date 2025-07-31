@@ -1,98 +1,59 @@
-$btn-bg: map-get($colors, "primary");
+@use "sass:map";
+@use 'sass:color';
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/placeholder" as *;
+
+$btn-bg: map.get($colors, "primary-500");
 $btn-text-color: $white;
-$btn-font-weight: map-get($font-weights, "semibold");
-$btn-font-size: map-get($font-sizes, "base");
+$btn-font-weight: map.get($font-weights, "semibold");
+$btn-font-size: map.get($font-sizes, "base");
 $btn-padding-x: 12px;
 $btn-padding-y: 8px;
-$btn-border-color: map-get($colors, "primary");
+$btn-border-color: map.get($colors, "primary-500");
 $btn-border-width: 1px;
 $btn-border-radius: 8px;
 
-$btn-hover-bg: darken(map-get($colors, "primary"), 10%);
+$btn-hover-bg: color.adjust(map.get($colors, "primary-500"), $lightness: -10%);
 $btn-hover-text-color: $white;
-$btn-hover-border-color: map-get($colors, "primary");
+$btn-hover-border-color: map.get($colors, "primary-500");
 $btn-height: 40px;
 
 // BUTTON COLOR VARIANTS
 $button-variants: (
   "primary": (
-    bg: color("primary"),
+    bg: color("primary-500"),
     text: color("white"),
-    border-color: color("primary"),
-    // hover-bg: darken(color("primary"), 10%),
-    hover-bg: color("night"),
+    border-color: color("primary-500"),
+    hover-bg: color("onyx-500"),
     hover-text-color: color("white"),
-    // hover-border-color: darken(color("primary"), 10%)
-    hover-border-color: color("night")
+    hover-border-color: color("onyx-500")
   ),
   "primary-outline": (
     bg: transparent,
-    text: color("primary"),
-    border-color: color("primary"),
-    hover-bg: color("primary"),
+    text: color("primary-500"),
+    border-color: color("primary-500"),
+    hover-bg: color("primary-500"),
     hover-text-color: color("white"),
-    hover-border-color: color("primary")
+    hover-border-color: color("primary-500")
   ),
   "transparent": (
     bg: transparent,
-    text: color("primary"),
+    text: color("primary-500"),
     border-color: transparent,
-    // hover-bg: transparent,
     hover-bg: color("white"),
-    hover-text-color: darken(color("primary"), 10%),
-    // hover-border-color: transparent
-    hover-border-color: color("primary")
+    hover-text-color: color.adjust(color("primary-500"), $lightness: -10%),
+    hover-border-color: color("primary-500")
   ),
   "transparent-white": (
     bg: transparent,
     text: color("white"),
     border-color: transparent,
     hover-bg: transparent,
-    hover-text-color: darken(color("white"), 10%),
+    hover-text-color: color.adjust(color("white"), $lightness: -10%),
     hover-border-color: transparent
   ),
-  "white-primary": (
-    bg: color("white"),
-    text: color("primary"),
-    border-color: color("grey-2"),
-    hover-bg: color("primary"),
-    hover-text-color: color("white"),
-    hover-border-color: color("primary")
-  ),
-  "white-black": (
-    bg: color("white"),
-    text: color("night"),
-    border-color: color("grey-2"),
-    // hover-bg: transparent,
-    hover-bg: color("white"),
-    hover-text-color: color("primary"),
-    // hover-border-color: color("grey-2")
-    hover-border-color: color("primary")
-  ),
-  "white-primary-outline": (
-    bg: color("white"),
-    text: color("night"),
-    border-color: color("grey-2"),
-    hover-bg: transparent,
-    hover-text-color: color("night"),
-    hover-border-color: color("primary")
-  ),
-  "grey-2-outline": (
-    bg: color("white"),
-    text: color("primary"),
-    border-color: color("grey-2"),
-    hover-bg: color("p-green-50"),
-    hover-text-color: color("primary"),
-    hover-border-color: color("grey-2")
-  ),
-  "transparent-white-outline": (
-    bg: transparent,
-    text: color("white"),
-    border-color: color("grey-2"),
-    hover-bg: color("white"),
-    hover-text-color: color("primary"),
-    hover-border-color: color("white")
-  )
 );
 
 .btn {
@@ -202,7 +163,7 @@ $button-variants: (
   }
 
   &.btn-sm {
-    font-size: map-get($font-sizes, "sm");
+    font-size: map.get($font-sizes, "sm");
     height: 36px;
 
     @include breakpoint-down(md) {
@@ -215,7 +176,7 @@ $button-variants: (
   }
 
   &.btn-xs {
-    font-size: map-get($font-sizes, "xs");
+    font-size: map.get($font-sizes, "xs");
     height: 34px;
 
     @include breakpoint-down(md) {
@@ -227,7 +188,7 @@ $button-variants: (
   &.btn-narrow {
     min-width: 100px;
   }
-  &.btn-quarter-middle{
+  &.btn-quarter-middle {
     min-width: 140px;
   }
   &.btn-semi-middle {
@@ -246,9 +207,9 @@ $button-variants: (
 
 @each $variant, $props in $button-variants {
   .btn-#{$variant} {
-    background: map-get($props, bg) !important;
-    color: map-get($props, text) !important;
-    border: $btn-border-width solid map-get($props, border-color) !important;
+    background: map.get($props, bg) !important;
+    color: map.get($props, text) !important;
+    border: $btn-border-width solid map.get($props, border-color) !important;
 
     .btn-icon {
       transition: $default-transition;
@@ -266,12 +227,12 @@ $button-variants: (
     &:active,
     &.disabled,
     &.active {
-      background: map-get($props, hover-bg) !important;
-      border-color: map-get($props, hover-border-color) !important;
-      color: map-get($props, hover-text-color) !important;
+      background: map.get($props, hover-bg) !important;
+      border-color: map.get($props, hover-border-color) !important;
+      color: map.get($props, hover-text-color) !important;
 
       .btn-text {
-        color: map-get($props, hover-text-color) !important;
+        color: map.get($props, hover-text-color) !important;
       }
     }
 
@@ -295,9 +256,9 @@ $button-variants: (
 
 // BUTTON LINK
 .btn-link {
-  color: map-get($colors, "primary");
-  font-size: map-get($font-sizes, "sm");
-  font-weight: map-get($font-weights, "normal");
+  color: map.get($colors, "primary-500");
+  font-size: map.get($font-sizes, "sm");
+  font-weight: map.get($font-weights, "normal");
   font-style: normal;
   @extend %flex-inline-center;
   column-gap: 8px;
@@ -305,7 +266,7 @@ $button-variants: (
   transition: $default-transition;
 
   &:hover {
-    color: map-get($colors, "primary") !important;
+    color: map.get($colors, "primary-500") !important;
     font-weight: 600;
   }
 
@@ -341,7 +302,7 @@ $button-variants: (
 .icon-btn {
   &-white {
     &:hover {
-      background: color("p-green-50");
+      background: color("primary-500");
     }
   }
 }

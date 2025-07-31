@@ -1,3 +1,7 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 .segment-heading{
     .segment-ttl{
         letter-spacing: -0.06em!important;

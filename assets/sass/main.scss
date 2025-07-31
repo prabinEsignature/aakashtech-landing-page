@@ -1,8 +1,7 @@
-@use 'abstracts' as *;
-@use 'base' as *;
-@use 'helpers' as *;
-@use 'mixins' as *;
-@use 'utilities' as *;
-@use 'components' as *;
-@use 'layout' as *;
-@use 'pages/index' as *;
+@use 'abstracts';
+@use 'base';
+@use 'helpers';
+@use 'mixins';
+@use 'components';
+@use 'layout';
+@use 'pages';

@@ -1,3 +1,8 @@
+@use 'sass:color';
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 .slider-container {
     max-width: 1480px !important;
 
@@ -27,8 +32,8 @@
         }
 
         &:hover {
-            background: color("primary") !important;
-            border-color: darken(color("primary"), 10%) !important;
+            background: color("primary-500") !important;
+            border-color: color.adjust(color("primary-500"), $lightness: -10%) !important;
 
             img {
                 filter: brightness(0) invert(1);
@@ -65,7 +70,7 @@
 
             &.slick-active {
                 button {
-                    background: color("primary");
+                    background: color("primary-500");
                 }
             }
         }

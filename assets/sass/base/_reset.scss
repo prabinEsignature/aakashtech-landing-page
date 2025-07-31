@@ -1,3 +1,7 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 /* Reset, normalization of HTML elements */
 
 *,
@@ -25,7 +29,7 @@ ul ol {
 ul:not([class]) {
   > li::marker {
     display: block;
-    color: $gray; // applying color only to the ul's marker having no any classes
+    color: $onyx-500; // applying color only to the ul's marker having no any classes
   }
 }
 

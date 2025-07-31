@@ -1,3 +1,10 @@
+@use 'sass:string';
+@use "colors" as *;
+@use "variables" as *;
+@use "mixins" as *;
+@use "sizes" as *;
+@use "placeholder" as *;
+
 // ----------------------------------------
 // MIXINS AND GENERATORS
 // ----------------------------------------
@@ -31,7 +38,7 @@
       @if #{$i * $step} == "100" {
         #{$property}: 1;
       } @else {
-        #{$property}: unquote("0." + #{$i * $step});
+        #{$property}: string.unquote("0." + #{$i * $step});
       }
     }
   }
@@ -588,9 +595,7 @@ $font-size-breakpoints: (
 @include generate-spacing-breakpoint-classes(margin, m);
 
 $border-colors: (
-  timberwolf: color("timberwolf"),
-  primary: color("primary"),
-  gray: color("gray")
+  primary: color("primary-500"),
 );
 
 $directions: (

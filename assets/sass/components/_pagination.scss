@@ -1,3 +1,7 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 .pagination-block {
     .page-link,
     .page-numbers {
@@ -12,11 +16,11 @@
         &:hover,
         &.active,
         &.current {
-            background: color("p-green-50") !important;
-            color: color("primary") !important;
+            background: color("primary-100") !important;
+            color: color("primary-500") !important;
 
             .page-num {
-                color: color("primary") !important;
+                color: color("primary-500") !important;
             }
         }
     }

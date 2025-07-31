@@ -1,8 +1,13 @@
+@use 'sass:color';
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 // NAVBAR
 $navbar-height-desktop: 80px;
 $navbar-height-mobile: 80px;
 $navbar-bg: transparent;
-$navbar-link-color: $gray;
-$navbar-hover-link-color: darken($gray, 10%);
+$navbar-link-color: $onyx-100;
+$navbar-hover-link-color: color.adjust($onyx-100, $lightness: -10%);
 $z-index-navbar: 1000;
 $z-index-navbar-toggler: 1010;
