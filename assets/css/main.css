@@ -644,7 +644,7 @@
 }
 
 .font-karla {
-  font-family: "Karla", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
 }
 
 .fade-on-hover:hover {
@@ -24933,6 +24933,10 @@
   box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
 }
 
+.shadow-menu {
+  box-shadow: 0 8px 16px 0 rgba(149, 157, 165, 0.1);
+}
+
 .shadow-none {
   box-shadow: none;
 }
@@ -24961,6 +24965,10 @@
   letter-spacing: -0.03em !important;
 }
 
+.tracking-02 {
+  letter-spacing: -0.02em !important;
+}
+
 .after-none::after {
   display: none !important;
 }
@@ -24984,7 +24992,7 @@
 
 code.code-customized {
   white-space: break-spaces;
-  font-family: "Karla", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
 }
 
 .resize-animation-stopper * {
@@ -25038,7 +25046,7 @@ html {
   overflow-y: auto;
   height: 100%;
   width: 100%;
-  font-family: "Karla", sans-serif; /* Set default font family to sans-serif */
+  font-family: "Instrument Sans", sans-serif; /* Set default font family to sans-serif */
   font-size: 100%;
   line-height: 1.4;
   color-scheme: light dark;
@@ -25205,7 +25213,7 @@ template {
 }
 
 html {
-  font-family: "Karla", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 16px;
   line-height: 1.4;
   font-weight: 600;
@@ -25213,8 +25221,8 @@ html {
 }
 
 p, .text-8xl, .text-7xl, .text-6xl, .text-5xl, .text-4xl, .text-3xl, .text-2xl, .text-xl, .text-lg, .text-base, .text-sm, .text-xs {
-  font-family: "Karla", sans-serif;
-  font-weight: 600;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500;
   color: #404040;
   letter-spacing: -0.03em;
 }
@@ -25228,6 +25236,15 @@ p, .text-8xl, .text-7xl, .text-6xl, .text-5xl, .text-4xl, .text-3xl, .text-2xl, 
   }
 }
 
+h1.text-xs,
+h2.text-xs,
+h3.text-xs,
+h4.text-xs,
+h5.text-xs,
+h6.text-xs {
+  font-family: "DM Sans", sans-serif;
+}
+
 .text-sm {
   font-size: 14px !important;
 }
@@ -25235,6 +25252,15 @@ p, .text-8xl, .text-7xl, .text-6xl, .text-5xl, .text-4xl, .text-3xl, .text-2xl, 
   .text-sm {
     font-size: 12px !important;
   }
+}
+
+h1.text-sm,
+h2.text-sm,
+h3.text-sm,
+h4.text-sm,
+h5.text-sm,
+h6.text-sm {
+  font-family: "DM Sans", sans-serif;
 }
 
 .text-base {
@@ -25246,6 +25272,15 @@ p, .text-8xl, .text-7xl, .text-6xl, .text-5xl, .text-4xl, .text-3xl, .text-2xl, 
   }
 }
 
+h1.text-base,
+h2.text-base,
+h3.text-base,
+h4.text-base,
+h5.text-base,
+h6.text-base {
+  font-family: "DM Sans", sans-serif;
+}
+
 .text-lg {
   font-size: 18px !important;
 }
@@ -25255,6 +25290,15 @@ p, .text-8xl, .text-7xl, .text-6xl, .text-5xl, .text-4xl, .text-3xl, .text-2xl, 
   }
 }
 
+h1.text-lg,
+h2.text-lg,
+h3.text-lg,
+h4.text-lg,
+h5.text-lg,
+h6.text-lg {
+  font-family: "DM Sans", sans-serif;
+}
+
 .text-xl {
   font-size: 20px !important;
 }
@@ -25262,6 +25306,15 @@ p, .text-8xl, .text-7xl, .text-6xl, .text-5xl, .text-4xl, .text-3xl, .text-2xl, 
   .text-xl {
     font-size: 18px !important;
   }
+}
+
+h1.text-xl,
+h2.text-xl,
+h3.text-xl,
+h4.text-xl,
+h5.text-xl,
+h6.text-xl {
+  font-family: "DM Sans", sans-serif;
 }
 
 .text-2xl {
@@ -25278,6 +25331,15 @@ p, .text-8xl, .text-7xl, .text-6xl, .text-5xl, .text-4xl, .text-3xl, .text-2xl, 
   }
 }
 
+h1.text-2xl,
+h2.text-2xl,
+h3.text-2xl,
+h4.text-2xl,
+h5.text-2xl,
+h6.text-2xl {
+  font-family: "DM Sans", sans-serif;
+}
+
 .text-3xl {
   font-size: 28px !important;
 }
@@ -25290,6 +25352,15 @@ p, .text-8xl, .text-7xl, .text-6xl, .text-5xl, .text-4xl, .text-3xl, .text-2xl, 
   .text-3xl {
     font-size: 20px !important;
   }
+}
+
+h1.text-3xl,
+h2.text-3xl,
+h3.text-3xl,
+h4.text-3xl,
+h5.text-3xl,
+h6.text-3xl {
+  font-family: "DM Sans", sans-serif;
 }
 
 .text-4xl {
@@ -25306,6 +25377,15 @@ p, .text-8xl, .text-7xl, .text-6xl, .text-5xl, .text-4xl, .text-3xl, .text-2xl, 
   }
 }
 
+h1.text-4xl,
+h2.text-4xl,
+h3.text-4xl,
+h4.text-4xl,
+h5.text-4xl,
+h6.text-4xl {
+  font-family: "DM Sans", sans-serif;
+}
+
 .text-5xl {
   font-size: 36px !important;
 }
@@ -25318,6 +25398,15 @@ p, .text-8xl, .text-7xl, .text-6xl, .text-5xl, .text-4xl, .text-3xl, .text-2xl, 
   .text-5xl {
     font-size: 28px !important;
   }
+}
+
+h1.text-5xl,
+h2.text-5xl,
+h3.text-5xl,
+h4.text-5xl,
+h5.text-5xl,
+h6.text-5xl {
+  font-family: "DM Sans", sans-serif;
 }
 
 .text-6xl {
@@ -25337,6 +25426,15 @@ p, .text-8xl, .text-7xl, .text-6xl, .text-5xl, .text-4xl, .text-3xl, .text-2xl, 
   .text-6xl {
     font-size: 28px !important;
   }
+}
+
+h1.text-6xl,
+h2.text-6xl,
+h3.text-6xl,
+h4.text-6xl,
+h5.text-6xl,
+h6.text-6xl {
+  font-family: "DM Sans", sans-serif;
 }
 
 .text-7xl {
@@ -25378,6 +25476,15 @@ p, .text-8xl, .text-7xl, .text-6xl, .text-5xl, .text-4xl, .text-3xl, .text-2xl, 
   }
 }
 
+h1.text-7xl,
+h2.text-7xl,
+h3.text-7xl,
+h4.text-7xl,
+h5.text-7xl,
+h6.text-7xl {
+  font-family: "DM Sans", sans-serif;
+}
+
 .text-8xl {
   font-size: 56px !important;
 }
@@ -25417,13 +25524,22 @@ p, .text-8xl, .text-7xl, .text-6xl, .text-5xl, .text-4xl, .text-3xl, .text-2xl, 
   }
 }
 
+h1.text-8xl,
+h2.text-8xl,
+h3.text-8xl,
+h4.text-8xl,
+h5.text-8xl,
+h6.text-8xl {
+  font-family: "DM Sans", sans-serif;
+}
+
 /* #### HEADINGS #### */
 h1,
 .h1,
 .h1 {
   font-size: 32px;
   margin-bottom: 0;
-  font-family: "Karla", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 700 !important;
   line-height: 1.2;
   color: #262626;
@@ -25435,7 +25551,7 @@ h2,
 .h2 {
   font-size: 24px;
   margin-bottom: 0;
-  font-family: "Karla", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 700 !important;
   line-height: 1.2;
   color: #262626;
@@ -25447,7 +25563,7 @@ h3,
 .h3 {
   font-size: 18.72px;
   margin-bottom: 0;
-  font-family: "Karla", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 700 !important;
   line-height: 1.2;
   color: #262626;
@@ -25459,7 +25575,7 @@ h4,
 .h4 {
   font-size: 16px;
   margin-bottom: 0;
-  font-family: "Karla", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 700 !important;
   line-height: 1.2;
   color: #262626;
@@ -25471,7 +25587,7 @@ h5,
 .h5 {
   font-size: 13.28px;
   margin-bottom: 0;
-  font-family: "Karla", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 700 !important;
   line-height: 1.2;
   color: #262626;
@@ -25483,7 +25599,7 @@ h6,
 .h6 {
   font-size: 10.72px;
   margin-bottom: 0;
-  font-family: "Karla", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 700 !important;
   line-height: 1.2;
   color: #262626;
@@ -25778,14 +25894,14 @@ Output
 .btn {
   text-align: center;
   font-weight: 600;
-  font-family: "Karla", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 16px;
   border-radius: 8px;
   -moz-column-gap: 4px;
        column-gap: 4px;
-  height: 40px;
+  height: 44px;
   white-space: nowrap;
-  padding: 8px 12px;
+  padding: 8px 24px;
   border: 1px solid #3797d5;
   background-color: #3797d5;
   color: #ffffff;
@@ -25924,7 +26040,7 @@ Output
   transition: all ease-in-out 300ms;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:disabled, .btn-primary:active, .btn-primary.disabled, .btn-primary.active {
-  background: #404040 !important;
+  background: #060606 !important;
   border-color: #404040 !important;
   color: #ffffff !important;
 }
@@ -26114,7 +26230,7 @@ input[type=button].btn-block {
   list-style-image: none;
 }
 
-.icon-12, .icon-16, .icon-20, .icon-24, .icon-28, .icon-32, .icon-36, .icon-40, .icon-52, .icon-60 {
+.icon-12, .icon-18, .icon-16, .icon-20, .icon-24, .icon-28, .icon-32, .icon-36, .icon-40, .icon-52, .icon-60 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -26324,6 +26440,29 @@ input[type=button].btn-block {
     height: 12px;
     min-width: 12px;
     min-height: 12px;
+  }
+}
+
+.icon-18 {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
+}
+@media (max-width: 767.98px) {
+  .icon-18 {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+  }
+}
+@media (max-width: 479.98px) {
+  .icon-18 {
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    min-height: 14px;
   }
 }
 
@@ -26675,7 +26814,7 @@ input[type=button].btn-block {
 }
 
 .form-label {
-  font-family: "Karla", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 14px;
   font-weight: 600;
   font-style: normal;
@@ -26840,7 +26979,7 @@ input[type=button].btn-block {
 }
 .select2-container .select2-results__option .flag-text {
   margin-left: 6px;
-  font-family: "Karla", sans-serif;
+  font-family: "Instrument Sans", sans-serif;
   font-size: 16px;
   color: #404040;
 }
@@ -27049,4 +27188,118 @@ table td {
   min-height: 28px;
   min-width: 46px;
   transition: all ease-in-out 300ms;
+}
+
+.atech-header {
+  min-height: 90px;
+  z-index: 1000;
+}
+
+.atech-navbar .navbar-brand {
+  max-width: 100px;
+}
+.atech-navbar .atech-menu {
+  border-radius: 60px;
+}
+.atech-navbar .atech-menu .menu-link-text:hover {
+  opacity: 0.85;
+}
+.atech-navbar .atech-menu-submenu {
+  display: none;
+}
+
+.after-ttl-border {
+  position: relative;
+}
+.after-ttl-border::after {
+  position: absolute;
+  content: "";
+  background: #3797d5;
+  height: 6px;
+  width: 120px;
+  top: calc(100% + 26px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.atech-home-banner {
+  background: url("../../../assets/images/home/home_banner_bg.png") no-repeat;
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding-top: 90px; /* to adjust the fixed navbar /*/
+}
+.atech-home-banner .banner-product-feats {
+  gap: 80px;
+}
+.atech-home-banner .banner-product-feats .product-feat-item .feat-item-icon {
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+  transition: all ease-in-out 300ms;
+}
+.atech-home-banner .banner-product-feats .product-feat-item .feat-item-icon::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background: #5facdd;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  height: 0;
+  transition: all ease-in-out 300ms;
+}
+.atech-home-banner .banner-product-feats .product-feat-item .feat-item-icon::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: #5facdd;
+  transition: all 80ms ease-in-out;
+}
+.atech-home-banner .banner-product-feats .product-feat-item .feat-item-text p {
+  margin-bottom: 0 !important;
+}
+.atech-home-banner .banner-product-feats .product-feat-item:hover .feat-item-icon {
+  background: #3797d5;
+}
+.atech-home-banner .banner-product-feats .product-feat-item:hover .feat-item-icon img {
+  filter: invert(1) brightness(100);
+}
+.atech-home-banner .banner-product-feats .product-feat-item:hover .feat-item-icon::after {
+  height: 56px;
+}
+.atech-home-banner .product-feats-left .product-feat-item .feat-item-icon::before {
+  left: 31px;
+  top: calc(100% + 55px);
+  width: 0;
+}
+.atech-home-banner .product-feats-left .product-feat-item:hover .feat-item-icon::before {
+  transition: all ease-in-out 300ms;
+  transition-delay: 300ms;
+  width: 480px;
+}
+.atech-home-banner .product-feats-right .product-feat-item .feat-item-icon {
+  order: 2;
+}
+.atech-home-banner .product-feats-right .product-feat-item .feat-item-icon::before {
+  right: 31px;
+  top: calc(100% + 55px);
+  width: 0;
+}
+.atech-home-banner .product-feats-right .product-feat-item:hover .feat-item-icon::before {
+  transition: all ease-in-out 300ms;
+  transition-delay: 300ms;
+  width: 480px;
+}
+.atech-home-banner .product-feats-right .product-feat-item .feat-item-text {
+  order: 12;
+}
+.atech-home-banner .banner-product-showcase {
+  min-width: 440px;
+  padding: 60px 80px 0 80px;
+}
+.atech-home-banner .banner-product-showcase .ellipse-shape {
+  width: 400px;
+  height: 400px;
+  min-width: 400px;
+  min-height: 400px;
 }/*# sourceMappingURL=main.css.map */

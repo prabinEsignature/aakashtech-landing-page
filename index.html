@@ -7,25 +7,24 @@
   <title>Aakashtel - Home Page</title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="keywords"
-    content="cloud communication, VoIP solutions, business SMS, unified communications, enterprise communication">
+  <meta name="keywords" content="">
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="./assets/images/favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png" />
-  <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
+
   <!-- Preconnect to Google Fonts domains for faster DNS lookup and TLS handshake -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- Preload the stylesheet to start fetching it early -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
   <!-- Fallback for users with JavaScript disabled -->
   <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap">
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet">
   </noscript>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="assets/vendor/bootstrap_5.2.3/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/vendor/bootstrap_5.3/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/sass/vendor/normalize.css" />
   <!-- SLICK CSS -->
   <link rel="stylesheet" href="assets/vendor/slick_1.8.1/slick.css" />
@@ -38,18 +37,159 @@
 
 <body>
 
+  <div class="page-wrapper">
+    <header class="atech-header py-custom-4 shadow-menu bg-white position-fixed top-0 start-0 end-0 d-flex align-items-center justify-content-center" role="header">
+      <div class="container">
+        <nav class="atech-navbar d-flex align-items-center justify-content-between gap-x-4" role="navigation"
+          aria-label="Main navigation">
+          <a href="#" class="navbar-brand">
+            <img class="h-100" src="assets/images/site/logo_default.png" alt="Aakashtel logo" />
+          </a>
+
+          <div class="atech-menu-parent">
+            <ul class="list-unstyled atech-menu d-flex align-items-center gap-x-3 bg-primary-50 p-custom-4">
+              <li class="atech-menu-item px-3">
+                <a href="#" class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition">
+                  <span class="menu-link-text">Home</span>
+                </a>
+              </li>
+              <li class="atech-menu-item px-3">
+                <a href="#" class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition">
+                  <span class="menu-link-text">Services</span>
+                  <span class="menu-link-icon icon-18">
+                    <img src="assets/icons/chevron_down_onyx.svg" alt = "" />
+                  </span>
+                </a>
+                <div class="atech-menu-submenu">
+                  sub menu block
+                </div>
+              </li>
+              <li class="atech-menu-item px-3">
+                <a href="#" class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition">
+                  <span class="menu-link-text">Our Process</span>
+                </a>
+              </li>
+              <li class="atech-menu-item px-3">
+                <a href="#" class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition">
+                  <span class="menu-link-text">About Us</span>
+                </a>
+              </li>
+              <li class="atech-menu-item px-3">
+                <a href="#" class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition">
+                  <span class="menu-link-text">Blog</span>
+                </a>
+              </li>
+              <li class="atech-menu-item px-3">
+                <a href="#" class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition">
+                  <span class="menu-link-text">Contact</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="atech-header-btns">
+            <button type="button" class="btn btn-primary">Contact Us</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="atech-home-banner">
+      <div class="atech-home-banner-container container segment-pt-100">
+        <div class="home-banner-content">
+          <h1 class="text-onyx-700 font-bold home-banner-ttl text-8xl tracking-02 text-center mt-0 position-relative after-ttl-border">Innovative <span class="text-primary-500">Digital Solutions</span> for <br> Modern Businesses</h1>
+
+          <div class="home-banner-product segment-mt-60 d-flex align-items-center">
+            <div class="banner-product-feats product-feats-left d-grid align-items-start">
+              <div class="product-feat-item d-flex align-items-start gap-4">
+                <div class="feat-item-icon border-primary-400-1 rounded-8 d-flex align-items-center justify-content-center position-relative">
+                  <img class="icon-40" src="assets/icons/bp_icon_1.svg" alt = "" />
+                </div>
+                <div class="feat-item-content mt-custom-2 d-flex flex-column justify-content-start gap-1">
+                  <h3 class="feat-item-heading font-bold text-xl text-onyx-700">Instant IVR Deployment</h3>
+                  <div class="feat-item-text content-stylings text-base">
+                    <p>Launch your customized IVR system within 24 hours of finalizing your requirements.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-feat-item d-flex align-items-start gap-4">
+                <div class="feat-item-icon border-primary-400-1 rounded-8 d-flex align-items-center justify-content-center position-relative">
+                  <img class="icon-40" src="assets/icons/bp_icon_2.svg" alt = "" />
+                </div>
+                <div class="feat-item-content mt-custom-2 d-flex flex-column justify-content-start gap-1">
+                  <h3 class="feat-item-heading font-bold text-xl text-onyx-700">99.99% Uptime Guarantee</h3>
+                  <div class="feat-item-text content-stylings text-base">
+                    <p>Your IVR system will be hosted on reliable servers, ensuring uninterrupted customer access.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-feat-item d-flex align-items-start gap-4">
+                <div class="feat-item-icon border-primary-400-1 rounded-8 d-flex align-items-center justify-content-center position-relative">
+                  <img class="icon-40" src="assets/icons/bp_icon_3.svg" alt = "" />
+                </div>
+                <div class="feat-item-content mt-custom-2 d-flex flex-column justify-content-start gap-1">
+                  <h3 class="feat-item-heading font-bold text-xl text-onyx-700">Multi-Language Support</h3>
+                  <div class="feat-item-text content-stylings text-base">
+                    <p>Serve customers in English, Nepali, Hindi, and more with built-in multilingual voice options.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="banner-product-showcase position-relative d-flex justify-content-center">
+              <img class="position-absolute ellipse-shape z-5" src = "assets/images/misc/ellipse_1.svg" data-shape-id="ellipse-1" />
+              <img class="position-relative z-10 segment-mt-60" src="assets/images/home/home_banner_product.png" alt = "" />
+            </div>
+            <div class="banner-product-feats product-feats-right d-grid align-items-start">
+              <div class="product-feat-item d-flex align-items-start gap-4">
+                <div class="feat-item-icon border-primary-400-1 rounded-8 d-flex align-items-center justify-content-center position-relative">
+                  <img class="icon-40" src="assets/icons/bp_icon_1.svg" alt = "" />
+                </div>
+                <div class="feat-item-content mt-custom-2 d-flex flex-column justify-content-start gap-1">
+                  <h3 class="feat-item-heading text-end font-bold text-xl text-onyx-700">Real-Time Call Analytics</h3>
+                  <div class="feat-item-text text-end content-stylings text-base">
+                    <p>Monitor call volume, duration, and user flow with an intuitive dashboard and reports.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-feat-item d-flex align-items-start gap-4">
+                <div class="feat-item-icon border-primary-400-1 rounded-8 d-flex align-items-center justify-content-center position-relative">
+                  <img class="icon-40" src="assets/icons/bp_icon_5.svg" alt = "" />
+                </div>
+                <div class="feat-item-content mt-custom-2 d-flex flex-column justify-content-start gap-1">
+                  <h3 class="feat-item-heading text-end font-bold text-xl text-onyx-700">Drag-and-Drop Call Flow Builder</h3>
+                  <div class="feat-item-text text-end content-stylings text-base">
+                    <p>Easily design your IVR system without writing a single line of code.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="product-feat-item d-flex align-items-start gap-4">
+                <div class="feat-item-icon border-primary-400-1 rounded-8 d-flex align-items-center justify-content-center position-relative">
+                  <img class="icon-40" src="assets/icons/bp_icon_6.svg" alt = "" />
+                </div>
+                <div class="feat-item-content mt-custom-2 d-flex flex-column justify-content-start gap-1">
+                  <h3 class="feat-item-heading text-end font-bold text-xl text-onyx-700">Seamless CRM Integration</h3>
+                  <div class="feat-item-text text-end content-stylings text-base">
+                    <p>Connect your IVR with Salesforce, Zoho, or your preferred CRM for smarter customer handling.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <!-- JQUERY JS -->
   <script src="assets/js/lib/jquery_3.7.1.js"></script>
   <!-- BOOTSTRAP JS -->
-  <script src="assets/vendor/bootstrap_5.2.3/bootstrap.min.js"></script>
-  <script src="assets/vendor/bootstrap_5.2.3/popper.min.js"></script>
+  <script src="assets/vendor/bootstrap_5.3/bootstrap.min.js"></script>
+  <script src="assets/vendor/bootstrap_5.3/popper.min.js"></script>
   <!-- SLICK JS -->
   <script src="assets/vendor/slick_1.8.1/slick.min.js"></script>
   <!-- AOS -->
   <script src="assets/vendor/aos/aos.js"></script>
   <!-- CUSTOM JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 

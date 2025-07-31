@@ -51,7 +51,7 @@
 // ----------------------------------------
 // FONT STACK CLASSES
 $font-families: (
-  karla: $font-family-karla
+  karla: $font-family-instrument-sans
 );
 
 @mixin font-families($fonts) {
@@ -656,6 +656,7 @@ $shadows: (
   "2xl": 0 25px 50px -12px rgba(0, 0, 0, 0.25),
   "default": 0px 4px 28px 0px rgba(0, 0, 0, 0.08),
   "inner": inset 0 2px 4px 0 rgba(0, 0, 0, 0.05),
+  "menu": 0 8px 16px 0 rgba(149, 157, 165, 0.1),
   "none": none
 );
 
@@ -683,7 +684,8 @@ $leading-classes: (
 $tracking-classes: (
   "tracking-04": -0.04em,
   "tracking-06": -0.06em,
-  "tracking-03": -0.03em
+  "tracking-03": -0.03em,
+  "tracking-02": -0.02em
 );
 
 @each $class, $value in $tracking-classes {
@@ -725,7 +727,7 @@ $tracking-classes: (
 code {
   &.code-customized {
     white-space: break-spaces;
-    font-family: $font-family-karla;
+    font-family: $font-family-instrument-sans;
   }
 }
 

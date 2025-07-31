@@ -9,7 +9,7 @@ $btn-bg: map.get($colors, "primary-500");
 $btn-text-color: $white;
 $btn-font-weight: map.get($font-weights, "semibold");
 $btn-font-size: map.get($font-sizes, "base");
-$btn-padding-x: 12px;
+$btn-padding-x: 24px;
 $btn-padding-y: 8px;
 $btn-border-color: map.get($colors, "primary-500");
 $btn-border-width: 1px;
@@ -18,7 +18,7 @@ $btn-border-radius: 8px;
 $btn-hover-bg: color.adjust(map.get($colors, "primary-500"), $lightness: -10%);
 $btn-hover-text-color: $white;
 $btn-hover-border-color: map.get($colors, "primary-500");
-$btn-height: 40px;
+$btn-height: 44px;
 
 // BUTTON COLOR VARIANTS
 $button-variants: (
@@ -26,7 +26,7 @@ $button-variants: (
     bg: color("primary-500"),
     text: color("white"),
     border-color: color("primary-500"),
-    hover-bg: color("onyx-500"),
+    hover-bg: color("onyx-950"),
     hover-text-color: color("white"),
     hover-border-color: color("onyx-500")
   ),
@@ -60,7 +60,7 @@ $button-variants: (
   @extend %flex-inline-center;
   text-align: center;
   font-weight: $btn-font-weight;
-  font-family: $font-family-karla;
+  font-family: $font-family-instrument-sans;
   font-size: $btn-font-size;
   border-radius: $btn-border-radius;
   column-gap: 4px;

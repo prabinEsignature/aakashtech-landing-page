@@ -10,7 +10,7 @@
     justify-content: center;
 }
 
-$icon-sizes: (60, 52, 40, 36, 32, 28, 24, 20, 16, 12);
+$icon-sizes: (60, 52, 40, 36, 32, 28, 24, 20, 16, 18, 12);
 
 @each $size in $icon-sizes {
     .icon-#{$size} {

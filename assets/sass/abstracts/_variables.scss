@@ -6,7 +6,8 @@
 $font-family-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans",
   "Droid Sans", "Helvetica Neue", sans-serif;
 $font-family-default: $font-family-system;
-$font-family-karla: "Karla", sans-serif;
+$font-family-dm-sans: "DM Sans", sans-serif;
+$font-family-instrument-sans: "Instrument Sans", sans-serif;
 
 // FONT CONFIGURATION
 $font-sizes: (
@@ -39,7 +40,7 @@ $font-weights: (
 );
 
 // BASE FONT
-$font-family-base: $font-family-karla;
+$font-family-base: $font-family-instrument-sans;
 $font-weight-base: map.get($font-weights, "semibold");
 $font-size-base: map.get($font-sizes, "base");
 // LEADING & TRACKING
@@ -94,7 +95,7 @@ $paragraph-margin-bottom: 0;
 // HEADINGS CONFIGURATION MAP
 $headings-config: (
   "margin-bottom": 0,
-  "font-family": $font-family-base,
+  "font-family": $font-family-dm-sans,
   "font-weight": map.get($font-weights, "bold"),
   "line-height": 1.2,
   "color": $onyx-700,

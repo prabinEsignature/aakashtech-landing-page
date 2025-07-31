@@ -1,4 +1,4 @@
-@use 'sass:map';
+@use "sass:map";
 @use "sass:color";
 @use "sass:string";
 @use "../abstracts/variables" as *;
@@ -9,11 +9,11 @@
 // Configuration Variables
 $text-config: (
   "font-family": $font-family-base,
-  "font-weight": map.get($font-weights, "semibold"),
+  "font-weight": map.get($font-weights, "medium"),
   "color": $onyx-500,
   "base-font-size": $font-size-base,
   "base-line-height": $leading-base,
-  "letter-spacing": $tracking-base,
+  "letter-spacing": $tracking-base
 );
 
 // Base Typography Styles
@@ -37,49 +37,49 @@ html {
 $text-sizes: (
   xs: (
     null: "xs",
-    md: "2xs",
+    md: "2xs"
   ),
   sm: (
     null: "sm",
-    md: "xs",
+    md: "xs"
   ),
   base: (
     null: "base",
-    md: "sm",
+    md: "sm"
   ),
   lg: (
     null: "lg",
-    md: "base",
+    md: "base"
   ),
   xl: (
     null: "xl",
-    md: "lg",
+    md: "lg"
   ),
   "2xl": (
     null: "2xl",
     md: "xl",
-    sm: "lg",
+    sm: "lg"
   ),
   "3xl": (
     null: "3xl",
     lg: "2xl",
-    sm: "xl",
+    sm: "xl"
   ),
   "4xl": (
     null: "4xl",
     lg: "3xl",
-    sm: "2xl",
+    sm: "2xl"
   ),
   "5xl": (
     null: "5xl",
     lg: "4xl",
-    sm: "3xl",
+    sm: "3xl"
   ),
   "6xl": (
     null: "6xl",
     lg: "5xl",
     sm: "4xl",
-    xs: "3xl",
+    xs: "3xl"
   ),
   "7xl": (
     null: "7xl",
@@ -89,7 +89,7 @@ $text-sizes: (
     sm: "3xl",
     xs: "2xl",
     xxs: "xl",
-    xxxs: "lg",
+    xxxs: "lg"
   ),
   "8xl": (
     null: "8xl",
@@ -100,7 +100,7 @@ $text-sizes: (
     sm: "3xl",
     xs: "2xl",
     xxs: "xl"
-  ),
+  )
 );
 
 // Mixin for Text Font Sizes
@@ -124,6 +124,15 @@ $text-sizes: (
   .text-#{$text-class} {
     @include text-font-sizes($size-map);
   }
+
+  h1.text-#{$text-class},
+  h2.text-#{$text-class},
+  h3.text-#{$text-class},
+  h4.text-#{$text-class},
+  h5.text-#{$text-class},
+  h6.text-#{$text-class} {
+    font-family: $font-family-dm-sans;
+  }
 }
 
 /* #### HEADINGS #### */
@@ -134,10 +143,10 @@ $text-sizes: (
     font-size: $font-size;
     margin-bottom: map.get($headings-config, "margin-bottom");
     font-family: map.get($headings-config, "font-family");
-    font-weight: map.get($headings-config, "font-weight")!important;
+    font-weight: map.get($headings-config, "font-weight") !important;
     line-height: map.get($headings-config, "line-height");
     color: map.get($headings-config, "color");
-    letter-spacing: map.get($headings-config, "letter-spacing")!important;
+    letter-spacing: map.get($headings-config, "letter-spacing") !important;
   }
 }
 
