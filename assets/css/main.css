@@ -24937,6 +24937,10 @@
   box-shadow: 0 8px 16px 0 rgba(149, 157, 165, 0.1);
 }
 
+.shadow-light-brand-2 {
+  box-shadow: 0 20px 60px -12px rgba(33, 91, 128, 0.12);
+}
+
 .shadow-none {
   box-shadow: none;
 }
@@ -24953,20 +24957,36 @@
   line-height: 1.375;
 }
 
-.tracking-04 {
+.-tracking-04 {
   letter-spacing: -0.04em !important;
 }
 
-.tracking-06 {
+.tracking-04 {
+  letter-spacing: 0.04em !important;
+}
+
+.-tracking-06 {
   letter-spacing: -0.06em !important;
 }
 
-.tracking-03 {
+.tracking-06 {
+  letter-spacing: 0.06em !important;
+}
+
+.-tracking-03 {
   letter-spacing: -0.03em !important;
 }
 
-.tracking-02 {
+.tracking-03 {
+  letter-spacing: 0.03em !important;
+}
+
+.-tracking-02 {
   letter-spacing: -0.02em !important;
+}
+
+.tracking-02 {
+  letter-spacing: 0.02em !important;
 }
 
 .after-none::after {
@@ -26637,8 +26657,11 @@ input[type=button].btn-block {
   color: #3797d5 !important;
 }
 
-.segment-heading .segment-ttl {
-  letter-spacing: -0.06em !important;
+.segment-heading-text {
+  margin-bottom: 26px;
+}
+.segment-heading.heading-centered {
+  max-width: 700px;
 }
 
 .slider-container {
@@ -27255,9 +27278,6 @@ table td {
   background: #5facdd;
   transition: all 80ms ease-in-out;
 }
-.atech-home-banner .banner-product-feats .product-feat-item .feat-item-text p {
-  margin-bottom: 0 !important;
-}
 .atech-home-banner .banner-product-feats .product-feat-item:hover .feat-item-icon {
   background: #3797d5;
 }
@@ -27302,4 +27322,12 @@ table td {
   height: 400px;
   min-width: 400px;
   min-height: 400px;
+}
+.content-stylings .remove-paragraph-padding p {
+  margin-bottom: 0 !important;
+}
+
+.floating-element-1 {
+  right: 96px;
+  top: -48px;
 }/*# sourceMappingURL=main.css.map */

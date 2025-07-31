@@ -3,7 +3,11 @@
 @use "../abstracts/mixins" as *;
 
 .segment-heading{
-    .segment-ttl{
-        letter-spacing: -0.06em!important;
+    &-text{
+        margin-bottom: 26px;
+    }
+
+    &.heading-centered{
+        max-width: 700px;
     }
 }

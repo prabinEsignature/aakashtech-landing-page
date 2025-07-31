@@ -23,9 +23,6 @@
   background-color: color("white");
   padding-top: 90px; /* to adjust the fixed navbar /*/
 
-  .home-banner-ttl {
-  }
-
   .banner-product-feats {
     gap: 80px;
 
@@ -55,12 +52,6 @@
           height: 1px;
           background: $primary-400;
           transition: all 80ms ease-in-out
-        }
-      }
-
-      .feat-item-text {
-        p {
-          margin-bottom: 0 !important;
         }
       }
 
@@ -143,7 +134,21 @@
       min-height: 400px;
     }
   }
+
+  .home-banner-stats{
+
+  }
 }
 
 .content-stylings {
+  .remove-paragraph-padding{
+    p{
+      margin-bottom: 0!important;
+    }
+  }
+}
+
+.floating-element-1{
+  right: 96px;
+  top: -48px;
 }
