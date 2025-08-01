@@ -159,9 +159,9 @@
     }
   }
 
-  &.text-white{
-    p{
-      color: $white!important;
+  &.text-white {
+    p {
+      color: $white !important;
     }
   }
 }
@@ -177,68 +177,65 @@
   right: calc(100% + 120px);
 }
 
-
-.atech-home-about{
-  &-container{
+.atech-home-about {
+  &-container {
     gap: 80px;
   }
 
-  .home-about-img{
-    img{
+  .home-about-img {
+    img {
       scale: 1.5;
     }
   }
 }
 
-.atech-clients-summary{
-  .clients-brand-logo{
+.atech-clients-summary {
+  .clients-brand-logo {
     margin-left: -20px;
   }
 }
 
-
-
-.atech-clients-reviews{
+.atech-clients-reviews {
   background: url($img-path + "home/client_reviews_bg.png") top/cover no-repeat;
 
-  .clients-reviews-tabs{
-    .nav-link{
-      border: 1px solid transparent!important;
+  .clients-reviews-tabs {
+    .nav-link {
+      border: 1px solid transparent !important;
 
-      &-img{
+      &-img {
         height: 60px;
       }
 
-      &-rating{
-        *[class*="text-"]{
+      &-rating {
+        *[class*="text-"] {
           transition: $default-transition;
         }
       }
 
-      &.active, &:hover{
-        border-color: $primary-500!important;
+      &.active,
+      &:hover {
+        border-color: $primary-500 !important;
 
-        .nav-link-rating{
-          background: $primary-500!important;
+        .nav-link-rating {
+          background: $primary-500 !important;
 
-          *[class*="text-"]{
-            color: $white!important;
+          *[class*="text-"] {
+            color: $white !important;
           }
         }
       }
     }
   }
 
-  .clients-reviews-content{
-    .swiper-slide{
+  .clients-reviews-content {
+    .swiper-slide {
       padding: 0 12px;
     }
-    .tab-pane-slider{
+    .tab-pane-slider {
       margin: 0 -12px;
     }
-    .tab-reviews-card{
-      
-      .card-img{
+    .tab-reviews-card {
+      .card-img {
         width: 68px;
         height: 68px;
         min-width: 68px;
@@ -247,52 +244,88 @@
   }
 }
 
-.atech-services-offer{
+.atech-services-offer {
   background: url($img-path + "home/services_offer_bg.png") top/cover no-repeat;
 
-  .services-offers-card{
+  .services-offers-card {
     padding: 48px 32px;
 
-    .card-vector-1{
+    .card-vector-1 {
       width: 76px;
     }
-    .card-img{
+    .card-img {
       width: 80px;
       height: 80px;
     }
 
-    .card-underline{
-      .line{
+    .card-underline {
+      .line {
         height: 1px;
       }
     }
   }
 }
 
-.atech-projects{
-  .projects-card-logo{
-    width: 120px;
+.atech-projects {
+  .projects-cards {
+    .dotted-box-shape {
+      top: -54px;
+      left: 65px;
+    }
+  }
+
+  .projects-card {
+    .projects-card-logo {
+      width: 120px;
+    }
+
+    .card-img {
+      height: 360px;
+    }
   }
 }
 
-.project-stores{
-  .stores-item{
+.project-stores {
+  .stores-item {
     padding: 6px 8px;
-    
-    &.bg-white-20{
+
+    &.bg-white-20 {
       background: rgba(255, 255, 255, 0.2);
     }
 
-    &-info{
-      .rating-stars{
-        li{
-          &.unfilled{
-            i{
+    &-info {
+      .rating-stars {
+        li {
+          &.unfilled {
+            i {
               color: rgba(255, 255, 255, 0.2);
             }
           }
         }
       }
+    }
+  }
+}
+
+.atech-technologies {
+  .spiral-arrow-shape {
+    top: 26px;
+    left: 100%;
+  }
+
+  .technologies-item{
+    width: 180px;
+
+    &:hover{
+      .technologies-item-icon{
+        transform: scale(1.1);
+      }
+    }
+
+    &-icon{
+      width: 80px;
+      height: 80px;
+      transition: $default-transition;
     }
   }
 }

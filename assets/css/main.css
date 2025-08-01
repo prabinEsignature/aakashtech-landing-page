@@ -25508,7 +25508,7 @@ template {
 }
 
 .container {
-  max-width: 1320px !important;
+  max-width: 1400px !important;
   width: 100% !important;
   padding-right: 20px !important;
   padding-left: 20px !important;
@@ -26178,6 +26178,14 @@ a:visited, a:link {
     height: 4px;
   }
 }
+.dotted-box-shape {
+  width: 140px;
+}
+
+.spiral-arrow-shape {
+  width: 60px;
+}
+
 .scrollbar-x {
   overflow-x: scroll;
 }
@@ -27614,8 +27622,15 @@ table td {
   height: 1px;
 }
 
-.atech-projects .projects-card-logo {
+.atech-projects .projects-cards .dotted-box-shape {
+  top: -54px;
+  left: 65px;
+}
+.atech-projects .projects-card .projects-card-logo {
   width: 120px;
+}
+.atech-projects .projects-card .card-img {
+  height: 360px;
 }
 
 .project-stores .stores-item {
@@ -27626,4 +27641,20 @@ table td {
 }
 .project-stores .stores-item-info .rating-stars li.unfilled i {
   color: rgba(255, 255, 255, 0.2);
+}
+
+.atech-technologies .spiral-arrow-shape {
+  top: 26px;
+  left: 100%;
+}
+.atech-technologies .technologies-item {
+  width: 180px;
+}
+.atech-technologies .technologies-item:hover .technologies-item-icon {
+  transform: scale(1.1);
+}
+.atech-technologies .technologies-item-icon {
+  width: 80px;
+  height: 80px;
+  transition: all ease-in-out 300ms;
 }/*# sourceMappingURL=main.css.map */
