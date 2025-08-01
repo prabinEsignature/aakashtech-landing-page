@@ -30,29 +30,15 @@ $button-variants: (
     hover-text-color: color("white"),
     hover-border-color: color("onyx-500")
   ),
-  "primary-outline": (
-    bg: transparent,
-    text: color("primary-500"),
-    border-color: color("primary-500"),
-    hover-bg: color("primary-500"),
-    hover-text-color: color("white"),
-    hover-border-color: color("primary-500")
-  ),
-  "transparent": (
-    bg: transparent,
-    text: color("primary-500"),
-    border-color: transparent,
-    hover-bg: color("white"),
-    hover-text-color: color.adjust(color("primary-500"), $lightness: -10%),
-    hover-border-color: color("primary-500")
-  ),
-  "transparent-white": (
-    bg: transparent,
+);
+
+// BUTTON LINK VARIANTS
+$button-link-variants: (
+  "white": (
     text: color("white"),
-    border-color: transparent,
-    hover-bg: transparent,
-    hover-text-color: color.adjust(color("white"), $lightness: -10%),
-    hover-border-color: transparent
+    icon: color("white"),
+    hover-text-color: color.adjust(color("white"), $lightness: 10%),
+    hover-icon-color: color.adjust(color("white"), $lightness: 10%)
   ),
 );
 
@@ -63,7 +49,7 @@ $button-variants: (
   font-family: $font-family-instrument-sans;
   font-size: $btn-font-size;
   border-radius: $btn-border-radius;
-  column-gap: 4px;
+  column-gap: 8px;
   height: $btn-height;
   white-space: nowrap;
   padding: $btn-padding-y $btn-padding-x;
@@ -215,12 +201,6 @@ $button-variants: (
       transition: $default-transition;
     }
 
-    &:hover {
-      .btn-icon {
-        // margin-left: 4px;
-      }
-    }
-
     &:hover,
     &:focus,
     &:disabled,
@@ -256,24 +236,40 @@ $button-variants: (
 
 // BUTTON LINK
 .btn-link {
-  color: map.get($colors, "primary-500");
-  font-size: map.get($font-sizes, "sm");
-  font-weight: map.get($font-weights, "normal");
-  font-style: normal;
-  @extend %flex-inline-center;
-  column-gap: 8px;
-  background: transparent;
+  background: transparent!important;
   transition: $default-transition;
+  padding: 0!important;
+  height: auto!important;
 
-  &:hover {
-    color: map.get($colors, "primary-500") !important;
-    font-weight: 600;
+  &:hover{
+    padding: 0!important;
+    background: transparent!important;
   }
+}
 
-  .btn-icon {
-    width: 24px;
-    height: 24px;
-    @extend %flex-inline-center;
+@each $variant, $props in $button-link-variants {
+  .btn-link-#{$variant} {
+    color: map.get($props, text) !important;
+
+    .btn-text{
+      color: map.get($props, text) !important;
+    }
+
+    .btn-icon {
+      color: map.get($props, icon) !important;
+    }
+
+    &:hover {
+      color: map.get($props, hover-text-color) !important;
+      
+      .btn-text{
+        color: map.get($props, hover-text-color) !important;
+      }
+
+      .btn-icon {
+        color: map.get($props, hover-icon-color) !important;
+      }
+    }
   }
 }
 

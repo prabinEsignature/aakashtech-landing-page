@@ -274,3 +274,25 @@
     width: 120px;
   }
 }
+
+.project-stores{
+  .stores-item{
+    padding: 6px 8px;
+    
+    &.bg-white-20{
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    &-info{
+      .rating-stars{
+        li{
+          &.unfilled{
+            i{
+              color: rgba(255, 255, 255, 0.2);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -41,7 +41,7 @@
    @include max-width(600px);
  */
 /* ##### ANIMATION MIXINS ##### */
-.btn, .btn-link, .btn-link .btn-icon {
+.btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -25528,11 +25528,47 @@ html {
   letter-spacing: normal;
 }
 
-p, .text-8xl, .text-7xl, .text-6xl, .text-5xl, .text-4xl, .text-3xl, .text-2xl, .text-xl, .text-lg, .text-base, .text-sm, .text-xs {
+p, .text-8xl, .text-7xl, .text-6xl, .text-5xl, .text-4xl, .text-3xl, .text-2xl, .text-xl, .text-lg, .text-base, .text-sm, .text-xs, .text-2xs, .text-3xs {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 500;
   color: #404040;
   letter-spacing: -0.03em;
+}
+
+.text-3xs {
+  font-size: 8px !important;
+}
+@media screen and (max-width: 767.98px) {
+  .text-3xs {
+    font-size: 8px !important;
+  }
+}
+
+h1.text-3xs,
+h2.text-3xs,
+h3.text-3xs,
+h4.text-3xs,
+h5.text-3xs,
+h6.text-3xs {
+  font-family: "DM Sans", sans-serif;
+}
+
+.text-2xs {
+  font-size: 10px !important;
+}
+@media screen and (max-width: 767.98px) {
+  .text-2xs {
+    font-size: 10px !important;
+  }
+}
+
+h1.text-2xs,
+h2.text-2xs,
+h3.text-2xs,
+h4.text-2xs,
+h5.text-2xs,
+h6.text-2xs {
+  font-family: "DM Sans", sans-serif;
 }
 
 .text-xs {
@@ -26205,8 +26241,8 @@ Output
   font-family: "Instrument Sans", sans-serif;
   font-size: 16px;
   border-radius: 8px;
-  -moz-column-gap: 4px;
-       column-gap: 4px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
   height: 44px;
   white-space: nowrap;
   padding: 8px 24px;
@@ -26359,66 +26395,6 @@ Output
   opacity: 0.8;
 }
 
-.btn-primary-outline {
-  background: transparent !important;
-  color: #3797d5 !important;
-  border: 1px solid #3797d5 !important;
-}
-.btn-primary-outline .btn-icon {
-  transition: all ease-in-out 300ms;
-}
-.btn-primary-outline:hover, .btn-primary-outline:focus, .btn-primary-outline:disabled, .btn-primary-outline:active, .btn-primary-outline.disabled, .btn-primary-outline.active {
-  background: #3797d5 !important;
-  border-color: #3797d5 !important;
-  color: #ffffff !important;
-}
-.btn-primary-outline:hover .btn-text, .btn-primary-outline:focus .btn-text, .btn-primary-outline:disabled .btn-text, .btn-primary-outline:active .btn-text, .btn-primary-outline.disabled .btn-text, .btn-primary-outline.active .btn-text {
-  color: #ffffff !important;
-}
-.btn-primary-outline:disabled, .btn-primary-outline.disabled {
-  opacity: 0.8;
-}
-
-.btn-transparent {
-  background: transparent !important;
-  color: #3797d5 !important;
-  border: 1px solid transparent !important;
-}
-.btn-transparent .btn-icon {
-  transition: all ease-in-out 300ms;
-}
-.btn-transparent:hover, .btn-transparent:focus, .btn-transparent:disabled, .btn-transparent:active, .btn-transparent.disabled, .btn-transparent.active {
-  background: #ffffff !important;
-  border-color: #3797d5 !important;
-  color: rgb(37.6611570248, 123.7438016529, 179.3388429752) !important;
-}
-.btn-transparent:hover .btn-text, .btn-transparent:focus .btn-text, .btn-transparent:disabled .btn-text, .btn-transparent:active .btn-text, .btn-transparent.disabled .btn-text, .btn-transparent.active .btn-text {
-  color: rgb(37.6611570248, 123.7438016529, 179.3388429752) !important;
-}
-.btn-transparent:disabled, .btn-transparent.disabled {
-  opacity: 0.8;
-}
-
-.btn-transparent-white {
-  background: transparent !important;
-  color: #ffffff !important;
-  border: 1px solid transparent !important;
-}
-.btn-transparent-white .btn-icon {
-  transition: all ease-in-out 300ms;
-}
-.btn-transparent-white:hover, .btn-transparent-white:focus, .btn-transparent-white:disabled, .btn-transparent-white:active, .btn-transparent-white.disabled, .btn-transparent-white.active {
-  background: transparent !important;
-  border-color: transparent !important;
-  color: rgb(229.5, 229.5, 229.5) !important;
-}
-.btn-transparent-white:hover .btn-text, .btn-transparent-white:focus .btn-text, .btn-transparent-white:disabled .btn-text, .btn-transparent-white:active .btn-text, .btn-transparent-white.disabled .btn-text, .btn-transparent-white.active .btn-text {
-  color: rgb(229.5, 229.5, 229.5) !important;
-}
-.btn-transparent-white:disabled, .btn-transparent-white.disabled {
-  opacity: 0.8;
-}
-
 .btn-block {
   display: flex;
   width: 100%;
@@ -26429,22 +26405,33 @@ Output
 }
 
 .btn-link {
-  color: #3797d5;
-  font-size: 14px;
-  font-weight: 400;
-  font-style: normal;
-  -moz-column-gap: 8px;
-       column-gap: 8px;
-  background: transparent;
+  background: transparent !important;
   transition: all ease-in-out 300ms;
+  padding: 0 !important;
+  height: auto !important;
 }
 .btn-link:hover {
-  color: #3797d5 !important;
-  font-weight: 600;
+  padding: 0 !important;
+  background: transparent !important;
 }
-.btn-link .btn-icon {
-  width: 24px;
-  height: 24px;
+
+.btn-link-white {
+  color: #ffffff !important;
+}
+.btn-link-white .btn-text {
+  color: #ffffff !important;
+}
+.btn-link-white .btn-icon {
+  color: #ffffff !important;
+}
+.btn-link-white:hover {
+  color: hsl(0, 0%, 110%) !important;
+}
+.btn-link-white:hover .btn-text {
+  color: hsl(0, 0%, 110%) !important;
+}
+.btn-link-white:hover .btn-icon {
+  color: hsl(0, 0%, 110%) !important;
 }
 
 .icon-btn {
@@ -27629,4 +27616,14 @@ table td {
 
 .atech-projects .projects-card-logo {
   width: 120px;
+}
+
+.project-stores .stores-item {
+  padding: 6px 8px;
+}
+.project-stores .stores-item.bg-white-20 {
+  background: rgba(255, 255, 255, 0.2);
+}
+.project-stores .stores-item-info .rating-stars li.unfilled i {
+  color: rgba(255, 255, 255, 0.2);
 }/*# sourceMappingURL=main.css.map */

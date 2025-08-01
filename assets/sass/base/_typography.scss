@@ -35,6 +35,14 @@ html {
 
 // Text Size Mappings
 $text-sizes: (
+  3xs: (
+    null: "3xs",
+    md: "3xs"
+  ),
+  2xs: (
+    null: "2xs",
+    md: "2xs"
+  ),
   xs: (
     null: "xs",
     md: "2xs"
