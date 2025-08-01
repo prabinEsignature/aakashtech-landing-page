@@ -17,6 +17,17 @@
   }
 }
 
+.segment-heading {
+  &.heading-left {
+    .after-ttl-border {
+      &::after {
+        left: 0;
+        transform: none;
+      }
+    }
+  }
+}
+
 .atech-section-group-one {
   background: url($img-path + "home/home_banner_bg.png") no-repeat;
   min-height: 100vh;
@@ -158,4 +169,23 @@
   width: 100%;
   top: 40px;
   right: calc(100% + 120px);
+}
+
+
+.atech-home-about{
+  &-container{
+    gap: 80px;
+  }
+
+  .home-about-img{
+    img{
+      scale: 1.5;
+    }
+  }
+}
+
+.atech-clients-summary{
+  .clients-brand-logo{
+    margin-left: -20px;
+  }
 }
