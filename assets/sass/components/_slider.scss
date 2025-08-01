@@ -3,9 +3,25 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+.swiper{
+    width: 100%;
+    height: 100%;
+}
+
 .home-clients-slider{
     .clients-slide{
         width: 152px;
         height: 92px;
+    }
+}
+
+.swiper-pagination-bullet{
+    width: 16px;
+    height: 16px;
+    background: $primary-150;
+    opacity: 1;
+
+    &.swiper-pagination-bullet-active{
+        background: $primary-500;
     }
 }

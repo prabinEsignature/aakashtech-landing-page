@@ -275,6 +275,10 @@
   color: #ffe1e9 !important;
 }
 
+.text-orange {
+  color: #FDB022 !important;
+}
+
 .text-success {
   color: #0cd68a !important;
 }
@@ -505,6 +509,10 @@
 
 .bg-crayola-light {
   background-color: #ffe1e9 !important;
+}
+
+.bg-orange {
+  background-color: #FDB022 !important;
 }
 
 .bg-success {
@@ -2001,6 +2009,86 @@
 .rounded-r-20 {
   border-top-right-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
+}
+
+.rounded-22 {
+  border-radius: 22px !important;
+}
+
+.rounded-tl-22 {
+  border-top-left-radius: 22px !important;
+}
+
+.rounded-tr-22 {
+  border-top-right-radius: 22px !important;
+}
+
+.rounded-bl-22 {
+  border-bottom-left-radius: 22px !important;
+}
+
+.rounded-br-22 {
+  border-bottom-right-radius: 22px !important;
+}
+
+.rounded-t-22 {
+  border-top-left-radius: 22px !important;
+  border-top-right-radius: 22px !important;
+}
+
+.rounded-b-22 {
+  border-bottom-left-radius: 22px !important;
+  border-bottom-right-radius: 22px !important;
+}
+
+.rounded-l-22 {
+  border-top-left-radius: 22px !important;
+  border-bottom-left-radius: 22px !important;
+}
+
+.rounded-r-22 {
+  border-top-right-radius: 22px !important;
+  border-bottom-right-radius: 22px !important;
+}
+
+.rounded-24 {
+  border-radius: 24px !important;
+}
+
+.rounded-tl-24 {
+  border-top-left-radius: 24px !important;
+}
+
+.rounded-tr-24 {
+  border-top-right-radius: 24px !important;
+}
+
+.rounded-bl-24 {
+  border-bottom-left-radius: 24px !important;
+}
+
+.rounded-br-24 {
+  border-bottom-right-radius: 24px !important;
+}
+
+.rounded-t-24 {
+  border-top-left-radius: 24px !important;
+  border-top-right-radius: 24px !important;
+}
+
+.rounded-b-24 {
+  border-bottom-left-radius: 24px !important;
+  border-bottom-right-radius: 24px !important;
+}
+
+.rounded-l-24 {
+  border-top-left-radius: 24px !important;
+  border-bottom-left-radius: 24px !important;
+}
+
+.rounded-r-24 {
+  border-top-right-radius: 24px !important;
+  border-bottom-right-radius: 24px !important;
 }
 
 .rounded-t-80 {
@@ -24101,6 +24189,206 @@
   border-left: 10px solid #ffe1e9 !important;
 }
 
+.border-orange-1 {
+  border: 1px solid #FDB022 !important;
+}
+
+.border-orange-2 {
+  border: 2px solid #FDB022 !important;
+}
+
+.border-orange-3 {
+  border: 3px solid #FDB022 !important;
+}
+
+.border-orange-4 {
+  border: 4px solid #FDB022 !important;
+}
+
+.border-orange-5 {
+  border: 5px solid #FDB022 !important;
+}
+
+.border-orange-6 {
+  border: 6px solid #FDB022 !important;
+}
+
+.border-orange-7 {
+  border: 7px solid #FDB022 !important;
+}
+
+.border-orange-8 {
+  border: 8px solid #FDB022 !important;
+}
+
+.border-orange-9 {
+  border: 9px solid #FDB022 !important;
+}
+
+.border-orange-10 {
+  border: 10px solid #FDB022 !important;
+}
+
+.border-b-orange-1 {
+  border-bottom: 1px solid #FDB022 !important;
+}
+
+.border-b-orange-2 {
+  border-bottom: 2px solid #FDB022 !important;
+}
+
+.border-b-orange-3 {
+  border-bottom: 3px solid #FDB022 !important;
+}
+
+.border-b-orange-4 {
+  border-bottom: 4px solid #FDB022 !important;
+}
+
+.border-b-orange-5 {
+  border-bottom: 5px solid #FDB022 !important;
+}
+
+.border-b-orange-6 {
+  border-bottom: 6px solid #FDB022 !important;
+}
+
+.border-b-orange-7 {
+  border-bottom: 7px solid #FDB022 !important;
+}
+
+.border-b-orange-8 {
+  border-bottom: 8px solid #FDB022 !important;
+}
+
+.border-b-orange-9 {
+  border-bottom: 9px solid #FDB022 !important;
+}
+
+.border-b-orange-10 {
+  border-bottom: 10px solid #FDB022 !important;
+}
+
+.border-t-orange-1 {
+  border-top: 1px solid #FDB022 !important;
+}
+
+.border-t-orange-2 {
+  border-top: 2px solid #FDB022 !important;
+}
+
+.border-t-orange-3 {
+  border-top: 3px solid #FDB022 !important;
+}
+
+.border-t-orange-4 {
+  border-top: 4px solid #FDB022 !important;
+}
+
+.border-t-orange-5 {
+  border-top: 5px solid #FDB022 !important;
+}
+
+.border-t-orange-6 {
+  border-top: 6px solid #FDB022 !important;
+}
+
+.border-t-orange-7 {
+  border-top: 7px solid #FDB022 !important;
+}
+
+.border-t-orange-8 {
+  border-top: 8px solid #FDB022 !important;
+}
+
+.border-t-orange-9 {
+  border-top: 9px solid #FDB022 !important;
+}
+
+.border-t-orange-10 {
+  border-top: 10px solid #FDB022 !important;
+}
+
+.border-r-orange-1 {
+  border-right: 1px solid #FDB022 !important;
+}
+
+.border-r-orange-2 {
+  border-right: 2px solid #FDB022 !important;
+}
+
+.border-r-orange-3 {
+  border-right: 3px solid #FDB022 !important;
+}
+
+.border-r-orange-4 {
+  border-right: 4px solid #FDB022 !important;
+}
+
+.border-r-orange-5 {
+  border-right: 5px solid #FDB022 !important;
+}
+
+.border-r-orange-6 {
+  border-right: 6px solid #FDB022 !important;
+}
+
+.border-r-orange-7 {
+  border-right: 7px solid #FDB022 !important;
+}
+
+.border-r-orange-8 {
+  border-right: 8px solid #FDB022 !important;
+}
+
+.border-r-orange-9 {
+  border-right: 9px solid #FDB022 !important;
+}
+
+.border-r-orange-10 {
+  border-right: 10px solid #FDB022 !important;
+}
+
+.border-l-orange-1 {
+  border-left: 1px solid #FDB022 !important;
+}
+
+.border-l-orange-2 {
+  border-left: 2px solid #FDB022 !important;
+}
+
+.border-l-orange-3 {
+  border-left: 3px solid #FDB022 !important;
+}
+
+.border-l-orange-4 {
+  border-left: 4px solid #FDB022 !important;
+}
+
+.border-l-orange-5 {
+  border-left: 5px solid #FDB022 !important;
+}
+
+.border-l-orange-6 {
+  border-left: 6px solid #FDB022 !important;
+}
+
+.border-l-orange-7 {
+  border-left: 7px solid #FDB022 !important;
+}
+
+.border-l-orange-8 {
+  border-left: 8px solid #FDB022 !important;
+}
+
+.border-l-orange-9 {
+  border-left: 9px solid #FDB022 !important;
+}
+
+.border-l-orange-10 {
+  border-left: 10px solid #FDB022 !important;
+}
+
 .border-success-1 {
   border: 1px solid #0cd68a !important;
 }
@@ -26664,9 +26952,24 @@ input[type=button].btn-block {
   max-width: 700px;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
 .home-clients-slider .clients-slide {
   width: 152px;
   height: 92px;
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background: #c3e0f2;
+  opacity: 1;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #3797d5;
 }
 
 .form-custom .form-select, .form-custom .form-control {
@@ -27244,8 +27547,11 @@ table td {
   min-height: 400px;
 }
 
-.content-stylings .remove-paragraph-padding p {
+.content-stylings.remove-paragraph-padding p {
   margin-bottom: 0 !important;
+}
+.content-stylings.text-white p {
+  color: #ffffff !important;
 }
 
 .floating-element-1 {
@@ -27269,4 +27575,58 @@ table td {
 
 .atech-clients-summary .clients-brand-logo {
   margin-left: -20px;
+}
+
+.atech-clients-reviews {
+  background: url("../../../assets/images/home/client_reviews_bg.png") top/cover no-repeat;
+}
+.atech-clients-reviews .clients-reviews-tabs .nav-link {
+  border: 1px solid transparent !important;
+}
+.atech-clients-reviews .clients-reviews-tabs .nav-link-img {
+  height: 60px;
+}
+.atech-clients-reviews .clients-reviews-tabs .nav-link-rating *[class*=text-] {
+  transition: all ease-in-out 300ms;
+}
+.atech-clients-reviews .clients-reviews-tabs .nav-link.active, .atech-clients-reviews .clients-reviews-tabs .nav-link:hover {
+  border-color: #3797d5 !important;
+}
+.atech-clients-reviews .clients-reviews-tabs .nav-link.active .nav-link-rating, .atech-clients-reviews .clients-reviews-tabs .nav-link:hover .nav-link-rating {
+  background: #3797d5 !important;
+}
+.atech-clients-reviews .clients-reviews-tabs .nav-link.active .nav-link-rating *[class*=text-], .atech-clients-reviews .clients-reviews-tabs .nav-link:hover .nav-link-rating *[class*=text-] {
+  color: #ffffff !important;
+}
+.atech-clients-reviews .clients-reviews-content .swiper-slide {
+  padding: 0 12px;
+}
+.atech-clients-reviews .clients-reviews-content .tab-pane-slider {
+  margin: 0 -12px;
+}
+.atech-clients-reviews .clients-reviews-content .tab-reviews-card .card-img {
+  width: 68px;
+  height: 68px;
+  min-width: 68px;
+}
+
+.atech-services-offer {
+  background: url("../../../assets/images/home/services_offer_bg.png") top/cover no-repeat;
+}
+.atech-services-offer .services-offers-card {
+  padding: 48px 32px;
+}
+.atech-services-offer .services-offers-card .card-vector-1 {
+  width: 76px;
+}
+.atech-services-offer .services-offers-card .card-img {
+  width: 80px;
+  height: 80px;
+}
+.atech-services-offer .services-offers-card .card-underline .line {
+  height: 1px;
+}
+
+.atech-projects .projects-card-logo {
+  width: 120px;
 }/*# sourceMappingURL=main.css.map */

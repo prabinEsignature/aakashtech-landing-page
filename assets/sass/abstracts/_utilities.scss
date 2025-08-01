@@ -280,7 +280,7 @@ $rotations: (
 
 // Generate Border Radius Utilities for Even Numbers Only
 @mixin generate-border-radius-classes($prefix) {
-  @for $i from 0 through 20 {
+  @for $i from 0 through 24 {
     @if $i % 2 == 0 {
       .#{$prefix}-#{$i} {
         border-radius: #{$i}px !important;

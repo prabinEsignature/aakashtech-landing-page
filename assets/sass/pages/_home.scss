@@ -153,9 +153,15 @@
 }
 
 .content-stylings {
-  .remove-paragraph-padding {
+  &.remove-paragraph-padding {
     p {
       margin-bottom: 0 !important;
+    }
+  }
+
+  &.text-white{
+    p{
+      color: $white!important;
     }
   }
 }
@@ -187,5 +193,84 @@
 .atech-clients-summary{
   .clients-brand-logo{
     margin-left: -20px;
+  }
+}
+
+
+
+.atech-clients-reviews{
+  background: url($img-path + "home/client_reviews_bg.png") top/cover no-repeat;
+
+  .clients-reviews-tabs{
+    .nav-link{
+      border: 1px solid transparent!important;
+
+      &-img{
+        height: 60px;
+      }
+
+      &-rating{
+        *[class*="text-"]{
+          transition: $default-transition;
+        }
+      }
+
+      &.active, &:hover{
+        border-color: $primary-500!important;
+
+        .nav-link-rating{
+          background: $primary-500!important;
+
+          *[class*="text-"]{
+            color: $white!important;
+          }
+        }
+      }
+    }
+  }
+
+  .clients-reviews-content{
+    .swiper-slide{
+      padding: 0 12px;
+    }
+    .tab-pane-slider{
+      margin: 0 -12px;
+    }
+    .tab-reviews-card{
+      
+      .card-img{
+        width: 68px;
+        height: 68px;
+        min-width: 68px;
+      }
+    }
+  }
+}
+
+.atech-services-offer{
+  background: url($img-path + "home/services_offer_bg.png") top/cover no-repeat;
+
+  .services-offers-card{
+    padding: 48px 32px;
+
+    .card-vector-1{
+      width: 76px;
+    }
+    .card-img{
+      width: 80px;
+      height: 80px;
+    }
+
+    .card-underline{
+      .line{
+        height: 1px;
+      }
+    }
+  }
+}
+
+.atech-projects{
+  .projects-card-logo{
+    width: 120px;
   }
 }
