@@ -17,12 +17,14 @@
   }
 }
 
-.atech-home-banner {
+.atech-section-group-one {
   background: url($img-path + "home/home_banner_bg.png") no-repeat;
   min-height: 100vh;
   background-color: color("white");
   padding-top: 90px; /* to adjust the fixed navbar /*/
+}
 
+.atech-home-banner {
   .banner-product-feats {
     gap: 80px;
 
@@ -51,19 +53,19 @@
           position: absolute;
           height: 1px;
           background: $primary-400;
-          transition: all 80ms ease-in-out
+          transition: all 80ms ease-in-out;
         }
       }
 
-      &:hover{
-        .feat-item-icon{
+      &:hover {
+        .feat-item-icon {
           background: $primary-500;
 
-          img{
+          img {
             filter: invert(1) brightness(100);
           }
 
-          &::after{
+          &::after {
             height: 56px;
           }
         }
@@ -72,7 +74,7 @@
   }
 
   .product-feats-left {
-    .product-feat-item{
+    .product-feat-item {
       .feat-item-icon {
         &::before {
           left: 31px;
@@ -82,9 +84,9 @@
         }
       }
 
-      &:hover{
-        .feat-item-icon{
-          &::before{
+      &:hover {
+        .feat-item-icon {
+          &::before {
             transition: $default-transition;
             transition-delay: 300ms;
             width: 480px;
@@ -107,9 +109,9 @@
         }
       }
 
-      &:hover{
-        .feat-item-icon{
-          &::before{
+      &:hover {
+        .feat-item-icon {
+          &::before {
             transition: $default-transition;
             transition-delay: 300ms;
             width: 480px;
@@ -134,21 +136,26 @@
       min-height: 400px;
     }
   }
+}
 
-  .home-banner-stats{
-
-  }
+.atech-home-clients {
 }
 
 .content-stylings {
-  .remove-paragraph-padding{
-    p{
-      margin-bottom: 0!important;
+  .remove-paragraph-padding {
+    p {
+      margin-bottom: 0 !important;
     }
   }
 }
 
-.floating-element-1{
+.floating-element-1 {
   right: 96px;
   top: -48px;
+}
+.floating-element-2 {
+  max-width: 204px;
+  width: 100%;
+  top: 40px;
+  right: calc(100% + 120px);
 }
