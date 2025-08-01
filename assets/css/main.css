@@ -27647,6 +27647,16 @@ table td {
   top: 26px;
   left: 100%;
 }
+.atech-technologies .dotted-box-shape {
+  top: 126px;
+  left: -46px;
+}
+.atech-technologies .technologies-tabs .nav-link.active {
+  border-bottom: 2px solid #3797d5 !important;
+}
+.atech-technologies .technologies-tabs .nav-link.active, .atech-technologies .technologies-tabs .nav-link:hover {
+  color: #3797d5 !important;
+}
 .atech-technologies .technologies-item {
   width: 180px;
 }
@@ -27657,4 +27667,18 @@ table td {
   width: 80px;
   height: 80px;
   transition: all ease-in-out 300ms;
+}
+
+.atech-works {
+  background: linear-gradient(rgba(17, 45, 64, 0.9), rgba(17, 45, 64, 0.9)), url("../../../assets/images/home/finest_works_bg.jpg") center/cover no-repeat;
+}
+.atech-works .finest-works-slider .finest-work-card {
+  box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+}
+.atech-works .finest-works-slider .finest-work-tags-item:first-child {
+  padding-left: 0 !important;
+}
+.atech-works .finest-works-slider .finest-work-tags-item:last-child {
+  padding-right: 0 !important;
+  border-right: 0 !important;
 }/*# sourceMappingURL=main.css.map */

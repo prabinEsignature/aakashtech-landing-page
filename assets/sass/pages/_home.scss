@@ -313,6 +313,23 @@
     left: 100%;
   }
 
+  .dotted-box-shape{
+    top: 126px;
+    left: -46px;
+  }
+
+  .technologies-tabs{
+    .nav-link{
+      &.active{
+        border-bottom: 2px solid $primary-500 !important;
+      }
+      &.active,
+      &:hover{
+        color: $primary-500 !important;
+      }
+    }
+  }
+
   .technologies-item{
     width: 180px;
 
@@ -326,6 +343,30 @@
       width: 80px;
       height: 80px;
       transition: $default-transition;
+    }
+  }
+}
+
+
+.atech-works{
+  background: linear-gradient(rgba(17, 45, 64, 0.9), rgba(17, 45, 64, 0.9)), url($img-path + "home/finest_works_bg.jpg") center/cover no-repeat;
+
+  .finest-works-slider{
+    .finest-work-card{
+      box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+    }
+
+    .finest-work-tags{
+      &-item{
+        &:first-child{
+          padding-left: 0!important;
+        }
+
+        &:last-child{
+          padding-right: 0!important;
+          border-right: 0!important;
+        }
+      }
     }
   }
 }
