@@ -82,10 +82,6 @@ document.addEventListener("DOMContentLoaded", () => {
       slidesPerView: 6,
       spaceBetween: 20,
       allowTouchMove: false,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
       navigation: {
         nextEl: screenshotsBtnsSwiperContainerWrapper.querySelector(".swiper-button-next"),
         prevEl: screenshotsBtnsSwiperContainerWrapper.querySelector(".swiper-button-prev"),

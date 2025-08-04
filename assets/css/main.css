@@ -27766,6 +27766,33 @@ table td {
   max-width: 120px;
 }
 .atech-screenshots .screenshots-product-slider.mobile-screenshots .swiper-slide {
-  max-width: 364px;
+  max-width: 365px;
   width: 100%;
+}
+
+.atech-contact {
+  background: url("../../../assets/images/misc/contact_us_bg.png") center/cover no-repeat;
+}
+.atech-contact .contact-grid-block-wrapper {
+  border-radius: 40px;
+}
+.atech-contact .contact-block-info {
+  border-radius: 32px;
+  background: url("../../../assets/images/misc/contact_info_bg.png") center/cover no-repeat;
+}
+.atech-contact .contact-block-feat-points {
+  margin-left: 44px !important;
+}
+.atech-contact .contact-block-feat-point {
+  position: relative;
+}
+.atech-contact .contact-block-feat-point::after {
+  content: "";
+  position: absolute;
+  left: -44px;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  background: url("../../../assets/icons/circle_check_outline_onyx_700.svg") center/cover no-repeat;
 }/*# sourceMappingURL=main.css.map */

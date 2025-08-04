@@ -149,9 +149,6 @@
   }
 }
 
-.atech-home-clients {
-}
-
 .content-stylings {
   &.remove-paragraph-padding {
     p {
@@ -302,7 +299,7 @@
     &-info {
       .rating-stars {
         li {
-          &.text-white{
+          &.text-white {
             &.unfilled {
               i {
                 color: rgba(255, 255, 255, 0.2);
@@ -310,9 +307,9 @@
             }
           }
 
-          &.text-primary-500{
-            &.unfilled{
-              i{
+          &.text-primary-500 {
+            &.unfilled {
+              i {
                 color: rgba(55, 151, 213, 0.3);
               }
             }
@@ -466,25 +463,59 @@
     }
   }
 
-  .screenshots-details-tabs-wrapper{
+  .screenshots-details-tabs-wrapper {
     background:
       linear-gradient(rgba(55, 151, 213, 0.7), rgba(55, 151, 213, 0.7)),
       url($img-path + "home/screenshots_bg.png") center/cover no-repeat;
   }
 
-  .screenshots-details-tabs{
-    .details-tabs-logo{
+  .screenshots-details-tabs {
+    .details-tabs-logo {
       max-width: 120px;
     }
   }
 
-  .screenshots-product-slider{
-    &.mobile-screenshots{
-      .swiper-slide{
-        max-width: 364px;
+  .screenshots-product-slider {
+    &.mobile-screenshots {
+      .swiper-slide {
+        max-width: 365px;
         width: 100%;
       }
     }
   }
 }
 
+.atech-contact {
+  background: url($img-path + "misc/contact_us_bg.png") center/cover no-repeat;
+
+  .contact-grid-block {
+    &-wrapper {
+      border-radius: 40px;
+    }
+  }
+
+  .contact-block-info {
+    // background: linear-gradient(135deg, #ffffff 0%, color("primary-50") 50%, color("primary-50") 75%, color("primary-50") 135%);
+    border-radius: 32px;
+    background: url($img-path + "misc/contact_info_bg.png") center/cover no-repeat;
+  }
+
+  .contact-block-feat-points{
+    margin-left: 44px!important;
+  }
+
+  .contact-block-feat-point{
+    position: relative;
+
+    &::after{
+      content: "";
+      position: absolute;
+      left: -44px;
+      top: 45%;
+      transform: translateY(-50%);
+      width: 28px;
+      height: 28px;
+      background: url($icon-path + "circle_check_outline_onyx_700.svg") center/cover no-repeat;
+    }
+  }
+}
