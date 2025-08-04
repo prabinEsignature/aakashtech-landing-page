@@ -99,20 +99,33 @@ document.addEventListener("DOMContentLoaded", () => {
   if (screenshotsProductSwiperContainer) {
     new Swiper(screenshotsProductSwiperContainer, {
       loop: true,
-      slidesPerView: 3,
-      spaceBetween: 0,
-      allowTouchMove: false,
+      speed: 1000,
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
       autoplay: {
-        delay: 2500,
+        delay: 3000,
         disableOnInteraction: false,
+      },
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: false,
+      },
+      keyboard: {
+        enabled: true
       },
       observer: true,
       observeParents: true,
-      effect: "cards",
       navigation: {
         nextEl: screenshotsProductSwiperContainer.querySelector(".swiper-button-next"),
         prevEl: screenshotsProductSwiperContainer.querySelector(".swiper-button-prev"),
       },
     });
+
+    screenshotsProductSwiperContainer.slideTo(1, false, false);
   }
 });

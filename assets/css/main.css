@@ -27764,4 +27764,8 @@ table td {
 }
 .atech-screenshots .screenshots-details-tabs .details-tabs-logo {
   max-width: 120px;
+}
+.atech-screenshots .screenshots-product-slider.mobile-screenshots .swiper-slide {
+  max-width: 364px;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
