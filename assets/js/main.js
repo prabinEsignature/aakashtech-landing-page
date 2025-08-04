@@ -2,7 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const clientsSwiperContainer = document.querySelector('.home-clients-slider');
   const clientsReviewsSwiperContainers = document.querySelectorAll('.tab-pane-slider');
   const finestWorksSwiperContainer = document.querySelector('.finest-works-slider');
-  const screenshotsBtnsSlider = document.querySelector('.screenshots-btns-slider');
+  const screenshotsBtnsSwiperContainer = document.querySelector('.screenshots-btns-slider');
+  const screenshotsBtnsSwiperContainerWrapper = document.querySelector('.screenshots-btns-slider-wrapper');
+  const screenshotsProductSwiperContainer = document.querySelector('.screenshots-product-slider');
 
   // Initialize client logo slider
   if (clientsSwiperContainer) {
@@ -74,8 +76,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Initialize screenshots buttons slider
-  if (screenshotsBtnsSlider) {
-    new Swiper(screenshotsBtnsSlider, {
+  if (screenshotsBtnsSwiperContainer) {
+    new Swiper(screenshotsBtnsSwiperContainer, {
       loop: true,
       slidesPerView: 6,
       spaceBetween: 20,
@@ -85,11 +87,32 @@ document.addEventListener("DOMContentLoaded", () => {
         disableOnInteraction: false,
       },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: screenshotsBtnsSwiperContainerWrapper.querySelector(".swiper-button-next"),
+        prevEl: screenshotsBtnsSwiperContainerWrapper.querySelector(".swiper-button-prev"),
       },
       observer: true,
       observeParents: true,
+    });
+  }
+
+  // Initialize screenshots product slider
+  if (screenshotsProductSwiperContainer) {
+    new Swiper(screenshotsProductSwiperContainer, {
+      loop: true,
+      slidesPerView: 3,
+      spaceBetween: 0,
+      allowTouchMove: false,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      observer: true,
+      observeParents: true,
+      effect: "cards",
+      navigation: {
+        nextEl: screenshotsProductSwiperContainer.querySelector(".swiper-button-next"),
+        prevEl: screenshotsProductSwiperContainer.querySelector(".swiper-button-prev"),
+      },
     });
   }
 });

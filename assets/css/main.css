@@ -27656,8 +27656,11 @@ table td {
 .project-stores .stores-item.bg-white-20 {
   background: rgba(255, 255, 255, 0.2);
 }
-.project-stores .stores-item-info .rating-stars li.unfilled i {
+.project-stores .stores-item-info .rating-stars li.text-white.unfilled i {
   color: rgba(255, 255, 255, 0.2);
+}
+.project-stores .stores-item-info .rating-stars li.text-primary-500.unfilled i {
+  color: rgba(55, 151, 213, 0.3);
 }
 
 .atech-technologies .spiral-arrow-shape {
@@ -27734,25 +27737,31 @@ table td {
   padding-left: 40px;
 }
 
-.atech-screenshots .screenshots-slider-tabs {
+.atech-screenshots .screenshots-btns-slider-wrapper {
   max-width: 1108px;
   padding-left: 84px !important;
   padding-right: 84px !important;
 }
-.atech-screenshots .screenshots-slider-tabs .screenshots-btn {
+.atech-screenshots .screenshots-btns-slider-wrapper .screenshots-btn {
   transition: all ease-in-out 300ms;
 }
-.atech-screenshots .screenshots-slider-tabs .screenshots-btn:hover {
+.atech-screenshots .screenshots-btns-slider-wrapper .screenshots-btn:hover {
   border-color: #3797d5;
   background: #d7eaf7;
 }
-.atech-screenshots .screenshots-slider-tabs .screenshots-btn-img {
+.atech-screenshots .screenshots-btns-slider-wrapper .screenshots-btn-img {
   height: 52px;
   padding: 10px 12px;
 }
-.atech-screenshots .screenshots-slider-tabs .screenshots-btn-img img {
+.atech-screenshots .screenshots-btns-slider-wrapper .screenshots-btn-img img {
   width: auto;
 }
-.atech-screenshots .screenshots-slider-tabs .screenshots-btn-text {
+.atech-screenshots .screenshots-btns-slider-wrapper .screenshots-btn-text {
   padding: 10px 12px;
+}
+.atech-screenshots .screenshots-details-tabs-wrapper {
+  background: linear-gradient(rgba(55, 151, 213, 0.7), rgba(55, 151, 213, 0.7)), url("../../../assets/images/home/screenshots_bg.png") center/cover no-repeat;
+}
+.atech-screenshots .screenshots-details-tabs .details-tabs-logo {
+  max-width: 120px;
 }/*# sourceMappingURL=main.css.map */

@@ -165,8 +165,8 @@
     }
   }
 
-  &.text-onyx-400{
-    p{
+  &.text-onyx-400 {
+    p {
       color: $onyx-400 !important;
     }
   }
@@ -302,9 +302,19 @@
     &-info {
       .rating-stars {
         li {
-          &.unfilled {
-            i {
-              color: rgba(255, 255, 255, 0.2);
+          &.text-white{
+            &.unfilled {
+              i {
+                color: rgba(255, 255, 255, 0.2);
+              }
+            }
+          }
+
+          &.text-primary-500{
+            &.unfilled{
+              i{
+                color: rgba(55, 151, 213, 0.3);
+              }
             }
           }
         }
@@ -367,8 +377,8 @@
     .finest-work-card {
       box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
 
-      .card-img{
-        height: 240px!important;
+      .card-img {
+        height: 240px !important;
         overflow: hidden;
       }
     }
@@ -388,39 +398,38 @@
   }
 }
 
-.atech-faqs{
+.atech-faqs {
   background: url($img-path + "misc/faqs_bg.png") center/cover no-repeat;
 
-  .faqs-list{
+  .faqs-list {
     max-width: 1000px;
 
-    .faqs-item{
-      &-head{
-        &[aria-expanded="true"]{
-
-          .faqs-item-head-toggler{
-            .fa-plus{
+    .faqs-item {
+      &-head {
+        &[aria-expanded="true"] {
+          .faqs-item-head-toggler {
+            .fa-plus {
               display: none;
             }
-            .fa-minus{
+            .fa-minus {
               display: block;
             }
           }
         }
 
-        &-toggler{
-          .fa-minus{
+        &-toggler {
+          .fa-minus {
             display: none;
           }
         }
       }
-      &-body{
+      &-body {
         transition: all 150ms ease-in-out;
-        &.show{
+        &.show {
           margin-top: 16px;
         }
 
-        &-text{
+        &-text {
           padding-left: 40px;
         }
       }
@@ -428,32 +437,45 @@
   }
 }
 
-.atech-screenshots{
-  .screenshots-slider-tabs{
+.atech-screenshots {
+  .screenshots-btns-slider-wrapper {
     max-width: 1108px;
-    padding-left: 84px!important;
-    padding-right: 84px!important;
+    padding-left: 84px !important;
+    padding-right: 84px !important;
 
-    .screenshots-btn{
+    .screenshots-btn {
       transition: $default-transition;
 
-      &:hover{
+      &:hover {
         border-color: color("primary-500");
         background: color("primary-100");
       }
 
-      &-img{
+      &-img {
         height: 52px;
         padding: 10px 12px;
 
-        img{
+        img {
           width: auto;
         }
       }
 
-      &-text{
+      &-text {
         padding: 10px 12px;
       }
     }
   }
+
+  .screenshots-details-tabs-wrapper{
+    background:
+      linear-gradient(rgba(55, 151, 213, 0.7), rgba(55, 151, 213, 0.7)),
+      url($img-path + "home/screenshots_bg.png") center/cover no-repeat;
+  }
+
+  .screenshots-details-tabs{
+    .details-tabs-logo{
+      max-width: 120px;
+    }
+  }
 }
+
