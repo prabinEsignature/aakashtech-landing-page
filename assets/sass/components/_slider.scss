@@ -25,3 +25,17 @@
         background: $primary-500;
     }
 }
+
+.swiper-button-prev, 
+.swiper-button-next{
+    width: 44px;
+    height: 44px;
+    background: color("primary-50");
+    border-radius: 100%;
+
+    &::after{
+        font-size: 20px;
+        font-weight: bold;
+        color: color("primary-500");
+    }
+}

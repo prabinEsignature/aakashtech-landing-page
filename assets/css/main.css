@@ -25214,7 +25214,7 @@
 }
 
 .shadow-default {
-  box-shadow: 0px 4px 28px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 8px 24px 0px rgba(149, 157, 165, 0.1);
 }
 
 .shadow-inner {
@@ -25887,7 +25887,7 @@ h1,
   font-weight: 700 !important;
   line-height: 1.2;
   color: #262626;
-  letter-spacing: -0.06em !important;
+  letter-spacing: -0.03em !important;
 }
 
 h2,
@@ -25899,7 +25899,7 @@ h2,
   font-weight: 700 !important;
   line-height: 1.2;
   color: #262626;
-  letter-spacing: -0.06em !important;
+  letter-spacing: -0.03em !important;
 }
 
 h3,
@@ -25911,7 +25911,7 @@ h3,
   font-weight: 700 !important;
   line-height: 1.2;
   color: #262626;
-  letter-spacing: -0.06em !important;
+  letter-spacing: -0.03em !important;
 }
 
 h4,
@@ -25923,7 +25923,7 @@ h4,
   font-weight: 700 !important;
   line-height: 1.2;
   color: #262626;
-  letter-spacing: -0.06em !important;
+  letter-spacing: -0.03em !important;
 }
 
 h5,
@@ -25935,7 +25935,7 @@ h5,
   font-weight: 700 !important;
   line-height: 1.2;
   color: #262626;
-  letter-spacing: -0.06em !important;
+  letter-spacing: -0.03em !important;
 }
 
 h6,
@@ -25947,7 +25947,7 @@ h6,
   font-weight: 700 !important;
   line-height: 1.2;
   color: #262626;
-  letter-spacing: -0.06em !important;
+  letter-spacing: -0.03em !important;
 }
 
 * + h1,
@@ -26967,6 +26967,20 @@ input[type=button].btn-block {
   background: #3797d5;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  width: 44px;
+  height: 44px;
+  background: #ebf5fb;
+  border-radius: 100%;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3797d5;
+}
+
 .form-custom .form-select, .form-custom .form-control {
   height: 52px !important;
   border: 1px solid #999999;
@@ -27548,6 +27562,9 @@ table td {
 .content-stylings.text-white p {
   color: #ffffff !important;
 }
+.content-stylings.text-onyx-400 p {
+  color: #5e5e5e !important;
+}
 
 .floating-element-1 {
   right: 96px;
@@ -27672,8 +27689,17 @@ table td {
 .atech-works {
   background: linear-gradient(rgba(17, 45, 64, 0.9), rgba(17, 45, 64, 0.9)), url("../../../assets/images/home/finest_works_bg.jpg") center/cover no-repeat;
 }
+.atech-works .finest-works-slider .swiper-slide {
+  max-width: 400px;
+  width: 100%;
+  padding: 0 12px;
+}
 .atech-works .finest-works-slider .finest-work-card {
   box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+}
+.atech-works .finest-works-slider .finest-work-card .card-img {
+  height: 240px !important;
+  overflow: hidden;
 }
 .atech-works .finest-works-slider .finest-work-tags-item:first-child {
   padding-left: 0 !important;
@@ -27681,4 +27707,52 @@ table td {
 .atech-works .finest-works-slider .finest-work-tags-item:last-child {
   padding-right: 0 !important;
   border-right: 0 !important;
+}
+
+.atech-faqs {
+  background: url("../../../assets/images/misc/faqs_bg.png") center/cover no-repeat;
+}
+.atech-faqs .faqs-list {
+  max-width: 1000px;
+}
+.atech-faqs .faqs-list .faqs-item-head[aria-expanded=true] .faqs-item-head-toggler .fa-plus {
+  display: none;
+}
+.atech-faqs .faqs-list .faqs-item-head[aria-expanded=true] .faqs-item-head-toggler .fa-minus {
+  display: block;
+}
+.atech-faqs .faqs-list .faqs-item-head-toggler .fa-minus {
+  display: none;
+}
+.atech-faqs .faqs-list .faqs-item-body {
+  transition: all 150ms ease-in-out;
+}
+.atech-faqs .faqs-list .faqs-item-body.show {
+  margin-top: 16px;
+}
+.atech-faqs .faqs-list .faqs-item-body-text {
+  padding-left: 40px;
+}
+
+.atech-screenshots .screenshots-slider-tabs {
+  max-width: 1108px;
+  padding-left: 84px !important;
+  padding-right: 84px !important;
+}
+.atech-screenshots .screenshots-slider-tabs .screenshots-btn {
+  transition: all ease-in-out 300ms;
+}
+.atech-screenshots .screenshots-slider-tabs .screenshots-btn:hover {
+  border-color: #3797d5;
+  background: #d7eaf7;
+}
+.atech-screenshots .screenshots-slider-tabs .screenshots-btn-img {
+  height: 52px;
+  padding: 10px 12px;
+}
+.atech-screenshots .screenshots-slider-tabs .screenshots-btn-img img {
+  width: auto;
+}
+.atech-screenshots .screenshots-slider-tabs .screenshots-btn-text {
+  padding: 10px 12px;
 }/*# sourceMappingURL=main.css.map */
