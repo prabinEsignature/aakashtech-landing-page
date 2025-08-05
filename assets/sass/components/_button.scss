@@ -25,11 +25,22 @@ $button-variants: (
   "primary": (
     bg: color("primary-500"),
     text: color("white"),
+    icon-bg: null,
     border-color: color("primary-500"),
     hover-bg: color("onyx-950"),
     hover-text-color: color("white"),
     hover-border-color: color("onyx-500")
+    icon
   ),
+  "white-primary": (
+    bg: color("white"),
+    text: color("primary-500"),
+    icon-bg: color("gray-200"),
+    border-color: color("white"),
+    hover-bg: color("onyx-950"),
+    hover-text-color: color("white"),
+    hover-border-color: color("onyx-950")
+  )
 );
 
 // BUTTON LINK VARIANTS
@@ -66,6 +77,11 @@ $button-link-variants: (
   transform-origin: bottom;
   -webkit-appearance: none;
   -moz-appearance: none;
+
+  @include breakpoint-down(md) {
+    font-size: map.get($font-sizes, "sm")!important;
+    height: 40px;
+  }
 
   @include breakpoint-down(xxs) {
     white-space: wrap;
@@ -113,10 +129,29 @@ $button-link-variants: (
     font-weight: $btn-font-weight;
   }
 
+  &.btn-rounded{
+    border-radius: 100vh;
+    padding-right: 8px;
+    gap: 24px;
+    justify-content: space-between;
+
+    .btn-icon{
+      border-radius: 100%;
+      width: 36px;
+      height: 36px;
+      min-width: 36px;
+      min-height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
   // BUTTON SIZE VARIANTS
   &.btn-xl {
-    height: 56px;
+    height: 58px;
     min-width: 150px;
+    font-size: map.get($font-sizes, "lg")!important;
 
     @include breakpoint-down(lg) {
       height: 52px;
@@ -124,6 +159,7 @@ $button-link-variants: (
 
     @include breakpoint-down(md) {
       height: 48px;
+      font-size: map.get($font-sizes, "base")!important;
     }
 
     @include breakpoint-down(sm) {
@@ -134,6 +170,7 @@ $button-link-variants: (
   &.btn-lg {
     height: 52px;
     min-width: 146px;
+    font-size: map.get($font-sizes, "lg")!important;
 
     @include breakpoint-down(lg) {
       height: 48px;
@@ -141,6 +178,7 @@ $button-link-variants: (
 
     @include breakpoint-down(md) {
       height: 44px;
+      font-size: map.get($font-sizes, "base")!important;
     }
 
     @include breakpoint-down(sm) {
@@ -149,11 +187,12 @@ $button-link-variants: (
   }
 
   &.btn-sm {
-    font-size: map.get($font-sizes, "sm");
+    font-size: map.get($font-sizes, "sm")!important;
     height: 36px;
 
     @include breakpoint-down(md) {
       height: 34px;
+      font-size: map.get($font-sizes, "xs")!important;
     }
 
     @include breakpoint-down(sm) {
@@ -167,6 +206,7 @@ $button-link-variants: (
 
     @include breakpoint-down(md) {
       height: 32px;
+      font-size: map.get($font-sizes, "2xs");
     }
   }
 
@@ -197,8 +237,15 @@ $button-link-variants: (
     color: map.get($props, text) !important;
     border: $btn-border-width solid map.get($props, border-color) !important;
 
-    .btn-icon {
-      transition: $default-transition;
+    .btn-text{
+      color: map.get($props, text) !important;
+    }
+
+    &.btn-rounded{
+      .btn-icon{
+        background: map.get($props, icon-bg) !important;
+        color: map.get($props, text) !important;
+      }
     }
 
     &:hover,

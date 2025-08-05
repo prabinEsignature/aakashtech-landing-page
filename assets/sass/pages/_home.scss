@@ -519,3 +519,12 @@
     }
   }
 }
+
+.atech-cta-one{
+  .cta-one-grid-block{
+    background: url($img-path + "misc/cta_content_bg_one.png") center/cover no-repeat;
+    border-radius: 32px;
+    grid-template-columns: 40% auto;
+    gap: 60px;
+  }
+}
