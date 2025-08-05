@@ -9,24 +9,30 @@
 .form-custom {
   %form-input-common {
     height: 52px !important;
-    border: 1px solid color("onyx-200");
+    border: 1px solid transparent!important;
     border-radius: 8px !important;
-    padding-left: 12px !important;
-    padding-right: 12px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
     color: color("onyx-500") !important;
     box-shadow: none;
-    font-weight: 600;
+    font-weight: 500;
     outline: none;
     font-size: 16px;
 
-    &::placeholder {
-      color: color("onyx-300") !important;
-      letter-spacing: 0.03em;
+    @include placeholder() {
+      font-weight:500;
+      font-size: 16px;
+      font-family: inherit;
+      color: color("gray-400") !important;
     }
 
     @include breakpoint-down(lg) {
       font-size: 14px;
       height: 48px !important;
+    }
+
+    @include breakpoint-down(md) {
+      border-radius: 6px !important;
     }
 
     @include breakpoint-down(sm) {
@@ -42,28 +48,26 @@
 
   .form-control {
     @extend %form-input-common;
-    background: color("white");
+    background: rgba(235, 245, 251, 0.4);
+    border: 1px solid transparent;
+    transition: $default-transition;
 
-    @include breakpoint-down(md) {
-      border-radius: 6px !important;
-      height: 48px;
-    }
-
-    @include breakpoint-down(sm) {
-      height: 44px;
-    }
-
-    @include placeholder() {
-      font-weight: 600;
+    &::placeholder{
+      font-weight: 500;
       font-size: 16px;
       font-family: inherit;
-      color: color("onyx-300");
+      color: color("gray-400") !important;
+      transition: $default-transition;
+    }
+
+    &:focus{
+      border-color: color("primary-500")!important;
     }
   }
 
   textarea {
     &.form-control {
-      height: 70px !important;
+      height: 120px !important;
 
       &.long-textarea{
         height: 126px!important;
@@ -74,17 +78,17 @@
   .form-select {
     @extend %form-input-common;
     // bootstrap select icon customization
-    background-color: color("white");
-    background-size: 24px 24px !important;
+    background-color: rgba(235, 245, 251, 0.4);
+    background-size: 16px 16px !important;
   }
 }
 
 .form-label {
   font-family: $font-family-instrument-sans;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
   font-style: normal;
-  color: color("onyx-500");
+  color: color("gray-700");
   margin-bottom: 0 !important;
 
   @include breakpoint-down(md) {
@@ -108,7 +112,7 @@
 
   &-group {
     display: grid;
-    row-gap: 20px;
+    gap: 16px;
 
     @include breakpoint-down(md) {
       row-gap: 16px;
@@ -116,16 +120,6 @@
 
     @include breakpoint-down(sm) {
       row-gap: 12px;
-    }
-  }
-
-  &.border-b-only{
-    border-radius: 0!important;
-
-    .form-control{
-      border-radius: 0!important;
-      border: none;
-      border-bottom: 1px solid color("onyx-200")!important;
     }
   }
 }
@@ -147,8 +141,7 @@
 }
 
 .form-select {
-  --bs-form-select-bg-img: url("../../../assets/icons/chevron_down_small_dark.svg") !important;
-  background-image: var(--bs-form-select-bg-img) !important;
+  background-image: url($icon-path + "/chevron_down_primary.svg") !important;
 }
 
 .form-check {
@@ -207,98 +200,6 @@
   @include breakpoint-down(sm){
     grid-template-columns: 100%;
   }
-}
-
-// SELECT 2 CUSTOMIZATION
-
-.select2-container.select2-container--default {
-  z-index: 1056;
-}
-
-.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
-  background-color: color("primary-500") !important;
-
-  .flag-text {
-    color: color("white") !important;
-  }
-}
-
-.select2-container {
-  .select2-selection.select2-selection--single {
-    height: 52px;
-    display: flex;
-    align-items: center;
-
-    .flag-text {
-      margin-left: 12px !important;
-      font-size: 16px;
-      color: color("onyx-500");
-    }
-  }
-
-  .select2-search__field {
-    display: none !important;
-  }
-  .select2-results__options {
-    @include scrollbar("y");
-
-    .flag-icon {
-      width: 20px;
-    }
-  }
-
-  .select2-results__option {
-    &__option--highlighted {
-      background: color("primary-500") !important;
-    }
-
-    .flag-text {
-      margin-left: 6px;
-      font-family: $font-family-instrument-sans;
-      font-size: 16px;
-      color: color("onyx-500");
-
-      @include breakpoint-down(sm) {
-        font-size: 14px;
-      }
-    }
-  }
-
-  &.select2-container--default .select2-selection__arrow {
-    top: 12px !important;
-    border-top-color: #121212 !important;
-  }
-  &.select2-container--default .select2-selection__arrow b {
-    border-top-color: #121212 !important;
-  }
-
-  .select2-selection__rendered {
-    padding-left: 16px !important;
-    padding-right: 0 !important;
-  }
-
-  &.select2-container--default .select2-selection--single {
-    border: 0 !important;
-  }
-
-  &.select2-container--open {
-    &.select2-container--default .select2-selection__arrow b {
-      border-bottom-color: #121212 !important;
-    }
-  }
-
-  .select2-dropdown {
-    border-color: #e5e5e5 !important;
-  }
-}
-
-.select2-container--default .select2-selection--single .select2-selection__clear{
-  width: 20px;
-  height: 20px!important;
-  background-color: color("error")!important;
-  border-radius: 4px;
-  margin-right: 0!important;
-  @include flex-center;
 }
 
 input:-webkit-autofill{
