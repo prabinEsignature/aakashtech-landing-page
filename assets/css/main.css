@@ -26324,6 +26324,7 @@ Output
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  font-size: 18px;
 }
 .btn.btn-xl {
   height: 58px;
@@ -26420,12 +26421,12 @@ Output
   color: #ffffff !important;
 }
 .btn-primary.btn-rounded .btn-icon {
-  background: !important;
+  background: none !important;
   color: #ffffff !important;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:disabled, .btn-primary:active, .btn-primary.disabled, .btn-primary.active {
   background: #060606 !important;
-  border-color: #404040 icon !important;
+  border-color: #404040 !important;
   color: #ffffff !important;
 }
 .btn-primary:hover .btn-text, .btn-primary:focus .btn-text, .btn-primary:disabled .btn-text, .btn-primary:active .btn-text, .btn-primary.disabled .btn-text, .btn-primary.active .btn-text {
@@ -26456,6 +26457,30 @@ Output
   color: #ffffff !important;
 }
 .btn-white-primary:disabled, .btn-white-primary.disabled {
+  opacity: 0.8;
+}
+
+.btn-onyx-900 {
+  background: #0d0d0d !important;
+  color: #ffffff !important;
+  border: 1px solid #0d0d0d !important;
+}
+.btn-onyx-900 .btn-text {
+  color: #ffffff !important;
+}
+.btn-onyx-900.btn-rounded .btn-icon {
+  background: none !important;
+  color: #ffffff !important;
+}
+.btn-onyx-900:hover, .btn-onyx-900:focus, .btn-onyx-900:disabled, .btn-onyx-900:active, .btn-onyx-900.disabled, .btn-onyx-900.active {
+  background: #060606 !important;
+  border-color: #060606 !important;
+  color: #ffffff !important;
+}
+.btn-onyx-900:hover .btn-text, .btn-onyx-900:focus .btn-text, .btn-onyx-900:disabled .btn-text, .btn-onyx-900:active .btn-text, .btn-onyx-900.disabled .btn-text, .btn-onyx-900.active .btn-text {
+  color: #ffffff !important;
+}
+.btn-onyx-900:disabled, .btn-onyx-900.disabled {
   opacity: 0.8;
 }
 
@@ -27756,9 +27781,29 @@ table td {
   background: url("../../../assets/icons/circle_check_outline_onyx_700.svg") center/cover no-repeat;
 }
 
+.atech-cta-one {
+  background: url("../../../assets/images/misc/cta_bg_one.png") center/cover no-repeat;
+}
 .atech-cta-one .cta-one-grid-block {
   background: url("../../../assets/images/misc/cta_content_bg_one.png") center/cover no-repeat;
   border-radius: 32px;
   grid-template-columns: 40% auto;
-  gap: 60px;
+  gap: 160px;
+}
+
+.atech-newsletter {
+  background: url("../../../assets/images/misc/newsletter_bg.png") center/cover no-repeat;
+  background-position: center top;
+}
+.atech-newsletter .newsletter-top {
+  max-width: 600px;
+}
+.atech-newsletter .newsletter-bottom {
+  max-width: 680px;
+}
+.atech-newsletter .newsletter-bottom .input-group .form-control {
+  border: 0 !important;
+}
+.atech-newsletter .newsletter-bottom .input-group .form-control:focus {
+  border: 0 !important;
 }/*# sourceMappingURL=main.css.map */

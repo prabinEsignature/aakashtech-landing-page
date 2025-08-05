@@ -521,10 +521,33 @@
 }
 
 .atech-cta-one{
+  background: url($img-path + "misc/cta_bg_one.png") center/cover no-repeat;
   .cta-one-grid-block{
     background: url($img-path + "misc/cta_content_bg_one.png") center/cover no-repeat;
     border-radius: 32px;
     grid-template-columns: 40% auto;
-    gap: 60px;
+    gap: 160px;
+  }
+}
+
+.atech-newsletter{
+  background: url($img-path + "misc/newsletter_bg.png") center/cover no-repeat;
+  background-position: center top;
+
+  .newsletter-top{
+    max-width: 600px;
+  }
+
+  .newsletter-bottom{
+    max-width: 680px;
+
+    .input-group{
+      .form-control{
+        border: 0!important;
+        &:focus{
+          border: 0!important;
+        }
+      }
+    }
   }
 }
