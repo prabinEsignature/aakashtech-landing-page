@@ -276,6 +276,9 @@ $rotations: (
   .rotate-#{$key} {
     transform: rotate(#{$value});
   }
+  .-rotate-#{$key} {
+    transform: rotate(-#{$value});
+  }
 }
 
 // Generate Border Radius Utilities for Even Numbers Only
@@ -683,6 +686,7 @@ $leading-classes: (
 }
 
 $tracking-classes: (
+  "tracking-0": 0em,
   "tracking-04": 0.04em,
   "tracking-06": 0.06em,
   "tracking-03": 0.03em,

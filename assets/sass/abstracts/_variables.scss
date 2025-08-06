@@ -46,7 +46,7 @@ $font-weight-base: map.get($font-weights, "semibold");
 $font-size-base: map.get($font-sizes, "base");
 // LEADING & TRACKING
 $leading-base: 1.4;
-$tracking-base: -0.03em;
+$tracking-base: 0em;
 
 // MEDIA BREAKPOINTS
 $breakpoints-up: (
@@ -143,6 +143,6 @@ $default-transition: all $default-transition-timing $default-transition-duration
 
 $img-path: "../../../assets/images/" !default; // Usage: background: url('#{$img-path}/img.jpg') 0 0 no-repeat;
 $icon-path: "../../../assets/icons/" !default;
-$max-width: 1400px;
+$max-width: 1440px;
 
 

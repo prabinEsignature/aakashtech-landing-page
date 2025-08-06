@@ -1,3 +1,29 @@
 @use "../abstracts/colors" as *;
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
+
+.atech-footer{
+  background: url($img-path + "misc/footer_bg.png") center/cover no-repeat;
+
+  &-grid-block{
+    .footer-brand{
+      &-logo{
+        max-width: 148px;
+      }
+    }
+  }
+
+  &-grid-block{
+    grid-template-columns: 4fr 2fr 2fr 2.5fr 3.5fr;
+    gap: 40px;
+  }
+
+  .footer-block-list{
+    &-link{
+      transition: $default-transition;
+      &:hover{
+        color: color("primary-500")!important;
+      }
+    }
+  }
+}

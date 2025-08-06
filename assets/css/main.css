@@ -1563,12 +1563,24 @@
   transform: rotate(45deg);
 }
 
+.-rotate-45 {
+  transform: rotate(-45deg);
+}
+
 .rotate-90 {
   transform: rotate(90deg);
 }
 
+.-rotate-90 {
+  transform: rotate(-90deg);
+}
+
 .rotate-180 {
   transform: rotate(180deg);
+}
+
+.-rotate-180 {
+  transform: rotate(-180deg);
 }
 
 .rounded-0 {
@@ -25245,6 +25257,14 @@
   line-height: 1.375;
 }
 
+.-tracking-0 {
+  letter-spacing: 0em !important;
+}
+
+.tracking-0 {
+  letter-spacing: 0em !important;
+}
+
 .-tracking-04 {
   letter-spacing: -0.04em !important;
 }
@@ -25508,7 +25528,7 @@ template {
 }
 
 .container {
-  max-width: 1400px !important;
+  max-width: 1440px !important;
   width: 100% !important;
   padding-right: 20px !important;
   padding-left: 20px !important;
@@ -25532,7 +25552,7 @@ p, .text-8xl, .text-7xl, .text-6xl, .text-5xl, .text-4xl, .text-3xl, .text-2xl, 
   font-family: "Instrument Sans", sans-serif;
   font-weight: 500;
   color: #404040;
-  letter-spacing: -0.03em;
+  letter-spacing: 0em;
 }
 
 .text-3xs {
@@ -27439,6 +27459,23 @@ table td {
 }
 .atech-navbar .atech-menu-submenu {
   display: none;
+}
+
+.atech-footer {
+  background: url("../../../assets/images/misc/footer_bg.png") center/cover no-repeat;
+}
+.atech-footer-grid-block .footer-brand-logo {
+  max-width: 148px;
+}
+.atech-footer-grid-block {
+  grid-template-columns: 4fr 2fr 2fr 2.5fr 3.5fr;
+  gap: 40px;
+}
+.atech-footer .footer-block-list-link {
+  transition: all ease-in-out 300ms;
+}
+.atech-footer .footer-block-list-link:hover {
+  color: #3797d5 !important;
 }
 
 .after-ttl-border {
