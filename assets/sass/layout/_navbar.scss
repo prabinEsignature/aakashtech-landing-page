@@ -19,6 +19,7 @@ $z-index-navbar-toggler: 1010;
 
   .atech-menu {
     border-radius: 60px;
+
     .menu-link {
       &-text {
         &:hover {
@@ -29,7 +30,29 @@ $z-index-navbar-toggler: 1010;
 
     // ATEL SUBMENU STYLINGS
     &-submenu {
-      display: none;
+      visibility: hidden;
+      opacity: 0;
+      max-width: 1280px;
+      width: 100%;
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 24px;
+
+      .submenu-services{
+        &-list{
+          column-gap: 60px;
+          row-gap: 12px;
+        }
+      }
+
+      .submenu-services-item{
+        &-icon{
+          width: 68px;
+          height: 68px;
+          min-width: 68px;
+        }
+      }
     }
   }
 }

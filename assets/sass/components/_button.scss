@@ -1,5 +1,5 @@
 @use "sass:map";
-@use 'sass:color';
+@use "sass:color";
 @use "../abstracts/colors" as *;
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
@@ -58,7 +58,7 @@ $button-link-variants: (
     icon: color("white"),
     hover-text-color: color.adjust(color("white"), $lightness: 10%),
     hover-icon-color: color.adjust(color("white"), $lightness: 10%)
-  ),
+  )
 );
 
 .btn {
@@ -87,7 +87,7 @@ $button-link-variants: (
   -moz-appearance: none;
 
   @include breakpoint-down(md) {
-    font-size: map.get($font-sizes, "sm")!important;
+    font-size: map.get($font-sizes, "sm") !important;
     height: 40px;
   }
 
@@ -137,13 +137,13 @@ $button-link-variants: (
     font-weight: $btn-font-weight;
   }
 
-  &.btn-rounded{
+  &.btn-rounded {
     border-radius: 100vh;
     padding-right: 8px;
     gap: 24px;
     justify-content: space-between;
 
-    .btn-icon{
+    .btn-icon {
       border-radius: 100%;
       width: 36px;
       height: 36px;
@@ -160,7 +160,7 @@ $button-link-variants: (
   &.btn-xl {
     height: 58px;
     min-width: 150px;
-    font-size: map.get($font-sizes, "lg")!important;
+    font-size: map.get($font-sizes, "lg") !important;
 
     @include breakpoint-down(lg) {
       height: 52px;
@@ -168,7 +168,7 @@ $button-link-variants: (
 
     @include breakpoint-down(md) {
       height: 48px;
-      font-size: map.get($font-sizes, "base")!important;
+      font-size: map.get($font-sizes, "base") !important;
     }
 
     @include breakpoint-down(sm) {
@@ -179,7 +179,7 @@ $button-link-variants: (
   &.btn-lg {
     height: 52px;
     min-width: 146px;
-    font-size: map.get($font-sizes, "lg")!important;
+    font-size: map.get($font-sizes, "lg") !important;
 
     @include breakpoint-down(lg) {
       height: 48px;
@@ -187,7 +187,7 @@ $button-link-variants: (
 
     @include breakpoint-down(md) {
       height: 44px;
-      font-size: map.get($font-sizes, "base")!important;
+      font-size: map.get($font-sizes, "base") !important;
     }
 
     @include breakpoint-down(sm) {
@@ -196,12 +196,12 @@ $button-link-variants: (
   }
 
   &.btn-sm {
-    font-size: map.get($font-sizes, "sm")!important;
+    font-size: map.get($font-sizes, "sm") !important;
     height: 36px;
 
     @include breakpoint-down(md) {
       height: 34px;
-      font-size: map.get($font-sizes, "xs")!important;
+      font-size: map.get($font-sizes, "xs") !important;
     }
 
     @include breakpoint-down(sm) {
@@ -246,12 +246,12 @@ $button-link-variants: (
     color: map.get($props, text) !important;
     border: $btn-border-width solid map.get($props, border-color) !important;
 
-    .btn-text{
+    .btn-text {
       color: map.get($props, text) !important;
     }
 
-    &.btn-rounded{
-      .btn-icon{
+    &.btn-rounded {
+      .btn-icon {
         background: map.get($props, icon-bg) !important;
         color: map.get($props, text) !important;
       }
@@ -292,14 +292,14 @@ $button-link-variants: (
 
 // BUTTON LINK
 .btn-link {
-  background: transparent!important;
+  background: transparent !important;
   transition: $default-transition;
-  padding: 0!important;
-  height: auto!important;
+  padding: 0 !important;
+  height: auto !important;
 
-  &:hover{
-    padding: 0!important;
-    background: transparent!important;
+  &:hover {
+    padding: 0 !important;
+    background: transparent !important;
   }
 }
 
@@ -307,7 +307,7 @@ $button-link-variants: (
   .btn-link-#{$variant} {
     color: map.get($props, text) !important;
 
-    .btn-text{
+    .btn-text {
       color: map.get($props, text) !important;
     }
 
@@ -317,8 +317,8 @@ $button-link-variants: (
 
     &:hover {
       color: map.get($props, hover-text-color) !important;
-      
-      .btn-text{
+
+      .btn-text {
         color: map.get($props, hover-text-color) !important;
       }
 
@@ -374,5 +374,20 @@ input[type="button"] {
 
   .btn-text {
     color: rgba(141, 194, 218, 1);
+  }
+}
+
+.whatsapp-btn {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ping 2s infinite;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background: rgba(59, 178, 74, 0.1882352941);
   }
 }

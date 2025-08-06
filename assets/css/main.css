@@ -26578,6 +26578,19 @@ input[type=button].btn-block {
   color: rgb(141, 194, 218);
 }
 
+.whatsapp-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ping 2s infinite;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background: rgba(59, 178, 74, 0.1882352941);
+}
+
 .checkbox {
   position: relative;
   overflow: hidden;
@@ -27458,7 +27471,24 @@ table td {
   opacity: 0.85;
 }
 .atech-navbar .atech-menu-submenu {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  max-width: 1280px;
+  width: 100%;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 24px;
+}
+.atech-navbar .atech-menu-submenu .submenu-services-list {
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  row-gap: 12px;
+}
+.atech-navbar .atech-menu-submenu .submenu-services-item-icon {
+  width: 68px;
+  height: 68px;
+  min-width: 68px;
 }
 
 .atech-footer {

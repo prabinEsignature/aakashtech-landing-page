@@ -125,3 +125,26 @@ document.addEventListener("DOMContentLoaded", () => {
     screenshotsProductSwiperContainer.slideTo(1, false, false);
   }
 });
+
+
+
+
+<script>
+  document.querySelectorAll('.atech-menu-item').forEach(item => {
+    const submenu = item.querySelector('.atech-menu-submenu');
+
+    if (submenu) {
+      item.addEventListener('mouseenter', () => {
+        submenu.style.display = 'block';
+        submenu.style.opacity = '1';
+        submenu.style.visibility = 'visible';
+      });
+
+      item.addEventListener('mouseleave', () => {
+        submenu.style.display = 'none';
+        submenu.style.opacity = '0';
+        submenu.style.visibility = 'hidden';
+      });
+    }
+  });
+</script>
