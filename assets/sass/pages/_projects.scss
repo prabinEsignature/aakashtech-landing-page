@@ -2,20 +2,20 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.atech-projects-banner{
+.atech-projects-banner {
   margin-top: 90px;
   background: url($img-path + "projects/projects_banner_bg.png") top/cover no-repeat;
 }
 
-.atech-projects-showcase{
-  .projects-showcase{
-    &-search{
+.atech-projects-showcase {
+  .projects-showcase {
+    &-search {
       height: 60px;
       max-width: 540px;
 
-      input{
-        &.form-control{
-          &::placeholder{
+      input {
+        &.form-control {
+          &::placeholder {
             color: color("onyx-300");
             font-weight: 500;
           }
@@ -24,26 +24,26 @@
     }
   }
 
-  .projects-btns-slider-wrapper{
+  .projects-btns-slider-wrapper {
     padding-left: 72px;
     padding-right: 72px;
 
-    .swiper-slide{
+    .swiper-slide {
       width: auto;
       padding-left: 6px;
       padding-right: 6px;
     }
 
-    .projects-btn{
+    .projects-btn {
       height: 44px;
 
-      &.is-checked{
+      &.is-checked {
         background: color("primary-500");
         color: color("white");
-        border-color: color("primary-500")!important;
+        border-color: color("primary-500") !important;
 
-        .btn-icon{
-          img{
+        .btn-icon {
+          img {
             filter: invert(1) brightness(100);
           }
         }
@@ -51,24 +51,70 @@
     }
   }
 
-  .projects{
-    &-grid-item{
+  .projects {
+    &-grid-item {
       border-radius: 28px;
       height: 500px;
 
-      &-wrapper{
-        margin-bottom: 76px;        
+      &-wrapper {
+        margin-bottom: 76px;
       }
 
-      &-logo{
+      &-logo {
         max-width: 120px;
         height: 40px;
       }
 
-      &-details{
+      &-details {
         bottom: -28px;
         left: 28px;
         right: 28px;
+      }
+    }
+  }
+}
+
+.atech-our-clients {
+  background: linear-gradient(#ebf5fb42, #d7eaf7c9), url($img-path + "misc/our_clients_bg.png") top/cover no-repeat;
+
+  .honeycomb {
+    --cell-size: 190px;
+    --cell-gap: 24px;
+    display: flex;
+    gap: calc(0.866 /* cos(30deg) */ * var(--cell-gap));
+    flex-direction: column;
+    align-items: center;
+
+    &-row {
+      display: flex;
+      gap: var(--cell-gap);
+    }
+
+    &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline-offset: -1px;
+      aspect-ratio: 1.1547; /* 1/cos(30deg) */
+      position: relative;
+      width: var(--cell-size);
+    }
+
+    &-cell {
+      position: absolute;
+      z-index: 1;
+      aspect-ratio: 0.866; /* cos(30deg) */
+      width: var(--cell-size);
+      clip-path: polygon(-50% 50%, 50% 100%, 150% 50%, 50% 0);
+      overflow: hidden;
+      background: color("white")!important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.2s ease-in-out;
+
+      img{
+        max-width: 80px;
       }
     }
   }

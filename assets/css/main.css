@@ -28010,4 +28010,45 @@ table td {
   bottom: -28px;
   left: 28px;
   right: 28px;
+}
+
+.atech-our-clients {
+  background: linear-gradient(rgba(235, 245, 251, 0.2588235294), rgba(215, 234, 247, 0.7882352941)), url("../../../assets/images/misc/our_clients_bg.png") top/cover no-repeat;
+}
+.atech-our-clients .honeycomb {
+  --cell-size: 190px;
+  --cell-gap: 24px;
+  display: flex;
+  gap: calc(0.866 * var(--cell-gap));
+  flex-direction: column;
+  align-items: center;
+}
+.atech-our-clients .honeycomb-row {
+  display: flex;
+  gap: var(--cell-gap);
+}
+.atech-our-clients .honeycomb-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline-offset: -1px;
+  aspect-ratio: 1.1547; /* 1/cos(30deg) */
+  position: relative;
+  width: var(--cell-size);
+}
+.atech-our-clients .honeycomb-cell {
+  position: absolute;
+  z-index: 1;
+  aspect-ratio: 0.866; /* cos(30deg) */
+  width: var(--cell-size);
+  clip-path: polygon(-50% 50%, 50% 100%, 150% 50%, 50% 0);
+  overflow: hidden;
+  background: #ffffff !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease-in-out;
+}
+.atech-our-clients .honeycomb-cell img {
+  max-width: 80px;
 }/*# sourceMappingURL=main.css.map */
