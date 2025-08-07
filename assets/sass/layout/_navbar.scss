@@ -52,6 +52,16 @@ $z-index-navbar-toggler: 1010;
           height: 68px;
           min-width: 68px;
         }
+
+        &-ttl{
+          transition: $default-transition;
+        }
+
+        &:hover{
+          .submenu-services-item-ttl{
+            color: color("primary-500")!important;
+          }
+        }
       }
     }
   }

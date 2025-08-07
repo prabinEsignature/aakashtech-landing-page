@@ -58,8 +58,19 @@
               </li>
               <li class="atech-menu-item px-3 position-relative">
                 <a href="#"
-                  class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition">
+                  class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition"
+                  data-submenu="menu-submenu-services">
                   <span class="menu-link-text">Services</span>
+                  <span class="menu-link-icon icon-18">
+                    <img src="assets/icons/chevron_down_onyx.svg" alt="" />
+                  </span>
+                </a>
+              </li>
+              <li class="atech-menu-item px-3 position-relative">
+                <a href="#"
+                  class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition"
+                  data-submenu="menu-submenu-portfolios">
+                  <span class="menu-link-text">Our Portfolio</span>
                   <span class="menu-link-icon icon-18">
                     <img src="assets/icons/chevron_down_onyx.svg" alt="" />
                   </span>
@@ -91,80 +102,181 @@
               </li>
             </ul>
             <div class="atech-submenu-list">
-              <div class="atech-menu-submenu submenu-services position-absolute bg-white p-custom-8 shadow-default rounded-24">
+              <div
+                class="atech-menu-submenu menu-submenu-services position-absolute bg-white p-custom-8 shadow-default rounded-24">
                 <div class="submenu-main">
                   <div class="submenu-services-list d-grid grid-cols-2 mb-custom-2">
-                    <div class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
-                      <div class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                        <img class="icon-36" src="assets/icons/custom_software_icon.svg" alt = "" />
+                    <a href="#" class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
+                      <div
+                        class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                        <img class="icon-36" src="assets/icons/custom_software_icon.svg" alt="" />
                       </div>
                       <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
-                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">Custom Software Development</h5>
-                        <p class="mb-0 text-gray-500 text-sm font-medium">Build scalable, high-performance software tailored to solve your business challenges and accelerate growth.</p>
+                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">Custom Software
+                          Development</h5>
+                        <p class="mb-0 text-gray-500 text-sm font-medium">Build scalable, high-performance software
+                          tailored to solve your business challenges and accelerate growth.</p>
                       </div>
+                    </a>
+                    <a href="#" class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
+                      <div
+                        class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                        <img class="icon-36" src="assets/icons/mobapp_icon.svg" alt="" />
+                      </div>
+                      <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
+                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">Mobile App
+                          Development</h5>
+                        <p class="mb-0 text-gray-500 text-sm font-medium">Transform your ideas into intuitive,
+                          feature-rich mobile experiences across Android and iOS platforms.</p>
+                      </div>
+                    </a>
+                    <a href="#" class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
+                      <div
+                        class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                        <img class="icon-36" src="assets/icons/webdev_icon.svg" alt="" />
+                      </div>
+                      <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
+                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">Web App
+                          Development</h5>
+                        <p class="mb-0 text-gray-500 text-sm font-medium">Launch powerful, user-centric web applications
+                          designed to deliver seamless performance and lasting impact.</p>
+                      </div>
+                    </a>
+                    <a href="#" class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
+                      <div
+                        class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                        <img class="icon-36" src="assets/icons/ai_icon.svg" alt="" />
+                      </div>
+                      <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
+                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">Artificial
+                          Intelligence (AI)</h5>
+                        <p class="mb-0 text-gray-500 text-sm font-medium">Enhance your digital product with AI-powered
+                          features—boosting efficiency, personalization, and decision-making.</p>
+                      </div>
+                    </a>
+                    <a href="#" class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
+                      <div
+                        class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                        <img class="icon-36" src="assets/icons/low_code_icon.svg" alt="" />
+                      </div>
+                      <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
+                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">Low-Code /
+                          No-Code Solutions</h5>
+                        <p class="mb-0 text-gray-500 text-sm font-medium">Fast-track your app development with visual
+                          tools that simplify workflows—ideal for startups and enterprises alike.</p>
+                      </div>
+                    </a>
+                    <a href="#" class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
+                      <div
+                        class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                        <img class="icon-36" src="assets/icons/ios_dev_icon.svg" alt="" />
+                      </div>
+                      <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
+                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">iOS Development
+                        </h5>
+                        <p class="mb-0 text-gray-500 text-sm font-medium">Deliver sleek, responsive, and secure iOS apps
+                          that captivate Apple users and drive business results.</p>
+                      </div>
+                    </a>
+                    <a href="#" class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
+                      <div
+                        class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                        <img class="icon-36" src="assets/icons/staff_aug_icon.svg" alt="" />
+                      </div>
+                      <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
+                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">Staff
+                          Augmentation</h5>
+                        <p class="mb-0 text-gray-500 text-sm font-medium">Scale your tech team quickly with skilled
+                          Aakashtech professionals who integrate seamlessly into your projects.</p>
+                      </div>
+                    </a>
+                    <a href="#" class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
+                      <div
+                        class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                        <img class="icon-36" src="assets/icons/android_dev_icon.svg" alt="" />
+                      </div>
+                      <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
+                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">Android
+                          Development</h5>
+                        <p class="mb-0 text-gray-500 text-sm font-medium">Leverage our deep Android expertise to build
+                          dynamic apps optimized for diverse devices and user needs.</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="submenu-bottom d-flex pt-custom-5 border-t-gray-100-1">
+                  <div class="submenu-contact-info d-flex gap-4 justify-content-between w-100">
+                    <div class="submenu-contact-info-item d-flex align-items-center gap-3">
+                      <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
+                        <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="" />
+                      </span>
+                      <span class="text-base text-onyx-500 font-medium">+977 9876890991</span>
                     </div>
-                    <div class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
-                      <div class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                        <img class="icon-36" src="assets/icons/mobapp_icon.svg" alt = "" />
-                      </div>
-                      <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
-                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">Mobile App Development</h5>
-                        <p class="mb-0 text-gray-500 text-sm font-medium">Transform your ideas into intuitive, feature-rich mobile experiences across Android and iOS platforms.</p>
-                      </div>
+                    <div class="submenu-contact-info-item d-flex align-items-center gap-3">
+                      <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
+                        <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="" />
+                      </span>
+                      <span class="text-base text-onyx-500 font-medium">aakashtech@gmail.com.np</span>
                     </div>
-                    <div class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
-                      <div class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                        <img class="icon-36" src="assets/icons/webdev_icon.svg" alt = "" />
-                      </div>
-                      <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
-                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">Web App Development</h5>
-                        <p class="mb-0 text-gray-500 text-sm font-medium">Launch powerful, user-centric web applications designed to deliver seamless performance and lasting impact.</p>
-                      </div>
+                    <div class="submenu-contact-info-item d-flex align-items-center gap-3">
+                      <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
+                        <img class="icon-18" src="assets/icons/location_dot_outline_primary.svg" alt="" />
+                      </span>
+                      <span class="text-base text-onyx-500 font-medium">Kalopul, Kathmandu, Nepal</span>
                     </div>
-                    <div class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
-                      <div class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                        <img class="icon-36" src="assets/icons/ai_icon.svg" alt = "" />
-                      </div>
-                      <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
-                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">Artificial Intelligence (AI)</h5>
-                        <p class="mb-0 text-gray-500 text-sm font-medium">Enhance your digital product with AI-powered features—boosting efficiency, personalization, and decision-making.</p>
-                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="atech-menu-submenu menu-submenu-portfolios position-absolute bg-white p-custom-8 shadow-default rounded-24">
+                <div class="submenu-main">
+                  <div class="d-flex align-items-start">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                      aria-orientation="vertical">
+                      <button class="nav-link active" id="v-pills-port-01-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-port-01" type="button" role="tab" aria-controls="v-pills-port-01"
+                        aria-selected="true">
+                        <span class="btn-icon icon-24">
+                          <img src="assets/icons/mobapp_icon.svg" alt = "" />
+                        </span>
+                        <span class="text-onyx-700 text-sm font-medium">Mobile Apps</span>
+                      </button>
+                      <button class="nav-link" id="v-pills-port-02-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-port-02" type="button" role="tab" aria-controls="v-pills-port-02"
+                        aria-selected="false">Profile</button>
+                      <button class="nav-link" id="v-pills-port-03-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-port-03" type="button" role="tab" aria-controls="v-pills-port-03"
+                        aria-selected="false">Messages</button>
+                      <button class="nav-link" id="v-pills-port-04-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-port-04" type="button" role="tab" aria-controls="v-pills-port-04"
+                        aria-selected="false">Settings</button>
                     </div>
-                    <div class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
-                      <div class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                        <img class="icon-36" src="assets/icons/low_code_icon.svg" alt = "" />
+                    <div class="tab-content" id="v-pills-tabContent">
+                      <div class="tab-pane fade show active" id="v-pills-port-01" role="tabpanel"
+                        aria-labelledby="v-pills-port-01-tab" tabindex="0">
+                        <div class="submenu-portfolios-list d-grid grid-cols-2 mb-custom-2">
+                          <a href="#" class="submenu-portfolios-item p-custom-3 d-flex align-items-start gap-4">
+                            <div
+                              class="submenu-portfolios-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                              <img class="icon-36" src="assets/icons/custom_software_icon.svg" alt="" />
+                            </div>
+                            <div class="submenu-portfolios-item-details mt-1 d-flex flex-column gap-2">
+                              <h5 class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700">Custom
+                                Software Development</h5>
+                              <p class="mb-0 text-gray-500 text-sm font-medium">Build scalable, high-performance
+                                software
+                                tailored to solve your business challenges and accelerate growth.</p>
+                            </div>
+                          </a>
+                        </div>
                       </div>
-                      <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
-                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">Low-Code / No-Code Solutions</h5>
-                        <p class="mb-0 text-gray-500 text-sm font-medium">Fast-track your app development with visual tools that simplify workflows—ideal for startups and enterprises alike.</p>
-                      </div>
-                    </div>
-                    <div class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
-                      <div class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                        <img class="icon-36" src="assets/icons/ios_dev_icon.svg" alt = "" />
-                      </div>
-                      <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
-                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">iOS Development</h5>
-                        <p class="mb-0 text-gray-500 text-sm font-medium">Deliver sleek, responsive, and secure iOS apps that captivate Apple users and drive business results.</p>
-                      </div>
-                    </div>
-                    <div class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
-                      <div class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                        <img class="icon-36" src="assets/icons/staff_aug_icon.svg" alt = "" />
-                      </div>
-                      <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
-                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">Staff Augmentation</h5>
-                        <p class="mb-0 text-gray-500 text-sm font-medium">Scale your tech team quickly with skilled Aakashtech professionals who integrate seamlessly into your projects.</p>
-                      </div>
-                    </div>
-                    <div class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
-                      <div class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                        <img class="icon-36" src="assets/icons/android_dev_icon.svg" alt = "" />
-                      </div>
-                      <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
-                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">Android Development</h5>
-                        <p class="mb-0 text-gray-500 text-sm font-medium">Leverage our deep Android expertise to build dynamic apps optimized for diverse devices and user needs.</p>
-                      </div>
+                      <div class="tab-pane fade" id="v-pills-port-02" role="tabpanel"
+                        aria-labelledby="v-pills-port-02-tab" tabindex="0">...</div>
+                      <div class="tab-pane fade" id="v-pills-port-03" role="tabpanel"
+                        aria-labelledby="v-pills-port-03-tab" tabindex="0">...</div>
+                      <div class="tab-pane fade" id="v-pills-port-04" role="tabpanel"
+                        aria-labelledby="v-pills-port-04-tab" tabindex="0">...</div>
                     </div>
                   </div>
                 </div>

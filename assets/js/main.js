@@ -121,15 +121,9 @@ document.addEventListener("DOMContentLoaded", () => {
         prevEl: screenshotsProductSwiperContainer.querySelector(".swiper-button-prev"),
       },
     });
-
-    screenshotsProductSwiperContainer.slideTo(1, false, false);
   }
-});
 
 
-
-
-<script>
   document.querySelectorAll('.atech-menu-item').forEach(item => {
     const submenu = item.querySelector('.atech-menu-submenu');
 
@@ -147,4 +141,51 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
-</script>
+
+
+  const menuLinks = document.querySelectorAll('.atech-menu-link');
+
+  menuLinks.forEach(link => {
+    const submenuClass = link.getAttribute('data-submenu');
+    const submenu = document.querySelector(`.${submenuClass}`);
+
+    if (submenu) {
+      let timeout;
+
+      link.addEventListener('mouseenter', () => {
+        clearTimeout(timeout);
+        // submenu.style.display = 'block';
+        submenu.style.opacity = '1';
+        submenu.style.visibility = 'visible';
+      });
+
+      // Start hide timer when leaving link
+      link.addEventListener('mouseleave', () => {
+        timeout = setTimeout(() => {
+          // submenu.style.display = 'none';
+          submenu.style.opacity = '0';
+          submenu.style.visibility = 'hidden';
+        }, 200);
+      });
+
+      // Keep submenu open when hovered
+      submenu.addEventListener('mouseenter', () => {
+        clearTimeout(timeout);
+        // submenu.style.display = 'block';
+        submenu.style.opacity = '1';
+        submenu.style.visibility = 'visible';
+      });
+
+      // Hide submenu when leaving
+      submenu.addEventListener('mouseleave', () => {
+        timeout = setTimeout(() => {
+          // submenu.style.display = 'none';
+          submenu.style.opacity = '0';
+          submenu.style.visibility = 'hidden';
+        }, 200);
+      });
+    }
+  });
+});
+
+

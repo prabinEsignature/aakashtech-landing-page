@@ -27490,6 +27490,12 @@ table td {
   height: 68px;
   min-width: 68px;
 }
+.atech-navbar .atech-menu-submenu .submenu-services-item-ttl {
+  transition: all ease-in-out 300ms;
+}
+.atech-navbar .atech-menu-submenu .submenu-services-item:hover .submenu-services-item-ttl {
+  color: #3797d5 !important;
+}
 
 .atech-footer {
   background: url("../../../assets/images/misc/footer_bg.png") center/cover no-repeat;
