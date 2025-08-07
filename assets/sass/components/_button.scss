@@ -331,11 +331,10 @@ $button-link-variants: (
 
 // MISC BUTTON STYLINGS
 .icon-btn {
-  transition: $default-transition;
-  border-radius: 6px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-flex!important;
+  align-items: center!important;
+  justify-content: center!important;
+  padding: 0!important;
 
   &:hover {
     opacity: 0.8;
@@ -351,29 +350,12 @@ $button-link-variants: (
   }
 }
 
-.icon-btn {
-  &-white {
-    &:hover {
-      background: color("primary-500");
-    }
-  }
-}
-
 // Specificity overrides
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   &.btn-block {
     width: 100%;
-  }
-}
-
-.btn-see-how {
-  gap: 10px;
-  border: none !important;
-
-  .btn-text {
-    color: rgba(141, 194, 218, 1);
   }
 }
 

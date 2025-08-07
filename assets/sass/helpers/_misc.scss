@@ -146,11 +146,34 @@
   }
 }
 
-
 // SHAPES
-.dotted-box-shape{
+.dotted-box-shape {
   width: 140px;
 }
-.spiral-arrow-shape{
+.spiral-arrow-shape {
   width: 60px;
+}
+
+.breadcrumb-item{
+  position: relative;
+
+  &.active{
+    color: color("primary-500")!important;
+  }
+}
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 40px !important;
+
+  &::before {
+    position: absolute;
+    padding-right: 16px !important;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: color("primary-150");
+    content: "";
+    padding: 0 !important;
+    top: 50%;
+    transform: translate(-24px, -50%);
+  }
 }

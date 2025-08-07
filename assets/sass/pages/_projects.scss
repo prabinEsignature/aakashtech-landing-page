@@ -1,0 +1,75 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.atech-projects-banner{
+  margin-top: 90px;
+  background: url($img-path + "projects/projects_banner_bg.png") top/cover no-repeat;
+}
+
+.atech-projects-showcase{
+  .projects-showcase{
+    &-search{
+      height: 60px;
+      max-width: 540px;
+
+      input{
+        &.form-control{
+          &::placeholder{
+            color: color("onyx-300");
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  .projects-btns-slider-wrapper{
+    padding-left: 72px;
+    padding-right: 72px;
+
+    .swiper-slide{
+      width: auto;
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+
+    .projects-btn{
+      height: 44px;
+
+      &.is-checked{
+        background: color("primary-500");
+        color: color("white");
+        border-color: color("primary-500")!important;
+
+        .btn-icon{
+          img{
+            filter: invert(1) brightness(100);
+          }
+        }
+      }
+    }
+  }
+
+  .projects{
+    &-grid-item{
+      border-radius: 28px;
+      height: 500px;
+
+      &-wrapper{
+        margin-bottom: 76px;        
+      }
+
+      &-logo{
+        max-width: 120px;
+        height: 40px;
+      }
+
+      &-details{
+        bottom: -28px;
+        left: 28px;
+        right: 28px;
+      }
+    }
+  }
+}

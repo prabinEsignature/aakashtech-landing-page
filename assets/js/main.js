@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const screenshotsBtnsSwiperContainer = document.querySelector('.screenshots-btns-slider');
   const screenshotsBtnsSwiperContainerWrapper = document.querySelector('.screenshots-btns-slider-wrapper');
   const screenshotsProductSwiperContainer = document.querySelector('.screenshots-product-slider');
+  const projectsBtnsSwiperContainer = document.querySelector('.projects-btns-slider');
+  const projectsBtnsSwiperContainerWrapper = document.querySelector('.projects-btns-slider-wrapper');
 
   // Initialize client logo slider
   if (clientsSwiperContainer) {
@@ -123,6 +125,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  if (projectsBtnsSwiperContainer) {
+    new Swiper(projectsBtnsSwiperContainer, {
+      loop: true,
+      slidesPerView: "auto",
+      allowTouchMove: false,
+      navigation: {
+        nextEl: projectsBtnsSwiperContainerWrapper.querySelector(".swiper-button-next"),
+        prevEl: projectsBtnsSwiperContainerWrapper.querySelector(".swiper-button-prev"),
+      },
+      observer: true,
+      observeParents: true,
+    });
+  }
+
 
   document.querySelectorAll('.atech-menu-item').forEach(item => {
     const submenu = item.querySelector('.atech-menu-submenu');
@@ -185,6 +201,34 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 200);
       });
     }
+  });
+
+
+  // Initialize Isotope
+  var iso = new Isotope('.projects-listing-grid', {
+    itemSelector: '.projects-grid-item-wrapper',
+    layoutMode: 'fitRows'
+  });
+
+  // Filter buttons group
+  var filtersElem = document.querySelector('.filters-button-group');
+  var filterButtons = filtersElem.querySelectorAll('button');
+
+  filtersElem.addEventListener('click', function (event) {
+    var target = event.target.closest('button');
+    if (!target) return;
+
+    // Get filter value
+    var filterValue = target.getAttribute('data-filter');
+    iso.arrange({ filter: filterValue });
+
+    // Remove .is-checked from all buttons
+    filterButtons.forEach(function (btn) {
+      btn.classList.remove('is-checked');
+    });
+
+    // Add .is-checked to clicked button
+    target.classList.add('is-checked');
   });
 });
 
