@@ -25364,6 +25364,10 @@ code.code-customized {
   filter: invert(0) brightness(100);
 }
 
+.gradien-light-brand {
+  background: linear-gradient(45deg, #D5E9F6 0%, #ECF3F9 25%, #EEF5F9 74%, #D5E9F6 100%);
+}
+
 html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -28176,6 +28180,23 @@ table td {
 .atech-project-details-group {
   gap: 120px;
 }
-.atech-project-details .project-details-grid {
+.atech-project-details-block:nth-child(even) .project-details-img {
+  order: 2;
+}
+.atech-project-details-block:nth-child(even) .project-details-description {
+  order: 1;
+}
+.atech-project-details-block .project-details-grid {
   gap: 80px;
+}
+.atech-project-details-block .project-details-img::after {
+  content: "";
+  position: absolute;
+  left: 24px;
+  top: -24px;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(to right, #C3E0F2 0%, #DFEDF6 50%, #FAFAFA 100%);
+  z-index: -1;
 }/*# sourceMappingURL=main.css.map */

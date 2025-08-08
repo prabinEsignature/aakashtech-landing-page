@@ -783,3 +783,9 @@ code {
 .invert-to-white {
   filter: invert(0) brightness(100);
 }
+
+
+// gradients
+.gradien-light-brand{
+  background: linear-gradient(45deg, #D5E9F6 0%, #ECF3F9 25%, #EEF5F9 74%, #D5E9F6 100%);
+}
