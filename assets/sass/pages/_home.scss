@@ -533,6 +533,8 @@
 .atech-newsletter{
   background: url($img-path + "misc/newsletter_bg.png") center/cover no-repeat;
   background-position: center top;
+  position: relative;
+  z-index: 5;
 
   .newsletter-top{
     max-width: 600px;

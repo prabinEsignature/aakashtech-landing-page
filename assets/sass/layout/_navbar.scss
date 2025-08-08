@@ -70,6 +70,21 @@ $z-index-navbar-toggler: 1010;
     .menu-submenu-portfolios{
       .nav-pills{
         min-width: 220px;
+
+        .nav-link{
+          &:hover{
+            background: color("primary-50")!important;
+          }
+
+          &.btn{
+            &.btn-primary{
+              &:hover{
+                background: color("primary-600")!important;
+                border-color: color("primary-600")!important;
+              }
+            }
+          }
+        }
       }
 
       .submenu-portfolios{

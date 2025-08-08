@@ -26510,10 +26510,14 @@ Output
 }
 .btn-primary .btn-text {
   color: #ffffff !important;
+  transition: all ease-in-out 300ms;
+}
+.btn-primary .btn-icon {
+  transition: all ease-in-out 300ms;
 }
 .btn-primary.btn-rounded .btn-icon {
   background: none !important;
-  color: #ffffff !important;
+  color: #3797d5 !important;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:disabled, .btn-primary:active, .btn-primary.disabled, .btn-primary.active {
   background: #060606 !important;
@@ -26521,6 +26525,10 @@ Output
   color: #ffffff !important;
 }
 .btn-primary:hover .btn-text, .btn-primary:focus .btn-text, .btn-primary:disabled .btn-text, .btn-primary:active .btn-text, .btn-primary.disabled .btn-text, .btn-primary.active .btn-text {
+  color: #ffffff !important;
+}
+.btn-primary:hover.btn-rounded .btn-icon, .btn-primary:focus.btn-rounded .btn-icon, .btn-primary:disabled.btn-rounded .btn-icon, .btn-primary:active.btn-rounded .btn-icon, .btn-primary.disabled.btn-rounded .btn-icon, .btn-primary.active.btn-rounded .btn-icon {
+  background: none !important;
   color: #ffffff !important;
 }
 .btn-primary:disabled, .btn-primary.disabled {
@@ -26534,10 +26542,14 @@ Output
 }
 .btn-white-primary .btn-text {
   color: #3797d5 !important;
+  transition: all ease-in-out 300ms;
+}
+.btn-white-primary .btn-icon {
+  transition: all ease-in-out 300ms;
 }
 .btn-white-primary.btn-rounded .btn-icon {
-  background: #e9eaeb !important;
-  color: #3797d5 !important;
+  background: #3797d5 !important;
+  color: #ffffff !important;
 }
 .btn-white-primary:hover, .btn-white-primary:focus, .btn-white-primary:disabled, .btn-white-primary:active, .btn-white-primary.disabled, .btn-white-primary.active {
   background: #060606 !important;
@@ -26547,7 +26559,43 @@ Output
 .btn-white-primary:hover .btn-text, .btn-white-primary:focus .btn-text, .btn-white-primary:disabled .btn-text, .btn-white-primary:active .btn-text, .btn-white-primary.disabled .btn-text, .btn-white-primary.active .btn-text {
   color: #ffffff !important;
 }
+.btn-white-primary:hover.btn-rounded .btn-icon, .btn-white-primary:focus.btn-rounded .btn-icon, .btn-white-primary:disabled.btn-rounded .btn-icon, .btn-white-primary:active.btn-rounded .btn-icon, .btn-white-primary.disabled.btn-rounded .btn-icon, .btn-white-primary.active.btn-rounded .btn-icon {
+  background: #ffffff !important;
+  color: #3797d5 !important;
+}
 .btn-white-primary:disabled, .btn-white-primary.disabled {
+  opacity: 0.8;
+}
+
+.btn-primary-white {
+  background: #3797d5 !important;
+  color: #ffffff !important;
+  border: 1px solid #3797d5 !important;
+}
+.btn-primary-white .btn-text {
+  color: #ffffff !important;
+  transition: all ease-in-out 300ms;
+}
+.btn-primary-white .btn-icon {
+  transition: all ease-in-out 300ms;
+}
+.btn-primary-white.btn-rounded .btn-icon {
+  background: #ffffff !important;
+  color: #3797d5 !important;
+}
+.btn-primary-white:hover, .btn-primary-white:focus, .btn-primary-white:disabled, .btn-primary-white:active, .btn-primary-white.disabled, .btn-primary-white.active {
+  background: #ffffff !important;
+  border-color: #3797d5 !important;
+  color: #3797d5 !important;
+}
+.btn-primary-white:hover .btn-text, .btn-primary-white:focus .btn-text, .btn-primary-white:disabled .btn-text, .btn-primary-white:active .btn-text, .btn-primary-white.disabled .btn-text, .btn-primary-white.active .btn-text {
+  color: #3797d5 !important;
+}
+.btn-primary-white:hover.btn-rounded .btn-icon, .btn-primary-white:focus.btn-rounded .btn-icon, .btn-primary-white:disabled.btn-rounded .btn-icon, .btn-primary-white:active.btn-rounded .btn-icon, .btn-primary-white.disabled.btn-rounded .btn-icon, .btn-primary-white.active.btn-rounded .btn-icon {
+  background: #3797d5 !important;
+  color: #ffffff !important;
+}
+.btn-primary-white:disabled, .btn-primary-white.disabled {
   opacity: 0.8;
 }
 
@@ -26558,10 +26606,14 @@ Output
 }
 .btn-onyx-900 .btn-text {
   color: #ffffff !important;
+  transition: all ease-in-out 300ms;
+}
+.btn-onyx-900 .btn-icon {
+  transition: all ease-in-out 300ms;
 }
 .btn-onyx-900.btn-rounded .btn-icon {
   background: none !important;
-  color: #ffffff !important;
+  color: #0d0d0d !important;
 }
 .btn-onyx-900:hover, .btn-onyx-900:focus, .btn-onyx-900:disabled, .btn-onyx-900:active, .btn-onyx-900.disabled, .btn-onyx-900.active {
   background: #060606 !important;
@@ -26569,6 +26621,10 @@ Output
   color: #ffffff !important;
 }
 .btn-onyx-900:hover .btn-text, .btn-onyx-900:focus .btn-text, .btn-onyx-900:disabled .btn-text, .btn-onyx-900:active .btn-text, .btn-onyx-900.disabled .btn-text, .btn-onyx-900.active .btn-text {
+  color: #ffffff !important;
+}
+.btn-onyx-900:hover.btn-rounded .btn-icon, .btn-onyx-900:focus.btn-rounded .btn-icon, .btn-onyx-900:disabled.btn-rounded .btn-icon, .btn-onyx-900:active.btn-rounded .btn-icon, .btn-onyx-900.disabled.btn-rounded .btn-icon, .btn-onyx-900.active.btn-rounded .btn-icon {
+  background: none !important;
   color: #ffffff !important;
 }
 .btn-onyx-900:disabled, .btn-onyx-900.disabled {
@@ -27557,6 +27613,13 @@ table td {
 .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills {
   min-width: 220px;
 }
+.atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link:hover {
+  background: #ebf5fb !important;
+}
+.atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link.btn.btn-primary:hover {
+  background: #2c79aa !important;
+  border-color: #2c79aa !important;
+}
 .atech-navbar .atech-submenu-list .menu-submenu-portfolios .submenu-portfolios-item-img {
   min-width: 140px;
   width: 140px;
@@ -27944,6 +28007,8 @@ table td {
 .atech-newsletter {
   background: url("../../../assets/images/misc/newsletter_bg.png") center/cover no-repeat;
   background-position: center top;
+  position: relative;
+  z-index: 5;
 }
 .atech-newsletter .newsletter-top {
   max-width: 600px;
@@ -28055,4 +28120,22 @@ table td {
 }
 .atech-our-clients .honeycomb-cell img {
   max-width: 100px;
+}
+
+.atech-cta-two {
+  min-height: 846px;
+  margin-bottom: -100px;
+}
+.atech-cta-two .cta-block {
+  background: url("../../../assets/images/misc/spiral_ripple_bg.png") center/cover no-repeat;
+  padding: 60px;
+  border-radius: 40px;
+  max-width: 1320px;
+  position: relative;
+}
+.atech-cta-two .cta-block-content {
+  max-width: 600px;
+}
+.atech-cta-two .cta-banner {
+  margin-top: -198px;
 }/*# sourceMappingURL=main.css.map */

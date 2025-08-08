@@ -29,16 +29,28 @@ $button-variants: (
     border-color: color("primary-500"),
     hover-bg: color("onyx-950"),
     hover-text-color: color("white"),
-    hover-border-color: color("onyx-500")
+    hover-border-color: color("onyx-500"),
+    hover-icon-bg-color: none,
   ),
   "white-primary": (
     bg: color("white"),
     text: color("primary-500"),
-    icon-bg: color("gray-200"),
+    icon-bg: color("primary-500"),
     border-color: color("white"),
     hover-bg: color("onyx-950"),
     hover-text-color: color("white"),
-    hover-border-color: color("onyx-950")
+    hover-border-color: color("onyx-950"),
+    hover-icon-bg-color: color("white"),
+  ),
+  "primary-white": (
+    bg: color("primary-500"),
+    text: color("white"),
+    icon-bg: color("white"),
+    border-color: color("primary-500"),
+    hover-bg: color("white"),
+    hover-text-color: color("primary-500"),
+    hover-border-color: color("primary-500"),
+    hover-icon-bg-color: color("primary-500"),
   ),
   "onyx-900": (
     bg: color("onyx-900"),
@@ -47,7 +59,8 @@ $button-variants: (
     border-color: color("onyx-900"),
     hover-bg: color("onyx-950"),
     hover-text-color: color("white"),
-    hover-border-color: color("onyx-950")
+    hover-border-color: color("onyx-950"),
+    hover-icon-bg-color: none,
   )
 );
 
@@ -248,12 +261,17 @@ $button-link-variants: (
 
     .btn-text {
       color: map.get($props, text) !important;
+      transition: $default-transition;
+    }
+
+    .btn-icon{
+      transition: $default-transition;
     }
 
     &.btn-rounded {
       .btn-icon {
         background: map.get($props, icon-bg) !important;
-        color: map.get($props, text) !important;
+        color: map.get($props, bg) !important;
       }
     }
 
@@ -269,6 +287,13 @@ $button-link-variants: (
 
       .btn-text {
         color: map.get($props, hover-text-color) !important;
+      }
+
+      &.btn-rounded {
+        .btn-icon {
+          background: map.get($props, hover-icon-bg-color) !important;
+          color: map.get($props, text) !important;
+        }
       }
     }
 
