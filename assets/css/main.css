@@ -28138,4 +28138,25 @@ table td {
 }
 .atech-cta-two .cta-banner {
   margin-top: -198px;
+}
+
+.atech-project-single-banner {
+  background: url("../../../assets/images/projects/product_details_banner_bg.png") top/cover no-repeat;
+  margin-top: 90px;
+  position: relative;
+  overflow-x: clip;
+  min-height: 734px;
+}
+.atech-project-single-banner::after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #3797D5 0%, #176AA0 50%, #3797D5 75%, rgba(55, 151, 213, 0.8) 100%);
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  transform: scaleX(2);
+  z-index: -1;
+  opacity: 0.08;
 }/*# sourceMappingURL=main.css.map */
