@@ -1,3 +1,7 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 .atech-blog-banner{
   margin-top: 90px;
   min-height: 800px;
@@ -12,6 +16,13 @@
     background: linear-gradient(90deg, rgba(44, 121, 170, 0.8) 0%, rgba(17, 45, 64, 0.8) 80%,
     rgba(22, 60, 85, 0.8) 75%, rgba(11, 30, 43, 0.8) 100%);
   }
+
+  .segment-heading{
+    &-text{
+      margin-top: 0!important;
+      margin-bottom: 16px!important;
+    }
+  }
 }
 
 .atech-blogs-showcase{
@@ -20,6 +31,26 @@
   .blogs-showcase{
     &-grid{
       gap: 48px;
+    }
+  }
+}
+
+.atech-blogs-main{
+  background: url($img-path + "misc/transparent_waves_bg.png") center/cover no-repeat;
+
+  .blogs-cat{
+    &-btn{
+      transition: $default-transition;
+      &:not(.is-checked){
+        &:hover{
+          background: color("primary-100")!important;
+        }
+      }
+
+      &.is-checked{
+        background: linear-gradient(to bottom, color("primary-400"), color("primary-500"));
+        color: color("white")!important;
+      }
     }
   }
 }

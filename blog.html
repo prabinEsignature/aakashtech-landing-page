@@ -471,13 +471,13 @@
       </div>
     </section>
 
-    <section class="atech-blogs-showcase position-relative z-5 segment-pt-40 segment-pb-60">
+    <section class="atech-blogs-showcase position-relative z-5 segment-pb-100">
       <div class="atech-blogs-showcase-container container">
-        <div class="blogs-showcase-grid d-grid align-items-start grid-cols-2">
-          <div class="blogs-showcase-single">
+        <div class="blogs-showcase-grid d-grid align-items-stretch grid-cols-2">
+          <div class="blogs-showcase-single d-flex flex-column">
             <h3 class="blogs-showcase-ttl text-white text-3xl font-extrabold -tracking-03 mb-custom-6">The Latest</h3>
             <div
-              class="card border-0 card-lg blog-card bg-white rounded-28 overflow-hidden p-custom-4 d-flex flex-column gap-3 position-relative shadow-primary-700-10">
+              class="card border-0 card-lg blog-card bg-white rounded-28 overflow-hidden p-custom-4 d-flex flex-column gap-3 position-relative shadow-primary-700-10 flex-1">
               <div class="card-img border-0 rounded-20 overflow-hidden position-relative">
                 <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card1.png" alt="" />
                 <div class="card-tags d-flex flex-wrap gap-2 position-absolute">
@@ -513,13 +513,21 @@
                     how modern IVR solutions are enhancing customer service, reducing operational costs, and integrating
                     AI to create smarter call experiences. Discover why businesses of all sizes still rely on them.</p>
                 </div>
-                <div class="card-body-bottom">
+                <div class="card-body-bottom d-flex align-items-center justify-content-between gap-4">
                   <a href="#" class="btn btn-link btn-link-primary-500">
                     <span class="btn-text">Read More</span>
                     <span class="btn-icon -rotate-45">
                       <i class="fa-solid fa-arrow-right"></i>
                     </span>
                   </a>
+                  <div class="card-links d-flex align-items-center gap-3 justify-content-end">
+                    <a href="#" class="card-link icon-16 mx-0">
+                      <img src="assets/icons/heart_outline_turquoise_icon.svg" alt="" />
+                    </a>
+                    <a href="#" class="card-link icon-16 mx-0">
+                      <img src="assets/icons/share_nodes_outline_primary_500_icon.svg" alt="" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -528,9 +536,9 @@
             <h3 class="blogs-showcase-ttl text-white text-3xl font-extrabold -tracking-03 mb-custom-6">Top Reads</h3>
             <div class="card-list d-grid align-items-start gap-5">
               <div
-                class="card card-horizontal border-0 blog-card bg-white rounded-28 overflow-hidden p-custom-4 d-flex flex-column gap-3 position-relative shadow-primary-700-10">
+                class="card card-horizontal border-0 blog-card bg-white rounded-28 overflow-hidden p-custom-3 d-grid align-items-center gap-3 position-relative shadow-primary-700-10">
                 <div class="card-img border-0 rounded-20 overflow-hidden position-relative">
-                  <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card1.png" alt="" />
+                  <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card2.png" alt="" />
                   <div class="card-tags d-flex flex-wrap gap-2 position-absolute">
                     <span
                       class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">Telephony
@@ -539,7 +547,7 @@
                       class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">IVR</span>
                   </div>
                 </div>
-                <div class="card-body p-custom-3">
+                <div class="card-body d-grid align-items-start gap-3">
                   <div class="card-body-top d-grid align-items-start gap-3">
                     <div class="card-author d-flex align-items-center gap-3">
                       <div class="card-author-img rounded-full icon-36 overflow-hidden">
@@ -547,20 +555,109 @@
                       </div>
                       <span class="text-primary-500 font-semibold text-sm">Uttam Bhandary</span>
                     </div>
-                    <h3 class="card-title text-lg font-bold text-onyx-700 -tracking-03 mb-0">Must-Have Features in a
+                    <h3 class="card-title text-lg font-bold text-onyx-700 -tracking-03 mb-0 mt-0">Must-Have Features in
+                      a
                       Modern Business Communication Platform</h3>
                   </div>
                   <div class="card-body-bottom">
                     <div class="card-metadata d-flex align-items-center justify-content-start">
                       <div
-                        class="card-date card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
+                        class="card-date card-metadata-item plain-metadata px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                         <span class="icon-12">
                           <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
                         </span>
                         June 6, 2025
                       </div>
                       <div
-                        class="card-readtime card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
+                        class="card-readtime card-metadata-item plain-metadata px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
+                        <span class="icon-12">
+                          <img src="assets/icons/clock_filled_gray_500.svg" alt="" />
+                        </span>
+                        10 min
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="card card-horizontal border-0 blog-card bg-white rounded-28 overflow-hidden p-custom-3 d-grid align-items-center gap-3 position-relative shadow-primary-700-10">
+                <div class="card-img border-0 rounded-20 overflow-hidden position-relative">
+                  <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card3.png" alt="" />
+                  <div class="card-tags d-flex flex-wrap gap-2 position-absolute">
+                    <span
+                      class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">Telephony
+                      system</span>
+                    <span
+                      class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">IVR</span>
+                  </div>
+                </div>
+                <div class="card-body d-grid align-items-start gap-3">
+                  <div class="card-body-top d-grid align-items-start gap-3">
+                    <div class="card-author d-flex align-items-center gap-3">
+                      <div class="card-author-img rounded-full icon-36 overflow-hidden">
+                        <img src="assets/images/misc/reviews_user_1.png" alt="" />
+                      </div>
+                      <span class="text-primary-500 font-semibold text-sm">Uttam Bhandary</span>
+                    </div>
+                    <h3 class="card-title text-lg font-bold text-onyx-700 -tracking-03 mb-0 mt-0">The Role of AI in
+                      Future-Proofing Business Communication</h3>
+                  </div>
+                  <div class="card-body-bottom">
+                    <div class="card-metadata d-flex align-items-center justify-content-start">
+                      <div
+                        class="card-date card-metadata-item plain-metadata px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
+                        <span class="icon-12">
+                          <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
+                        </span>
+                        June 6, 2025
+                      </div>
+                      <div
+                        class="card-readtime card-metadata-item plain-metadata px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
+                        <span class="icon-12">
+                          <img src="assets/icons/clock_filled_gray_500.svg" alt="" />
+                        </span>
+                        10 min
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="card card-horizontal border-0 blog-card bg-white rounded-28 overflow-hidden p-custom-3 d-grid align-items-center gap-3 position-relative shadow-primary-700-10">
+                <div class="card-img border-0 rounded-20 overflow-hidden position-relative">
+                  <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card4.png" alt="" />
+                  <div class="card-tags d-flex flex-wrap gap-2 position-absolute">
+                    <span
+                      class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">Telephony
+                      system</span>
+                    <span
+                      class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">IVR</span>
+                  </div>
+                </div>
+                <div class="card-body d-grid align-items-start gap-3">
+                  <div class="card-body-top d-grid align-items-start gap-3">
+                    <div class="card-author d-flex align-items-center gap-3">
+                      <div class="card-author-img rounded-full icon-36 overflow-hidden">
+                        <img src="assets/images/misc/reviews_user_1.png" alt="" />
+                      </div>
+                      <span class="text-primary-500 font-semibold text-sm">Uttam Bhandary</span>
+                    </div>
+                    <h3 class="card-title text-lg font-bold text-onyx-700 -tracking-03 mb-0 mt-0">Cloud vs On-Premise
+                      Call Centers: Which is Right for You?</h3>
+                  </div>
+                  <div class="card-body-bottom">
+                    <div class="card-metadata d-flex align-items-center justify-content-start">
+                      <div
+                        class="card-date card-metadata-item plain-metadata px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
+                        <span class="icon-12">
+                          <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
+                        </span>
+                        June 6, 2025
+                      </div>
+                      <div
+                        class="card-readtime card-metadata-item plain-metadata px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                         <span class="icon-12">
                           <img src="assets/icons/clock_filled_gray_500.svg" alt="" />
                         </span>
@@ -576,134 +673,614 @@
       </div>
     </section>
 
-
-
-
-    <section class="atech-faqs segment-pt-120 segment-pb-200 bg-gray-50 position-relative">
-      <div class="atech-faqs-container container d-flex flex-column align-items-center">
-        <div
-          class="segment-heading heading-centered mx-auto d-flex align-items-center justify-content-center flex-column gap-8 position-relative">
-          <div class="segment-heading-top d-flex justify-content-center flex-column position-relative">
-            <h3
-              class="segment-heading-text text-7xl font-bold -tracking-02 text-onyx-700 position-relative after-ttl-border text-center mt-custom-2">
-              Frequently Asked Questions</h3>
+    <section class="atech-blogs-main position-relative segment-pb-120">
+      <div class="atech-blogs-main-container container">
+        <div class="blogs-main-head d-flex flex-column gap-6">
+          <h2 class="font-extrabold -tracking-03 text-6xl text-onyx-700">Browse by categories</h2>
+          <div class="blogs-cat-btns filters-button-group d-flex gap-2 align-items-center flex-wrap">
+            <button type="button"
+              class="blogs-cat-btn text-base font-semibold text-primary-500 bg-primary-50 text-center d-inline-flex align-items-center justify-content-center rounded-100vh py-custom-2 px-custom-6 text-nowrap is-checked"
+              data-filter="*">
+              All articles
+            </button>
+            <button type="button"
+              class="blogs-cat-btn text-base font-semibold text-primary-500 bg-primary-50 text-center d-inline-flex align-items-center justify-content-center rounded-100vh py-custom-2 px-custom-6 text-nowrap"
+              data-filter=".ai">
+              Artificial Intelligence
+            </button>
+            <button type="button"
+              class="blogs-cat-btn text-base font-semibold text-primary-500 bg-primary-50 text-center d-inline-flex align-items-center justify-content-center rounded-100vh py-custom-2 px-custom-6 text-nowrap"
+              data-filter=".customer_experience">
+              Customer Experience
+            </button>
+            <button type="button"
+              class="blogs-cat-btn text-base font-semibold text-primary-500 bg-primary-50 text-center d-inline-flex align-items-center justify-content-center rounded-100vh py-custom-2 px-custom-6 text-nowrap"
+              data-filter=".business_solutions">
+              Business Solutions
+            </button>
+            <button type="button"
+              class="blogs-cat-btn text-base font-semibold text-primary-500 bg-primary-50 text-center d-inline-flex align-items-center justify-content-center rounded-100vh py-custom-2 px-custom-6 text-nowrap"
+              data-filter=".smart_communication">
+              Smart communication
+            </button>
+            <button type="button"
+              class="blogs-cat-btn text-base font-semibold text-primary-500 bg-primary-50 text-center d-inline-flex align-items-center justify-content-center rounded-100vh py-custom-2 px-custom-6 text-nowrap"
+              data-filter=".technology">
+              Technology
+            </button>
           </div>
-          <div class="segment-heading-bottom text-lg font-medium remove-paragraph-padding content-stylings text-center">
-            Every project tells a story of innovation, collaboration, and growth. Here’s a look at the digital
-            transformations we’ve proudly delivered.</div>
         </div>
-        <div class="faqs-list mx-auto segment-mt-60 d-grid align-items-start gap-y-4 w-100">
-          <div class="faqs-item bg-white py-custom-6 px-custom-7 rounded-12 shadow-default">
-            <button type="button" class="faqs-item-head d-flex align-items-center justify-content-between gap-4 w-100"
-              data-bs-toggle="collapse" data-bs-target="#faqCollapse_01" aria-expanded="false"
-              aria-controls="faqCollapse_01">
-              <div
-                class="faqs-item-head-left d-flex align-items-center justify-content-start gap-x-3 text-xl font-semibold text-onyx-700">
-                01.
-                <p class="m-0 text-xl font-semibold text-onyx-700">What services does Aakastech offer?</p>
+
+        <div class="blogs-listing-grid row segment-mt-40">
+          <div class="projects-grid-item-wrapper col-md-6 col-lg-4 mb-custom-7 ai">
+            <div
+              class="card border-0 blog-card bg-white rounded-28 overflow-hidden p-custom-4 d-flex flex-column gap-3 position-relative shadow-primary-700-10 flex-1">
+              <div class="card-img border-0 rounded-20 overflow-hidden position-relative">
+                <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card1.png" alt="" />
+                <div class="card-tags d-flex flex-wrap gap-2 position-absolute">
+                  <span
+                    class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">Telephony
+                    system</span>
+                  <span
+                    class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">IVR</span>
+                </div>
               </div>
-              <span class="text-xl faqs-item-head-toggler">
-                <i class="fa-solid fa-plus"></i>
-                <i class="fa-solid fa-minus"></i>
-              </span>
-            </button>
-            <div class="faqs-item-body collapse" id="faqCollapse_01">
-              <div class="faqs-item-body-text content-stylings text-base font-medium text-onyx-400">Aakashtech provides
-                complete digital solutions including web design, web development, mobile app development, UI/UX design,
-                eCommerce platforms, and digital marketing. We also specialize in advanced services like AI integration,
-                blockchain development, and cloud-based systems.
-              </div>
-            </div>
-          </div>
-          <div class="faqs-item bg-white py-custom-6 px-custom-7 rounded-12 shadow-default">
-            <button type="button" class="faqs-item-head d-flex align-items-center justify-content-between gap-4 w-100"
-              data-bs-toggle="collapse" data-bs-target="#faqCollapse_02" aria-expanded="false"
-              aria-controls="faqCollapse_02">
-              <div
-                class="faqs-item-head-left d-flex align-items-center justify-content-start gap-x-3 text-xl font-semibold text-onyx-700">
-                02.
-                <p class="m-0 text-xl font-semibold text-onyx-700">How long does it take to develop a website?</p>
-              </div>
-              <span class="text-xl faqs-item-head-toggler">
-                <i class="fa-solid fa-plus"></i>
-                <i class="fa-solid fa-minus"></i>
-              </span>
-            </button>
-            <div class="faqs-item-body collapse" id="faqCollapse_02">
-              <div class="faqs-item-body-text content-stylings text-base font-medium text-onyx-400">Aakashtech provides
-                complete digital solutions including web design, web development, mobile app development, UI/UX design,
-                eCommerce platforms, and digital marketing. We also specialize in advanced services like AI integration,
-                blockchain development, and cloud-based systems.
-              </div>
-            </div>
-          </div>
-          <div class="faqs-item bg-white py-custom-6 px-custom-7 rounded-12 shadow-default">
-            <button type="button" class="faqs-item-head d-flex align-items-center justify-content-between gap-4 w-100"
-              data-bs-toggle="collapse" data-bs-target="#faqCollapse_03" aria-expanded="false"
-              aria-controls="faqCollapse_03">
-              <div
-                class="faqs-item-head-left d-flex align-items-center justify-content-start gap-x-3 text-xl font-semibold text-onyx-700">
-                03.
-                <p class="m-0 text-xl font-semibold text-onyx-700">Do you offer support and maintenance after launch?
-                </p>
-              </div>
-              <span class="text-xl faqs-item-head-toggler">
-                <i class="fa-solid fa-plus"></i>
-                <i class="fa-solid fa-minus"></i>
-              </span>
-            </button>
-            <div class="faqs-item-body collapse" id="faqCollapse_03">
-              <div class="faqs-item-body-text content-stylings text-base font-medium text-onyx-400">Aakashtech provides
-                complete digital solutions including web design, web development, mobile app development, UI/UX design,
-                eCommerce platforms, and digital marketing. We also specialize in advanced services like AI integration,
-                blockchain development, and cloud-based systems.
+              <div class="card-body p-custom-2">
+                <div class="card-body-top d-grid align-items-start gap-3">
+                  <h3 class="card-title text-xl font-bold text-onyx-700 -tracking-03 mb-0">Cloud vs On-Premise Call
+                    Centers: Which is Right for You?</h3>
+                  <div class="card-metadata d-flex align-items-center justify-content-between gap-4">
+                    <div class="card-author card-metadata-item d-flex align-items-center gap-3">
+                      <div class="card-author-img rounded-full icon-36 overflow-hidden">
+                        <img src="assets/images/misc/reviews_user_1.png" alt="" />
+                      </div>
+                      <span class="text-primary-500 font-semibold text-sm">Uttam Bhandary</span>
+                    </div>
+                    <div
+                      class="card-date card-metadata-item bg-primary-50 rounded-24 py-custom-2 px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-center">
+                      <span class="icon-12">
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
+                      </span>
+                      June 6, 2025
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content content-stylings my-custom-4 clamp-line-4">
+                  <p>Making the switch to the cloud? Learn the key differences between cloud-based and traditional
+                    on-premise call centers. We cover the pros, cons, costs, and long-term scalability to help you make
+                    an informed decision for your organization.</p>
+                </div>
+                <div class="card-body-bottom d-flex align-items-center justify-content-between gap-4">
+                  <a href="#" class="btn btn-link btn-link-primary-500">
+                    <span class="btn-text">Read More</span>
+                    <span class="btn-icon -rotate-45">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </a>
+                  <div class="card-links d-flex align-items-center gap-3 justify-content-end">
+                    <a href="#" class="card-link icon-16 mx-0">
+                      <img src="assets/icons/heart_outline_turquoise_icon.svg" alt="" />
+                    </a>
+                    <a href="#" class="card-link icon-16 mx-0">
+                      <img src="assets/icons/share_nodes_outline_primary_500_icon.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="faqs-item bg-white py-custom-6 px-custom-7 rounded-12 shadow-default">
-            <button type="button" class="faqs-item-head d-flex align-items-center justify-content-between gap-4 w-100"
-              data-bs-toggle="collapse" data-bs-target="#faqCollapse_04" aria-expanded="false"
-              aria-controls="faqCollapse_04">
-              <div
-                class="faqs-item-head-left d-flex align-items-center justify-content-start gap-x-3 text-xl font-semibold text-onyx-700">
-                04.
-                <p class="m-0 text-xl font-semibold text-onyx-700">Can Aakashtech redesign my existing website?</p>
+          <div class="projects-grid-item-wrapper col-md-6 col-lg-4 mb-custom-7 ai">
+            <div
+              class="card border-0 blog-card bg-white rounded-28 overflow-hidden p-custom-4 d-flex flex-column gap-3 position-relative shadow-primary-700-10 flex-1">
+              <div class="card-img border-0 rounded-20 overflow-hidden position-relative">
+                <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card2.png" alt="" />
+                <div class="card-tags d-flex flex-wrap gap-2 position-absolute">
+                  <span
+                    class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">Telephony
+                    system</span>
+                  <span
+                    class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">IVR</span>
+                </div>
               </div>
-              <span class="text-xl faqs-item-head-toggler">
-                <i class="fa-solid fa-plus"></i>
-                <i class="fa-solid fa-minus"></i>
-              </span>
-            </button>
-            <div class="faqs-item-body collapse" id="faqCollapse_04">
-              <div class="faqs-item-body-text content-stylings text-base font-medium text-onyx-400">Aakashtech provides
-                complete digital solutions including web design, web development, mobile app development, UI/UX design,
-                eCommerce platforms, and digital marketing. We also specialize in advanced services like AI integration,
-                blockchain development, and cloud-based systems.
+              <div class="card-body p-custom-2">
+                <div class="card-body-top d-grid align-items-start gap-3">
+                  <h3 class="card-title text-xl font-bold text-onyx-700 -tracking-03 mb-0">Cloud vs On-Premise Call
+                    Centers: Which is Right for You?</h3>
+                  <div class="card-metadata d-flex align-items-center justify-content-between gap-4">
+                    <div class="card-author card-metadata-item d-flex align-items-center gap-3">
+                      <div class="card-author-img rounded-full icon-36 overflow-hidden">
+                        <img src="assets/images/misc/reviews_user_1.png" alt="" />
+                      </div>
+                      <span class="text-primary-500 font-semibold text-sm">Uttam Bhandary</span>
+                    </div>
+                    <div
+                      class="card-date card-metadata-item bg-primary-50 rounded-24 py-custom-2 px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-center">
+                      <span class="icon-12">
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
+                      </span>
+                      June 6, 2025
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content content-stylings my-custom-4 clamp-line-4">
+                  <p>Making the switch to the cloud? Learn the key differences between cloud-based and traditional
+                    on-premise call centers. We cover the pros, cons, costs, and long-term scalability to help you make
+                    an informed decision for your organization.</p>
+                </div>
+                <div class="card-body-bottom d-flex align-items-center justify-content-between gap-4">
+                  <a href="#" class="btn btn-link btn-link-primary-500">
+                    <span class="btn-text">Read More</span>
+                    <span class="btn-icon -rotate-45">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </a>
+                  <div class="card-links d-flex align-items-center gap-3 justify-content-end">
+                    <a href="#" class="card-link icon-16 mx-0">
+                      <img src="assets/icons/heart_outline_turquoise_icon.svg" alt="" />
+                    </a>
+                    <a href="#" class="card-link icon-16 mx-0">
+                      <img src="assets/icons/share_nodes_outline_primary_500_icon.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="faqs-item bg-white py-custom-6 px-custom-7 rounded-12 shadow-default">
-            <button type="button" class="faqs-item-head d-flex align-items-center justify-content-between gap-4 w-100"
-              data-bs-toggle="collapse" data-bs-target="#faqCollapse_05" aria-expanded="false"
-              aria-controls="faqCollapse_05">
-              <div
-                class="faqs-item-head-left d-flex align-items-center justify-content-start gap-x-3 text-xl font-semibold text-onyx-700">
-                05.
-                <p class="m-0 text-xl font-semibold text-onyx-700">Does Aakashtech work with international clients?</p>
+          <div class="projects-grid-item-wrapper col-md-6 col-lg-4 mb-custom-7 ai">
+            <div
+              class="card border-0 blog-card bg-white rounded-28 overflow-hidden p-custom-4 d-flex flex-column gap-3 position-relative shadow-primary-700-10 flex-1">
+              <div class="card-img border-0 rounded-20 overflow-hidden position-relative">
+                <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card3.png" alt="" />
+                <div class="card-tags d-flex flex-wrap gap-2 position-absolute">
+                  <span
+                    class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">Telephony
+                    system</span>
+                  <span
+                    class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">IVR</span>
+                </div>
               </div>
-              <span class="text-xl faqs-item-head-toggler">
-                <i class="fa-solid fa-plus"></i>
-                <i class="fa-solid fa-minus"></i>
-              </span>
-            </button>
-            <div class="faqs-item-body collapse" id="faqCollapse_05">
-              <div class="faqs-item-body-text content-stylings text-base font-medium text-onyx-400">Aakashtech provides
-                complete digital solutions including web design, web development, mobile app development, UI/UX design,
-                eCommerce platforms, and digital marketing. We also specialize in advanced services like AI integration,
-                blockchain development, and cloud-based systems.
+              <div class="card-body p-custom-2">
+                <div class="card-body-top d-grid align-items-start gap-3">
+                  <h3 class="card-title text-xl font-bold text-onyx-700 -tracking-03 mb-0">Cloud vs On-Premise Call
+                    Centers: Which is Right for You?</h3>
+                  <div class="card-metadata d-flex align-items-center justify-content-between gap-4">
+                    <div class="card-author card-metadata-item d-flex align-items-center gap-3">
+                      <div class="card-author-img rounded-full icon-36 overflow-hidden">
+                        <img src="assets/images/misc/reviews_user_1.png" alt="" />
+                      </div>
+                      <span class="text-primary-500 font-semibold text-sm">Uttam Bhandary</span>
+                    </div>
+                    <div
+                      class="card-date card-metadata-item bg-primary-50 rounded-24 py-custom-2 px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-center">
+                      <span class="icon-12">
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
+                      </span>
+                      June 6, 2025
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content content-stylings my-custom-4 clamp-line-4">
+                  <p>Making the switch to the cloud? Learn the key differences between cloud-based and traditional
+                    on-premise call centers. We cover the pros, cons, costs, and long-term scalability to help you make
+                    an informed decision for your organization.</p>
+                </div>
+                <div class="card-body-bottom d-flex align-items-center justify-content-between gap-4">
+                  <a href="#" class="btn btn-link btn-link-primary-500">
+                    <span class="btn-text">Read More</span>
+                    <span class="btn-icon -rotate-45">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </a>
+                  <div class="card-links d-flex align-items-center gap-3 justify-content-end">
+                    <a href="#" class="card-link icon-16 mx-0">
+                      <img src="assets/icons/heart_outline_turquoise_icon.svg" alt="" />
+                    </a>
+                    <a href="#" class="card-link icon-16 mx-0">
+                      <img src="assets/icons/share_nodes_outline_primary_500_icon.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <div class="projects-grid-item-wrapper col-md-6 col-lg-4 mb-custom-7 ai">
+            <div
+              class="card border-0 blog-card bg-white rounded-28 overflow-hidden p-custom-4 d-flex flex-column gap-3 position-relative shadow-primary-700-10 flex-1">
+              <div class="card-img border-0 rounded-20 overflow-hidden position-relative">
+                <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card4.png" alt="" />
+                <div class="card-tags d-flex flex-wrap gap-2 position-absolute">
+                  <span
+                    class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">Telephony
+                    system</span>
+                  <span
+                    class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">IVR</span>
+                </div>
+              </div>
+              <div class="card-body p-custom-2">
+                <div class="card-body-top d-grid align-items-start gap-3">
+                  <h3 class="card-title text-xl font-bold text-onyx-700 -tracking-03 mb-0">Cloud vs On-Premise Call
+                    Centers: Which is Right for You?</h3>
+                  <div class="card-metadata d-flex align-items-center justify-content-between gap-4">
+                    <div class="card-author card-metadata-item d-flex align-items-center gap-3">
+                      <div class="card-author-img rounded-full icon-36 overflow-hidden">
+                        <img src="assets/images/misc/reviews_user_1.png" alt="" />
+                      </div>
+                      <span class="text-primary-500 font-semibold text-sm">Uttam Bhandary</span>
+                    </div>
+                    <div
+                      class="card-date card-metadata-item bg-primary-50 rounded-24 py-custom-2 px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-center">
+                      <span class="icon-12">
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
+                      </span>
+                      June 6, 2025
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content content-stylings my-custom-4 clamp-line-4">
+                  <p>Making the switch to the cloud? Learn the key differences between cloud-based and traditional
+                    on-premise call centers. We cover the pros, cons, costs, and long-term scalability to help you make
+                    an informed decision for your organization.</p>
+                </div>
+                <div class="card-body-bottom d-flex align-items-center justify-content-between gap-4">
+                  <a href="#" class="btn btn-link btn-link-primary-500">
+                    <span class="btn-text">Read More</span>
+                    <span class="btn-icon -rotate-45">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </a>
+                  <div class="card-links d-flex align-items-center gap-3 justify-content-end">
+                    <a href="#" class="card-link icon-16 mx-0">
+                      <img src="assets/icons/heart_outline_turquoise_icon.svg" alt="" />
+                    </a>
+                    <a href="#" class="card-link icon-16 mx-0">
+                      <img src="assets/icons/share_nodes_outline_primary_500_icon.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projects-grid-item-wrapper col-md-6 col-lg-4 mb-custom-7 customer_experience">
+            <div
+              class="card border-0 blog-card bg-white rounded-28 overflow-hidden p-custom-4 d-flex flex-column gap-3 position-relative shadow-primary-700-10 flex-1">
+              <div class="card-img border-0 rounded-20 overflow-hidden position-relative">
+                <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card5.png" alt="" />
+                <div class="card-tags d-flex flex-wrap gap-2 position-absolute">
+                  <span
+                    class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">Telephony
+                    system</span>
+                  <span
+                    class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">IVR</span>
+                </div>
+              </div>
+              <div class="card-body p-custom-2">
+                <div class="card-body-top d-grid align-items-start gap-3">
+                  <h3 class="card-title text-xl font-bold text-onyx-700 -tracking-03 mb-0">Cloud vs On-Premise Call
+                    Centers: Which is Right for You?</h3>
+                  <div class="card-metadata d-flex align-items-center justify-content-between gap-4">
+                    <div class="card-author card-metadata-item d-flex align-items-center gap-3">
+                      <div class="card-author-img rounded-full icon-36 overflow-hidden">
+                        <img src="assets/images/misc/reviews_user_1.png" alt="" />
+                      </div>
+                      <span class="text-primary-500 font-semibold text-sm">Uttam Bhandary</span>
+                    </div>
+                    <div
+                      class="card-date card-metadata-item bg-primary-50 rounded-24 py-custom-2 px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-center">
+                      <span class="icon-12">
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
+                      </span>
+                      June 6, 2025
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content content-stylings my-custom-4 clamp-line-4">
+                  <p>Making the switch to the cloud? Learn the key differences between cloud-based and traditional
+                    on-premise call centers. We cover the pros, cons, costs, and long-term scalability to help you make
+                    an informed decision for your organization.</p>
+                </div>
+                <div class="card-body-bottom d-flex align-items-center justify-content-between gap-4">
+                  <a href="#" class="btn btn-link btn-link-primary-500">
+                    <span class="btn-text">Read More</span>
+                    <span class="btn-icon -rotate-45">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </a>
+                  <div class="card-links d-flex align-items-center gap-3 justify-content-end">
+                    <a href="#" class="card-link icon-16 mx-0">
+                      <img src="assets/icons/heart_outline_turquoise_icon.svg" alt="" />
+                    </a>
+                    <a href="#" class="card-link icon-16 mx-0">
+                      <img src="assets/icons/share_nodes_outline_primary_500_icon.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projects-grid-item-wrapper col-md-6 col-lg-4 mb-custom-7 business_solutions">
+            <div
+              class="card border-0 blog-card bg-white rounded-28 overflow-hidden p-custom-4 d-flex flex-column gap-3 position-relative shadow-primary-700-10 flex-1">
+              <div class="card-img border-0 rounded-20 overflow-hidden position-relative">
+                <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card6.png" alt="" />
+                <div class="card-tags d-flex flex-wrap gap-2 position-absolute">
+                  <span
+                    class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">Telephony
+                    system</span>
+                  <span
+                    class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">IVR</span>
+                </div>
+              </div>
+              <div class="card-body p-custom-2">
+                <div class="card-body-top d-grid align-items-start gap-3">
+                  <h3 class="card-title text-xl font-bold text-onyx-700 -tracking-03 mb-0">Cloud vs On-Premise Call
+                    Centers: Which is Right for You?</h3>
+                  <div class="card-metadata d-flex align-items-center justify-content-between gap-4">
+                    <div class="card-author card-metadata-item d-flex align-items-center gap-3">
+                      <div class="card-author-img rounded-full icon-36 overflow-hidden">
+                        <img src="assets/images/misc/reviews_user_1.png" alt="" />
+                      </div>
+                      <span class="text-primary-500 font-semibold text-sm">Uttam Bhandary</span>
+                    </div>
+                    <div
+                      class="card-date card-metadata-item bg-primary-50 rounded-24 py-custom-2 px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-center">
+                      <span class="icon-12">
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
+                      </span>
+                      June 6, 2025
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content content-stylings my-custom-4 clamp-line-4">
+                  <p>Making the switch to the cloud? Learn the key differences between cloud-based and traditional
+                    on-premise call centers. We cover the pros, cons, costs, and long-term scalability to help you make
+                    an informed decision for your organization.</p>
+                </div>
+                <div class="card-body-bottom d-flex align-items-center justify-content-between gap-4">
+                  <a href="#" class="btn btn-link btn-link-primary-500">
+                    <span class="btn-text">Read More</span>
+                    <span class="btn-icon -rotate-45">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </a>
+                  <div class="card-links d-flex align-items-center gap-3 justify-content-end">
+                    <a href="#" class="card-link icon-16 mx-0">
+                      <img src="assets/icons/heart_outline_turquoise_icon.svg" alt="" />
+                    </a>
+                    <a href="#" class="card-link icon-16 mx-0">
+                      <img src="assets/icons/share_nodes_outline_primary_500_icon.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projects-grid-item-wrapper col-md-6 col-lg-4 mb-custom-7 smart_communication">
+            <div
+              class="card border-0 blog-card bg-white rounded-28 overflow-hidden p-custom-4 d-flex flex-column gap-3 position-relative shadow-primary-700-10 flex-1">
+              <div class="card-img border-0 rounded-20 overflow-hidden position-relative">
+                <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card7.png" alt="" />
+                <div class="card-tags d-flex flex-wrap gap-2 position-absolute">
+                  <span
+                    class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">Telephony
+                    system</span>
+                  <span
+                    class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">IVR</span>
+                </div>
+              </div>
+              <div class="card-body p-custom-2">
+                <div class="card-body-top d-grid align-items-start gap-3">
+                  <h3 class="card-title text-xl font-bold text-onyx-700 -tracking-03 mb-0">Cloud vs On-Premise Call
+                    Centers: Which is Right for You?</h3>
+                  <div class="card-metadata d-flex align-items-center justify-content-between gap-4">
+                    <div class="card-author card-metadata-item d-flex align-items-center gap-3">
+                      <div class="card-author-img rounded-full icon-36 overflow-hidden">
+                        <img src="assets/images/misc/reviews_user_1.png" alt="" />
+                      </div>
+                      <span class="text-primary-500 font-semibold text-sm">Uttam Bhandary</span>
+                    </div>
+                    <div
+                      class="card-date card-metadata-item bg-primary-50 rounded-24 py-custom-2 px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-center">
+                      <span class="icon-12">
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
+                      </span>
+                      June 6, 2025
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content content-stylings my-custom-4 clamp-line-4">
+                  <p>Making the switch to the cloud? Learn the key differences between cloud-based and traditional
+                    on-premise call centers. We cover the pros, cons, costs, and long-term scalability to help you make
+                    an informed decision for your organization.</p>
+                </div>
+                <div class="card-body-bottom d-flex align-items-center justify-content-between gap-4">
+                  <a href="#" class="btn btn-link btn-link-primary-500">
+                    <span class="btn-text">Read More</span>
+                    <span class="btn-icon -rotate-45">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </a>
+                  <div class="card-links d-flex align-items-center gap-3 justify-content-end">
+                    <a href="#" class="card-link icon-16 mx-0">
+                      <img src="assets/icons/heart_outline_turquoise_icon.svg" alt="" />
+                    </a>
+                    <a href="#" class="card-link icon-16 mx-0">
+                      <img src="assets/icons/share_nodes_outline_primary_500_icon.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projects-grid-item-wrapper col-md-6 col-lg-4 mb-custom-7 technology">
+            <div
+              class="card border-0 blog-card bg-white rounded-28 overflow-hidden p-custom-4 d-flex flex-column gap-3 position-relative shadow-primary-700-10 flex-1">
+              <div class="card-img border-0 rounded-20 overflow-hidden position-relative">
+                <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card8.png" alt="" />
+                <div class="card-tags d-flex flex-wrap gap-2 position-absolute">
+                  <span
+                    class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">Telephony
+                    system</span>
+                  <span
+                    class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">IVR</span>
+                </div>
+              </div>
+              <div class="card-body p-custom-2">
+                <div class="card-body-top d-grid align-items-start gap-3">
+                  <h3 class="card-title text-xl font-bold text-onyx-700 -tracking-03 mb-0">Cloud vs On-Premise Call
+                    Centers: Which is Right for You?</h3>
+                  <div class="card-metadata d-flex align-items-center justify-content-between gap-4">
+                    <div class="card-author card-metadata-item d-flex align-items-center gap-3">
+                      <div class="card-author-img rounded-full icon-36 overflow-hidden">
+                        <img src="assets/images/misc/reviews_user_1.png" alt="" />
+                      </div>
+                      <span class="text-primary-500 font-semibold text-sm">Uttam Bhandary</span>
+                    </div>
+                    <div
+                      class="card-date card-metadata-item bg-primary-50 rounded-24 py-custom-2 px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-center">
+                      <span class="icon-12">
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
+                      </span>
+                      June 6, 2025
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content content-stylings my-custom-4 clamp-line-4">
+                  <p>Making the switch to the cloud? Learn the key differences between cloud-based and traditional
+                    on-premise call centers. We cover the pros, cons, costs, and long-term scalability to help you make
+                    an informed decision for your organization.</p>
+                </div>
+                <div class="card-body-bottom d-flex align-items-center justify-content-between gap-4">
+                  <a href="#" class="btn btn-link btn-link-primary-500">
+                    <span class="btn-text">Read More</span>
+                    <span class="btn-icon -rotate-45">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </a>
+                  <div class="card-links d-flex align-items-center gap-3 justify-content-end">
+                    <a href="#" class="card-link icon-16 mx-0">
+                      <img src="assets/icons/heart_outline_turquoise_icon.svg" alt="" />
+                    </a>
+                    <a href="#" class="card-link icon-16 mx-0">
+                      <img src="assets/icons/share_nodes_outline_primary_500_icon.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projects-grid-item-wrapper col-md-6 col-lg-4 mb-custom-7 ai">
+            <div
+              class="card border-0 blog-card bg-white rounded-28 overflow-hidden p-custom-4 d-flex flex-column gap-3 position-relative shadow-primary-700-10 flex-1">
+              <div class="card-img border-0 rounded-20 overflow-hidden position-relative">
+                <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card9.png" alt="" />
+                <div class="card-tags d-flex flex-wrap gap-2 position-absolute">
+                  <span
+                    class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">Telephony
+                    system</span>
+                  <span
+                    class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">IVR</span>
+                </div>
+              </div>
+              <div class="card-body p-custom-2">
+                <div class="card-body-top d-grid align-items-start gap-3">
+                  <h3 class="card-title text-xl font-bold text-onyx-700 -tracking-03 mb-0">Cloud vs On-Premise Call
+                    Centers: Which is Right for You?</h3>
+                  <div class="card-metadata d-flex align-items-center justify-content-between gap-4">
+                    <div class="card-author card-metadata-item d-flex align-items-center gap-3">
+                      <div class="card-author-img rounded-full icon-36 overflow-hidden">
+                        <img src="assets/images/misc/reviews_user_1.png" alt="" />
+                      </div>
+                      <span class="text-primary-500 font-semibold text-sm">Uttam Bhandary</span>
+                    </div>
+                    <div
+                      class="card-date card-metadata-item bg-primary-50 rounded-24 py-custom-2 px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-center">
+                      <span class="icon-12">
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
+                      </span>
+                      June 6, 2025
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content content-stylings my-custom-4 clamp-line-4">
+                  <p>Making the switch to the cloud? Learn the key differences between cloud-based and traditional
+                    on-premise call centers. We cover the pros, cons, costs, and long-term scalability to help you make
+                    an informed decision for your organization.</p>
+                </div>
+                <div class="card-body-bottom d-flex align-items-center justify-content-between gap-4">
+                  <a href="#" class="btn btn-link btn-link-primary-500">
+                    <span class="btn-text">Read More</span>
+                    <span class="btn-icon -rotate-45">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                  </a>
+                  <div class="card-links d-flex align-items-center gap-3 justify-content-end">
+                    <a href="#" class="card-link icon-16 mx-0">
+                      <img src="assets/icons/heart_outline_turquoise_icon.svg" alt="" />
+                    </a>
+                    <a href="#" class="card-link icon-16 mx-0">
+                      <img src="assets/icons/share_nodes_outline_primary_500_icon.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav class="blogs-pagination pagination-block d-flex align-items-center justify-content-center" aria-label="Blogs navigation pagination">
+          <ul class="pagination rounded-100vh p-custom-3 gap-4">
+            <li class="page-item">
+              <a class="page-link page-link-num d-inline-flex align-items-center justify-content-center text-base font-semibold text-center text-onyx-700 rounded-full" disabled href="#" aria-label="Previous">
+                <i class="fa-solid fa-chevron-left"></i>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link active d-inline-flex align-items-center justify-content-center text-base font-semibold text-center text-onyx-700 rounded-full" href="#">1</a></li>
+            <li class="page-item"><a class="page-link d-inline-flex align-items-center justify-content-center text-base font-semibold text-center text-onyx-700 rounded-full" href="#">2</a></li>
+            <li class="page-item"><a class="page-link d-inline-flex align-items-center justify-content-center text-base font-semibold text-center text-onyx-700 rounded-full" href="#">3</a></li>
+            <li class="page-item"><a class="page-link d-inline-flex align-items-center justify-content-center text-base font-semibold text-center text-onyx-700 rounded-full" href="#">4</a></li>
+            <li class="page-item"><a class="page-link d-inline-flex align-items-center justify-content-center text-base font-semibold text-center text-onyx-700 rounded-full" href="#">5</a></li>
+            <li class="page-item"><a class="page-link d-inline-flex align-items-center justify-content-center text-base font-semibold text-center text-onyx-700 rounded-full" href="#">6</a></li>
+            <li class="page-item"><a class="page-link d-inline-flex align-items-center justify-content-center text-base font-semibold text-center text-onyx-700 rounded-full" href="#">7</a></li>
+            <li class="page-item"><a class="page-link d-inline-flex align-items-center justify-content-center text-base font-semibold text-center text-onyx-700 rounded-full" href="#">8</a></li>
+            <li class="page-item"><a class="page-link d-inline-flex align-items-center justify-content-center text-base font-semibold text-center text-onyx-700 rounded-full" href="#">9</a></li>
+            <li class="page-item">
+              <a class="page-link page-link-num d-inline-flex align-items-center justify-content-center text-base font-semibold text-center text-onyx-700 rounded-full" href="#" aria-label="Next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class="atech-cta-two cta-variant-one segment-pt-100">
+      <div class="atech-cta-two-container container">
+        <div
+          class="cta-block text-center d-flex flex-column align-items-center justify-content-center mx-auto w-100 gap-10">
+          <div class="cta-block-content mx-auto w-100">
+            <h2 class="cta-block-ttl text-onyx-700 text-7xl-mid font-extrabold mb-custom-5">Your <span
+                class="text-primary-500 px-custom-1">Project</span>, Our <span
+                class="text-primary-500 px-custom-1">Expertise</span></h2>
+            <p class="cta-block-text mb-0 text-onyx-600 font-semibold text-xl">From digital strategy to design and
+              development, we’re here to help with any project you have in mind.</p>
+          </div>
+          <div class="d-flex flex-wrap align-items-center justify-content-center gap-4">
+            <a href="#" class="btn btn-xl btn-primary-white btn-rounded btn-quarter-wide">
+              <span class="btn-text">Start a Project</span>
+              <span class="btn-icon">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
+            <a href="#" class="btn btn-xl btn-white-primary btn-rounded btn-quarter-wide">
+              <span class="btn-text">Start a Project</span>
+              <span class="btn-icon">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="cta-banner">
+          <img src="assets/images/misc/cta_grid_bg.png" alt="" />
         </div>
       </div>
     </section>
@@ -956,6 +1533,37 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- CUSTOM JS -->
   <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Initialize Isotope
+      var iso = new Isotope('.blogs-listing-grid', {
+        itemSelector: '.projects-grid-item-wrapper',
+        layoutMode: 'fitRows'
+      });
+
+      // Filter buttons group
+      var filtersElem = document.querySelector('.filters-button-group');
+      var filterButtons = filtersElem.querySelectorAll('button');
+
+      filtersElem.addEventListener('click', function (event) {
+        var target = event.target.closest('button');
+        if (!target) return;
+
+        // Get filter value
+        var filterValue = target.getAttribute('data-filter');
+        iso.arrange({ filter: filterValue });
+
+        // Remove .is-checked from all buttons
+        filterButtons.forEach(function (btn) {
+          btn.classList.remove('is-checked');
+        });
+
+        // Add .is-checked to clicked button
+        target.classList.add('is-checked');
+      });
+
+    });
+  </script>
 </body>
 
 </html>

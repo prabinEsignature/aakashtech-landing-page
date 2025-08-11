@@ -3,30 +3,58 @@
 @use "../abstracts/mixins" as *;
 @use "sass:color";
 
-.card{
-  &.blog-card{
-    &.card-lg{
-      .card-img{
+.card {
+  &.blog-card {
+    &.card-lg {
+      .card-img {
         height: 408px;
       }
     }
 
-    .card-tags{
+    &.card-horizontal {
+      grid-template-columns: 240px auto;
+
+      .card-img {
+        height: 210px;
+      }
+
+      .card-body {
+        padding: 28px 0 28px 28px !important;
+      }
+    }
+
+    .card-img {
+      height: 278px;
+    }
+
+    .card-tags {
       left: 12px;
       bottom: 12px;
 
-      .card-tag-item{
-        &:nth-child(1){
+      .card-tag-item {
+        &:nth-child(1) {
           background: rgba(12, 214, 138, 0.8);
         }
 
-        &:nth-child(2){
+        &:nth-child(2) {
           background: rgba(253, 52, 110, 0.8);
         }
       }
     }
 
-    .card-metadata{
+    .card-metadata {
+      &-item {
+        &.plain-metadata {
+          &:first-child {
+            padding-left: 0 !important;
+          }
+
+          &:last-child {
+            padding-right: 0 !important;
+            border-right: 0 !important;
+          }
+        }
+      }
     }
   }
 }
