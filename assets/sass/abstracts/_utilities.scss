@@ -283,7 +283,7 @@ $rotations: (
 
 // Generate Border Radius Utilities for Even Numbers Only
 @mixin generate-border-radius-classes($prefix) {
-  @for $i from 0 through 24 {
+  @for $i from 0 through 28 {
     @if $i % 2 == 0 {
       .#{$prefix}-#{$i} {
         border-radius: #{$i}px !important;
@@ -661,6 +661,7 @@ $shadows: (
   "inner": inset 0 2px 4px 0 rgba(0, 0, 0, 0.05),
   "menu": 0 8px 16px 0 rgba(149, 157, 165, 0.1),
   "light-brand-2": 0 20px 60px -12px rgba(33, 91, 128, 0.12),
+  "primary-700-10": 0 7px 29px 0 rgba(33, 91, 128, 0.1),
   "none": none
 );
 

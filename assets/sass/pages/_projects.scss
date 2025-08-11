@@ -8,22 +8,6 @@
 }
 
 .atech-projects-showcase {
-  .projects-showcase {
-    &-search {
-      height: 60px;
-      max-width: 540px;
-
-      input {
-        &.form-control {
-          &::placeholder {
-            color: color("onyx-300");
-            font-weight: 500;
-          }
-        }
-      }
-    }
-  }
-
   .projects-btns-slider-wrapper {
     padding-left: 72px;
     padding-right: 72px;

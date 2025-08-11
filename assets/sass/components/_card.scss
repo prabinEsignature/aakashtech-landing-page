@@ -1,3 +1,32 @@
 @use "../abstracts/colors" as *;
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
+@use "sass:color";
+
+.card{
+  &.blog-card{
+    &.card-lg{
+      .card-img{
+        height: 408px;
+      }
+    }
+
+    .card-tags{
+      left: 12px;
+      bottom: 12px;
+
+      .card-tag-item{
+        &:nth-child(1){
+          background: rgba(12, 214, 138, 0.8);
+        }
+
+        &:nth-child(2){
+          background: rgba(253, 52, 110, 0.8);
+        }
+      }
+    }
+
+    .card-metadata{
+    }
+  }
+}
