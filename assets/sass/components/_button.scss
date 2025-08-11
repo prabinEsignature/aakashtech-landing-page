@@ -71,6 +71,12 @@ $button-link-variants: (
     icon: color("white"),
     hover-text-color: color.adjust(color("white"), $lightness: 10%),
     hover-icon-color: color.adjust(color("white"), $lightness: 10%)
+  ),
+  "gray-700": (
+    text: color("gray-700"),
+    icon: color("onyx-700"),
+    hover-text-color: color.adjust(color("gray-700"), $lightness: 10%),
+    hover-icon-color: color.adjust(color("onyx-700"), $lightness: 10%)
   )
 );
 

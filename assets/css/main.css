@@ -26294,8 +26294,27 @@ a:visited, a:link {
   bottom: 0;
 }
 
+.atech-project-appscreens .appscreens-slider .swiper-wrapper {
+  padding-bottom: 60px;
+}
 .atech-project-appscreens .appscreens-slider .swiper-slide {
   max-width: 880px;
+}
+
+.atech-project-traverse .project-traverse-img {
+  max-height: 168px;
+}
+.atech-project-traverse .project-traverse-prev {
+  grid-template-columns: 200px auto;
+}
+.atech-project-traverse .project-traverse-next {
+  grid-template-columns: auto 200px;
+}
+.atech-project-traverse .project-traverse-ttl {
+  transition: all ease-in-out 300ms;
+}
+.atech-project-traverse .project-traverse-ttl:hover {
+  color: #3797d5 !important;
 }
 
 .scrollbar-x {
@@ -26689,6 +26708,25 @@ Output
 }
 .btn-link-white:hover .btn-icon {
   color: hsl(0, 0%, 110%) !important;
+}
+
+.btn-link-gray-700 {
+  color: #414651 !important;
+}
+.btn-link-gray-700 .btn-text {
+  color: #414651 !important;
+}
+.btn-link-gray-700 .btn-icon {
+  color: #262626 !important;
+}
+.btn-link-gray-700:hover {
+  color: rgb(87.7054794521, 94.4520547945, 109.2945205479) !important;
+}
+.btn-link-gray-700:hover .btn-text {
+  color: rgb(87.7054794521, 94.4520547945, 109.2945205479) !important;
+}
+.btn-link-gray-700:hover .btn-icon {
+  color: rgb(63.5, 63.5, 63.5) !important;
 }
 
 .icon-btn {
