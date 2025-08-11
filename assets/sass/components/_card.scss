@@ -41,20 +41,18 @@
         }
       }
     }
+  }
+}
 
-    .card-metadata {
-      &-item {
-        &.plain-metadata {
-          &:first-child {
-            padding-left: 0 !important;
-          }
+.card-metadata {
+  &-item {
+    &:first-child {
+      padding-left: 0 !important;
+    }
 
-          &:last-child {
-            padding-right: 0 !important;
-            border-right: 0 !important;
-          }
-        }
-      }
+    &:last-child {
+      padding-right: 0 !important;
+      border-right: 0 !important;
     }
   }
 }

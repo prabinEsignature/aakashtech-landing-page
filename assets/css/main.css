@@ -26037,7 +26037,7 @@ h6.text-8xl {
 h1,
 .h1,
 .h1 {
-  font-size: 32px;
+  font-size: 40px;
   margin-bottom: 0;
   font-family: "DM Sans", sans-serif;
   font-weight: 700 !important;
@@ -26049,7 +26049,7 @@ h1,
 h2,
 .h2,
 .h2 {
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 0;
   font-family: "DM Sans", sans-serif;
   font-weight: 700 !important;
@@ -26061,7 +26061,7 @@ h2,
 h3,
 .h3,
 .h3 {
-  font-size: 18.72px;
+  font-size: 28px;
   margin-bottom: 0;
   font-family: "DM Sans", sans-serif;
   font-weight: 700 !important;
@@ -26073,7 +26073,7 @@ h3,
 h4,
 .h4,
 .h4 {
-  font-size: 16px;
+  font-size: 24px;
   margin-bottom: 0;
   font-family: "DM Sans", sans-serif;
   font-weight: 700 !important;
@@ -26085,7 +26085,7 @@ h4,
 h5,
 .h5,
 .h5 {
-  font-size: 13.28px;
+  font-size: 20px;
   margin-bottom: 0;
   font-family: "DM Sans", sans-serif;
   font-weight: 700 !important;
@@ -26097,7 +26097,7 @@ h5,
 h6,
 .h6,
 .h6 {
-  font-size: 10.72px;
+  font-size: 17.6px;
   margin-bottom: 0;
   font-family: "DM Sans", sans-serif;
   font-weight: 700 !important;
@@ -27779,10 +27779,11 @@ table td {
 .card.blog-card .card-tags .card-tag-item:nth-child(2) {
   background: rgba(253, 52, 110, 0.8);
 }
-.card.blog-card .card-metadata-item.plain-metadata:first-child {
+
+.card-metadata-item:first-child {
   padding-left: 0 !important;
 }
-.card.blog-card .card-metadata-item.plain-metadata:last-child {
+.card-metadata-item:last-child {
   padding-right: 0 !important;
   border-right: 0 !important;
 }
@@ -28458,4 +28459,9 @@ table td {
 
 .atech-download-showcase .download-showcase-grid {
   gap: 80px;
+}
+
+.atech-blog-detail-banner {
+  margin-top: 90px;
+  background: linear-gradient(#D5E9F6 0%, #ECF3F9 33%, #FFFFFF 67%, #FFFFFF 100%);
 }/*# sourceMappingURL=main.css.map */
