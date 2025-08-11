@@ -28440,4 +28440,22 @@ table td {
 .atech-blogs-main .blogs-cat-btn.is-checked {
   background: linear-gradient(to bottom, #5facdd, #3797d5);
   color: #ffffff !important;
+}
+
+.atech-download-showcase {
+  min-height: 880px;
+}
+.atech-download-showcase::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #D5E9F6 0%, #ECF3F9 25%, #EEF5F9 74%, #D5E9F6 100%);
+  opacity: 0.8;
+}
+
+.atech-download-showcase .download-showcase-grid {
+  gap: 80px;
 }/*# sourceMappingURL=main.css.map */
