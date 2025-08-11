@@ -177,3 +177,31 @@
     transform: translate(-24px, -50%);
   }
 }
+
+
+
+
+
+.atech-cta-two {
+  &.cta-variant-two{
+    min-height: auto;
+    margin-bottom: auto;
+
+    .cta-block-floating-img{
+      height: 100%;
+      width: 100%;
+      max-width: 534px;
+      max-height: 360px;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.atech-project-appscreens{
+  .appscreens-slider{
+    .swiper-slide{
+      max-width: 880px;
+    }
+  }
+}

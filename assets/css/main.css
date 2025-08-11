@@ -26281,6 +26281,23 @@ a:visited, a:link {
   transform: translate(-24px, -50%);
 }
 
+.atech-cta-two.cta-variant-two {
+  min-height: auto;
+  margin-bottom: auto;
+}
+.atech-cta-two.cta-variant-two .cta-block-floating-img {
+  height: 100%;
+  width: 100%;
+  max-width: 534px;
+  max-height: 360px;
+  left: 0;
+  bottom: 0;
+}
+
+.atech-project-appscreens .appscreens-slider .swiper-slide {
+  max-width: 880px;
+}
+
 .scrollbar-x {
   overflow-x: scroll;
 }
@@ -28013,6 +28030,7 @@ table td {
   background-position: center top;
   position: relative;
   z-index: 5;
+  margin-top: -120px;
 }
 .atech-newsletter .newsletter-top {
   max-width: 600px;
