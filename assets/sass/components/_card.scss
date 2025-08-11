@@ -5,6 +5,11 @@
 
 .card {
   &.blog-card {
+    transition: $default-transition;
+    &:hover{
+      background: color("primary-50")!important;
+    }
+
     &.card-lg {
       .card-img {
         height: 408px;

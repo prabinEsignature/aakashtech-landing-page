@@ -27754,6 +27754,12 @@ table td {
   transition: all ease-in-out 300ms;
 }
 
+.card.blog-card {
+  transition: all ease-in-out 300ms;
+}
+.card.blog-card:hover {
+  background: #ebf5fb !important;
+}
 .card.blog-card.card-lg .card-img {
   height: 408px;
 }
@@ -28464,4 +28470,9 @@ table td {
 .atech-blog-detail-banner {
   margin-top: 90px;
   background: linear-gradient(#D5E9F6 0%, #ECF3F9 33%, #FFFFFF 67%, #FFFFFF 100%);
+}
+
+.atech-blog-detail-main-container {
+  grid-template-columns: 350px auto;
+  gap: 48px;
 }/*# sourceMappingURL=main.css.map */
