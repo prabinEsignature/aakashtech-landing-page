@@ -168,7 +168,7 @@
   }
 
   .posts-widget {
-    &-item{
+    &-item {
       padding: 10px;
     }
     .widget-item {
@@ -180,12 +180,12 @@
     }
   }
 
-  .contacts-widget{
+  .contacts-widget {
     height: 284px;
-    
-    &::after{
+
+    &::after {
       content: "";
-      background: linear-gradient(to bottom, #3797D5, #000000);
+      background: linear-gradient(to bottom, #3797d5, #000000);
       position: absolute;
       top: 0;
       left: 0;
@@ -193,5 +193,18 @@
       height: 100%;
       opacity: 50%;
     }
+  }
+}
+
+.blog-traverse {
+  &-prev {
+    grid-template-columns: 120px auto;
+  }
+  &-next {
+    grid-template-columns: auto 120px;
+  }
+
+  &-img {
+    height: 100px;
   }
 }

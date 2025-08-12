@@ -29184,11 +29184,21 @@ table td {
 }
 .blog-detail-widgets .contacts-widget::after {
   content: "";
-  background: linear-gradient(to bottom, #3797D5, #000000);
+  background: linear-gradient(to bottom, #3797d5, #000000);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   opacity: 50%;
+}
+
+.blog-traverse-prev {
+  grid-template-columns: 120px auto;
+}
+.blog-traverse-next {
+  grid-template-columns: auto 120px;
+}
+.blog-traverse-img {
+  height: 100px;
 }/*# sourceMappingURL=main.css.map */
