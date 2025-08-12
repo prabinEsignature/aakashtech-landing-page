@@ -4,8 +4,7 @@
 
 .atech-projects-banner {
   margin-top: 90px;
-  background: url($img-path + "projects/projects_banner_bg.png") top/cover
-    no-repeat;
+  background: url($img-path + "projects/projects_banner_bg.png") top/cover no-repeat;
 }
 
 .atech-projects-showcase {
@@ -60,7 +59,8 @@
 }
 
 .atech-our-clients {
-  background: linear-gradient(#ebf5fb42, #d7eaf7c9),
+  background:
+    linear-gradient(#ebf5fb42, #d7eaf7c9),
     url($img-path + "misc/our_clients_bg.png") top/cover no-repeat;
 
   .honeycomb {
@@ -116,8 +116,7 @@
   margin-bottom: -100px;
 
   .cta-block {
-    background: url($img-path + "misc/spiral_ripple_bg.png") center/cover
-      no-repeat;
+    background: url($img-path + "misc/spiral_ripple_bg.png") center/cover no-repeat;
     padding: 60px;
     border-radius: 40px;
     max-width: 1320px;
@@ -134,8 +133,7 @@
 }
 
 .atech-project-single-banner {
-  background: url($img-path + "projects/product_details_banner_bg.png")
-    top/cover no-repeat;
+  background: url($img-path + "projects/product_details_banner_bg.png") top/cover no-repeat;
   margin-top: 90px;
   position: relative;
   overflow-x: clip;
@@ -148,13 +146,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-      120deg,
-      #3797d5 0%,
-      #176aa0 50%,
-      #3797d5 75%,
-      rgba(55, 151, 213, 0.8) 100%
-    );
+    background: linear-gradient(120deg, #3797d5 0%, #176aa0 50%, #3797d5 75%, rgba(55, 151, 213, 0.8) 100%);
     border-radius: 0 0 50% 50%/0 0 100% 100%;
     transform: scaleX(2);
     z-index: -1;
@@ -169,6 +161,13 @@
     }
     &-img {
       padding: 44px 0;
+    }
+  }
+
+
+  &.project-single-wide{
+    .project-single-banner-info{
+      max-width: 880px;
     }
   }
 }
@@ -205,12 +204,7 @@
           width: 100%;
           height: 100%;
           border-radius: 12px;
-          background: linear-gradient(
-            to right,
-            #c3e0f2 0%,
-            #dfedf6 50%,
-            #fafafa 100%
-          );
+          background: linear-gradient(to right, #c3e0f2 0%, #dfedf6 50%, #fafafa 100%);
           z-index: -1;
         }
       }
@@ -249,12 +243,63 @@
   }
 }
 
-.atech-project-stats{
-  .project-stats-access{
+.atech-project-stats {
+  .project-stats-access {
     border-radius: 28px;
   }
 
-  .stats-access-grid{
+  .stats-access-grid {
     grid-template-columns: auto 200px;
+  }
+
+  .project-stats-info {
+    .stats-info-block {
+      &:nth-child(2) {
+        border: 1px solid color("primary-500")!important;
+        background: color("white")!important;
+      }
+
+      &:nth-child(4){
+        background: color("primary-500")!important;
+
+        .stats-info-block-ttl{
+          color: color("white")!important;
+        }
+
+        .stats-info-block-text{
+          color: color("gray-50")!important;
+        }
+      }
+    }
+  }
+}
+
+.atech-customer-exp{
+  .customer-exp{
+    &-heading{
+      max-width: 550px;
+    }
+
+    &-item{
+      width: calc(50% - 8px);
+
+      &-img{
+        width: 112px;
+        height: 112px;
+        min-width: 112px;
+      }
+    }
+
+    &-list{
+      &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 200px;
+        background: linear-gradient(to bottom, transparent, white 100%);
+      }
+    }
   }
 }
