@@ -4,7 +4,8 @@
 
 .atech-projects-banner {
   margin-top: 90px;
-  background: url($img-path + "projects/projects_banner_bg.png") top/cover no-repeat;
+  background: url($img-path + "projects/projects_banner_bg.png") top/cover
+    no-repeat;
 }
 
 .atech-projects-showcase {
@@ -75,8 +76,7 @@
 }
 
 .atech-our-clients {
-  background:
-    linear-gradient(#ebf5fb42, #d7eaf7c9),
+  background: linear-gradient(#ebf5fb42, #d7eaf7c9),
     url($img-path + "misc/our_clients_bg.png") top/cover no-repeat;
 
   .honeycomb {
@@ -132,7 +132,8 @@
   margin-bottom: -100px;
 
   .cta-block {
-    background: url($img-path + "misc/spiral_ripple_bg.png") center/cover no-repeat;
+    background: url($img-path + "misc/spiral_ripple_bg.png") center/cover
+      no-repeat;
     padding: 60px;
     border-radius: 40px;
     max-width: 1320px;
@@ -149,7 +150,8 @@
 }
 
 .atech-project-single-banner {
-  background: url($img-path + "projects/product_details_banner_bg.png") top/cover no-repeat;
+  background: url($img-path + "projects/product_details_banner_bg.png")
+    top/cover no-repeat;
   margin-top: 90px;
   position: relative;
   overflow-x: clip;
@@ -162,7 +164,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(120deg, #3797d5 0%, #176aa0 50%, #3797d5 75%, rgba(55, 151, 213, 0.8) 100%);
+    background: linear-gradient(
+      120deg,
+      #3797d5 0%,
+      #176aa0 50%,
+      #3797d5 75%,
+      rgba(55, 151, 213, 0.8) 100%
+    );
     border-radius: 0 0 50% 50%/0 0 100% 100%;
     transform: scaleX(2);
     z-index: -1;
@@ -177,42 +185,35 @@
     }
     &-img {
       padding: 44px 0;
-
-      .ellipse-shape {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 533px;
-      }
     }
   }
 }
 
 .atech-project-details {
-  &-group{
+  &-group {
     gap: 120px;
   }
 
-  &-block{
-    &:nth-child(even){
-      .project-details{
-        &-img{
+  &-block {
+    &:nth-child(even) {
+      .project-details {
+        &-img {
           order: 2;
         }
 
-        &-description{
+        &-description {
           order: 1;
         }
       }
     }
 
-    .project-details{
+    .project-details {
       &-grid {
         gap: 80px;
       }
-  
-      &-img{
-        &::after{
+
+      &-img {
+        &::after {
           content: "";
           position: absolute;
           left: 24px;
@@ -220,10 +221,56 @@
           width: 100%;
           height: 100%;
           border-radius: 12px;
-          background: linear-gradient(to right, #C3E0F2 0%, #DFEDF6 50%, #FAFAFA 100%);
+          background: linear-gradient(
+            to right,
+            #c3e0f2 0%,
+            #dfedf6 50%,
+            #fafafa 100%
+          );
           z-index: -1;
         }
       }
     }
+  }
+}
+
+.atech-project-details-featured {
+  .project-details {
+    &-grid {
+      gap: 80px;
+    }
+
+    &-img {
+      max-width: 500px;
+      img {
+        height: 580px;
+        width: auto;
+      }
+    }
+  }
+}
+
+.img-with-underlay-ellipse {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 530px;
+    width: 100%;
+    height: 100%;
+    background: url($img-path + "misc/ellipse_1.svg") center/contain no-repeat;
+  }
+}
+
+.atech-project-stats{
+  .project-stats-access{
+    border-radius: 28px;
+  }
+
+  .stats-access-grid{
+    grid-template-columns: auto 200px;
   }
 }

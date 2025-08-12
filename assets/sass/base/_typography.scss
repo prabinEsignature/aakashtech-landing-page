@@ -13,7 +13,7 @@ $text-config: (
   "color": $onyx-500,
   "base-font-size": $font-size-base,
   "base-line-height": $leading-base,
-  "letter-spacing": $tracking-base
+  "letter-spacing": $tracking-base,
 );
 
 // Base Typography Styles
@@ -37,57 +37,57 @@ html {
 $text-sizes: (
   3xs: (
     null: "3xs",
-    md: "3xs"
+    md: "3xs",
   ),
   2xs: (
     null: "2xs",
-    md: "2xs"
+    md: "2xs",
   ),
   xs: (
     null: "xs",
-    md: "2xs"
+    md: "2xs",
   ),
   sm: (
     null: "sm",
-    md: "xs"
+    md: "xs",
   ),
   base: (
     null: "base",
-    md: "sm"
+    md: "sm",
   ),
   lg: (
     null: "lg",
-    md: "base"
+    md: "base",
   ),
   xl: (
     null: "xl",
-    md: "lg"
+    md: "lg",
   ),
   "2xl": (
     null: "2xl",
     md: "xl",
-    sm: "lg"
+    sm: "lg",
   ),
   "3xl": (
     null: "3xl",
     lg: "2xl",
-    sm: "xl"
+    sm: "xl",
   ),
   "4xl": (
     null: "4xl",
     lg: "3xl",
-    sm: "2xl"
+    sm: "2xl",
   ),
   "5xl": (
     null: "5xl",
     lg: "4xl",
-    sm: "3xl"
+    sm: "3xl",
   ),
   "6xl": (
     null: "6xl",
     lg: "5xl",
     sm: "4xl",
-    xs: "3xl"
+    xs: "3xl",
   ),
   "7xl": (
     null: "7xl",
@@ -97,7 +97,7 @@ $text-sizes: (
     sm: "3xl",
     xs: "2xl",
     xxs: "xl",
-    xxxs: "lg"
+    xxxs: "lg",
   ),
   "7xl-mid": (
     null: "7xl-mid",
@@ -107,7 +107,7 @@ $text-sizes: (
     sm: "3xl",
     xs: "2xl",
     xxs: "xl",
-    xxxs: "lg"
+    xxxs: "lg",
   ),
   "8xl": (
     null: "8xl",
@@ -117,8 +117,8 @@ $text-sizes: (
     md: "4xl",
     sm: "3xl",
     xs: "2xl",
-    xxs: "xl"
-  )
+    xxs: "xl",
+  ),
 );
 
 // Mixin for Text Font Sizes
@@ -194,5 +194,40 @@ a {
   &:visited,
   &:link {
     text-decoration: none;
+  }
+}
+
+.content-stylings {
+  &.remove-paragraph-padding {
+    p {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  p, ul, ol{
+    margin-bottom: 20px;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding-left: 0!important;
+    margin-left: 0!important;
+
+    li {
+      position: relative;
+      font-weight: 600;
+      margin-left: 40px;
+
+      &::before{
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background: url($icon-path + "circle_check_duotone_primary_icon.svg") center/contain no-repeat;
+        left: -40px;
+      }
+    }
   }
 }

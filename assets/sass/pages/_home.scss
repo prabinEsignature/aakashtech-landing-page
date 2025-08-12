@@ -149,26 +149,6 @@
   }
 }
 
-.content-stylings {
-  &.remove-paragraph-padding {
-    p {
-      margin-bottom: 0 !important;
-    }
-  }
-
-  &.text-white {
-    p {
-      color: $white !important;
-    }
-  }
-
-  &.text-onyx-400 {
-    p {
-      color: $onyx-400 !important;
-    }
-  }
-}
-
 .floating-element-1 {
   right: 96px;
   top: -48px;
