@@ -164,9 +164,8 @@
     }
   }
 
-
-  &.project-single-wide{
-    .project-single-banner-info{
+  &.project-single-wide {
+    .project-single-banner-info {
       max-width: 880px;
     }
   }
@@ -255,43 +254,43 @@
   .project-stats-info {
     .stats-info-block {
       &:nth-child(2) {
-        border: 1px solid color("primary-500")!important;
-        background: color("white")!important;
+        border: 1px solid color("primary-500") !important;
+        background: color("white") !important;
       }
 
-      &:nth-child(4){
-        background: color("primary-500")!important;
+      &:nth-child(4) {
+        background: color("primary-500") !important;
 
-        .stats-info-block-ttl{
-          color: color("white")!important;
+        .stats-info-block-ttl {
+          color: color("white") !important;
         }
 
-        .stats-info-block-text{
-          color: color("gray-50")!important;
+        .stats-info-block-text {
+          color: color("gray-50") !important;
         }
       }
     }
   }
 }
 
-.atech-customer-exp{
-  .customer-exp{
-    &-heading{
+.atech-customer-exp {
+  .customer-exp {
+    &-heading {
       max-width: 550px;
     }
 
-    &-item{
+    &-item {
       width: calc(50% - 8px);
 
-      &-img{
+      &-img {
         width: 112px;
         height: 112px;
         min-width: 112px;
       }
     }
 
-    &-list{
-      &::after{
+    &-list {
+      &::after {
         content: "";
         position: absolute;
         left: 0;
@@ -299,6 +298,73 @@
         width: 100%;
         height: 200px;
         background: linear-gradient(to bottom, transparent, white 100%);
+      }
+    }
+  }
+}
+
+.atech-project-demo {
+  margin-top: -180px;
+
+  .video-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 8px;
+
+    .video-iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .video-poster {
+      position: absolute;
+      inset: 0;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+      }
+
+      .video-play-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 84px;
+        height: 84px;
+        background: #5facdd;
+        z-index: 1;
+        border: none;
+
+        img {
+          position: relative;
+          z-index: 1;
+        }
+
+        &::after{
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: #afd5ee;
+          width: 110px;
+          height: 110px;
+          border-radius: 100%;
+          z-index: -1;
+        }
       }
     }
   }

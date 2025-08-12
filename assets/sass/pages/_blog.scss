@@ -2,88 +2,149 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.atech-blog-banner{
+.atech-blog-banner {
   margin-top: 90px;
   min-height: 800px;
 
-  &::after{
+  &::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(44, 121, 170, 0.8) 0%, rgba(17, 45, 64, 0.8) 80%,
-    rgba(22, 60, 85, 0.8) 75%, rgba(11, 30, 43, 0.8) 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(44, 121, 170, 0.8) 0%,
+      rgba(17, 45, 64, 0.8) 80%,
+      rgba(22, 60, 85, 0.8) 75%,
+      rgba(11, 30, 43, 0.8) 100%
+    );
   }
 
-  .segment-heading{
-    &-text{
-      margin-top: 0!important;
-      margin-bottom: 16px!important;
+  .segment-heading {
+    &-text {
+      margin-top: 0 !important;
+      margin-bottom: 16px !important;
     }
   }
 }
 
-.atech-blogs-showcase{
+.atech-blogs-showcase {
   margin-top: -360px;
 
-  .blogs-showcase{
-    &-grid{
+  .blogs-showcase {
+    &-grid {
       gap: 48px;
     }
   }
 }
 
-.atech-blogs-main{
+.atech-blogs-main {
   background: url($img-path + "misc/transparent_waves_bg.png") center/cover no-repeat;
 
-  .blogs-cat{
-    &-btn{
+  .blogs-cat {
+    &-btn {
       transition: $default-transition;
-      &:not(.is-checked){
-        &:hover{
-          background: color("primary-100")!important;
+      &:not(.is-checked) {
+        &:hover {
+          background: color("primary-100") !important;
         }
       }
 
-      &.is-checked{
+      &.is-checked {
         background: linear-gradient(to bottom, color("primary-400"), color("primary-500"));
-        color: color("white")!important;
+        color: color("white") !important;
       }
     }
   }
 }
 
-.atech-download-showcase{
+.atech-download-showcase {
   min-height: 880px;
-  
-  &::after{
+
+  &::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, #D5E9F6 0%, #ECF3F9 25%, #EEF5F9 74%, #D5E9F6 100%);
+    background: linear-gradient(90deg, #d5e9f6 0%, #ecf3f9 25%, #eef5f9 74%, #d5e9f6 100%);
     opacity: 0.8;
   }
 }
 
-.atech-download-showcase{
-  .download-showcase-grid{
+.atech-download-showcase {
+  .download-showcase-grid {
     gap: 80px;
   }
 }
 
-.atech-blog-detail-banner{
+.atech-blog-detail-banner {
   margin-top: 90px;
-  background: linear-gradient(#D5E9F6 0%, #ECF3F9 33%, #FFFFFF 67%, #FFFFFF 100%);
+  background: linear-gradient(#d5e9f6 0%, #ecf3f9 33%, #ffffff 67%, #ffffff 100%);
 }
 
-.atech-blog-detail-main{
-  &-container{
+.atech-blog-detail-main {
+  &-container {
     grid-template-columns: 350px auto;
     gap: 48px;
+  }
+}
+
+.blog-detail-widgets {
+  gap: 32px;
+  position: sticky;
+  top: 120px;
+
+  .search-widget {
+    .form-control {
+      &::placeholder {
+        color: color("gray-400");
+      }
+    }
+  }
+
+  .bookmark-widget {
+    &-head {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-top: 14px solid color("primary-500");
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+      }
+    }
+
+    &-item {
+      & > a {
+        padding: 14px 24px;
+        position: relative;
+        transition: $default-transition;
+
+        &.active {
+          color: color("primary-500") !important;
+        }
+
+        &:hover {
+          color: color("primary-500") !important;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 24px;
+          right: 24px;
+          height: 1px;
+          background: color("white");
+        }
+      }
+    }
   }
 }
