@@ -29158,4 +29158,37 @@ table td {
   right: 24px;
   height: 1px;
   background: #ffffff;
+}
+.blog-detail-widgets .categories-widget .categories-widget-item {
+  border-bottom: 1px dashed #c3e0f2;
+}
+.blog-detail-widgets .categories-widget .categories-widget-item:last-child {
+  border-bottom: 0 !important;
+}
+.blog-detail-widgets .categories-widget .categories-widget-item a {
+  transition: all ease-in-out 300ms;
+}
+.blog-detail-widgets .categories-widget .categories-widget-item a:hover {
+  color: #262626 !important;
+}
+.blog-detail-widgets .posts-widget-item {
+  padding: 10px;
+}
+.blog-detail-widgets .posts-widget .widget-item-img {
+  min-width: 80px;
+  width: 80px;
+  height: 80px;
+}
+.blog-detail-widgets .contacts-widget {
+  height: 284px;
+}
+.blog-detail-widgets .contacts-widget::after {
+  content: "";
+  background: linear-gradient(to bottom, #3797D5, #000000);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
 }/*# sourceMappingURL=main.css.map */
