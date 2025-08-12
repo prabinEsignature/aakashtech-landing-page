@@ -3,24 +3,37 @@
 @use "../abstracts/mixins" as *;
 
 .pagination-block {
-    .page-link,
-    .page-numbers {
-        width: 28px;
-        min-width: 28px;
-        height: 28px;
-        min-height: 28px;
-        @include flex-center;
-        border-radius: 6px;
-        box-shadow: none !important;
+    &.blogs-pagination {
+        .pagination{
+            background: rgba(255,255,255, 0.5);
+        }
+        .page-link{
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            min-height: 40px;
+            box-shadow: none !important;
+            border: 1px solid color("primary-100");
 
-        &:hover,
-        &.active,
-        &.current {
-            background: color("primary-100") !important;
-            color: color("primary-500") !important;
-
-            .page-num {
+            &:hover,
+            &:focus,
+            &.active,
+            &.current {
+                background: color("primary-100") !important;
                 color: color("primary-500") !important;
+
+                .page-num {
+                    color: color("primary-500") !important;
+                }
+            }
+
+            &-num{
+                color: color("primary-500")!important;
+
+                &[disabled]{
+                    opacity: 0.7;
+                    pointer-events: none;
+                }
             }
         }
     }

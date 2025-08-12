@@ -177,3 +177,56 @@
     transform: translate(-24px, -50%);
   }
 }
+
+
+
+
+
+.atech-cta-two {
+  &.cta-variant-two{
+    min-height: auto;
+    margin-bottom: auto;
+
+    .cta-block-floating-img{
+      height: 100%;
+      width: 100%;
+      max-width: 534px;
+      max-height: 360px;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.atech-project-appscreens{
+  .appscreens-slider{
+    .swiper-wrapper{
+      padding-bottom: 60px;
+    }
+    .swiper-slide{
+      max-width: 880px;
+    }
+  }
+}
+
+.atech-project-traverse{
+  .project-traverse{
+    &-img{
+      max-height: 168px;
+    }
+    &-prev{
+      grid-template-columns: 200px auto;
+    }
+
+    &-next{
+      grid-template-columns: auto 200px;
+    }
+
+    &-ttl{
+      transition: $default-transition;
+      &:hover{
+        color: color("primary-500")!important;
+      }
+    }
+  }
+}

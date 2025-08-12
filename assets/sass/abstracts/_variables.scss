@@ -1,6 +1,6 @@
-@use 'sass:map';
-@use 'sass:color';
-@use 'colors' as *;
+@use "sass:map";
+@use "sass:color";
+@use "colors" as *;
 
 // FONT STACK
 $font-family-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans",
@@ -71,7 +71,7 @@ $breakpoints-down: (
   "lg": "991.98px",
   "xl": "1199.98px",
   "xxl": "1399.98px",
-  "xxxl": "1535.98px",
+  "xxxl": "1535.98px"
 );
 
 // COLOR CONFIGURATION
@@ -103,12 +103,17 @@ $headings-config: (
   "color": $onyx-700,
   "letter-spacing": -0.03em,
   "font-sizes": (
-    "h1": 2 * $font-size-base,
-    "h2": 1.5 * $font-size-base,
-    "h3": 1.17 * $font-size-base,
-    "h4": 1 * $font-size-base,
-    "h5": 0.83 * $font-size-base,
-    "h6": 0.67 * $font-size-base
+    "h1": 2.5 * $font-size-base,
+    // Main post/page title
+    "h2": 2 * $font-size-base,
+    // Section title
+    "h3": 1.75 * $font-size-base,
+    // Subsection title
+    "h4": 1.5 * $font-size-base,
+    // Smaller heading
+    "h5": 1.25 * $font-size-base,
+    // Minor heading
+    "h6": 1.1 * $font-size-base // Smallest heading
   )
 );
 
@@ -125,10 +130,14 @@ $headings-config: (
 
 // ADVANCED Z-INDEX CONFIGURATION
 $z-index: (
-  "1": 1,                   // Basic stacking level 1
-  "2": 2,                   // Basic stacking level 1
-  "5": 5,                   // Basic stacking level 1
-  "10": 10,                   // Basic stacking level 1
+  "1": 1,
+  // Basic stacking level 1
+  "2": 2,
+  // Basic stacking level 1
+  "5": 5,
+  // Basic stacking level 1
+  "10": 10,
+  // Basic stacking level 1
 );
 
 // UTILITY CLASSES FOR Z-INDEX
@@ -145,5 +154,3 @@ $default-transition: all $default-transition-timing $default-transition-duration
 $img-path: "../../../assets/images/" !default; // Usage: background: url('#{$img-path}/img.jpg') 0 0 no-repeat;
 $icon-path: "../../../assets/icons/" !default;
 $max-width: 1440px;
-
-

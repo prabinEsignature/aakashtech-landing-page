@@ -71,6 +71,18 @@ $button-link-variants: (
     icon: color("white"),
     hover-text-color: color.adjust(color("white"), $lightness: 10%),
     hover-icon-color: color.adjust(color("white"), $lightness: 10%)
+  ),
+  "gray-700": (
+    text: color("gray-700"),
+    icon: color("onyx-700"),
+    hover-text-color: color.adjust(color("gray-700"), $lightness: 10%),
+    hover-icon-color: color.adjust(color("onyx-700"), $lightness: 10%)
+  ),
+  "primary-500": (
+    text: color("primary-500"),
+    icon: color("primary-500"),
+    hover-text-color: color.adjust(color("primary-500"), $lightness: 10%),
+    hover-icon-color: color.adjust(color("primary-500"), $lightness: 10%)
   )
 );
 
@@ -331,6 +343,7 @@ $button-link-variants: (
 @each $variant, $props in $button-link-variants {
   .btn-link-#{$variant} {
     color: map.get($props, text) !important;
+    border: 0;
 
     .btn-text {
       color: map.get($props, text) !important;

@@ -209,3 +209,31 @@ input:-webkit-autofill{
   box-shadow: 0 0 0px 1000px color("white") inset;
   -webkit-box-shadow: 0 0 0px 1000px color("white") inset;
 }
+
+
+.page-content {
+  &-search {
+    height: 60px;
+    max-width: 540px;
+
+    input {
+      &.form-control {
+        &::placeholder {
+          color: color("onyx-300");
+          font-weight: 500;
+        }
+      }
+    }
+
+    .icon-btn{
+      &:hover{
+        background: color("primary-500")!important;
+        border-color: color("primary-500")!important;
+      }
+    }
+
+    &.light-searchbox{
+      background: color("white");
+    }
+  }
+}
