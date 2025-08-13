@@ -26108,7 +26108,9 @@ html {
   letter-spacing: normal;
 }
 
-.content-stylings ul, .content-stylings ol, .content-stylings dl, p, .text-8xl, .text-7xl-mid, .text-7xl, .text-6xl, .text-5xl, .text-4xl, .text-3xl, .text-2xl, .text-xl, .text-lg, .text-base, .text-sm, .text-xs, .text-2xs, .text-3xs {
+.content-stylings, .content-stylings ul,
+.content-stylings ol,
+.content-stylings dl, p, .text-8xl, .text-7xl-mid, .text-7xl, .text-6xl, .text-5xl, .text-4xl, .text-3xl, .text-2xl, .text-xl, .text-lg, .text-base, .text-sm, .text-xs, .text-2xs, .text-3xs {
   font-family: "Instrument Sans", sans-serif;
   font-weight: 500;
   color: #404040;
@@ -26630,10 +26632,17 @@ a:visited, a:link {
 .content-stylings.remove-paragraph-padding p {
   margin-bottom: 0 !important;
 }
-.content-stylings h1, .content-stylings h2, .content-stylings h3, .content-stylings h4, .content-stylings h5, .content-stylings h6 {
+.content-stylings h1,
+.content-stylings h2,
+.content-stylings h3,
+.content-stylings h4,
+.content-stylings h5,
+.content-stylings h6 {
   margin-bottom: 20px !important;
 }
-.content-stylings p, .content-stylings ul, .content-stylings ol {
+.content-stylings p,
+.content-stylings ul,
+.content-stylings ol {
   margin-bottom: 20px;
 }
 .content-stylings ul {
@@ -29321,7 +29330,7 @@ table td {
 
 .atech-services-details-banner {
   margin-top: 90px;
-  min-height: 1094px;
+  min-height: 980px;
 }
 .atech-services-details-banner::after {
   content: "";
@@ -29331,4 +29340,13 @@ table td {
   width: 100%;
   height: 100%;
   background: url("../../../assets/images/services/service_detail_banner_bg.png");
+}
+.atech-services-details-banner .services-details-banner-content {
+  gap: 40px;
+  grid-template-columns: 3.5fr 6.5fr;
+}
+
+.atech-services-deliverables .services-deliverables-list .deliverables-count-icon {
+  width: 80px;
+  height: 80px;
 }/*# sourceMappingURL=main.css.map */
