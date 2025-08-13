@@ -29317,4 +29317,18 @@ table td {
 }
 .atech-track-record .track-record-grid {
   gap: 80px;
+}
+
+.atech-services-details-banner {
+  margin-top: 90px;
+  min-height: 1094px;
+}
+.atech-services-details-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../../assets/images/services/service_detail_banner_bg.png");
 }/*# sourceMappingURL=main.css.map */
