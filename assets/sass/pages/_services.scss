@@ -33,9 +33,9 @@
   }
 }
 
-.atech-services-main {
+.atech-services-one {
   .services {
-    &-main {
+    &-one {
       &-item {
         gap: 80px;
 
@@ -251,5 +251,12 @@ $process-color-keys: (
       min-height: 48px;
       right: -26px;
     }
+  }
+}
+
+.atech-services-details-two{
+  &-container{
+    grid-template-columns: 45% auto;
+    gap: 60px;
   }
 }
