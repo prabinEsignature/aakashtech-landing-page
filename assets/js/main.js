@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const projectsBtnsSwiperContainer = document.querySelector('.projects-btns-slider');
   const projectsBtnsSwiperContainerWrapper = document.querySelector('.projects-btns-slider-wrapper');
   const appscreensSwiperContainer = document.querySelector('.appscreens-slider');
+  const servicesDetailsTwoSwiperContainer = document.querySelector('.services-details-two-slider');
 
   document.querySelectorAll('.atech-menu-item').forEach(item => {
     const submenu = item.querySelector('.atech-menu-submenu');
@@ -230,6 +231,24 @@ document.addEventListener("DOMContentLoaded", () => {
       observeParents: true,
       pagination: {
         el: appscreensSwiperContainer.querySelector(".swiper-pagination"),
+        clickable: true,
+      },
+    });
+  }
+
+  if (servicesDetailsTwoSwiperContainer) {
+    new Swiper(servicesDetailsTwoSwiperContainer, {
+      loop: true,
+      speed: 1000,
+      slidesPerView: 1,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      observer: true,
+      observeParents: true,
+      pagination: {
+        el: servicesDetailsTwoSwiperContainer.querySelector(".swiper-pagination"),
         clickable: true,
       },
     });
