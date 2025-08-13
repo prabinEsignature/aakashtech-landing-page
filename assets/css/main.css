@@ -29265,6 +29265,18 @@ table td {
   height: 80px;
   min-width: 80px;
 }
+.atech-services-main .services-item-img::after {
+  content: "";
+  position: absolute;
+  top: 36px;
+  left: 40px;
+  height: 100%;
+  right: 20px;
+  background: linear-gradient(to right, #d7eaf7, #ebf5fb);
+  border-radius: 24px;
+  transform: rotate(3deg);
+  z-index: -1;
+}
 .atech-services-main .services-item-projects-link {
   padding: 28px 32px !important;
   border-top-right-radius: 40px !important;

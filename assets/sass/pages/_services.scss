@@ -52,6 +52,21 @@
         min-width: 80px;
       }
 
+      &-img{
+        &::after{
+          content: "";
+          position: absolute;
+          top: 36px;
+          left: 40px;
+          height: 100%;
+          right: 20px;
+          background: linear-gradient(to right, color("primary-100"), color("primary-50"));
+          border-radius: 24px;
+          transform: rotate(3deg);
+          z-index: -1;
+        }
+      }
+
       &-projects-link{
         padding: 28px 32px!important;
         border-top-right-radius: 40px!important;
