@@ -29578,4 +29578,20 @@ table td {
 .atech-services-details-two-container {
   grid-template-columns: 45% auto;
   gap: 60px;
+}
+.atech-services-details-two .services-details-two-slider {
+  padding-bottom: 80px !important;
+}
+.atech-services-details-two .services-details-two-slider .swiper-pagination-bullet {
+  width: 60px;
+  height: 6px;
+  border-radius: 0 !important;
+}
+
+.atech-services-excellence .services-excellence-grid .excellence-item {
+  background: linear-gradient(to bottom, rgba(225, 239, 249, 0.4) 8%, #EBF5FB 46%, rgba(235, 245, 251, 0.1) 100%);
+}
+.atech-services-excellence .services-excellence-grid .excellence-item-icon {
+  width: 100px;
+  height: 100px;
 }/*# sourceMappingURL=main.css.map */

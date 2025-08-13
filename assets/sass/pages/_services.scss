@@ -157,14 +157,7 @@
 }
 
 // Your color sequence (keys from $colors map)
-$process-color-keys: (
-  "turquoise",
-  "blue-violet",
-  "coral",
-  "crayola",
-  "emerald",
-  "school-bus-yellow"
-);
+$process-color-keys: ("turquoise", "blue-violet", "coral", "crayola", "emerald", "school-bus-yellow");
 
 // Function to get the actual color value from $colors map
 @function get-process-color($index) {
@@ -175,18 +168,19 @@ $process-color-keys: (
 .atech-services-process {
   .services-process {
     &-list {
-      @for $list-index from 1 through 20 { // assume max 20 lists
+      @for $list-index from 1 through 20 {
+        // assume max 20 lists
         &:nth-of-type(#{$list-index}) {
           .services-process-item {
             @for $item-index from 1 through 3 {
               &:nth-of-type(#{$item-index}) {
                 // Calculate the absolute color index across all lists
                 $absolute-index: (($list-index - 1) * 3) + $item-index;
-    
+
                 // Modulo logic to loop over 6 colors
                 $color-position: (($absolute-index - 1) % list.length($process-color-keys)) + 1;
-    
-                .services-process-icon{
+
+                .services-process-icon {
                   background-color: get-process-color($color-position);
                 }
               }
@@ -196,7 +190,7 @@ $process-color-keys: (
       }
 
       &:not(:last-child) {
-        &::after{
+        &::after {
           content: "";
           position: absolute;
           top: 100%;
@@ -254,9 +248,32 @@ $process-color-keys: (
   }
 }
 
-.atech-services-details-two{
-  &-container{
+.atech-services-details-two {
+  &-container {
     grid-template-columns: 45% auto;
     gap: 60px;
+  }
+
+  .services-details-two-slider {
+    padding-bottom: 80px !important;
+
+    .swiper-pagination-bullet {
+      width: 60px;
+      height: 6px;
+      border-radius: 0 !important;
+    }
+  }
+}
+
+.atech-services-excellence{
+  .services-excellence-grid{
+    .excellence-item{
+      background: linear-gradient(to bottom, rgba(225, 239, 249, 0.4) 8%, #EBF5FB 46%, rgba(235, 245, 251, 0.1) 100%);
+
+      &-icon{
+        width: 100px;
+        height: 100px;
+      }
+    }
   }
 }
