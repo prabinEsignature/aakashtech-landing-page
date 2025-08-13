@@ -26638,7 +26638,6 @@ a:visited, a:link {
 }
 .content-stylings ul {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 12px;
   padding-left: 0 !important;
   margin-left: 0 !important;
@@ -26665,9 +26664,6 @@ a:visited, a:link {
 }
 .content-stylings ol li::marker {
   font-weight: 600;
-}
-.content-stylings.blog-detail-full-article ul {
-  grid-template-columns: 100%;
 }
 .animate-none {
   animation: none;
@@ -26882,6 +26878,7 @@ a:visited, a:link {
 .atech-cta-two.cta-variant-two {
   min-height: auto;
   margin-bottom: auto;
+  background: url("../../../assets/images/misc/cta_bg_two.png") center/cover no-repeat;
 }
 .atech-cta-two.cta-variant-two .cta-block-floating-img {
   height: 100%;
@@ -29274,8 +29271,10 @@ table td {
 .atech-services-main .services-main-item-wrapper:nth-child(even) .services-item-info {
   order: 1;
 }
-.atech-services-main .services-main-item .content-stylings ul {
-  grid-template-columns: 100%;
+.atech-services-main .services-main-item-wrapper:nth-child(even) .services-item-projects-link {
+  border-radius: 24px 0 24px 0 !important;
+  right: 0 !important;
+  left: auto !important;
 }
 .atech-services-main .services-item-icon {
   width: 80px;
@@ -29306,11 +29305,16 @@ table td {
 }
 .atech-services-main .services-item-projects-link {
   padding: 28px 32px !important;
-  border-top-right-radius: 40px !important;
-  border-top-left-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
+  border-radius: 0 24px 0 24px !important;
   height: 78px;
 }
 .atech-services-main .services-item-subheading {
   margin-top: 0 !important;
+}
+
+.atech-track-record {
+  background: url("../../../assets/images/services/track_record_bg.png") center/cover no-repeat;
+}
+.atech-track-record .track-record-grid {
+  gap: 80px;
 }/*# sourceMappingURL=main.css.map */

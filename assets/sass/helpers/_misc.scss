@@ -186,6 +186,7 @@
   &.cta-variant-two{
     min-height: auto;
     margin-bottom: auto;
+    background: url($img-path + "misc/cta_bg_two.png") center/cover no-repeat;
 
     .cta-block-floating-img{
       height: 100%;

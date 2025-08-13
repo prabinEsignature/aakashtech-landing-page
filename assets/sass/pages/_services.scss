@@ -64,14 +64,14 @@
           .services-item-info{
             order: 1;
           }
-        }
-       }
 
-        .content-stylings{
-          ul{
-            grid-template-columns: 100%;
+          .services-item-projects-link{
+            border-radius: 24px 0 24px 0!important;
+            right: 0!important;
+            left: auto!important;
           }
         }
+       }
       }
     }
 
@@ -110,9 +110,7 @@
 
       &-projects-link{
         padding: 28px 32px!important;
-        border-top-right-radius: 40px!important;
-        border-top-left-radius: 0!important;
-        border-bottom-right-radius: 0!important;
+        border-radius: 0 24px 0 24px!important;
         height: 78px;
       }
 
@@ -120,5 +118,13 @@
         margin-top: 0!important;
       }
     }
+  }
+}
+
+.atech-track-record{
+  background: url($img-path + "services/track_record_bg.png") center/cover no-repeat;
+
+  .track-record-grid{
+    gap: 80px;
   }
 }
