@@ -1,0 +1,68 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.atech-services-banner {
+  margin-top: 90px;
+  background: url($img-path + "services/services_banner_bg.png") top/cover no-repeat;
+
+  .services-banner-highlights {
+    .services-highlights {
+      &-item {
+        &::after {
+          content: "";
+          position: absolute;
+          right: -3.5px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 7px;
+          height: 7px;
+          border-radius: 100%;
+          background: color("primary-500");
+        }
+
+        &:last-child {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.atech-services-main {
+  .services {
+    &-main {
+      &-item {
+        gap: 80px;
+
+        .content-stylings{
+          ul{
+            grid-template-columns: 100%;
+          }
+        }
+      }
+    }
+
+    &-item {
+      &-icon {
+        width: 80px;
+        height: 80px;
+        min-width: 80px;
+      }
+
+      &-projects-link{
+        padding: 28px 32px!important;
+        border-top-right-radius: 40px!important;
+        border-top-left-radius: 0!important;
+        border-bottom-right-radius: 0!important;
+        height: 78px;
+      }
+
+      &-subheading{
+        margin-top: 0!important;
+      }
+    }
+  }
+}
