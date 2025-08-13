@@ -37,41 +37,35 @@
       &-item {
         gap: 80px;
 
-       &-wrapper{
-        &:nth-child(even){
-          background: linear-gradient(
-            -45deg,
-            #d5e9f6 0%,
-            #ecf3f9 25%,
-            #eef5f9 74%,
-            #d5e9f6 100%
-          );
+        &-wrapper {
+          &:nth-child(even) {
+            background: linear-gradient(-45deg, #d5e9f6 0%, #ecf3f9 25%, #eef5f9 74%, #d5e9f6 100%);
 
-          .services-item-img{
-            order: 2;
+            .services-item-img {
+              order: 2;
 
-            &::after{
-              background: linear-gradient(to left, color("primary-100"), color("primary-150"));
-              transform: rotate(-2deg);
+              &::after {
+                background: linear-gradient(to left, color("primary-100"), color("primary-150"));
+                transform: rotate(-2deg);
+              }
+
+              &::before {
+                top: -23px;
+                left: -23px;
+              }
             }
 
-            &::before{
-              top: -23px;
-              left: -23px;
+            .services-item-info {
+              order: 1;
             }
-          }
 
-          .services-item-info{
-            order: 1;
-          }
-
-          .services-item-projects-link{
-            border-radius: 24px 0 24px 0!important;
-            right: 0!important;
-            left: auto!important;
+            .services-item-projects-link {
+              border-radius: 24px 0 24px 0 !important;
+              right: 0 !important;
+              left: auto !important;
+            }
           }
         }
-       }
       }
     }
 
@@ -82,8 +76,8 @@
         min-width: 80px;
       }
 
-      &-img{
-        &::after{
+      &-img {
+        &::after {
           content: "";
           position: absolute;
           top: 36px;
@@ -96,7 +90,7 @@
           z-index: -1;
         }
 
-        &::before{
+        &::before {
           content: "";
           position: absolute;
           top: -23px;
@@ -108,32 +102,32 @@
         }
       }
 
-      &-projects-link{
-        padding: 28px 32px!important;
-        border-radius: 0 24px 0 24px!important;
+      &-projects-link {
+        padding: 28px 32px !important;
+        border-radius: 0 24px 0 24px !important;
         height: 78px;
       }
 
-      &-subheading{
-        margin-top: 0!important;
+      &-subheading {
+        margin-top: 0 !important;
       }
     }
   }
 }
 
-.atech-track-record{
+.atech-track-record {
   background: url($img-path + "services/track_record_bg.png") center/cover no-repeat;
 
-  .track-record-grid{
+  .track-record-grid {
     gap: 80px;
   }
 }
 
-.atech-services-details-banner{
+.atech-services-details-banner {
   margin-top: 90px;
   min-height: 980px;
-  
-  &::after{
+
+  &::after {
     content: "";
     position: absolute;
     top: 0;
@@ -143,19 +137,70 @@
     background: url($img-path + "services/service_detail_banner_bg.png");
   }
 
-  .services-details-banner-content{
+  .services-details-banner-content {
     gap: 40px;
     grid-template-columns: 3.5fr 6.5fr;
   }
 }
 
-.atech-services-deliverables{
-  .services-deliverables-list{
-    .deliverables{
-      &-count-icon{
+.atech-services-deliverables {
+  .services-deliverables-list {
+    .deliverables {
+      &-count-icon {
         width: 80px;
         height: 80px;
       }
+    }
+  }
+}
+
+.atech-services-process {
+  .services-process {
+    &-item {
+      @for $i from 1 through 6 {
+        &:nth-of-type(#{$i}) {
+          .services-process-icon {
+            @if $i == 1 {
+              background: color("turquoise");
+            } @else if $i == 2 {
+              background: color("blue-violet");
+            } @else if $i == 3 {
+              background: color("coral");
+            } @else if $i == 4 {
+              background: color("crayola");
+            } @else if $i == 5 {
+              background: color("emerald");
+            } @else if $i == 6 {
+              background: color("school-bus-yellow");
+            } @else {
+              background: color("primary-500");
+            }
+          }
+        }
+      }
+    }
+
+    &-arrow {
+      &:last-child {
+        display: none !important;
+      }
+    }
+
+    &-list {
+      grid-template-columns: 1fr 140px 1fr 140px 1fr;
+    }
+
+    &-icon {
+      width: 120px;
+      height: 120px;
+    }
+
+    &-count {
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+      min-height: 48px;
+      right: -26px;
     }
   }
 }
