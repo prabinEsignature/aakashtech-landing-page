@@ -29784,6 +29784,15 @@ table td {
 .atech-about-mvg .about-mvg-quote .ceo-quote-text {
   font-style: italic;
 }
+.atech-about-mvg .about-mvg-quote::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 97px;
+  height: 51px;
+  background: url("../../../assets/images/about/curved_quote_floating_element.svg") center/contain no-repeat;
+}
 .atech-about-mvg .about-mvg-details {
   background: rgba(235, 245, 251, 0.5);
 }

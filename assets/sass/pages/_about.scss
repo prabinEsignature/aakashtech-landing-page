@@ -89,6 +89,16 @@
           font-style: italic;
         }
       }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        right: -1px;
+        width: 97px;
+        height: 51px;
+        background: url($img-path + "about/curved_quote_floating_element.svg") center/contain no-repeat;
+      }
     }
 
     &-details {
