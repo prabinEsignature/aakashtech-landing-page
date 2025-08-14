@@ -29812,4 +29812,13 @@ table td {
   position: sticky;
   top: 120px;
   z-index: 1;
+}
+
+.atech-services-teams {
+  background: url("../../../assets/images/about/teams_bg.png") bottom center/cover no-repeat;
+}
+.atech-services-teams .services-teams-item .teams-item-info {
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
 }/*# sourceMappingURL=main.css.map */

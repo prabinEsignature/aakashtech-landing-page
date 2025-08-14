@@ -132,3 +132,20 @@
     }
   }
 }
+
+
+.atech-services-teams{
+  background: url($img-path + "about/teams_bg.png") bottom center/cover no-repeat;
+
+  .services-teams{
+    &-item{
+      .teams-item{
+        &-info{
+          bottom: 12px;
+          left: 12px;
+          right: 12px;
+        }
+      }
+    }
+  }
+}
