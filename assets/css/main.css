@@ -29678,6 +29678,9 @@ table td {
 .atech-contact-main .atech-contact {
   background: none !important;
 }
+.atech-contact-main .atech-contact-container {
+  gap: 60px;
+}
 .atech-contact-main .contact-grid-block-wrapper::after {
   content: "";
   position: absolute;
@@ -29688,4 +29691,35 @@ table td {
   right: -10px;
   bottom: 138px;
   z-index: -1;
+}
+.atech-contact-main .contact-grid-block-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #87c1e6;
+  filter: blur(148px);
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.atech-contact-main .contact-deliver-segment .contact-deliver-list {
+  gap: 100px;
+  max-width: 766px;
+}
+.atech-contact-main .contact-deliver-segment .contact-deliver-item:nth-child(1) .contact-deliver-item-icon {
+  background: #ddfbf8;
+}
+.atech-contact-main .contact-deliver-segment .contact-deliver-item:nth-child(2) .contact-deliver-item-icon {
+  background: #ffede6;
+}
+.atech-contact-main .contact-deliver-segment .contact-deliver-item:nth-child(3) .contact-deliver-item-icon {
+  background: #ffe1e9;
+}
+.atech-contact-main .contact-deliver-segment .contact-deliver-item:nth-child(4) .contact-deliver-item-icon {
+  background: #dbf9ee;
+}
+
+.atech-about-banner {
+  margin-top: 90px;
 }/*# sourceMappingURL=main.css.map */

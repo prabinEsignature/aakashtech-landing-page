@@ -2,16 +2,21 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.atech-contact-banner{
+.atech-contact-banner {
   margin-top: 90px;
 }
 
-.atech-contact-main{
-  .atech-contact{
-    background: none!important;
+.atech-contact-main {
+  .atech-contact {
+    background: none !important;
+
+    &-container {
+      gap: 60px;
+    }
   }
-  .contact-grid-block-wrapper{
-    &::after{
+
+  .contact-grid-block-wrapper {
+    &::after {
       content: "";
       position: absolute;
       width: 300px;
@@ -21,6 +26,52 @@
       right: -10px;
       bottom: 138px;
       z-index: -1;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: color("primary-300");
+      filter: blur(148px);
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
+  .contact-deliver-segment {
+    .contact-deliver {
+      &-list{
+        gap: 100px;
+        max-width: 766px;
+      }
+      &-item {
+        &:nth-child(1) {
+          .contact-deliver-item-icon {
+            background: color("turquoise-light");
+          }
+        }
+
+        &:nth-child(2) {
+          .contact-deliver-item-icon {
+            background: color("coral-light");
+          }
+        }
+
+        &:nth-child(3) {
+          .contact-deliver-item-icon {
+            background: color("crayola-light");
+          }
+        }
+
+        &:nth-child(4) {
+          .contact-deliver-item-icon {
+            background: color("emerald-light");
+          }
+        }
+      }
     }
   }
 }
