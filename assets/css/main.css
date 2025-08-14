@@ -29790,4 +29790,11 @@ table td {
 .atech-about-mvg .about-mvg-details .mvg-details-item-icon {
   width: 64px;
   height: 64px;
+}
+
+.atech-services-offers {
+  background: url("../../../assets/images/about/service_offering_bg.png") top/cover no-repeat;
+}
+.atech-services-offers .services-offers-grid {
+  gap: 60px;
 }/*# sourceMappingURL=main.css.map */

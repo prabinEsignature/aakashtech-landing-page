@@ -105,3 +105,13 @@
     }
   }
 }
+
+.atech-services-offers {
+  background: url($img-path + "about/service_offering_bg.png") top/cover no-repeat;
+
+  .services-offers{
+    &-grid{
+      gap: 60px;
+    }
+  }
+}
