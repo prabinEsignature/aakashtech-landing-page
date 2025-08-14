@@ -25793,6 +25793,10 @@
   box-shadow: 0 20px 60px -12px rgba(33, 91, 128, 0.12);
 }
 
+.shadow-img {
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25);
+}
+
 .shadow-primary-700-10 {
   box-shadow: 0 7px 29px 0 rgba(33, 91, 128, 0.1);
 }
@@ -29722,4 +29726,44 @@ table td {
 
 .atech-about-banner {
   margin-top: 90px;
+  background: url("../../../assets/images/about/about_us_banner_bg.png") top/cover no-repeat;
+}
+.atech-about-banner-container {
+  gap: 60px !important;
+}
+.atech-about-banner .about-banner-group {
+  gap: 140px;
+}
+.atech-about-banner .about-banner-segment-one {
+  gap: 80px;
+}
+.atech-about-banner .about-banner-segment-one .about-banner-segment-img .floating-elem-one {
+  background: linear-gradient(to bottom, rgba(13, 136, 255, 0.9), rgba(13, 136, 255, 0.8));
+  width: 260px;
+  top: -30px;
+  left: 24px;
+}
+.atech-about-banner .about-banner-segment-one .about-banner-segment-img .floating-elem-two {
+  background: linear-gradient(to bottom, rgba(255, 136, 90, 0.9), rgba(255, 136, 90, 0.8));
+  width: 260px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -55px;
+}
+.atech-about-banner .about-banner-segment-two .banner-segment-two-grid {
+  grid-template-columns: 55% auto;
+  gap: 80px;
+}
+.atech-about-banner .about-banner-segment-two .about-banner-segment-img::after {
+  content: "";
+  position: absolute;
+  background: #c3e0f2;
+  left: 68px;
+  top: -20px;
+  bottom: 20px;
+  right: -24px;
+  border-radius: 20px;
+}
+.atech-about-banner .about-banner-segment-two .about-stats-item {
+  background: rgba(255, 255, 255, 0.2);
 }/*# sourceMappingURL=main.css.map */
