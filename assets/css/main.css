@@ -29796,5 +29796,11 @@ table td {
   background: url("../../../assets/images/about/service_offering_bg.png") top/cover no-repeat;
 }
 .atech-services-offers .services-offers-grid {
+  grid-template-columns: 40% auto;
   gap: 60px;
+}
+.atech-services-offers .services-offers-item {
+  position: sticky;
+  top: 120px;
+  z-index: 1;
 }/*# sourceMappingURL=main.css.map */

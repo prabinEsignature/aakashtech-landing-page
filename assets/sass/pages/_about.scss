@@ -109,9 +109,16 @@
 .atech-services-offers {
   background: url($img-path + "about/service_offering_bg.png") top/cover no-repeat;
 
-  .services-offers{
-    &-grid{
+  .services-offers {
+    &-grid {
+      grid-template-columns: 40% auto;
       gap: 60px;
+    }
+
+    &-item {
+      position: sticky;
+      top: 120px;
+      z-index: 1;
     }
   }
 }
