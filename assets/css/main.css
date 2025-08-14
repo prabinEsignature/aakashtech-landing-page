@@ -29766,4 +29766,28 @@ table td {
 }
 .atech-about-banner .about-banner-segment-two .about-stats-item {
   background: rgba(255, 255, 255, 0.2);
+}
+
+.atech-about-mvg {
+  background: url("../../../assets/images/about/mvg_bg.png") center/cover no-repeat;
+}
+.atech-about-mvg .about-mvg-grid {
+  gap: 80px;
+}
+.atech-about-mvg .about-mvg-img:nth-child(1) {
+  grid-column: 1/3;
+  height: 380px;
+}
+.atech-about-mvg .about-mvg-img:nth-child(2) {
+  height: 240px;
+}
+.atech-about-mvg .about-mvg-quote .ceo-quote-text {
+  font-style: italic;
+}
+.atech-about-mvg .about-mvg-details {
+  background: rgba(235, 245, 251, 0.5);
+}
+.atech-about-mvg .about-mvg-details .mvg-details-item-icon {
+  width: 64px;
+  height: 64px;
 }/*# sourceMappingURL=main.css.map */

@@ -63,3 +63,45 @@
     }
   }
 }
+
+.atech-about-mvg {
+  background: url($img-path + "about/mvg_bg.png") center/cover no-repeat;
+
+  .about-mvg {
+    &-grid {
+      gap: 80px;
+    }
+
+    &-img {
+      &:nth-child(1) {
+        grid-column: 1 / 3;
+        height: 380px;
+      }
+
+      &:nth-child(2) {
+        height: 240px;
+      }
+    }
+
+    &-quote {
+      .ceo-quote {
+        &-text {
+          font-style: italic;
+        }
+      }
+    }
+
+    &-details {
+      background: rgba(235, 245, 251, 0.5);
+
+      .mvg-details {
+        &-item {
+          &-icon {
+            width: 64px;
+            height: 64px;
+          }
+        }
+      }
+    }
+  }
+}
