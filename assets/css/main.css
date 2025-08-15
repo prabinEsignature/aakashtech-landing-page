@@ -26726,6 +26726,16 @@ a:visited, a:link {
 .content-stylings ol li::marker {
   font-weight: 600;
 }
+.content-stylings.content-sm p,
+.content-stylings.content-sm ul,
+.content-stylings.content-sm ol {
+  margin-bottom: 12px !important;
+}
+.content-stylings.content-sm ol,
+.content-stylings.content-sm ul {
+  gap: 4px;
+}
+
 .animate-none {
   animation: none;
 }
@@ -28500,6 +28510,31 @@ table td {
   left: 0;
   transform: none;
 }
+.segment-heading.segment-heading-light .after-ttl-border::after {
+  background: #ffffff !important;
+}
+
+.atech-home-process {
+  background: url("../../../assets/images/home/home_process_bg.png") top/cover no-repeat;
+}
+.atech-home-process .home-process-list {
+  padding: 80px 120px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.atech-home-process .home-process-item {
+  max-width: 728px;
+  width: 100%;
+}
+.atech-home-process .home-process-item:nth-child(even) {
+  background: #ffffff !important;
+}
+.atech-home-process .home-process-item:nth-child(even) .home-process-item-ttl {
+  color: #262626 !important;
+}
+.atech-home-process .home-process-item:nth-child(even) .home-process-item-description .content-stylings * {
+  color: #333333 !important;
+}
 
 .atech-section-group-one {
   background: url("../../../assets/images/home/home_banner_bg.png") no-repeat;
@@ -28596,8 +28631,17 @@ table td {
 .atech-home-about-container {
   gap: 80px;
 }
-.atech-home-about .home-about-img img {
-  scale: 1.5;
+.atech-home-about .home-about-img::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  background: #d7eaf7;
+  filter: blur(200px);
+  border-radius: 100%;
 }
 
 .atech-clients-summary .clients-brand-logo {
