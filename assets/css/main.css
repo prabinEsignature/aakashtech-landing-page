@@ -29821,4 +29821,22 @@ table td {
   bottom: 12px;
   left: 12px;
   right: 12px;
+}
+.atech-services-teams .services-teams-item .teams-item-info::after {
+  content: "";
+  position: absolute;
+  top: -18%;
+  right: 11.65%;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background: url("../../../assets/icons/export_plus_white_icon.svg");
+  background-repeat: no-repeat;
+  background-color: #3797d5;
+  background-size: 20px 20px;
+  background-position: center;
+  transition: all ease-in-out 300ms;
+}
+.atech-services-teams .services-teams-item:hover .teams-item-info::after {
+  transform: rotate(180deg);
 }/*# sourceMappingURL=main.css.map */

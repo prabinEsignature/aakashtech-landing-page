@@ -154,11 +154,11 @@
   width: 60px;
 }
 
-.breadcrumb-item{
+.breadcrumb-item {
   position: relative;
 
-  &.active{
-    color: color("primary-500")!important;
+  &.active {
+    color: color("primary-500") !important;
   }
 }
 .breadcrumb-item + .breadcrumb-item {
@@ -178,17 +178,13 @@
   }
 }
 
-
-
-
-
 .atech-cta-two {
-  &.cta-variant-two{
+  &.cta-variant-two {
     min-height: auto;
     margin-bottom: auto;
     background: url($img-path + "misc/cta_bg_two.png") center/cover no-repeat;
 
-    .cta-block-floating-img{
+    .cta-block-floating-img {
       height: 100%;
       width: 100%;
       max-width: 534px;
@@ -199,34 +195,34 @@
   }
 }
 
-.atech-project-appscreens{
-  .appscreens-slider{
-    .swiper-wrapper{
+.atech-project-appscreens {
+  .appscreens-slider {
+    .swiper-wrapper {
       padding-bottom: 60px;
     }
-    .swiper-slide{
+    .swiper-slide {
       max-width: 880px;
     }
   }
 }
 
-.atech-project-traverse{
-  .project-traverse{
-    &-img{
+.atech-project-traverse {
+  .project-traverse {
+    &-img {
       max-height: 168px;
     }
-    &-prev{
+    &-prev {
       grid-template-columns: 200px auto;
     }
 
-    &-next{
+    &-next {
       grid-template-columns: auto 200px;
     }
 
-    &-ttl{
+    &-ttl {
       transition: $default-transition;
-      &:hover{
-        color: color("primary-500")!important;
+      &:hover {
+        color: color("primary-500") !important;
       }
     }
   }
