@@ -27,47 +27,151 @@
     }
   }
 
-  &.segment-heading-light{
-    .after-ttl-border{
-      &::after{
-        background: color("white")!important;
+  &.segment-heading-light {
+    .after-ttl-border {
+      &::after {
+        background: color("white") !important;
       }
     }
   }
 }
 
-.atech-home-process{
+.atech-home-process {
   background: url($img-path + "home/home_process_bg.png") top/cover no-repeat;
 
-  .home-process{
-    &-list{
+  .home-process {
+    &-list {
       padding: 80px 120px;
-      border: 1px solid black;
       border-radius: 20px;
-    }
+      margin-right: -240px;
 
-    &-item{
-      max-width: 728px;
-      width: 100%;
+      &-wrapper {
+        &:nth-child(1) {
+          .home-process-item {
+            &:nth-child(even) {
+              background: color("white") !important;
 
-      &:nth-child(even){
-        background: color("white")!important;
+              .home-process {
+                &-item {
+                  &-ttl {
+                    color: color("onyx-700") !important;
+                  }
 
-        .home-process{
-          &-item{
-            &-ttl{
-              color: color("onyx-700")!important;
-            }
-
-            &-description{
-              .content-stylings{
-                *{
-                  color: color("onyx-600")!important;
+                  &-description {
+                    .content-stylings {
+                      * {
+                        color: color("onyx-600") !important;
+                      }
+                    }
+                  }
                 }
               }
             }
           }
         }
+
+        &:nth-child(2) {
+          .home-process-item {
+            &:nth-child(odd) {
+              background: color("white") !important;
+
+              .home-process {
+                &-item {
+                  &-ttl {
+                    color: color("onyx-700") !important;
+                  }
+
+                  &-description {
+                    .content-stylings {
+                      * {
+                        color: color("onyx-600") !important;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .home-process-list{
+            &::after{
+              border-radius: 0;
+            }
+          }
+        }
+      }
+
+      &-ttl {
+        position: absolute;
+        left: 300px;
+        top: -26px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 260px;
+        height: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-right: 0;
+        border-bottom: 0;
+        border-radius: 20px 0 0 0;
+      }
+    }
+
+    &-item {
+      max-width: 728px;
+      width: 100%;
+
+      &-count {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: calc(100% + 200px);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.4);
+        width: 120px;
+        height: 1px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: color("primary-500");
+        width: 10px;
+        height: 10px;
+        min-width: 10px;
+        border-radius: 100%;
+        outline: 10px solid color("primary-50");
+        right: calc(100% + 115px);
+        z-index: 1;
+      }
+    }
+
+    &-repeat{
+      position: absolute;
+      top: 0;
+      right: 100%;
+      width: 215px;
+      height: 762px;
+      border: 3px dashed rgba(255, 255, 255, 0.4);
+      border-right: 0;
+      border-radius: 20px 0 0 20px;
+
+      .repeat-arrow{
+        width: 16px;
+        height: 16px;
       }
     }
   }
