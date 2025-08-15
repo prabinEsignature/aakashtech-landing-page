@@ -93,8 +93,8 @@
             }
           }
 
-          .home-process-list{
-            &::after{
+          .home-process-list {
+            &::after {
               border-radius: 0;
             }
           }
@@ -159,19 +159,43 @@
       }
     }
 
-    &-repeat{
+    &-repeat {
       position: absolute;
-      top: 0;
+      top: 4%;
       right: 100%;
       width: 215px;
-      height: 762px;
+      height: 1020px;
       border: 3px dashed rgba(255, 255, 255, 0.4);
       border-right: 0;
       border-radius: 20px 0 0 20px;
 
-      .repeat-arrow{
-        width: 16px;
-        height: 16px;
+      .repeat-ttl {
+        position: absolute;
+        top: 50%;
+        transform: rotate(-90deg) translateY(-50%);
+        right: 28px;
+      }
+
+      .repeat-arrow {
+        width: 18px;
+        height: 18px;
+        position: absolute;
+
+        &:nth-child(1) {
+          left: 28px;
+          top: -9px;
+        }
+
+        &:nth-child(2) {
+          left: -2px;
+          top: 50%;
+          transform: rotate(-90deg) translateY(-50%);
+        }
+
+        &:nth-child(3) {
+          left: 28px;
+          bottom: -9px;
+        }
       }
     }
   }
