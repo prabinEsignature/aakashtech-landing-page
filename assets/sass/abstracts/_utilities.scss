@@ -1,4 +1,7 @@
 @use "sass:string";
+@use "sass:map";
+@use "sass:list";
+@use "sass:math";
 @use "colors" as *;
 @use "variables" as *;
 @use "mixins" as *;
@@ -353,30 +356,18 @@ $gap-count: 10;
   column-gap: 2px;
 }
 
-// @for $i from 1 through $gap-count {
-//   .gap-#{$i} {
-//     gap: $gap-start + ($i - 1) * $gap-increment !important;
-//   }
-//   .gap-y-#{$i} {
-//     row-gap: $gap-start + ($i - 1) * $gap-increment;
-//   }
-//   .gap-x-#{$i} {
-//     column-gap: $gap-start + ($i - 1) * $gap-increment;
-//   }
-// }
-
 // Mixin for responsive gap classes
 @mixin responsive-gaps($count) {
   @for $i from 1 through $count {
     // Base classes
     .gap-#{$i} {
-      gap: $gap-start + ($i - 1) * $gap-increment!important;
+      gap: $gap-start + ($i - 1) * $gap-increment !important;
     }
     .gap-y-#{$i} {
-      row-gap: $gap-start + ($i - 1) * $gap-increment!important;
+      row-gap: $gap-start + ($i - 1) * $gap-increment !important;
     }
     .gap-x-#{$i} {
-      column-gap: $gap-start + ($i - 1) * $gap-increment!important;
+      column-gap: $gap-start + ($i - 1) * $gap-increment !important;
     }
 
     // Responsive variants
@@ -388,12 +379,12 @@ $gap-count: 10;
       }
       .#{$breakpoint}-gap-y-#{$i} {
         @media (min-width: $size) {
-          row-gap: $gap-start + ($i - 1) * $gap-increment!important;
+          row-gap: $gap-start + ($i - 1) * $gap-increment !important;
         }
       }
       .#{$breakpoint}-gap-x-#{$i} {
         @media (min-width: $size) {
-          column-gap: $gap-start + ($i - 1) * $gap-increment!important;
+          column-gap: $gap-start + ($i - 1) * $gap-increment !important;
         }
       }
     }
@@ -569,16 +560,16 @@ $negative-margin-values: (
 }
 
 $font-size-breakpoints: (
-  "xl": "1199.98px",
-  "lg": "991.98px",
-  "md": "767.98px",
-  "sm": "575.98px",
-  "xs": "479.98px"
+  "xl": "1200px",
+  "lg": "992px",
+  "md": "768px",
+  "sm": "576px",
+  "xs": "440px"
 );
 
 // Mixin to generate margin and padding classes
 @mixin generate-spacing-classes($property, $prefix) {
-  @each $key, $value in $sizes {
+  @each $key, $value in $sizes-ascending {
     .#{$prefix}t-custom-#{$key} {
       #{$property}-top: #{$value};
     }
@@ -606,30 +597,30 @@ $font-size-breakpoints: (
 }
 
 @mixin generate-spacing-breakpoint-classes($property, $prefix) {
-  @each $key, $value in $sizes {
+  @each $key, $value in $sizes-ascending {
     @each $breakpoint, $breakpoint-width in $font-size-breakpoints {
-      @media (max-width: #{$breakpoint-width}) {
-        .#{$prefix}t-custom-#{$breakpoint}-#{$key} {
+      @media (min-width: #{$breakpoint-width}) {
+        .#{$breakpoint}-#{$prefix}t-custom-#{$key} {
           #{$property}-top: #{$value} !important;
         }
-        .#{$prefix}b-custom-#{$breakpoint}-#{$key} {
+        .#{$breakpoint}-#{$prefix}b-custom-#{$key} {
           #{$property}-bottom: #{$value} !important;
         }
-        .#{$prefix}s-custom-#{$breakpoint}-#{$key} {
+        .#{$breakpoint}-#{$prefix}s-custom-#{$key} {
           #{$property}-left: #{$value} !important;
         }
-        .#{$prefix}e-custom-#{$breakpoint}-#{$key} {
+        .#{$breakpoint}-#{$prefix}e-custom-#{$key} {
           #{$property}-right: #{$value} !important;
         }
-        .#{$prefix}x-custom-#{$breakpoint}-#{$key} {
+        .#{$breakpoint}-#{$prefix}x-custom-#{$key} {
           #{$property}-left: #{$value} !important;
           #{$property}-right: #{$value} !important;
         }
-        .#{$prefix}y-custom-#{$breakpoint}-#{$key} {
+        .#{$breakpoint}-#{$prefix}y-custom-#{$key} {
           #{$property}-top: #{$value} !important;
           #{$property}-bottom: #{$value} !important;
         }
-        .#{$prefix}-custom-#{$breakpoint}-#{$key} {
+        .#{$breakpoint}-#{$prefix}-custom-#{$key} {
           #{$property}: #{$value} !important;
         }
       }

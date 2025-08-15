@@ -38,6 +38,7 @@
 
 .atech-home-process {
   background: url($img-path + "home/home_process_bg.png") top/cover no-repeat;
+  display: none;
 
   .home-process {
     &-list {
@@ -407,11 +408,27 @@
   width: 100%;
   top: 40px;
   right: calc(100% + 120px);
+
+  @include breakpoint-down(xxxl){
+    right: calc(100% + 60px);
+  }
+
+  @include breakpoint-down(xxl){
+    right: calc(100% + 40px);
+  }
+
+  @include breakpoint-down(xl){
+    display: none!important;
+  }
 }
 
 .atech-home-about {
   &-container {
     gap: 80px;
+
+    @include breakpoint-down(xxl){
+      gap: 60px;
+    }
   }
 
   .home-about-img {
@@ -731,6 +748,14 @@
       .swiper-slide {
         max-width: 365px;
         width: 100%;
+
+        @include breakpoint-down(xxl){
+          max-width: 300px;
+        }
+
+        @include breakpoint-down(lg){
+          max-width: 240px;
+        }
       }
     }
   }
@@ -773,11 +798,25 @@
 
 .atech-cta-one {
   background: url($img-path + "misc/cta_bg_one.png") center/cover no-repeat;
+
   .cta-one-grid-block {
     background: url($img-path + "misc/cta_content_bg_one.png") center/cover no-repeat;
     border-radius: 32px;
     grid-template-columns: 40% auto;
     gap: 160px;
+
+    @include breakpoint-down(xxl){
+      gap: 120px;
+    }
+
+    @include breakpoint-down(xl){
+      gap: 80px;
+    }
+
+    @include breakpoint-down(lg){
+      gap: 20px;
+      grid-template-columns: 100%;
+    }
   }
 }
 
