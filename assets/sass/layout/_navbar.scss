@@ -20,6 +20,12 @@ $z-index-navbar-toggler: 1010;
   .atech-menu {
     border-radius: 60px;
 
+    &-parent{
+      @include breakpoint-down(xl){
+        display: none;
+      }
+    }
+
     .menu-link {
       &-text {
         &:hover {

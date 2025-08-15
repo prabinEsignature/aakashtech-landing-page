@@ -212,19 +212,53 @@
   .banner-product-feats {
     gap: 80px;
 
+    @include breakpoint-down(xxl) {
+      gap: 48px;
+    }
+
+    @include breakpoint-down(xl) {
+      gap: 24px;
+    }
+
     .product-feat-item {
+      @include breakpoint-down(xl) {
+        flex-direction: column;
+      }
+
       .feat-item-icon {
         width: 64px;
         height: 64px;
         min-width: 64px;
         transition: $default-transition;
 
+        @include breakpoint-down(xxl) {
+          width: 56px;
+          height: 56px;
+          min-width: 56px;
+        }
+
+        @include breakpoint-down(xl) {
+          width: 52px;
+          height: 52px;
+          min-width: 52px;
+        }
+
+        img {
+          &.icon-40 {
+            @include breakpoint-down(xl) {
+              width: 32px;
+              height: 32px;
+              min-width: 32px;
+              min-height: 32px;
+            }
+          }
+        }
+
         &::after {
           content: "";
           position: absolute;
           width: 1px;
           background: $primary-400;
-          // height: 56px;
           left: 50%;
           top: 100%;
           transform: translateX(-50%);
@@ -251,6 +285,10 @@
 
           &::after {
             height: 56px;
+
+            @include breakpoint-down(xxl) {
+              height: 72px;
+            }
           }
         }
       }
@@ -263,8 +301,12 @@
         &::before {
           left: 31px;
           top: calc(100% + 55px);
-          // width: 480px;
           width: 0;
+
+          @include breakpoint-down(xxl) {
+            left: 26px;
+            top: calc(100% + 72px);
+          }
         }
       }
 
@@ -282,14 +324,26 @@
 
   .product-feats-right {
     .product-feat-item {
+      @include breakpoint-down(xl) {
+        align-items: flex-end !important;
+      }
+
       .feat-item-icon {
         order: 2;
+
+        @include breakpoint-down(xl){
+          order: 1;
+        }
 
         &::before {
           right: 31px;
           top: calc(100% + 55px);
-          // width: 480px;
           width: 0;
+
+          @include breakpoint-down(xxl) {
+            right: 26px;
+            top: calc(100% + 72px);
+          }
         }
       }
 
@@ -303,9 +357,15 @@
         }
       }
 
-      .feat-item-text {
-        order: 12;
+      .feat-item-content {
+        order: 1;
       }
+    }
+  }
+
+  .home-banner-product {
+    @include breakpoint-down(xl) {
+      gap: 16px;
     }
   }
 
@@ -313,11 +373,27 @@
     min-width: 440px;
     padding: 60px 80px 0 80px;
 
+    @include breakpoint-down(xxl) {
+      padding: 60px 48px;
+      min-width: 400px;
+    }
+
+    @include breakpoint-down(xl) {
+      min-width: 348px;
+    }
+
     .ellipse-shape {
       width: 400px;
       height: 400px;
       min-width: 400px;
       min-height: 400px;
+
+      @include breakpoint-down(xxl) {
+        width: 360px;
+        height: 360px;
+        min-width: 360px;
+        min-height: 360px;
+      }
     }
   }
 }
