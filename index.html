@@ -49,6 +49,14 @@
           </a>
           <div class="atech-navbar-overlay-bg d-xl-none"></div>
           <div class="atech-menu-parent">
+            <div class="d-xl-none">
+              <a href="#" class="navbar-brand d-inline-flex justify-content-end mb-custom-4">
+                <img class="h-auto w-auto ms-auto" src="assets/images/site/logo_default.png" alt="Aakashtel logo" />
+              </a>
+              <button type="button" class="hamburger d-xl-none is-open" id="mobileSidebarClosebtn">
+                <span class="menu-bar"></span>
+              </button>
+            </div>
             <ul class="list-unstyled atech-menu d-flex align-items-center gap-x-3 bg-primary-50 p-custom-4">
               <li class="atech-menu-item px-3">
                 <a href="#"
@@ -100,7 +108,7 @@
               <div
                 class="atech-menu-submenu menu-submenu-services position-absolute bg-white xxl-p-custom-8 xl-p-custom-6 p-custom-4 shadow-default rounded-24">
                 <div class="submenu-main">
-                  <div class="submenu-services-list d-grid grid-cols-2 mb-custom-2">
+                  <div class="submenu-services-list d-grid lg-grid-cols-2 grid-cols-1 mb-custom-2">
                     <a href="#" class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start gap-4">
                       <div
                         class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
@@ -207,25 +215,25 @@
                     </a>
                   </div>
                 </div>
-                <div class="submenu-bottom d-flex pt-custom-5 border-t-gray-100-1">
-                  <div class="submenu-contact-info d-flex gap-4 justify-content-between w-100">
+                <div class="submenu-bottom d-flex xl-pt-custom-5 pt-custom-4 border-t-gray-100-1">
+                  <div class="submenu-contact-info d-flex flex-wrap lg-gap-4 gap-3 justify-content-between w-100">
                     <div class="submenu-contact-info-item d-flex align-items-center gap-3">
                       <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
                         <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="" />
                       </span>
-                      <span class="text-base text-onyx-500 font-medium">+977 9876890991</span>
+                      <span class="info-item-text text-base text-onyx-500 font-medium">+977 9876890991</span>
                     </div>
                     <div class="submenu-contact-info-item d-flex align-items-center gap-3">
                       <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
                         <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="" />
                       </span>
-                      <span class="text-base text-onyx-500 font-medium">aakashtech@gmail.com.np</span>
+                      <span class="info-item-text text-base text-onyx-500 font-medium">aakashtech@gmail.com.np</span>
                     </div>
                     <div class="submenu-contact-info-item d-flex align-items-center gap-3">
                       <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
                         <img class="icon-18" src="assets/icons/location_dot_outline_primary.svg" alt="" />
                       </span>
-                      <span class="text-base text-onyx-500 font-medium">Kalopul, Kathmandu, Nepal</span>
+                      <span class="info-item-text text-base text-onyx-500 font-medium">Kalopul, Kathmandu, Nepal</span>
                     </div>
                   </div>
                 </div>
@@ -234,70 +242,70 @@
               <div
                 class="atech-menu-submenu menu-submenu-portfolios position-absolute bg-white xxl-p-custom-8 xl-p-custom-6 p-custom-4 shadow-default rounded-24">
                 <div class="submenu-main">
-                  <div class="d-flex align-items-start xxl-gap-10 xl-gap-8 lg-gap-6 gap-4 mb-custom-6">
-                    <div class="nav flex-column nav-pills xxxl-gap-3 xxl-gap-3 gap-2" id="v-pills-tab" role="tablist"
+                  <div class="d-flex flex-xl-row flex-column align-items-start xxl-gap-10 xl-gap-8 lg-gap-6 gap-4 xl-mb-custom-6 mb-custom-4">
+                    <div class="nav flex-xl-column align-items-center align-items-xl-stretch nav-pills xxxl-gap-3 xxl-gap-3 gap-2" id="v-pills-tab" role="tablist"
                       aria-orientation="vertical">
                       <button
-                        class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white px-4 active"
+                        class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white xl-px-4 px-2 active"
                         id="v-pills-port-01-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-01" type="button"
                         role="tab" aria-controls="v-pills-port-01" aria-selected="true">
-                        <span class="btn-icon icon-24">
+                        <span class="btn-icon icon-24 d-none d-lg-inline-flex">
                           <img src="assets/icons/mobapp_tab_icon.svg" alt="" />
                         </span>
                         <span class="text-onyx-700 text-sm font-medium">Mobile Apps</span>
                       </button>
                       <button
-                        class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white px-4"
+                        class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white xl-px-4 px-2"
                         id="v-pills-port-02-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-02" type="button"
                         role="tab" aria-controls="v-pills-port-02" aria-selected="false">
-                        <span class="btn-icon icon-24">
+                        <span class="btn-icon icon-24 d-none d-lg-inline-flex">
                           <img src="assets/icons/ecommerce_tab_icon.svg" alt="" />
                         </span>
                         <span class="text-onyx-700 text-sm font-medium">E-commerce</span></button>
                       <button
-                        class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white px-4"
+                        class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white xl-px-4 px-2"
                         id="v-pills-port-03-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-03" type="button"
                         role="tab" aria-controls="v-pills-port-03" aria-selected="false">
-                        <span class="btn-icon icon-24">
+                        <span class="btn-icon icon-24 d-none d-lg-inline-flex">
                           <img src="assets/icons/uiux_tab_icon.svg" alt="" />
                         </span>
                         <span class="text-onyx-700 text-sm font-medium">UI/UX Design</span></button>
                       <button
-                        class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white px-4"
+                        class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white xl-px-4 px-2"
                         id="v-pills-port-04-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-04" type="button"
                         role="tab" aria-controls="v-pills-port-04" aria-selected="false">
-                        <span class="btn-icon icon-24">
+                        <span class="btn-icon icon-24 d-none d-lg-inline-flex">
                           <img src="assets/icons/ai_tab_icon.svg" alt="" />
                         </span>
                         <span class="text-onyx-700 text-sm font-medium">AI & Automation</span></button>
                       <button
-                        class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white px-4"
+                        class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white xl-px-4 px-2"
                         id="v-pills-port-05-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-05" type="button"
                         role="tab" aria-controls="v-pills-port-05" aria-selected="false">
-                        <span class="btn-icon icon-24">
+                        <span class="btn-icon icon-24 d-none d-lg-inline-flex">
                           <img src="assets/icons/crm_tab_icon.svg" alt="" />
                         </span>
                         <span class="text-onyx-700 text-sm font-medium">CRM & ERP</span></button>
                       <button
-                        class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white px-4"
+                        class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white xl-px-4 px-2"
                         id="v-pills-port-06-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-06" type="button"
                         role="tab" aria-controls="v-pills-port-06" aria-selected="false">
-                        <span class="btn-icon icon-24">
+                        <span class="btn-icon icon-24 d-none d-lg-inline-flex">
                           <img src="assets/icons/finance_tab_icon.svg" alt="" />
                         </span>
                         <span class="text-onyx-700 text-sm font-medium">Finance & Fintech</span></button>
                       <a href="#" class="nav-link btn btn-primary">
                         <span class="btn-text">All Categories</span>
-                        <span class="btn-icon icon-24">
+                        <span class="btn-icon icon-24 d-none d-lg-inline-flex">
                           <i class="fa-solid fa-chevron-right"></i>
                         </span></a>
                     </div>
                     <div class="tab-content" id="v-pills-tabContent">
                       <div class="tab-pane fade show active" id="v-pills-port-01" role="tabpanel"
                         aria-labelledby="v-pills-port-01-tab" tabindex="0">
-                        <div class="submenu-portfolios-list d-grid grid-cols-2 mb-custom-2">
-                          <a href="#" class="submenu-portfolios-item d-flex gap-5 align-items-start">
-                            <div class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100">
+                        <div class="submenu-portfolios-list d-grid lg-grid-cols-2 grid-cols-1 mb-custom-2">
+                          <a href="#" class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                            <div class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
                               <img src="assets/images/misc/portfolio_thumbnail_1.png" alt="" />
                             </div>
                             <div class="submenu-portfolios-item-details mt-custom-2 d-flex flex-column gap-2">
@@ -308,8 +316,8 @@
                                 relevance.</p>
                             </div>
                           </a>
-                          <a href="#" class="submenu-portfolios-item d-flex gap-5 align-items-start">
-                            <div class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100">
+                          <a href="#" class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                            <div class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
                               <img src="assets/images/misc/portfolio_thumbnail_2.png" alt="" />
                             </div>
                             <div class="submenu-portfolios-item-details mt-custom-2 d-flex flex-column gap-2">
@@ -320,8 +328,8 @@
                                 relevance.</p>
                             </div>
                           </a>
-                          <a href="#" class="submenu-portfolios-item d-flex gap-5 align-items-start">
-                            <div class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100">
+                          <a href="#" class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                            <div class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
                               <img src="assets/images/misc/portfolio_thumbnail_3.png" alt="" />
                             </div>
                             <div class="submenu-portfolios-item-details mt-custom-2 d-flex flex-column gap-2">
@@ -332,8 +340,8 @@
                                 relevance.</p>
                             </div>
                           </a>
-                          <a href="#" class="submenu-portfolios-item d-flex gap-5 align-items-start">
-                            <div class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100">
+                          <a href="#" class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                            <div class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
                               <img src="assets/images/misc/portfolio_thumbnail_1.png" alt="" />
                             </div>
                             <div class="submenu-portfolios-item-details mt-custom-2 d-flex flex-column gap-2">
@@ -344,8 +352,8 @@
                                 relevance.</p>
                             </div>
                           </a>
-                          <a href="#" class="submenu-portfolios-item d-flex gap-5 align-items-start">
-                            <div class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100">
+                          <a href="#" class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                            <div class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
                               <img src="assets/images/misc/portfolio_thumbnail_2.png" alt="" />
                             </div>
                             <div class="submenu-portfolios-item-details mt-custom-2 d-flex flex-column gap-2">
@@ -356,8 +364,8 @@
                                 relevance.</p>
                             </div>
                           </a>
-                          <a href="#" class="submenu-portfolios-item d-flex gap-5 align-items-start">
-                            <div class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100">
+                          <a href="#" class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                            <div class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
                               <img src="assets/images/misc/portfolio_thumbnail_3.png" alt="" />
                             </div>
                             <div class="submenu-portfolios-item-details mt-custom-2 d-flex flex-column gap-2">
@@ -379,25 +387,25 @@
                     </div>
                   </div>
                 </div>
-                <div class="submenu-bottom d-flex pt-custom-5 border-t-gray-100-1">
-                  <div class="submenu-contact-info d-flex gap-4 justify-content-between w-100">
+                <div class="submenu-bottom d-flex xl-pt-custom-5 pt-custom-4 border-t-gray-100-1">
+                  <div class="submenu-contact-info d-flex flex-wrap lg-gap-4 gap-3 justify-content-between w-100">
                     <div class="submenu-contact-info-item d-flex align-items-center gap-3">
                       <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
                         <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="" />
                       </span>
-                      <span class="text-base text-onyx-500 font-medium">+977 9876890991</span>
+                      <span class="info-item-text text-base text-onyx-500 font-medium">+977 9876890991</span>
                     </div>
                     <div class="submenu-contact-info-item d-flex align-items-center gap-3">
                       <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
                         <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="" />
                       </span>
-                      <span class="text-base text-onyx-500 font-medium">aakashtech@gmail.com.np</span>
+                      <span class="info-item-text text-base text-onyx-500 font-medium">aakashtech@gmail.com.np</span>
                     </div>
                     <div class="submenu-contact-info-item d-flex align-items-center gap-3">
                       <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
                         <img class="icon-18" src="assets/icons/location_dot_outline_primary.svg" alt="" />
                       </span>
-                      <span class="text-base text-onyx-500 font-medium">Kalopul, Kathmandu, Nepal</span>
+                      <span class="info-item-text text-base text-onyx-500 font-medium">Kalopul, Kathmandu, Nepal</span>
                     </div>
                   </div>
                 </div>
@@ -409,7 +417,7 @@
             <a href="https://wa.me/+9779851300024" class="whatsapp-btn position-relative" target="_blank"><img
                 src="assets/images/misc/whatsapp_logo.png" class="icon-32" alt="whatsapp icon"></a>
             <a href="contact.html" class="btn btn-primary">Contact Us</a>
-            <button type="button" class="hamburger d-xl-none" id="mobileSidebarTogglebtn">
+            <button type="button" class="hamburger d-xl-none" id="mobileSidebarOpenbtn">
               <span class="menu-bar"></span>
             </button>
           </div>

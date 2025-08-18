@@ -10,10 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const appscreensSwiperContainer = document.querySelector('.appscreens-slider');
   const servicesDetailsTwoSwiperContainer = document.querySelector('.services-details-two-slider');
 
-  const mobileSidebarTogglebtn = document.getElementById("mobileSidebarTogglebtn");
-  mobileSidebarTogglebtn.addEventListener('click', () => {
-    mobileSidebarTogglebtn.classList.toggle('is-open');
-    // mobileNav.classList.toggle('active');
+  const mobileSidebarOpenbtn = document.getElementById("mobileSidebarOpenbtn");
+  const navbarOverlayBg = document.querySelector(".atech-navbar-overlay-bg");
+  const navbarMenuParent = document.querySelector(".atech-menu-parent");
+
+  mobileSidebarOpenbtn.addEventListener('click', () => {
+    mobileSidebarOpenbtn.classList.toggle('is-open');
+    navbarOverlayBg.classList.toggle('is-open');
+    navbarMenuParent.classList.toggle('is-open');
   });
 
   // SWIPER SLIDERS
