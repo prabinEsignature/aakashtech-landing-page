@@ -206,12 +206,16 @@
   background: url($img-path + "home/home_banner_bg.png") no-repeat;
   min-height: 100vh;
   background-color: color("white");
-  padding-top: 90px; /* to adjust the fixed navbar /*/
+  padding-top: 90px;
 }
 
 .atech-home-banner {
   .banner-product-feats {
     gap: 80px;
+
+    @include breakpoint-down(xxxl) {
+      gap: 60px;
+    }
 
     @include breakpoint-down(xxl) {
       gap: 48px;
@@ -219,6 +223,10 @@
 
     @include breakpoint-down(xl) {
       gap: 24px;
+    }
+
+    @include breakpoint-down(lg){
+      width: calc(50% - 12px);
     }
 
     .product-feat-item {
@@ -265,6 +273,10 @@
           transform: translateX(-50%);
           height: 0;
           transition: $default-transition;
+
+          @include breakpoint-down(xl) {
+            display: none !important;
+          }
         }
 
         &::before {
@@ -273,6 +285,10 @@
           height: 1px;
           background: $primary-400;
           transition: all 80ms ease-in-out;
+
+          @include breakpoint-down(lg) {
+            display: none !important;
+          }
         }
       }
 
@@ -297,6 +313,9 @@
   }
 
   .product-feats-left {
+    @include breakpoint-down(lg) {
+      order: 2;
+    }
     .product-feat-item {
       .feat-item-icon {
         &::before {
@@ -307,6 +326,11 @@
           @include breakpoint-down(xxl) {
             left: 26px;
             top: calc(100% + 72px);
+          }
+
+          @include breakpoint-down(xl) {
+            top: 50%;
+            left: 100%;
           }
         }
       }
@@ -324,6 +348,9 @@
   }
 
   .product-feats-right {
+    @include breakpoint-down(lg) {
+      order: 3;
+    }
     .product-feat-item {
       @include breakpoint-down(xl) {
         align-items: flex-end !important;
@@ -344,6 +371,11 @@
           @include breakpoint-down(xxl) {
             right: 26px;
             top: calc(100% + 72px);
+          }
+
+          @include breakpoint-down(xl) {
+            top: 50%;
+            right: 100%;
           }
         }
       }
@@ -366,7 +398,11 @@
 
   .home-banner-product {
     @include breakpoint-down(xl) {
-      gap: 16px;
+      gap: 24px;
+    }
+
+    @include breakpoint-down(lg) {
+      flex-wrap: wrap;
     }
   }
 
@@ -374,13 +410,39 @@
     min-width: 440px;
     padding: 60px 80px 0 80px;
 
-    @include breakpoint-down(xxl) {
-      padding: 60px 48px;
+    @include breakpoint-down(xxxl) {
+      padding: 56px 48px;
       min-width: 400px;
     }
 
+    @include breakpoint-down(xxl) {
+      padding: 52px 40px;
+      min-width: 360px;
+    }
+
     @include breakpoint-down(xl) {
-      min-width: 348px;
+      padding: 40px 32px;
+      min-width: 320px;
+    }
+
+    @include breakpoint-down(lg) {
+      padding: 40px 24px;
+      order: 0;
+      width: 100%;
+    }
+
+    &-img {
+      @include breakpoint-down(xl) {
+        margin-top: 0 !important;
+      }
+
+      @include breakpoint-down(lg) {
+        max-width: 320px;
+      }
+
+      @include breakpoint-down(sm){
+        max-width: 240px;
+      }
     }
 
     .ellipse-shape {
@@ -389,11 +451,39 @@
       min-width: 400px;
       min-height: 400px;
 
+      @include breakpoint-down(xxxl) {
+        width: 380px;
+        height: 380px;
+        min-width: 380px;
+        min-height: 380px;
+      }
+
       @include breakpoint-down(xxl) {
         width: 360px;
         height: 360px;
         min-width: 360px;
         min-height: 360px;
+      }
+
+      @include breakpoint-down(xl) {
+        width: 320px;
+        height: 320px;
+        min-width: 320px;
+        min-height: 320px;
+      }
+
+      @include breakpoint-down(lg) {
+        width: 400px;
+        height: 400px;
+        min-width: 400px;
+        min-height: 400px;
+      }
+
+      @include breakpoint-down(sm) {
+        width: 320px;
+        height: 320px;
+        min-width: 320px;
+        min-height: 320px;
       }
     }
   }
@@ -402,7 +492,12 @@
 .floating-element-1 {
   right: 96px;
   top: -48px;
+
+  @include breakpoint-down(lg) {
+    display: none !important;
+  }
 }
+
 .floating-element-2 {
   max-width: 204px;
   width: 100%;
@@ -508,12 +603,31 @@
   .services-offers-card {
     padding: 48px 32px;
 
+    @include breakpoint-down(lg) {
+      padding: 40px 28px;
+    }
+
+    @include breakpoint-down(sm) {
+      padding: 32px 24px;
+    }
+
     .card-vector-1 {
       width: 76px;
     }
+
     .card-img {
       width: 80px;
       height: 80px;
+
+      @include breakpoint-down(lg) {
+        width: 72px;
+        height: 72px;
+      }
+
+      @include breakpoint-down(sm) {
+        width: 60px;
+        height: 60px;
+      }
     }
 
     .card-underline {
@@ -529,6 +643,18 @@
     .dotted-box-shape {
       top: -54px;
       left: 65px;
+
+      @include breakpoint-down(xl) {
+        top: -44px;
+        width: 120px;
+        left: 54px;
+      }
+
+      @include breakpoint-down(md) {
+        top: -38px;
+        width: 100px;
+        left: 48px;
+      }
     }
   }
 
@@ -539,6 +665,11 @@
 
     .card-img {
       height: 360px;
+
+      img {
+        width: auto !important;
+        height: auto !important;
+      }
     }
   }
 }
@@ -614,6 +745,18 @@
   .technologies-item {
     width: 180px;
 
+    @include breakpoint-down(xl) {
+      width: 160px;
+    }
+
+    @include breakpoint-down(lg) {
+      width: 140px;
+    }
+
+    @include breakpoint-down(md) {
+      width: 120px;
+    }
+
     &:hover {
       .technologies-item-icon {
         transform: scale(1.1);
@@ -624,6 +767,21 @@
       width: 80px;
       height: 80px;
       transition: $default-transition;
+
+      @include breakpoint-down(xl) {
+        width: 72px;
+        height: 72px;
+      }
+
+      @include breakpoint-down(lg) {
+        width: 60px;
+        height: 60px;
+      }
+
+      @include breakpoint-down(md) {
+        width: 52px;
+        height: 52px;
+      }
     }
   }
 }

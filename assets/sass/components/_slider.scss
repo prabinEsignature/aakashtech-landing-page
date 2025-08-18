@@ -1,39 +1,54 @@
-@use 'sass:color';
+@use "sass:color";
 @use "../abstracts/colors" as *;
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.swiper{
+.swiper {
     width: 100%;
     height: 100%;
 }
 
-.home-clients-slider{
-    .clients-slide{
+.home-clients-slider {
+    .clients-slide {
         width: 152px;
         height: 92px;
+
+        @include breakpoint-down(lg){
+            width: 140px;
+            height: 80px;
+        }
+
+        @include breakpoint-down(md){
+            width: 120px;
+            height: 72px;
+        }
+
+        @include breakpoint-down(sm){
+            width: 100px;
+            height: 60px;
+        }
     }
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
     width: 16px;
     height: 16px;
     background: $primary-150;
     opacity: 1;
 
-    &.swiper-pagination-bullet-active{
+    &.swiper-pagination-bullet-active {
         background: $primary-500;
     }
 }
 
-.swiper-button-prev, 
-.swiper-button-next{
+.swiper-button-prev,
+.swiper-button-next {
     width: 44px;
     height: 44px;
     background: color("primary-50");
     border-radius: 100%;
 
-    &::after{
+    &::after {
         font-size: 20px;
         font-weight: bold;
         color: color("primary-500");

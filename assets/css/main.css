@@ -29677,6 +29677,24 @@ input[type=button].btn-block {
   width: 152px;
   height: 92px;
 }
+@media (max-width: 991.98px) {
+  .home-clients-slider .clients-slide {
+    width: 140px;
+    height: 80px;
+  }
+}
+@media (max-width: 767.98px) {
+  .home-clients-slider .clients-slide {
+    width: 120px;
+    height: 72px;
+  }
+}
+@media (max-width: 575.98px) {
+  .home-clients-slider .clients-slide {
+    width: 100px;
+    height: 60px;
+  }
+}
 
 .swiper-pagination-bullet {
   width: 16px;
@@ -30393,11 +30411,16 @@ table td {
   background: url("../../../assets/images/home/home_banner_bg.png") no-repeat;
   min-height: 100vh;
   background-color: #ffffff;
-  padding-top: 90px; /* to adjust the fixed navbar /*/
+  padding-top: 90px;
 }
 
 .atech-home-banner .banner-product-feats {
   gap: 80px;
+}
+@media (max-width: 1535.98px) {
+  .atech-home-banner .banner-product-feats {
+    gap: 60px;
+  }
 }
 @media (max-width: 1399.98px) {
   .atech-home-banner .banner-product-feats {
@@ -30407,6 +30430,11 @@ table td {
 @media (max-width: 1199.98px) {
   .atech-home-banner .banner-product-feats {
     gap: 24px;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-home-banner .banner-product-feats {
+    width: calc(50% - 12px);
   }
 }
 @media (max-width: 1199.98px) {
@@ -30453,12 +30481,22 @@ table td {
   height: 0;
   transition: all ease-in-out 300ms;
 }
+@media (max-width: 1199.98px) {
+  .atech-home-banner .banner-product-feats .product-feat-item .feat-item-icon::after {
+    display: none !important;
+  }
+}
 .atech-home-banner .banner-product-feats .product-feat-item .feat-item-icon::before {
   content: "";
   position: absolute;
   height: 1px;
   background: #5facdd;
   transition: all 80ms ease-in-out;
+}
+@media (max-width: 991.98px) {
+  .atech-home-banner .banner-product-feats .product-feat-item .feat-item-icon::before {
+    display: none !important;
+  }
 }
 .atech-home-banner .banner-product-feats .product-feat-item:hover .feat-item-icon {
   background: #3797d5;
@@ -30474,6 +30512,11 @@ table td {
     height: 72px;
   }
 }
+@media (max-width: 991.98px) {
+  .atech-home-banner .product-feats-left {
+    order: 2;
+  }
+}
 .atech-home-banner .product-feats-left .product-feat-item .feat-item-icon::before {
   left: 31px;
   top: calc(100% + 55px);
@@ -30485,10 +30528,21 @@ table td {
     top: calc(100% + 72px);
   }
 }
+@media (max-width: 1199.98px) {
+  .atech-home-banner .product-feats-left .product-feat-item .feat-item-icon::before {
+    top: 50%;
+    left: 100%;
+  }
+}
 .atech-home-banner .product-feats-left .product-feat-item:hover .feat-item-icon::before {
   transition: all ease-in-out 300ms;
   transition-delay: 300ms;
   width: 480px;
+}
+@media (max-width: 991.98px) {
+  .atech-home-banner .product-feats-right {
+    order: 3;
+  }
 }
 @media (max-width: 1199.98px) {
   .atech-home-banner .product-feats-right .product-feat-item {
@@ -30514,6 +30568,12 @@ table td {
     top: calc(100% + 72px);
   }
 }
+@media (max-width: 1199.98px) {
+  .atech-home-banner .product-feats-right .product-feat-item .feat-item-icon::before {
+    top: 50%;
+    right: 100%;
+  }
+}
 .atech-home-banner .product-feats-right .product-feat-item:hover .feat-item-icon::before {
   transition: all ease-in-out 300ms;
   transition-delay: 300ms;
@@ -30524,22 +30584,56 @@ table td {
 }
 @media (max-width: 1199.98px) {
   .atech-home-banner .home-banner-product {
-    gap: 16px;
+    gap: 24px;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-home-banner .home-banner-product {
+    flex-wrap: wrap;
   }
 }
 .atech-home-banner .banner-product-showcase {
   min-width: 440px;
   padding: 60px 80px 0 80px;
 }
+@media (max-width: 1535.98px) {
+  .atech-home-banner .banner-product-showcase {
+    padding: 56px 48px;
+    min-width: 400px;
+  }
+}
 @media (max-width: 1399.98px) {
   .atech-home-banner .banner-product-showcase {
-    padding: 60px 48px;
-    min-width: 400px;
+    padding: 52px 40px;
+    min-width: 360px;
   }
 }
 @media (max-width: 1199.98px) {
   .atech-home-banner .banner-product-showcase {
-    min-width: 348px;
+    padding: 40px 32px;
+    min-width: 320px;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-home-banner .banner-product-showcase {
+    padding: 40px 24px;
+    order: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 1199.98px) {
+  .atech-home-banner .banner-product-showcase-img {
+    margin-top: 0 !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-home-banner .banner-product-showcase-img {
+    max-width: 320px;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-home-banner .banner-product-showcase-img {
+    max-width: 240px;
   }
 }
 .atech-home-banner .banner-product-showcase .ellipse-shape {
@@ -30547,6 +30641,14 @@ table td {
   height: 400px;
   min-width: 400px;
   min-height: 400px;
+}
+@media (max-width: 1535.98px) {
+  .atech-home-banner .banner-product-showcase .ellipse-shape {
+    width: 380px;
+    height: 380px;
+    min-width: 380px;
+    min-height: 380px;
+  }
 }
 @media (max-width: 1399.98px) {
   .atech-home-banner .banner-product-showcase .ellipse-shape {
@@ -30556,10 +30658,39 @@ table td {
     min-height: 360px;
   }
 }
+@media (max-width: 1199.98px) {
+  .atech-home-banner .banner-product-showcase .ellipse-shape {
+    width: 320px;
+    height: 320px;
+    min-width: 320px;
+    min-height: 320px;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-home-banner .banner-product-showcase .ellipse-shape {
+    width: 400px;
+    height: 400px;
+    min-width: 400px;
+    min-height: 400px;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-home-banner .banner-product-showcase .ellipse-shape {
+    width: 320px;
+    height: 320px;
+    min-width: 320px;
+    min-height: 320px;
+  }
+}
 
 .floating-element-1 {
   right: 96px;
   top: -48px;
+}
+@media (max-width: 991.98px) {
+  .floating-element-1 {
+    display: none !important;
+  }
 }
 
 .floating-element-2 {
@@ -30648,12 +30779,34 @@ table td {
 .atech-services-offer .services-offers-card {
   padding: 48px 32px;
 }
+@media (max-width: 991.98px) {
+  .atech-services-offer .services-offers-card {
+    padding: 40px 28px;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-services-offer .services-offers-card {
+    padding: 32px 24px;
+  }
+}
 .atech-services-offer .services-offers-card .card-vector-1 {
   width: 76px;
 }
 .atech-services-offer .services-offers-card .card-img {
   width: 80px;
   height: 80px;
+}
+@media (max-width: 991.98px) {
+  .atech-services-offer .services-offers-card .card-img {
+    width: 72px;
+    height: 72px;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-services-offer .services-offers-card .card-img {
+    width: 60px;
+    height: 60px;
+  }
 }
 .atech-services-offer .services-offers-card .card-underline .line {
   height: 1px;
@@ -30663,11 +30816,29 @@ table td {
   top: -54px;
   left: 65px;
 }
+@media (max-width: 1199.98px) {
+  .atech-projects .projects-cards .dotted-box-shape {
+    top: -44px;
+    width: 120px;
+    left: 54px;
+  }
+}
+@media (max-width: 767.98px) {
+  .atech-projects .projects-cards .dotted-box-shape {
+    top: -38px;
+    width: 100px;
+    left: 48px;
+  }
+}
 .atech-projects .projects-card .projects-card-logo {
   width: 120px;
 }
 .atech-projects .projects-card .card-img {
   height: 360px;
+}
+.atech-projects .projects-card .card-img img {
+  width: auto !important;
+  height: auto !important;
 }
 
 .project-stores .stores-item {
@@ -30710,6 +30881,21 @@ table td {
 .atech-technologies .technologies-item {
   width: 180px;
 }
+@media (max-width: 1199.98px) {
+  .atech-technologies .technologies-item {
+    width: 160px;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-technologies .technologies-item {
+    width: 140px;
+  }
+}
+@media (max-width: 767.98px) {
+  .atech-technologies .technologies-item {
+    width: 120px;
+  }
+}
 .atech-technologies .technologies-item:hover .technologies-item-icon {
   transform: scale(1.1);
 }
@@ -30717,6 +30903,24 @@ table td {
   width: 80px;
   height: 80px;
   transition: all ease-in-out 300ms;
+}
+@media (max-width: 1199.98px) {
+  .atech-technologies .technologies-item-icon {
+    width: 72px;
+    height: 72px;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-technologies .technologies-item-icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 767.98px) {
+  .atech-technologies .technologies-item-icon {
+    width: 52px;
+    height: 52px;
+  }
 }
 
 .atech-works {
