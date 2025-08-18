@@ -155,6 +155,33 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       observer: true,
       observeParents: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+          allowTouchMove: true,
+        },
+        576: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+          allowTouchMove: true,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+          allowTouchMove: true,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 20,
+          allowTouchMove: false,
+        },
+        1280: {
+          slidesPerView: 6,
+          spaceBetween: 20,
+          allowTouchMove: false,
+        },
+      },
     });
   }
 

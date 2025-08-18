@@ -9,6 +9,14 @@
     .footer-brand{
       &-logo{
         max-width: 148px;
+
+        @include breakpoint-down(sm){
+          max-width: 120px;
+        }
+
+        @include breakpoint-down(xs){
+          max-width: 100px;
+        }
       }
     }
   }
@@ -19,18 +27,30 @@
 
     @include breakpoint-down(lg){
       grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
     }
 
     @include breakpoint-down(sm){
       grid-template-columns: 100%;
+      gap: 24px;
     }
   }
 
-  .footer-block-list{
-    &-link{
-      transition: $default-transition;
-      &:hover{
-        color: color("primary-500")!important;
+  .footer-block{
+    &-list{
+      &-link{
+        transition: $default-transition;
+        &:hover{
+          color: color("primary-500")!important;
+        }
+      }
+    }
+
+    &-lead{
+      @include breakpoint-down(sm){
+        max-width: 360px;
+        margin-right: auto;
+        margin-left: auto;
       }
     }
   }

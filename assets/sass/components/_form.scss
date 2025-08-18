@@ -1,4 +1,4 @@
-@use 'sass:map';
+@use "sass:map";
 @use "../abstracts/colors" as *;
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
@@ -9,7 +9,7 @@
 .form-custom {
   %form-input-common {
     height: 52px !important;
-    border: 1px solid transparent!important;
+    border: 1px solid transparent !important;
     border-radius: 8px !important;
     padding-left: 16px !important;
     padding-right: 16px !important;
@@ -19,15 +19,19 @@
     outline: none;
     font-size: 16px;
 
-    @include placeholder() {
-      font-weight:500;
+    &::placeholder {
+      font-weight: 500;
       font-size: 16px;
       font-family: inherit;
       color: color("gray-400") !important;
+
+      @include breakpoint-down(md) {
+        font-size: 14px !important;
+      }
     }
 
     @include breakpoint-down(lg) {
-      font-size: 14px;
+      font-size: 14px !important;
       height: 48px !important;
     }
 
@@ -52,16 +56,20 @@
     border: 1px solid transparent;
     transition: $default-transition;
 
-    &::placeholder{
+    &::placeholder {
       font-weight: 500;
       font-size: 16px;
       font-family: inherit;
       color: color("gray-400") !important;
       transition: $default-transition;
+
+      @include breakpoint-down(md) {
+        font-size: 14px !important;
+      }
     }
 
-    &:focus{
-      border-color: color("primary-500")!important;
+    &:focus {
+      border-color: color("primary-500") !important;
     }
   }
 
@@ -69,15 +77,14 @@
     &.form-control {
       height: 120px !important;
 
-      &.long-textarea{
-        height: 126px!important;
+      @include breakpoint-down(md) {
+        height: 100px !important;
       }
     }
   }
 
   .form-select {
     @extend %form-input-common;
-    // bootstrap select icon customization
     background-color: rgba(235, 245, 251, 0.4);
     background-size: 16px 16px !important;
   }
@@ -197,19 +204,18 @@
   display: grid;
   grid-template-columns: 180px auto;
 
-  @include breakpoint-down(sm){
+  @include breakpoint-down(sm) {
     grid-template-columns: 100%;
   }
 }
 
-input:-webkit-autofill{
-  -webkit-background-clip: text!important;
+input:-webkit-autofill {
+  -webkit-background-clip: text !important;
   -webkit-text-fill-color: color("onyx-500");
   transition: background-color 5000s ease-in-out 0s;
   box-shadow: 0 0 0px 1000px color("white") inset;
   -webkit-box-shadow: 0 0 0px 1000px color("white") inset;
 }
-
 
 .page-content {
   &-search {
@@ -225,14 +231,14 @@ input:-webkit-autofill{
       }
     }
 
-    .icon-btn{
-      &:hover{
-        background: color("primary-500")!important;
-        border-color: color("primary-500")!important;
+    .icon-btn {
+      &:hover {
+        background: color("primary-500") !important;
+        border-color: color("primary-500") !important;
       }
     }
 
-    &.light-searchbox{
+    &.light-searchbox {
       background: color("white");
     }
   }

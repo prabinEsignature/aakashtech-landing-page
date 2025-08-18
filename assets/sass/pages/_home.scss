@@ -332,7 +332,7 @@
       .feat-item-icon {
         order: 2;
 
-        @include breakpoint-down(xl){
+        @include breakpoint-down(xl) {
           order: 1;
         }
 
@@ -409,16 +409,16 @@
   top: 40px;
   right: calc(100% + 120px);
 
-  @include breakpoint-down(xxxl){
+  @include breakpoint-down(xxxl) {
     right: calc(100% + 60px);
   }
 
-  @include breakpoint-down(xxl){
+  @include breakpoint-down(xxl) {
     right: calc(100% + 40px);
   }
 
-  @include breakpoint-down(xl){
-    display: none!important;
+  @include breakpoint-down(xl) {
+    display: none !important;
   }
 }
 
@@ -426,7 +426,7 @@
   &-container {
     gap: 80px;
 
-    @include breakpoint-down(xxl){
+    @include breakpoint-down(xxl) {
       gap: 60px;
     }
   }
@@ -638,7 +638,12 @@
       max-width: 400px;
       width: 100%;
       padding: 0 12px;
+
+      @include breakpoint-down(xxl) {
+        max-width: 360px;
+      }
     }
+
     .finest-work-card {
       box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
 
@@ -749,12 +754,20 @@
         max-width: 365px;
         width: 100%;
 
-        @include breakpoint-down(xxl){
+        @include breakpoint-down(xxl) {
           max-width: 300px;
         }
 
-        @include breakpoint-down(lg){
+        @include breakpoint-down(lg) {
           max-width: 240px;
+        }
+
+        @include breakpoint-down(md) {
+          max-width: 200px;
+        }
+
+        @include breakpoint-down(sm) {
+          max-width: 160px;
         }
       }
     }
@@ -767,13 +780,24 @@
   .contact-grid-block {
     &-wrapper {
       border-radius: 40px;
+
+      @include breakpoint-down(lg) {
+        border-radius: 32px;
+      }
+
+      @include breakpoint-down(sm) {
+        border-radius: 24px;
+      }
     }
   }
 
   .contact-block-info {
-    // background: linear-gradient(135deg, #ffffff 0%, color("primary-50") 50%, color("primary-50") 75%, color("primary-50") 135%);
-    border-radius: 32px;
+    border-radius: 28px;
     background: url($img-path + "misc/contact_info_bg.png") center/cover no-repeat;
+
+    @include breakpoint-down(lg) {
+      border-radius: 20px;
+    }
   }
 
   .contact-block-feat-points {
@@ -805,15 +829,15 @@
     grid-template-columns: 40% auto;
     gap: 160px;
 
-    @include breakpoint-down(xxl){
+    @include breakpoint-down(xxl) {
       gap: 120px;
     }
 
-    @include breakpoint-down(xl){
+    @include breakpoint-down(xl) {
       gap: 80px;
     }
 
-    @include breakpoint-down(lg){
+    @include breakpoint-down(lg) {
       gap: 20px;
       grid-template-columns: 100%;
     }
@@ -826,6 +850,10 @@
   position: relative;
   z-index: 5;
   margin-top: -120px;
+
+  @include breakpoint-down(xxl) {
+    margin-top: -60px;
+  }
 
   .newsletter-top {
     max-width: 600px;
