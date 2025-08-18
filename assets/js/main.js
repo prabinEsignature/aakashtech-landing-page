@@ -10,6 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const appscreensSwiperContainer = document.querySelector('.appscreens-slider');
   const servicesDetailsTwoSwiperContainer = document.querySelector('.services-details-two-slider');
 
+  const mobileSidebarTogglebtn = document.getElementById("mobileSidebarTogglebtn");
+  mobileSidebarTogglebtn.addEventListener('click', () => {
+    mobileSidebarTogglebtn.classList.toggle('is-open');
+    // mobileNav.classList.toggle('active');
+  });
+
+  // SWIPER SLIDERS
   document.querySelectorAll('.atech-menu-item').forEach(item => {
     const submenu = item.querySelector('.atech-menu-submenu');
 
@@ -40,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       link.addEventListener('mouseenter', () => {
         clearTimeout(timeout);
-        // submenu.style.display = 'block';
         submenu.style.opacity = '1';
         submenu.style.visibility = 'visible';
       });
@@ -48,7 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
       // Start hide timer when leaving link
       link.addEventListener('mouseleave', () => {
         timeout = setTimeout(() => {
-          // submenu.style.display = 'none';
           submenu.style.opacity = '0';
           submenu.style.visibility = 'hidden';
         }, 200);
@@ -57,7 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
       // Keep submenu open when hovered
       submenu.addEventListener('mouseenter', () => {
         clearTimeout(timeout);
-        // submenu.style.display = 'block';
         submenu.style.opacity = '1';
         submenu.style.visibility = 'visible';
       });
@@ -65,7 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
       // Hide submenu when leaving
       submenu.addEventListener('mouseleave', () => {
         timeout = setTimeout(() => {
-          // submenu.style.display = 'none';
           submenu.style.opacity = '0';
           submenu.style.visibility = 'hidden';
         }, 200);

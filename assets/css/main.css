@@ -28754,6 +28754,46 @@ Output
 }
 
 */
+.menu-bar {
+  position: relative;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+.menu-bar, .menu-bar:before, .menu-bar:after {
+  display: block;
+  width: 24px;
+  height: 2px;
+  border-radius: 4px;
+  transition: background-color 0.3s linear, transform 0.3s linear;
+  background-color: #232323;
+}
+.menu-bar:before, .menu-bar:after {
+  position: absolute;
+  content: "";
+}
+.menu-bar:before {
+  top: -7px;
+}
+.menu-bar:after {
+  top: 7px;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.hamburger.is-open .menu-bar {
+  background-color: transparent;
+}
+.hamburger.is-open .menu-bar:before {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger.is-open .menu-bar:after {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 .btn {
   text-align: center;
   font-weight: 600;
@@ -30156,34 +30196,115 @@ table td {
   min-height: 90px;
   z-index: 1000;
 }
+
 .atech-navbar .navbar-brand {
   max-width: 100px;
+}
+.atech-navbar-overlay-bg {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
 }
 .atech-navbar .atech-menu {
   border-radius: 60px;
 }
 @media (max-width: 1199.98px) {
+  .atech-navbar .atech-menu {
+    flex-direction: column;
+    height: 100%;
+    border-radius: 20px;
+    justify-content: center;
+  }
+}
+@media (max-width: 1199.98px) {
   .atech-navbar .atech-menu-parent {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100%;
+    z-index: 999;
+    padding: 20px;
+    background: #ffffff;
+  }
+}
+@media (max-width: 1199.98px) {
+  .atech-navbar .atech-menu-item {
+    padding: 16px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 1199.98px) {
+  .atech-navbar .atech-menu-link {
+    text-transform: uppercase;
   }
 }
 .atech-navbar .atech-menu .menu-link-text:hover {
   opacity: 0.85;
+}
+@media (max-width: 1199.98px) {
+  .atech-navbar .atech-menu .menu-link-text {
+    font-weight: 700;
+  }
 }
 .atech-navbar .atech-menu-submenu {
   visibility: hidden;
   opacity: 0;
   max-width: 1280px;
   width: 100%;
-  width: 100%;
   left: 50%;
   transform: translateX(-50%);
   margin-top: 24px;
+}
+@media (max-width: 1535.98px) {
+  .atech-navbar .atech-menu-submenu {
+    max-width: 1240px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .atech-navbar .atech-menu-submenu {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .atech-navbar .atech-menu-submenu {
+    left: auto;
+    right: calc(100% + 24px);
+    top: 0;
+    transform: none;
+    width: 720px;
+  }
 }
 .atech-navbar .atech-menu-submenu .submenu-services-list {
   -moz-column-gap: 60px;
        column-gap: 60px;
   row-gap: 12px;
+}
+@media (max-width: 1535.98px) {
+  .atech-navbar .atech-menu-submenu .submenu-services-list {
+    -moz-column-gap: 52px;
+         column-gap: 52px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .atech-navbar .atech-menu-submenu .submenu-services-list {
+    -moz-column-gap: 48px;
+         column-gap: 48px;
+    row-gap: 8px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .atech-navbar .atech-menu-submenu .submenu-services-list {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+    row-gap: 6px;
+  }
 }
 .atech-navbar .atech-menu-submenu .submenu-services-item-icon {
   width: 68px;
@@ -30221,6 +30342,20 @@ table td {
   -moz-column-gap: 40px;
        column-gap: 40px;
   row-gap: 20px;
+}
+@media (max-width: 1535.98px) {
+  .atech-navbar .atech-submenu-list .menu-submenu-portfolios .submenu-portfolios-list {
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+    row-gap: 18px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .atech-navbar .atech-submenu-list .menu-submenu-portfolios .submenu-portfolios-list {
+    -moz-column-gap: 28px;
+         column-gap: 28px;
+    row-gap: 16px;
+  }
 }
 
 .atech-footer {
@@ -30437,6 +30572,11 @@ table td {
     width: calc(50% - 12px);
   }
 }
+@media (max-width: 575.98px) {
+  .atech-home-banner .banner-product-feats {
+    width: 100%;
+  }
+}
 @media (max-width: 1199.98px) {
   .atech-home-banner .banner-product-feats .product-feat-item {
     flex-direction: column;
@@ -30542,11 +30682,6 @@ table td {
 @media (max-width: 991.98px) {
   .atech-home-banner .product-feats-right {
     order: 3;
-  }
-}
-@media (max-width: 1199.98px) {
-  .atech-home-banner .product-feats-right .product-feat-item {
-    align-items: flex-end !important;
   }
 }
 .atech-home-banner .product-feats-right .product-feat-item .feat-item-icon {

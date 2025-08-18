@@ -229,6 +229,10 @@
       width: calc(50% - 12px);
     }
 
+    @include breakpoint-down(sm){
+      width: 100%;
+    }
+
     .product-feat-item {
       @include breakpoint-down(xl) {
         flex-direction: column;
@@ -352,10 +356,6 @@
       order: 3;
     }
     .product-feat-item {
-      @include breakpoint-down(xl) {
-        align-items: flex-end !important;
-      }
-
       .feat-item-icon {
         order: 2;
 

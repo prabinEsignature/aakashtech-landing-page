@@ -17,12 +17,51 @@ $z-index-navbar-toggler: 1010;
     max-width: 100px;
   }
 
+  &-overlay-bg {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+  }
+
   .atech-menu {
     border-radius: 60px;
 
-    &-parent{
-      @include breakpoint-down(xl){
-        display: none;
+    @include breakpoint-down(xl) {
+      flex-direction: column;
+      height: 100%;
+      border-radius: 20px;
+      justify-content: center;
+    }
+
+    &-parent {
+      @include breakpoint-down(xl) {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 320px;
+        height: 100%;
+        z-index: 999;
+        padding: 20px;
+        background: color("white");
+      }
+    }
+
+    &-item {
+      @include breakpoint-down(xl) {
+        padding: 16px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    &-link {
+      @include breakpoint-down(xl) {
+        text-transform: uppercase;
       }
     }
 
@@ -30,6 +69,10 @@ $z-index-navbar-toggler: 1010;
       &-text {
         &:hover {
           opacity: 0.85;
+        }
+
+        @include breakpoint-down(xl) {
+          font-weight: 700;
         }
       }
     }
@@ -40,83 +83,122 @@ $z-index-navbar-toggler: 1010;
       opacity: 0;
       max-width: 1280px;
       width: 100%;
-      width: 100%;
       left: 50%;
       transform: translateX(-50%);
       margin-top: 24px;
 
-      .submenu-services{
-        &-list{
+      @include breakpoint-down(xxxl) {
+        max-width: 1240px;
+      }
+
+      @include breakpoint-down(xxl) {
+        max-width: 1140px;
+      }
+
+      @include breakpoint-down(xl) {
+        left: auto;
+        right: calc(100% + 24px);
+        top: 0;
+        transform: none;
+        width: 720px;
+      }
+
+      .submenu-services {
+        &-list {
           column-gap: 60px;
           row-gap: 12px;
+
+          @include breakpoint-down(xxxl) {
+            column-gap: 52px;
+          }
+
+          @include breakpoint-down(xxl) {
+            column-gap: 48px;
+            row-gap: 8px;
+          }
+
+          @include breakpoint-down(xl) {
+            column-gap: 40px;
+            row-gap: 6px;
+          }
         }
       }
 
-      .submenu-services-item{
-        &-icon{
+      .submenu-services-item {
+        &-icon {
           width: 68px;
           height: 68px;
           min-width: 68px;
         }
 
-        &-ttl{
+        &-ttl {
           transition: $default-transition;
         }
 
-        &:hover{
-          .submenu-services-item-ttl{
-            color: color("primary-500")!important;
+        &:hover {
+          .submenu-services-item-ttl {
+            color: color("primary-500") !important;
           }
         }
       }
     }
   }
 
-  .atech-submenu-list{
-    .menu-submenu-portfolios{
-      .nav-pills{
+  .atech-submenu-list {
+    .menu-submenu-portfolios {
+      .nav-pills {
         min-width: 220px;
 
-        .nav-link{
-          &:hover{
-            background: color("primary-50")!important;
+        .nav-link {
+          &:hover {
+            background: color("primary-50") !important;
           }
 
-          &.btn{
-            &.btn-primary{
-              &:hover{
-                background: color("primary-600")!important;
-                border-color: color("primary-600")!important;
+          &.btn {
+            &.btn-primary {
+              &:hover {
+                background: color("primary-600") !important;
+                border-color: color("primary-600") !important;
               }
             }
           }
         }
       }
 
-      .submenu-portfolios{
-        &-item{
-          &-img{
+      .submenu-portfolios {
+        &-item {
+          &-img {
             min-width: 140px;
             width: 140px;
             height: 100px;
           }
 
-          &-ttl{
+          &-ttl {
             transition: $default-transition;
           }
 
-          &:hover{
-            .submenu-portfolios-item{
-              &-ttl{
-                color: color("primary-500")!important;
+          &:hover {
+            .submenu-portfolios-item {
+              &-ttl {
+                color: color("primary-500") !important;
               }
             }
           }
         }
 
-        &-list{
+        &-list {
           column-gap: 40px;
           row-gap: 20px;
+
+          @include breakpoint-down(xxxl) {
+            column-gap: 32px;
+            row-gap: 18px;
+          }
+
+          @include breakpoint-down(xxl) {
+            column-gap: 28px;
+            row-gap: 16px;
+          }
         }
       }
     }
