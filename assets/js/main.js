@@ -445,7 +445,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         576: {
           slidesPerView: 3,
-          spaceBetween: 15,
+          spaceBetween: 12,
           allowTouchMove: true,
         },
         768: {

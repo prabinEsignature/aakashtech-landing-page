@@ -58,6 +58,18 @@
     background: color("primary-50");
     border-radius: 100%;
 
+    @include breakpoint-down(lg){
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    @include breakpoint-down(sm){
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+    }
+
     &::after {
         font-size: 20px;
         font-weight: bold;
@@ -65,8 +77,6 @@
 
         @include breakpoint-down(lg){
             font-size: 18px;
-            width: 40px;
-            height: 40px;
         }
 
         @include breakpoint-down(sm){

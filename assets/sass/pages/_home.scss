@@ -926,6 +926,11 @@
     padding-left: 84px !important;
     padding-right: 84px !important;
 
+    @include breakpoint-down(md){
+      padding-left: 72px!important;
+      padding-right: 72px!important;
+    }
+
     .screenshots-btn {
       transition: $default-transition;
 
@@ -938,6 +943,11 @@
         height: 52px;
         padding: 10px 12px;
 
+        @include breakpoint-down(sm){
+          padding: 8px;
+          height: 44px;
+        }
+
         img {
           width: auto;
         }
@@ -945,6 +955,10 @@
 
       &-text {
         padding: 10px 12px;
+
+        @include breakpoint-down(sm){
+          padding: 8px;
+        }
       }
     }
   }
