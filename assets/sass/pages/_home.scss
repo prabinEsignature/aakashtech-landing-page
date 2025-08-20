@@ -2,40 +2,6 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.after-ttl-border {
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    background: color("primary-500");
-    height: 6px;
-    width: 120px;
-    top: calc(100% + 20px);
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
-.segment-heading {
-  &.heading-left {
-    .after-ttl-border {
-      &::after {
-        left: 0;
-        transform: none;
-      }
-    }
-  }
-
-  &.segment-heading-light {
-    .after-ttl-border {
-      &::after {
-        background: color("white") !important;
-      }
-    }
-  }
-}
-
 .atech-home-process {
   background: url($img-path + "home/home_process_bg.png") top/cover no-repeat;
   display: none;
@@ -210,6 +176,13 @@
 }
 
 .atech-home-banner {
+  .home-banner-ttl {
+    @include breakpoint-down(sm) {
+      br {
+        display: none !important;
+      }
+    }
+  }
   .banner-product-feats {
     gap: 80px;
 
@@ -431,6 +404,10 @@
       width: 100%;
     }
 
+    @include breakpoint-down(sm) {
+      padding: 24px;
+    }
+
     &-img {
       @include breakpoint-down(xl) {
         margin-top: 0 !important;
@@ -446,44 +423,44 @@
     }
 
     .ellipse-shape {
-      width: 400px;
-      height: 400px;
+      @include box(400px);
       min-width: 400px;
       min-height: 400px;
 
       @include breakpoint-down(xxxl) {
-        width: 380px;
-        height: 380px;
+        @include box(380px);
         min-width: 380px;
         min-height: 380px;
       }
 
       @include breakpoint-down(xxl) {
-        width: 360px;
-        height: 360px;
+        @include box(360px);
         min-width: 360px;
         min-height: 360px;
       }
 
       @include breakpoint-down(xl) {
-        width: 320px;
-        height: 320px;
+        @include box(320px);
         min-width: 320px;
         min-height: 320px;
       }
 
       @include breakpoint-down(lg) {
-        width: 400px;
-        height: 400px;
+        @include box(400px);
         min-width: 400px;
         min-height: 400px;
       }
 
       @include breakpoint-down(sm) {
-        width: 320px;
-        height: 320px;
+        @include box(320px);
         min-width: 320px;
         min-height: 320px;
+      }
+
+      @include breakpoint-down(xs) {
+        @include box(280px);
+        min-width: 280px;
+        min-height: 280px;
       }
     }
   }
@@ -524,6 +501,14 @@
     @include breakpoint-down(xxl) {
       gap: 60px;
     }
+
+    @include breakpoint-down(lg){
+      gap: 48px;
+    }
+
+    @include breakpoint-down(sm){
+      gap: 40px;
+    }
   }
 
   .home-about-img {
@@ -555,13 +540,25 @@
     .nav-link {
       border: 1px solid transparent !important;
 
+      @include breakpoint-down(sm){
+        border-radius: 8px!important;
+      }
+
       &-img {
         height: 60px;
+
+        @include breakpoint-down(sm){
+          height: 40px;
+        }
       }
 
       &-rating {
         *[class*="text-"] {
           transition: $default-transition;
+        }
+
+        @include breakpoint-down(sm){
+          display: none!important;
         }
       }
 
@@ -583,9 +580,10 @@
   .clients-reviews-content {
     .swiper-slide {
       padding: 0 12px;
-    }
-    .tab-pane-slider {
-      margin: 0 -12px;
+
+      @include breakpoint-down(sm){
+        padding: 0;
+      }
     }
     .tab-reviews-card {
       .card-img {
@@ -607,8 +605,12 @@
       padding: 40px 28px;
     }
 
-    @include breakpoint-down(sm) {
+    @include breakpoint-down(md) {
       padding: 32px 24px;
+    }
+
+    @include breakpoint-down(sm){
+      padding: 20px;
     }
 
     .card-vector-1 {

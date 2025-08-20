@@ -230,30 +230,30 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuLinks = document.querySelectorAll('.atech-menu-link'); // top-level anchors
     const submenus = document.querySelectorAll('.atech-menu-submenu');
     const parents = document.querySelectorAll('.atech-menu-parent-inner');
-  
+
     const isDesktop = () =>
       window.matchMedia(`(min-width: ${BREAKPOINT}px) and (hover: hover) and (pointer: fine)`).matches;
     const isMobile = () => !isDesktop();
-  
+
     let currentMode = isDesktop() ? 'desktop' : 'mobile';
-  
+
     // --- per-link wiring ---
     menuLinks.forEach(link => {
       const submenuClass = link.getAttribute('data-submenu');
       const hasSubmenu = !!submenuClass;
       const submenu = hasSubmenu ? document.querySelector(`.${submenuClass}`) : null;
-  
+
       // ===== DESKTOP: Hover show/hide for items that have a submenu =====
       if (submenu) {
         let hideTimer;
-  
+
         link.addEventListener('mouseenter', () => {
           if (!isDesktop()) return;
           clearTimeout(hideTimer);
           submenu.style.opacity = '1';
           submenu.style.visibility = 'visible';
         });
-  
+
         link.addEventListener('mouseleave', () => {
           if (!isDesktop()) return;
           hideTimer = setTimeout(() => {
@@ -261,14 +261,14 @@ document.addEventListener("DOMContentLoaded", () => {
             submenu.style.visibility = 'hidden';
           }, 200);
         });
-  
+
         submenu.addEventListener('mouseenter', () => {
           if (!isDesktop()) return;
           clearTimeout(hideTimer);
           submenu.style.opacity = '1';
           submenu.style.visibility = 'visible';
         });
-  
+
         submenu.addEventListener('mouseleave', () => {
           if (!isDesktop()) return;
           hideTimer = setTimeout(() => {
@@ -277,23 +277,23 @@ document.addEventListener("DOMContentLoaded", () => {
           }, 200);
         });
       }
-  
+
       // ===== MOBILE: tap top-level link ONLY IF it has a submenu =====
       link.addEventListener('click', (e) => {
         if (!isMobile()) return;         // desktop: let anchors behave normally
         if (!hasSubmenu || !submenu) return; // items without submenu should navigate
-  
+
         // item has submenu -> open it instead of navigating
         e.preventDefault();
         e.stopPropagation();
-  
+
         const parentInner = link.closest('.atech-menu-parent-inner');
         const alreadyOpen = submenu.classList.contains('is-open');
-  
+
         // close all first
         submenus.forEach(sm => sm.classList.remove('is-open'));
         parents.forEach(pi => pi.classList.remove('is-open'));
-  
+
         // then open if it wasn't open
         if (!alreadyOpen) {
           submenu.classList.add('is-open');
@@ -301,28 +301,28 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     });
-  
+
     // ===== MOBILE: Back/close inside submenu via .submenu-top =====
     document.querySelectorAll('.atech-menu-submenu .submenu-top').forEach(topBtn => {
       topBtn.addEventListener('click', (e) => {
         if (!isMobile()) return;
         e.preventDefault();
         e.stopPropagation();
-  
+
         const submenu = topBtn.closest('.atech-menu-submenu');
         const parentInner = topBtn.closest('.atech-menu-parent-inner');
         if (submenu) submenu.classList.remove('is-open');
         if (parentInner) parentInner.classList.remove('is-open');
       });
     });
-  
+
     // ===== Mode transitions =====
     function enterDesktopMode() {
       // ensure mobile classes are cleared
       submenus.forEach(sm => sm.classList.remove('is-open'));
       parents.forEach(pi => pi.classList.remove('is-open'));
     }
-  
+
     function enterMobileMode() {
       // clear inline styles from desktop hover logic
       submenus.forEach(sm => {
@@ -331,7 +331,7 @@ document.addEventListener("DOMContentLoaded", () => {
         sm.style.transform = '';
       });
     }
-  
+
     function onModeMaybeChange() {
       const next = isDesktop() ? 'desktop' : 'mobile';
       if (next === currentMode) return;
@@ -339,15 +339,15 @@ document.addEventListener("DOMContentLoaded", () => {
       if (next === 'desktop') enterDesktopMode();
       else enterMobileMode();
     }
-  
+
     window.addEventListener('resize', onModeMaybeChange);
     window.addEventListener('orientationchange', onModeMaybeChange);
-  
+
     // initial
     if (currentMode === 'desktop') enterDesktopMode();
     else enterMobileMode();
   })();
-  
+
 
   // Initialize client logo slider
   if (clientsSwiperContainer) {
@@ -377,6 +377,9 @@ document.addEventListener("DOMContentLoaded", () => {
         disableOnInteraction: false,
       },
       slidesPerView: 1,
+      centeredSlides: true,
+      centeredSlidesBounds: true,
+      centerInsufficientSlides: true,
       breakpoints: {
         576: {
           slidesPerView: 1,
