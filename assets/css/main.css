@@ -30199,13 +30199,28 @@ table td {
   min-height: 90px;
   z-index: 1000;
 }
+@media (max-width: 1199.98px) {
+  .atech-header {
+    min-height: 80px;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-header {
+    min-height: 68px;
+  }
+}
 
 .atech-navbar .navbar-brand {
   max-width: 100px;
 }
 @media (max-width: 1199.98px) {
   .atech-navbar .navbar-brand {
-    max-width: 92px;
+    max-width: 88px;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-navbar .navbar-brand {
+    max-width: 72px;
   }
 }
 .atech-navbar-overlay-bg {
@@ -30260,6 +30275,7 @@ table td {
 @media (max-width: 575.98px) {
   .atech-navbar .atech-menu-parent {
     width: 100%;
+    padding: 16px 20px;
   }
 }
 .atech-navbar .atech-menu-parent .navbar-brand {

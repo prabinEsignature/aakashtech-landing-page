@@ -18,7 +18,11 @@ $z-index-navbar-toggler: 1010;
     max-width: 100px;
 
     @include breakpoint-down(xl) {
-      max-width: 92px;
+      max-width: 88px;
+    }
+
+    @include breakpoint-down(sm){
+      max-width: 72px;
     }
   }
 
@@ -75,6 +79,7 @@ $z-index-navbar-toggler: 1010;
 
       @include breakpoint-down(sm) {
         width: 100%;
+        padding: 16px 20px;
       }
 
       .navbar-brand {

@@ -7,4 +7,12 @@ $z-index-header: 1000;
 .atech-header{
   min-height: 90px;
   z-index: $z-index-header;
+
+  @include breakpoint-down(xl){
+    min-height: 80px;
+  }
+
+  @include breakpoint-down(sm){
+    min-height: 68px;
+  }
 }
