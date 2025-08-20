@@ -225,11 +225,11 @@
       gap: 24px;
     }
 
-    @include breakpoint-down(lg){
+    @include breakpoint-down(lg) {
       width: calc(50% - 12px);
     }
 
-    @include breakpoint-down(sm){
+    @include breakpoint-down(sm) {
       width: 100%;
     }
 
@@ -440,7 +440,7 @@
         max-width: 320px;
       }
 
-      @include breakpoint-down(sm){
+      @include breakpoint-down(sm) {
         max-width: 240px;
       }
     }
@@ -728,6 +728,16 @@
   .dotted-box-shape {
     top: 126px;
     left: -46px;
+
+    @include breakpoint-down(xl) {
+      width: 120px;
+      left: -40px;
+    }
+
+    @include breakpoint-down(md) {
+      width: 100px;
+      left: -34px;
+    }
   }
 
   .technologies-tabs {

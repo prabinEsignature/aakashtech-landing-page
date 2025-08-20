@@ -47,6 +47,10 @@ $hamburger-settings-gutter: 0 !default;
   &:after {
     top: $height + $gutter;
   }
+
+  &:hover{
+    opacity: 0.85;
+  }
 }
 
 // Hamburger Animation

@@ -38,40 +38,48 @@ $z-index-navbar-toggler: 1010;
 
   .atech-menu {
     border-radius: 60px;
+    transition: $default-transition;
 
     @include breakpoint-down(xl) {
       flex-direction: column;
       height: 100%;
       border-radius: 20px;
       justify-content: center;
-      max-height: calc(100vh - 100px);
-      @include scrollbar("y");
+      width: 100%;
+      min-width: 100%;
     }
 
     &-parent {
-      .navbar-brand {
-        max-width: 100%;
-        width: 100%;
-
-        img {
-          max-width: 88px;
-        }
-      }
-
       @include breakpoint-down(xl) {
         position: fixed;
         top: 0;
         right: 0;
-        width: 300px;
+        width: 400px;
         height: 100%;
         z-index: 999;
         padding: 20px;
         background: color("white");
         transform: translateX(100%);
         transition: $default-transition;
+        overflow: hidden;
 
-        &.is-open{
+        &.is-open {
           transform: translateX(0);
+        }
+      }
+
+      .navbar-brand {
+        max-width: 76px;
+      }
+
+      &-inner {
+        display: flex;
+        overflow: hidden;
+
+        &.is-open {
+          .atech-menu {
+            margin-left: calc(-400px + 40px);
+          }
         }
       }
     }
@@ -83,6 +91,12 @@ $z-index-navbar-toggler: 1010;
         display: flex;
         justify-content: center;
         border-bottom: 1px dashed color("primary-150");
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+
+        &:last-child {
+          border-bottom: none;
+        }
       }
     }
 
@@ -90,7 +104,7 @@ $z-index-navbar-toggler: 1010;
       @include breakpoint-down(xl) {
         text-transform: uppercase;
         width: 100%;
-        justify-content: flex-end;
+        justify-content: flex-start;
       }
     }
 
@@ -102,15 +116,13 @@ $z-index-navbar-toggler: 1010;
 
         @include breakpoint-down(xl) {
           font-weight: 700;
-          order: 2;
         }
       }
 
       &-icon {
         @include breakpoint-down(xl) {
-          order: 1;
-          margin-right: auto;
-          transform: rotate(90deg);
+          margin-left: auto;
+          transform: rotate(-90deg);
         }
       }
     }
@@ -123,7 +135,7 @@ $z-index-navbar-toggler: 1010;
       width: 100%;
       left: 50%;
       transform: translateX(-50%);
-      margin-top: 24px;
+      margin-top: 80px;
 
       @include breakpoint-down(xxxl) {
         max-width: 1240px;
@@ -134,13 +146,25 @@ $z-index-navbar-toggler: 1010;
       }
 
       @include breakpoint-down(xl) {
-        left: auto;
-        right: calc(100% + 12px);
+        position: relative !important;
+        left: 0;
+        right: 0;
         top: 0;
         transform: none;
-        width: calc(100vw - 340px);
-        max-height: calc(100vh - 48px);
+        width: 100%;
+        margin: 0;
+        border-radius: 0 !important;
+        max-height: calc(100vh - 104px);
         @include scrollbar("y");
+        padding: 0;
+        box-shadow: none !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        display: none !important;
+
+        &.is-open {
+          display: block !important;
+        }
       }
 
       .submenu-services {
@@ -185,17 +209,26 @@ $z-index-navbar-toggler: 1010;
   }
 
   .atech-submenu-list {
+    @include breakpoint-down(xl) {
+      width: 100%;
+      min-width: 100%;
+    }
+
     .menu-submenu-portfolios {
       .nav-pills {
         min-width: 220px;
 
         .nav-link {
-          @include breakpoint-down(lg) {
-            height: 36px;
+          @include breakpoint-down(xl) {
+            height: auto;
           }
 
           &:hover {
             background: color("primary-50") !important;
+
+            @include breakpoint-down(lg) {
+              background: transparent !important;
+            }
           }
 
           &.btn {
