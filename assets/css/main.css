@@ -30203,6 +30203,11 @@ table td {
 .atech-navbar .navbar-brand {
   max-width: 100px;
 }
+@media (max-width: 1199.98px) {
+  .atech-navbar .navbar-brand {
+    max-width: 92px;
+  }
+}
 .atech-navbar-overlay-bg {
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
@@ -30231,6 +30236,7 @@ table td {
     justify-content: center;
     width: 100%;
     min-width: 100%;
+    margin-top: 24px;
   }
 }
 @media (max-width: 1199.98px) {
@@ -30251,6 +30257,11 @@ table td {
     transform: translateX(0);
   }
 }
+@media (max-width: 575.98px) {
+  .atech-navbar .atech-menu-parent {
+    width: 100%;
+  }
+}
 .atech-navbar .atech-menu-parent .navbar-brand {
   max-width: 76px;
 }
@@ -30260,6 +30271,11 @@ table td {
 }
 .atech-navbar .atech-menu-parent-inner.is-open .atech-menu {
   margin-left: -360px;
+}
+@media (max-width: 575.98px) {
+  .atech-navbar .atech-menu-parent-inner.is-open .atech-menu {
+    margin-left: -100%;
+  }
 }
 @media (max-width: 1199.98px) {
   .atech-navbar .atech-menu-item {
@@ -30400,26 +30416,64 @@ table td {
   min-width: 220px;
 }
 @media (max-width: 1199.98px) {
+  .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills {
+    row-gap: 4px !important;
+    -moz-column-gap: 12px !important;
+         column-gap: 12px !important;
+  }
+}
+@media (max-width: 1199.98px) {
   .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link {
     height: auto;
+    padding: 0 !important;
+    border: 0 !important;
   }
 }
 .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link:hover {
   background: #ebf5fb !important;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link:hover {
     background: transparent !important;
+    color: #0d0d0d;
+  }
+  .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link:hover .btn-text {
+    text-decoration: underline;
+  }
+}
+@media (max-width: 1199.98px) {
+  .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link.btn.btn-primary {
+    background: #ffffff !important;
   }
 }
 .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link.btn.btn-primary:hover {
   background: #2c79aa !important;
   border-color: #2c79aa !important;
 }
+@media (max-width: 1199.98px) {
+  .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link.btn.btn-primary:hover {
+    background: transparent !important;
+  }
+  .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link.btn.btn-primary:hover .btn-icon,
+  .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link.btn.btn-primary:hover .btn-text {
+    color: #2c79aa !important;
+  }
+}
+.atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link.btn.btn-primary .btn-icon,
+.atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link.btn.btn-primary .btn-text {
+  color: #3797d5 !important;
+}
 .atech-navbar .atech-submenu-list .menu-submenu-portfolios .submenu-portfolios-item-img {
   min-width: 140px;
   width: 140px;
   height: 100px;
+}
+@media (max-width: 1199.98px) {
+  .atech-navbar .atech-submenu-list .menu-submenu-portfolios .submenu-portfolios-item-img {
+    min-width: 108px;
+    width: 108px;
+    height: 100px;
+  }
 }
 .atech-navbar .atech-submenu-list .menu-submenu-portfolios .submenu-portfolios-item-ttl {
   transition: all ease-in-out 300ms;

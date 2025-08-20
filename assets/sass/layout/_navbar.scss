@@ -16,6 +16,10 @@ $z-index-navbar-toggler: 1010;
 .atech-navbar {
   .navbar-brand {
     max-width: 100px;
+
+    @include breakpoint-down(xl){
+      max-width: 92px;
+    }
   }
 
   &-overlay-bg {
@@ -47,6 +51,7 @@ $z-index-navbar-toggler: 1010;
       justify-content: center;
       width: 100%;
       min-width: 100%;
+      margin-top: 24px;
     }
 
     &-parent {
@@ -68,6 +73,10 @@ $z-index-navbar-toggler: 1010;
         }
       }
 
+      @include breakpoint-down(sm){
+        width: 100%;
+      }
+
       .navbar-brand {
         max-width: 76px;
       }
@@ -79,6 +88,10 @@ $z-index-navbar-toggler: 1010;
         &.is-open {
           .atech-menu {
             margin-left: calc(-400px + 40px);
+
+            @include breakpoint-down(sm){
+              margin-left: -100%;
+            }
           }
         }
       }
@@ -218,24 +231,54 @@ $z-index-navbar-toggler: 1010;
       .nav-pills {
         min-width: 220px;
 
+        @include breakpoint-down(xl) {
+          row-gap: 4px !important;
+          column-gap: 12px !important;
+        }
+
         .nav-link {
           @include breakpoint-down(xl) {
             height: auto;
+            padding: 0 !important;
+            border: 0 !important;
           }
 
           &:hover {
             background: color("primary-50") !important;
 
-            @include breakpoint-down(lg) {
+            @include breakpoint-down(xl) {
               background: transparent !important;
+              color: color("onyx-900");
+
+              .btn-text {
+                text-decoration: underline;
+              }
             }
           }
 
           &.btn {
             &.btn-primary {
+              @include breakpoint-down(xl) {
+                background: color("white") !important;
+              }
+
               &:hover {
                 background: color("primary-600") !important;
                 border-color: color("primary-600") !important;
+
+                @include breakpoint-down(xl) {
+                  background: transparent !important;
+
+                  .btn-icon,
+                  .btn-text {
+                    color: color("primary-600") !important;
+                  }
+                }
+              }
+
+              .btn-icon,
+              .btn-text {
+                color: color("primary-500") !important;
               }
             }
           }
@@ -248,6 +291,12 @@ $z-index-navbar-toggler: 1010;
             min-width: 140px;
             width: 140px;
             height: 100px;
+
+            @include breakpoint-down(xl){
+              min-width: 108px;
+              width: 108px;
+              height: 100px;
+            }
           }
 
           &-ttl {
