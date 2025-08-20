@@ -28710,12 +28710,12 @@ a:visited, a:link {
 }
 .scrollbar-x::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #3797d5;
+  background-color: #f5f5f5;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .scrollbar-x::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(37.6611570248, 123.7438016529, 179.3388429752);
+  background-color: rgb(219.5, 219.5, 219.5);
 }
 
 .scrollbar-y {
@@ -28731,12 +28731,12 @@ a:visited, a:link {
 }
 .scrollbar-y::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #3797d5;
+  background-color: #f5f5f5;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 .scrollbar-y::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(37.6611570248, 123.7438016529, 179.3388429752);
+  background-color: rgb(219.5, 219.5, 219.5);
 }
 
 /* Example:
@@ -30265,6 +30265,11 @@ table td {
 .atech-navbar .atech-menu-parent .navbar-brand {
   max-width: 76px;
 }
+@media (max-width: 575.98px) {
+  .atech-navbar .atech-menu-parent .navbar-brand {
+    max-width: 64px;
+  }
+}
 .atech-navbar .atech-menu-parent-inner {
   display: flex;
   overflow: hidden;
@@ -30359,12 +30364,12 @@ table td {
   }
   .atech-navbar .atech-menu-submenu::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: #3797d5;
+    background-color: #f5f5f5;
     -webkit-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
   }
   .atech-navbar .atech-menu-submenu::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(37.6611570248, 123.7438016529, 179.3388429752);
+    background-color: rgb(219.5, 219.5, 219.5);
   }
   .atech-navbar .atech-menu-submenu.is-open {
     display: block !important;
@@ -30395,10 +30400,22 @@ table td {
     row-gap: 6px;
   }
 }
+@media (max-width: 575.98px) {
+  .atech-navbar .atech-menu-submenu .submenu-services-item {
+    padding-left: 0 !important;
+  }
+}
 .atech-navbar .atech-menu-submenu .submenu-services-item-icon {
   width: 68px;
   height: 68px;
   min-width: 68px;
+}
+@media (max-width: 575.98px) {
+  .atech-navbar .atech-menu-submenu .submenu-services-item-icon {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+  }
 }
 .atech-navbar .atech-menu-submenu .submenu-services-item-ttl {
   transition: all ease-in-out 300ms;
@@ -30442,13 +30459,23 @@ table td {
   }
 }
 @media (max-width: 1199.98px) {
+  .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link .btn-text {
+    color: #5e5e5e !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link .btn-text {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 1199.98px) {
   .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link.btn.btn-primary {
     background: #ffffff !important;
   }
 }
 .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link.btn.btn-primary:hover {
-  background: #2c79aa !important;
-  border-color: #2c79aa !important;
+  background: #0d0d0d !important;
+  border-color: #0d0d0d !important;
 }
 @media (max-width: 1199.98px) {
   .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link.btn.btn-primary:hover {
@@ -30456,12 +30483,12 @@ table td {
   }
   .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link.btn.btn-primary:hover .btn-icon,
   .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link.btn.btn-primary:hover .btn-text {
-    color: #2c79aa !important;
+    color: #0d0d0d !important;
   }
 }
 .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link.btn.btn-primary .btn-icon,
 .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link.btn.btn-primary .btn-text {
-  color: #3797d5 !important;
+  color: #262626 !important;
 }
 .atech-navbar .atech-submenu-list .menu-submenu-portfolios .submenu-portfolios-item-img {
   min-width: 140px;
@@ -30473,6 +30500,13 @@ table td {
     min-width: 108px;
     width: 108px;
     height: 100px;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-navbar .atech-submenu-list .menu-submenu-portfolios .submenu-portfolios-item-img {
+    min-width: 80px;
+    width: 80px;
+    height: 76px;
   }
 }
 .atech-navbar .atech-submenu-list .menu-submenu-portfolios .submenu-portfolios-item-ttl {

@@ -4,7 +4,7 @@
 @use "../abstracts/mixins" as *;
 
 // Define your color variables
-$scrollbar-thumb-color: color("primary-500");
+$scrollbar-thumb-color: color("gray-100");
 $scrollbar-track-color: transparent;
 $scrollbar-hover-color: color.adjust($scrollbar-thumb-color, $lightness: -10%);
 

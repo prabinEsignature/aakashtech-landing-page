@@ -17,7 +17,7 @@ $z-index-navbar-toggler: 1010;
   .navbar-brand {
     max-width: 100px;
 
-    @include breakpoint-down(xl){
+    @include breakpoint-down(xl) {
       max-width: 92px;
     }
   }
@@ -73,12 +73,16 @@ $z-index-navbar-toggler: 1010;
         }
       }
 
-      @include breakpoint-down(sm){
+      @include breakpoint-down(sm) {
         width: 100%;
       }
 
       .navbar-brand {
         max-width: 76px;
+
+        @include breakpoint-down(sm) {
+          max-width: 64px;
+        }
       }
 
       &-inner {
@@ -89,7 +93,7 @@ $z-index-navbar-toggler: 1010;
           .atech-menu {
             margin-left: calc(-400px + 40px);
 
-            @include breakpoint-down(sm){
+            @include breakpoint-down(sm) {
               margin-left: -100%;
             }
           }
@@ -202,10 +206,20 @@ $z-index-navbar-toggler: 1010;
       }
 
       .submenu-services-item {
+        @include breakpoint-down(sm) {
+          padding-left: 0 !important;
+        }
+
         &-icon {
           width: 68px;
           height: 68px;
           min-width: 68px;
+
+          @include breakpoint-down(sm) {
+            width: 52px;
+            height: 52px;
+            min-width: 52px;
+          }
         }
 
         &-ttl {
@@ -256,6 +270,15 @@ $z-index-navbar-toggler: 1010;
             }
           }
 
+          .btn-text {
+            @include breakpoint-down(xl){
+              color: color("onyx-400")!important;
+            }
+            @include breakpoint-down(md) {
+              font-size: 14px !important;
+            }
+          }
+
           &.btn {
             &.btn-primary {
               @include breakpoint-down(xl) {
@@ -263,22 +286,22 @@ $z-index-navbar-toggler: 1010;
               }
 
               &:hover {
-                background: color("primary-600") !important;
-                border-color: color("primary-600") !important;
+                background: color("onyx-900") !important;
+                border-color: color("onyx-900") !important;
 
                 @include breakpoint-down(xl) {
                   background: transparent !important;
 
                   .btn-icon,
                   .btn-text {
-                    color: color("primary-600") !important;
+                    color: color("onyx-900") !important;
                   }
                 }
               }
 
               .btn-icon,
               .btn-text {
-                color: color("primary-500") !important;
+                color: color("onyx-700") !important;
               }
             }
           }
@@ -292,10 +315,16 @@ $z-index-navbar-toggler: 1010;
             width: 140px;
             height: 100px;
 
-            @include breakpoint-down(xl){
+            @include breakpoint-down(xl) {
               min-width: 108px;
               width: 108px;
               height: 100px;
+            }
+
+            @include breakpoint-down(sm) {
+              min-width: 80px;
+              width: 80px;
+              height: 76px;
             }
           }
 
