@@ -408,6 +408,9 @@ document.addEventListener("DOMContentLoaded", () => {
       freeMode: true,
       spaceBetween: 0,
       allowTouchMove: false,
+      centeredSlides: true,
+      centeredSlidesBounds: true,
+      centerInsufficientSlides: true,
       autoplay: {
         delay: 3000,
         disableOnInteraction: false,

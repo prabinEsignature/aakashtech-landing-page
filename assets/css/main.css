@@ -28616,6 +28616,16 @@ a:visited, a:link {
 .spiral-arrow-shape {
   width: 60px;
 }
+@media (max-width: 991.98px) {
+  .spiral-arrow-shape {
+    width: 48px;
+  }
+}
+@media (max-width: 575.98px) {
+  .spiral-arrow-shape {
+    width: 32px;
+  }
+}
 
 .breadcrumb-item {
   position: relative;
@@ -31229,6 +31239,11 @@ table td {
 .atech-services-offer .services-offers-card .card-vector-1 {
   width: 76px;
 }
+@media (max-width: 991.98px) {
+  .atech-services-offer .services-offers-card .card-vector-1 {
+    width: 60px;
+  }
+}
 .atech-services-offer .services-offers-card .card-img {
   width: 80px;
   height: 80px;
@@ -31243,6 +31258,12 @@ table td {
   .atech-services-offer .services-offers-card .card-img {
     width: 60px;
     height: 60px;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-services-offer .services-offers-card .card-title {
+    margin-bottom: 0 !important;
+    margin-top: 4px !important;
   }
 }
 .atech-services-offer .services-offers-card .card-underline .line {
@@ -31267,11 +31288,23 @@ table td {
     left: 48px;
   }
 }
+@media (max-width: 575.98px) {
+  .atech-projects .projects-cards .dotted-box-shape {
+    top: -24px;
+    width: 60px;
+    left: 32px;
+  }
+}
 .atech-projects .projects-card .projects-card-logo {
   width: 120px;
 }
 .atech-projects .projects-card .card-img {
   height: 360px;
+}
+@media (max-width: 575.98px) {
+  .atech-projects .projects-card .card-img {
+    height: auto !important;
+  }
 }
 .atech-projects .projects-card .card-img img {
   width: auto !important;
@@ -31345,6 +31378,11 @@ table td {
     width: 120px;
   }
 }
+@media (max-width: 575.98px) {
+  .atech-technologies .technologies-item {
+    flex: auto;
+  }
+}
 .atech-technologies .technologies-item:hover .technologies-item-icon {
   transform: scale(1.1);
 }
@@ -31385,6 +31423,11 @@ table td {
     max-width: 360px;
   }
 }
+@media (max-width: 575.98px) {
+  .atech-works .finest-works-slider .swiper-slide {
+    padding: 0 4px;
+  }
+}
 .atech-works .finest-works-slider .finest-work-card {
   box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
 }
@@ -31414,6 +31457,19 @@ table td {
 }
 .atech-faqs .faqs-list .faqs-item-head-toggler .fa-minus {
   display: none;
+}
+@media (max-width: 575.98px) {
+  .atech-faqs .faqs-list .faqs-item-head-toggler {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-faqs .faqs-list .faqs-item-head-left {
+    font-size: 16px !important;
+  }
+}
+.atech-faqs .faqs-list .faqs-item-head-left [class*=text-] {
+  font-size: 16px !important;
 }
 .atech-faqs .faqs-list .faqs-item-body {
   transition: all 150ms ease-in-out;

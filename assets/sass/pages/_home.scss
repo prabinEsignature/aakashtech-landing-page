@@ -502,11 +502,11 @@
       gap: 60px;
     }
 
-    @include breakpoint-down(lg){
+    @include breakpoint-down(lg) {
       gap: 48px;
     }
 
-    @include breakpoint-down(sm){
+    @include breakpoint-down(sm) {
       gap: 40px;
     }
   }
@@ -540,14 +540,14 @@
     .nav-link {
       border: 1px solid transparent !important;
 
-      @include breakpoint-down(sm){
-        border-radius: 8px!important;
+      @include breakpoint-down(sm) {
+        border-radius: 8px !important;
       }
 
       &-img {
         height: 60px;
 
-        @include breakpoint-down(sm){
+        @include breakpoint-down(sm) {
           height: 40px;
         }
       }
@@ -557,8 +557,8 @@
           transition: $default-transition;
         }
 
-        @include breakpoint-down(sm){
-          display: none!important;
+        @include breakpoint-down(sm) {
+          display: none !important;
         }
       }
 
@@ -581,7 +581,7 @@
     .swiper-slide {
       padding: 0 12px;
 
-      @include breakpoint-down(sm){
+      @include breakpoint-down(sm) {
         padding: 0;
       }
     }
@@ -609,12 +609,16 @@
       padding: 32px 24px;
     }
 
-    @include breakpoint-down(sm){
+    @include breakpoint-down(sm) {
       padding: 20px;
     }
 
     .card-vector-1 {
       width: 76px;
+
+      @include breakpoint-down(lg){
+        width: 60px;
+      }
     }
 
     .card-img {
@@ -629,6 +633,13 @@
       @include breakpoint-down(sm) {
         width: 60px;
         height: 60px;
+      }
+    }
+
+    .card-title {
+      @include breakpoint-down(sm) {
+        margin-bottom: 0 !important;
+        margin-top: 4px !important;
       }
     }
 
@@ -657,6 +668,12 @@
         width: 100px;
         left: 48px;
       }
+
+      @include breakpoint-down(sm){
+        top: -24px;
+        width: 60px;
+        left: 32px;
+      }
     }
   }
 
@@ -667,6 +684,10 @@
 
     .card-img {
       height: 360px;
+
+      @include breakpoint-down(sm){
+        height: auto!important;
+      }
 
       img {
         width: auto !important;
@@ -769,6 +790,10 @@
       width: 120px;
     }
 
+    @include breakpoint-down(sm){
+      flex: auto;
+    }
+
     &:hover {
       .technologies-item-icon {
         transform: scale(1.1);
@@ -811,6 +836,10 @@
 
       @include breakpoint-down(xxl) {
         max-width: 360px;
+      }
+
+      @include breakpoint-down(sm){
+        padding: 0 4px;
       }
     }
 
@@ -860,6 +889,20 @@
         &-toggler {
           .fa-minus {
             display: none;
+          }
+          
+          @include breakpoint-down(sm){
+            font-size: 14px!important;
+          }
+        }
+
+        &-left{
+          @include breakpoint-down(sm){
+            font-size: 16px!important;
+          }
+
+          [class*="text-"] {
+            font-size: 16px!important;
           }
         }
       }

@@ -152,6 +152,14 @@
 }
 .spiral-arrow-shape {
   width: 60px;
+
+  @include breakpoint-down(lg){
+    width: 48px;
+  }
+
+  @include breakpoint-down(sm){
+    width: 32px;
+  }
 }
 
 .breadcrumb-item {
