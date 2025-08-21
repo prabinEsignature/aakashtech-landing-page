@@ -29963,6 +29963,16 @@ input[type=button].btn-block {
   display: grid;
   row-gap: 8px;
 }
+@media (max-width: 991.98px) {
+  .form-elem {
+    row-gap: 6px;
+  }
+}
+@media (max-width: 575.98px) {
+  .form-elem {
+    row-gap: 4px;
+  }
+}
 .form-elem-group {
   display: grid;
   gap: 16px;
