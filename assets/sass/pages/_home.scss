@@ -931,6 +931,18 @@
 
         &-text {
           padding-left: 40px;
+
+          @include breakpoint-down(lg){
+            padding-left: 36px;
+          }
+
+          @include breakpoint-down(md){
+            padding-left: 32px;
+          }
+
+          @include breakpoint-down(sm){
+            padding-left: 28px;
+          }
         }
       }
     }
@@ -1008,10 +1020,6 @@
 
         @include breakpoint-down(md) {
           max-width: 200px;
-        }
-
-        @include breakpoint-down(sm) {
-          max-width: 160px;
         }
       }
     }
