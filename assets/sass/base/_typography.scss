@@ -53,17 +53,17 @@ $text-sizes: (
   ),
   base: (
     null: "base",
-    md: "sm"
+    lg: "sm"
   ),
   lg: (
     null: "lg",
-    lg: "base",
-    md: "sm"
+    xl: "base",
+    lg: "sm",
   ),
   xl: (
     null: "xl",
-    lg: "lg",
-    md: "base",
+    xl: "lg",
+    lg: "base",
   ),
   "2xl": (
     null: "2xl",
