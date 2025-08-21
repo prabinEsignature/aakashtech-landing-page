@@ -31617,6 +31617,7 @@ table td {
 @media (max-width: 575.98px) {
   .atech-contact .contact-grid-block-wrapper {
     border-radius: 24px;
+    border: none !important;
   }
 }
 .atech-contact .contact-block-info {
@@ -31626,6 +31627,12 @@ table td {
 @media (max-width: 991.98px) {
   .atech-contact .contact-block-info {
     border-radius: 20px;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-contact .contact-block-form {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
 .atech-contact .contact-block-feat-points {
