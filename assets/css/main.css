@@ -31592,11 +31592,6 @@ table td {
     max-width: 240px;
   }
 }
-@media (max-width: 767.98px) {
-  .atech-screenshots .screenshots-product-slider.mobile-screenshots .swiper-slide {
-    max-width: 200px;
-  }
-}
 
 .atech-contact {
   background: url("../../../assets/images/misc/contact_us_bg.png") center/cover no-repeat;

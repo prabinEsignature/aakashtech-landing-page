@@ -1017,10 +1017,6 @@
         @include breakpoint-down(lg) {
           max-width: 240px;
         }
-
-        @include breakpoint-down(md) {
-          max-width: 200px;
-        }
       }
     }
   }
