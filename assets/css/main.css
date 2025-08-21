@@ -30824,8 +30824,21 @@ table td {
   background-color: #ffffff;
   padding-top: 90px;
 }
+@media (max-width: 1199.98px) {
+  .atech-section-group-one {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-section-group-one {
+    padding-top: 68px;
+  }
+}
 
 @media (max-width: 575.98px) {
+  .atech-home-banner .home-banner-ttl {
+    font-size: 32px !important;
+  }
   .atech-home-banner .home-banner-ttl br {
     display: none !important;
   }
@@ -31042,6 +31055,11 @@ table td {
     padding: 24px;
   }
 }
+@media (max-width: 479.98px) {
+  .atech-home-banner .banner-product-showcase {
+    padding: 20px;
+  }
+}
 @media (max-width: 1199.98px) {
   .atech-home-banner .banner-product-showcase-img {
     margin-top: 0 !important;
@@ -31055,6 +31073,11 @@ table td {
 @media (max-width: 575.98px) {
   .atech-home-banner .banner-product-showcase-img {
     max-width: 240px;
+  }
+}
+@media (max-width: 479.98px) {
+  .atech-home-banner .banner-product-showcase-img {
+    max-width: 200px;
   }
 }
 .atech-home-banner .banner-product-showcase .ellipse-shape {

@@ -173,11 +173,20 @@
   min-height: 100vh;
   background-color: color("white");
   padding-top: 90px;
+
+  @include breakpoint-down(xl){
+    padding-top: 80px;
+  }
+
+  @include breakpoint-down(sm){
+    padding-top: 68px;
+  }
 }
 
 .atech-home-banner {
   .home-banner-ttl {
     @include breakpoint-down(sm) {
+      font-size: 32px!important;
       br {
         display: none !important;
       }
@@ -408,6 +417,10 @@
       padding: 24px;
     }
 
+    @include breakpoint-down(xs){
+      padding: 20px;
+    }
+
     &-img {
       @include breakpoint-down(xl) {
         margin-top: 0 !important;
@@ -419,6 +432,10 @@
 
       @include breakpoint-down(sm) {
         max-width: 240px;
+      }
+      
+      @include breakpoint-down(xs){
+        max-width: 200px;
       }
     }
 
