@@ -61,33 +61,38 @@ $text-sizes: (
   ),
   xl: (
     null: "xl",
-    md: "lg"
+    md: "lg",
+    sm: "base"
   ),
   "2xl": (
     null: "2xl",
     md: "xl",
-    sm: "lg"
+    sm: "lg",
+    xs: "md"
   ),
   "3xl": (
     null: "3xl",
     lg: "2xl",
-    sm: "xl"
+    sm: "xl",
+    xs: "lg"
   ),
   "4xl": (
     null: "4xl",
     lg: "3xl",
-    sm: "2xl"
+    sm: "2xl",
+    xs: "xl"
   ),
   "5xl": (
     null: "5xl",
     lg: "4xl",
-    sm: "3xl"
+    sm: "3xl",
+    xs: "2xl",
   ),
   "6xl": (
     null: "6xl",
     lg: "5xl",
     sm: "4xl",
-    xs: "3xl"
+    xs: "3xl",
   ),
   "7xl": (
     null: "7xl",
@@ -237,6 +242,14 @@ a {
     gap: 12px;
     padding-left: 0 !important;
     margin-left: 0 !important;
+
+    @include breakpoint-down(xl){
+      gap: 8px;
+    }
+
+    @include breakpoint-down(sm){
+      gap: 6px;
+    }
 
     li {
       position: relative;

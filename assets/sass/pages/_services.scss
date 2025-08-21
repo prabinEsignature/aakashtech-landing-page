@@ -29,13 +29,21 @@
           }
         }
       }
+
+      &-list {
+        row-gap: 12px;
+
+        @include breakpoint-down(lg) {
+          row-gap: 8px;
+        }
+      }
     }
   }
 }
 
-.atech-services-one {
+.atech-services-main {
   .services {
-    &-one {
+    &-main {
       &-item {
         gap: 80px;
 
@@ -45,6 +53,10 @@
 
             .services-item-img {
               order: 2;
+
+              @include breakpoint-down(xl) {
+                order: 1;
+              }
 
               &::after {
                 background: linear-gradient(to left, color("primary-100"), color("primary-150"));
@@ -59,6 +71,10 @@
 
             .services-item-info {
               order: 1;
+
+              @include breakpoint-down(xl) {
+                order: 2;
+              }
             }
 
             .services-item-projects-link {
@@ -76,6 +92,18 @@
         width: 80px;
         height: 80px;
         min-width: 80px;
+
+        @include breakpoint-down(xxl) {
+          width: 72px;
+          height: 72px;
+          min-width: 72px;
+        }
+
+        @include breakpoint-down(xl) {
+          width: 60px;
+          height: 60px;
+          min-width: 60px;
+        }
       }
 
       &-img {
@@ -90,6 +118,15 @@
           border-radius: 24px;
           transform: rotate(2deg);
           z-index: -1;
+
+          @include breakpoint-down(xl){
+            top: 32px;
+            transform: rotate(1.5deg);
+          }
+
+          @include breakpoint-down(md){
+            top: 24px;
+          }
         }
 
         &::before {
@@ -101,6 +138,18 @@
           height: 165px;
           background: url($img-path + "misc/dots_vector_vertical_dark.svg") center/contain no-repeat;
           z-index: -1;
+
+          @include breakpoint-down(xl) {
+            top: -19px;
+            right: -17px;
+            width: 122px;
+            height: 135px;
+          }
+
+          @include breakpoint-down(md){
+            width: 102px;
+            height: 115px;
+          }
         }
       }
 
@@ -108,6 +157,16 @@
         padding: 28px 32px !important;
         border-radius: 0 24px 0 24px !important;
         height: 78px;
+
+        @include breakpoint-down(xxl) {
+          padding: 24px 28px !important;
+          height: 72px;
+        }
+
+        @include breakpoint-down(lg) {
+          padding: 20px 24px !important;
+          height: 68px;
+        }
       }
 
       &-subheading {
@@ -286,16 +345,16 @@ $process-color-keys: ("turquoise", "blue-violet", "coral", "crayola", "emerald",
   }
 }
 
-.atech-services-details-three{
-  .services-details-three{
-    &-head{
+.atech-services-details-three {
+  .services-details-three {
+    &-head {
       gap: 60px;
     }
   }
 
-  .services-details-three{
-    &-item{
-      &-count{
+  .services-details-three {
+    &-item {
+      &-count {
         width: 100px;
         height: 100px;
         min-width: 100px;

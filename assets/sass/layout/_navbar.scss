@@ -310,7 +310,9 @@ $z-index-navbar-toggler: 1010;
 
               .btn-icon,
               .btn-text {
-                color: color("onyx-700") !important;
+                @include breakpoint-down(xl){
+                  color: color("onyx-700") !important;
+                }
               }
             }
           }

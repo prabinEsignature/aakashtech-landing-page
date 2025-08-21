@@ -27955,6 +27955,11 @@ h6.text-lg {
     font-size: 18px !important;
   }
 }
+@media screen and (max-width: 575.98px) {
+  .text-xl {
+    font-size: 16px !important;
+  }
+}
 
 h1.text-xl,
 h2.text-xl,
@@ -27976,6 +27981,11 @@ h6.text-xl {
 @media screen and (max-width: 575.98px) {
   .text-2xl {
     font-size: 18px !important;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  .text-2xl {
+    font-size: !important;
   }
 }
 
@@ -28001,6 +28011,11 @@ h6.text-2xl {
     font-size: 20px !important;
   }
 }
+@media screen and (max-width: 479.98px) {
+  .text-3xl {
+    font-size: 18px !important;
+  }
+}
 
 h1.text-3xl,
 h2.text-3xl,
@@ -28024,6 +28039,11 @@ h6.text-3xl {
     font-size: 24px !important;
   }
 }
+@media screen and (max-width: 479.98px) {
+  .text-4xl {
+    font-size: 20px !important;
+  }
+}
 
 h1.text-4xl,
 h2.text-4xl,
@@ -28045,6 +28065,11 @@ h6.text-4xl {
 @media screen and (max-width: 575.98px) {
   .text-5xl {
     font-size: 28px !important;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  .text-5xl {
+    font-size: 24px !important;
   }
 }
 
@@ -28390,6 +28415,16 @@ a:visited, a:link {
   gap: 12px;
   padding-left: 0 !important;
   margin-left: 0 !important;
+}
+@media (max-width: 1199.98px) {
+  .content-stylings ul {
+    gap: 8px;
+  }
+}
+@media (max-width: 575.98px) {
+  .content-stylings ul {
+    gap: 6px;
+  }
 }
 .content-stylings ul li {
   position: relative;
@@ -30506,9 +30541,11 @@ table td {
     color: #0d0d0d !important;
   }
 }
-.atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link.btn.btn-primary .btn-icon,
-.atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link.btn.btn-primary .btn-text {
-  color: #262626 !important;
+@media (max-width: 1199.98px) {
+  .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link.btn.btn-primary .btn-icon,
+  .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link.btn.btn-primary .btn-text {
+    color: #262626 !important;
+  }
 }
 .atech-navbar .atech-submenu-list .menu-submenu-portfolios .submenu-portfolios-item-img {
   min-width: 140px;
@@ -31437,9 +31474,6 @@ table td {
     font-size: 16px !important;
   }
 }
-.atech-faqs .faqs-list .faqs-item-head-left [class*=text-] {
-  font-size: 16px !important;
-}
 .atech-faqs .faqs-list .faqs-item-body {
   transition: all 150ms ease-in-out;
 }
@@ -32107,38 +32141,70 @@ table td {
 .atech-services-banner .services-banner-highlights .services-highlights-item:last-child::after {
   display: none;
 }
+.atech-services-banner .services-banner-highlights .services-highlights-list {
+  row-gap: 12px;
+}
+@media (max-width: 991.98px) {
+  .atech-services-banner .services-banner-highlights .services-highlights-list {
+    row-gap: 8px;
+  }
+}
 
-.atech-services-one .services-one-item {
+.atech-services-main .services-main-item {
   gap: 80px;
 }
-.atech-services-one .services-one-item-wrapper:nth-child(even) {
+.atech-services-main .services-main-item-wrapper:nth-child(even) {
   background: linear-gradient(-45deg, #d5e9f6 0%, #ecf3f9 25%, #eef5f9 74%, #d5e9f6 100%);
 }
-.atech-services-one .services-one-item-wrapper:nth-child(even) .services-item-img {
+.atech-services-main .services-main-item-wrapper:nth-child(even) .services-item-img {
   order: 2;
 }
-.atech-services-one .services-one-item-wrapper:nth-child(even) .services-item-img::after {
+@media (max-width: 1199.98px) {
+  .atech-services-main .services-main-item-wrapper:nth-child(even) .services-item-img {
+    order: 1;
+  }
+}
+.atech-services-main .services-main-item-wrapper:nth-child(even) .services-item-img::after {
   background: linear-gradient(to left, #d7eaf7, #c3e0f2);
   transform: rotate(-2deg);
 }
-.atech-services-one .services-one-item-wrapper:nth-child(even) .services-item-img::before {
+.atech-services-main .services-main-item-wrapper:nth-child(even) .services-item-img::before {
   top: -23px;
   left: -23px;
 }
-.atech-services-one .services-one-item-wrapper:nth-child(even) .services-item-info {
+.atech-services-main .services-main-item-wrapper:nth-child(even) .services-item-info {
   order: 1;
 }
-.atech-services-one .services-one-item-wrapper:nth-child(even) .services-item-projects-link {
+@media (max-width: 1199.98px) {
+  .atech-services-main .services-main-item-wrapper:nth-child(even) .services-item-info {
+    order: 2;
+  }
+}
+.atech-services-main .services-main-item-wrapper:nth-child(even) .services-item-projects-link {
   border-radius: 24px 0 24px 0 !important;
   right: 0 !important;
   left: auto !important;
 }
-.atech-services-one .services-item-icon {
+.atech-services-main .services-item-icon {
   width: 80px;
   height: 80px;
   min-width: 80px;
 }
-.atech-services-one .services-item-img::after {
+@media (max-width: 1399.98px) {
+  .atech-services-main .services-item-icon {
+    width: 72px;
+    height: 72px;
+    min-width: 72px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .atech-services-main .services-item-icon {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+  }
+}
+.atech-services-main .services-item-img::after {
   content: "";
   position: absolute;
   top: 36px;
@@ -32150,7 +32216,18 @@ table td {
   transform: rotate(2deg);
   z-index: -1;
 }
-.atech-services-one .services-item-img::before {
+@media (max-width: 1199.98px) {
+  .atech-services-main .services-item-img::after {
+    top: 32px;
+    transform: rotate(1.5deg);
+  }
+}
+@media (max-width: 767.98px) {
+  .atech-services-main .services-item-img::after {
+    top: 24px;
+  }
+}
+.atech-services-main .services-item-img::before {
   content: "";
   position: absolute;
   top: -23px;
@@ -32160,12 +32237,38 @@ table td {
   background: url("../../../assets/images/misc/dots_vector_vertical_dark.svg") center/contain no-repeat;
   z-index: -1;
 }
-.atech-services-one .services-item-projects-link {
+@media (max-width: 1199.98px) {
+  .atech-services-main .services-item-img::before {
+    top: -19px;
+    right: -17px;
+    width: 122px;
+    height: 135px;
+  }
+}
+@media (max-width: 767.98px) {
+  .atech-services-main .services-item-img::before {
+    width: 102px;
+    height: 115px;
+  }
+}
+.atech-services-main .services-item-projects-link {
   padding: 28px 32px !important;
   border-radius: 0 24px 0 24px !important;
   height: 78px;
 }
-.atech-services-one .services-item-subheading {
+@media (max-width: 1399.98px) {
+  .atech-services-main .services-item-projects-link {
+    padding: 24px 28px !important;
+    height: 72px;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-services-main .services-item-projects-link {
+    padding: 20px 24px !important;
+    height: 68px;
+  }
+}
+.atech-services-main .services-item-subheading {
   margin-top: 0 !important;
 }
 
