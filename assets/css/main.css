@@ -27801,6 +27801,10 @@ template {
   display: none; /* Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22. */
 }
 
+.container {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+}
 @media (min-width: 1536px) {
   .container {
     max-width: 1440px !important;
@@ -28114,11 +28118,6 @@ h6.text-6xl {
     font-size: 20px !important;
   }
 }
-@media screen and (max-width: 359.98px) {
-  .text-7xl {
-    font-size: 18px !important;
-  }
-}
 
 h1.text-7xl,
 h2.text-7xl,
@@ -28160,11 +28159,6 @@ h6.text-7xl {
 @media screen and (max-width: 419.98px) {
   .text-7xl-mid {
     font-size: 20px !important;
-  }
-}
-@media screen and (max-width: 359.98px) {
-  .text-7xl-mid {
-    font-size: 18px !important;
   }
 }
 
