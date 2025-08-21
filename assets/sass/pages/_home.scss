@@ -172,15 +172,6 @@
   background: url($img-path + "home/home_banner_bg.png") no-repeat;
   min-height: 100vh;
   background-color: color("white");
-  padding-top: 90px;
-
-  @include breakpoint-down(xl){
-    padding-top: 80px;
-  }
-
-  @include breakpoint-down(sm){
-    padding-top: 68px;
-  }
 }
 
 .atech-home-banner {

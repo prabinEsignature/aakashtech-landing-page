@@ -4,15 +4,27 @@
 
 $z-index-header: 1000;
 
-.atech-header{
+.atech-header {
   min-height: 90px;
   z-index: $z-index-header;
 
-  @include breakpoint-down(xl){
+  @include breakpoint-down(xl) {
     min-height: 80px;
   }
 
-  @include breakpoint-down(sm){
+  @include breakpoint-down(sm) {
     min-height: 68px;
+  }
+}
+
+.page-top-spacing {
+  margin-top: 90px;
+
+  @include breakpoint-down(xl) {
+    margin-top: 80px;
+  }
+
+  @include breakpoint-down(sm) {
+    margin-top: 68px;
   }
 }

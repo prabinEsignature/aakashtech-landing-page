@@ -62,13 +62,13 @@
 // ----------------------------------------
 // FONT STACK CLASSES
 $font-families: (
-  karla: $font-family-instrument-sans
+  instrument-sans: $font-family-instrument-sans
 );
 
 @mixin font-families($fonts) {
   @each $font-name, $font-family in $fonts {
     .font-#{$font-name} {
-      font-family: $font-family;
+      font-family: $font-family!important;
     }
   }
 }

@@ -122,6 +122,29 @@
     max-width: 1320px;
     position: relative;
 
+    @include breakpoint-down(xxl){
+      padding: 52px;
+      border-radius: 36px;
+    }
+
+    @include breakpoint-down(xl){
+      padding: 48px;
+    }
+
+    @include breakpoint-down(lg){
+      padding: 40px;
+      border-radius: 32px;
+    }
+
+    @include breakpoint-down(sm){
+      border-radius: 28px;
+      padding: 32px;
+    }
+
+    @include breakpoint-down(xs){
+      padding: 28px;
+    }
+
     &-content {
       max-width: 600px;
     }

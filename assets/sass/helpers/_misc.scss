@@ -178,6 +178,20 @@
       max-height: 360px;
       left: 0;
       bottom: 0;
+
+      @include breakpoint-down(xxl){
+        max-width: 460px;
+      }
+
+      @include breakpoint-down(xl){
+        max-width: 420px;
+        left: -32px;
+      }
+
+      @include breakpoint-down(lg){
+        max-width: 300px;
+        display: none!important;
+      }
     }
   }
 }

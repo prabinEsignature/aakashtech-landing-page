@@ -178,6 +178,18 @@ $button-link-variants: (
     gap: 24px;
     justify-content: space-between;
 
+    @include breakpoint-down(xl){
+      gap: 20px;
+    }
+
+    @include breakpoint-down(lg){
+      padding-right: 6px;
+    }
+
+    @include breakpoint-down(sm){
+      gap: 16px;
+    }
+
     .btn-icon {
       border-radius: 100%;
       width: 36px;
@@ -188,6 +200,14 @@ $button-link-variants: (
       align-items: center;
       justify-content: center;
       font-size: 18px;
+
+      @include breakpoint-down(md){
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+        min-height: 32px;
+        font-size: 16px;
+      }
     }
   }
 

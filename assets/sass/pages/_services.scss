@@ -5,7 +5,6 @@
 @use "sass:list";
 
 .atech-services-banner {
-  margin-top: 90px;
   background: url($img-path + "services/services_banner_bg.png") top/cover no-repeat;
 
   .services-banner-highlights {
@@ -47,6 +46,10 @@
       &-item {
         gap: 80px;
 
+        @include breakpoint-down(md){
+          gap: 60px;
+        }
+
         &-wrapper {
           &:nth-child(even) {
             background: linear-gradient(-45deg, #d5e9f6 0%, #ecf3f9 25%, #eef5f9 74%, #d5e9f6 100%);
@@ -66,6 +69,16 @@
               &::before {
                 top: -23px;
                 left: -23px;
+
+                @include breakpoint-down(xl){
+                  top: -18px;
+                  left: -18px;
+                }
+
+                @include breakpoint-down(sm){
+                  top: -16px;
+                  left: -13px;
+                }
               }
             }
 
@@ -104,9 +117,19 @@
           height: 60px;
           min-width: 60px;
         }
+
+        @include breakpoint-down(sm){
+          width: 52px;
+          height: 52px;
+          min-width: 52px;
+        }
       }
 
       &-img {
+        @include breakpoint-down(sm){
+          border-radius: 20px!important;
+        }
+        
         &::after {
           content: "";
           position: absolute;
@@ -126,6 +149,10 @@
 
           @include breakpoint-down(md){
             top: 24px;
+          }
+
+          @include breakpoint-down(sm){
+            top: 18px;
           }
         }
 
@@ -150,6 +177,13 @@
             width: 102px;
             height: 115px;
           }
+
+          @include breakpoint-down(sm){
+            top: -16px;
+            right: -12px;
+            width: 82px;
+            height: 95px;
+          }
         }
       }
 
@@ -166,6 +200,11 @@
         @include breakpoint-down(lg) {
           padding: 20px 24px !important;
           height: 68px;
+          border-radius: 0 20px 0 20px !important;
+        }
+
+        @include breakpoint-down(sm){
+          height: 56px;
         }
       }
 
@@ -181,6 +220,42 @@
 
   .track-record-grid {
     gap: 80px;
+
+    @include breakpoint-down(xxl){
+      gap: 72px;
+    }
+
+    @include breakpoint-down(xl){
+      gap: 60px;
+    }
+
+    @include breakpoint-down(lg){
+      gap: 48px;
+    }
+
+    @include breakpoint-down(md){
+      gap: 36px;
+    }
+
+    @include breakpoint-down(sm){
+      gap: 28px;
+    }
+
+    @include breakpoint-down(xs){
+      gap: 20px;
+    }
+  }
+
+  .record-stats-item{
+    height: 100%;
+    
+    @include breakpoint-down(lg){
+      border-radius: 20px!important;
+    }
+
+    @include breakpoint-down(sm){
+      border-radius: 16px!important;
+    }
   }
 }
 

@@ -57,60 +57,65 @@ $text-sizes: (
   ),
   lg: (
     null: "lg",
-    md: "base"
+    lg: "base",
+    md: "sm"
   ),
   xl: (
     null: "xl",
-    md: "lg",
-    sm: "base"
+    lg: "lg",
+    md: "base",
   ),
   "2xl": (
     null: "2xl",
-    md: "xl",
-    sm: "lg",
-    xs: "md"
+    xl: "xl",
+    lg: "lg",
+    md: "base",
+    sm: "sm"
   ),
   "3xl": (
     null: "3xl",
-    lg: "2xl",
-    sm: "xl",
-    xs: "lg"
+    xl: "2xl",
+    lg: "xl",
+    md: "lg",
+    sm: "base"
   ),
   "4xl": (
     null: "4xl",
-    lg: "3xl",
-    sm: "2xl",
-    xs: "xl"
+    xl: "3xl",
+    lg: "2xl",
+    md: "xl",
+    sm: "lg",
   ),
   "5xl": (
     null: "5xl",
-    lg: "4xl",
-    sm: "3xl",
-    xs: "2xl",
+    xl: "4xl",
+    lg: "3xl",
+    md: "2xl",
+    sm: "xl",
   ),
   "6xl": (
     null: "6xl",
-    lg: "5xl",
-    sm: "4xl",
-    xs: "3xl",
+    xxl: "5xl",
+    xl: "4xl",
+    lg: "3xl",
+    md: "2xl",
+    sm: "xl",
   ),
   "7xl": (
     null: "7xl",
     xxl: "6xl",
     xl: "5xl",
     lg: "4xl",
-    sm: "3xl",
-    xs: "2xl",
-    xxs: "xl",
+    md: "3xl",
+    sm: "2xl",
   ),
   "7xl-mid": (
     null: "7xl-mid",
     xxl: "6xl",
     xl: "5xl",
     lg: "4xl",
-    sm: "3xl",
-    xs: "2xl",
-    xxs: "xl",
+    md: "3xl",
+    sm: "2xl"
   ),
   "8xl": (
     null: "8xl",
