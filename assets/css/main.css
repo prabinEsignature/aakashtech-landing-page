@@ -29968,11 +29968,6 @@ input[type=button].btn-block {
     row-gap: 6px;
   }
 }
-@media (max-width: 575.98px) {
-  .form-elem {
-    row-gap: 4px;
-  }
-}
 .form-elem-group {
   display: grid;
   gap: 16px;
@@ -30334,6 +30329,8 @@ table td {
     width: 100%;
     min-width: 100%;
     margin-top: 24px;
+    padding-left: 28px !important;
+    padding-right: 28px !important;
   }
 }
 @media (max-width: 1199.98px) {
@@ -30399,6 +30396,7 @@ table td {
     text-transform: uppercase;
     width: 100%;
     justify-content: flex-start;
+    font-size: 16px !important;
   }
 }
 .atech-navbar .atech-menu .menu-link-text:hover {

@@ -121,10 +121,6 @@
     row-gap: 6px;
   }
 
-  @include breakpoint-down(sm){
-    row-gap: 4px;
-  }
-
   &-group {
     display: grid;
     gap: 16px;
