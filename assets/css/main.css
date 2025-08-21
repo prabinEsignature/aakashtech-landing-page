@@ -29770,6 +29770,12 @@ input[type=button].btn-block {
     height: 60px;
   }
 }
+@media (max-width: 479.98px) {
+  .home-clients-slider .clients-slide {
+    width: 80px;
+    height: 40px;
+  }
+}
 
 .swiper-pagination-bullet {
   width: 16px;

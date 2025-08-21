@@ -27,6 +27,11 @@
             width: 100px;
             height: 60px;
         }
+
+        @include breakpoint-down(xs){
+            width: 80px;
+            height: 40px;
+        }
     }
 }
 

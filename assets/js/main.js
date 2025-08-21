@@ -355,13 +355,27 @@ document.addEventListener("DOMContentLoaded", () => {
       loop: true,
       slidesPerView: "auto",
       freeMode: true,
-      spaceBetween: 20,
+      spaceBetween: 4,
+      centeredSlides: true,
+      centeredSlidesBounds: true,
+      centerInsufficientSlides: true,
       autoplay: {
         delay: 3000,
         disableOnInteraction: false,
       },
       observer: true,
       observeParents: true,
+      breakpoints: {
+        576: {
+          spaceBetween: 12,
+        },
+        768: {
+          spaceBetween: 16,
+        },
+        1400: {
+          spaceBetween: 20,
+        }
+      },
     });
 
     clientSwiper.update(); // optional unless dynamic changes happen
