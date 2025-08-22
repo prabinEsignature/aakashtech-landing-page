@@ -30791,7 +30791,7 @@ table td {
   .atech-home-process .home-process-list {
     margin-right: 0;
     padding: 16px 0 16px 16px;
-    gap: 48px !important;
+    gap: 40px !important;
   }
 }
 .atech-home-process .home-process-list-wrapper:nth-child(1) .home-process-item:nth-child(even) {
@@ -30836,7 +30836,7 @@ table td {
   .atech-home-process .home-process-list-ttl {
     font-size: 16px !important;
     top: -10px;
-    left: 50%;
+    left: 18%;
     transform: translateX(-50%);
   }
 }
@@ -30893,7 +30893,14 @@ table td {
 }
 @media (max-width: 575.98px) {
   .atech-home-process .home-process-item {
-    width: calc(100% - 40px);
+    width: calc(100% - 32px);
+    margin-right: 0 !important;
+    background: #3797d5;
+  }
+}
+@media (max-width: 479.98px) {
+  .atech-home-process .home-process-item {
+    width: calc(100% - 16px);
   }
 }
 .atech-home-process .home-process-item-count {
@@ -30925,6 +30932,12 @@ table td {
 @media (max-width: 767.98px) {
   .atech-home-process .home-process-item-count {
     right: calc(100% + 46px);
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-home-process .home-process-item-count {
+    right: auto;
+    left: -36px;
   }
 }
 .atech-home-process .home-process-item::after {
@@ -30960,7 +30973,7 @@ table td {
 @media (max-width: 575.98px) {
   .atech-home-process .home-process-item::after {
     width: 1px;
-    height: 52px;
+    height: 42px;
     left: 50%;
     top: 100%;
     transform: translateX(-50%);
@@ -31013,7 +31026,7 @@ table td {
   .atech-home-process .home-process-item::before {
     right: calc(50% - 6px);
     transform: translate(-50%, -50%);
-    top: calc(100% + 24px);
+    top: calc(100% + 21px);
   }
 }
 .atech-home-process .home-process-repeat {
@@ -31025,6 +31038,7 @@ table td {
   border: 3px dashed rgba(255, 255, 255, 0.4);
   border-right: 0;
   border-radius: 20px 0 0 20px;
+  display: none;
 }
 @media (max-width: 1535.98px) {
   .atech-home-process .home-process-repeat {
@@ -31060,6 +31074,13 @@ table td {
     height: 666px;
   }
 }
+@media (max-width: 575.98px) {
+  .atech-home-process .home-process-repeat {
+    width: 40px;
+    border-radius: 0;
+    top: 0%;
+  }
+}
 .atech-home-process .home-process-repeat .repeat-ttl {
   position: absolute;
   top: 50%;
@@ -31089,6 +31110,11 @@ table td {
 @media (max-width: 767.98px) {
   .atech-home-process .home-process-repeat .repeat-ttl {
     right: -78px;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-home-process .home-process-repeat .repeat-ttl {
+    display: none;
   }
 }
 .atech-home-process .home-process-repeat .repeat-arrow {

@@ -1,6 +1,7 @@
 @use "../abstracts/colors" as *;
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
+@use "../mixins/scrollbar" as *;
 
 .atech-home-process {
   background: url($img-path + "home/home_process_bg.png") top/cover no-repeat;
@@ -9,9 +10,9 @@
   }
 
   .home-process {
-    &-content{
-      @include breakpoint-down(sm){
-        justify-content: flex-end!important;
+    &-content {
+      @include breakpoint-down(sm) {
+        justify-content: flex-end !important;
       }
     }
 
@@ -34,15 +35,15 @@
         margin-right: -150px;
       }
 
-      @include breakpoint-down(md){
+      @include breakpoint-down(md) {
         padding: 24px;
         margin-right: -100px;
       }
 
-      @include breakpoint-down(sm){
+      @include breakpoint-down(sm) {
         margin-right: 0;
         padding: 16px 0 16px 16px;
-        gap: 48px!important;
+        gap: 40px !important;
       }
 
       &-wrapper {
@@ -111,15 +112,15 @@
           top: -20px;
         }
 
-        @include breakpoint-down(md){
+        @include breakpoint-down(md) {
           left: 180px;
           top: -16px;
         }
 
-        @include breakpoint-down(sm){
-          font-size: 16px!important;
+        @include breakpoint-down(sm) {
+          font-size: 16px !important;
           top: -10px;
-          left: 50%;
+          left: 18%;
           transform: translateX(-50%);
         }
       }
@@ -140,11 +141,11 @@
           width: 200px;
         }
 
-        @include breakpoint-down(md){
+        @include breakpoint-down(md) {
           width: 160px;
         }
 
-        @include breakpoint-down(sm){
+        @include breakpoint-down(sm) {
           display: none;
         }
       }
@@ -166,12 +167,18 @@
         width: 520px;
       }
 
-      @include breakpoint-down(md){
+      @include breakpoint-down(md) {
         width: 400px;
       }
 
-      @include breakpoint-down(sm){
-        width: calc(100% - 40px);
+      @include breakpoint-down(sm) {
+        width: calc(100% - 32px);
+        margin-right: 0 !important;
+        background: color("primary-500");
+      }
+
+      @include breakpoint-down(xs) {
+        width: calc(100% - 16px);
       }
 
       &-count {
@@ -192,12 +199,17 @@
           right: calc(100% + 100px);
         }
 
-        @include breakpoint-down(lg){
+        @include breakpoint-down(lg) {
           right: calc(100% + 68px);
         }
 
-        @include breakpoint-down(md){
+        @include breakpoint-down(md) {
           right: calc(100% + 46px);
+        }
+
+        @include breakpoint-down(sm) {
+          right: auto;
+          left: -36px;
         }
       }
 
@@ -219,17 +231,17 @@
           width: 60px;
         }
 
-        @include breakpoint-down(lg){
+        @include breakpoint-down(lg) {
           width: 40px;
         }
 
-        @include breakpoint-down(md){
+        @include breakpoint-down(md) {
           width: 28px;
         }
 
-        @include breakpoint-down(sm){
+        @include breakpoint-down(sm) {
           width: 1px;
-          height: 52px;
+          height: 42px;
           left: 50%;
           top: 100%;
           transform: translateX(-50%);
@@ -267,7 +279,7 @@
           right: calc(100% + 37px);
         }
 
-        @include breakpoint-down(md){
+        @include breakpoint-down(md) {
           right: calc(100% + 21px);
           width: 6px;
           height: 6px;
@@ -275,10 +287,10 @@
           outline-width: 4px;
         }
 
-        @include breakpoint-down(sm){
+        @include breakpoint-down(sm) {
           right: calc(50% - 6px);
           transform: translate(-50%, -50%);
-          top: calc(100% + 24px);
+          top: calc(100% + 21px);
         }
       }
     }
@@ -292,6 +304,7 @@
       border: 3px dashed rgba(255, 255, 255, 0.4);
       border-right: 0;
       border-radius: 20px 0 0 20px;
+      display: none;
 
       @include breakpoint-down(xxxl) {
         width: 180px;
@@ -309,17 +322,23 @@
         height: 716px;
       }
 
-      @include breakpoint-down(lg){
+      @include breakpoint-down(lg) {
         width: 84px;
         border-radius: 16px 0 0 16px;
         top: 12%;
         height: 662px;
       }
 
-      @include breakpoint-down(md){
+      @include breakpoint-down(md) {
         width: 60px;
         top: 11.4%;
         height: 666px;
+      }
+
+      @include breakpoint-down(sm) {
+        width: 40px;
+        border-radius: 0;
+        top: 0%;
       }
 
       .repeat-ttl {
@@ -340,12 +359,16 @@
           right: -44px;
         }
 
-        @include breakpoint-down(lg){
+        @include breakpoint-down(lg) {
           right: -68px;
         }
 
-        @include breakpoint-down(md){
+        @include breakpoint-down(md) {
           right: -78px;
+        }
+
+        @include breakpoint-down(sm) {
+          display: none;
         }
       }
 
@@ -354,7 +377,7 @@
         height: 18px;
         position: absolute;
 
-        @include breakpoint-down(md){
+        @include breakpoint-down(md) {
           width: 14px;
           height: 14px;
         }
