@@ -6,7 +6,6 @@
   background: url($img-path + "home/home_process_bg.png") top/cover no-repeat;
 
   @include breakpoint-down(lg){
-    display: none;
   }
 
   .home-process {
@@ -14,6 +13,19 @@
       padding: 80px 120px;
       border-radius: 20px;
       margin-right: -240px;
+
+      @include breakpoint-down(xxl){
+        padding: 60px 80px;
+      }
+
+      @include breakpoint-down(xl){
+        padding: 48px 60px;
+        margin-right: -200px;
+      }
+
+      @include breakpoint-down(lg){
+        padding: 40px;
+      }
 
       &-wrapper {
         &:nth-child(1) {
@@ -95,11 +107,31 @@
       max-width: 728px;
       width: 100%;
 
+      @include breakpoint-down(xxl){
+        width: 680px;
+      }
+
+      @include breakpoint-down(xl){
+        width: 600px;
+      }
+
       &-count {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         right: calc(100% + 200px);
+
+        @include breakpoint-down(xxxl){
+          right: calc(100% + 180px);
+        }
+
+        @include breakpoint-down(xxl){
+          right: calc(100% + 132px);
+        }
+
+        @include breakpoint-down(xl){
+          right: calc(100% + 100px);
+        }
       }
 
       &::after {
@@ -111,6 +143,14 @@
         background: rgba(255, 255, 255, 0.4);
         width: 120px;
         height: 1px;
+
+        @include breakpoint-down(xxl){
+          width: 80px;
+        }
+
+        @include breakpoint-down(xl){
+          width: 60px;
+        }
       }
 
       &::before {
@@ -126,6 +166,15 @@
         outline: 10px solid color("primary-50");
         right: calc(100% + 115px);
         z-index: 1;
+
+        @include breakpoint-down(xxl){
+          right: calc(100% + 75px);
+          outline-width: 8px;
+        }
+
+        @include breakpoint-down(xl){
+          right: calc(100% + 56px);
+        }
       }
     }
 
@@ -139,11 +188,35 @@
       border-right: 0;
       border-radius: 20px 0 0 20px;
 
+      @include breakpoint-down(xxxl){
+        width: 180px;
+      }
+
+      @include breakpoint-down(xxl){
+        width: 148px;
+      }
+
+      @include breakpoint-down(xl){
+        width: 120px;
+      }
+
       .repeat-ttl {
         position: absolute;
         top: 50%;
         transform: rotate(-90deg) translateY(-50%);
         right: 28px;
+
+        @include breakpoint-down(xxxl){
+          right: 8px;
+        }
+
+        @include breakpoint-down(xxl){
+          right: -32px;
+        }
+
+        @include breakpoint-down(xl){
+          right: -44px;
+        }
       }
 
       .repeat-arrow {

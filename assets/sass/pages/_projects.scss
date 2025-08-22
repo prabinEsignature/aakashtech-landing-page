@@ -43,6 +43,7 @@
     &-grid-item {
       border-radius: 28px;
       height: 500px;
+      display: block;
 
       @include breakpoint-down(xl) {
         border-radius: 24px;
