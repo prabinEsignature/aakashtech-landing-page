@@ -5,26 +5,44 @@
 .atech-home-process {
   background: url($img-path + "home/home_process_bg.png") top/cover no-repeat;
 
-  @include breakpoint-down(lg){
+  @include breakpoint-down(lg) {
   }
 
   .home-process {
+    &-content{
+      @include breakpoint-down(sm){
+        justify-content: flex-end!important;
+      }
+    }
+
     &-list {
       padding: 80px 120px;
       border-radius: 20px;
       margin-right: -240px;
 
-      @include breakpoint-down(xxl){
+      @include breakpoint-down(xxl) {
         padding: 60px 80px;
       }
 
-      @include breakpoint-down(xl){
+      @include breakpoint-down(xl) {
         padding: 48px 60px;
         margin-right: -200px;
       }
 
-      @include breakpoint-down(lg){
+      @include breakpoint-down(lg) {
         padding: 40px;
+        margin-right: -150px;
+      }
+
+      @include breakpoint-down(md){
+        padding: 24px;
+        margin-right: -100px;
+      }
+
+      @include breakpoint-down(sm){
+        margin-right: 0;
+        padding: 16px 0 16px 16px;
+        gap: 48px!important;
       }
 
       &-wrapper {
@@ -87,6 +105,23 @@
         position: absolute;
         left: 300px;
         top: -26px;
+
+        @include breakpoint-down(lg) {
+          left: 232px;
+          top: -20px;
+        }
+
+        @include breakpoint-down(md){
+          left: 180px;
+          top: -16px;
+        }
+
+        @include breakpoint-down(sm){
+          font-size: 16px!important;
+          top: -10px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
       }
 
       &::after {
@@ -100,6 +135,18 @@
         border-right: 0;
         border-bottom: 0;
         border-radius: 20px 0 0 0;
+
+        @include breakpoint-down(lg) {
+          width: 200px;
+        }
+
+        @include breakpoint-down(md){
+          width: 160px;
+        }
+
+        @include breakpoint-down(sm){
+          display: none;
+        }
       }
     }
 
@@ -107,12 +154,24 @@
       max-width: 728px;
       width: 100%;
 
-      @include breakpoint-down(xxl){
+      @include breakpoint-down(xxl) {
         width: 680px;
       }
 
-      @include breakpoint-down(xl){
+      @include breakpoint-down(xl) {
         width: 600px;
+      }
+
+      @include breakpoint-down(lg) {
+        width: 520px;
+      }
+
+      @include breakpoint-down(md){
+        width: 400px;
+      }
+
+      @include breakpoint-down(sm){
+        width: calc(100% - 40px);
       }
 
       &-count {
@@ -121,16 +180,24 @@
         transform: translateY(-50%);
         right: calc(100% + 200px);
 
-        @include breakpoint-down(xxxl){
+        @include breakpoint-down(xxxl) {
           right: calc(100% + 180px);
         }
 
-        @include breakpoint-down(xxl){
+        @include breakpoint-down(xxl) {
           right: calc(100% + 132px);
         }
 
-        @include breakpoint-down(xl){
+        @include breakpoint-down(xl) {
           right: calc(100% + 100px);
+        }
+
+        @include breakpoint-down(lg){
+          right: calc(100% + 68px);
+        }
+
+        @include breakpoint-down(md){
+          right: calc(100% + 46px);
         }
       }
 
@@ -144,12 +211,28 @@
         width: 120px;
         height: 1px;
 
-        @include breakpoint-down(xxl){
+        @include breakpoint-down(xxl) {
           width: 80px;
         }
 
-        @include breakpoint-down(xl){
+        @include breakpoint-down(xl) {
           width: 60px;
+        }
+
+        @include breakpoint-down(lg){
+          width: 40px;
+        }
+
+        @include breakpoint-down(md){
+          width: 28px;
+        }
+
+        @include breakpoint-down(sm){
+          width: 1px;
+          height: 52px;
+          left: 50%;
+          top: 100%;
+          transform: translateX(-50%);
         }
       }
 
@@ -167,37 +250,76 @@
         right: calc(100% + 115px);
         z-index: 1;
 
-        @include breakpoint-down(xxl){
+        @include breakpoint-down(xxl) {
           right: calc(100% + 75px);
           outline-width: 8px;
         }
 
-        @include breakpoint-down(xl){
+        @include breakpoint-down(xl) {
           right: calc(100% + 56px);
+        }
+
+        @include breakpoint-down(lg) {
+          width: 8px;
+          height: 8px;
+          min-width: 8px;
+          outline-width: 6px;
+          right: calc(100% + 37px);
+        }
+
+        @include breakpoint-down(md){
+          right: calc(100% + 21px);
+          width: 6px;
+          height: 6px;
+          min-width: 6px;
+          outline-width: 4px;
+        }
+
+        @include breakpoint-down(sm){
+          right: calc(50% - 6px);
+          transform: translate(-50%, -50%);
+          top: calc(100% + 24px);
         }
       }
     }
 
     &-repeat {
       position: absolute;
-      top: 4%;
+      top: 14.5%;
       right: 100%;
       width: 215px;
-      height: 1020px;
+      height: 730px;
       border: 3px dashed rgba(255, 255, 255, 0.4);
       border-right: 0;
       border-radius: 20px 0 0 20px;
 
-      @include breakpoint-down(xxxl){
+      @include breakpoint-down(xxxl) {
         width: 180px;
       }
 
-      @include breakpoint-down(xxl){
+      @include breakpoint-down(xxl) {
         width: 148px;
+        top: 13.2%;
       }
 
-      @include breakpoint-down(xl){
+      @include breakpoint-down(xl) {
         width: 120px;
+        border-radius: 18px 0 0 18px;
+        top: 12.5%;
+        height: 716px;
+      }
+
+      @include breakpoint-down(lg){
+        width: 84px;
+        border-radius: 16px 0 0 16px;
+        top: 12%;
+        height: 662px;
+      }
+
+      @include breakpoint-down(md){
+        width: 60px;
+        top: 11.4%;
+        height: 666px;
       }
 
       .repeat-ttl {
@@ -206,16 +328,24 @@
         transform: rotate(-90deg) translateY(-50%);
         right: 28px;
 
-        @include breakpoint-down(xxxl){
+        @include breakpoint-down(xxxl) {
           right: 8px;
         }
 
-        @include breakpoint-down(xxl){
+        @include breakpoint-down(xxl) {
           right: -32px;
         }
 
-        @include breakpoint-down(xl){
+        @include breakpoint-down(xl) {
           right: -44px;
+        }
+
+        @include breakpoint-down(lg){
+          right: -68px;
+        }
+
+        @include breakpoint-down(md){
+          right: -78px;
         }
       }
 
@@ -223,6 +353,11 @@
         width: 18px;
         height: 18px;
         position: absolute;
+
+        @include breakpoint-down(md){
+          width: 14px;
+          height: 14px;
+        }
 
         &:nth-child(1) {
           left: 28px;
@@ -253,7 +388,7 @@
 .atech-home-banner {
   .home-banner-ttl {
     @include breakpoint-down(sm) {
-      font-size: 32px!important;
+      font-size: 32px !important;
       br {
         display: none !important;
       }
@@ -484,7 +619,7 @@
       padding: 24px;
     }
 
-    @include breakpoint-down(xs){
+    @include breakpoint-down(xs) {
       padding: 20px;
     }
 
@@ -500,8 +635,8 @@
       @include breakpoint-down(sm) {
         max-width: 240px;
       }
-      
-      @include breakpoint-down(xs){
+
+      @include breakpoint-down(xs) {
         max-width: 200px;
       }
     }
@@ -700,7 +835,7 @@
     .card-vector-1 {
       width: 76px;
 
-      @include breakpoint-down(lg){
+      @include breakpoint-down(lg) {
         width: 60px;
       }
     }
@@ -753,7 +888,7 @@
         left: 48px;
       }
 
-      @include breakpoint-down(sm){
+      @include breakpoint-down(sm) {
         top: -24px;
         width: 60px;
         left: 32px;
@@ -769,8 +904,8 @@
     .card-img {
       height: 360px;
 
-      @include breakpoint-down(sm){
-        height: auto!important;
+      @include breakpoint-down(sm) {
+        height: auto !important;
       }
 
       img {
@@ -874,7 +1009,7 @@
       width: 120px;
     }
 
-    @include breakpoint-down(sm){
+    @include breakpoint-down(sm) {
       flex: auto;
     }
 
@@ -922,7 +1057,7 @@
         max-width: 360px;
       }
 
-      @include breakpoint-down(sm){
+      @include breakpoint-down(sm) {
         padding: 0 4px;
       }
     }
@@ -974,15 +1109,15 @@
           .fa-minus {
             display: none;
           }
-          
-          @include breakpoint-down(sm){
-            font-size: 14px!important;
+
+          @include breakpoint-down(sm) {
+            font-size: 14px !important;
           }
         }
 
-        &-left{
-          @include breakpoint-down(sm){
-            font-size: 16px!important;
+        &-left {
+          @include breakpoint-down(sm) {
+            font-size: 16px !important;
           }
 
           // [class*="text-"] {
@@ -999,15 +1134,15 @@
         &-text {
           padding-left: 40px;
 
-          @include breakpoint-down(lg){
+          @include breakpoint-down(lg) {
             padding-left: 36px;
           }
 
-          @include breakpoint-down(md){
+          @include breakpoint-down(md) {
             padding-left: 32px;
           }
 
-          @include breakpoint-down(sm){
+          @include breakpoint-down(sm) {
             padding-left: 28px;
           }
         }
@@ -1022,9 +1157,9 @@
     padding-left: 84px !important;
     padding-right: 84px !important;
 
-    @include breakpoint-down(md){
-      padding-left: 72px!important;
-      padding-right: 72px!important;
+    @include breakpoint-down(md) {
+      padding-left: 72px !important;
+      padding-right: 72px !important;
     }
 
     .screenshots-btn {
@@ -1039,7 +1174,7 @@
         height: 52px;
         padding: 10px 12px;
 
-        @include breakpoint-down(sm){
+        @include breakpoint-down(sm) {
           padding: 8px;
           height: 44px;
         }
@@ -1052,7 +1187,7 @@
       &-text {
         padding: 10px 12px;
 
-        @include breakpoint-down(sm){
+        @include breakpoint-down(sm) {
           padding: 8px;
         }
       }
@@ -1102,7 +1237,7 @@
 
       @include breakpoint-down(sm) {
         border-radius: 24px;
-        border: none!important;
+        border: none !important;
       }
     }
   }
@@ -1116,10 +1251,10 @@
     }
   }
 
-  .contact-block-form{
-    @include breakpoint-down(sm){
-      padding-left: 0!important;
-      padding-right: 0!important;
+  .contact-block-form {
+    @include breakpoint-down(sm) {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
     }
   }
 
