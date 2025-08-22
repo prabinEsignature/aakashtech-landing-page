@@ -266,7 +266,7 @@ $z-index-navbar-toggler: 1010;
             border: 0 !important;
           }
 
-          &:hover {
+          &:hover, &.active {
             background: color("primary-50") !important;
 
             @include breakpoint-down(xl) {

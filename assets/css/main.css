@@ -30581,15 +30581,15 @@ table td {
     border: 0 !important;
   }
 }
-.atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link:hover {
+.atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link:hover, .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link.active {
   background: #ebf5fb !important;
 }
 @media (max-width: 1199.98px) {
-  .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link:hover {
+  .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link:hover, .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link.active {
     background: transparent !important;
     color: #0d0d0d;
   }
-  .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link:hover .btn-text {
+  .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link:hover .btn-text, .atech-navbar .atech-submenu-list .menu-submenu-portfolios .nav-pills .nav-link.active .btn-text {
     text-decoration: underline;
   }
 }
@@ -30753,7 +30753,11 @@ table td {
 
 .atech-home-process {
   background: url("../../../assets/images/home/home_process_bg.png") top/cover no-repeat;
-  display: none;
+}
+@media (max-width: 991.98px) {
+  .atech-home-process {
+    display: none;
+  }
 }
 .atech-home-process .home-process-list {
   padding: 80px 120px;
@@ -31729,7 +31733,6 @@ table td {
 }
 
 .atech-projects-banner {
-  margin-top: 90px;
   background: url("../../../assets/images/projects/projects_banner_bg.png") top/cover no-repeat;
 }
 
@@ -31741,6 +31744,12 @@ table td {
   width: auto;
   padding-left: 6px;
   padding-right: 6px;
+}
+@media (max-width: 991.98px) {
+  .atech-projects-showcase .projects-btns-slider-wrapper .swiper-slide {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
 }
 .atech-projects-showcase .projects-btns-slider-wrapper .projects-btn {
   height: 44px;
@@ -31757,8 +31766,38 @@ table td {
   border-radius: 28px;
   height: 500px;
 }
+@media (max-width: 1199.98px) {
+  .atech-projects-showcase .projects-grid-item {
+    border-radius: 24px;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-projects-showcase .projects-grid-item {
+    border-radius: 20px;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-projects-showcase .projects-grid-item {
+    border-radius: 16px;
+  }
+}
 .atech-projects-showcase .projects-grid-item-wrapper {
   margin-bottom: 76px;
+}
+@media (max-width: 1199.98px) {
+  .atech-projects-showcase .projects-grid-item-wrapper {
+    margin-bottom: 68px;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-projects-showcase .projects-grid-item-wrapper {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767.98px) {
+  .atech-projects-showcase .projects-grid-item-wrapper {
+    margin-bottom: 48px;
+  }
 }
 .atech-projects-showcase .projects-grid-item-logo {
   max-width: 120px;
@@ -31768,6 +31807,16 @@ table td {
   bottom: -28px;
   left: 28px;
   right: 28px;
+}
+@media (max-width: 991.98px) {
+  .atech-projects-showcase .projects-grid-item-details {
+    border-radius: 12px !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-projects-showcase .projects-grid-item-details {
+    border-radius: 8px !important;
+  }
 }
 
 .atech-our-clients {

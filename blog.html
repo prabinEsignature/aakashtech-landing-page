@@ -9,6 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="keywords" content="">
   <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
   <!-- Preconnect to Google Fonts domains for faster DNS lookup and TLS handshake -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,366 +43,464 @@
 <body>
 
   <div class="page-wrapper">
+    <!-- START OF HEADER -->
     <header
-      class="atech-header py-custom-4 shadow-menu bg-white position-fixed top-0 start-0 end-0 d-flex align-items-center justify-content-center"
+      class="atech-header py-xl-custom-4 py-custom-3 shadow-menu bg-white position-fixed top-0 start-0 end-0 d-flex align-items-center justify-content-center"
       role="header">
       <div class="container">
         <nav class="atech-navbar d-flex align-items-center justify-content-between gap-x-4" role="navigation"
           aria-label="Main navigation">
-          <a href="#" class="navbar-brand">
+          <a href="index.html" class="navbar-brand">
             <img class="h-100" src="assets/images/site/logo_default.png" alt="Aakashtel logo" />
           </a>
-
+          <div class="atech-navbar-overlay-bg d-xl-none"></div>
           <div class="atech-menu-parent">
-            <ul class="list-unstyled atech-menu d-flex align-items-center gap-x-3 bg-primary-50 p-custom-4">
-              <li class="atech-menu-item px-3">
-                <a href="#"
-                  class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition">
-                  <span class="menu-link-text">Home</span>
-                </a>
-              </li>
-              <li class="atech-menu-item px-3 position-relative">
-                <a href="#"
-                  class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition"
-                  data-submenu="menu-submenu-services">
-                  <span class="menu-link-text">Services</span>
-                  <span class="menu-link-icon icon-18">
-                    <img src="assets/icons/chevron_down_onyx.svg" alt="" />
-                  </span>
-                </a>
-              </li>
-              <li class="atech-menu-item px-3 position-relative">
-                <a href="#"
-                  class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition"
-                  data-submenu="menu-submenu-portfolios">
-                  <span class="menu-link-text">Our Portfolio</span>
-                  <span class="menu-link-icon icon-18">
-                    <img src="assets/icons/chevron_down_onyx.svg" alt="" />
-                  </span>
-                </a>
-              </li>
-              
-              <li class="atech-menu-item px-3">
-                <a href="#"
-                  class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition">
-                  <span class="menu-link-text">About Us</span>
-                </a>
-              </li>
-              <li class="atech-menu-item px-3">
-                <a href="#"
-                  class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition">
-                  <span class="menu-link-text">Blog</span>
-                </a>
-              </li>
-              <li class="atech-menu-item px-3">
-                <a href="#"
-                  class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition">
-                  <span class="menu-link-text">Contact</span>
-                </a>
-              </li>
-            </ul>
-            <div class="atech-submenu-list">
-              <div
-                class="atech-menu-submenu menu-submenu-services position-absolute bg-white p-custom-8 shadow-default rounded-24">
-                <div class="submenu-main">
-                  <div class="submenu-services-list d-grid grid-cols-2 mb-custom-2">
-                    <a href="#" class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
-                      <div
-                        class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                        <img class="icon-36" src="assets/icons/custom_software_icon.svg" alt="" />
-                      </div>
-                      <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
-                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">Custom Software
-                          Development</h5>
-                        <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">Build scalable, high-performance
-                          software
-                          tailored to solve your business challenges and accelerate growth.</p>
-                      </div>
-                    </a>
-                    <a href="#" class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
-                      <div
-                        class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                        <img class="icon-36" src="assets/icons/mobapp_icon.svg" alt="" />
-                      </div>
-                      <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
-                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">Mobile App
-                          Development</h5>
-                        <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">Transform your ideas into
-                          intuitive,
-                          feature-rich mobile experiences across Android and iOS platforms.</p>
-                      </div>
-                    </a>
-                    <a href="#" class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
-                      <div
-                        class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                        <img class="icon-36" src="assets/icons/webdev_icon.svg" alt="" />
-                      </div>
-                      <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
-                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">Web App
-                          Development</h5>
-                        <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">Launch powerful, user-centric web
-                          applications
-                          designed to deliver seamless performance and lasting impact.</p>
-                      </div>
-                    </a>
-                    <a href="#" class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
-                      <div
-                        class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                        <img class="icon-36" src="assets/icons/ai_icon.svg" alt="" />
-                      </div>
-                      <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
-                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">Artificial
-                          Intelligence (AI)</h5>
-                        <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">Enhance your digital product with
-                          AI-powered
-                          features—boosting efficiency, personalization, and decision-making.</p>
-                      </div>
-                    </a>
-                    <a href="#" class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
-                      <div
-                        class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                        <img class="icon-36" src="assets/icons/low_code_icon.svg" alt="" />
-                      </div>
-                      <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
-                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">Low-Code /
-                          No-Code Solutions</h5>
-                        <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">Fast-track your app development
-                          with visual
-                          tools that simplify workflows—ideal for startups and enterprises alike.</p>
-                      </div>
-                    </a>
-                    <a href="#" class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
-                      <div
-                        class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                        <img class="icon-36" src="assets/icons/ios_dev_icon.svg" alt="" />
-                      </div>
-                      <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
-                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">iOS Development
-                        </h5>
-                        <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">Deliver sleek, responsive, and
-                          secure iOS apps
-                          that captivate Apple users and drive business results.</p>
-                      </div>
-                    </a>
-                    <a href="#" class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
-                      <div
-                        class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                        <img class="icon-36" src="assets/icons/staff_aug_icon.svg" alt="" />
-                      </div>
-                      <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
-                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">Staff
-                          Augmentation</h5>
-                        <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">Scale your tech team quickly with
-                          skilled
-                          Aakashtech professionals who integrate seamlessly into your projects.</p>
-                      </div>
-                    </a>
-                    <a href="#" class="submenu-services-item p-custom-3 d-flex align-items-start gap-4">
-                      <div
-                        class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                        <img class="icon-36" src="assets/icons/android_dev_icon.svg" alt="" />
-                      </div>
-                      <div class="submenu-services-item-details mt-1 d-flex flex-column gap-2">
-                        <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">Android
-                          Development</h5>
-                        <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">Leverage our deep Android
-                          expertise to build
-                          dynamic apps optimized for diverse devices and user needs.</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="submenu-bottom d-flex pt-custom-5 border-t-gray-100-1">
-                  <div class="submenu-contact-info d-flex gap-4 justify-content-between w-100">
-                    <div class="submenu-contact-info-item d-flex align-items-center gap-3">
-                      <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
-                        <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="" />
-                      </span>
-                      <span class="text-base text-onyx-500 font-medium">+977 9876890991</span>
-                    </div>
-                    <div class="submenu-contact-info-item d-flex align-items-center gap-3">
-                      <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
-                        <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="" />
-                      </span>
-                      <span class="text-base text-onyx-500 font-medium">aakashtech@gmail.com.np</span>
-                    </div>
-                    <div class="submenu-contact-info-item d-flex align-items-center gap-3">
-                      <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
-                        <img class="icon-18" src="assets/icons/location_dot_outline_primary.svg" alt="" />
-                      </span>
-                      <span class="text-base text-onyx-500 font-medium">Kalopul, Kathmandu, Nepal</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="d-xl-none d-flex align-items-center justify-content-between border-b-gray-100-1 pb-custom-4">
+              <a href="#" class="navbar-brand d-inline-flex justify-content-end">
+                <img class="h-auto w-auto ms-auto" src="assets/images/site/logo_default.png" alt="Aakashtel logo" />
+              </a>
+              <button type="button" class="hamburger d-xl-none is-open" id="mobileSidebarCloseBtn">
+                <span class="menu-bar"></span>
+              </button>
+            </div>
+            <div class="atech-menu-parent-inner">
+              <ul class="list-unstyled atech-menu d-flex align-items-center gap-x-3 bg-primary-50 p-custom-4">
+                <li class="atech-menu-item px-3">
+                  <a href="index.html"
+                    class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition">
+                    <span class="menu-link-text">Home</span>
+                  </a>
+                </li>
+                <li class="atech-menu-item px-3 position-relative">
+                  <a href="services.html"
+                    class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition"
+                    data-submenu="menu-submenu-services">
+                    <span class="menu-link-text">Services</span>
+                    <span class="menu-link-icon icon-18">
+                      <img src="assets/icons/chevron_down_onyx.svg" alt="" />
+                    </span>
+                  </a>
+                </li>
+                <li class="atech-menu-item px-3 position-relative">
+                  <a href="projects.html"
+                    class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition"
+                    data-submenu="menu-submenu-portfolios">
+                    <span class="menu-link-text">Our Portfolio</span>
+                    <span class="menu-link-icon icon-18">
+                      <img src="assets/icons/chevron_down_onyx.svg" alt="" />
+                    </span>
+                  </a>
+                </li>
 
-              <div
-                class="atech-menu-submenu menu-submenu-portfolios position-absolute bg-white p-custom-8 shadow-default rounded-24">
-                <div class="submenu-main">
-                  <div class="d-flex align-items-start gap-10 mb-custom-6">
-                    <div class="nav flex-column nav-pills gap-3" id="v-pills-tab" role="tablist"
-                      aria-orientation="vertical">
-                      <button
-                        class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white px-4 active"
-                        id="v-pills-port-01-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-01" type="button"
-                        role="tab" aria-controls="v-pills-port-01" aria-selected="true">
-                        <span class="btn-icon icon-24">
-                          <img src="assets/icons/mobapp_tab_icon.svg" alt="" />
-                        </span>
-                        <span class="text-onyx-700 text-sm font-medium">Mobile Apps</span>
-                      </button>
-                      <button
-                        class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white px-4"
-                        id="v-pills-port-02-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-02" type="button"
-                        role="tab" aria-controls="v-pills-port-02" aria-selected="false">
-                        <span class="btn-icon icon-24">
-                          <img src="assets/icons/ecommerce_tab_icon.svg" alt="" />
-                        </span>
-                        <span class="text-onyx-700 text-sm font-medium">E-commerce</span></button>
-                      <button
-                        class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white px-4"
-                        id="v-pills-port-03-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-03" type="button"
-                        role="tab" aria-controls="v-pills-port-03" aria-selected="false">
-                        <span class="btn-icon icon-24">
-                          <img src="assets/icons/uiux_tab_icon.svg" alt="" />
-                        </span>
-                        <span class="text-onyx-700 text-sm font-medium">UI/UX Design</span></button>
-                      <button
-                        class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white px-4"
-                        id="v-pills-port-04-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-04" type="button"
-                        role="tab" aria-controls="v-pills-port-04" aria-selected="false">
-                        <span class="btn-icon icon-24">
-                          <img src="assets/icons/ai_tab_icon.svg" alt="" />
-                        </span>
-                        <span class="text-onyx-700 text-sm font-medium">AI & Automation</span></button>
-                      <button
-                        class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white px-4"
-                        id="v-pills-port-05-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-05" type="button"
-                        role="tab" aria-controls="v-pills-port-05" aria-selected="false">
-                        <span class="btn-icon icon-24">
-                          <img src="assets/icons/crm_tab_icon.svg" alt="" />
-                        </span>
-                        <span class="text-onyx-700 text-sm font-medium">CRM & ERP</span></button>
-                      <button
-                        class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white px-4"
-                        id="v-pills-port-06-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-06" type="button"
-                        role="tab" aria-controls="v-pills-port-06" aria-selected="false">
-                        <span class="btn-icon icon-24">
-                          <img src="assets/icons/finance_tab_icon.svg" alt="" />
-                        </span>
-                        <span class="text-onyx-700 text-sm font-medium">Finance & Fintech</span></button>
-                      <a href="#" class="nav-link btn btn-primary">
-                        <span class="btn-text">All Categories</span>
-                        <span class="btn-icon icon-24">
-                          <i class="fa-solid fa-chevron-right"></i>
-                        </span></a>
+                <li class="atech-menu-item px-3">
+                  <a href="about.html"
+                    class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition">
+                    <span class="menu-link-text">About Us</span>
+                  </a>
+                </li>
+                <li class="atech-menu-item px-3">
+                  <a href="blog.html"
+                    class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition">
+                    <span class="menu-link-text">Blog</span>
+                  </a>
+                </li>
+                <li class="atech-menu-item px-3">
+                  <a href="contact.html"
+                    class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition">
+                    <span class="menu-link-text">Contact</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="atech-submenu-list">
+                <div
+                  class="atech-menu-submenu menu-submenu-services position-absolute bg-white xxl-p-custom-8 xl-p-custom-6 p-custom-4 shadow-default rounded-24">
+                  <div class="submenu-top my-custom-4 btn btn-link btn-link-primary-500 d-xl-none">
+                    <span class="btn-icon"><i class="fa-solid fa-arrow-left-long"></i></span>
+                    <span class="btn-text">Our All Services</span>
+                  </div>
+                  <div class="submenu-main">
+                    <div class="submenu-services-list d-grid xl-grid-cols-2 sm-grid-cols-1 gap-0 mb-custom-2">
+                      <a href="services.html"
+                        class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
+                        <div
+                          class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                          <img class="icon-36" src="assets/icons/custom_software_icon.svg" alt="" />
+                        </div>
+                        <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
+                          <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
+                            Custom Software Development
+                          </h5>
+                          <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">
+                            Build scalable, high-performance software tailored
+                            to solve your business challenges and accelerate
+                            growth.
+                          </p>
+                        </div>
+                      </a>
+                      <a href="services.html"
+                        class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
+                        <div
+                          class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                          <img class="icon-36" src="assets/icons/mobapp_icon.svg" alt="" />
+                        </div>
+                        <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
+                          <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
+                            Mobile App Development
+                          </h5>
+                          <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">
+                            Transform your ideas into intuitive, feature-rich
+                            mobile experiences across Android and iOS platforms.
+                          </p>
+                        </div>
+                      </a>
+                      <a href="services.html"
+                        class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
+                        <div
+                          class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                          <img class="icon-36" src="assets/icons/webdev_icon.svg" alt="" />
+                        </div>
+                        <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
+                          <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
+                            Web App Development
+                          </h5>
+                          <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">
+                            Launch powerful, user-centric web applications
+                            designed to deliver seamless performance and lasting
+                            impact.
+                          </p>
+                        </div>
+                      </a>
+                      <a href="services.html"
+                        class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
+                        <div
+                          class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                          <img class="icon-36" src="assets/icons/ai_icon.svg" alt="" />
+                        </div>
+                        <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
+                          <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
+                            Artificial Intelligence (AI)
+                          </h5>
+                          <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">
+                            Enhance your digital product with AI-powered
+                            features—boosting efficiency, personalization, and
+                            decision-making.
+                          </p>
+                        </div>
+                      </a>
+                      <a href="services.html"
+                        class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
+                        <div
+                          class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                          <img class="icon-36" src="assets/icons/low_code_icon.svg" alt="" />
+                        </div>
+                        <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
+                          <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
+                            Low-Code / No-Code Solutions
+                          </h5>
+                          <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">
+                            Fast-track your app development with visual tools
+                            that simplify workflows—ideal for startups and
+                            enterprises alike.
+                          </p>
+                        </div>
+                      </a>
+                      <a href="services.html"
+                        class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
+                        <div
+                          class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                          <img class="icon-36" src="assets/icons/ios_dev_icon.svg" alt="" />
+                        </div>
+                        <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
+                          <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
+                            iOS Development
+                          </h5>
+                          <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">
+                            Deliver sleek, responsive, and secure iOS apps that
+                            captivate Apple users and drive business results.
+                          </p>
+                        </div>
+                      </a>
+                      <a href="services.html"
+                        class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
+                        <div
+                          class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                          <img class="icon-36" src="assets/icons/staff_aug_icon.svg" alt="" />
+                        </div>
+                        <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
+                          <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
+                            Staff Augmentation
+                          </h5>
+                          <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">
+                            Scale your tech team quickly with skilled Aakashtech
+                            professionals who integrate seamlessly into your
+                            projects.
+                          </p>
+                        </div>
+                      </a>
+                      <a href="services.html"
+                        class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
+                        <div
+                          class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                          <img class="icon-36" src="assets/icons/android_dev_icon.svg" alt="" />
+                        </div>
+                        <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
+                          <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
+                            Android Development
+                          </h5>
+                          <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">
+                            Leverage our deep Android expertise to build dynamic
+                            apps optimized for diverse devices and user needs.
+                          </p>
+                        </div>
+                      </a>
                     </div>
-                    <div class="tab-content" id="v-pills-tabContent">
-                      <div class="tab-pane fade show active" id="v-pills-port-01" role="tabpanel"
-                        aria-labelledby="v-pills-port-01-tab" tabindex="0">
-                        <div class="submenu-portfolios-list d-grid grid-cols-2 mb-custom-2">
-                          <a href="#" class="submenu-portfolios-item d-flex gap-5 align-items-start">
-                            <div class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100">
-                              <img src="assets/images/misc/portfolio_thumbnail_1.png" alt="" />
-                            </div>
-                            <div class="submenu-portfolios-item-details mt-custom-2 d-flex flex-column gap-2">
-                              <h5 class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700">Lami –
-                                Nepali Dating App</h5>
-                              <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">Lami is Nepal’s own dating
-                                app, helping users connect and build meaningful relationships with local cultural
-                                relevance.</p>
-                            </div>
-                          </a>
-                          <a href="#" class="submenu-portfolios-item d-flex gap-5 align-items-start">
-                            <div class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100">
-                              <img src="assets/images/misc/portfolio_thumbnail_2.png" alt="" />
-                            </div>
-                            <div class="submenu-portfolios-item-details mt-custom-2 d-flex flex-column gap-2">
-                              <h5 class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700">
-                                Aakashtel – IVR System App</h5>
-                              <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">Lami is Nepal’s own dating
-                                app, helping users connect and build meaningful relationships with local cultural
-                                relevance.</p>
-                            </div>
-                          </a>
-                          <a href="#" class="submenu-portfolios-item d-flex gap-5 align-items-start">
-                            <div class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100">
-                              <img src="assets/images/misc/portfolio_thumbnail_3.png" alt="" />
-                            </div>
-                            <div class="submenu-portfolios-item-details mt-custom-2 d-flex flex-column gap-2">
-                              <h5 class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700">Sajha
-                                Jobs – Foreign Employment App</h5>
-                              <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">Lami is Nepal’s own dating
-                                app, helping users connect and build meaningful relationships with local cultural
-                                relevance.</p>
-                            </div>
-                          </a>
-                          <a href="#" class="submenu-portfolios-item d-flex gap-5 align-items-start">
-                            <div class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100">
-                              <img src="assets/images/misc/portfolio_thumbnail_1.png" alt="" />
-                            </div>
-                            <div class="submenu-portfolios-item-details mt-custom-2 d-flex flex-column gap-2">
-                              <h5 class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700">Lami –
-                                Nepali Dating App</h5>
-                              <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">Lami is Nepal’s own dating
-                                app, helping users connect and build meaningful relationships with local cultural
-                                relevance.</p>
-                            </div>
-                          </a>
-                          <a href="#" class="submenu-portfolios-item d-flex gap-5 align-items-start">
-                            <div class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100">
-                              <img src="assets/images/misc/portfolio_thumbnail_2.png" alt="" />
-                            </div>
-                            <div class="submenu-portfolios-item-details mt-custom-2 d-flex flex-column gap-2">
-                              <h5 class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700">Lami –
-                                Nepali Dating App</h5>
-                              <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">Lami is Nepal’s own dating
-                                app, helping users connect and build meaningful relationships with local cultural
-                                relevance.</p>
-                            </div>
-                          </a>
-                          <a href="#" class="submenu-portfolios-item d-flex gap-5 align-items-start">
-                            <div class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100">
-                              <img src="assets/images/misc/portfolio_thumbnail_3.png" alt="" />
-                            </div>
-                            <div class="submenu-portfolios-item-details mt-custom-2 d-flex flex-column gap-2">
-                              <h5 class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700">Sajha
-                                Jobs – Foreign Employment App</h5>
-                              <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">Lami is Nepal’s own dating
-                                app, helping users connect and build meaningful relationships with local cultural
-                                relevance.</p>
-                            </div>
-                          </a>
+                  </div>
+                  <div class="submenu-bottom d-sm-flex d-none xl-pt-custom-5 pt-custom-4 border-t-gray-100-1">
+                    <div class="submenu-contact-info d-flex flex-wrap xl-gap-4 gap-2 justify-content-between w-100">
+                      <div class="submenu-contact-info-item d-flex align-items-center gap-3">
+                        <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
+                          <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="" />
+                        </span>
+                        <span class="info-item-text text-base text-onyx-500 font-medium">+977 9876890991</span>
+                      </div>
+                      <div class="submenu-contact-info-item d-flex align-items-center gap-3">
+                        <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
+                          <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="" />
+                        </span>
+                        <span class="info-item-text text-base text-onyx-500 font-medium">aakashtech@gmail.com.np</span>
+                      </div>
+                      <div class="submenu-contact-info-item d-flex align-items-center gap-3">
+                        <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
+                          <img class="icon-18" src="assets/icons/location_dot_outline_primary.svg" alt="" />
+                        </span>
+                        <span class="info-item-text text-base text-onyx-500 font-medium">Kalopul, Kathmandu,
+                          Nepal</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="atech-menu-submenu menu-submenu-portfolios position-absolute bg-white xxl-p-custom-8 xl-p-custom-6 p-custom-4 shadow-default rounded-24">
+                  <div class="submenu-top my-custom-4 btn btn-link btn-link-primary-500 d-xl-none">
+                    <span class="btn-icon"><i class="fa-solid fa-arrow-left-long"></i></span>
+                    <span class="btn-text">Our All Portfolios</span>
+                  </div>
+                  <div class="submenu-main">
+                    <div
+                      class="d-flex flex-xl-row flex-column align-items-start xxl-gap-10 xl-gap-8 lg-gap-6 gap-4 xl-mb-custom-6 mb-custom-4">
+                      <div
+                        class="nav flex-xl-column align-items-center align-items-xl-stretch nav-pills xxxl-gap-3 xxl-gap-3 gap-2"
+                        id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button
+                          class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white xl-px-4 px-2 active"
+                          id="v-pills-port-01-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-01" type="button"
+                          role="tab" aria-controls="v-pills-port-01" aria-selected="true">
+                          <span class="btn-icon icon-24 d-none d-xl-inline-flex">
+                            <img src="assets/icons/mobapp_tab_icon.svg" alt="" />
+                          </span>
+                          <span class="btn-text text-onyx-700 text-sm font-medium">Mobile Apps</span>
+                        </button>
+                        <button
+                          class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white xl-px-4 px-2"
+                          id="v-pills-port-02-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-02" type="button"
+                          role="tab" aria-controls="v-pills-port-02" aria-selected="false">
+                          <span class="btn-icon icon-24 d-none d-xl-inline-flex">
+                            <img src="assets/icons/ecommerce_tab_icon.svg" alt="" />
+                          </span>
+                          <span class="btn-text text-onyx-700 text-sm font-medium">E-commerce</span>
+                        </button>
+                        <button
+                          class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white xl-px-4 px-2"
+                          id="v-pills-port-03-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-03" type="button"
+                          role="tab" aria-controls="v-pills-port-03" aria-selected="false">
+                          <span class="btn-icon icon-24 d-none d-xl-inline-flex">
+                            <img src="assets/icons/uiux_tab_icon.svg" alt="" />
+                          </span>
+                          <span class="btn-text text-onyx-700 text-sm font-medium">UI/UX Design</span>
+                        </button>
+                        <button
+                          class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white xl-px-4 px-2"
+                          id="v-pills-port-04-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-04" type="button"
+                          role="tab" aria-controls="v-pills-port-04" aria-selected="false">
+                          <span class="btn-icon icon-24 d-none d-xl-inline-flex">
+                            <img src="assets/icons/ai_tab_icon.svg" alt="" />
+                          </span>
+                          <span class="btn-text text-onyx-700 text-sm font-medium">AI & Automation</span>
+                        </button>
+                        <button
+                          class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white xl-px-4 px-2"
+                          id="v-pills-port-05-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-05" type="button"
+                          role="tab" aria-controls="v-pills-port-05" aria-selected="false">
+                          <span class="btn-icon icon-24 d-none d-xl-inline-flex">
+                            <img src="assets/icons/crm_tab_icon.svg" alt="" />
+                          </span>
+                          <span class="btn-text text-onyx-700 text-sm font-medium">CRM & ERP</span>
+                        </button>
+                        <button
+                          class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white xl-px-4 px-2"
+                          id="v-pills-port-06-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-06" type="button"
+                          role="tab" aria-controls="v-pills-port-06" aria-selected="false">
+                          <span class="btn-icon icon-24 d-none d-xl-inline-flex">
+                            <img src="assets/icons/finance_tab_icon.svg" alt="" />
+                          </span>
+                          <span class="btn-text text-onyx-700 text-sm font-medium">Finance & Fintech</span>
+                        </button>
+                        <a href="projects.html" class="nav-link btn btn-primary">
+                          <span class="btn-text">All Categories</span>
+                          <span class="btn-icon icon-24 d-inline-flex">
+                            <i class="fa-solid fa-chevron-right"></i> </span></a>
+                      </div>
+                      <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-port-01" role="tabpanel"
+                          aria-labelledby="v-pills-port-01-tab" tabindex="0">
+                          <div class="submenu-portfolios-list d-grid xl-grid-cols-2 grid-cols-1 mb-custom-2">
+                            <a href="projects.html"
+                              class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                              <div
+                                class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
+                                <img src="assets/images/misc/portfolio_thumbnail_1.png" alt="" />
+                              </div>
+                              <div
+                                class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
+                                <h5 class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700">
+                                  Lami – Nepali Dating App
+                                </h5>
+                                <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">
+                                  Lami is Nepal’s own dating app, helping users
+                                  connect and build meaningful relationships
+                                  with local cultural relevance.
+                                </p>
+                              </div>
+                            </a>
+                            <a href="projects.html"
+                              class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                              <div
+                                class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
+                                <img src="assets/images/misc/portfolio_thumbnail_2.png" alt="" />
+                              </div>
+                              <div
+                                class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
+                                <h5 class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700">
+                                  Aakashtel – IVR System App
+                                </h5>
+                                <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">
+                                  Lami is Nepal’s own dating app, helping users
+                                  connect and build meaningful relationships
+                                  with local cultural relevance.
+                                </p>
+                              </div>
+                            </a>
+                            <a href="projects.html"
+                              class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                              <div
+                                class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
+                                <img src="assets/images/misc/portfolio_thumbnail_3.png" alt="" />
+                              </div>
+                              <div
+                                class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
+                                <h5 class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700">
+                                  Sajha Jobs – Foreign Employment App
+                                </h5>
+                                <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">
+                                  Lami is Nepal’s own dating app, helping users
+                                  connect and build meaningful relationships
+                                  with local cultural relevance.
+                                </p>
+                              </div>
+                            </a>
+                            <a href="projects.html"
+                              class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                              <div
+                                class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
+                                <img src="assets/images/misc/portfolio_thumbnail_1.png" alt="" />
+                              </div>
+                              <div
+                                class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
+                                <h5 class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700">
+                                  Lami – Nepali Dating App
+                                </h5>
+                                <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">
+                                  Lami is Nepal’s own dating app, helping users
+                                  connect and build meaningful relationships
+                                  with local cultural relevance.
+                                </p>
+                              </div>
+                            </a>
+                            <a href="projects.html"
+                              class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                              <div
+                                class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
+                                <img src="assets/images/misc/portfolio_thumbnail_2.png" alt="" />
+                              </div>
+                              <div
+                                class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
+                                <h5 class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700">
+                                  Lami – Nepali Dating App
+                                </h5>
+                                <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">
+                                  Lami is Nepal’s own dating app, helping users
+                                  connect and build meaningful relationships
+                                  with local cultural relevance.
+                                </p>
+                              </div>
+                            </a>
+                            <a href="projects.html"
+                              class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                              <div
+                                class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
+                                <img src="assets/images/misc/portfolio_thumbnail_3.png" alt="" />
+                              </div>
+                              <div
+                                class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
+                                <h5 class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700">
+                                  Sajha Jobs – Foreign Employment App
+                                </h5>
+                                <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-3">
+                                  Lami is Nepal’s own dating app, helping users
+                                  connect and build meaningful relationships
+                                  with local cultural relevance.
+                                </p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-port-02" role="tabpanel"
+                          aria-labelledby="v-pills-port-02-tab" tabindex="0">
+                          ...
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-port-03" role="tabpanel"
+                          aria-labelledby="v-pills-port-03-tab" tabindex="0">
+                          ...
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-port-04" role="tabpanel"
+                          aria-labelledby="v-pills-port-04-tab" tabindex="0">
+                          ...
                         </div>
                       </div>
-                      <div class="tab-pane fade" id="v-pills-port-02" role="tabpanel"
-                        aria-labelledby="v-pills-port-02-tab" tabindex="0">...</div>
-                      <div class="tab-pane fade" id="v-pills-port-03" role="tabpanel"
-                        aria-labelledby="v-pills-port-03-tab" tabindex="0">...</div>
-                      <div class="tab-pane fade" id="v-pills-port-04" role="tabpanel"
-                        aria-labelledby="v-pills-port-04-tab" tabindex="0">...</div>
                     </div>
                   </div>
-                </div>
-                <div class="submenu-bottom d-flex pt-custom-5 border-t-gray-100-1">
-                  <div class="submenu-contact-info d-flex gap-4 justify-content-between w-100">
-                    <div class="submenu-contact-info-item d-flex align-items-center gap-3">
-                      <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
-                        <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="" />
-                      </span>
-                      <span class="text-base text-onyx-500 font-medium">+977 9876890991</span>
-                    </div>
-                    <div class="submenu-contact-info-item d-flex align-items-center gap-3">
-                      <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
-                        <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="" />
-                      </span>
-                      <span class="text-base text-onyx-500 font-medium">aakashtech@gmail.com.np</span>
-                    </div>
-                    <div class="submenu-contact-info-item d-flex align-items-center gap-3">
-                      <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
-                        <img class="icon-18" src="assets/icons/location_dot_outline_primary.svg" alt="" />
-                      </span>
-                      <span class="text-base text-onyx-500 font-medium">Kalopul, Kathmandu, Nepal</span>
+                  <div class="submenu-bottom d-sm-flex d-none xl-pt-custom-5 pt-custom-4 border-t-gray-100-1">
+                    <div class="submenu-contact-info d-flex flex-wrap lg-gap-4 gap-3 justify-content-between w-100">
+                      <div class="submenu-contact-info-item d-flex align-items-center gap-3">
+                        <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
+                          <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="" />
+                        </span>
+                        <span class="info-item-text text-base text-onyx-500 font-medium">+977 9876890991</span>
+                      </div>
+                      <div class="submenu-contact-info-item d-flex align-items-center gap-3">
+                        <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
+                          <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="" />
+                        </span>
+                        <span class="info-item-text text-base text-onyx-500 font-medium">aakashtech@gmail.com.np</span>
+                      </div>
+                      <div class="submenu-contact-info-item d-flex align-items-center gap-3">
+                        <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
+                          <img class="icon-18" src="assets/icons/location_dot_outline_primary.svg" alt="" />
+                        </span>
+                        <span class="info-item-text text-base text-onyx-500 font-medium">Kalopul, Kathmandu,
+                          Nepal</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -405,14 +508,18 @@
             </div>
           </div>
 
-          <div class="atech-header-btns d-flex align-items-center gap-6">
+          <div class="atech-header-btns d-flex align-items-center gap-4 xl-gap-6">
             <a href="https://wa.me/+9779851300024" class="whatsapp-btn position-relative" target="_blank"><img
-                src="assets/images/misc/whatsapp_logo.png" class="icon-32" alt="whatsapp icon"></a>
-            <button type="button" class="btn btn-primary">Contact Us</button>
+                src="assets/images/misc/whatsapp_logo.png" class="icon-32" alt="whatsapp icon" /></a>
+            <a href="contact.html" class="btn btn-primary d-none d-xl-inline-flex">Contact Us</a>
+            <button type="button" class="hamburger d-xl-none" id="mobileSidebarOpenBtn">
+              <span class="menu-bar"></span>
+            </button>
           </div>
         </nav>
       </div>
     </header>
+    <!-- END OF HEADER -->
 
     <section class="atech-blog-banner segment-py-80 position-relative"
       style="background: url(assets/images/blogs/blog_banner_bg.png) center/cover no-repeat;">
@@ -565,7 +672,8 @@
                       Modern Business Communication Platform</h3>
                   </div>
                   <div class="card-body-bottom">
-                    <div class="card-metadata d-inline-flex align-items-center justify-content-start rounded-100vh me-auto">
+                    <div
+                      class="card-metadata d-inline-flex align-items-center justify-content-start rounded-100vh me-auto">
                       <div
                         class="card-date card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                         <span class="icon-12">
@@ -609,7 +717,8 @@
                       Future-Proofing Business Communication</h3>
                   </div>
                   <div class="card-body-bottom">
-                    <div class="card-metadata d-inline-flex align-items-center justify-content-start rounded-100vh me-auto">
+                    <div
+                      class="card-metadata d-inline-flex align-items-center justify-content-start rounded-100vh me-auto">
                       <div
                         class="card-date card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                         <span class="icon-12">
@@ -653,7 +762,8 @@
                       Call Centers: Which is Right for You?</h3>
                   </div>
                   <div class="card-body-bottom">
-                    <div class="card-metadata d-inline-flex align-items-center justify-content-start rounded-100vh me-auto">
+                    <div
+                      class="card-metadata d-inline-flex align-items-center justify-content-start rounded-100vh me-auto">
                       <div
                         class="card-date card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                         <span class="icon-12">
@@ -734,7 +844,8 @@
                 <div class="card-body-top d-grid align-items-start gap-3">
                   <h3 class="card-title text-xl font-bold text-onyx-700 -tracking-03 mb-0">Cloud vs On-Premise Call
                     Centers: Which is Right for You?</h3>
-                  <div class="card-metadata d-inline-flex align-items-center bg-primary-50 py-custom-3 px-custom-4 justify-content-start rounded-100vh me-auto">
+                  <div
+                    class="card-metadata d-inline-flex align-items-center bg-primary-50 py-custom-3 px-custom-4 justify-content-start rounded-100vh me-auto">
                     <div
                       class="card-date card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
@@ -792,7 +903,8 @@
                 <div class="card-body-top d-grid align-items-start gap-3">
                   <h3 class="card-title text-xl font-bold text-onyx-700 -tracking-03 mb-0">Cloud vs On-Premise Call
                     Centers: Which is Right for You?</h3>
-                  <div class="card-metadata d-inline-flex align-items-center bg-primary-50 py-custom-3 px-custom-4 justify-content-start rounded-100vh me-auto">
+                  <div
+                    class="card-metadata d-inline-flex align-items-center bg-primary-50 py-custom-3 px-custom-4 justify-content-start rounded-100vh me-auto">
                     <div
                       class="card-date card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
@@ -850,7 +962,8 @@
                 <div class="card-body-top d-grid align-items-start gap-3">
                   <h3 class="card-title text-xl font-bold text-onyx-700 -tracking-03 mb-0">Cloud vs On-Premise Call
                     Centers: Which is Right for You?</h3>
-                  <div class="card-metadata d-inline-flex align-items-center bg-primary-50 py-custom-3 px-custom-4 justify-content-start rounded-100vh me-auto">
+                  <div
+                    class="card-metadata d-inline-flex align-items-center bg-primary-50 py-custom-3 px-custom-4 justify-content-start rounded-100vh me-auto">
                     <div
                       class="card-date card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
@@ -908,7 +1021,8 @@
                 <div class="card-body-top d-grid align-items-start gap-3">
                   <h3 class="card-title text-xl font-bold text-onyx-700 -tracking-03 mb-0">Cloud vs On-Premise Call
                     Centers: Which is Right for You?</h3>
-                  <div class="card-metadata d-inline-flex align-items-center bg-primary-50 py-custom-3 px-custom-4 justify-content-start rounded-100vh me-auto">
+                  <div
+                    class="card-metadata d-inline-flex align-items-center bg-primary-50 py-custom-3 px-custom-4 justify-content-start rounded-100vh me-auto">
                     <div
                       class="card-date card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
@@ -966,7 +1080,8 @@
                 <div class="card-body-top d-grid align-items-start gap-3">
                   <h3 class="card-title text-xl font-bold text-onyx-700 -tracking-03 mb-0">Cloud vs On-Premise Call
                     Centers: Which is Right for You?</h3>
-                  <div class="card-metadata d-inline-flex align-items-center bg-primary-50 py-custom-3 px-custom-4 justify-content-start rounded-100vh me-auto">
+                  <div
+                    class="card-metadata d-inline-flex align-items-center bg-primary-50 py-custom-3 px-custom-4 justify-content-start rounded-100vh me-auto">
                     <div
                       class="card-date card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
@@ -1024,7 +1139,8 @@
                 <div class="card-body-top d-grid align-items-start gap-3">
                   <h3 class="card-title text-xl font-bold text-onyx-700 -tracking-03 mb-0">Cloud vs On-Premise Call
                     Centers: Which is Right for You?</h3>
-                  <div class="card-metadata d-inline-flex align-items-center bg-primary-50 py-custom-3 px-custom-4 justify-content-start rounded-100vh me-auto">
+                  <div
+                    class="card-metadata d-inline-flex align-items-center bg-primary-50 py-custom-3 px-custom-4 justify-content-start rounded-100vh me-auto">
                     <div
                       class="card-date card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
@@ -1082,7 +1198,8 @@
                 <div class="card-body-top d-grid align-items-start gap-3">
                   <h3 class="card-title text-xl font-bold text-onyx-700 -tracking-03 mb-0">Cloud vs On-Premise Call
                     Centers: Which is Right for You?</h3>
-                  <div class="card-metadata d-inline-flex align-items-center bg-primary-50 py-custom-3 px-custom-4 justify-content-start rounded-100vh me-auto">
+                  <div
+                    class="card-metadata d-inline-flex align-items-center bg-primary-50 py-custom-3 px-custom-4 justify-content-start rounded-100vh me-auto">
                     <div
                       class="card-date card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
@@ -1140,7 +1257,8 @@
                 <div class="card-body-top d-grid align-items-start gap-3">
                   <h3 class="card-title text-xl font-bold text-onyx-700 -tracking-03 mb-0">Cloud vs On-Premise Call
                     Centers: Which is Right for You?</h3>
-                  <div class="card-metadata d-inline-flex align-items-center bg-primary-50 py-custom-3 px-custom-4 justify-content-start rounded-100vh me-auto">
+                  <div
+                    class="card-metadata d-inline-flex align-items-center bg-primary-50 py-custom-3 px-custom-4 justify-content-start rounded-100vh me-auto">
                     <div
                       class="card-date card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
@@ -1198,7 +1316,8 @@
                 <div class="card-body-top d-grid align-items-start gap-3">
                   <h3 class="card-title text-xl font-bold text-onyx-700 -tracking-03 mb-0">Cloud vs On-Premise Call
                     Centers: Which is Right for You?</h3>
-                  <div class="card-metadata d-inline-flex align-items-center bg-primary-50 py-custom-3 px-custom-4 justify-content-start rounded-100vh me-auto">
+                  <div
+                    class="card-metadata d-inline-flex align-items-center bg-primary-50 py-custom-3 px-custom-4 justify-content-start rounded-100vh me-auto">
                     <div
                       class="card-date card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
@@ -1384,13 +1503,14 @@
       </div>
     </section>
 
+    <!-- START OF FOOTER -->
     <footer class="atech-footer">
-      <div class="atech-footer-top bg-primary-500 d-grid grid-cols-2">
+      <div class="atech-footer-top bg-primary-500 d-grid md-grid-cols-2 grid-cols-1">
         <div
-          class="tracking-0 d-flex align-items-center justify-content-center gap-3 text-base font-semibold text-white py-custom-6">
+          class="tracking-0 d-flex align-items-center justify-content-center gap-3 text-base font-semibold text-white md-py-custom-6 pt-custom-4 pb-custom-0">
           Saturday - Thursday : 8:30 am - 10:45 payments
         </div>
-        <div class="d-flex align-items-center justify-content-center py-custom-6">
+        <div class="d-flex align-items-center justify-content-center md-py-custom-6 pt-custom-0 pb-custom-2">
           <a href="#" class="btn btn-link-white">
             <span class="btn-text">Get Support</span>
             <span class="btn-icon -rotate-45">
@@ -1401,8 +1521,8 @@
       </div>
       <div class="atech-footer-main segment-pt-80 pb-custom-8">
         <div class="atech-footer-grid-block d-grid align-items-start container">
-          <div class="footer-block-one d-flex flex-column align-items-start">
-            <a href="#" class="footer-brand-logo w-100 d-inline-flex mb-custom-3">
+          <div class="footer-block-one d-flex flex-column align-items-sm-start align-items-center">
+            <a href="index.html" class="footer-brand-logo w-100 d-inline-flex mb-custom-3">
               <img src="assets/images/site/logo_default.png" alt="" />
             </a>
             <ul
@@ -1423,9 +1543,11 @@
                 <i class="fa-solid fa-star"></i>
               </li>
             </ul>
-            <p class="mb-0 footer-brand-text text-gray-700 font-base font-medium">Aakashtech – A future-focused digital
-              agency empowering businesses through smart web and mobile solutions, aligning innovation with your growth
-              goals.</p>
+            <p class="mb-0 footer-brand-text text-gray-700 font-base font-medium text-center text-sm-start">
+              Aakashtech – A future-focused digital agency empowering
+              businesses through smart web and mobile solutions, aligning
+              innovation with your growth goals.
+            </p>
 
             <div class="footer-social-links mt-custom-6">
               <div class="social-link-item d-flex align-items-center gap-3">
@@ -1453,11 +1575,13 @@
             </div>
           </div>
 
-          <div class="footer-block-two">
-            <h3 class="footer-block-title text-onyx-700 font-semibold text-xl mb-custom-4">Company</h3>
-            <ul class="list-unstyled footer-block-list d-flex flex-column gap-2">
+          <div class="footer-block-two text-center text-sm-start">
+            <h3 class="footer-block-title text-onyx-700 font-semibold text-xl mb-custom-4">
+              Company
+            </h3>
+            <ul class="list-unstyled footer-block-list d-flex flex-column lg-gap-2 gap-1">
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
+                <a href="projects.html" class="footer-block-list-link text-gray-600 font-medium text-base">
                   Our Portfolio
                 </a>
               </li>
@@ -1467,12 +1591,12 @@
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
+                <a href="about.html" class="footer-block-list-link text-gray-600 font-medium text-base">
                   About Us
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
+                <a href="blog.html" class="footer-block-list-link text-gray-600 font-medium text-base">
                   Blogs & articles
                 </a>
               </li>
@@ -1488,9 +1612,11 @@
               </li>
             </ul>
           </div>
-          <div class="footer-block-three">
-            <h3 class="footer-block-title text-onyx-700 font-semibold text-xl mb-custom-4">Industries</h3>
-            <ul class="list-unstyled footer-block-list d-flex flex-column gap-2">
+          <div class="footer-block-three text-center text-sm-start">
+            <h3 class="footer-block-title text-onyx-700 font-semibold text-xl mb-custom-4">
+              Industries
+            </h3>
+            <ul class="list-unstyled footer-block-list d-flex flex-column lg-gap-2 gap-1">
               <li class="footer-block-list-item">
                 <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
                   Healthcare
@@ -1518,9 +1644,11 @@
               </li>
             </ul>
           </div>
-          <div class="footer-block-four">
-            <h3 class="footer-block-title text-onyx-700 font-semibold text-xl mb-custom-4">Our Services</h3>
-            <ul class="list-unstyled footer-block-list d-flex flex-column gap-2">
+          <div class="footer-block-four text-center text-sm-start">
+            <h3 class="footer-block-title text-onyx-700 font-semibold text-xl mb-custom-4">
+              Our Services
+            </h3>
+            <ul class="list-unstyled footer-block-list d-flex flex-column lg-gap-2 gap-1">
               <li class="footer-block-list-item">
                 <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
                   Web design & development
@@ -1553,32 +1681,36 @@
               </li>
             </ul>
           </div>
-          <div class="footer-block-five">
-            <h3 class="font-bold footer-block-title text-onyx-700 text-xl mb-custom-4">Let's Connect</h3>
-            <div class="text-base font-medium text-gray-700 mb-custom-5">Whether it's support, feedback, or
-              collaboration—drop us a
-              message and we’ll get back to you shortly.</div>
+          <div class="footer-block-five text-center text-sm-start">
+            <h3 class="font-bold footer-block-title text-onyx-700 text-xl mb-custom-4">
+              Let's Connect
+            </h3>
+            <div class="text-base font-medium text-gray-700 mb-custom-5 footer-block-lead">
+              Whether it's support, feedback, or collaboration—drop us a
+              message and we’ll get back to you shortly.
+            </div>
 
-            <div class="footer-contact-info d-flex flex-column gap-2">
-              <div class="footer-contact-info-item d-flex align-items-center gap-3">
+            <div
+              class="footer-contact-info d-flex flex-column align-items-center align-items-sm-start lg-gap-2 sm-gap-1 gap-0">
+              <div class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
                 <span class="info-item-icon icon-32">
                   <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="" />
                 </span>
                 <span class="text-base text-onyx-500 font-medium">+977 9876890991</span>
               </div>
-              <div class="footer-contact-info-item d-flex align-items-center gap-3">
+              <div class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
                 <span class="info-item-icon icon-32">
                   <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="" />
                 </span>
                 <span class="text-base text-onyx-500 font-medium">aakashtech@gmail.com.np</span>
               </div>
-              <div class="footer-contact-info-item d-flex align-items-center gap-3">
+              <div class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
                 <span class="info-item-icon icon-32">
                   <img class="icon-18" src="assets/icons/location_dot_outline_primary.svg" alt="" />
                 </span>
                 <span class="text-base text-onyx-500 font-medium">Kalopul, Kathmandu, Nepal</span>
               </div>
-              <div class="footer-contact-info-item d-flex align-items-center gap-3">
+              <div class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
                 <span class="info-item-icon icon-32">
                   <img class="icon-18" src="assets/icons/whatsapp_outline_primary.svg" alt="" />
                 </span>
@@ -1588,11 +1720,13 @@
           </div>
         </div>
         <div
-          class="atech-footer-bottom d-flex align-items-center justify-content-center container text-center text-gray-700 font-medium text-sm tracking-0 opacity-90 pt-custom-8 mt-custom-8 border-t-primary-50-1">
-          © All Copyright 2025 by <a href="#" class="text-primary-500 font-semibold px-1">AakashTech Pvt. Ltd.</a>
+          class="atech-footer-bottom d-flex align-items-center justify-content-center container text-center text-gray-700 font-medium text-sm tracking-0 opacity-90 xxl-pt-custom-8 xl-pt-custom-7 lg-pt-custom-6 pt-custom-5 xxl-mt-custom-8 xl-mt-custom-7 lg-mt-custom-6 mt-custom-5 border-t-primary-50-1">
+          © All Copyright 2025 by
+          <a href="#" class="text-primary-500 font-semibold px-1">AakashTech Pvt. Ltd.</a>
         </div>
       </div>
     </footer>
+    <!-- END OF FOOTER -->
   </div>
 
   <!-- JQUERY JS -->

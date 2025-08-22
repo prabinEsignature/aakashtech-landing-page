@@ -3,7 +3,6 @@
 @use "../abstracts/mixins" as *;
 
 .atech-projects-banner {
-  margin-top: 90px;
   background: url($img-path + "projects/projects_banner_bg.png") top/cover no-repeat;
 }
 
@@ -16,6 +15,11 @@
       width: auto;
       padding-left: 6px;
       padding-right: 6px;
+
+      @include breakpoint-down(lg) {
+        padding-left: 4px;
+        padding-right: 4px;
+      }
     }
 
     .projects-btn {
@@ -40,8 +44,32 @@
       border-radius: 28px;
       height: 500px;
 
+      @include breakpoint-down(xl) {
+        border-radius: 24px;
+      }
+
+      @include breakpoint-down(lg) {
+        border-radius: 20px;
+      }
+
+      @include breakpoint-down(sm) {
+        border-radius: 16px;
+      }
+
       &-wrapper {
         margin-bottom: 76px;
+
+        @include breakpoint-down(xl){
+          margin-bottom: 68px;
+        }
+
+        @include breakpoint-down(lg){
+          margin-bottom: 60px;
+        }
+
+        @include breakpoint-down(md){
+          margin-bottom: 48px;
+        }
       }
 
       &-logo {
@@ -53,6 +81,14 @@
         bottom: -28px;
         left: 28px;
         right: 28px;
+
+        @include breakpoint-down(lg){
+          border-radius: 12px!important;
+        }
+
+        @include breakpoint-down(sm){
+          border-radius: 8px!important;
+        }
       }
     }
   }
@@ -122,26 +158,26 @@
     max-width: 1320px;
     position: relative;
 
-    @include breakpoint-down(xxl){
+    @include breakpoint-down(xxl) {
       padding: 52px;
       border-radius: 36px;
     }
 
-    @include breakpoint-down(xl){
+    @include breakpoint-down(xl) {
       padding: 48px;
     }
 
-    @include breakpoint-down(lg){
+    @include breakpoint-down(lg) {
       padding: 40px;
       border-radius: 32px;
     }
 
-    @include breakpoint-down(sm){
+    @include breakpoint-down(sm) {
       border-radius: 28px;
       padding: 32px;
     }
 
-    @include breakpoint-down(xs){
+    @include breakpoint-down(xs) {
       padding: 28px;
     }
 
@@ -376,7 +412,7 @@
           z-index: 1;
         }
 
-        &::after{
+        &::after {
           content: "";
           position: absolute;
           top: 50%;
@@ -392,7 +428,6 @@
     }
   }
 }
-
 
 .atech-project-appscreens {
   .appscreens-slider {

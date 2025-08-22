@@ -4,7 +4,10 @@
 
 .atech-home-process {
   background: url($img-path + "home/home_process_bg.png") top/cover no-repeat;
-  display: none;
+
+  @include breakpoint-down(lg){
+    display: none;
+  }
 
   .home-process {
     &-list {
