@@ -30803,6 +30803,11 @@ table td {
 .atech-home-process .home-process-list-wrapper:nth-child(1) .home-process-item:nth-child(even) .home-process-item-description .content-stylings * {
   color: #333333 !important;
 }
+@media (max-width: 575.98px) {
+  .atech-home-process .home-process-list-wrapper:nth-child(2) {
+    margin-top: 8px;
+  }
+}
 .atech-home-process .home-process-list-wrapper:nth-child(2) .home-process-item:nth-child(odd) {
   background: #ffffff !important;
 }

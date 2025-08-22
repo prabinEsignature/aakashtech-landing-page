@@ -72,6 +72,9 @@
         }
 
         &:nth-child(2) {
+          @include breakpoint-down(sm){
+            margin-top: 8px;
+          }
           .home-process-item {
             &:nth-child(odd) {
               background: color("white") !important;
