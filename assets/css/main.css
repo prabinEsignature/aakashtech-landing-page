@@ -33214,6 +33214,13 @@ table td {
     top: calc(100% + 12px);
   }
 }
+@media (max-width: 479.98px) {
+  .atech-services-process .services-process-item::after {
+    height: 60px;
+    width: 60px;
+    top: calc(100% + 16px);
+  }
+}
 .atech-services-process .services-process-item:last-child::after {
   display: none;
 }
@@ -33240,6 +33247,20 @@ table td {
 .atech-services-process .services-process-icon {
   width: 120px;
   height: 120px;
+}
+@media (max-width: 575.98px) {
+  .atech-services-process .services-process-icon {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-services-process .services-process-icon [class*=icon-] {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+  }
 }
 .atech-services-process .services-process-count {
   width: 48px;

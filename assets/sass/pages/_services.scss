@@ -401,6 +401,12 @@ $process-color-keys: ("turquoise", "blue-violet", "coral", "crayola", "emerald",
           width: 72px;
           top: calc(100% + 12px);
         }
+
+        @include breakpoint-down(xs){
+          height: 60px;
+          width: 60px;
+          top: calc(100% + 16px);
+        }
       }
 
       &:last-child {
@@ -435,6 +441,20 @@ $process-color-keys: ("turquoise", "blue-violet", "coral", "crayola", "emerald",
     &-icon {
       width: 120px;
       height: 120px;
+
+      @include breakpoint-down(sm){
+        width: 100px;
+        height: 100px;
+      }
+
+      [class*="icon-"] {
+        @include breakpoint-down(sm){
+          width: 40px;
+          height: 40px;
+          min-width: 40px;
+          min-height: 40px;
+        }
+      }
     }
 
     &-count {
