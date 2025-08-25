@@ -263,6 +263,10 @@
   margin-top: 90px;
   min-height: 980px;
 
+  @include breakpoint-down(xxl){
+    min-height: auto;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -276,6 +280,11 @@
   .services-details-banner-content {
     gap: 40px;
     grid-template-columns: 3.5fr 6.5fr;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    @include breakpoint-down(lg){
+      grid-template-columns: 100%;
+    }
   }
 }
 
@@ -285,6 +294,16 @@
       &-count-icon {
         width: 80px;
         height: 80px;
+
+        @include breakpoint-down(xxl){
+          width: 72px;
+          height: 72px;
+        }
+
+        @include breakpoint-down(xl){
+          width: 64px;
+          height: 64px;
+        }
       }
     }
   }
@@ -386,10 +405,27 @@ $process-color-keys: ("turquoise", "blue-violet", "coral", "crayola", "emerald",
   &-container {
     grid-template-columns: 45% auto;
     gap: 60px;
+
+    @include breakpoint-down(xxl){
+      grid-template-columns: 100%;
+      gap: 48px;
+    }
+
+    @include breakpoint-down(lg){
+      gap: 40px;
+    }
+
+    @include breakpoint-down(md){
+      gap: 32px;
+    }
   }
 
   .services-details-two-slider {
     padding-bottom: 80px !important;
+
+    @include breakpoint-down(xxl){
+      max-width: 800px;
+    }
 
     .swiper-pagination-bullet {
       width: 60px;
@@ -424,6 +460,10 @@ $process-color-keys: ("turquoise", "blue-violet", "coral", "crayola", "emerald",
   .services-details-three {
     &-head {
       gap: 60px;
+
+      @include breakpoint-down(xxl){
+        gap: 0;
+      }
     }
   }
 
@@ -433,6 +473,30 @@ $process-color-keys: ("turquoise", "blue-violet", "coral", "crayola", "emerald",
         width: 100px;
         height: 100px;
         min-width: 100px;
+
+        @include breakpoint-down(xxl){
+          width: 80px;
+          height: 80px;
+          min-width: 80px;
+        }
+
+        @include breakpoint-down(xl){
+          width: 72px;
+          height: 72px;
+          min-width: 72px;
+        }
+
+        @include breakpoint-down(sm){
+          width: 60px;
+          height: 60px;
+          min-width: 60px;
+        }
+
+        @include breakpoint-down(xs){
+          width: 52px;
+          height: 52px;
+          min-width: 52px;
+        }
       }
     }
   }

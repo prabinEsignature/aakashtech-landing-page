@@ -32004,6 +32004,11 @@ table td {
 .atech-newsletter .newsletter-bottom .input-group .form-control {
   border: 0 !important;
 }
+@media (max-width: 767.98px) {
+  .atech-newsletter .newsletter-bottom .input-group .form-control {
+    height: auto !important;
+  }
+}
 .atech-newsletter .newsletter-bottom .input-group .form-control:focus {
   border: 0 !important;
 }
@@ -32107,6 +32112,42 @@ table td {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 1399.98px) {
+  .atech-our-clients .honeycomb {
+    --cell-size: 180px;
+    --cell-gap: 20px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .atech-our-clients .honeycomb {
+    --cell-size: 160px;
+    --cell-gap: 16px;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-our-clients .honeycomb {
+    --cell-size: 145px;
+    --cell-gap: 12px;
+  }
+}
+@media (max-width: 767.98px) {
+  .atech-our-clients .honeycomb {
+    --cell-size: 112px;
+    --cell-gap: 8px;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-our-clients .honeycomb {
+    --cell-size: 100px;
+    --cell-gap: 4px;
+  }
+}
+@media (max-width: 479.98px) {
+  .atech-our-clients .honeycomb {
+    --cell-size: 72px;
+    --cell-gap: 4px;
+  }
+}
 .atech-our-clients .honeycomb-row {
   display: flex;
   gap: var(--cell-gap);
@@ -32139,6 +32180,36 @@ table td {
 }
 .atech-our-clients .honeycomb-cell img {
   max-width: 100px;
+}
+@media (max-width: 1399.98px) {
+  .atech-our-clients .honeycomb-cell img {
+    max-width: 88px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .atech-our-clients .honeycomb-cell img {
+    max-width: 80px;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-our-clients .honeycomb-cell img {
+    max-width: 72px;
+  }
+}
+@media (max-width: 767.98px) {
+  .atech-our-clients .honeycomb-cell img {
+    max-width: 60px;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-our-clients .honeycomb-cell img {
+    max-width: 52px;
+  }
+}
+@media (max-width: 479.98px) {
+  .atech-our-clients .honeycomb-cell img {
+    max-width: 40px;
+  }
 }
 
 .atech-cta-two {
@@ -32796,6 +32867,11 @@ table td {
   margin-top: 90px;
   min-height: 980px;
 }
+@media (max-width: 1399.98px) {
+  .atech-services-details-banner {
+    min-height: auto;
+  }
+}
 .atech-services-details-banner::after {
   content: "";
   position: absolute;
@@ -32808,11 +32884,29 @@ table td {
 .atech-services-details-banner .services-details-banner-content {
   gap: 40px;
   grid-template-columns: 3.5fr 6.5fr;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+@media (max-width: 991.98px) {
+  .atech-services-details-banner .services-details-banner-content {
+    grid-template-columns: 100%;
+  }
 }
 
 .atech-services-deliverables .services-deliverables-list .deliverables-count-icon {
   width: 80px;
   height: 80px;
+}
+@media (max-width: 1399.98px) {
+  .atech-services-deliverables .services-deliverables-list .deliverables-count-icon {
+    width: 72px;
+    height: 72px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .atech-services-deliverables .services-deliverables-list .deliverables-count-icon {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 .atech-services-process .services-process-list:nth-of-type(1) .services-process-item:nth-of-type(1) .services-process-icon {
@@ -33043,8 +33137,29 @@ table td {
   grid-template-columns: 45% auto;
   gap: 60px;
 }
+@media (max-width: 1399.98px) {
+  .atech-services-details-two-container {
+    grid-template-columns: 100%;
+    gap: 48px;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-services-details-two-container {
+    gap: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .atech-services-details-two-container {
+    gap: 32px;
+  }
+}
 .atech-services-details-two .services-details-two-slider {
   padding-bottom: 80px !important;
+}
+@media (max-width: 1399.98px) {
+  .atech-services-details-two .services-details-two-slider {
+    max-width: 800px;
+  }
 }
 .atech-services-details-two .services-details-two-slider .swiper-pagination-bullet {
   width: 60px;
@@ -33081,10 +33196,43 @@ table td {
 .atech-services-details-three .services-details-three-head {
   gap: 60px;
 }
+@media (max-width: 1399.98px) {
+  .atech-services-details-three .services-details-three-head {
+    gap: 0;
+  }
+}
 .atech-services-details-three .services-details-three-item-count {
   width: 100px;
   height: 100px;
   min-width: 100px;
+}
+@media (max-width: 1399.98px) {
+  .atech-services-details-three .services-details-three-item-count {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .atech-services-details-three .services-details-three-item-count {
+    width: 72px;
+    height: 72px;
+    min-width: 72px;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-services-details-three .services-details-three-item-count {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+  }
+}
+@media (max-width: 479.98px) {
+  .atech-services-details-three .services-details-three-item-count {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+  }
 }
 
 .atech-contact-banner {

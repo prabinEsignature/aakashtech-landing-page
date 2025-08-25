@@ -1349,6 +1349,11 @@
     .input-group {
       .form-control {
         border: 0 !important;
+        
+        @include breakpoint-down(md){
+          height: auto!important;
+        }
+
         &:focus {
           border: 0 !important;
         }
