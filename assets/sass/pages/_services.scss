@@ -46,7 +46,7 @@
       &-item {
         gap: 80px;
 
-        @include breakpoint-down(md){
+        @include breakpoint-down(md) {
           gap: 60px;
         }
 
@@ -70,12 +70,12 @@
                 top: -23px;
                 left: -23px;
 
-                @include breakpoint-down(xl){
+                @include breakpoint-down(xl) {
                   top: -18px;
                   left: -18px;
                 }
 
-                @include breakpoint-down(sm){
+                @include breakpoint-down(sm) {
                   top: -16px;
                   left: -13px;
                 }
@@ -118,7 +118,7 @@
           min-width: 60px;
         }
 
-        @include breakpoint-down(sm){
+        @include breakpoint-down(sm) {
           width: 52px;
           height: 52px;
           min-width: 52px;
@@ -126,10 +126,10 @@
       }
 
       &-img {
-        @include breakpoint-down(sm){
-          border-radius: 20px!important;
+        @include breakpoint-down(sm) {
+          border-radius: 20px !important;
         }
-        
+
         &::after {
           content: "";
           position: absolute;
@@ -142,16 +142,16 @@
           transform: rotate(2deg);
           z-index: -1;
 
-          @include breakpoint-down(xl){
+          @include breakpoint-down(xl) {
             top: 32px;
             transform: rotate(1.5deg);
           }
 
-          @include breakpoint-down(md){
+          @include breakpoint-down(md) {
             top: 24px;
           }
 
-          @include breakpoint-down(sm){
+          @include breakpoint-down(sm) {
             top: 18px;
           }
         }
@@ -173,12 +173,12 @@
             height: 135px;
           }
 
-          @include breakpoint-down(md){
+          @include breakpoint-down(md) {
             width: 102px;
             height: 115px;
           }
 
-          @include breakpoint-down(sm){
+          @include breakpoint-down(sm) {
             top: -16px;
             right: -12px;
             width: 82px;
@@ -203,7 +203,7 @@
           border-radius: 0 20px 0 20px !important;
         }
 
-        @include breakpoint-down(sm){
+        @include breakpoint-down(sm) {
           height: 56px;
         }
       }
@@ -221,40 +221,40 @@
   .track-record-grid {
     gap: 80px;
 
-    @include breakpoint-down(xxl){
+    @include breakpoint-down(xxl) {
       gap: 72px;
     }
 
-    @include breakpoint-down(xl){
+    @include breakpoint-down(xl) {
       gap: 60px;
     }
 
-    @include breakpoint-down(lg){
+    @include breakpoint-down(lg) {
       gap: 48px;
     }
 
-    @include breakpoint-down(md){
+    @include breakpoint-down(md) {
       gap: 36px;
     }
 
-    @include breakpoint-down(sm){
+    @include breakpoint-down(sm) {
       gap: 28px;
     }
 
-    @include breakpoint-down(xs){
+    @include breakpoint-down(xs) {
       gap: 20px;
     }
   }
 
-  .record-stats-item{
+  .record-stats-item {
     height: 100%;
-    
-    @include breakpoint-down(lg){
-      border-radius: 20px!important;
+
+    @include breakpoint-down(lg) {
+      border-radius: 20px !important;
     }
 
-    @include breakpoint-down(sm){
-      border-radius: 16px!important;
+    @include breakpoint-down(sm) {
+      border-radius: 16px !important;
     }
   }
 }
@@ -263,7 +263,7 @@
   margin-top: 90px;
   min-height: 980px;
 
-  @include breakpoint-down(xxl){
+  @include breakpoint-down(xxl) {
     min-height: auto;
   }
 
@@ -282,8 +282,13 @@
     grid-template-columns: 3.5fr 6.5fr;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 
-    @include breakpoint-down(lg){
+    @include breakpoint-down(lg) {
       grid-template-columns: 100%;
+      gap: 32px;
+    }
+
+    @include breakpoint-down(sm){
+      gap: 24px;
     }
   }
 }
@@ -295,12 +300,12 @@
         width: 80px;
         height: 80px;
 
-        @include breakpoint-down(xxl){
+        @include breakpoint-down(xxl) {
           width: 72px;
           height: 72px;
         }
 
-        @include breakpoint-down(xl){
+        @include breakpoint-down(xl) {
           width: 64px;
           height: 64px;
         }
@@ -351,9 +356,26 @@ $process-color-keys: ("turquoise", "blue-violet", "coral", "crayola", "emerald",
           width: 100%;
           height: 160px;
           background: url($img-path + "services/dashed_two_end_wideline.svg") center/contain no-repeat;
+
+          @include breakpoint-down(lg){
+            height: 140px;
+          }
+
+          @include breakpoint-down(sm){
+            height: 100px;
+          }
         }
       }
+
+      @include breakpoint-down(lg) {
+        gap: 140px;
+      }
+
+      @include breakpoint-down(sm){
+        gap: 100px;
+      }
     }
+
     &-item {
       &::after {
         content: "";
@@ -364,6 +386,21 @@ $process-color-keys: ("turquoise", "blue-violet", "coral", "crayola", "emerald",
         width: 140px;
         height: 100%;
         background: url($img-path + "services/dashed_arrow_right.svg") center/contain no-repeat;
+
+        @include breakpoint-down(lg) {
+          transform: rotate(90deg);
+          height: 100px;
+          width: 100px;
+          left: 50%;
+          top: calc(100% + 20px);
+          transform: translateX(-50%) rotate(90deg);
+        }
+
+        @include breakpoint-down(sm) {
+          height: 72px;
+          width: 72px;
+          top: calc(100% + 12px);
+        }
       }
 
       &:last-child {
@@ -381,8 +418,17 @@ $process-color-keys: ("turquoise", "blue-violet", "coral", "crayola", "emerald",
 
     &-list {
       column-gap: 140px;
+
       &-group {
         gap: 160px;
+
+        @include breakpoint-down(lg){
+          gap: 140px;
+        }
+
+        @include breakpoint-down(sm){
+          gap: 100px;
+        }
       }
     }
 
@@ -406,16 +452,16 @@ $process-color-keys: ("turquoise", "blue-violet", "coral", "crayola", "emerald",
     grid-template-columns: 45% auto;
     gap: 60px;
 
-    @include breakpoint-down(xxl){
+    @include breakpoint-down(xxl) {
       grid-template-columns: 100%;
       gap: 48px;
     }
 
-    @include breakpoint-down(lg){
+    @include breakpoint-down(lg) {
       gap: 40px;
     }
 
-    @include breakpoint-down(md){
+    @include breakpoint-down(md) {
       gap: 32px;
     }
   }
@@ -423,7 +469,7 @@ $process-color-keys: ("turquoise", "blue-violet", "coral", "crayola", "emerald",
   .services-details-two-slider {
     padding-bottom: 80px !important;
 
-    @include breakpoint-down(xxl){
+    @include breakpoint-down(xxl) {
       max-width: 800px;
     }
 
@@ -461,7 +507,7 @@ $process-color-keys: ("turquoise", "blue-violet", "coral", "crayola", "emerald",
     &-head {
       gap: 60px;
 
-      @include breakpoint-down(xxl){
+      @include breakpoint-down(xxl) {
         gap: 0;
       }
     }
@@ -474,27 +520,27 @@ $process-color-keys: ("turquoise", "blue-violet", "coral", "crayola", "emerald",
         height: 100px;
         min-width: 100px;
 
-        @include breakpoint-down(xxl){
+        @include breakpoint-down(xxl) {
           width: 80px;
           height: 80px;
           min-width: 80px;
         }
 
-        @include breakpoint-down(xl){
+        @include breakpoint-down(xl) {
           width: 72px;
           height: 72px;
           min-width: 72px;
         }
 
-        @include breakpoint-down(sm){
+        @include breakpoint-down(sm) {
           width: 60px;
-          height: 60px;
+          height: 48px;
           min-width: 60px;
         }
 
-        @include breakpoint-down(xs){
+        @include breakpoint-down(xs) {
           width: 52px;
-          height: 52px;
+          height:42px;
           min-width: 52px;
         }
       }

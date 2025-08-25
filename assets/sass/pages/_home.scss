@@ -1307,6 +1307,14 @@
 .atech-cta-one {
   background: url($img-path + "misc/cta_bg_one.png") center/cover no-repeat;
 
+  @include breakpoint-down(sm){
+    padding-bottom: 80px!important;
+  }
+
+  @include breakpoint-down(xs){
+    padding-bottom: 60px!important;
+  }
+
   .cta-one-grid-block {
     background: url($img-path + "misc/cta_content_bg_one.png") center/cover no-repeat;
     border-radius: 32px;
@@ -1325,6 +1333,21 @@
       gap: 20px;
       grid-template-columns: 100%;
     }
+
+    @include breakpoint-down(md){
+      padding-top: 48px!important;
+      padding-bottom: 48px!important;
+    }
+
+    @include breakpoint-down(sm){
+      padding-top: 36px!important;
+      padding-bottom: 36px!important;
+    }
+
+    @include breakpoint-down(xs){
+      padding-top: 28px!important;
+      padding-bottom: 28px!important;
+    }
   }
 }
 
@@ -1333,10 +1356,18 @@
   background-position: center top;
   position: relative;
   z-index: 5;
-  margin-top: -120px;
+  margin-top: -60px;
 
-  @include breakpoint-down(xxl) {
-    margin-top: -60px;
+  @include breakpoint-down(lg){
+    margin-top: -32px;
+  }
+
+  @include breakpoint-down(sm){
+    margin-top: -24px;
+  }
+
+  @include breakpoint-down(xs){
+    margin-top: -12px;
   }
 
   .newsletter-top {

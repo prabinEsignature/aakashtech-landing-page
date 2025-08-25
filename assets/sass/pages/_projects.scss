@@ -12,6 +12,11 @@
     padding-left: 72px;
     padding-right: 72px;
 
+    @include breakpoint-down(md){
+      padding-left: 64px;
+      padding-right: 64px;
+    }
+
     .swiper-slide {
       width: auto;
       padding-left: 6px;
@@ -25,6 +30,14 @@
 
     .projects-btn {
       height: 44px;
+
+      @include breakpoint-down(lg){
+        height: 40px;
+      }
+
+      @include breakpoint-down(sm){
+        height: 36px;
+      }
 
       &.is-checked {
         background: color("primary-500");
@@ -203,8 +216,7 @@
 }
 
 .atech-cta-two {
-  min-height: 846px;
-  margin-bottom: -100px;
+  min-height: auto;
 
   .cta-block {
     background: url($img-path + "misc/spiral_ripple_bg.png") center/cover
@@ -243,7 +255,11 @@
   }
 
   .cta-banner {
-    margin-top: -198px;
+    margin-top: -180px;
+
+    @include breakpoint-down(xxl){
+      margin-top: 24px;
+    }
   }
 }
 

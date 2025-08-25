@@ -289,6 +289,10 @@ $button-link-variants: (
   }
   &.btn-quarter-wide {
     min-width: 220px;
+
+    @include breakpoint-down(sm){
+      min-width: auto;
+    }
   }
   &.btn-wide {
     min-width: 260px;
