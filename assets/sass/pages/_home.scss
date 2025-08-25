@@ -944,8 +944,12 @@
 
 .project-stores {
   .stores-item {
-    padding: 8px 8px;
+    padding: 8px 12px 8px 8px;
     transition: $default-transition;
+
+    @include breakpoint-down(xxl){
+      width: auto!important;
+    }
 
     [class*="text-"] {
       transition: $default-transition;

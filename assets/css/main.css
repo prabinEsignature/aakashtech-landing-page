@@ -31672,8 +31672,13 @@ table td {
 }
 
 .project-stores .stores-item {
-  padding: 8px 8px;
+  padding: 8px 12px 8px 8px;
   transition: all ease-in-out 300ms;
+}
+@media (max-width: 1399.98px) {
+  .project-stores .stores-item {
+    width: auto !important;
+  }
 }
 .project-stores .stores-item [class*=text-] {
   transition: all ease-in-out 300ms;
@@ -32341,11 +32346,44 @@ table td {
   z-index: -1;
   opacity: 0.08;
 }
+@media (max-width: 1199.98px) {
+  .atech-project-single-banner::after {
+    transform: scaleX(3);
+    top: 80px;
+  }
+}
 .atech-project-single-banner .project-single-banner-info .spiral-long-arrow {
   max-width: 270px;
 }
+@media (max-width: 1199.98px) {
+  .atech-project-single-banner .project-single-banner-info .spiral-long-arrow {
+    max-width: 240px;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-project-single-banner .project-single-banner-info .spiral-long-arrow {
+    max-width: 200px;
+  }
+}
+@media (max-width: 767.98px) {
+  .atech-project-single-banner .project-single-banner-info .spiral-long-arrow {
+    max-width: 180px;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-project-single-banner .project-single-banner-info .spiral-long-arrow {
+    max-width: 140px;
+  }
+}
 .atech-project-single-banner .project-single-banner-img {
   padding: 44px 0;
+}
+@media (max-width: 1199.98px) {
+  .atech-project-single-banner .project-single-banner-img {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 .atech-project-single-banner.project-single-wide .project-single-banner-info {
   max-width: 880px;
@@ -32354,14 +32392,39 @@ table td {
 .atech-project-details-group {
   gap: 120px;
 }
+@media (max-width: 1199.98px) {
+  .atech-project-details-group {
+    gap: 80px;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-project-details-group {
+    gap: 60px;
+  }
+}
 .atech-project-details-block:nth-child(even) .project-details-img {
   order: 2;
+}
+@media (max-width: 991.98px) {
+  .atech-project-details-block:nth-child(even) .project-details-img {
+    order: 1;
+  }
 }
 .atech-project-details-block:nth-child(even) .project-details-description {
   order: 1;
 }
+@media (max-width: 991.98px) {
+  .atech-project-details-block:nth-child(even) .project-details-description {
+    order: 2;
+  }
+}
 .atech-project-details-block .project-details-grid {
   gap: 80px;
+}
+@media (max-width: 1399.98px) {
+  .atech-project-details-block .project-details-grid {
+    gap: 60px;
+  }
 }
 .atech-project-details-block .project-details-img::after {
   content: "";
@@ -32374,12 +32437,30 @@ table td {
   background: linear-gradient(to right, #c3e0f2 0%, #dfedf6 50%, #fafafa 100%);
   z-index: -1;
 }
+@media (max-width: 1399.98px) {
+  .atech-project-details-block .project-details-img::after {
+    left: 20px;
+    top: -20px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .atech-project-details-block .project-details-img::after {
+    left: 16px;
+    top: -16px;
+  }
+}
 
 .atech-project-details-featured .project-details-grid {
   gap: 80px;
 }
 .atech-project-details-featured .project-details-img {
   max-width: 500px;
+}
+@media (max-width: 991.98px) {
+  .atech-project-details-featured .project-details-img {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 .atech-project-details-featured .project-details-img img {
   height: 580px;
@@ -32400,12 +32481,42 @@ table td {
   height: 100%;
   background: url("../../../assets/images/misc/ellipse_1.svg") center/contain no-repeat;
 }
+@media (max-width: 1399.98px) {
+  .img-with-underlay-ellipse::after {
+    max-width: 500px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .img-with-underlay-ellipse::after {
+    max-width: 460px;
+  }
+}
+@media (max-width: 767.98px) {
+  .img-with-underlay-ellipse::after {
+    max-width: 440px;
+  }
+}
+@media (max-width: 575.98px) {
+  .img-with-underlay-ellipse::after {
+    max-width: 400px;
+  }
+}
+@media (max-width: 479.98px) {
+  .img-with-underlay-ellipse::after {
+    max-width: 320px;
+  }
+}
 
 .atech-project-stats .project-stats-access {
   border-radius: 28px;
 }
 .atech-project-stats .stats-access-grid {
   grid-template-columns: auto 200px;
+}
+@media (max-width: 1399.98px) {
+  .atech-project-stats .stats-access-grid {
+    grid-template-columns: 100%;
+  }
 }
 .atech-project-stats .project-stats-info .stats-info-block:nth-child(2) {
   border: 1px solid #3797d5 !important;

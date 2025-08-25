@@ -289,16 +289,43 @@
     transform: scaleX(2);
     z-index: -1;
     opacity: 0.08;
+
+    @include breakpoint-down(xl){
+      transform: scaleX(3);
+      top: 80px;
+    }
   }
 
   .project-single-banner {
     &-info {
       .spiral-long-arrow {
         max-width: 270px;
+
+        @include breakpoint-down(xl){
+          max-width: 240px;
+        }
+
+        @include breakpoint-down(lg){
+          max-width: 200px;
+        }
+
+        @include breakpoint-down(md){
+          max-width: 180px;
+        }
+
+        @include breakpoint-down(sm){
+          max-width: 140px;
+        }
       }
     }
     &-img {
       padding: 44px 0;
+
+      @include breakpoint-down(xl){
+        max-width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+      }
     }
   }
 
@@ -312,6 +339,14 @@
 .atech-project-details {
   &-group {
     gap: 120px;
+
+    @include breakpoint-down(xl){
+      gap: 80px;
+    }
+
+    @include breakpoint-down(lg){
+      gap: 60px;
+    }
   }
 
   &-block {
@@ -319,10 +354,18 @@
       .project-details {
         &-img {
           order: 2;
+
+          @include breakpoint-down(lg){
+            order: 1;
+          }
         }
 
         &-description {
           order: 1;
+
+          @include breakpoint-down(lg){
+            order: 2;
+          }
         }
       }
     }
@@ -330,6 +373,10 @@
     .project-details {
       &-grid {
         gap: 80px;
+
+        @include breakpoint-down(xxl){
+          gap: 60px;
+        }
       }
 
       &-img {
@@ -348,6 +395,16 @@
             #fafafa 100%
           );
           z-index: -1;
+
+          @include breakpoint-down(xxl){
+            left: 20px;
+            top: -20px;
+          }
+
+          @include breakpoint-down(xl){
+            left: 16px;
+            top: -16px;
+          }
         }
       }
     }
@@ -362,6 +419,12 @@
 
     &-img {
       max-width: 500px;
+
+      @include breakpoint-down(lg){
+        margin-right: auto;
+        margin-left: auto;
+      }
+
       img {
         height: 580px;
         width: auto;
@@ -372,6 +435,7 @@
 
 .img-with-underlay-ellipse {
   position: relative;
+
   &::after {
     position: absolute;
     content: "";
@@ -382,6 +446,26 @@
     width: 100%;
     height: 100%;
     background: url($img-path + "misc/ellipse_1.svg") center/contain no-repeat;
+
+    @include breakpoint-down(xxl){
+      max-width: 500px;
+    }
+
+    @include breakpoint-down(xl){
+      max-width: 460px;
+    }
+
+    @include breakpoint-down(md){
+      max-width: 440px;
+    }
+
+    @include breakpoint-down(sm){
+      max-width: 400px;
+    }
+
+    @include breakpoint-down(xs){
+      max-width: 320px;
+    }
   }
 }
 
@@ -392,6 +476,10 @@
 
   .stats-access-grid {
     grid-template-columns: auto 200px;
+
+    @include breakpoint-down(xxl){
+      grid-template-columns: 100%;
+    }
   }
 
   .project-stats-info {
