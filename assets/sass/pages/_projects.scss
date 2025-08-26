@@ -294,6 +294,10 @@
       transform: scaleX(3);
       top: 80px;
     }
+
+    @include breakpoint-down(sm){
+      transform: scaleX(4.5);
+    }
   }
 
   .project-single-banner {
@@ -426,7 +430,7 @@
       }
 
       img {
-        height: 580px;
+        // height: 580px;
         width: auto;
       }
     }
@@ -513,10 +517,51 @@
     &-item {
       width: calc(50% - 8px);
 
+      @include breakpoint-down(lg){
+        width: 100%;
+        border-radius: 20px!important;
+      }
+
+      @include breakpoint-down(md){
+        border-radius: 16px!important;
+      }
+
+      @include breakpoint-down(sm){
+        align-items: flex-start!important;
+        border-radius: 12px!important;
+      }
+
       &-img {
         width: 112px;
         height: 112px;
         min-width: 112px;
+
+        @include breakpoint-down(xl){
+          width: 100px;
+          height: 100px;
+          min-width: 100px;
+          border-width: 5px!important;
+        }
+
+        @include breakpoint-down(lg){
+          width: 80px;
+          height: 80px;
+          min-width: 80px;
+          border-width: 4px!important;
+        }
+
+        @include breakpoint-down(sm){
+          width: 72px;
+          height: 72px;
+          min-width: 72px;
+        }
+
+        @include breakpoint-down(xs){
+          width: 60px;
+          height: 60px;
+          min-width: 60px;
+          border-width: 3px!important;
+        }
       }
     }
 
@@ -608,6 +653,10 @@
     }
     .swiper-slide {
       max-width: 880px;
+
+      @include breakpoint-down(xxl){
+        max-width: 800px;
+      }
     }
   }
 }
@@ -617,12 +666,45 @@
     &-img {
       max-height: 168px;
     }
+
     &-prev {
       grid-template-columns: 200px auto;
+
+      @include breakpoint-down(xxl){
+        grid-template-columns: 180px auto;
+      }
+
+      @include breakpoint-down(xl){
+        grid-template-columns: 140px auto;
+      }
+
+      @include breakpoint-down(lg){
+        grid-template-columns: 120px auto;
+      }
+
+      @include breakpoint-down(md){
+        grid-template-columns: 100px auto;
+      }
     }
 
     &-next {
       grid-template-columns: auto 200px;
+
+      @include breakpoint-down(xxl){
+        grid-template-columns: auto 180px;
+      }
+
+      @include breakpoint-down(xl){
+        grid-template-columns: auto 140px;
+      }
+
+      @include breakpoint-down(lg){
+        grid-template-columns: auto 120px;
+      }
+
+      @include breakpoint-down(md){
+        grid-template-columns: auto 100px;
+      }
     }
 
     &-ttl {
