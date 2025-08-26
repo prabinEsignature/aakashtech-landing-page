@@ -88,6 +88,10 @@
         grid-template-columns: 200px auto;
       }
 
+      @include breakpoint-down(sm){
+        grid-template-columns: 100%;
+      }
+
       .card-img {
         height: 210px;
 

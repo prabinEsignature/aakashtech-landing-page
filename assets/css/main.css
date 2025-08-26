@@ -30319,6 +30319,11 @@ table td {
     grid-template-columns: 200px auto;
   }
 }
+@media (max-width: 575.98px) {
+  .card.blog-card.card-horizontal {
+    grid-template-columns: 100%;
+  }
+}
 .card.blog-card.card-horizontal .card-img {
   height: 210px;
 }
@@ -32966,6 +32971,12 @@ table td {
 }
 .atech-blogs-main .blogs-cat-btn {
   transition: all ease-in-out 300ms;
+}
+@media (max-width: 575.98px) {
+  .atech-blogs-main .blogs-cat-btn {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
 }
 .atech-blogs-main .blogs-cat-btn:not(.is-checked):hover {
   background: #d7eaf7 !important;

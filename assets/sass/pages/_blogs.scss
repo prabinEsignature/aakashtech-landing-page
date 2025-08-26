@@ -83,6 +83,12 @@
   .blogs-cat {
     &-btn {
       transition: $default-transition;
+
+      @include breakpoint-down(sm){
+        padding-top: 6px!important;
+        padding-bottom: 6px!important;
+      }
+
       &:not(.is-checked) {
         &:hover {
           background: color("primary-100") !important;
