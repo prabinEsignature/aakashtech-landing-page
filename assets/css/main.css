@@ -30256,6 +30256,16 @@ table td {
 .card.blog-card.card-horizontal .card-body {
   padding: 28px 0 28px 28px !important;
 }
+@media (max-width: 1399.98px) {
+  .card.blog-card.card-horizontal .card-body {
+    padding: 24px 0 24px 24px !important;
+  }
+}
+@media (max-width: 1199.98px) {
+  .card.blog-card.card-horizontal .card-body {
+    padding: 20px 0 20px 20px !important;
+  }
+}
 .card.blog-card .card-img {
   height: 278px;
 }
@@ -32344,7 +32354,6 @@ table td {
 
 .atech-project-single-banner {
   background: url("../../../assets/images/projects/product_details_banner_bg.png") top/cover no-repeat;
-  margin-top: 90px;
   position: relative;
   overflow-x: clip;
   min-height: 734px;
@@ -32423,6 +32432,11 @@ table td {
     gap: 60px;
   }
 }
+@media (max-width: 575.98px) {
+  .atech-project-details-group {
+    gap: 40px;
+  }
+}
 .atech-project-details-block:nth-child(even) .project-details-img {
   order: 2;
 }
@@ -32445,6 +32459,16 @@ table td {
 @media (max-width: 1399.98px) {
   .atech-project-details-block .project-details-grid {
     gap: 60px;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-project-details-block .project-details-grid {
+    gap: 40px;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-project-details-block .project-details-grid {
+    gap: 24px;
   }
 }
 .atech-project-details-block .project-details-img::after {
@@ -32473,6 +32497,11 @@ table td {
 
 .atech-project-details-featured .project-details-grid {
   gap: 80px;
+}
+@media (max-width: 1399.98px) {
+  .atech-project-details-featured .project-details-grid {
+    gap: 60px;
+  }
 }
 .atech-project-details-featured .project-details-img {
   max-width: 500px;
@@ -32536,6 +32565,21 @@ table td {
 @media (max-width: 1399.98px) {
   .atech-project-stats .stats-access-grid {
     grid-template-columns: 100%;
+  }
+}
+@media (max-width: 1199.98px) {
+  .atech-project-stats .project-stats-info .stats-info-block {
+    border-radius: 24px !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-project-stats .project-stats-info .stats-info-block {
+    border-radius: 20px !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .atech-project-stats .project-stats-info .stats-info-block {
+    border-radius: 16px !important;
   }
 }
 .atech-project-stats .project-stats-info .stats-info-block:nth-child(2) {
@@ -32752,8 +32796,17 @@ table td {
 }
 
 .atech-blog-banner {
-  margin-top: 90px;
   min-height: 800px;
+}
+@media (max-width: 1535.98px) {
+  .atech-blog-banner {
+    min-height: 780px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .atech-blog-banner {
+    min-height: 750px;
+  }
 }
 .atech-blog-banner::after {
   content: "";
@@ -32774,6 +32827,16 @@ table td {
 }
 .atech-blogs-showcase .blogs-showcase-grid {
   gap: 48px;
+}
+@media (max-width: 1535.98px) {
+  .atech-blogs-showcase .blogs-showcase-grid {
+    gap: 40px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .atech-blogs-showcase .blogs-showcase-grid {
+    gap: 24px;
+  }
 }
 
 .atech-blogs-main {

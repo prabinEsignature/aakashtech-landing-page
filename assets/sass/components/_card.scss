@@ -25,6 +25,14 @@
 
       .card-body {
         padding: 28px 0 28px 28px !important;
+
+        @include breakpoint-down(xxl){
+          padding: 24px 0 24px 24px !important;
+        }
+
+        @include breakpoint-down(xl){
+          padding: 20px 0 20px 20px!important;
+        }
       }
     }
 

@@ -3,8 +3,15 @@
 @use "../abstracts/mixins" as *;
 
 .atech-blog-banner {
-  margin-top: 90px;
   min-height: 800px;
+
+  @include breakpoint-down(xxxl){
+    min-height: 780px;
+  }
+
+  @include breakpoint-down(xxl){
+    min-height: 750px;
+  }
 
   &::after {
     content: "";
@@ -36,6 +43,14 @@
   .blogs-showcase {
     &-grid {
       gap: 48px;
+
+      @include breakpoint-down(xxxl){
+        gap: 40px;
+      }
+
+      @include breakpoint-down(xxl){
+        gap: 24px;
+      }
     }
   }
 }

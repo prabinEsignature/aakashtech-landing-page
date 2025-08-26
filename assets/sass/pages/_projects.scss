@@ -266,7 +266,6 @@
 .atech-project-single-banner {
   background: url($img-path + "projects/product_details_banner_bg.png")
     top/cover no-repeat;
-  margin-top: 90px;
   position: relative;
   overflow-x: clip;
   min-height: 734px;
@@ -351,6 +350,10 @@
     @include breakpoint-down(lg){
       gap: 60px;
     }
+
+    @include breakpoint-down(sm){
+      gap: 40px;
+    }
   }
 
   &-block {
@@ -380,6 +383,14 @@
 
         @include breakpoint-down(xxl){
           gap: 60px;
+        }
+
+        @include breakpoint-down(lg){
+          gap: 40px;
+        }
+
+        @include breakpoint-down(sm){
+          gap: 24px;
         }
       }
 
@@ -419,6 +430,10 @@
   .project-details {
     &-grid {
       gap: 80px;
+
+      @include breakpoint-down(xxl){
+        gap: 60px;
+      }
     }
 
     &-img {
@@ -488,6 +503,19 @@
 
   .project-stats-info {
     .stats-info-block {
+
+      @include breakpoint-down(xl){
+        border-radius: 24px!important;
+      }
+
+      @include breakpoint-down(lg){
+        border-radius: 20px!important;
+      }
+
+      @include breakpoint-down(md){
+        border-radius: 16px!important;
+      }
+
       &:nth-child(2) {
         border: 1px solid color("primary-500") !important;
         background: color("white") !important;
