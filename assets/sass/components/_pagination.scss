@@ -4,16 +4,23 @@
 
 .pagination-block {
     &.blogs-pagination {
-        .pagination{
-            background: rgba(255,255,255, 0.5);
+        .pagination {
+            background: rgba(255, 255, 255, 0.5);
         }
-        .page-link{
+        .page-link {
             width: 40px;
             height: 40px;
             min-width: 40px;
             min-height: 40px;
             box-shadow: none !important;
             border: 1px solid color("primary-100");
+
+            @include breakpoint-down(sm) {
+                width: 36px;
+                height: 36px;
+                min-width: 36px;
+                min-height: 36px;
+            }
 
             &:hover,
             &:focus,
@@ -27,10 +34,10 @@
                 }
             }
 
-            &-num{
-                color: color("primary-500")!important;
+            &-num {
+                color: color("primary-500") !important;
 
-                &[disabled]{
+                &[disabled] {
                     opacity: 0.7;
                     pointer-events: none;
                 }

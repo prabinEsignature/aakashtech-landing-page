@@ -5,12 +5,24 @@
 .atech-blog-banner {
   min-height: 800px;
 
-  @include breakpoint-down(xxxl){
+  @include breakpoint-down(xxxl) {
     min-height: 780px;
   }
 
-  @include breakpoint-down(xxl){
+  @include breakpoint-down(xxl) {
     min-height: 750px;
+  }
+
+  @include breakpoint-down(xl) {
+    min-height: 720px;
+  }
+
+  @include breakpoint-down(lg){
+    min-height: 690px;
+  }
+
+  @include breakpoint-down(md){
+    min-height: 660px;
   }
 
   &::after {
@@ -44,12 +56,22 @@
     &-grid {
       gap: 48px;
 
-      @include breakpoint-down(xxxl){
+      @include breakpoint-down(xxxl) {
         gap: 40px;
       }
 
-      @include breakpoint-down(xxl){
+      @include breakpoint-down(xxl) {
         gap: 24px;
+      }
+
+      @include breakpoint-down(xl) {
+        gap: 40px;
+      }
+    }
+
+    &-vertical {
+      .blogs-showcase-ttl {
+        color: color("onyx-700") !important;
       }
     }
   }

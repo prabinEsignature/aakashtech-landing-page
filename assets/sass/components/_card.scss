@@ -6,38 +6,131 @@
 .card {
   &.blog-card {
     transition: $default-transition;
-    &:hover{
-      background: color("primary-50")!important;
+
+    @include breakpoint-down(xxl) {
+      border-radius: 24px !important;
+    }
+
+    @include breakpoint-down(xl) {
+      border-radius: 20px !important;
+    }
+
+    @include breakpoint-down(lg) {
+      border-radius: 16px !important;
+    }
+
+    .card-img{
+      @include breakpoint-down(xxl) {
+        border-radius: 16px !important;
+      }
+  
+      @include breakpoint-down(xl) {
+        border-radius: 12px !important;
+      }
+  
+      @include breakpoint-down(lg) {
+        border-radius: 10px !important;
+      }
+    }
+
+    .card-metadata{
+      transition: $default-transition;
+
+      &-item{
+        transition: $default-transition;
+      }
+    }
+
+    &:hover {
+      background: color("primary-100") !important;
+
+      // .card-metadata{
+      //   background: color("primary-500") !important;
+
+      //   &-item{
+      //     color: #fff!important;
+
+      //     [class*="icon-"] {
+      //       img{
+      //         filter: invert(1) brightness(100);
+      //       }
+      //     }
+      //   }
+      // }
     }
 
     &.card-lg {
       .card-img {
         height: 408px;
+
+        @include breakpoint-down(lg){
+          height: 360px;
+        }
+
+        @include breakpoint-down(md){
+          height: 320px;
+        }
+
+        @include breakpoint-down(sm){
+          height: 280px;
+        }
+
+        @include breakpoint-down(xs){
+          height: 240px;
+        }
       }
     }
 
     &.card-horizontal {
       grid-template-columns: 240px auto;
 
+      @include breakpoint-down(xl){
+        grid-template-columns: 200px auto;
+      }
+
       .card-img {
         height: 210px;
+
+        @include breakpoint-down(xl){
+          height: 180px;
+        }
+
+        @include breakpoint-down(lg){
+          height: 160px;
+        }
+
+        @include breakpoint-down(md){
+          height: 140px;
+        }
       }
 
       .card-body {
         padding: 28px 0 28px 28px !important;
 
-        @include breakpoint-down(xxl){
+        @include breakpoint-down(xxl) {
           padding: 24px 0 24px 24px !important;
         }
 
-        @include breakpoint-down(xl){
-          padding: 20px 0 20px 20px!important;
+        @include breakpoint-down(xl) {
+          padding: 0 0 0 12px !important;
         }
       }
     }
 
     .card-img {
       height: 278px;
+
+      @include breakpoint-down(md){
+        height: 260px;
+      }
+
+      @include breakpoint-down(sm){
+        height: 240px;
+      }
+
+      @include breakpoint-down(xs){
+        height: 200px;
+      }
     }
 
     .card-tags {
