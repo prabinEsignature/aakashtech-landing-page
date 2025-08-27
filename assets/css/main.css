@@ -33913,11 +33913,7 @@ table td {
 }
 
 .atech-about-banner {
-  margin-top: 90px;
   background: url("../../../assets/images/about/about_us_banner_bg.png") top/cover no-repeat;
-}
-.atech-about-banner-container {
-  gap: 60px !important;
 }
 .atech-about-banner .about-banner-group {
   gap: 140px;
@@ -33984,6 +33980,20 @@ table td {
   right: -24px;
   border-radius: 20px;
 }
+@media (max-width: 1199.98px) {
+  .atech-about-banner .about-banner-segment-two .about-banner-segment-img::after {
+    left: 36px;
+    top: -16px;
+    bottom: 16px;
+    right: -16px;
+    border-radius: 28px;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-about-banner .about-banner-segment-two .about-banner-segment-img::after {
+    display: none;
+  }
+}
 .atech-about-banner .about-banner-segment-two .about-stats-item {
   background: rgba(255, 255, 255, 0.2);
 }
@@ -34007,6 +34017,11 @@ table td {
 .atech-about-mvg .about-mvg-img:nth-child(1) {
   grid-column: 1/3;
   height: 380px;
+}
+@media (max-width: 479.98px) {
+  .atech-about-mvg .about-mvg-img:nth-child(1) {
+    grid-column: 1;
+  }
 }
 .atech-about-mvg .about-mvg-img:nth-child(2) {
   height: 240px;
@@ -34093,6 +34108,13 @@ table td {
     right: 8px;
   }
 }
+@media (max-width: 479.98px) {
+  .atech-services-teams .services-teams-item .teams-item-info {
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+  }
+}
 @media (max-width: 1399.98px) {
   .atech-services-teams .services-teams-item .teams-item-info-group {
     padding: 12px !important;
@@ -34106,6 +34128,16 @@ table td {
 @media (max-width: 991.98px) {
   .atech-services-teams .services-teams-item .teams-item-info-group {
     padding: 16px !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-services-teams .services-teams-item .teams-item-info-group {
+    padding: 12px !important;
+  }
+}
+@media (max-width: 479.98px) {
+  .atech-services-teams .services-teams-item .teams-item-info-group {
+    padding: 24px 20px !important;
   }
 }
 .atech-services-teams .services-teams-item:hover .teams-item-info::after {

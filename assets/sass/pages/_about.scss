@@ -3,12 +3,7 @@
 @use "../abstracts/mixins" as *;
 
 .atech-about-banner {
-  margin-top: 90px;
   background: url($img-path + "about/about_us_banner_bg.png") top/cover no-repeat;
-
-  &-container {
-    gap: 60px !important;
-  }
 
   .about-banner-group {
     gap: 140px;
@@ -78,6 +73,18 @@
           bottom: 20px;
           right: -24px;
           border-radius: 20px;
+
+          @include breakpoint-down(xl) {
+            left: 36px;
+            top: -16px;
+            bottom: 16px;
+            right: -16px;
+            border-radius: 28px;
+          }
+
+          @include breakpoint-down(sm){
+            display: none;
+          }
         }
       }
 
@@ -110,6 +117,10 @@
       &:nth-child(1) {
         grid-column: 1 / 3;
         height: 380px;
+
+        @include breakpoint-down(xs){
+          grid-column: 1;
+        }
       }
 
       &:nth-child(2) {
@@ -193,8 +204,8 @@
   background: url($img-path + "about/teams_bg.png") bottom center/cover no-repeat;
 
   .services-teams {
-    &-list{
-      @include breakpoint-down(lg){
+    &-list {
+      @include breakpoint-down(lg) {
         max-width: 600px;
         margin-right: auto;
         margin-left: auto;
@@ -213,17 +224,31 @@
             right: 8px;
           }
 
+          @include breakpoint-down(xs) {
+            bottom: 12px;
+            left: 12px;
+            right: 12px;
+          }
+
           &-group {
             @include breakpoint-down(xxl) {
               padding: 12px !important;
             }
 
-            @include breakpoint-down(xl){
+            @include breakpoint-down(xl) {
               padding: 8px 8px 4px 8px !important;
             }
 
-            @include breakpoint-down(lg){
-              padding: 16px!important;
+            @include breakpoint-down(lg) {
+              padding: 16px !important;
+            }
+
+            @include breakpoint-down(sm) {
+              padding: 12px !important;
+            }
+
+            @include breakpoint-down(xs) {
+              padding: 24px 20px !important;
             }
           }
         }
