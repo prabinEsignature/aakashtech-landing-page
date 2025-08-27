@@ -91,6 +91,14 @@
       .about-stats {
         &-item {
           background: rgba(255, 255, 255, 0.2);
+
+          @include breakpoint-down(lg){
+            border-radius: 20px!important;
+          }
+
+          @include breakpoint-down(sm){
+            border-radius: 16px!important;
+          }
         }
       }
     }
@@ -154,6 +162,11 @@
           &-icon {
             width: 64px;
             height: 64px;
+
+            @include breakpoint-down(lg){
+              width: 56px;
+              height: 56px;
+            }
           }
         }
       }

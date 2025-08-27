@@ -32195,6 +32195,16 @@ table td {
 .atech-newsletter .newsletter-bottom {
   max-width: 680px;
 }
+@media (max-width: 575.98px) {
+  .atech-newsletter .newsletter-bottom {
+    padding-left: 4px !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-newsletter .newsletter-bottom .input-group-text {
+    display: none !important;
+  }
+}
 .atech-newsletter .newsletter-bottom .input-group .form-control {
   border: 0 !important;
 }
@@ -32205,6 +32215,18 @@ table td {
 }
 .atech-newsletter .newsletter-bottom .input-group .form-control:focus {
   border: 0 !important;
+}
+@media (max-width: 479.98px) {
+  .atech-newsletter .newsletter-bottom .btn {
+    min-width: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+@media (max-width: 479.98px) {
+  .atech-newsletter .newsletter-bottom .btn .btn-icon {
+    display: none !important;
+  }
 }
 
 .atech-projects-banner {
@@ -33997,6 +34019,16 @@ table td {
 .atech-about-banner .about-banner-segment-two .about-stats-item {
   background: rgba(255, 255, 255, 0.2);
 }
+@media (max-width: 991.98px) {
+  .atech-about-banner .about-banner-segment-two .about-stats-item {
+    border-radius: 20px !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .atech-about-banner .about-banner-segment-two .about-stats-item {
+    border-radius: 16px !important;
+  }
+}
 
 .atech-about-mvg {
   background: url("../../../assets/images/about/mvg_bg.png") center/cover no-repeat;
@@ -34044,6 +34076,12 @@ table td {
 .atech-about-mvg .about-mvg-details .mvg-details-item-icon {
   width: 64px;
   height: 64px;
+}
+@media (max-width: 991.98px) {
+  .atech-about-mvg .about-mvg-details .mvg-details-item-icon {
+    width: 56px;
+    height: 56px;
+  }
 }
 
 .atech-services-offers {

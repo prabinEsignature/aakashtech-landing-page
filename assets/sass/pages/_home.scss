@@ -72,7 +72,7 @@
         }
 
         &:nth-child(2) {
-          @include breakpoint-down(sm){
+          @include breakpoint-down(sm) {
             margin-top: 8px;
           }
           .home-process-item {
@@ -947,8 +947,8 @@
     padding: 8px 12px 8px 8px;
     transition: $default-transition;
 
-    @include breakpoint-down(xxl){
-      width: auto!important;
+    @include breakpoint-down(xxl) {
+      width: auto !important;
     }
 
     [class*="text-"] {
@@ -1311,12 +1311,12 @@
 .atech-cta-one {
   background: url($img-path + "misc/cta_bg_one.png") center/cover no-repeat;
 
-  @include breakpoint-down(sm){
-    padding-bottom: 80px!important;
+  @include breakpoint-down(sm) {
+    padding-bottom: 80px !important;
   }
 
-  @include breakpoint-down(xs){
-    padding-bottom: 60px!important;
+  @include breakpoint-down(xs) {
+    padding-bottom: 60px !important;
   }
 
   .cta-one-grid-block {
@@ -1338,19 +1338,19 @@
       grid-template-columns: 100%;
     }
 
-    @include breakpoint-down(md){
-      padding-top: 48px!important;
-      padding-bottom: 48px!important;
+    @include breakpoint-down(md) {
+      padding-top: 48px !important;
+      padding-bottom: 48px !important;
     }
 
-    @include breakpoint-down(sm){
-      padding-top: 36px!important;
-      padding-bottom: 36px!important;
+    @include breakpoint-down(sm) {
+      padding-top: 36px !important;
+      padding-bottom: 36px !important;
     }
 
-    @include breakpoint-down(xs){
-      padding-top: 28px!important;
-      padding-bottom: 28px!important;
+    @include breakpoint-down(xs) {
+      padding-top: 28px !important;
+      padding-bottom: 28px !important;
     }
   }
 }
@@ -1362,15 +1362,15 @@
   z-index: 5;
   margin-top: -60px;
 
-  @include breakpoint-down(lg){
+  @include breakpoint-down(lg) {
     margin-top: -32px;
   }
 
-  @include breakpoint-down(sm){
+  @include breakpoint-down(sm) {
     margin-top: -24px;
   }
 
-  @include breakpoint-down(xs){
+  @include breakpoint-down(xs) {
     margin-top: -12px;
   }
 
@@ -1381,16 +1381,40 @@
   .newsletter-bottom {
     max-width: 680px;
 
+    @include breakpoint-down(sm) {
+      padding-left: 4px !important;
+    }
+
     .input-group {
+      &-text {
+        @include breakpoint-down(sm) {
+          display: none !important;
+        }
+      }
+
       .form-control {
         border: 0 !important;
-        
-        @include breakpoint-down(md){
-          height: auto!important;
+
+        @include breakpoint-down(md) {
+          height: auto !important;
         }
 
         &:focus {
           border: 0 !important;
+        }
+      }
+    }
+
+    .btn {
+      @include breakpoint-down(xs) {
+        min-width: auto;
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
+      .btn-icon {
+        @include breakpoint-down(xs) {
+          display: none !important;
         }
       }
     }
