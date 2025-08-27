@@ -134,6 +134,14 @@
 
 .atech-blog-detail-banner {
   background: linear-gradient(#d5e9f6 0%, #ecf3f9 33%, #ffffff 67%, #ffffff 100%);
+
+  .blog-detail{
+    &-img{
+      @include breakpoint-down(xl){
+        
+      }
+    }
+  }
 }
 
 .atech-blog-detail-main {

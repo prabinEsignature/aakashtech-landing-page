@@ -12,11 +12,27 @@
 
   .about-banner-group {
     gap: 140px;
+
+    @include breakpoint-down(xxxl) {
+      gap: 120px;
+    }
+
+    @include breakpoint-down(xxl) {
+      gap: 100px;
+    }
+
+    @include breakpoint-down(xl) {
+      gap: 80px;
+    }
   }
 
   .about-banner-segment {
     &-one {
       gap: 80px;
+
+      @include breakpoint-down(xxl) {
+        gap: 60px;
+      }
 
       .about-banner-segment-img {
         .floating-elem-one {
@@ -40,6 +56,16 @@
       .banner-segment-two-grid {
         grid-template-columns: 55% auto;
         gap: 80px;
+
+        @include breakpoint-down(xxl) {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 72px;
+        }
+
+        @include breakpoint-down(lg) {
+          grid-template-columns: 100%;
+          gap: 60px;
+        }
       }
 
       .about-banner-segment-img {
@@ -70,6 +96,14 @@
   .about-mvg {
     &-grid {
       gap: 80px;
+
+      @include breakpoint-down(xxl) {
+        gap: 60px;
+      }
+
+      @include breakpoint-down(lg) {
+        gap: 40px;
+      }
     }
 
     &-img {
@@ -119,16 +153,38 @@
 .atech-services-offers {
   background: url($img-path + "about/service_offering_bg.png") top/cover no-repeat;
 
+  @include breakpoint-down(xxxl) {
+    background-size: 1000px 1000px;
+    background-position: center left;
+  }
+
+  @include breakpoint-down(xxl) {
+    background-size: 800px 800px;
+    background-position: top left;
+  }
+
   .services-offers {
     &-grid {
       grid-template-columns: 40% auto;
       gap: 60px;
+
+      @include breakpoint-down(lg) {
+        grid-template-columns: 100%;
+      }
     }
 
     &-item {
       position: sticky;
       top: 120px;
       z-index: 1;
+
+      @include breakpoint-down(xxxl) {
+        top: 100px;
+      }
+
+      @include breakpoint-down(xxl) {
+        top: 80px;
+      }
     }
   }
 }
@@ -137,6 +193,13 @@
   background: url($img-path + "about/teams_bg.png") bottom center/cover no-repeat;
 
   .services-teams {
+    &-list{
+      @include breakpoint-down(lg){
+        max-width: 600px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
     &-item {
       .teams-item {
         &-info {
@@ -144,20 +207,24 @@
           left: 12px;
           right: 12px;
 
-          &::after {
-            content: "";
-            position: absolute;
-            top: -18%;
-            right: 11.65%;
-            width: 36px;
-            height: 36px;
-            border-radius: 100%;
-            background: url($icon-path + "export_plus_white_icon.svg");
-            background-repeat: no-repeat;
-            background-color: color("primary-500");
-            background-size: 20px 20px;
-            background-position: center;
-            transition: $default-transition;
+          @include breakpoint-down(xxl) {
+            bottom: 8px;
+            left: 8px;
+            right: 8px;
+          }
+
+          &-group {
+            @include breakpoint-down(xxl) {
+              padding: 12px !important;
+            }
+
+            @include breakpoint-down(xl){
+              padding: 8px 8px 4px 8px !important;
+            }
+
+            @include breakpoint-down(lg){
+              padding: 16px!important;
+            }
           }
         }
       }

@@ -33033,7 +33033,6 @@ table td {
 .atech-blog-detail-banner {
   background: linear-gradient(#d5e9f6 0%, #ecf3f9 33%, #ffffff 67%, #ffffff 100%);
 }
-
 .atech-blog-detail-main-container {
   grid-template-columns: 350px auto;
   gap: 48px;
@@ -33923,8 +33922,28 @@ table td {
 .atech-about-banner .about-banner-group {
   gap: 140px;
 }
+@media (max-width: 1535.98px) {
+  .atech-about-banner .about-banner-group {
+    gap: 120px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .atech-about-banner .about-banner-group {
+    gap: 100px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .atech-about-banner .about-banner-group {
+    gap: 80px;
+  }
+}
 .atech-about-banner .about-banner-segment-one {
   gap: 80px;
+}
+@media (max-width: 1399.98px) {
+  .atech-about-banner .about-banner-segment-one {
+    gap: 60px;
+  }
 }
 .atech-about-banner .about-banner-segment-one .about-banner-segment-img .floating-elem-one {
   background: linear-gradient(to bottom, rgba(13, 136, 255, 0.9), rgba(13, 136, 255, 0.8));
@@ -33942,6 +33961,18 @@ table td {
 .atech-about-banner .about-banner-segment-two .banner-segment-two-grid {
   grid-template-columns: 55% auto;
   gap: 80px;
+}
+@media (max-width: 1399.98px) {
+  .atech-about-banner .about-banner-segment-two .banner-segment-two-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 72px;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-about-banner .about-banner-segment-two .banner-segment-two-grid {
+    grid-template-columns: 100%;
+    gap: 60px;
+  }
 }
 .atech-about-banner .about-banner-segment-two .about-banner-segment-img::after {
   content: "";
@@ -33962,6 +33993,16 @@ table td {
 }
 .atech-about-mvg .about-mvg-grid {
   gap: 80px;
+}
+@media (max-width: 1399.98px) {
+  .atech-about-mvg .about-mvg-grid {
+    gap: 60px;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-about-mvg .about-mvg-grid {
+    gap: 40px;
+  }
 }
 .atech-about-mvg .about-mvg-img:nth-child(1) {
   grid-column: 1/3;
@@ -33993,38 +34034,79 @@ table td {
 .atech-services-offers {
   background: url("../../../assets/images/about/service_offering_bg.png") top/cover no-repeat;
 }
+@media (max-width: 1535.98px) {
+  .atech-services-offers {
+    background-size: 1000px 1000px;
+    background-position: center left;
+  }
+}
+@media (max-width: 1399.98px) {
+  .atech-services-offers {
+    background-size: 800px 800px;
+    background-position: top left;
+  }
+}
 .atech-services-offers .services-offers-grid {
   grid-template-columns: 40% auto;
   gap: 60px;
+}
+@media (max-width: 991.98px) {
+  .atech-services-offers .services-offers-grid {
+    grid-template-columns: 100%;
+  }
 }
 .atech-services-offers .services-offers-item {
   position: sticky;
   top: 120px;
   z-index: 1;
 }
+@media (max-width: 1535.98px) {
+  .atech-services-offers .services-offers-item {
+    top: 100px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .atech-services-offers .services-offers-item {
+    top: 80px;
+  }
+}
 
 .atech-services-teams {
   background: url("../../../assets/images/about/teams_bg.png") bottom center/cover no-repeat;
+}
+@media (max-width: 991.98px) {
+  .atech-services-teams .services-teams-list {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 .atech-services-teams .services-teams-item .teams-item-info {
   bottom: 12px;
   left: 12px;
   right: 12px;
 }
-.atech-services-teams .services-teams-item .teams-item-info::after {
-  content: "";
-  position: absolute;
-  top: -18%;
-  right: 11.65%;
-  width: 36px;
-  height: 36px;
-  border-radius: 100%;
-  background: url("../../../assets/icons/export_plus_white_icon.svg");
-  background-repeat: no-repeat;
-  background-color: #3797d5;
-  background-size: 20px 20px;
-  background-position: center;
-  transition: all ease-in-out 300ms;
+@media (max-width: 1399.98px) {
+  .atech-services-teams .services-teams-item .teams-item-info {
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .atech-services-teams .services-teams-item .teams-item-info-group {
+    padding: 12px !important;
+  }
+}
+@media (max-width: 1199.98px) {
+  .atech-services-teams .services-teams-item .teams-item-info-group {
+    padding: 8px 8px 4px 8px !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-services-teams .services-teams-item .teams-item-info-group {
+    padding: 16px !important;
+  }
 }
 .atech-services-teams .services-teams-item:hover .teams-item-info::after {
   transform: rotate(180deg);
