@@ -30063,6 +30063,22 @@ input:-webkit-autofill {
   height: 60px;
   max-width: 540px;
 }
+@media (max-width: 991.98px) {
+  .page-content-search {
+    padding-right: 8px !important;
+    padding-left: 12px !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .page-content-search {
+    height: 56px;
+  }
+}
+@media (max-width: 575.98px) {
+  .page-content-search {
+    height: 52px;
+  }
+}
 .page-content-search input.form-control::-moz-placeholder {
   color: #7b7b7b;
   font-weight: 500;
@@ -33003,9 +33019,18 @@ table td {
 .atech-download-showcase .download-showcase-grid {
   gap: 80px;
 }
+@media (max-width: 1399.98px) {
+  .atech-download-showcase .download-showcase-grid {
+    gap: 60px;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-download-showcase .download-showcase-grid {
+    gap: 40px;
+  }
+}
 
 .atech-blog-detail-banner {
-  margin-top: 90px;
   background: linear-gradient(#d5e9f6 0%, #ecf3f9 33%, #ffffff 67%, #ffffff 100%);
 }
 
@@ -33013,11 +33038,38 @@ table td {
   grid-template-columns: 350px auto;
   gap: 48px;
 }
+@media (max-width: 1399.98px) {
+  .atech-blog-detail-main-container {
+    gap: 40px;
+    grid-template-columns: 320px auto;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-blog-detail-main-container {
+    grid-template-columns: 100%;
+  }
+}
 
 .blog-detail-widgets {
   gap: 32px;
   position: sticky;
   top: 120px;
+}
+@media (max-width: 1535.98px) {
+  .blog-detail-widgets {
+    gap: 28px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .blog-detail-widgets {
+    gap: 24px;
+  }
+}
+@media (max-width: 991.98px) {
+  .blog-detail-widgets {
+    position: relative;
+    top: 0;
+  }
 }
 .blog-detail-widgets .search-widget .form-control::-moz-placeholder {
   color: #a4a7ae;
@@ -33040,6 +33092,11 @@ table td {
   padding: 14px 24px;
   position: relative;
   transition: all ease-in-out 300ms;
+}
+@media (max-width: 1199.98px) {
+  .blog-detail-widgets .bookmark-widget-item > a {
+    padding: 12px 20px;
+  }
 }
 .blog-detail-widgets .bookmark-widget-item > a.active {
   color: #3797d5 !important;
@@ -33093,8 +33150,23 @@ table td {
 .blog-traverse-prev {
   grid-template-columns: 120px auto;
 }
+@media (max-width: 1535.98px) {
+  .blog-traverse-prev {
+    grid-template-columns: 100px auto;
+  }
+}
+@media (max-width: 575.98px) {
+  .blog-traverse-prev {
+    border-right: 0 !important;
+  }
+}
 .blog-traverse-next {
   grid-template-columns: auto 120px;
+}
+@media (max-width: 1535.98px) {
+  .blog-traverse-next {
+    grid-template-columns: auto 100px;
+  }
 }
 .blog-traverse-img {
   height: 100px;

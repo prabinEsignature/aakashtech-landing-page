@@ -121,11 +121,18 @@
 .atech-download-showcase {
   .download-showcase-grid {
     gap: 80px;
+
+    @include breakpoint-down(xxl){
+      gap: 60px;
+    }
+
+    @include breakpoint-down(lg){
+      gap: 40px;
+    }
   }
 }
 
 .atech-blog-detail-banner {
-  margin-top: 90px;
   background: linear-gradient(#d5e9f6 0%, #ecf3f9 33%, #ffffff 67%, #ffffff 100%);
 }
 
@@ -133,6 +140,15 @@
   &-container {
     grid-template-columns: 350px auto;
     gap: 48px;
+
+    @include breakpoint-down(xxl){
+      gap: 40px;
+      grid-template-columns: 320px auto;
+    }
+
+    @include breakpoint-down(lg){
+      grid-template-columns: 100%;
+    }
   }
 }
 
@@ -140,6 +156,19 @@
   gap: 32px;
   position: sticky;
   top: 120px;
+
+  @include breakpoint-down(xxxl){
+    gap: 28px;
+  }
+
+  @include breakpoint-down(xxl){
+    gap: 24px;
+  }
+
+  @include breakpoint-down(lg){
+    position: relative;
+    top: 0;
+  }
 
   .search-widget {
     .form-control {
@@ -169,6 +198,10 @@
         padding: 14px 24px;
         position: relative;
         transition: $default-transition;
+
+        @include breakpoint-down(xl){
+          padding: 12px 20px;
+        }
 
         &.active {
           color: color("primary-500") !important;
@@ -242,9 +275,21 @@
 .blog-traverse {
   &-prev {
     grid-template-columns: 120px auto;
+
+    @include breakpoint-down(xxxl){
+      grid-template-columns: 100px auto;
+    }
+
+    @include breakpoint-down(sm){
+      border-right: 0!important;
+    }
   }
   &-next {
     grid-template-columns: auto 120px;
+
+    @include breakpoint-down(xxxl){
+      grid-template-columns: auto 100px;
+    }
   }
 
   &-img {

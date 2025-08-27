@@ -117,7 +117,7 @@
   display: grid;
   row-gap: 8px;
 
-  @include breakpoint-down(lg){
+  @include breakpoint-down(lg) {
     row-gap: 6px;
   }
 
@@ -225,6 +225,19 @@ input:-webkit-autofill {
   &-search {
     height: 60px;
     max-width: 540px;
+
+    @include breakpoint-down(lg) {
+      padding-right: 8px !important;
+      padding-left: 12px !important;
+    }
+
+    @include breakpoint-down(md){
+      height: 56px;
+    }
+
+    @include breakpoint-down(sm) {
+      height: 52px;
+    }
 
     input {
       &.form-control {
