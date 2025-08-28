@@ -17,6 +17,14 @@
       padding-right: 64px;
     }
 
+    .swiper-button-next{
+      top: 26px;
+    }
+
+    .swiper-button-prev{
+      top: 26px;
+    }
+
     .swiper-slide {
       width: auto;
       padding-left: 6px;
@@ -31,12 +39,20 @@
     .projects-btn {
       height: 44px;
 
-      @include breakpoint-down(lg){
+      @include breakpoint-down(xl){
         height: 40px;
       }
 
+      @include breakpoint-down(lg){
+        height: 38px;
+      }
+
+      @include breakpoint-down(md){
+        height: 34px;
+      }
+
       @include breakpoint-down(sm){
-        height: 36px;
+        height: 32px;
       }
 
       &.is-checked {
@@ -48,6 +64,15 @@
           img {
             filter: invert(1) brightness(100);
           }
+        }
+      }
+
+      [class*="icon"] {
+        img {
+          width: 18px;
+          height: 18px;
+          min-width: 18px;
+          min-height: 18px;
         }
       }
     }
