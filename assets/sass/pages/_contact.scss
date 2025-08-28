@@ -6,12 +6,27 @@
   margin-top: 90px;
 }
 
+.contact-banner-location {
+  &-img {
+    scale: 1.6;
+    transform: translate(-80px, 20px);
+  }
+}
+
 .atech-contact-main {
   .atech-contact {
     background: none !important;
 
     &-container {
       gap: 60px;
+    }
+  }
+
+  .contact-grid-block {
+    @include breakpoint-down(sm) {
+      background: none !important;
+      padding-left: 16px !important;
+      padding-right: 16px !important;
     }
   }
 
@@ -43,10 +58,31 @@
 
   .contact-deliver-segment {
     .contact-deliver {
-      &-list{
+      &-list {
         gap: 100px;
         max-width: 766px;
+
+        @include breakpoint-down(xxxl) {
+          gap: 80px;
+        }
+
+        @include breakpoint-down(xxl) {
+          gap: 60px;
+        }
+
+        @include breakpoint-down(xl) {
+          gap: 48px;
+        }
+
+        @include breakpoint-down(lg) {
+          gap: 36px;
+        }
+
+        @include breakpoint-down(md) {
+          gap: 24px;
+        }
       }
+
       &-item {
         &:nth-child(1) {
           .contact-deliver-item-icon {

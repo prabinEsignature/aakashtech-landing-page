@@ -32099,6 +32099,16 @@ table td {
 .atech-contact .contact-block-feat-points {
   margin-left: 44px !important;
 }
+@media (max-width: 1399.98px) {
+  .atech-contact .contact-block-feat-points {
+    margin-left: 36px !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .atech-contact .contact-block-feat-points {
+    margin-left: 32px !important;
+  }
+}
 .atech-contact .contact-block-feat-point {
   position: relative;
 }
@@ -32108,9 +32118,21 @@ table td {
   left: -44px;
   top: 45%;
   transform: translateY(-50%);
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   background: url("../../../assets/icons/circle_check_outline_onyx_700.svg") center/cover no-repeat;
+}
+@media (max-width: 1399.98px) {
+  .atech-contact .contact-block-feat-point::after {
+    left: -36px;
+  }
+}
+@media (max-width: 767.98px) {
+  .atech-contact .contact-block-feat-point::after {
+    width: 20px;
+    height: 20px;
+    left: -32px;
+  }
 }
 
 .atech-cta-one {
@@ -33889,11 +33911,23 @@ table td {
   margin-top: 90px;
 }
 
+.contact-banner-location-img {
+  scale: 1.6;
+  transform: translate(-80px, 20px);
+}
+
 .atech-contact-main .atech-contact {
   background: none !important;
 }
 .atech-contact-main .atech-contact-container {
   gap: 60px;
+}
+@media (max-width: 575.98px) {
+  .atech-contact-main .contact-grid-block {
+    background: none !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
 }
 .atech-contact-main .contact-grid-block-wrapper::after {
   content: "";
@@ -33920,6 +33954,31 @@ table td {
 .atech-contact-main .contact-deliver-segment .contact-deliver-list {
   gap: 100px;
   max-width: 766px;
+}
+@media (max-width: 1535.98px) {
+  .atech-contact-main .contact-deliver-segment .contact-deliver-list {
+    gap: 80px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .atech-contact-main .contact-deliver-segment .contact-deliver-list {
+    gap: 60px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .atech-contact-main .contact-deliver-segment .contact-deliver-list {
+    gap: 48px;
+  }
+}
+@media (max-width: 991.98px) {
+  .atech-contact-main .contact-deliver-segment .contact-deliver-list {
+    gap: 36px;
+  }
+}
+@media (max-width: 767.98px) {
+  .atech-contact-main .contact-deliver-segment .contact-deliver-list {
+    gap: 24px;
+  }
 }
 .atech-contact-main .contact-deliver-segment .contact-deliver-item:nth-child(1) .contact-deliver-item-icon {
   background: #ddfbf8;

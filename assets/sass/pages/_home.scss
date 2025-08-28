@@ -1290,6 +1290,14 @@
 
   .contact-block-feat-points {
     margin-left: 44px !important;
+
+    @include breakpoint-down(xxl) {
+      margin-left: 36px !important;
+    }
+
+    @include breakpoint-down(md) {
+      margin-left: 32px !important;
+    }
   }
 
   .contact-block-feat-point {
@@ -1301,9 +1309,19 @@
       left: -44px;
       top: 45%;
       transform: translateY(-50%);
-      width: 28px;
-      height: 28px;
+      width: 24px;
+      height: 24px;
       background: url($icon-path + "circle_check_outline_onyx_700.svg") center/cover no-repeat;
+
+      @include breakpoint-down(xxl) {
+        left: -36px;
+      }
+
+      @include breakpoint-down(md) {
+        width: 20px;
+        height: 20px;
+        left: -32px;
+      }
     }
   }
 }
