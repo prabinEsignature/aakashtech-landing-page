@@ -288,6 +288,10 @@
       grid-template-columns: 100px auto;
     }
 
+    @include breakpoint-down(md){
+      grid-template-columns: 100%;
+    }
+
     @include breakpoint-down(sm){
       border-right: 0!important;
     }
@@ -298,9 +302,37 @@
     @include breakpoint-down(xxxl){
       grid-template-columns: auto 100px;
     }
+
+    @include breakpoint-down(md){
+      grid-template-columns: 100%;
+    }
+
+    .blog-traverse-img{
+      margin-left: auto;
+
+      @include breakpoint-down(md){
+        order: 1;
+      }
+    }
+
+    .blog-traverse-info{
+      @include breakpoint-down(md){
+        order: 2;
+      }
+    }
   }
 
   &-img {
     height: 100px;
+
+    @include breakpoint-down(md){
+      width: 80px;
+      height: 80px;
+    }
+
+    @include breakpoint-down(xs){
+      width: 72px;
+      height: 72px;
+    }
   }
 }

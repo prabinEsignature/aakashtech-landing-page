@@ -33198,6 +33198,11 @@ table td {
     grid-template-columns: 100px auto;
   }
 }
+@media (max-width: 767.98px) {
+  .blog-traverse-prev {
+    grid-template-columns: 100%;
+  }
+}
 @media (max-width: 575.98px) {
   .blog-traverse-prev {
     border-right: 0 !important;
@@ -33211,8 +33216,38 @@ table td {
     grid-template-columns: auto 100px;
   }
 }
+@media (max-width: 767.98px) {
+  .blog-traverse-next {
+    grid-template-columns: 100%;
+  }
+}
+.blog-traverse-next .blog-traverse-img {
+  margin-left: auto;
+}
+@media (max-width: 767.98px) {
+  .blog-traverse-next .blog-traverse-img {
+    order: 1;
+  }
+}
+@media (max-width: 767.98px) {
+  .blog-traverse-next .blog-traverse-info {
+    order: 2;
+  }
+}
 .blog-traverse-img {
   height: 100px;
+}
+@media (max-width: 767.98px) {
+  .blog-traverse-img {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 479.98px) {
+  .blog-traverse-img {
+    width: 72px;
+    height: 72px;
+  }
 }
 
 .atech-services-banner {
