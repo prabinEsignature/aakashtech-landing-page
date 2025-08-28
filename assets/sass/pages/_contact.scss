@@ -2,14 +2,12 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.atech-contact-banner {
-  margin-top: 90px;
-}
-
 .contact-banner-location {
   &-img {
-    scale: 1.6;
-    transform: translate(-80px, 20px);
+    @include breakpoint-down(sm) {
+      scale: 1.6;
+      transform: translate(-80px, 20px);
+    }
   }
 }
 

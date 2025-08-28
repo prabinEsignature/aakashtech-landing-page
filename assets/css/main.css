@@ -33462,7 +33462,6 @@ table td {
 }
 
 .atech-services-details-banner {
-  margin-top: 90px;
   min-height: 980px;
 }
 @media (max-width: 1399.98px) {
@@ -33907,13 +33906,11 @@ table td {
   }
 }
 
-.atech-contact-banner {
-  margin-top: 90px;
-}
-
-.contact-banner-location-img {
-  scale: 1.6;
-  transform: translate(-80px, 20px);
+@media (max-width: 575.98px) {
+  .contact-banner-location-img {
+    scale: 1.6;
+    transform: translate(-80px, 20px);
+  }
 }
 
 .atech-contact-main .atech-contact {
