@@ -33603,6 +33603,9 @@ table td {
   height: 100%;
   background: url("../../../assets/images/services/service_detail_banner_bg.png");
 }
+.atech-services-details-banner .breadcrumb .breadcrumb-item.active {
+  color: #ffffff !important;
+}
 .atech-services-details-banner .services-details-banner-content {
   gap: 40px;
   grid-template-columns: 3.5fr 6.5fr;

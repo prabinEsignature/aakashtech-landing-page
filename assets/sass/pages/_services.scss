@@ -276,6 +276,14 @@
     background: url($img-path + "services/service_detail_banner_bg.png");
   }
 
+  .breadcrumb{
+    .breadcrumb-item{
+      &.active{
+        color: color("white") !important;
+      }
+    }
+  }
+
   .services-details-banner-content {
     gap: 40px;
     grid-template-columns: 3.5fr 6.5fr;
