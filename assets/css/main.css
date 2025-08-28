@@ -28319,6 +28319,12 @@ h1,
     font-size: 32px !important;
   }
 }
+@media screen and (max-width: 767.98px) {
+  h1,
+  .h1 {
+    font-size: 28px !important;
+  }
+}
 h1,
 .h1 {
   margin-top: 12px;
@@ -30598,6 +30604,7 @@ table td {
     transform: translateX(100%);
     transition: all ease-in-out 300ms;
     overflow: hidden;
+    background: linear-gradient(135deg, hsl(202, 67%, 95%) 0%, hsl(204, 67%, 91%) 50%, hsl(202, 67%, 95%) 100%);
   }
   .atech-navbar .atech-menu-parent.is-open {
     transform: translateX(0);
