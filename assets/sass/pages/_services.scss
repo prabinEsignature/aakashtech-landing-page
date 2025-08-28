@@ -496,6 +496,15 @@ $process-color-keys: ("turquoise", "blue-violet", "coral", "crayola", "emerald",
       width: 60px;
       height: 6px;
       border-radius: 0 !important;
+
+      @include breakpoint-down(lg){
+        width: 48px;
+        height: 4px;
+      }
+
+      @include breakpoint-down(md){
+        width: 40px;
+      }
     }
   }
 }
@@ -508,6 +517,21 @@ $process-color-keys: ("turquoise", "blue-violet", "coral", "crayola", "emerald",
       &-icon {
         width: 100px;
         height: 100px;
+
+        @include breakpoint-down(xl){
+          width: 92px;
+          height: 92px;
+        }
+
+        @include breakpoint-down(lg){
+          width: 80px;
+          height: 80px;
+        }
+
+        @include breakpoint-down(sm){
+          width: 72px;
+          height: 72px;
+        }
       }
 
       @for $i from 1 through 6 {
