@@ -34,6 +34,39 @@ html {
 }
 
 // Text Size Mappings
+$heading-sizes: (
+  h1: (
+    null: "6xl",
+    xl: "5xl",
+    lg: "4xl",
+  ),
+  h2: (
+    null: "4xl",
+    xl: "3xl",
+    lg: "2xl",
+  ),
+  h3: (
+    null: "3xl",
+    xl: "2xl",
+    lg: "xl",
+  ),
+  h4: (
+    null: "2xl",
+    xl: "xl",
+    lg: "lg",
+  ),
+  h5: (
+    null: "xl",
+    xl: "lg",
+    lg: "base",
+  ),
+  h6: (
+    null: "lg",
+    xl: "base",
+    lg: "sm",
+  )
+);
+
 $text-sizes: (
   3xs: (
     null: "3xs",
@@ -58,12 +91,12 @@ $text-sizes: (
   lg: (
     null: "lg",
     xl: "base",
-    lg: "sm",
+    lg: "sm"
   ),
   xl: (
     null: "xl",
     xl: "lg",
-    lg: "base",
+    lg: "base"
   ),
   "2xl": (
     null: "2xl",
@@ -84,14 +117,14 @@ $text-sizes: (
     xl: "3xl",
     lg: "2xl",
     md: "xl",
-    sm: "lg",
+    sm: "lg"
   ),
   "5xl": (
     null: "5xl",
     xl: "4xl",
     lg: "3xl",
     md: "2xl",
-    sm: "xl",
+    sm: "xl"
   ),
   "6xl": (
     null: "6xl",
@@ -99,7 +132,7 @@ $text-sizes: (
     xl: "4xl",
     lg: "3xl",
     md: "2xl",
-    sm: "xl",
+    sm: "xl"
   ),
   "7xl": (
     null: "7xl",
@@ -107,7 +140,7 @@ $text-sizes: (
     xl: "5xl",
     lg: "4xl",
     md: "3xl",
-    sm: "2xl",
+    sm: "2xl"
   ),
   "7xl-mid": (
     null: "7xl-mid",
@@ -123,7 +156,7 @@ $text-sizes: (
     xl: "6xl",
     lg: "5xl",
     md: "4xl",
-    sm: "3xl",
+    sm: "3xl"
   ),
   "9xl": (
     null: "9xl",
@@ -131,7 +164,7 @@ $text-sizes: (
     xl: "7xl",
     lg: "6xl",
     md: "5xl",
-    sm: "4xl",
+    sm: "4xl"
   )
 );
 
@@ -168,26 +201,57 @@ $text-sizes: (
 }
 
 /* #### HEADINGS #### */
-@each $heading, $font-size in map.get($headings-config, "font-sizes") {
-  #{$heading},
-  .#{$heading},
-  .#{string.slice($heading, 1)} {
-    font-size: $font-size;
-    margin-bottom: map.get($headings-config, "margin-bottom");
-    font-family: map.get($headings-config, "font-family");
-    font-weight: map.get($headings-config, "font-weight") !important;
-    line-height: map.get($headings-config, "line-height");
-    color: map.get($headings-config, "color");
-    letter-spacing: map.get($headings-config, "letter-spacing") !important;
+// @each $heading, $font-size in map.get($headings-config, "font-sizes") {
+//   #{$heading},
+//   .#{$heading},
+//   .#{string.slice($heading, 1)} {
+//     font-size: $font-size;
+//     margin-bottom: map.get($headings-config, "margin-bottom");
+//     font-family: map.get($headings-config, "font-family");
+//     font-weight: map.get($headings-config, "font-weight") !important;
+//     line-height: map.get($headings-config, "line-height");
+//     color: map.get($headings-config, "color");
+//     letter-spacing: map.get($headings-config, "letter-spacing") !important;
+//   }
+// }
+
+// Mixin for Heading Font Sizes
+@mixin heading-font-sizes($size-map, $breakpoints: $breakpoints-down) {
+  font-family: map.get($headings-config, "font-family");
+  font-weight: map.get($headings-config, "font-weight") !important;
+  line-height: map.get($headings-config, "line-height");
+  color: map.get($headings-config, "color");
+  letter-spacing: map.get($headings-config, "letter-spacing") !important;
+
+  @each $breakpoint, $font-size-key in $size-map {
+    $font-size-value: map.get($font-sizes, $font-size-key);
+
+    @if $breakpoint == null {
+      font-size: $font-size-value !important;
+    } @else if map.has-key($breakpoints, $breakpoint) {
+      @media screen and (max-width: map.get($breakpoints, $breakpoint)) {
+        font-size: $font-size-value !important;
+      }
+    }
   }
 }
 
 // Apply margin-top to headings when preceded by other elements
-@each $heading in map.keys(map.get($headings-config, "font-sizes")) {
-  * + #{$heading},
-  * + .#{$heading},
-  * + .#{string.slice($heading, 1)} {
-    margin-top: 12px;
+// @each $heading in map.keys(map.get($headings-config, "font-sizes")) {
+//   * + #{$heading},
+//   * + .#{$heading},
+//   * + .#{string.slice($heading, 1)} {
+//     margin-top: 12px;
+//   }
+// }
+
+@each $heading, $size-map in $heading-sizes {
+  #{$heading},
+  .#{$heading}{
+    @include heading-font-sizes($size-map);
+    & {
+      margin-top: 12px;
+    }
   }
 }
 
@@ -248,11 +312,11 @@ a {
     padding-left: 0 !important;
     margin-left: 0 !important;
 
-    @include breakpoint-down(xl){
+    @include breakpoint-down(xl) {
       gap: 8px;
     }
 
-    @include breakpoint-down(sm){
+    @include breakpoint-down(sm) {
       gap: 6px;
     }
 
