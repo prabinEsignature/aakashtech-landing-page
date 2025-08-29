@@ -27642,19 +27642,26 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  font-family: "Instrument Sans", sans-serif; /* Set default font family to sans-serif */
+  font-size: 100%;
+  line-height: 1.4;
+  height: 100%;
+  width: 100%;
   scroll-behavior: smooth;
   overscroll-behavior-y: none;
   touch-action: manipulation;
   overflow-y: auto;
-  height: 100%;
-  width: 100%;
-  font-family: "Instrument Sans", sans-serif; /* Set default font family to sans-serif */
-  font-size: 100%;
-  line-height: 1.4;
-  color-scheme: light dark;
   -webkit-overflow-scrolling: touch;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  color-scheme: light dark;
+  background-color: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #0d0d0d;
+    color: #ffffff;
+  }
 }
 
 body {
@@ -27677,6 +27684,15 @@ body.no-scroll {
   outline-offset: 2px;
 }
 
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+@media (forced-colors: active) {
+  :focus-visible {
+    outline: 2px solid CanvasText;
+  }
+}
 /* Reset, normalization of HTML elements */
 *,
 *::before,

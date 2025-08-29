@@ -11,7 +11,9 @@
 // ----------------------------------------
 // MIXINS AND GENERATORS
 // ----------------------------------------
-// Color Utilities Generator
+// ----------------------------------------
+// COLOR UTILITIES
+// ----------------------------------------
 @mixin generate-color-classes($color-map, $prefix, $property) {
   @each $color-name, $color in $color-map {
     #{$prefix}-#{"" + $color-name} {
@@ -31,7 +33,9 @@
 @include generate-color-classes($colors, ".text", "color");
 @include generate-color-classes($colors, ".bg", "background-color");
 
-// Font Weight Utilities Generator
+// ----------------------------------------
+// TYPOGRAPHY
+// ----------------------------------------
 @mixin generate-font-weight-classes($prefix, $property) {
   @each $weight-name, $weight in $font-weights {
     #{$prefix}-#{$weight-name} {
@@ -711,20 +715,19 @@ $shadows: (
 }
 
 // LINE HEIGHTS
-$leading-classes: (
-  "leading-6": 1.5rem,
-  // 24px
+$leading: (
+  "leading-6": 1.5rem, // 24px
   "leading-tight": 1.25,
   "leading-snug": 1.375
 );
 
-@each $class, $value in $leading-classes {
+@each $class, $value in $leading {
   .#{$class} {
     line-height: $value;
   }
 }
 
-$tracking-classes: (
+$tracking: (
   "tracking-0": 0em,
   "tracking-04": 0.04em,
   "tracking-06": 0.06em,
@@ -732,7 +735,7 @@ $tracking-classes: (
   "tracking-02": 0.02em
 );
 
-@each $class, $value in $tracking-classes {
+@each $class, $value in $tracking {
   .-#{$class} {
     letter-spacing: -$value !important;
   }

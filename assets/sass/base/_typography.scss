@@ -6,7 +6,7 @@
 @use "../abstracts/mixins" as *;
 @use "../abstracts/placeholder" as *;
 
-// Configuration Variables
+// CONFIGURATION VARIABLES
 $text-config: (
   "font-family": $font-family-base,
   "font-weight": map.get($font-weights, "medium"),
@@ -16,7 +16,7 @@ $text-config: (
   "letter-spacing": $tracking-base
 );
 
-// Base Typography Styles
+// BASE TYPOGRAPHY STYLES
 html {
   font-family: map.get($text-config, "font-family");
   font-size: map.get($text-config, "base-font-size");
@@ -202,21 +202,6 @@ $text-sizes: (
 }
 
 /* #### HEADINGS #### */
-// @each $heading, $font-size in map.get($headings-config, "font-sizes") {
-//   #{$heading},
-//   .#{$heading},
-//   .#{string.slice($heading, 1)} {
-//     font-size: $font-size;
-//     margin-bottom: map.get($headings-config, "margin-bottom");
-//     font-family: map.get($headings-config, "font-family");
-//     font-weight: map.get($headings-config, "font-weight") !important;
-//     line-height: map.get($headings-config, "line-height");
-//     color: map.get($headings-config, "color");
-//     letter-spacing: map.get($headings-config, "letter-spacing") !important;
-//   }
-// }
-
-// Mixin for Heading Font Sizes
 @mixin heading-font-sizes($size-map, $breakpoints: $breakpoints-down) {
   font-family: map.get($headings-config, "font-family");
   font-weight: map.get($headings-config, "font-weight") !important;
@@ -236,15 +221,6 @@ $text-sizes: (
     }
   }
 }
-
-// Apply margin-top to headings when preceded by other elements
-// @each $heading in map.keys(map.get($headings-config, "font-sizes")) {
-//   * + #{$heading},
-//   * + .#{$heading},
-//   * + .#{string.slice($heading, 1)} {
-//     margin-top: 12px;
-//   }
-// }
 
 // @each $heading, $size-map in $heading-sizes {
 //   #{$heading},

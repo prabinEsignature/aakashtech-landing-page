@@ -1,13 +1,14 @@
 @use "sass:color";
 @use 'sass:map';
 
-// DEFAULT COLOR
+// ========== BASE COLORS ==========
 $white: #ffffff;
 $black: #000000;
 $theme: #3797d5;
 $theme-light: color.adjust($theme, $lightness: 20%);
 $theme-dark: color.adjust($theme, $lightness: -20%);
 
+// ========== COLOR PALETTES ==========
 // PRIMARY COLORSCALE
 $primary-50: #ebf5fb;
 $primary-100: #d7eaf7;
