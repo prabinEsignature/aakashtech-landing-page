@@ -75,6 +75,7 @@
           @include breakpoint-down(sm) {
             margin-top: 8px;
           }
+
           .home-process-item {
             &:nth-child(odd) {
               background: color("white") !important;
@@ -122,7 +123,7 @@
 
         @include breakpoint-down(sm) {
           font-size: 16px !important;
-          top: -10px;
+          top: -24px;
           left: 18%;
           transform: translateX(-50%);
         }
@@ -412,6 +413,14 @@
 }
 
 .atech-home-banner {
+  .banner-stats-item {
+    .stats-item-head {
+      @include breakpoint-down(lg) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
   .home-banner-ttl {
     @include breakpoint-down(sm) {
       font-size: 32px !important;
@@ -775,6 +784,18 @@
 .atech-clients-summary {
   .clients-brand-logo {
     margin-left: -20px;
+    width: 60px;
+    height: 60px;
+
+    @include breakpoint-down(md) {
+      width: 56px;
+      height: 56px;
+    }
+
+    @include breakpoint-down(xs) {
+      width: 52px;
+      height: 52px;
+    }
   }
 }
 
@@ -827,7 +848,7 @@
       padding: 0 12px;
 
       @include breakpoint-down(sm) {
-        padding: 0;
+        padding: 0 4px;
       }
     }
     .tab-reviews-card {
@@ -1192,6 +1213,16 @@
       padding-right: 72px !important;
     }
 
+    @include breakpoint-down(sm) {
+      padding-left: 60px !important;
+      padding-right: 60px !important;
+    }
+
+    @include breakpoint-down(xs){
+      padding-left: 48px !important;
+      padding-right: 48px !important;
+    }
+
     .screenshots-btn {
       transition: $default-transition;
 
@@ -1369,6 +1400,7 @@
     @include breakpoint-down(xs) {
       padding-top: 28px !important;
       padding-bottom: 28px !important;
+      gap: 12px;
     }
   }
 }

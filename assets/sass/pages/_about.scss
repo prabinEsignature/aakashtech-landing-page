@@ -108,6 +108,10 @@
 .atech-about-mvg {
   background: url($img-path + "about/mvg_bg.png") center/cover no-repeat;
 
+  @include breakpoint-down(lg){
+    background-size: 1000px auto;
+  }
+
   .about-mvg {
     &-grid {
       gap: 80px;

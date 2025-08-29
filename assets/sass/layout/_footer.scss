@@ -25,6 +25,10 @@
     grid-template-columns: 4fr 2fr 2fr 2.5fr 3.5fr;
     gap: 40px;
 
+    @include breakpoint-down(xxl){
+      gap: 24px;
+    }
+
     @include breakpoint-down(lg){
       grid-template-columns: repeat(2, 1fr);
       gap: 32px;

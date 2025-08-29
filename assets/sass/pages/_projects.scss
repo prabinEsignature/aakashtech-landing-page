@@ -12,17 +12,30 @@
     padding-left: 72px;
     padding-right: 72px;
 
-    @include breakpoint-down(md){
-      padding-left: 64px;
-      padding-right: 64px;
+    @include breakpoint-down(lg){
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+
+    @include breakpoint-down(xs){
+      padding-left: 40px;
+      padding-right: 40px;
     }
 
     .swiper-button-next{
       top: 26px;
+
+      @include breakpoint-down(sm){
+        top: 22px;
+      }
     }
 
     .swiper-button-prev{
       top: 26px;
+
+      @include breakpoint-down(sm){
+        top: 22px;
+      }
     }
 
     .swiper-slide {
@@ -271,7 +284,7 @@
     }
 
     @include breakpoint-down(xs) {
-      padding: 28px;
+      padding: 28px 20px;
     }
 
     &-content {
@@ -294,6 +307,10 @@
   position: relative;
   overflow-x: clip;
   min-height: 734px;
+
+  @include breakpoint-down(lg){
+    min-height: auto;
+  }
 
   &::after {
     content: "";
@@ -635,6 +652,10 @@
 .atech-project-demo {
   margin-top: -180px;
 
+  @include breakpoint-down(lg){
+    margin-top: 0;
+  }
+
   .video-wrapper {
     max-width: 1200px;
     width: 100%;
@@ -677,9 +698,26 @@
         z-index: 1;
         border: none;
 
+        @include breakpoint-down(md){
+          width: 80px;
+          height: 80px;
+        }
+
+        @include breakpoint-down(sm){
+          width: 60px;
+          height: 60px;
+        }
+
         img {
           position: relative;
           z-index: 1;
+        }
+
+        .btn-icon{
+          width: 20px;
+          height: 20px;
+          min-width: 20px;
+          min-height: 20px;
         }
 
         &::after {
@@ -693,6 +731,21 @@
           height: 110px;
           border-radius: 100%;
           z-index: -1;
+
+          @include breakpoint-down(xl){
+            width: 92px;
+            height: 92px;
+          }
+
+          @include breakpoint-down(md){
+            width: 80px;
+            height: 80px;
+          }
+
+          @include breakpoint-down(sm){
+            width: 60px;
+            height: 60px;
+          }
         }
       }
     }

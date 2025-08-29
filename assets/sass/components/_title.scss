@@ -31,6 +31,10 @@
         gap: 24px!important;
     }
 
+    @include breakpoint-down(xs){
+        gap: 20px!important;
+    }
+
     &-text {
         margin-bottom: 28px;
 

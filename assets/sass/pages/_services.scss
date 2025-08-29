@@ -10,6 +10,10 @@
   .services-banner-highlights {
     .services-highlights {
       &-item {
+        @include breakpoint-down(xs){
+          font-size: 14px!important;
+        }
+
         &::after {
           content: "";
           position: absolute;
@@ -34,6 +38,10 @@
 
         @include breakpoint-down(lg) {
           row-gap: 8px;
+        }
+
+        @include breakpoint-down(xs){
+          row-gap: 6px;
         }
       }
     }
@@ -205,6 +213,10 @@
 
         @include breakpoint-down(sm) {
           height: 56px;
+        }
+
+        @include breakpoint-down(xs){
+          padding: 14px 20px !important;
         }
       }
 

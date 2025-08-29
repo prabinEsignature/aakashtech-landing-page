@@ -246,15 +246,15 @@ $text-sizes: (
 //   }
 // }
 
-@each $heading, $size-map in $heading-sizes {
-  #{$heading},
-  .#{$heading}{
-    @include heading-font-sizes($size-map);
-    & {
-      margin-top: 12px;
-    }
-  }
-}
+// @each $heading, $size-map in $heading-sizes {
+//   #{$heading},
+//   .#{$heading}{
+//     @include heading-font-sizes($size-map);
+//     & {
+//       margin-top: 12px;
+//     }
+//   }
+// }
 
 // Paragraph Styles
 p {
