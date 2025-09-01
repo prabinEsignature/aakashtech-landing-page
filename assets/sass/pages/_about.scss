@@ -82,7 +82,7 @@
             border-radius: 28px;
           }
 
-          @include breakpoint-down(sm){
+          @include breakpoint-down(sm) {
             display: none;
           }
         }
@@ -92,12 +92,12 @@
         &-item {
           background: rgba(255, 255, 255, 0.2);
 
-          @include breakpoint-down(lg){
-            border-radius: 20px!important;
+          @include breakpoint-down(lg) {
+            border-radius: 20px !important;
           }
 
-          @include breakpoint-down(sm){
-            border-radius: 16px!important;
+          @include breakpoint-down(sm) {
+            border-radius: 16px !important;
           }
         }
       }
@@ -108,8 +108,12 @@
 .atech-about-mvg {
   background: url($img-path + "about/mvg_bg.png") center/cover no-repeat;
 
-  @include breakpoint-down(lg){
+  @include breakpoint-down(lg) {
     background-size: 1000px auto;
+  }
+
+  @include breakpoint-down(sm) {
+    background-size: 600px auto;
   }
 
   .about-mvg {
@@ -130,7 +134,7 @@
         grid-column: 1 / 3;
         height: 380px;
 
-        @include breakpoint-down(xs){
+        @include breakpoint-down(xs) {
           grid-column: 1;
         }
       }
@@ -167,7 +171,7 @@
             width: 64px;
             height: 64px;
 
-            @include breakpoint-down(lg){
+            @include breakpoint-down(lg) {
               width: 56px;
               height: 56px;
             }
@@ -243,8 +247,11 @@
 
           @include breakpoint-down(xs) {
             bottom: 12px;
-            left: 12px;
-            right: 12px;
+            left: 50%;
+            right: auto;
+            max-width: 240px;
+            width: 100%;
+            transform: translateX(-50%);
           }
 
           &-group {
@@ -265,7 +272,7 @@
             }
 
             @include breakpoint-down(xs) {
-              padding: 24px 20px !important;
+              padding: 24px 20px 16px 20px !important;
             }
           }
         }

@@ -27760,6 +27760,7 @@ h5,
 h6,
 p {
   overflow-wrap: break-word;
+  margin-bottom: 0;
 }
 
 textarea {
@@ -28352,7 +28353,7 @@ a:visited, a:link {
 .content-stylings h4,
 .content-stylings h5,
 .content-stylings h6 {
-  margin-bottom: 20px !important;
+  margin-bottom: 16px !important;
 }
 .content-stylings p,
 .content-stylings ul,
@@ -32243,6 +32244,11 @@ table td {
   background: url("../../../assets/images/projects/projects_banner_bg.png") top/cover no-repeat;
 }
 
+@media (max-width: 479.98px) {
+  .atech-projects-showcase {
+    padding-top: 12px !important;
+  }
+}
 .atech-projects-showcase .projects-btns-slider-wrapper {
   padding-left: 72px;
   padding-right: 72px;
@@ -32286,6 +32292,12 @@ table td {
     padding-right: 4px;
   }
 }
+@media (max-width: 479.98px) {
+  .atech-projects-showcase .projects-btns-slider-wrapper .swiper-slide {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
 .atech-projects-showcase .projects-btns-slider-wrapper .projects-btn {
   height: 44px;
 }
@@ -32307,6 +32319,11 @@ table td {
 @media (max-width: 575.98px) {
   .atech-projects-showcase .projects-btns-slider-wrapper .projects-btn {
     height: 32px;
+  }
+}
+@media (max-width: 479.98px) {
+  .atech-projects-showcase .projects-btns-slider-wrapper .projects-btn {
+    font-size: 13px !important;
   }
 }
 .atech-projects-showcase .projects-btns-slider-wrapper .projects-btn.is-checked {
@@ -34253,6 +34270,11 @@ table td {
     background-size: 1000px auto;
   }
 }
+@media (max-width: 575.98px) {
+  .atech-about-mvg {
+    background-size: 600px auto;
+  }
+}
 .atech-about-mvg .about-mvg-grid {
   gap: 80px;
 }
@@ -34369,8 +34391,11 @@ table td {
 @media (max-width: 479.98px) {
   .atech-services-teams .services-teams-item .teams-item-info {
     bottom: 12px;
-    left: 12px;
-    right: 12px;
+    left: 50%;
+    right: auto;
+    max-width: 240px;
+    width: 100%;
+    transform: translateX(-50%);
   }
 }
 @media (max-width: 1399.98px) {
@@ -34395,7 +34420,7 @@ table td {
 }
 @media (max-width: 479.98px) {
   .atech-services-teams .services-teams-item .teams-item-info-group {
-    padding: 24px 20px !important;
+    padding: 24px 20px 16px 20px !important;
   }
 }
 .atech-services-teams .services-teams-item:hover .teams-item-info::after {
