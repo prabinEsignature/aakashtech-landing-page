@@ -30495,6 +30495,25 @@ table td {
     transform: translateX(100%);
     transition: all ease-in-out 300ms;
     overflow: hidden;
+    max-height: 100vh;
+    overflow-y: scroll;
+  }
+  .atech-navbar .atech-menu-parent::-webkit-scrollbar {
+    width: 8px;
+    height: 0;
+  }
+  .atech-navbar .atech-menu-parent::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: transparent;
+  }
+  .atech-navbar .atech-menu-parent::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    -webkit-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+  }
+  .atech-navbar .atech-menu-parent::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(219.5, 219.5, 219.5);
   }
   .atech-navbar .atech-menu-parent.is-open {
     transform: translateX(0);
@@ -30591,30 +30610,11 @@ table td {
     width: 100%;
     margin: 0;
     border-radius: 0 !important;
-    max-height: calc(100vh - 104px);
-    overflow-y: scroll;
     padding: 0;
     box-shadow: none !important;
     visibility: visible !important;
     opacity: 1 !important;
     display: none !important;
-  }
-  .atech-navbar .atech-menu-submenu::-webkit-scrollbar {
-    width: 8px;
-    height: 0;
-  }
-  .atech-navbar .atech-menu-submenu::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background-color: transparent;
-  }
-  .atech-navbar .atech-menu-submenu::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: #f5f5f5;
-    -webkit-transition: background-color 0.3s ease;
-    transition: background-color 0.3s ease;
-  }
-  .atech-navbar .atech-menu-submenu::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(219.5, 219.5, 219.5);
   }
   .atech-navbar .atech-menu-submenu.is-open {
     display: block !important;
