@@ -30067,12 +30067,20 @@ input:-webkit-autofill {
     min-height: 36px;
   }
 }
-.pagination-block.blogs-pagination .page-link:hover, .pagination-block.blogs-pagination .page-link:focus, .pagination-block.blogs-pagination .page-link.active, .pagination-block.blogs-pagination .page-link.current {
+.pagination-block.blogs-pagination .page-link:hover, .pagination-block.blogs-pagination .page-link:focus {
   background: #d7eaf7 !important;
   color: #3797d5 !important;
 }
-.pagination-block.blogs-pagination .page-link:hover .page-num, .pagination-block.blogs-pagination .page-link:focus .page-num, .pagination-block.blogs-pagination .page-link.active .page-num, .pagination-block.blogs-pagination .page-link.current .page-num {
+.pagination-block.blogs-pagination .page-link:hover .page-num, .pagination-block.blogs-pagination .page-link:focus .page-num {
   color: #3797d5 !important;
+}
+.pagination-block.blogs-pagination .page-link.active, .pagination-block.blogs-pagination .page-link.current {
+  background: #3797d5 !important;
+  color: #ffffff !important;
+  border-color: #3797d5 !important;
+}
+.pagination-block.blogs-pagination .page-link.active .page-num, .pagination-block.blogs-pagination .page-link.current .page-num {
+  color: #ffffff !important;
 }
 .pagination-block.blogs-pagination .page-link-num {
   color: #3797d5 !important;

@@ -23,14 +23,23 @@
             }
 
             &:hover,
-            &:focus,
-            &.active,
-            &.current {
+            &:focus{
                 background: color("primary-100") !important;
                 color: color("primary-500") !important;
 
                 .page-num {
                     color: color("primary-500") !important;
+                }
+            }
+
+            &.active,
+            &.current {
+                background: color("primary-500") !important;
+                color: color("white") !important;
+                border-color: color("primary-500") !important;
+
+                .page-num {
+                    color: color("white") !important;
                 }
             }
 
