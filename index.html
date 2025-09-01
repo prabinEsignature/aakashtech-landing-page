@@ -591,7 +591,7 @@
       <section class="atech-home-banner overflow-hidden">
         <div class="atech-home-banner-container container segment-pt-100">
           <h1
-            class="text-onyx-700 font-bold home-banner-ttl text-8xl -tracking-02 text-center mt-0 position-relative after-ttl-border">
+            class="text-onyx-700 font-bold home-banner-ttl text-8xl -tracking-02 text-center mt-0 position-relative after-ttl-border split">
             Innovative
             <span class="text-primary-500">Digital Solutions</span> for <br />
             Modern Businesses
@@ -970,7 +970,7 @@
             </div>
           </div>
         </div>
-        <div class="home-about-img position-relative">
+        <div class="home-about-img position-relative zoom-on-scroll">
           <img class="position-relative z-1" src="assets/images/home/home_intro_img.png" alt="" />
         </div>
       </div>
@@ -3921,29 +3921,69 @@
   <!-- CUSTOM JS -->
   <script src="assets/js/main.js"></script>
   <script>
-    // Register the plugin
-    gsap.registerPlugin(ScrollTrigger);
+    document.addEventListener("DOMContentLoaded", () => {
+      // Register the plugin
+      gsap.registerPlugin(ScrollTrigger, SplitText);
 
-    // Animate box when it enters the viewport
-    const sectionHeadingItems = gsap.utils.toArray('.segment-heading-top');
+      // Timeline for animating the home banner title
+      const homeBannerTimeline = gsap.timeline();
 
-    sectionHeadingItems.forEach((el) => {
-      gsap.set(el, { y: 60, opacity: 0 });
+      // Split the home banner title into words for animation
+      const homeBannerSplit = new SplitText(".home-banner-ttl", { type: "words" });
 
-      gsap.to(el, {
-        y: 0,
-        opacity: 1,
-        duration: 1.5,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: el,
-          // Start when the top of element hits 80% down the viewport
-          // (easier to hit than 'center center')
-          start: 'top 80%',
-          end: 'bottom top',
-          toggleActions: 'play none none reverse',
-          // invalidateOnRefresh: true
-        }
+      // Animate each word of the home banner title
+      homeBannerTimeline.from(homeBannerSplit.words, {
+        opacity: 0,
+        y: 50,
+        duration: 1.2,
+        ease: "back",
+        stagger: 0.1
+      });
+
+      // Select all images with the common class
+      const zoomImages = document.querySelectorAll(".zoom-on-scroll");
+
+      // Apply zoom-out animation to each image when it enters viewport
+      zoomImages.forEach(img => {
+        gsap.fromTo(img,
+          { scale: 1.5, opacity: 0 }, // start zoomed-in and invisible
+          {
+            scale: 1,                  // zoom out to normal size
+            opacity: 1,                // fade in
+            duration: 2,
+            ease: "power3.out",
+            transformOrigin: "center center",
+            scrollTrigger: {
+              trigger: img,            // element to trigger animation
+              start: "top 80%",        // when top of image reaches 80% of viewport
+              toggleActions: "play none none none", // play once
+            }
+          }
+        );
+      });
+
+
+      // Animate box when it enters the viewport
+      const sectionHeadingItems = gsap.utils.toArray('.segment-heading-top');
+
+      sectionHeadingItems.forEach((el) => {
+        gsap.set(el, { y: 60, opacity: 0 });
+
+        gsap.to(el, {
+          y: 0,
+          opacity: 1,
+          duration: 1.5,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: el,
+            // Start when the top of element hits 80% down the viewport
+            // (easier to hit than 'center center')
+            start: 'top 80%',
+            end: 'bottom top',
+            toggleActions: 'play none none reverse',
+            // invalidateOnRefresh: true
+          }
+        });
       });
     });
   </script>
