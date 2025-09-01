@@ -73,8 +73,6 @@ $z-index-navbar-toggler: 1010;
         transition: $default-transition;
         overflow: hidden;
         // background: linear-gradient(135deg, hsla(202, 67%, 95%, 1) 0%, hsla(204, 67%, 91%, 1) 50%, hsla(202, 67%, 95%, 1) 100%);
-
-        // new test stylings
         max-height: 100vh;
         @include scrollbar("y");
 
