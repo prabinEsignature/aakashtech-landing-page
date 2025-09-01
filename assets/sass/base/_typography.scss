@@ -198,6 +198,7 @@ $text-sizes: (
   h5.text-#{$text-class},
   h6.text-#{$text-class} {
     font-family: $font-family-dm-sans;
+    letter-spacing: map.get($headings-config, "letter-spacing") !important;
   }
 }
 

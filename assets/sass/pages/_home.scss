@@ -123,7 +123,7 @@
 
         @include breakpoint-down(sm) {
           font-size: 16px !important;
-          top: -24px;
+          top: -12px;
           left: 18%;
           transform: translateX(-50%);
         }

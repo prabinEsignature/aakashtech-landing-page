@@ -27871,6 +27871,7 @@ h4.text-3xs,
 h5.text-3xs,
 h6.text-3xs {
   font-family: "DM Sans", sans-serif;
+  letter-spacing: -0.03em !important;
 }
 
 .text-2xs {
@@ -27889,6 +27890,7 @@ h4.text-2xs,
 h5.text-2xs,
 h6.text-2xs {
   font-family: "DM Sans", sans-serif;
+  letter-spacing: -0.03em !important;
 }
 
 .text-xs {
@@ -27907,6 +27909,7 @@ h4.text-xs,
 h5.text-xs,
 h6.text-xs {
   font-family: "DM Sans", sans-serif;
+  letter-spacing: -0.03em !important;
 }
 
 .text-sm {
@@ -27925,6 +27928,7 @@ h4.text-sm,
 h5.text-sm,
 h6.text-sm {
   font-family: "DM Sans", sans-serif;
+  letter-spacing: -0.03em !important;
 }
 
 .text-base {
@@ -27943,6 +27947,7 @@ h4.text-base,
 h5.text-base,
 h6.text-base {
   font-family: "DM Sans", sans-serif;
+  letter-spacing: -0.03em !important;
 }
 
 .text-lg {
@@ -27966,6 +27971,7 @@ h4.text-lg,
 h5.text-lg,
 h6.text-lg {
   font-family: "DM Sans", sans-serif;
+  letter-spacing: -0.03em !important;
 }
 
 .text-xl {
@@ -27989,6 +27995,7 @@ h4.text-xl,
 h5.text-xl,
 h6.text-xl {
   font-family: "DM Sans", sans-serif;
+  letter-spacing: -0.03em !important;
 }
 
 .text-2xl {
@@ -28022,6 +28029,7 @@ h4.text-2xl,
 h5.text-2xl,
 h6.text-2xl {
   font-family: "DM Sans", sans-serif;
+  letter-spacing: -0.03em !important;
 }
 
 .text-3xl {
@@ -28055,6 +28063,7 @@ h4.text-3xl,
 h5.text-3xl,
 h6.text-3xl {
   font-family: "DM Sans", sans-serif;
+  letter-spacing: -0.03em !important;
 }
 
 .text-4xl {
@@ -28088,6 +28097,7 @@ h4.text-4xl,
 h5.text-4xl,
 h6.text-4xl {
   font-family: "DM Sans", sans-serif;
+  letter-spacing: -0.03em !important;
 }
 
 .text-5xl {
@@ -28121,6 +28131,7 @@ h4.text-5xl,
 h5.text-5xl,
 h6.text-5xl {
   font-family: "DM Sans", sans-serif;
+  letter-spacing: -0.03em !important;
 }
 
 .text-6xl {
@@ -28159,6 +28170,7 @@ h4.text-6xl,
 h5.text-6xl,
 h6.text-6xl {
   font-family: "DM Sans", sans-serif;
+  letter-spacing: -0.03em !important;
 }
 
 .text-7xl {
@@ -28197,6 +28209,7 @@ h4.text-7xl,
 h5.text-7xl,
 h6.text-7xl {
   font-family: "DM Sans", sans-serif;
+  letter-spacing: -0.03em !important;
 }
 
 .text-7xl-mid {
@@ -28235,6 +28248,7 @@ h4.text-7xl-mid,
 h5.text-7xl-mid,
 h6.text-7xl-mid {
   font-family: "DM Sans", sans-serif;
+  letter-spacing: -0.03em !important;
 }
 
 .text-8xl {
@@ -28273,6 +28287,7 @@ h4.text-8xl,
 h5.text-8xl,
 h6.text-8xl {
   font-family: "DM Sans", sans-serif;
+  letter-spacing: -0.03em !important;
 }
 
 .text-9xl {
@@ -28311,6 +28326,7 @@ h4.text-9xl,
 h5.text-9xl,
 h6.text-9xl {
   font-family: "DM Sans", sans-serif;
+  letter-spacing: -0.03em !important;
 }
 
 /* #### HEADINGS #### */
@@ -30931,7 +30947,7 @@ table td {
 @media (max-width: 575.98px) {
   .atech-home-process .home-process-list-ttl {
     font-size: 16px !important;
-    top: -24px;
+    top: -12px;
     left: 18%;
     transform: translateX(-50%);
   }
@@ -33828,6 +33844,11 @@ table td {
 @media (max-width: 575.98px) {
   .atech-services-process .services-process-list {
     gap: 100px;
+  }
+}
+@media (max-width: 479.98px) {
+  .atech-services-process .services-process-list {
+    gap: 92px;
   }
 }
 .atech-services-process .services-process-item::after {

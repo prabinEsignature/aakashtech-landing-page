@@ -393,6 +393,10 @@ $process-color-keys: ("turquoise", "blue-violet", "coral", "crayola", "emerald",
       @include breakpoint-down(sm){
         gap: 100px;
       }
+
+      @include breakpoint-down(xs){
+        gap: 92px;
+      }
     }
 
     &-item {
