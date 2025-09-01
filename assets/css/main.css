@@ -33132,8 +33132,7 @@ table td {
 }
 @media (max-width: 575.98px) {
   .atech-blogs-main .blogs-cat-btn {
-    padding-top: 6px !important;
-    padding-bottom: 6px !important;
+    padding: 6px 12px !important;
   }
 }
 .atech-blogs-main .blogs-cat-btn:not(.is-checked):hover {

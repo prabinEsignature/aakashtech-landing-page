@@ -85,8 +85,7 @@
       transition: $default-transition;
 
       @include breakpoint-down(sm){
-        padding-top: 6px!important;
-        padding-bottom: 6px!important;
+        padding: 6px 12px!important;
       }
 
       &:not(.is-checked) {
