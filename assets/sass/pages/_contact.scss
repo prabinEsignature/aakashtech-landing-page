@@ -8,6 +8,10 @@
       scale: 1.6;
       transform: translate(-80px, 20px);
     }
+
+    @include breakpoint-down(xs){
+      scale: 1.8;
+    }
   }
 }
 
@@ -17,14 +21,6 @@
 
     &-container {
       gap: 60px;
-    }
-  }
-
-  .contact-grid-block {
-    @include breakpoint-down(sm) {
-      background: none !important;
-      padding-left: 16px !important;
-      padding-right: 16px !important;
     }
   }
 

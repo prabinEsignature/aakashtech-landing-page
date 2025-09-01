@@ -28354,6 +28354,7 @@ a:visited, a:link {
 .content-stylings h5,
 .content-stylings h6 {
   margin-bottom: 16px !important;
+  scroll-margin-top: 100px;
 }
 .content-stylings p,
 .content-stylings ul,
@@ -34088,19 +34089,17 @@ table td {
     transform: translate(-80px, 20px);
   }
 }
+@media (max-width: 479.98px) {
+  .contact-banner-location-img {
+    scale: 1.8;
+  }
+}
 
 .atech-contact-main .atech-contact {
   background: none !important;
 }
 .atech-contact-main .atech-contact-container {
   gap: 60px;
-}
-@media (max-width: 575.98px) {
-  .atech-contact-main .contact-grid-block {
-    background: none !important;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-  }
 }
 .atech-contact-main .contact-grid-block-wrapper::after {
   content: "";
