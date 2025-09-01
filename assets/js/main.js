@@ -263,7 +263,7 @@ document.addEventListener("DOMContentLoaded", () => {
       slidesPerView: "auto",
       freeMode: true,
       spaceBetween: 0,
-      allowTouchMove: false,
+      // allowTouchMove: false,
       centeredSlides: true,
       centeredSlidesBounds: true,
       centerInsufficientSlides: true,
