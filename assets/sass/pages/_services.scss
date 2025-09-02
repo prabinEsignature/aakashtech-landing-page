@@ -258,6 +258,12 @@
     }
   }
 
+  .track-record-stats{
+    @include breakpoint-up(xl){
+      grid-template-columns: repeat(2, 1fr)!important;
+    }
+  }
+
   .record-stats-item {
     height: 100%;
 

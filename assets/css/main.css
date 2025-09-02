@@ -33257,6 +33257,11 @@ input:-webkit-autofill {
     gap: 20px;
   }
 }
+@media (min-width: 1200px) {
+  .atech-track-record .track-record-stats {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
 .atech-track-record .record-stats-item {
   height: 100%;
 }

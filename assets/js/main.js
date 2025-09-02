@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   mobileSidebarOpenBtn?.addEventListener("click", () => {
     mobileSidebarOpenBtn.classList.add("is-open");
-
     gsap.set(navbarMenuParent, { display: "block" });
 
     gsap.fromTo(navbarOverlayBg,
@@ -68,7 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   mobileSidebarCloseBtn?.addEventListener("click", closeSidebar);
   navbarOverlayBg?.addEventListener("click", closeSidebar);
-
 
   // SWIPER SLIDERS
   document.querySelectorAll('.atech-menu-item').forEach(item => {

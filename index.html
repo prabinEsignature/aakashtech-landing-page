@@ -672,7 +672,8 @@
                 src="assets/images/home/home_banner_product.png" alt="" />
             </div>
             <div class="banner-product-feats product-feats-right d-grid align-items-start">
-              <div class="product-feat-item d-flex align-items-sm-end align-items-center xl-gap-4 lg-gap-2 gap-3">
+              <div
+                class="product-feat-item d-flex align-items-xl-center align-items-sm-end align-items-center xl-gap-4 lg-gap-2 gap-3">
                 <div
                   class="feat-item-icon border-primary-400-1 rounded-8 d-flex align-items-center justify-content-center position-relative">
                   <img class="icon-40" src="assets/icons/bp_icon_1.svg" alt="" />
@@ -691,7 +692,8 @@
                   </div>
                 </div>
               </div>
-              <div class="product-feat-item d-flex align-items-sm-end align-items-center xl-gap-4 lg-gap-2 gap-3">
+              <div
+                class="product-feat-item d-flex align-items-xl-center align-items-sm-end align-items-center xl-gap-4 lg-gap-2 gap-3">
                 <div
                   class="feat-item-icon border-primary-400-1 rounded-8 d-flex align-items-center justify-content-center position-relative">
                   <img class="icon-40" src="assets/icons/bp_icon_5.svg" alt="" />
@@ -710,7 +712,8 @@
                   </div>
                 </div>
               </div>
-              <div class="product-feat-item d-flex align-items-sm-end align-items-center xl-gap-4 lg-gap-2 gap-3">
+              <div
+                class="product-feat-item d-flex align-items-xl-center align-items-sm-end align-items-center xl-gap-4 lg-gap-2 gap-3">
                 <div
                   class="feat-item-icon border-primary-400-1 rounded-8 d-flex align-items-center justify-content-center position-relative">
                   <img class="icon-40" src="assets/icons/bp_icon_6.svg" alt="" />
@@ -3925,19 +3928,44 @@
       // Register the plugin
       gsap.registerPlugin(ScrollTrigger, SplitText);
 
-      // Timeline for animating the home banner title
-      const homeBannerTimeline = gsap.timeline();
+      document.fonts.ready.then(() => {
+        // Timeline for animating the home banner title
+        const homeBannerTimeline = gsap.timeline();
 
-      // Split the home banner title into words for animation
-      const homeBannerSplit = new SplitText(".home-banner-ttl", { type: "words" });
+        // Split the home banner title into words for animation
+        const homeBannerSplit = new SplitText(".home-banner-ttl", { type: "words" });
 
-      // Animate each word of the home banner title
-      homeBannerTimeline.from(homeBannerSplit.words, {
-        opacity: 0,
-        y: 50,
-        duration: 1.2,
-        ease: "back",
-        stagger: 0.1
+        // Animate each word of the home banner title
+        homeBannerTimeline.from(homeBannerSplit.words, {
+          opacity: 0,
+          y: 50,
+          duration: 1.2,
+          ease: "back",
+          stagger: 0.1
+        });
+
+        // Animate box when it enters the viewport
+        const sectionHeadingItems = gsap.utils.toArray('.segment-heading-top');
+
+        sectionHeadingItems.forEach((el) => {
+          gsap.set(el, { y: 60, opacity: 0 });
+
+          gsap.to(el, {
+            y: 0,
+            opacity: 1,
+            duration: 1.5,
+            ease: 'power3.out',
+            scrollTrigger: {
+              trigger: el,
+              // Start when the top of element hits 80% down the viewport
+              // (easier to hit than 'center center')
+              start: 'top 80%',
+              end: 'bottom top',
+              toggleActions: 'play none none reverse',
+              // invalidateOnRefresh: true
+            }
+          });
+        });
       });
 
       // Select all images with the common class
@@ -3963,28 +3991,7 @@
       });
 
 
-      // Animate box when it enters the viewport
-      const sectionHeadingItems = gsap.utils.toArray('.segment-heading-top');
 
-      sectionHeadingItems.forEach((el) => {
-        gsap.set(el, { y: 60, opacity: 0 });
-
-        gsap.to(el, {
-          y: 0,
-          opacity: 1,
-          duration: 1.5,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: el,
-            // Start when the top of element hits 80% down the viewport
-            // (easier to hit than 'center center')
-            start: 'top 80%',
-            end: 'bottom top',
-            toggleActions: 'play none none reverse',
-            // invalidateOnRefresh: true
-          }
-        });
-      });
     });
   </script>
 </body>
