@@ -10,29 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const appscreensSwiperContainer = document.querySelector('.appscreens-slider');
   const servicesDetailsTwoSwiperContainer = document.querySelector('.services-details-two-slider');
 
-  // const mobileSidebarOpenBtn = document.getElementById("mobileSidebarOpenBtn");
-  // const mobileSidebarCloseBtn = document.getElementById("mobileSidebarCloseBtn");
-  // const navbarOverlayBg = document.querySelector(".atech-navbar-overlay-bg");
-  // const navbarMenuParent = document.querySelector(".atech-menu-parent");
-
-  // mobileSidebarOpenBtn?.addEventListener('click', () => {
-  //   mobileSidebarOpenBtn.classList.add('is-open');
-  //   navbarOverlayBg.classList.add('is-open');
-  //   navbarMenuParent.classList.add('is-open');
-  // });
-
-  // mobileSidebarCloseBtn?.addEventListener('click', () => {
-  //   mobileSidebarOpenBtn.classList.remove('is-open');
-  //   navbarOverlayBg.classList.remove('is-open');
-  //   navbarMenuParent.classList.remove('is-open');
-  // });
-
-  // navbarOverlayBg?.addEventListener('click', () => {
-  //   mobileSidebarOpenBtn.classList.remove('is-open');
-  //   navbarOverlayBg.classList.remove('is-open');
-  //   navbarMenuParent.classList.remove('is-open');
-  // });
-
   const mobileSidebarOpenBtn = document.getElementById("mobileSidebarOpenBtn");
   const mobileSidebarCloseBtn = document.getElementById("mobileSidebarCloseBtn");
   const navbarOverlayBg = document.querySelector(".atech-navbar-overlay-bg");
@@ -227,7 +204,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   /* ##### GSAP ANIMATION ##### */
-  // Register GSAP plugins
+  // REGISTER GSAP PLUGINS
   gsap.registerPlugin(ScrollTrigger, SplitText);
 
   document.fonts.ready.then(() => {
@@ -302,10 +279,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const infoDiv = wrapper.querySelector('.services-item-info');
 
       if (imgDiv && infoDiv) {
-        // Determine animation direction based on even/odd index
-        const isEven = index % 2 === 1; // 0-based index, so 1,3,5... are even visually
+        const isEven = index % 2 === 1;
 
-        // Image animation
         gsap.from(imgDiv, {
           x: isEven ? 100 : -100, // right for even, left for odd
           opacity: 0,
@@ -318,7 +293,6 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
 
-        // Info animation
         gsap.from(infoDiv, {
           x: isEven ? -100 : 100, // left for even, right for odd
           opacity: 0,
@@ -333,6 +307,46 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  const animateTwoColumnGrids = (selector, leftClass, rightClass) => {
+    const grids = gsap.utils.toArray(selector);
+
+    grids.forEach(grid => {
+      const leftBlock = grid.querySelector(leftClass);
+      const rightBlock = grid.querySelector(rightClass);
+
+      if (leftBlock && rightBlock) {
+        gsap.from(leftBlock, {
+          x: -100,
+          opacity: 0,
+          duration: 1.2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: grid,
+            start: "top 80%",
+            toggleActions: "play none none reverse"
+          }
+        });
+
+        gsap.from(rightBlock, {
+          x: 100,
+          opacity: 0,
+          duration: 1.2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: grid,
+            start: "top 80%",
+            toggleActions: "play none none reverse"
+          }
+        });
+      }
+    });
+  };
+
+  animateTwoColumnGrids(".contact-grid-block", ".contact-block-info", ".contact-block-form");
+  animateTwoColumnGrids(".about-banner-segment-one", ".about-banner-segment-description", ".about-banner-segment-img");
+  animateTwoColumnGrids(".banner-segment-two-grid", ".about-banner-segment-img", ".about-banner-segment-description");
+  animateTwoColumnGrids(".about-mvg-grid", ".about-mvg-img-group", ".about-mvg-details");
 
   // Initialize client logo slider
   if (clientsSwiperContainer) {
