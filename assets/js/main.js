@@ -33,44 +33,41 @@ document.addEventListener("DOMContentLoaded", () => {
   //   navbarMenuParent.classList.remove('is-open');
   // });
 
-  // Elements
-const mobileSidebarOpenBtn = document.getElementById("mobileSidebarOpenBtn");
-const mobileSidebarCloseBtn = document.getElementById("mobileSidebarCloseBtn");
-const navbarOverlayBg = document.querySelector(".atech-navbar-overlay-bg");
-const navbarMenuParent = document.querySelector(".atech-menu-parent");
+  const mobileSidebarOpenBtn = document.getElementById("mobileSidebarOpenBtn");
+  const mobileSidebarCloseBtn = document.getElementById("mobileSidebarCloseBtn");
+  const navbarOverlayBg = document.querySelector(".atech-navbar-overlay-bg");
+  const navbarMenuParent = document.querySelector(".atech-menu-parent");
 
-// Open sidebar
-mobileSidebarOpenBtn?.addEventListener("click", () => {
-  mobileSidebarOpenBtn.classList.add("is-open");
+  mobileSidebarOpenBtn?.addEventListener("click", () => {
+    mobileSidebarOpenBtn.classList.add("is-open");
 
-  gsap.set(navbarMenuParent, { display: "block" });
+    gsap.set(navbarMenuParent, { display: "block" });
 
-  gsap.fromTo(navbarOverlayBg,
-    { autoAlpha: 0 },
-    { autoAlpha: 1, duration: 0.1 }
-  );
+    gsap.fromTo(navbarOverlayBg,
+      { autoAlpha: 0 },
+      { autoAlpha: 1, duration: 0.2 }
+    );
 
-  gsap.fromTo(navbarMenuParent,
-    { x: "100%" },
-    { x: "0%", duration: 0.2, ease: "power3.out" }
-  );
-});
-
-// Close sidebar
-const closeSidebar = () => {
-  mobileSidebarOpenBtn?.classList.remove("is-open");
-
-  gsap.to(navbarOverlayBg, { autoAlpha: 0, duration: 0.3 });
-  gsap.to(navbarMenuParent, {
-    x: "100%",
-    duration: 0.4,
-    ease: "power3.in",
-    onComplete: () => gsap.set(navbarMenuParent, { display: "none" }),
+    gsap.fromTo(navbarMenuParent,
+      { x: "100%" },
+      { x: "0%", duration: 0.3, ease: "power3.out" }
+    );
   });
-};
 
-mobileSidebarCloseBtn?.addEventListener("click", closeSidebar);
-navbarOverlayBg?.addEventListener("click", closeSidebar);
+  const closeSidebar = () => {
+    mobileSidebarOpenBtn?.classList.remove("is-open");
+
+    gsap.to(navbarOverlayBg, { autoAlpha: 0, duration: 0.1 });
+    gsap.to(navbarMenuParent, {
+      x: "100%",
+      duration: 0.2,
+      ease: "power3.in",
+      onComplete: () => gsap.set(navbarMenuParent, { display: "none" }),
+    });
+  };
+
+  mobileSidebarCloseBtn?.addEventListener("click", closeSidebar);
+  navbarOverlayBg?.addEventListener("click", closeSidebar);
 
 
   // SWIPER SLIDERS
