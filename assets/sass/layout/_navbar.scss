@@ -64,7 +64,6 @@ $z-index-navbar-toggler: 1010;
         top: 0;
         right: 0;
         bottom: 0;
-        width: 408px;
         height: 100%;
         z-index: 999;
         padding: 20px;
@@ -75,6 +74,10 @@ $z-index-navbar-toggler: 1010;
         // background: linear-gradient(135deg, hsla(202, 67%, 95%, 1) 0%, hsla(204, 67%, 91%, 1) 50%, hsla(202, 67%, 95%, 1) 100%);
         max-height: 100vh;
         @include scrollbar("y");
+
+        // TEST STYLINGS
+        max-width: 408px !important;
+        width: 100% !important;
 
         &.is-open {
           transform: translateX(0);

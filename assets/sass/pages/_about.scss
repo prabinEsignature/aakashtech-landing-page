@@ -2,6 +2,7 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+// ATECH ABOUT BANNER SECTION
 .atech-about-banner {
   background: url($img-path + "about/about_us_banner_bg.png") top/cover no-repeat;
 
@@ -105,6 +106,8 @@
   }
 }
 
+
+// ATECH ABOUT MVG SECTION
 .atech-about-mvg {
   background: url($img-path + "about/mvg_bg.png") center/cover no-repeat;
 
@@ -182,6 +185,7 @@
   }
 }
 
+// ATECH SERVICES OFFERS SECTION
 .atech-services-offers {
   background: url($img-path + "about/service_offering_bg.png") top/cover no-repeat;
 
@@ -221,6 +225,7 @@
   }
 }
 
+// ATECH SERVICES TEAMS SECTION
 .atech-services-teams {
   background: url($img-path + "about/teams_bg.png") bottom center/cover no-repeat;
 

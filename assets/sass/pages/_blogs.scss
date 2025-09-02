@@ -2,6 +2,7 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+// ATECH BLOG BANNER SECTION
 .atech-blog-banner {
   min-height: 800px;
 
@@ -17,11 +18,11 @@
     min-height: 720px;
   }
 
-  @include breakpoint-down(lg){
+  @include breakpoint-down(lg) {
     min-height: 690px;
   }
 
-  @include breakpoint-down(md){
+  @include breakpoint-down(md) {
     min-height: 660px;
   }
 
@@ -49,6 +50,7 @@
   }
 }
 
+// ATECH BLOGS SHOWCASE SECTION
 .atech-blogs-showcase {
   margin-top: -360px;
 
@@ -71,12 +73,15 @@
 
     &-vertical {
       .blogs-showcase-ttl {
-        color: color("onyx-700") !important;
+        @include breakpoint-down(xl){
+          color: color("onyx-700") !important;
+        }
       }
     }
   }
 }
 
+// ATECH BLOGS MAIN SECTION
 .atech-blogs-main {
   background: url($img-path + "misc/transparent_waves_bg.png") center/cover no-repeat;
 
@@ -84,8 +89,8 @@
     &-btn {
       transition: $default-transition;
 
-      @include breakpoint-down(sm){
-        padding: 6px 12px!important;
+      @include breakpoint-down(sm) {
+        padding: 6px 12px !important;
       }
 
       &:not(.is-checked) {
@@ -102,6 +107,7 @@
   }
 }
 
+// ATECH DOWNLOAD SHOWCASE SECTION
 .atech-download-showcase {
   min-height: 880px;
 
@@ -115,17 +121,15 @@
     background: linear-gradient(90deg, #d5e9f6 0%, #ecf3f9 25%, #eef5f9 74%, #d5e9f6 100%);
     opacity: 0.8;
   }
-}
 
-.atech-download-showcase {
   .download-showcase-grid {
     gap: 80px;
 
-    @include breakpoint-down(xxl){
+    @include breakpoint-down(xxl) {
       gap: 60px;
     }
 
-    @include breakpoint-down(lg){
+    @include breakpoint-down(lg) {
       gap: 40px;
     }
   }
@@ -134,10 +138,9 @@
 .atech-blog-detail-banner {
   background: linear-gradient(#d5e9f6 0%, #ecf3f9 33%, #ffffff 67%, #ffffff 100%);
 
-  .blog-detail{
-    &-img{
-      @include breakpoint-down(xl){
-        
+  .blog-detail {
+    &-img {
+      @include breakpoint-down(xl) {
       }
     }
   }
@@ -148,12 +151,12 @@
     grid-template-columns: 350px auto;
     gap: 48px;
 
-    @include breakpoint-down(xxl){
+    @include breakpoint-down(xxl) {
       gap: 40px;
       grid-template-columns: 320px auto;
     }
 
-    @include breakpoint-down(lg){
+    @include breakpoint-down(lg) {
       grid-template-columns: 100%;
     }
   }
@@ -164,15 +167,15 @@
   position: sticky;
   top: 120px;
 
-  @include breakpoint-down(xxxl){
+  @include breakpoint-down(xxxl) {
     gap: 28px;
   }
 
-  @include breakpoint-down(xxl){
+  @include breakpoint-down(xxl) {
     gap: 24px;
   }
 
-  @include breakpoint-down(lg){
+  @include breakpoint-down(lg) {
     position: relative;
     top: 0;
   }
@@ -206,7 +209,7 @@
         position: relative;
         transition: $default-transition;
 
-        @include breakpoint-down(xl){
+        @include breakpoint-down(xl) {
           padding: 12px 20px;
         }
 
@@ -283,39 +286,39 @@
   &-prev {
     grid-template-columns: 120px auto;
 
-    @include breakpoint-down(xxxl){
+    @include breakpoint-down(xxxl) {
       grid-template-columns: 100px auto;
     }
 
-    @include breakpoint-down(md){
+    @include breakpoint-down(md) {
       grid-template-columns: 100%;
     }
 
-    @include breakpoint-down(sm){
-      border-right: 0!important;
+    @include breakpoint-down(sm) {
+      border-right: 0 !important;
     }
   }
   &-next {
     grid-template-columns: auto 120px;
 
-    @include breakpoint-down(xxxl){
+    @include breakpoint-down(xxxl) {
       grid-template-columns: auto 100px;
     }
 
-    @include breakpoint-down(md){
+    @include breakpoint-down(md) {
       grid-template-columns: 100%;
     }
 
-    .blog-traverse-img{
+    .blog-traverse-img {
       margin-left: auto;
 
-      @include breakpoint-down(md){
+      @include breakpoint-down(md) {
         order: 1;
       }
     }
 
-    .blog-traverse-info{
-      @include breakpoint-down(md){
+    .blog-traverse-info {
+      @include breakpoint-down(md) {
         order: 2;
       }
     }
@@ -324,12 +327,12 @@
   &-img {
     height: 100px;
 
-    @include breakpoint-down(md){
+    @include breakpoint-down(md) {
       width: 80px;
       height: 80px;
     }
 
-    @include breakpoint-down(xs){
+    @include breakpoint-down(xs) {
       width: 72px;
       height: 72px;
     }

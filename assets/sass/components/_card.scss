@@ -19,63 +19,49 @@
       border-radius: 16px !important;
     }
 
-    .card-img{
+    .card-img {
       @include breakpoint-down(xxl) {
         border-radius: 16px !important;
       }
-  
+
       @include breakpoint-down(xl) {
         border-radius: 12px !important;
       }
-  
+
       @include breakpoint-down(lg) {
         border-radius: 10px !important;
       }
     }
 
-    .card-metadata{
+    .card-metadata {
       transition: $default-transition;
 
-      &-item{
+      &-item {
         transition: $default-transition;
       }
     }
 
     &:hover {
       background: color("primary-100") !important;
-
-      // .card-metadata{
-      //   background: color("primary-500") !important;
-
-      //   &-item{
-      //     color: #fff!important;
-
-      //     [class*="icon-"] {
-      //       img{
-      //         filter: invert(1) brightness(100);
-      //       }
-      //     }
-      //   }
-      // }
     }
 
     &.card-lg {
       .card-img {
         height: 408px;
 
-        @include breakpoint-down(lg){
+        @include breakpoint-down(lg) {
           height: 360px;
         }
 
-        @include breakpoint-down(md){
+        @include breakpoint-down(md) {
           height: 320px;
         }
 
-        @include breakpoint-down(sm){
+        @include breakpoint-down(sm) {
           height: 280px;
         }
 
-        @include breakpoint-down(xs){
+        @include breakpoint-down(xs) {
           height: 240px;
         }
       }
@@ -84,26 +70,26 @@
     &.card-horizontal {
       grid-template-columns: 240px auto;
 
-      @include breakpoint-down(xl){
+      @include breakpoint-down(xl) {
         grid-template-columns: 200px auto;
       }
 
-      @include breakpoint-down(sm){
+      @include breakpoint-down(sm) {
         grid-template-columns: 100%;
       }
 
       .card-img {
         height: 210px;
 
-        @include breakpoint-down(xl){
+        @include breakpoint-down(xl) {
           height: 180px;
         }
 
-        @include breakpoint-down(lg){
+        @include breakpoint-down(lg) {
           height: 160px;
         }
 
-        @include breakpoint-down(md){
+        @include breakpoint-down(md) {
           height: 140px;
         }
       }
@@ -124,15 +110,15 @@
     .card-img {
       height: 278px;
 
-      @include breakpoint-down(md){
+      @include breakpoint-down(md) {
         height: 260px;
       }
 
-      @include breakpoint-down(sm){
+      @include breakpoint-down(sm) {
         height: 240px;
       }
 
-      @include breakpoint-down(xs){
+      @include breakpoint-down(xs) {
         height: 200px;
       }
     }
