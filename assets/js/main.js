@@ -248,29 +248,39 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    // -------------------------------
-    // 3️⃣ Animate Zoom-On-Scroll Images
-    // -------------------------------
-    const zoomImages = document.querySelectorAll(".zoom-on-scroll");
-    if (zoomImages.length > 0) {
-      zoomImages.forEach(img => {
-        gsap.fromTo(img,
-          { scale: 1.5, opacity: 0 },
+    // --------------------------------------
+    // ✨ Reusable Zoom-On-Scroll Animation
+    // --------------------------------------
+    const applyZoomOnScroll = (selector, options = {}) => {
+      const elements = document.querySelectorAll(selector);
+
+      if (!elements.length) return;
+
+      elements.forEach(el => {
+        gsap.fromTo(
+          el,
           {
-            scale: 1,
-            opacity: 1,
-            duration: 2,
-            ease: "power3.out",
-            transformOrigin: "center center",
+            scale: options.startScale || 1.5,
+            opacity: options.startOpacity ?? 0
+          },
+          {
+            scale: options.endScale || 1,
+            opacity: options.endOpacity ?? 1,
+            duration: options.duration || 1.5,
+            ease: options.ease || "power3.out",
+            transformOrigin: options.transformOrigin || "center center",
             scrollTrigger: {
-              trigger: img,
-              start: "top 80%",
-              toggleActions: "play none none none", // play once
+              trigger: el,
+              start: options.start || "top 80%",
+              toggleActions: options.toggleActions || "play none none none",
             }
           }
         );
       });
-    }
+    };
+
+    applyZoomOnScroll(".zoom-on-scroll");
+    
 
     const serviceItems = gsap.utils.toArray('.services-main-item-wrapper');
 
