@@ -226,6 +226,114 @@ document.addEventListener("DOMContentLoaded", () => {
   /* ####### EOF NAVBAR MENU TOGGLE ###### */
 
 
+  /* ##### GSAP ANIMATION ##### */
+  // Register GSAP plugins
+  gsap.registerPlugin(ScrollTrigger, SplitText);
+
+  document.fonts.ready.then(() => {
+
+    // -------------------------------
+    // 1️⃣ Animate Home Banner Title
+    // -------------------------------
+    const homeBannerEl = document.querySelector(".home-banner-ttl");
+    if (homeBannerEl) {
+      const homeBannerSplit = new SplitText(homeBannerEl, { type: "words" });
+
+      const homeBannerTimeline = gsap.timeline();
+      homeBannerTimeline.from(homeBannerSplit.words, {
+        opacity: 0,
+        y: 50,
+        duration: 1.2,
+        ease: "back",
+        stagger: 0.1
+      });
+    }
+
+    // -------------------------------
+    // 2️⃣ Animate Section Headings
+    // -------------------------------
+    const sectionHeadingItems = gsap.utils.toArray('.segment-heading-top');
+    if (sectionHeadingItems.length > 0) {
+      sectionHeadingItems.forEach((el) => {
+        gsap.set(el, { y: 60, opacity: 0 });
+        gsap.to(el, {
+          y: 0,
+          opacity: 1,
+          duration: 1.5,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: el,
+            start: 'top 80%',
+            end: 'bottom top',
+            toggleActions: 'play none none reverse',
+          }
+        });
+      });
+    }
+
+    // -------------------------------
+    // 3️⃣ Animate Zoom-On-Scroll Images
+    // -------------------------------
+    const zoomImages = document.querySelectorAll(".zoom-on-scroll");
+    if (zoomImages.length > 0) {
+      zoomImages.forEach(img => {
+        gsap.fromTo(img,
+          { scale: 1.5, opacity: 0 },
+          {
+            scale: 1,
+            opacity: 1,
+            duration: 2,
+            ease: "power3.out",
+            transformOrigin: "center center",
+            scrollTrigger: {
+              trigger: img,
+              start: "top 80%",
+              toggleActions: "play none none none", // play once
+            }
+          }
+        );
+      });
+    }
+
+    const serviceItems = gsap.utils.toArray('.services-main-item-wrapper');
+
+    serviceItems.forEach((wrapper, index) => {
+      const imgDiv = wrapper.querySelector('.services-item-img');
+      const infoDiv = wrapper.querySelector('.services-item-info');
+
+      if (imgDiv && infoDiv) {
+        // Determine animation direction based on even/odd index
+        const isEven = index % 2 === 1; // 0-based index, so 1,3,5... are even visually
+
+        // Image animation
+        gsap.from(imgDiv, {
+          x: isEven ? 100 : -100, // right for even, left for odd
+          opacity: 0,
+          duration: 1,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: wrapper,
+            start: 'top 80%',
+            toggleActions: 'play none none reverse',
+          }
+        });
+
+        // Info animation
+        gsap.from(infoDiv, {
+          x: isEven ? -100 : 100, // left for even, right for odd
+          opacity: 0,
+          duration: 1,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: wrapper,
+            start: 'top 80%',
+            toggleActions: 'play none none reverse',
+          }
+        });
+      }
+    });
+  });
+
   // Initialize client logo slider
   if (clientsSwiperContainer) {
     const clientSwiper = new Swiper(clientsSwiperContainer, {

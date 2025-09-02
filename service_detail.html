@@ -1599,6 +1599,42 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- CUSTOM JS -->
   <script src="assets/js/main.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    const container = document.querySelector(".services-details-three-list");
+    const items = container.querySelectorAll(".services-details-three-item");
+    const totalHeight = Array.from(items).reduce((sum, item) => sum + item.offsetHeight, 0);
+
+    ScrollTrigger.create({
+      trigger: container,
+      start: "top 100px", // below navbar
+      end: () => "+=" + totalHeight,
+      pin: true,
+      pinSpacing: true,
+      scrub: true
+    });
+
+    items.forEach((item, i) => {
+      gsap.fromTo(
+        item,
+        { autoAlpha: 0, y: 50 },
+        {
+          autoAlpha: 1,
+          y: 0,
+          scrollTrigger: {
+            trigger: item,
+            containerAnimation: ScrollTrigger.getById(container), 
+            start: () => "top 100px",
+            end: () => "bottom 100px",
+            toggleActions: "play none none reverse",
+          },
+          duration: 0.5,
+          ease: "power1.out"
+        }
+      );
+    });
+
+  </script>
 </body>
 
 </html>
