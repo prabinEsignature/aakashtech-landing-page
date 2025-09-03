@@ -13,22 +13,22 @@
         width: 152px;
         height: 92px;
 
-        @include breakpoint-down(lg){
+        @include breakpoint-down(lg) {
             width: 140px;
             height: 80px;
         }
 
-        @include breakpoint-down(md){
+        @include breakpoint-down(md) {
             width: 120px;
             height: 72px;
         }
 
-        @include breakpoint-down(sm){
+        @include breakpoint-down(sm) {
             width: 100px;
             height: 60px;
         }
 
-        @include breakpoint-down(xs){
+        @include breakpoint-down(xs) {
             width: 80px;
             height: 40px;
         }
@@ -41,12 +41,12 @@
     background: $primary-150;
     opacity: 1;
 
-    @include breakpoint-down(lg){
+    @include breakpoint-down(lg) {
         width: 14px;
         height: 14px;
     }
 
-    @include breakpoint-down(sm){
+    @include breakpoint-down(sm) {
         width: 12px;
         height: 12px;
     }
@@ -63,19 +63,19 @@
     background: color("primary-50");
     border-radius: 100%;
 
-    @include breakpoint-down(xl){
+    @include breakpoint-down(xl) {
         width: 40px;
         height: 40px;
         line-height: 40px;
     }
 
-    @include breakpoint-down(lg){
+    @include breakpoint-down(lg) {
         width: 36px;
         height: 36px;
         line-height: 36px;
     }
 
-    @include breakpoint-down(lg){
+    @include breakpoint-down(lg) {
         width: 32px;
         height: 32px;
         line-height: 32px;
@@ -86,24 +86,31 @@
         font-weight: bold;
         color: color("primary-500");
 
-        @include breakpoint-down(xl){
+        @include breakpoint-down(xl) {
             font-size: 18px;
         }
 
-        @include breakpoint-down(md){
+        @include breakpoint-down(md) {
             font-size: 16px;
         }
 
-        @include breakpoint-down(sm){
+        @include breakpoint-down(sm) {
             font-size: 14px;
         }
     }
 }
 
-.swiper-button-prev, .swiper-rtl .swiper-button-next {
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
     left: var(--swiper-navigation-sides-offset, 0);
 }
 
-.swiper-button-next, .swiper-rtl .swiper-button-prev {
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
     right: var(--swiper-navigation-sides-offset, 0);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
 }
