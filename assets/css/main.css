@@ -27839,8 +27839,8 @@ template {
   }
 }
 
-html {
-  font-family: "Instrument Sans", sans-serif;
+body {
+  font-family: "Instrument Sans", sans-serif, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.4;
   font-weight: 600;

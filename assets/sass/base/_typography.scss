@@ -17,8 +17,8 @@ $text-config: (
 );
 
 // BASE TYPOGRAPHY STYLES
-html {
-  font-family: map.get($text-config, "font-family");
+body {
+  font-family: map.get($text-config, "font-family"), Arial, sans-serif;
   font-size: map.get($text-config, "base-font-size");
   line-height: map.get($text-config, "base-line-height");
   font-weight: $font-weight-base;
@@ -39,32 +39,32 @@ $heading-sizes: (
     null: "6xl",
     xl: "5xl",
     lg: "4xl",
-    md: "3xl",
+    md: "3xl"
   ),
   h2: (
     null: "4xl",
     xl: "3xl",
-    lg: "2xl",
+    lg: "2xl"
   ),
   h3: (
     null: "3xl",
     xl: "2xl",
-    lg: "xl",
+    lg: "xl"
   ),
   h4: (
     null: "2xl",
     xl: "xl",
-    lg: "lg",
+    lg: "lg"
   ),
   h5: (
     null: "xl",
     xl: "lg",
-    lg: "base",
+    lg: "base"
   ),
   h6: (
     null: "lg",
     xl: "base",
-    lg: "sm",
+    lg: "sm"
   )
 );
 
@@ -276,7 +276,7 @@ a {
   h4,
   h5,
   h6 {
-    margin-bottom: 16px!important;
+    margin-bottom: 16px !important;
     scroll-margin-top: 100px;
   }
 
