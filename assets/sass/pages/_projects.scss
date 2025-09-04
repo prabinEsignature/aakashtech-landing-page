@@ -373,6 +373,7 @@
 
       @include breakpoint-down(xl) {
         max-width: 800px;
+        min-height: 560px;
         margin-right: auto;
         margin-left: auto;
       }

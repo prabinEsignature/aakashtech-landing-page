@@ -32319,6 +32319,7 @@ input:-webkit-autofill {
 @media (max-width: 1199.98px) {
   .atech-project-single-banner .project-single-banner-img {
     max-width: 800px;
+    min-height: 560px;
     margin-right: auto;
     margin-left: auto;
   }

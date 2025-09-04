@@ -1,4 +1,9 @@
-document.addEventListener("DOMContentLoaded", () => {
+// Prevent browser from restoring scroll position until layout stabilizes
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+window.addEventListener("load", () => {
   const clientsSwiperContainer = document.querySelector('.home-clients-slider');
   const clientsReviewsSwiperContainers = document.querySelectorAll('.tab-pane-slider');
   const finestWorksSwiperContainer = document.querySelector('.finest-works-slider');
