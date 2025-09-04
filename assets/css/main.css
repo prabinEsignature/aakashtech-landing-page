@@ -30145,8 +30145,8 @@ input:-webkit-autofill {
     width: 100%;
     min-width: 100%;
     margin-top: 24px;
-    max-height: calc(100vh - 100px);
     overflow-y: scroll;
+    max-height: calc(100vh - 100px);
   }
   .atech-navbar .atech-menu::-webkit-scrollbar {
     width: 8px;
