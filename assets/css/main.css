@@ -30145,6 +30145,25 @@ input:-webkit-autofill {
     width: 100%;
     min-width: 100%;
     margin-top: 24px;
+    max-height: calc(100vh - 100px);
+    overflow-y: scroll;
+  }
+  .atech-navbar .atech-menu::-webkit-scrollbar {
+    width: 8px;
+    height: 0;
+  }
+  .atech-navbar .atech-menu::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: transparent;
+  }
+  .atech-navbar .atech-menu::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    -webkit-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+  }
+  .atech-navbar .atech-menu::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(219.5, 219.5, 219.5);
   }
 }
 @media (max-width: 1199.98px) {
