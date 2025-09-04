@@ -30335,6 +30335,16 @@ input:-webkit-autofill {
 .atech-navbar .atech-menu-submenu .submenu-services-item:hover .submenu-services-item-ttl {
   color: #3797d5 !important;
 }
+.atech-navbar .atech-menu.submenu-open {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.atech-navbar .atech-menu.submenu-closed {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
 @media (max-width: 1199.98px) {
   .atech-navbar .atech-submenu-list {
     width: 100%;
@@ -30480,6 +30490,14 @@ input:-webkit-autofill {
     min-width: 16px;
     min-height: 16px;
   }
+}
+
+.custom-fixed-util {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .atech-footer {
