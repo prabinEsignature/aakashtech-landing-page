@@ -14,11 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileSidebarCloseBtn = document.getElementById("mobileSidebarCloseBtn");
   const navbarOverlayBg = document.querySelector(".atech-navbar-overlay-bg");
   const navbarMenuParent = document.querySelector(".atech-menu-parent");
+  const pageBody = document.querySelector("body");
 
   /* ===== SIDEBAR OPEN ===== */
   mobileSidebarOpenBtn?.addEventListener("click", () => {
     mobileSidebarOpenBtn.classList.add("is-open");
-    document.querySelector('body').classList.add("custom-fixed-util");
+    pageBody.classList.add("custom-fixed-util");
     gsap.set(navbarMenuParent, { display: "block" });
 
     gsap.fromTo(navbarOverlayBg,
@@ -36,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const closeSidebar = () => {
     mobileSidebarOpenBtn?.classList.remove("is-open");
-    document.querySelector('body').classList.add("custom-fixed-util");
+    pageBody.classList.add("custom-fixed-util");
 
     gsap.to(navbarOverlayBg, { autoAlpha: 0, duration: 0.1 });
     gsap.to(navbarMenuParent, {
