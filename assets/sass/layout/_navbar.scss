@@ -252,7 +252,7 @@ $z-index-navbar-toggler: 1010;
       opacity: 1 !important;
       visibility: visible !important;
     }
-    
+
     &.submenu-closed {
       display: none !important;
       opacity: 0 !important;
@@ -425,4 +425,12 @@ $z-index-navbar-toggler: 1010;
       }
     }
   }
+}
+
+.custom-fixed-util {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
