@@ -34,10 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* ===== SIDEBAR CLOSE ===== */
-
   const closeSidebar = () => {
     mobileSidebarOpenBtn?.classList.remove("is-open");
-    pageBody.classList.add("custom-fixed-util");
+    pageBody.classList.remove("custom-fixed-util");
 
     gsap.to(navbarOverlayBg, { autoAlpha: 0, duration: 0.1 });
     gsap.to(navbarMenuParent, {
