@@ -15,7 +15,7 @@
         left: 50%;
         transform: translateX(-50%);
 
-        @include breakpoint-down(sm){
+        @include breakpoint-down(sm) {
             top: calc(100% + 16px);
             height: 4px;
         }
@@ -23,22 +23,22 @@
 }
 
 .segment-heading {
-    @include breakpoint-down(lg){
-        gap: 28px!important;
+    @include breakpoint-down(lg) {
+        gap: 28px !important;
     }
 
-    @include breakpoint-down(sm){
-        gap: 24px!important;
+    @include breakpoint-down(sm) {
+        gap: 24px !important;
     }
 
-    @include breakpoint-down(xs){
-        gap: 20px!important;
+    @include breakpoint-down(xs) {
+        gap: 20px !important;
     }
 
     &-text {
         margin-bottom: 28px;
 
-        @include breakpoint-down(sm){
+        @include breakpoint-down(sm) {
             margin-bottom: 24px;
         }
     }
@@ -46,11 +46,34 @@
     &.heading-centered {
         max-width: 700px;
     }
+
     &.heading-left {
+        @include breakpoint-down(xl) {
+            justify-content: center !important;
+        }
+
         .after-ttl-border {
             &::after {
                 left: 0;
                 transform: none;
+
+                @include breakpoint-down(xl) {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+
+        .segment-heading-top {
+            @include breakpoint-down(xl) {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .segment-heading-text {
+            @include breakpoint-down(xl) {
+                text-align: center !important;
             }
         }
     }

@@ -29458,9 +29458,31 @@ input[type=button].btn-block {
 .segment-heading.heading-centered {
   max-width: 700px;
 }
+@media (max-width: 1199.98px) {
+  .segment-heading.heading-left {
+    justify-content: center !important;
+  }
+}
 .segment-heading.heading-left .after-ttl-border::after {
   left: 0;
   transform: none;
+}
+@media (max-width: 1199.98px) {
+  .segment-heading.heading-left .after-ttl-border::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 1199.98px) {
+  .segment-heading.heading-left .segment-heading-top {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 1199.98px) {
+  .segment-heading.heading-left .segment-heading-text {
+    text-align: center !important;
+  }
 }
 .segment-heading.segment-heading-light .after-ttl-border::after {
   background: #ffffff !important;
