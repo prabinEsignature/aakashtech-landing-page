@@ -21,7 +21,7 @@ $z-index-navbar-toggler: 1010;
       max-width: 88px;
     }
 
-    @include breakpoint-down(sm){
+    @include breakpoint-down(sm) {
       max-width: 72px;
     }
   }
@@ -134,7 +134,7 @@ $z-index-navbar-toggler: 1010;
         text-transform: uppercase;
         width: 100%;
         justify-content: flex-start;
-        font-size: 16px!important;
+        font-size: 16px !important;
       }
     }
 
@@ -246,6 +246,18 @@ $z-index-navbar-toggler: 1010;
         }
       }
     }
+
+    &.submenu-open {
+      display: block !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+    
+    &.submenu-closed {
+      display: none !important;
+      opacity: 0 !important;
+      visibility: hidden !important;
+    }
   }
 
   .atech-submenu-list {
@@ -270,7 +282,8 @@ $z-index-navbar-toggler: 1010;
             border: 0 !important;
           }
 
-          &:hover, &.active {
+          &:hover,
+          &.active {
             background: color("primary-50") !important;
 
             @include breakpoint-down(xl) {
@@ -284,8 +297,8 @@ $z-index-navbar-toggler: 1010;
           }
 
           .btn-text {
-            @include breakpoint-down(xl){
-              color: color("onyx-400")!important;
+            @include breakpoint-down(xl) {
+              color: color("onyx-400") !important;
             }
             @include breakpoint-down(md) {
               font-size: 14px !important;
@@ -314,7 +327,7 @@ $z-index-navbar-toggler: 1010;
 
               .btn-icon,
               .btn-text {
-                @include breakpoint-down(xl){
+                @include breakpoint-down(xl) {
                   color: color("onyx-700") !important;
                 }
               }

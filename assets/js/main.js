@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const navbarOverlayBg = document.querySelector(".atech-navbar-overlay-bg");
   const navbarMenuParent = document.querySelector(".atech-menu-parent");
 
+  /* ===== SIDEBAR OPEN ===== */
   mobileSidebarOpenBtn?.addEventListener("click", () => {
     mobileSidebarOpenBtn.classList.add("is-open");
     gsap.set(navbarMenuParent, { display: "block" });
@@ -29,6 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
       { x: "0%", duration: 0.3, ease: "power3.out" }
     );
   });
+
+  /* ===== SIDEBAR CLOSE ===== */
 
   const closeSidebar = () => {
     mobileSidebarOpenBtn?.classList.remove("is-open");
@@ -45,36 +48,43 @@ document.addEventListener("DOMContentLoaded", () => {
   mobileSidebarCloseBtn?.addEventListener("click", closeSidebar);
   navbarOverlayBg?.addEventListener("click", closeSidebar);
 
-  // SWIPER SLIDERS
+  /* ===== SUBMENU HOVER/TOGGLE ===== */
   document.querySelectorAll('.atech-menu-item').forEach(item => {
     const submenu = item.querySelector('.atech-menu-submenu');
+    if (!submenu) return;
 
-    if (submenu) {
-      item.addEventListener('mouseenter', () => {
-        submenu.style.display = 'block';
-        submenu.style.opacity = '1';
-        submenu.style.visibility = 'visible';
-      });
+    item.addEventListener('mouseenter', () => {
+      if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+        submenu.classList.add("submenu-open");
+        submenu.classList.remove("submenu-closed");
+      }
+    });
 
-      item.addEventListener('mouseleave', () => {
-        submenu.style.display = 'none';
-        submenu.style.opacity = '0';
-        submenu.style.visibility = 'hidden';
+    item.addEventListener('mouseleave', () => {
+      if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+        submenu.classList.remove("submenu-open");
+        submenu.classList.add("submenu-closed");
+      }
+    });
+  });
+
+
+  /* ===== RESIZE OPTIMIZATION ===== */
+  let resizeTimer;
+  let resizeScheduled = false;
+  window.addEventListener("resize", () => {
+    if (!resizeScheduled) {
+      resizeScheduled = true;
+      requestAnimationFrame(() => {
+        document.body.classList.add("resize-animation-stopper");
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+          document.body.classList.remove("resize-animation-stopper");
+        }, 400);
+        resizeScheduled = false;
       });
     }
   });
-
-
-  /* ####### TRANSITION & ANIMATION STOPPER ON RESIZE ####### */
-  let resizeTimer;
-  window.addEventListener("resize", () => {
-    document.body.classList.add("resize-animation-stopper");
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-      document.body.classList.remove("resize-animation-stopper");
-    }, 400);
-  });
-  /* ####### EOF TRANSITION & ANIMATION STOPPER ON RESIZE ####### */
 
 
   /* ####### NAVBAR MENU TOGGLE ###### */
@@ -103,30 +113,30 @@ document.addEventListener("DOMContentLoaded", () => {
         link.addEventListener('mouseenter', () => {
           if (!isDesktop()) return;
           clearTimeout(hideTimer);
-          submenu.style.opacity = '1';
-          submenu.style.visibility = 'visible';
+          submenu.classList.add("submenu-open");
+          submenu.classList.remove("submenu-closed");
         });
 
         link.addEventListener('mouseleave', () => {
           if (!isDesktop()) return;
           hideTimer = setTimeout(() => {
-            submenu.style.opacity = '0';
-            submenu.style.visibility = 'hidden';
+            submenu.classList.remove("submenu-open");
+            submenu.classList.add("submenu-closed");
           }, 200);
         });
 
         submenu.addEventListener('mouseenter', () => {
           if (!isDesktop()) return;
           clearTimeout(hideTimer);
-          submenu.style.opacity = '1';
-          submenu.style.visibility = 'visible';
+          submenu.classList.add("submenu-open");
+          submenu.classList.remove("submenu-closed");
         });
 
         submenu.addEventListener('mouseleave', () => {
           if (!isDesktop()) return;
           hideTimer = setTimeout(() => {
-            submenu.style.opacity = '0';
-            submenu.style.visibility = 'hidden';
+            submenu.classList.remove("submenu-open");
+            submenu.classList.add("submenu-closed");
           }, 200);
         });
       }
@@ -164,6 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const submenu = topBtn.closest('.atech-menu-submenu');
         const parentInner = topBtn.closest('.atech-menu-parent-inner');
+
         if (submenu) submenu.classList.remove('is-open');
         if (parentInner) parentInner.classList.remove('is-open');
       });
@@ -179,9 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function enterMobileMode() {
       // clear inline styles from desktop hover logic
       submenus.forEach(sm => {
-        sm.style.opacity = '';
-        sm.style.visibility = '';
-        sm.style.transform = '';
+        sm.classList.remove("submenu-open", "submenu-closed");
       });
     }
 
@@ -200,24 +209,19 @@ document.addEventListener("DOMContentLoaded", () => {
     if (currentMode === 'desktop') enterDesktopMode();
     else enterMobileMode();
   })();
-  /* ####### EOF NAVBAR MENU TOGGLE ###### */
 
 
   /* ##### GSAP ANIMATION ##### */
-  // REGISTER GSAP PLUGINS
   gsap.registerPlugin(ScrollTrigger, SplitText);
 
   document.fonts.ready.then(() => {
-
     // -------------------------------
-    // 1️⃣ Animate Home Banner Title
+    // 1Animate Home Banner Title
     // -------------------------------
     const homeBannerEl = document.querySelector(".home-banner-ttl");
     if (homeBannerEl) {
       const homeBannerSplit = new SplitText(homeBannerEl, { type: "words" });
-
-      const homeBannerTimeline = gsap.timeline();
-      homeBannerTimeline.from(homeBannerSplit.words, {
+      gsap.timeline().from(homeBannerSplit.words, {
         opacity: 0,
         y: 50,
         duration: 1.2,
@@ -227,7 +231,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // -------------------------------
-    // 2️⃣ Animate Section Headings
+    // Animate Section Headings
     // -------------------------------
     const sectionHeadingItems = gsap.utils.toArray('.segment-heading-top');
     if (sectionHeadingItems.length > 0) {
@@ -253,7 +257,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // --------------------------------------
     const applyZoomOnScroll = (selector, options = {}) => {
       const elements = document.querySelectorAll(selector);
-
       if (!elements.length) return;
 
       elements.forEach(el => {
@@ -280,8 +283,10 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     applyZoomOnScroll(".zoom-on-scroll");
-    
 
+    // --------------------------------------
+    // ✨ Service Item Animation
+    // --------------------------------------
     const serviceItems = gsap.utils.toArray('.services-main-item-wrapper');
 
     serviceItems.forEach((wrapper, index) => {
@@ -318,6 +323,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // --------------------------------------
+  // ✨ Two Columns Grid Animation
+  // --------------------------------------
   const animateTwoColumnGrids = (selector, leftClass, rightClass) => {
     const grids = gsap.utils.toArray(selector);
 
@@ -359,7 +367,7 @@ document.addEventListener("DOMContentLoaded", () => {
   animateTwoColumnGrids(".about-mvg-grid", ".about-mvg-img-group", ".about-mvg-details");
   animateTwoColumnGrids(".download-showcase-grid", ".download-showcase-info", ".download-showcase-img");
 
-  // Initialize client logo slider
+  /* ===== SWIPER INITIALIZATIONS ===== */
   if (clientsSwiperContainer) {
     const clientSwiper = new Swiper(clientsSwiperContainer, {
       loop: true,
@@ -391,7 +399,6 @@ document.addEventListener("DOMContentLoaded", () => {
     clientSwiper.update(); // optional unless dynamic changes happen
   }
 
-  // Initialize each review slider
   clientsReviewsSwiperContainers.forEach((container) => {
     new Swiper(container, {
       loop: true,
