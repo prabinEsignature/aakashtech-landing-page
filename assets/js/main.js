@@ -369,7 +369,6 @@ window.addEventListener("load", () => {
   };
 
   animateTwoColumnGrids(".contact-grid-block", ".contact-block-info", ".contact-block-form");
-  animateTwoColumnGrids(".about-banner-segment-one", ".about-banner-segment-description", ".about-banner-segment-img");
   animateTwoColumnGrids(".banner-segment-two-grid", ".about-banner-segment-img", ".about-banner-segment-description");
   animateTwoColumnGrids(".about-mvg-grid", ".about-mvg-img-group", ".about-mvg-details");
   animateTwoColumnGrids(".download-showcase-grid", ".download-showcase-info", ".download-showcase-img");
