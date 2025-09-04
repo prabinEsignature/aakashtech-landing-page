@@ -30161,26 +30161,8 @@ input:-webkit-autofill {
     transition: all ease-in-out 300ms;
     overflow: hidden;
     max-height: 100vh;
-    overflow-y: scroll;
     max-width: 408px !important;
     width: 100% !important;
-  }
-  .atech-navbar .atech-menu-parent::-webkit-scrollbar {
-    width: 8px;
-    height: 0;
-  }
-  .atech-navbar .atech-menu-parent::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background-color: transparent;
-  }
-  .atech-navbar .atech-menu-parent::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: #f5f5f5;
-    -webkit-transition: background-color 0.3s ease;
-    transition: background-color 0.3s ease;
-  }
-  .atech-navbar .atech-menu-parent::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(219.5, 219.5, 219.5);
   }
   .atech-navbar .atech-menu-parent.is-open {
     transform: translateX(0);
