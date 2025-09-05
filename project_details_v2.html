@@ -745,11 +745,9 @@
     <section class="atech-project-demo">
       <div class="atech-project-demo-container container">
         <div class="video-wrapper">
-          <iframe class="video-iframe" src="https://www.youtube-nocookie.com/embed/b_v-gDU8QCI?si=MgkYcwCMUHwvmEyC"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-          </iframe>
+          <!-- Empty iframe placeholder -->
+  <div class="video-iframe" data-src="https://www.youtube-nocookie.com/embed/b_v-gDU8QCI?autoplay=1"
+  title="YouTube video player"></div>
 
           <div class="video-poster">
             <img src="assets/images/misc/atel_video_poster.png" alt="Project Demo Poster">
@@ -1491,25 +1489,32 @@
   <!-- CUSTOM JS -->
   <script src="assets/js/main.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const demoSection = document.querySelector('.atech-project-demo');
+    document.addEventListener("DOMContentLoaded", () => {
+  const wrapper = document.querySelector(".video-wrapper");
+  const playBtn = wrapper.querySelector(".video-play-btn");
+  const poster = wrapper.querySelector(".video-poster");
+  const iframeContainer = wrapper.querySelector(".video-iframe");
 
-      if (demoSection) {
-        const poster = demoSection.querySelector('.video-poster');
-        const iframe = demoSection.querySelector('.video-iframe');
+  playBtn.addEventListener("click", () => {
+    const src = iframeContainer.getAttribute("data-src");
 
-        if (poster && iframe) {
-          poster.addEventListener('click', function () {
-            const src = iframe.getAttribute('src');
-            iframe.setAttribute(
-              'src',
-              src + (src.includes('?') ? '&' : '?') + 'autoplay=1'
-            );
-            this.style.display = 'none';
-          });
-        }
-      }
-    });
+    // Create iframe dynamically
+    const iframe = document.createElement("iframe");
+    iframe.setAttribute("src", src);
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allow",
+      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+    iframe.setAttribute("allowfullscreen", "true");
+    iframe.className = "video-iframe";
+
+    // Replace placeholder with iframe
+    iframeContainer.replaceWith(iframe);
+
+    // Hide poster overlay
+    poster.style.display = "none";
+  });
+});
+
   </script>
 </body>
 
