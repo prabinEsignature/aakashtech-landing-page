@@ -20,9 +20,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- Preload the stylesheet to start fetching it early -->
-  <link
+  <link rel="preload"
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
-    rel="stylesheet">
+    as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
   <!-- Fallback for users with JavaScript disabled -->
   <noscript>
     <link
@@ -686,8 +687,8 @@
               </div>
             </div>
             <div class="about-banner-segment-img rounded-20 shadow-img position-relative">
-              <img class="rounded-20" src="assets/images/about/about_us_img1.png" alt="about us image" fetchpriority="high"
-                decoding="async" />
+              <img class="rounded-20" src="assets/images/about/about_us_img1.png" alt="about us image"
+                fetchpriority="high" decoding="async" />
               <div
                 class="floating-elem-one d-flex flex-column align-items-start sm-gap-2 gap-1 sm-py-custom-3 py-custom-2 sm-px-custom-4 px-custom-3 rounded-8 position-absolute">
                 <p class="text-white text-xl font-semibold mb-0">24/7 Support</p>
@@ -715,8 +716,8 @@
             <h2 class="text-7xl-mid font-bold text-onyx-700">We are deeply <br> passionate consult agency.</h2>
             <div class="banner-segment-two-grid d-grid align-items-center segment-mt-60">
               <div class="about-banner-segment-img rounded-20 position-relative shadow-img">
-                <img class="rounded-20 position-relative z-1" src="assets/images/about/about_us_img2.png" alt="about us image"
-                  fetchpriority="high" decoding="async" />
+                <img class="rounded-20 position-relative z-1" src="assets/images/about/about_us_img2.png"
+                  alt="about us image" fetchpriority="high" decoding="async" />
               </div>
               <div class="about-banner-segment-description">
                 <div class="content-stylings text-xl text-gray-600 xl-mt-custom-6 mt-0">
@@ -785,7 +786,8 @@
                 <div class="mvg-details-item-head d-flex align-items-center lg-gap-5 sm-gap-4 gap-3">
                   <div
                     class="mvg-details-item-icon d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-8">
-                    <img class="icon-40" src="assets/images/about/our_mission_icon.svg" alt="our mission icon" loading="lazy" />
+                    <img class="icon-40" src="assets/images/about/our_mission_icon.svg" alt="our mission icon"
+                      loading="lazy" />
                   </div>
                   <h3 class="text-4xl font-bold text-onyx-700 my-0">Our Mission</h3>
                 </div>
@@ -797,7 +799,8 @@
                 <div class="mvg-details-item-head d-flex align-items-center lg-gap-5 sm-gap-4 gap-3">
                   <div
                     class="mvg-details-item-icon d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-8">
-                    <img class="icon-40" src="assets/images/about/our_vision_icon.svg" alt="our vision icon" loading="lazy" />
+                    <img class="icon-40" src="assets/images/about/our_vision_icon.svg" alt="our vision icon"
+                      loading="lazy" />
                   </div>
                   <h3 class="text-4xl font-bold text-onyx-700 my-0">Our Vision</h3>
                 </div>
@@ -809,8 +812,8 @@
                 <div class="mvg-details-item-head d-flex align-items-center lg-gap-5 sm-gap-4 gap-3">
                   <div
                     class="mvg-details-item-icon d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-8">
-                    <img class="icon-40" src="assets/images/about/what_sets_apart_icon.svg"
-                      alt="what set us apart icon" loading="lazy" />
+                    <img class="icon-40" src="assets/images/about/what_sets_apart_icon.svg" alt="what set us apart icon"
+                      loading="lazy" />
                   </div>
                   <h3 class="text-4xl font-bold text-onyx-700 my-0">What Sets Us Apart</h3>
                 </div>

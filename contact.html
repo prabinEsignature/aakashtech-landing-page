@@ -18,9 +18,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- Preload the stylesheet to start fetching it early -->
-  <link
+  <link rel="preload"
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
-    rel="stylesheet">
+    as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
   <!-- Fallback for users with JavaScript disabled -->
   <noscript>
     <link
@@ -59,7 +60,8 @@
                 <img class="h-auto w-auto ms-auto" src="assets/images/site/logo_default.png"
                   alt="Aakashtech brand logo" />
               </a>
-              <button type="button" class="hamburger d-xl-none is-open" aria-label="Close menu" id="mobileSidebarCloseBtn">
+              <button type="button" class="hamburger d-xl-none is-open" aria-label="Close menu"
+                id="mobileSidebarCloseBtn">
                 <span class="menu-bar"></span>
               </button>
             </div>
@@ -79,7 +81,7 @@
                       data-submenu="menu-submenu-services">
                       <span class="menu-link-text">Services</span>
                       <span class="menu-link-icon icon-18">
-                        <img src="assets/icons/chevron_down_onyx.svg" alt="chevron down icon" loading="lazy"  />
+                        <img src="assets/icons/chevron_down_onyx.svg" alt="chevron down icon" loading="lazy" />
                       </span>
                     </a>
                   </li>
@@ -89,7 +91,7 @@
                       data-submenu="menu-submenu-portfolios">
                       <span class="menu-link-text">Our Portfolio</span>
                       <span class="menu-link-icon icon-18">
-                        <img src="assets/icons/chevron_down_onyx.svg" alt="chevron down icon" loading="lazy"  />
+                        <img src="assets/icons/chevron_down_onyx.svg" alt="chevron down icon" loading="lazy" />
                       </span>
                     </a>
                   </li>
@@ -116,8 +118,8 @@
                   class="atech-menu-info-list bg-white rounded-20 lg-p-custom-6 p-custom-4 mt-custom-4 d-flex flex-column gap-4 w-100 d-xl-none">
                   <div class="menu-info-item d-flex align-items-center gap-3">
                     <div class="menu-info-item-icon icon-40 rounded-full overflow-hidden bg-primary-100">
-                      <img class="icon-20" src="assets/icons/phone_outline_primary.svg"
-                        alt="phone outline primary icon" loading="lazy" >
+                      <img class="icon-20" src="assets/icons/phone_outline_primary.svg" alt="phone outline primary icon"
+                        loading="lazy">
                     </div>
                     <div class="menu-info-item-content d-flex flex-column gap-1">
                       <h5 class="text-base font-semibold text-onyx-700 mb-custom-1 mt-0">
@@ -131,7 +133,7 @@
                   <div class="menu-info-item d-flex align-items-center gap-3">
                     <div class="menu-info-item-icon icon-40 rounded-full overflow-hidden bg-primary-100">
                       <img class="icon-20" src="assets/icons/envelope_outline_primary.svg"
-                        alt="envelope outline primary icon" loading="lazy" >
+                        alt="envelope outline primary icon" loading="lazy">
                     </div>
                     <div class="menu-info-item-content d-flex flex-column gap-1">
                       <h5 class="text-base font-semibold text-onyx-700 mb-custom-1 mt-0">
@@ -144,7 +146,8 @@
                   </div>
                   <div class="menu-info-item d-flex align-items-center gap-3">
                     <div class="menu-info-item-icon icon-40 rounded-full overflow-hidden bg-primary-100">
-                      <img class="icon-20" src="assets/icons/location_dot_outline_primary.svg" alt="location dot icon" loading="lazy" >
+                      <img class="icon-20" src="assets/icons/location_dot_outline_primary.svg" alt="location dot icon"
+                        loading="lazy">
                     </div>
                     <div class="menu-info-item-content d-flex flex-column gap-1">
                       <h5 class="text-base font-semibold text-onyx-700 mb-custom-1 mt-0">
@@ -160,7 +163,8 @@
                   <div class="social-link-item d-flex align-items-center gap-4">
                     <a href="#"
                       class="social-link-nav icon-40 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
-                      <img class="icon-20" src="assets/icons/facebook_primary_700.svg" alt="facebook icon" loading="lazy">
+                      <img class="icon-20" src="assets/icons/facebook_primary_700.svg" alt="facebook icon"
+                        loading="lazy">
                     </a>
                     <a href="#"
                       class="social-link-nav icon-40 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
@@ -168,7 +172,8 @@
                     </a>
                     <a href="#"
                       class="social-link-nav icon-40 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
-                      <img class="icon-20" src="assets/icons/whatsapp_primary_700.svg" alt="whatsapp icon" loading="lazy">
+                      <img class="icon-20" src="assets/icons/whatsapp_primary_700.svg" alt="whatsapp icon"
+                        loading="lazy">
                     </a>
                     <a href="#"
                       class="social-link-nav icon-40 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
@@ -176,7 +181,8 @@
                     </a>
                     <a href="#"
                       class="social-link-nav icon-40 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
-                      <img class="icon-20" src="assets/icons/envelope_primary_700.svg" alt="envelope icon" loading="lazy">
+                      <img class="icon-20" src="assets/icons/envelope_primary_700.svg" alt="envelope icon"
+                        loading="lazy">
                     </a>
                   </div>
                 </div>
@@ -195,7 +201,8 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/custom_software_icon.svg" alt="custom software icon" loading="lazy" />
+                          <img class="icon-36" src="assets/icons/custom_software_icon.svg" alt="custom software icon"
+                            loading="lazy" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -212,7 +219,8 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/mobapp_icon.svg" alt="mobile application icon" loading="lazy" />
+                          <img class="icon-36" src="assets/icons/mobapp_icon.svg" alt="mobile application icon"
+                            loading="lazy" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -228,7 +236,8 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/webdev_icon.svg" alt="web development icon" loading="lazy" />
+                          <img class="icon-36" src="assets/icons/webdev_icon.svg" alt="web development icon"
+                            loading="lazy" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -245,7 +254,8 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/ai_icon.svg" alt="artificial intelligence icon" loading="lazy" />
+                          <img class="icon-36" src="assets/icons/ai_icon.svg" alt="artificial intelligence icon"
+                            loading="lazy" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -262,7 +272,8 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/low_code_icon.svg" alt="low code icon" loading="lazy" />
+                          <img class="icon-36" src="assets/icons/low_code_icon.svg" alt="low code icon"
+                            loading="lazy" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -279,7 +290,8 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/ios_dev_icon.svg" alt="ios development icon" loading="lazy" />
+                          <img class="icon-36" src="assets/icons/ios_dev_icon.svg" alt="ios development icon"
+                            loading="lazy" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -295,7 +307,8 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/staff_aug_icon.svg" alt="staff augmentation icon" loading="lazy" />
+                          <img class="icon-36" src="assets/icons/staff_aug_icon.svg" alt="staff augmentation icon"
+                            loading="lazy" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -312,7 +325,8 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/android_dev_icon.svg" alt="android development icon" loading="lazy" />
+                          <img class="icon-36" src="assets/icons/android_dev_icon.svg" alt="android development icon"
+                            loading="lazy" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -330,13 +344,15 @@
                     <div class="submenu-contact-info d-flex flex-wrap xl-gap-4 gap-2 justify-content-between w-100">
                       <div class="submenu-contact-info-item d-flex align-items-center gap-3">
                         <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
-                          <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="phone icon" loading="lazy" />
+                          <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="phone icon"
+                            loading="lazy" />
                         </span>
                         <span class="info-item-text text-base text-onyx-500 font-medium">+977 985-1195578</span>
                       </div>
                       <div class="submenu-contact-info-item d-flex align-items-center gap-3">
                         <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
-                          <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="envelope icon" loading="lazy" />
+                          <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="envelope icon"
+                            loading="lazy" />
                         </span>
                         <span class="info-item-text text-base text-onyx-500 font-medium">aakashtech@gmail.com.np</span>
                       </div>
@@ -431,7 +447,8 @@
                               class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
                               <div
                                 class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
-                                <img src="assets/images/misc/portfolio_thumbnail_1.png" alt="portfolio thumbnail" loading="lazy" />
+                                <img src="assets/images/misc/portfolio_thumbnail_1.png" alt="portfolio thumbnail"
+                                  loading="lazy" />
                               </div>
                               <div
                                 class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
@@ -449,7 +466,8 @@
                               class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
                               <div
                                 class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
-                                <img src="assets/images/misc/portfolio_thumbnail_2.png" alt="portfolio thumbnail" loading="lazy" />
+                                <img src="assets/images/misc/portfolio_thumbnail_2.png" alt="portfolio thumbnail"
+                                  loading="lazy" />
                               </div>
                               <div
                                 class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
@@ -467,7 +485,8 @@
                               class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
                               <div
                                 class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
-                                <img src="assets/images/misc/portfolio_thumbnail_3.png" alt="portfolio thumbnail" loading="lazy" />
+                                <img src="assets/images/misc/portfolio_thumbnail_3.png" alt="portfolio thumbnail"
+                                  loading="lazy" />
                               </div>
                               <div
                                 class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
@@ -485,7 +504,8 @@
                               class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
                               <div
                                 class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
-                                <img src="assets/images/misc/portfolio_thumbnail_1.png" alt="portfolio thumbnail" loading="lazy" />
+                                <img src="assets/images/misc/portfolio_thumbnail_1.png" alt="portfolio thumbnail"
+                                  loading="lazy" />
                               </div>
                               <div
                                 class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
@@ -503,7 +523,8 @@
                               class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
                               <div
                                 class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
-                                <img src="assets/images/misc/portfolio_thumbnail_2.png" alt="portfolio thumbnail" loading="lazy" />
+                                <img src="assets/images/misc/portfolio_thumbnail_2.png" alt="portfolio thumbnail"
+                                  loading="lazy" />
                               </div>
                               <div
                                 class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
@@ -521,7 +542,8 @@
                               class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
                               <div
                                 class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
-                                <img src="assets/images/misc/portfolio_thumbnail_3.png" alt="portfolio thumbnail" loading="lazy" />
+                                <img src="assets/images/misc/portfolio_thumbnail_3.png" alt="portfolio thumbnail"
+                                  loading="lazy" />
                               </div>
                               <div
                                 class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
@@ -556,13 +578,15 @@
                     <div class="submenu-contact-info d-flex flex-wrap lg-gap-4 gap-3 justify-content-between w-100">
                       <div class="submenu-contact-info-item d-flex align-items-center gap-3">
                         <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
-                          <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="phone icon" loading="lazy" />
+                          <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="phone icon"
+                            loading="lazy" />
                         </span>
                         <span class="info-item-text text-base text-onyx-500 font-medium">+977 985-1195578</span>
                       </div>
                       <div class="submenu-contact-info-item d-flex align-items-center gap-3">
                         <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
-                          <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="envelope icon" loading="lazy" />
+                          <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="envelope icon"
+                            loading="lazy" />
                         </span>
                         <span class="info-item-text text-base text-onyx-500 font-medium">aakashtech@gmail.com.np</span>
                       </div>
@@ -1093,23 +1117,28 @@
             <div class="footer-social-links mt-custom-6">
               <div class="social-link-item d-flex align-items-center gap-3">
                 <a href="#"
-                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden" aria-label="Facebook">
+                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden"
+                  aria-label="Facebook">
                   <img class="icon-16" src="assets/icons/facebook_primary_700.svg" alt="" aria-hidden="true" />
                 </a>
                 <a href="#"
-                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden" aria-label="Linkedin">
+                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden"
+                  aria-label="Linkedin">
                   <img class="icon-16" src="assets/icons/linked_primary_700.svg" alt="" aria-hidden="true" />
                 </a>
                 <a href="#"
-                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden" aria-label="Whatsapp">
+                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden"
+                  aria-label="Whatsapp">
                   <img class="icon-16" src="assets/icons/whatsapp_primary_700.svg" alt="" aria-hidden="true" />
                 </a>
                 <a href="#"
-                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden" aria-label="Youtube">
+                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden"
+                  aria-label="Youtube">
                   <img class="icon-16" src="assets/icons/youtube_primary_700.svg" alt="" aria-hidden="true" />
                 </a>
                 <a href="#"
-                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden" aria-label="Email">
+                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden"
+                  aria-label="Email">
                   <img class="icon-16" src="assets/icons/envelope_primary_700.svg" alt="" aria-hidden="true" />
                 </a>
               </div>

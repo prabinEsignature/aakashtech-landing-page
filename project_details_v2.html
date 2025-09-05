@@ -22,7 +22,8 @@
   <!-- Preload the stylesheet to start fetching it early -->
   <link rel="preload"
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
-    rel="stylesheet">
+    as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
   <!-- Fallback for users with JavaScript disabled -->
   <noscript>
     <link
@@ -750,7 +751,8 @@
           <div class="video-iframe" data-src="https://www.youtube-nocookie.com/embed/b_v-gDU8QCI?autoplay=1"
             title="YouTube video player"></div>
           <div class="video-poster">
-            <img src="assets/images/misc/atel_video_poster.png" alt="Project Demo Poster" fetchpriority="high" decoding="async">
+            <img src="assets/images/misc/atel_video_poster.png" alt="Project Demo Poster" fetchpriority="high"
+              decoding="async">
             <button type="button"
               class="video-play-btn rounded-full d-inline-flex align-items-center justify-content-center">
               <span class="btn-icon icon-36">
