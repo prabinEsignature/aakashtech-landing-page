@@ -745,12 +745,10 @@
     <section class="atech-project-demo">
       <div class="atech-project-demo-container container">
         <div class="video-wrapper">
-          <!-- Empty iframe placeholder -->
-  <div class="video-iframe" data-src="https://www.youtube-nocookie.com/embed/b_v-gDU8QCI?autoplay=1"
-  title="YouTube video player"></div>
-
+          <div class="video-iframe" data-src="https://www.youtube-nocookie.com/embed/b_v-gDU8QCI?autoplay=1"
+            title="YouTube video player"></div>
           <div class="video-poster">
-            <img src="assets/images/misc/atel_video_poster.png" alt="Project Demo Poster">
+            <img src="assets/images/misc/atel_video_poster.png" alt="Project Demo Poster" fetchpriority="high" decoding="async">
             <button type="button"
               class="video-play-btn rounded-full d-inline-flex align-items-center justify-content-center">
               <span class="btn-icon icon-36">
@@ -838,7 +836,8 @@
           </div>
           <div
             class="project-details-img position-relative img-with-underlay-ellipse d-flex align-items-center justify-content-center">
-            <img class="position-relative z-10" src="assets/images/projects/project_detail_sample_img2.png" alt="project details image" />
+            <img class="position-relative z-10" src="assets/images/projects/project_detail_sample_img2.png"
+              alt="project details image" />
           </div>
         </div>
       </div>
@@ -1490,30 +1489,30 @@
   <script src="assets/js/main.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-  const wrapper = document.querySelector(".video-wrapper");
-  const playBtn = wrapper.querySelector(".video-play-btn");
-  const poster = wrapper.querySelector(".video-poster");
-  const iframeContainer = wrapper.querySelector(".video-iframe");
+      const wrapper = document.querySelector(".video-wrapper");
+      const playBtn = wrapper.querySelector(".video-play-btn");
+      const poster = wrapper.querySelector(".video-poster");
+      const iframeContainer = wrapper.querySelector(".video-iframe");
 
-  playBtn.addEventListener("click", () => {
-    const src = iframeContainer.getAttribute("data-src");
+      playBtn.addEventListener("click", () => {
+        const src = iframeContainer.getAttribute("data-src");
 
-    // Create iframe dynamically
-    const iframe = document.createElement("iframe");
-    iframe.setAttribute("src", src);
-    iframe.setAttribute("frameborder", "0");
-    iframe.setAttribute("allow",
-      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
-    iframe.setAttribute("allowfullscreen", "true");
-    iframe.className = "video-iframe";
+        // Create iframe dynamically
+        const iframe = document.createElement("iframe");
+        iframe.setAttribute("src", src);
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("allow",
+          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+        iframe.setAttribute("allowfullscreen", "true");
+        iframe.className = "video-iframe";
 
-    // Replace placeholder with iframe
-    iframeContainer.replaceWith(iframe);
+        // Replace placeholder with iframe
+        iframeContainer.replaceWith(iframe);
 
-    // Hide poster overlay
-    poster.style.display = "none";
-  });
-});
+        // Hide poster overlay
+        poster.style.display = "none";
+      });
+    });
 
   </script>
 </body>
