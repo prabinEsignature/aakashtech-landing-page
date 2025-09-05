@@ -41,6 +41,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/main.css" />
+  <!-- IMAGE PRELOADING  -->
+  <link rel="preload" as="image" href="assets/images/home/home_banner_bg.png" fetchpriority="high">
 </head>
 
 <body>
@@ -699,9 +701,9 @@
             </div>
             <div class="banner-product-showcase position-relative d-flex justify-content-center">
               <img class="position-absolute ellipse-shape z-5" src="assets/images/misc/ellipse_1.svg"
-                data-shape-id="ellipse-1" alt="ellipse shape" />
+                data-shape-id="ellipse-1" alt="ellipse shape" fetchpriority="high" decoding="async" />
               <img class="position-relative z-10 segment-mt-60 banner-product-showcase-img"
-                src="assets/images/home/home_banner_product.png" alt="banner product image" />
+                src="assets/images/home/home_banner_product.png" alt="banner product image" fetchpriority="high" decoding="async" />
             </div>
             <div class="banner-product-feats product-feats-right d-grid align-items-start">
               <div
