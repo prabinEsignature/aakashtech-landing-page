@@ -91,7 +91,7 @@ window.addEventListener("load", () => {
         resizeScheduled = false;
       });
     }
-  });
+  }, { passive: true});
 
 
   /* ####### NAVBAR MENU TOGGLE ###### */
@@ -209,8 +209,8 @@ window.addEventListener("load", () => {
       else enterMobileMode();
     }
 
-    window.addEventListener('resize', onModeMaybeChange);
-    window.addEventListener('orientationchange', onModeMaybeChange);
+    window.addEventListener('resize', onModeMaybeChange, { passive: true });
+    window.addEventListener('orientationchange', onModeMaybeChange, { passive: true });
 
     // initial
     if (currentMode === 'desktop') enterDesktopMode();
