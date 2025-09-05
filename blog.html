@@ -40,6 +40,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/main.css" />
+  <!-- IMAGE PRELOADING  -->
+  <link rel="preload" as="image" href="assets/images/blogs/blog_banner_bg.png" fetchpriority="high">
 </head>
 
 <body>
@@ -648,7 +650,7 @@
               placeholder="Search keywords to see our projects ...">
             <button type="submit" class="btn btn-onyx-900 icon-btn btn-rounded icon-40">
               <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-              <span class="sr-only">Search</span>
+              <span class="visually-hidden">Search</span>
             </button>
           </div>
           <div class="blog-banner-tags d-flex flex-wrap align-items-center justify-content-center row-gap-2">
