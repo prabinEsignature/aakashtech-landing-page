@@ -3,6 +3,28 @@ if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
 
+// Helper: safely init Swiper only when container is visible
+function initSwiperWhenVisible(container, options) {
+  if (!container) return;
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      if (entries[0].isIntersecting) {
+        new Swiper(container, options);
+        obs.disconnect(); // init only once
+      }
+    },
+    { threshold: 0.1 }
+  );
+  observer.observe(container);
+}
+
+// Helper: safely get Swiper child element
+function safeSwiperEl(parent, selector) {
+  if (!parent) return undefined;
+  const el = parent.querySelector(selector);
+  return el || undefined;
+}
+
 window.addEventListener("load", () => {
   const clientsSwiperContainer = document.querySelector('.home-clients-slider');
   const clientsReviewsSwiperContainers = document.querySelectorAll('.tab-pane-slider');
@@ -91,7 +113,7 @@ window.addEventListener("load", () => {
         resizeScheduled = false;
       });
     }
-  }, { passive: true});
+  }, { passive: true });
 
 
   /* ####### NAVBAR MENU TOGGLE ###### */
@@ -374,39 +396,39 @@ window.addEventListener("load", () => {
   animateTwoColumnGrids(".download-showcase-grid", ".download-showcase-info", ".download-showcase-img");
 
   /* ===== SWIPER INITIALIZATIONS ===== */
-  if (clientsSwiperContainer) {
-    const clientSwiper = new Swiper(clientsSwiperContainer, {
-      loop: true,
-      slidesPerView: "auto",
-      freeMode: true,
-      spaceBetween: 4,
-      centeredSlides: true,
-      centeredSlidesBounds: true,
-      centerInsufficientSlides: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      observer: true,
-      observeParents: true,
-      breakpoints: {
-        576: {
-          spaceBetween: 12,
-        },
-        768: {
-          spaceBetween: 16,
-        },
-        1400: {
-          spaceBetween: 20,
-        }
-      },
-    });
+  /* ===== Clients Swiper ===== */
 
-    clientSwiper.update(); // optional unless dynamic changes happen
-  }
+  initSwiperWhenVisible(clientsSwiperContainer, {
+    loop: true,
+    slidesPerView: "auto",
+    freeMode: true,
+    spaceBetween: 4,
+    centeredSlides: true,
+    centeredSlidesBounds: true,
+    centerInsufficientSlides: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    observer: true,
+    observeParents: true,
+    breakpoints: {
+      576: {
+        spaceBetween: 12,
+      },
+      768: {
+        spaceBetween: 16,
+      },
+      1400: {
+        spaceBetween: 20,
+      }
+    },
+  });
+
+  /* ===== Clients Reviews (multiple) ===== */
 
   clientsReviewsSwiperContainers.forEach((container) => {
-    new Swiper(container, {
+    initSwiperWhenVisible(container, {
       loop: true,
       spaceBetween: 0,
       autoplay: {
@@ -430,175 +452,173 @@ window.addEventListener("load", () => {
       },
       observer: true,
       observeParents: true,
-      pagination: {
-        el: container.querySelector(".swiper-pagination"),
-        clickable: true,
-      },
+      pagination: safeSwiperEl(container, ".swiper-pagination") ? {
+        el: safeSwiperEl(container, ".swiper-pagination"),
+        clickable: true
+      } : undefined,
     });
   });
 
-  // Initialize finest works slider
-  if (finestWorksSwiperContainer) {
-    new Swiper(finestWorksSwiperContainer, {
-      loop: true,
-      slidesPerView: "auto",
-      freeMode: true,
-      spaceBetween: 0,
-      // allowTouchMove: false,
-      centeredSlides: true,
-      centeredSlidesBounds: true,
-      centerInsufficientSlides: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      observer: true,
-      observeParents: true,
-      pagination: {
-        el: finestWorksSwiperContainer.querySelector(".swiper-pagination"),
-        clickable: true,
-      },
-    });
-  }
+  /* ===== Finest Works ===== */
 
-  // Initialize screenshots buttons slider
-  if (screenshotsBtnsSwiperContainer) {
-    new Swiper(screenshotsBtnsSwiperContainer, {
-      loop: true,
-      slidesPerView: 6,
-      spaceBetween: 20,
-      allowTouchMove: false,
-      navigation: {
-        nextEl: screenshotsBtnsSwiperContainerWrapper.querySelector(".swiper-button-next"),
-        prevEl: screenshotsBtnsSwiperContainerWrapper.querySelector(".swiper-button-prev"),
-      },
-      observer: true,
-      observeParents: true,
-      breakpoints: {
-        320: {
-          slidesPerView: 2,
-          spaceBetween: 10,
-          allowTouchMove: true,
-        },
-        576: {
-          slidesPerView: 3,
-          spaceBetween: 12,
-          allowTouchMove: true,
-        },
-        768: {
-          slidesPerView: 4,
-          spaceBetween: 20,
-          allowTouchMove: true,
-        },
-        1024: {
-          slidesPerView: 5,
-          spaceBetween: 20,
-          allowTouchMove: false,
-        },
-        1280: {
-          slidesPerView: 6,
-          spaceBetween: 20,
-          allowTouchMove: false,
-        },
-      },
-    });
-  }
+  initSwiperWhenVisible(finestWorksSwiperContainer, {
+    loop: true,
+    slidesPerView: "auto",
+    freeMode: true,
+    spaceBetween: 0,
+    // allowTouchMove: false,
+    centeredSlides: true,
+    centeredSlidesBounds: true,
+    centerInsufficientSlides: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    observer: true,
+    observeParents: true,
+    pagination: safeSwiperEl(finestWorksSwiperContainer, ".swiper-pagination") ? {
+      el: safeSwiperEl(finestWorksSwiperContainer, ".swiper-pagination"),
+      clickable: true
+    } : undefined,
+  });
 
-  // Initialize screenshots product slider
-  if (screenshotsProductSwiperContainer) {
-    new Swiper(screenshotsProductSwiperContainer, {
-      loop: true,
-      speed: 1000,
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: "auto",
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 200,
-        modifier: 1,
-        slideShadows: false,
-      },
-      keyboard: {
-        enabled: true
-      },
-      observer: true,
-      observeParents: true,
-      navigation: {
-        nextEl: screenshotsProductSwiperContainer.querySelector(".swiper-button-next"),
-        prevEl: screenshotsProductSwiperContainer.querySelector(".swiper-button-prev"),
-      },
-    });
-  }
+  /* ===== Screenshots Buttons ===== */
 
-  if (projectsBtnsSwiperContainer) {
-    new Swiper(projectsBtnsSwiperContainer, {
-      loop: true,
-      slidesPerView: "auto",
-      allowTouchMove: false,
-      navigation: {
-        nextEl: projectsBtnsSwiperContainerWrapper.querySelector(".swiper-button-next"),
-        prevEl: projectsBtnsSwiperContainerWrapper.querySelector(".swiper-button-prev"),
+  initSwiperWhenVisible(screenshotsBtnsSwiperContainer, {
+    loop: true,
+    slidesPerView: 6,
+    spaceBetween: 20,
+    allowTouchMove: false,
+    navigation: screenshotsBtnsSwiperContainerWrapper ? {
+      nextEl: safeSwiperEl(screenshotsBtnsSwiperContainerWrapper, ".swiper-button-next"),
+      prevEl: safeSwiperEl(screenshotsBtnsSwiperContainerWrapper, ".swiper-button-prev")
+    } : undefined,
+    observer: true,
+    observeParents: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        allowTouchMove: true,
       },
-      observer: true,
-      observeParents: true,
-    });
-  }
+      576: {
+        slidesPerView: 3,
+        spaceBetween: 12,
+        allowTouchMove: true,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        allowTouchMove: true,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 20,
+        allowTouchMove: false,
+      },
+      1280: {
+        slidesPerView: 6,
+        spaceBetween: 20,
+        allowTouchMove: false,
+      },
+    },
+  });
 
 
-  if (appscreensSwiperContainer) {
-    new Swiper(appscreensSwiperContainer, {
-      loop: true,
-      speed: 1000,
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: "auto",
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 200,
-        modifier: 1,
-        slideShadows: false,
-      },
-      keyboard: {
-        enabled: true
-      },
-      observer: true,
-      observeParents: true,
-      pagination: {
-        el: appscreensSwiperContainer.querySelector(".swiper-pagination"),
-        clickable: true,
-      },
-    });
-  }
+  /* ===== Screenshots Product ===== */
 
-  if (servicesDetailsTwoSwiperContainer) {
-    new Swiper(servicesDetailsTwoSwiperContainer, {
-      loop: true,
-      speed: 1000,
-      slidesPerView: 1,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
-      observer: true,
-      observeParents: true,
-      pagination: {
-        el: servicesDetailsTwoSwiperContainer.querySelector(".swiper-pagination"),
-        clickable: true,
-      },
-    });
-  }
+  initSwiperWhenVisible(screenshotsProductSwiperContainer, {
+    loop: true,
+    speed: 1000,
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 200,
+      modifier: 1,
+      slideShadows: false,
+    },
+    keyboard: {
+      enabled: true
+    },
+    observer: true,
+    observeParents: true,
+    navigation: {
+      nextEl: safeSwiperEl(screenshotsProductSwiperContainer, ".swiper-button-next"),
+      prevEl: safeSwiperEl(screenshotsProductSwiperContainer, ".swiper-button-prev")
+    },
+  });
+
+  /* ===== Projects Buttons ===== */
+
+  initSwiperWhenVisible(projectsBtnsSwiperContainer, {
+    loop: true,
+    slidesPerView: "auto",
+    allowTouchMove: false,
+    navigation: projectsBtnsSwiperContainerWrapper ? {
+      nextEl: safeSwiperEl(projectsBtnsSwiperContainerWrapper, ".swiper-button-next"),
+      prevEl: safeSwiperEl(projectsBtnsSwiperContainerWrapper, ".swiper-button-prev")
+    } : undefined,
+    observer: true,
+    observeParents: true,
+  });
+
+  /* ===== App Screens ===== */
+
+  initSwiperWhenVisible(appscreensSwiperContainer, {
+    loop: true,
+    speed: 1000,
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 200,
+      modifier: 1,
+      slideShadows: false,
+    },
+    keyboard: {
+      enabled: true
+    },
+    observer: true,
+    observeParents: true,
+    pagination: safeSwiperEl(appscreensSwiperContainer, ".swiper-pagination") ? {
+      el: safeSwiperEl(appscreensSwiperContainer, ".swiper-pagination"),
+      clickable: true
+    } : undefined,
+  });
+
+  /* ===== Services Details Two ===== */
+
+  initSwiperWhenVisible(servicesDetailsTwoSwiperContainer, {
+    loop: true,
+    speed: 1000,
+    slidesPerView: 1,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    observer: true,
+    observeParents: true,
+    pagination: safeSwiperEl(servicesDetailsTwoSwiperContainer, ".swiper-pagination") ? {
+      el: safeSwiperEl(servicesDetailsTwoSwiperContainer, ".swiper-pagination"),
+      clickable: true
+    } : undefined,
+  });
+
 });
 
 
