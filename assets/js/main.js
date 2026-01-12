@@ -1,31 +1,4 @@
-// Prevent browser from restoring scroll position until layout stabilizes
-if ('scrollRestoration' in history) {
-  history.scrollRestoration = 'manual';
-}
-
-// Helper: safely init Swiper only when container is visible
-function initSwiperWhenVisible(container, options) {
-  if (!container) return;
-  const observer = new IntersectionObserver(
-    (entries, obs) => {
-      if (entries[0].isIntersecting) {
-        new Swiper(container, options);
-        obs.disconnect(); // init only once
-      }
-    },
-    { threshold: 0.1 }
-  );
-  observer.observe(container);
-}
-
-// Helper: safely get Swiper child element
-function safeSwiperEl(parent, selector) {
-  if (!parent) return undefined;
-  const el = parent.querySelector(selector);
-  return el || undefined;
-}
-
-window.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const clientsSwiperContainer = document.querySelector('.home-clients-slider');
   const clientsReviewsSwiperContainers = document.querySelectorAll('.tab-pane-slider');
   const finestWorksSwiperContainer = document.querySelector('.finest-works-slider');
@@ -41,12 +14,9 @@ window.addEventListener("load", () => {
   const mobileSidebarCloseBtn = document.getElementById("mobileSidebarCloseBtn");
   const navbarOverlayBg = document.querySelector(".atech-navbar-overlay-bg");
   const navbarMenuParent = document.querySelector(".atech-menu-parent");
-  const pageBody = document.querySelector("body");
 
-  /* ===== SIDEBAR OPEN ===== */
   mobileSidebarOpenBtn?.addEventListener("click", () => {
     mobileSidebarOpenBtn.classList.add("is-open");
-    pageBody.classList.add("custom-fixed-util");
     gsap.set(navbarMenuParent, { display: "block" });
 
     gsap.fromTo(navbarOverlayBg,
@@ -60,10 +30,8 @@ window.addEventListener("load", () => {
     );
   });
 
-  /* ===== SIDEBAR CLOSE ===== */
   const closeSidebar = () => {
     mobileSidebarOpenBtn?.classList.remove("is-open");
-    pageBody.classList.remove("custom-fixed-util");
 
     gsap.to(navbarOverlayBg, { autoAlpha: 0, duration: 0.1 });
     gsap.to(navbarMenuParent, {
@@ -77,43 +45,36 @@ window.addEventListener("load", () => {
   mobileSidebarCloseBtn?.addEventListener("click", closeSidebar);
   navbarOverlayBg?.addEventListener("click", closeSidebar);
 
-  /* ===== SUBMENU HOVER/TOGGLE ===== */
+  // SWIPER SLIDERS
   document.querySelectorAll('.atech-menu-item').forEach(item => {
     const submenu = item.querySelector('.atech-menu-submenu');
-    if (!submenu) return;
 
-    item.addEventListener('mouseenter', () => {
-      if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
-        submenu.classList.add("submenu-open");
-        submenu.classList.remove("submenu-closed");
-      }
-    });
+    if (submenu) {
+      item.addEventListener('mouseenter', () => {
+        submenu.style.display = 'block';
+        submenu.style.opacity = '1';
+        submenu.style.visibility = 'visible';
+      });
 
-    item.addEventListener('mouseleave', () => {
-      if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
-        submenu.classList.remove("submenu-open");
-        submenu.classList.add("submenu-closed");
-      }
-    });
+      item.addEventListener('mouseleave', () => {
+        submenu.style.display = 'none';
+        submenu.style.opacity = '0';
+        submenu.style.visibility = 'hidden';
+      });
+    }
   });
 
 
-  /* ===== RESIZE OPTIMIZATION ===== */
+  /* ####### TRANSITION & ANIMATION STOPPER ON RESIZE ####### */
   let resizeTimer;
-  let resizeScheduled = false;
   window.addEventListener("resize", () => {
-    if (!resizeScheduled) {
-      resizeScheduled = true;
-      requestAnimationFrame(() => {
-        document.body.classList.add("resize-animation-stopper");
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(() => {
-          document.body.classList.remove("resize-animation-stopper");
-        }, 400);
-        resizeScheduled = false;
-      });
-    }
-  }, { passive: true });
+    document.body.classList.add("resize-animation-stopper");
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      document.body.classList.remove("resize-animation-stopper");
+    }, 400);
+  });
+  /* ####### EOF TRANSITION & ANIMATION STOPPER ON RESIZE ####### */
 
 
   /* ####### NAVBAR MENU TOGGLE ###### */
@@ -142,30 +103,30 @@ window.addEventListener("load", () => {
         link.addEventListener('mouseenter', () => {
           if (!isDesktop()) return;
           clearTimeout(hideTimer);
-          submenu.classList.add("submenu-open");
-          submenu.classList.remove("submenu-closed");
+          submenu.style.opacity = '1';
+          submenu.style.visibility = 'visible';
         });
 
         link.addEventListener('mouseleave', () => {
           if (!isDesktop()) return;
           hideTimer = setTimeout(() => {
-            submenu.classList.remove("submenu-open");
-            submenu.classList.add("submenu-closed");
+            submenu.style.opacity = '0';
+            submenu.style.visibility = 'hidden';
           }, 200);
         });
 
         submenu.addEventListener('mouseenter', () => {
           if (!isDesktop()) return;
           clearTimeout(hideTimer);
-          submenu.classList.add("submenu-open");
-          submenu.classList.remove("submenu-closed");
+          submenu.style.opacity = '1';
+          submenu.style.visibility = 'visible';
         });
 
         submenu.addEventListener('mouseleave', () => {
           if (!isDesktop()) return;
           hideTimer = setTimeout(() => {
-            submenu.classList.remove("submenu-open");
-            submenu.classList.add("submenu-closed");
+            submenu.style.opacity = '0';
+            submenu.style.visibility = 'hidden';
           }, 200);
         });
       }
@@ -203,7 +164,6 @@ window.addEventListener("load", () => {
 
         const submenu = topBtn.closest('.atech-menu-submenu');
         const parentInner = topBtn.closest('.atech-menu-parent-inner');
-
         if (submenu) submenu.classList.remove('is-open');
         if (parentInner) parentInner.classList.remove('is-open');
       });
@@ -219,7 +179,9 @@ window.addEventListener("load", () => {
     function enterMobileMode() {
       // clear inline styles from desktop hover logic
       submenus.forEach(sm => {
-        sm.classList.remove("submenu-open", "submenu-closed");
+        sm.style.opacity = '';
+        sm.style.visibility = '';
+        sm.style.transform = '';
       });
     }
 
@@ -231,26 +193,31 @@ window.addEventListener("load", () => {
       else enterMobileMode();
     }
 
-    window.addEventListener('resize', onModeMaybeChange, { passive: true });
-    window.addEventListener('orientationchange', onModeMaybeChange, { passive: true });
+    window.addEventListener('resize', onModeMaybeChange);
+    window.addEventListener('orientationchange', onModeMaybeChange);
 
     // initial
     if (currentMode === 'desktop') enterDesktopMode();
     else enterMobileMode();
   })();
+  /* ####### EOF NAVBAR MENU TOGGLE ###### */
 
 
   /* ##### GSAP ANIMATION ##### */
+  // REGISTER GSAP PLUGINS
   gsap.registerPlugin(ScrollTrigger, SplitText);
 
   document.fonts.ready.then(() => {
+
     // -------------------------------
-    // 1Animate Home Banner Title
+    // 1️⃣ Animate Home Banner Title
     // -------------------------------
     const homeBannerEl = document.querySelector(".home-banner-ttl");
     if (homeBannerEl) {
       const homeBannerSplit = new SplitText(homeBannerEl, { type: "words" });
-      gsap.timeline().from(homeBannerSplit.words, {
+
+      const homeBannerTimeline = gsap.timeline();
+      homeBannerTimeline.from(homeBannerSplit.words, {
         opacity: 0,
         y: 50,
         duration: 1.2,
@@ -260,7 +227,7 @@ window.addEventListener("load", () => {
     }
 
     // -------------------------------
-    // Animate Section Headings
+    // 2️⃣ Animate Section Headings
     // -------------------------------
     const sectionHeadingItems = gsap.utils.toArray('.segment-heading-top');
     if (sectionHeadingItems.length > 0) {
@@ -286,6 +253,7 @@ window.addEventListener("load", () => {
     // --------------------------------------
     const applyZoomOnScroll = (selector, options = {}) => {
       const elements = document.querySelectorAll(selector);
+
       if (!elements.length) return;
 
       elements.forEach(el => {
@@ -312,10 +280,8 @@ window.addEventListener("load", () => {
     };
 
     applyZoomOnScroll(".zoom-on-scroll");
+    
 
-    // --------------------------------------
-    // ✨ Service Item Animation
-    // --------------------------------------
     const serviceItems = gsap.utils.toArray('.services-main-item-wrapper');
 
     serviceItems.forEach((wrapper, index) => {
@@ -352,9 +318,6 @@ window.addEventListener("load", () => {
     });
   });
 
-  // --------------------------------------
-  // ✨ Two Columns Grid Animation
-  // --------------------------------------
   const animateTwoColumnGrids = (selector, leftClass, rightClass) => {
     const grids = gsap.utils.toArray(selector);
 
@@ -391,44 +354,46 @@ window.addEventListener("load", () => {
   };
 
   animateTwoColumnGrids(".contact-grid-block", ".contact-block-info", ".contact-block-form");
+  animateTwoColumnGrids(".about-banner-segment-one", ".about-banner-segment-description", ".about-banner-segment-img");
   animateTwoColumnGrids(".banner-segment-two-grid", ".about-banner-segment-img", ".about-banner-segment-description");
   animateTwoColumnGrids(".about-mvg-grid", ".about-mvg-img-group", ".about-mvg-details");
   animateTwoColumnGrids(".download-showcase-grid", ".download-showcase-info", ".download-showcase-img");
 
-  /* ===== SWIPER INITIALIZATIONS ===== */
-  /* ===== Clients Swiper ===== */
-
-  initSwiperWhenVisible(clientsSwiperContainer, {
-    loop: true,
-    slidesPerView: "auto",
-    freeMode: true,
-    spaceBetween: 4,
-    centeredSlides: true,
-    centeredSlidesBounds: true,
-    centerInsufficientSlides: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    observer: true,
-    observeParents: true,
-    breakpoints: {
-      576: {
-        spaceBetween: 12,
+  // Initialize client logo slider
+  if (clientsSwiperContainer) {
+    const clientSwiper = new Swiper(clientsSwiperContainer, {
+      loop: true,
+      slidesPerView: "auto",
+      freeMode: true,
+      spaceBetween: 4,
+      centeredSlides: true,
+      centeredSlidesBounds: true,
+      centerInsufficientSlides: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
       },
-      768: {
-        spaceBetween: 16,
+      observer: true,
+      observeParents: true,
+      breakpoints: {
+        576: {
+          spaceBetween: 12,
+        },
+        768: {
+          spaceBetween: 16,
+        },
+        1400: {
+          spaceBetween: 20,
+        }
       },
-      1400: {
-        spaceBetween: 20,
-      }
-    },
-  });
+    });
 
-  /* ===== Clients Reviews (multiple) ===== */
+    clientSwiper.update(); // optional unless dynamic changes happen
+  }
 
+  // Initialize each review slider
   clientsReviewsSwiperContainers.forEach((container) => {
-    initSwiperWhenVisible(container, {
+    new Swiper(container, {
       loop: true,
       spaceBetween: 0,
       autoplay: {
@@ -452,173 +417,175 @@ window.addEventListener("load", () => {
       },
       observer: true,
       observeParents: true,
-      pagination: safeSwiperEl(container, ".swiper-pagination") ? {
-        el: safeSwiperEl(container, ".swiper-pagination"),
-        clickable: true
-      } : undefined,
+      pagination: {
+        el: container.querySelector(".swiper-pagination"),
+        clickable: true,
+      },
     });
   });
 
-  /* ===== Finest Works ===== */
-
-  initSwiperWhenVisible(finestWorksSwiperContainer, {
-    loop: true,
-    slidesPerView: "auto",
-    freeMode: true,
-    spaceBetween: 0,
-    // allowTouchMove: false,
-    centeredSlides: true,
-    centeredSlidesBounds: true,
-    centerInsufficientSlides: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    observer: true,
-    observeParents: true,
-    pagination: safeSwiperEl(finestWorksSwiperContainer, ".swiper-pagination") ? {
-      el: safeSwiperEl(finestWorksSwiperContainer, ".swiper-pagination"),
-      clickable: true
-    } : undefined,
-  });
-
-  /* ===== Screenshots Buttons ===== */
-
-  initSwiperWhenVisible(screenshotsBtnsSwiperContainer, {
-    loop: true,
-    slidesPerView: 6,
-    spaceBetween: 20,
-    allowTouchMove: false,
-    navigation: screenshotsBtnsSwiperContainerWrapper ? {
-      nextEl: safeSwiperEl(screenshotsBtnsSwiperContainerWrapper, ".swiper-button-next"),
-      prevEl: safeSwiperEl(screenshotsBtnsSwiperContainerWrapper, ".swiper-button-prev")
-    } : undefined,
-    observer: true,
-    observeParents: true,
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 10,
-        allowTouchMove: true,
+  // Initialize finest works slider
+  if (finestWorksSwiperContainer) {
+    new Swiper(finestWorksSwiperContainer, {
+      loop: true,
+      slidesPerView: "auto",
+      freeMode: true,
+      spaceBetween: 0,
+      // allowTouchMove: false,
+      centeredSlides: true,
+      centeredSlidesBounds: true,
+      centerInsufficientSlides: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
       },
-      576: {
-        slidesPerView: 3,
-        spaceBetween: 12,
-        allowTouchMove: true,
+      observer: true,
+      observeParents: true,
+      pagination: {
+        el: finestWorksSwiperContainer.querySelector(".swiper-pagination"),
+        clickable: true,
       },
-      768: {
-        slidesPerView: 4,
-        spaceBetween: 20,
-        allowTouchMove: true,
+    });
+  }
+
+  // Initialize screenshots buttons slider
+  if (screenshotsBtnsSwiperContainer) {
+    new Swiper(screenshotsBtnsSwiperContainer, {
+      loop: true,
+      slidesPerView: 6,
+      spaceBetween: 20,
+      allowTouchMove: false,
+      navigation: {
+        nextEl: screenshotsBtnsSwiperContainerWrapper.querySelector(".swiper-button-next"),
+        prevEl: screenshotsBtnsSwiperContainerWrapper.querySelector(".swiper-button-prev"),
       },
-      1024: {
-        slidesPerView: 5,
-        spaceBetween: 20,
-        allowTouchMove: false,
+      observer: true,
+      observeParents: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+          allowTouchMove: true,
+        },
+        576: {
+          slidesPerView: 3,
+          spaceBetween: 12,
+          allowTouchMove: true,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+          allowTouchMove: true,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 20,
+          allowTouchMove: false,
+        },
+        1280: {
+          slidesPerView: 6,
+          spaceBetween: 20,
+          allowTouchMove: false,
+        },
       },
-      1280: {
-        slidesPerView: 6,
-        spaceBetween: 20,
-        allowTouchMove: false,
+    });
+  }
+
+  // Initialize screenshots product slider
+  if (screenshotsProductSwiperContainer) {
+    new Swiper(screenshotsProductSwiperContainer, {
+      loop: true,
+      speed: 1000,
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
       },
-    },
-  });
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: false,
+      },
+      keyboard: {
+        enabled: true
+      },
+      observer: true,
+      observeParents: true,
+      navigation: {
+        nextEl: screenshotsProductSwiperContainer.querySelector(".swiper-button-next"),
+        prevEl: screenshotsProductSwiperContainer.querySelector(".swiper-button-prev"),
+      },
+    });
+  }
+
+  if (projectsBtnsSwiperContainer) {
+    new Swiper(projectsBtnsSwiperContainer, {
+      loop: true,
+      slidesPerView: "auto",
+      allowTouchMove: false,
+      navigation: {
+        nextEl: projectsBtnsSwiperContainerWrapper.querySelector(".swiper-button-next"),
+        prevEl: projectsBtnsSwiperContainerWrapper.querySelector(".swiper-button-prev"),
+      },
+      observer: true,
+      observeParents: true,
+    });
+  }
 
 
-  /* ===== Screenshots Product ===== */
+  if (appscreensSwiperContainer) {
+    new Swiper(appscreensSwiperContainer, {
+      loop: true,
+      speed: 1000,
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: false,
+      },
+      keyboard: {
+        enabled: true
+      },
+      observer: true,
+      observeParents: true,
+      pagination: {
+        el: appscreensSwiperContainer.querySelector(".swiper-pagination"),
+        clickable: true,
+      },
+    });
+  }
 
-  initSwiperWhenVisible(screenshotsProductSwiperContainer, {
-    loop: true,
-    speed: 1000,
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 200,
-      modifier: 1,
-      slideShadows: false,
-    },
-    keyboard: {
-      enabled: true
-    },
-    observer: true,
-    observeParents: true,
-    navigation: {
-      nextEl: safeSwiperEl(screenshotsProductSwiperContainer, ".swiper-button-next"),
-      prevEl: safeSwiperEl(screenshotsProductSwiperContainer, ".swiper-button-prev")
-    },
-  });
-
-  /* ===== Projects Buttons ===== */
-
-  initSwiperWhenVisible(projectsBtnsSwiperContainer, {
-    loop: true,
-    slidesPerView: "auto",
-    allowTouchMove: false,
-    navigation: projectsBtnsSwiperContainerWrapper ? {
-      nextEl: safeSwiperEl(projectsBtnsSwiperContainerWrapper, ".swiper-button-next"),
-      prevEl: safeSwiperEl(projectsBtnsSwiperContainerWrapper, ".swiper-button-prev")
-    } : undefined,
-    observer: true,
-    observeParents: true,
-  });
-
-  /* ===== App Screens ===== */
-
-  initSwiperWhenVisible(appscreensSwiperContainer, {
-    loop: true,
-    speed: 1000,
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 200,
-      modifier: 1,
-      slideShadows: false,
-    },
-    keyboard: {
-      enabled: true
-    },
-    observer: true,
-    observeParents: true,
-    pagination: safeSwiperEl(appscreensSwiperContainer, ".swiper-pagination") ? {
-      el: safeSwiperEl(appscreensSwiperContainer, ".swiper-pagination"),
-      clickable: true
-    } : undefined,
-  });
-
-  /* ===== Services Details Two ===== */
-
-  initSwiperWhenVisible(servicesDetailsTwoSwiperContainer, {
-    loop: true,
-    speed: 1000,
-    slidesPerView: 1,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-    observer: true,
-    observeParents: true,
-    pagination: safeSwiperEl(servicesDetailsTwoSwiperContainer, ".swiper-pagination") ? {
-      el: safeSwiperEl(servicesDetailsTwoSwiperContainer, ".swiper-pagination"),
-      clickable: true
-    } : undefined,
-  });
-
+  if (servicesDetailsTwoSwiperContainer) {
+    new Swiper(servicesDetailsTwoSwiperContainer, {
+      loop: true,
+      speed: 1000,
+      slidesPerView: 1,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      observer: true,
+      observeParents: true,
+      pagination: {
+        el: servicesDetailsTwoSwiperContainer.querySelector(".swiper-pagination"),
+        clickable: true,
+      },
+    });
+  }
 });
 
 
