@@ -5,11 +5,9 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Aakashtel - Blog Details Page</title>
-  <meta name="description"
-    content="Aakashtech is a leading web agency in Nepal specializing in web development, mobile app development, digital marketing, and AI-powered solutions. We help businesses grow with innovative technology and creative strategies." />
+  <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="keywords"
-    content="Aakashtech, web agency Nepal, web development, app development, digital marketing, AI solutions, custom software, IT services, blockchain development, UI/UX design" />
+  <meta name="keywords" content="">
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/images/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon/favicon.svg" />
@@ -20,10 +18,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- Preload the stylesheet to start fetching it early -->
-  <link rel="preload"
+  <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
-    as="style"
-      onload="this.onload=null;this.rel='stylesheet'">
+    rel="stylesheet">
   <!-- Fallback for users with JavaScript disabled -->
   <noscript>
     <link
@@ -48,22 +45,21 @@
   <div class="page-wrapper">
     <!-- START OF HEADER -->
     <header
-      class="atech-header py-xl-custom-4 py-custom-3 shadow-menu bg-white position-fixed top-0 start-0 end-0 d-flex align-items-center justify-content-center">
+      class="atech-header py-xl-custom-4 py-custom-3 shadow-menu bg-white position-fixed top-0 start-0 end-0 d-flex align-items-center justify-content-center"
+      role="header">
       <div class="container">
         <nav class="atech-navbar d-flex align-items-center justify-content-between gap-x-4" role="navigation"
           aria-label="Main navigation">
           <a href="index.html" class="navbar-brand">
-            <img class="h-100" src="assets/images/site/logo_default.png" alt="Aakashtech brand logo" />
+            <img class="h-100" src="assets/images/site/logo_default.png" alt="Aakashtel logo" />
           </a>
           <div class="atech-navbar-overlay-bg d-xl-none"></div>
           <div class="atech-menu-parent">
             <div class="d-xl-none d-flex align-items-center justify-content-between border-b-gray-100-1 pb-custom-4">
               <a href="index.html" class="navbar-brand d-inline-flex justify-content-end">
-                <img class="h-auto w-auto ms-auto" src="assets/images/site/logo_default.png"
-                  alt="Aakashtech brand logo" />
+                <img class="h-auto w-auto ms-auto" src="assets/images/site/logo_default.png" alt="Aakashtel logo" />
               </a>
-              <button type="button" class="hamburger d-xl-none is-open" aria-label="Close menu"
-                id="mobileSidebarCloseBtn">
+              <button type="button" class="hamburger d-xl-none is-open" id="mobileSidebarCloseBtn">
                 <span class="menu-bar"></span>
               </button>
             </div>
@@ -83,7 +79,7 @@
                       data-submenu="menu-submenu-services">
                       <span class="menu-link-text">Services</span>
                       <span class="menu-link-icon icon-18">
-                        <img src="assets/icons/chevron_down_onyx.svg" alt="chevron down icon" loading="lazy" />
+                        <img src="assets/icons/chevron_down_onyx.svg" alt="" />
                       </span>
                     </a>
                   </li>
@@ -93,7 +89,7 @@
                       data-submenu="menu-submenu-portfolios">
                       <span class="menu-link-text">Our Portfolio</span>
                       <span class="menu-link-icon icon-18">
-                        <img src="assets/icons/chevron_down_onyx.svg" alt="chevron down icon" loading="lazy" />
+                        <img src="assets/icons/chevron_down_onyx.svg" alt="" />
                       </span>
                     </a>
                   </li>
@@ -120,8 +116,7 @@
                   class="atech-menu-info-list bg-white rounded-20 lg-p-custom-6 p-custom-4 mt-custom-4 d-flex flex-column gap-4 w-100 d-xl-none">
                   <div class="menu-info-item d-flex align-items-center gap-3">
                     <div class="menu-info-item-icon icon-40 rounded-full overflow-hidden bg-primary-100">
-                      <img class="icon-20" src="assets/icons/phone_outline_primary.svg" alt="phone outline primary icon"
-                        loading="lazy">
+                      <img class="icon-20" src="assets/icons/phone_outline_primary.svg" alt="">
                     </div>
                     <div class="menu-info-item-content d-flex flex-column gap-1">
                       <h5 class="text-base font-semibold text-onyx-700 mb-custom-1 mt-0">
@@ -134,22 +129,20 @@
                   </div>
                   <div class="menu-info-item d-flex align-items-center gap-3">
                     <div class="menu-info-item-icon icon-40 rounded-full overflow-hidden bg-primary-100">
-                      <img class="icon-20" src="assets/icons/envelope_outline_primary.svg"
-                        alt="envelope outline primary icon" loading="lazy">
+                      <img class="icon-20" src="assets/icons/envelope_outline_primary.svg" alt="">
                     </div>
                     <div class="menu-info-item-content d-flex flex-column gap-1">
                       <h5 class="text-base font-semibold text-onyx-700 mb-custom-1 mt-0">
                         Write email
                       </h5>
                       <p class="mb-0 text-sm font-medium text-onyx-600">
-                        aakashtech@gmail.com.np
+                        <a href="mailto:info@aakashtech.com.np">info@aakashtech.com.np</a>
                       </p>
                     </div>
                   </div>
                   <div class="menu-info-item d-flex align-items-center gap-3">
                     <div class="menu-info-item-icon icon-40 rounded-full overflow-hidden bg-primary-100">
-                      <img class="icon-20" src="assets/icons/location_dot_outline_primary.svg" alt="location dot icon"
-                        loading="lazy">
+                      <img class="icon-20" src="assets/icons/location_dot_outline_primary.svg" alt="">
                     </div>
                     <div class="menu-info-item-content d-flex flex-column gap-1">
                       <h5 class="text-base font-semibold text-onyx-700 mb-custom-1 mt-0">
@@ -165,26 +158,23 @@
                   <div class="social-link-item d-flex align-items-center gap-4">
                     <a href="#"
                       class="social-link-nav icon-40 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
-                      <img class="icon-20" src="assets/icons/facebook_primary_700.svg" alt="facebook icon"
-                        loading="lazy">
+                      <img class="icon-20" src="assets/icons/facebook_primary_700.svg" alt="">
                     </a>
                     <a href="#"
                       class="social-link-nav icon-40 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
-                      <img class="icon-20" src="assets/icons/linked_primary_700.svg" alt="linkedin icon" loading="lazy">
+                      <img class="icon-20" src="assets/icons/linked_primary_700.svg" alt="">
                     </a>
                     <a href="#"
                       class="social-link-nav icon-40 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
-                      <img class="icon-20" src="assets/icons/whatsapp_primary_700.svg" alt="whatsapp icon"
-                        loading="lazy">
+                      <img class="icon-20" src="assets/icons/whatsapp_primary_700.svg" alt="">
                     </a>
                     <a href="#"
                       class="social-link-nav icon-40 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
-                      <img class="icon-20" src="assets/icons/youtube_primary_700.svg" alt="youtube icon" loading="lazy">
+                      <img class="icon-20" src="assets/icons/youtube_primary_700.svg" alt="">
                     </a>
                     <a href="#"
                       class="social-link-nav icon-40 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
-                      <img class="icon-20" src="assets/icons/envelope_primary_700.svg" alt="envelope icon"
-                        loading="lazy">
+                      <img class="icon-20" src="assets/icons/envelope_primary_700.svg" alt="">
                     </a>
                   </div>
                 </div>
@@ -203,8 +193,7 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/custom_software_icon.svg" alt="custom software icon"
-                            loading="lazy" />
+                          <img class="icon-36" src="assets/icons/custom_software_icon.svg" alt="" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -221,8 +210,7 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/mobapp_icon.svg" alt="mobile application icon"
-                            loading="lazy" />
+                          <img class="icon-36" src="assets/icons/mobapp_icon.svg" alt="" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -238,8 +226,7 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/webdev_icon.svg" alt="web development icon"
-                            loading="lazy" />
+                          <img class="icon-36" src="assets/icons/webdev_icon.svg" alt="" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -256,8 +243,7 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/ai_icon.svg" alt="artificial intelligence icon"
-                            loading="lazy" />
+                          <img class="icon-36" src="assets/icons/ai_icon.svg" alt="" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -274,8 +260,7 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/low_code_icon.svg" alt="low code icon"
-                            loading="lazy" />
+                          <img class="icon-36" src="assets/icons/low_code_icon.svg" alt="" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -292,8 +277,7 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/ios_dev_icon.svg" alt="ios development icon"
-                            loading="lazy" />
+                          <img class="icon-36" src="assets/icons/ios_dev_icon.svg" alt="" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -309,8 +293,7 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/staff_aug_icon.svg" alt="staff augmentation icon"
-                            loading="lazy" />
+                          <img class="icon-36" src="assets/icons/staff_aug_icon.svg" alt="" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -327,8 +310,7 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/android_dev_icon.svg" alt="android development icon"
-                            loading="lazy" />
+                          <img class="icon-36" src="assets/icons/android_dev_icon.svg" alt="" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -344,28 +326,25 @@
                   </div>
                   <div class="submenu-bottom d-sm-flex d-none xl-pt-custom-5 pt-custom-4 border-t-gray-100-1">
                     <div class="submenu-contact-info d-flex flex-wrap xl-gap-4 gap-2 justify-content-between w-100">
-                      <div class="submenu-contact-info-item d-flex align-items-center gap-3">
+                      <a href="tel:+9779851195578" class="submenu-contact-info-item d-flex align-items-center gap-3">
                         <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
-                          <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="phone icon"
-                            loading="lazy" />
+                          <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="" />
                         </span>
                         <span class="info-item-text text-base text-onyx-500 font-medium">+977 985-1195578</span>
-                      </div>
-                      <div class="submenu-contact-info-item d-flex align-items-center gap-3">
+                      </a>
+                      <a href="mailto:info@aakashtech.com.np" class="submenu-contact-info-item d-flex align-items-center gap-3">
                         <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
-                          <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="envelope icon"
-                            loading="lazy" />
+                          <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="" />
                         </span>
-                        <span class="info-item-text text-base text-onyx-500 font-medium">aakashtech@gmail.com.np</span>
-                      </div>
-                      <div class="submenu-contact-info-item d-flex align-items-center gap-3">
+                        <span class="info-item-text text-base text-onyx-500 font-medium">info@aakashtech.com.np</span>
+                      </a>
+                      <a href="https://maps.app.goo.gl/ur8L7CY7WmxvSpxb9" class="submenu-contact-info-item d-flex align-items-center gap-3">
                         <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
-                          <img class="icon-18" src="assets/icons/location_dot_outline_primary.svg"
-                            alt="location dot icon" loading="lazy" />
+                          <img class="icon-18" src="assets/icons/location_dot_outline_primary.svg" alt="" />
                         </span>
                         <span class="info-item-text text-base text-onyx-500 font-medium">Kalopul, Kathmandu,
                           Nepal</span>
-                      </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -387,7 +366,7 @@
                           id="v-pills-port-01-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-01" type="button"
                           role="tab" aria-controls="v-pills-port-01" aria-selected="true">
                           <span class="btn-icon icon-24 d-none d-xl-inline-flex">
-                            <img src="assets/icons/mobapp_tab_icon.svg" alt="mobile application icon" loading="lazy" />
+                            <img src="assets/icons/mobapp_tab_icon.svg" alt="" />
                           </span>
                           <span class="btn-text text-onyx-700 text-sm font-medium">Mobile Apps</span>
                         </button>
@@ -396,7 +375,7 @@
                           id="v-pills-port-02-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-02" type="button"
                           role="tab" aria-controls="v-pills-port-02" aria-selected="false">
                           <span class="btn-icon icon-24 d-none d-xl-inline-flex">
-                            <img src="assets/icons/ecommerce_tab_icon.svg" alt="ecommerce tab icon" loading="lazy" />
+                            <img src="assets/icons/ecommerce_tab_icon.svg" alt="" />
                           </span>
                           <span class="btn-text text-onyx-700 text-sm font-medium">E-commerce</span>
                         </button>
@@ -405,7 +384,7 @@
                           id="v-pills-port-03-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-03" type="button"
                           role="tab" aria-controls="v-pills-port-03" aria-selected="false">
                           <span class="btn-icon icon-24 d-none d-xl-inline-flex">
-                            <img src="assets/icons/uiux_tab_icon.svg" alt="ui ux tab icon" loading="lazy" />
+                            <img src="assets/icons/uiux_tab_icon.svg" alt="" />
                           </span>
                           <span class="btn-text text-onyx-700 text-sm font-medium">UI/UX Design</span>
                         </button>
@@ -414,7 +393,7 @@
                           id="v-pills-port-04-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-04" type="button"
                           role="tab" aria-controls="v-pills-port-04" aria-selected="false">
                           <span class="btn-icon icon-24 d-none d-xl-inline-flex">
-                            <img src="assets/icons/ai_tab_icon.svg" alt="ai tab icon" loading="lazy" />
+                            <img src="assets/icons/ai_tab_icon.svg" alt="" />
                           </span>
                           <span class="btn-text text-onyx-700 text-sm font-medium">AI & Automation</span>
                         </button>
@@ -423,7 +402,7 @@
                           id="v-pills-port-05-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-05" type="button"
                           role="tab" aria-controls="v-pills-port-05" aria-selected="false">
                           <span class="btn-icon icon-24 d-none d-xl-inline-flex">
-                            <img src="assets/icons/crm_tab_icon.svg" alt="crm tab icon" loading="lazy" />
+                            <img src="assets/icons/crm_tab_icon.svg" alt="" />
                           </span>
                           <span class="btn-text text-onyx-700 text-sm font-medium">CRM & ERP</span>
                         </button>
@@ -432,7 +411,7 @@
                           id="v-pills-port-06-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-06" type="button"
                           role="tab" aria-controls="v-pills-port-06" aria-selected="false">
                           <span class="btn-icon icon-24 d-none d-xl-inline-flex">
-                            <img src="assets/icons/finance_tab_icon.svg" alt="finance tab icon" loading="lazy" />
+                            <img src="assets/icons/finance_tab_icon.svg" alt="" />
                           </span>
                           <span class="btn-text text-onyx-700 text-sm font-medium">Finance & Fintech</span>
                         </button>
@@ -449,8 +428,7 @@
                               class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
                               <div
                                 class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
-                                <img src="assets/images/misc/portfolio_thumbnail_1.png" alt="portfolio thumbnail"
-                                  loading="lazy" />
+                                <img src="assets/images/misc/portfolio_thumbnail_1.png" alt="" />
                               </div>
                               <div
                                 class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
@@ -468,8 +446,7 @@
                               class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
                               <div
                                 class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
-                                <img src="assets/images/misc/portfolio_thumbnail_2.png" alt="portfolio thumbnail"
-                                  loading="lazy" />
+                                <img src="assets/images/misc/portfolio_thumbnail_2.png" alt="" />
                               </div>
                               <div
                                 class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
@@ -487,8 +464,7 @@
                               class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
                               <div
                                 class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
-                                <img src="assets/images/misc/portfolio_thumbnail_3.png" alt="portfolio thumbnail"
-                                  loading="lazy" />
+                                <img src="assets/images/misc/portfolio_thumbnail_3.png" alt="" />
                               </div>
                               <div
                                 class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
@@ -506,8 +482,7 @@
                               class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
                               <div
                                 class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
-                                <img src="assets/images/misc/portfolio_thumbnail_1.png" alt="portfolio thumbnail"
-                                  loading="lazy" />
+                                <img src="assets/images/misc/portfolio_thumbnail_1.png" alt="" />
                               </div>
                               <div
                                 class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
@@ -525,8 +500,7 @@
                               class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
                               <div
                                 class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
-                                <img src="assets/images/misc/portfolio_thumbnail_2.png" alt="portfolio thumbnail"
-                                  loading="lazy" />
+                                <img src="assets/images/misc/portfolio_thumbnail_2.png" alt="" />
                               </div>
                               <div
                                 class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
@@ -544,8 +518,7 @@
                               class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
                               <div
                                 class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
-                                <img src="assets/images/misc/portfolio_thumbnail_3.png" alt="portfolio thumbnail"
-                                  loading="lazy" />
+                                <img src="assets/images/misc/portfolio_thumbnail_3.png" alt="" />
                               </div>
                               <div
                                 class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
@@ -577,29 +550,26 @@
                     </div>
                   </div>
                   <div class="submenu-bottom d-sm-flex d-none xl-pt-custom-5 pt-custom-4 border-t-gray-100-1">
-                    <div class="submenu-contact-info d-flex flex-wrap lg-gap-4 gap-3 justify-content-between w-100">
-                      <div class="submenu-contact-info-item d-flex align-items-center gap-3">
+                    <div class="submenu-contact-info d-flex flex-wrap xl-gap-4 gap-2 justify-content-between w-100">
+                      <a href="tel:+9779851195578" class="submenu-contact-info-item d-flex align-items-center gap-3">
                         <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
-                          <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="phone icon"
-                            loading="lazy" />
+                          <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="" />
                         </span>
                         <span class="info-item-text text-base text-onyx-500 font-medium">+977 985-1195578</span>
-                      </div>
-                      <div class="submenu-contact-info-item d-flex align-items-center gap-3">
+                      </a>
+                      <a href="mailto:info@aakashtech.com.np" class="submenu-contact-info-item d-flex align-items-center gap-3">
                         <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
-                          <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="envelope icon"
-                            loading="lazy" />
+                          <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="" />
                         </span>
-                        <span class="info-item-text text-base text-onyx-500 font-medium">aakashtech@gmail.com.np</span>
-                      </div>
-                      <div class="submenu-contact-info-item d-flex align-items-center gap-3">
+                        <span class="info-item-text text-base text-onyx-500 font-medium">info@aakashtech.com.np</span>
+                      </a>
+                      <a href="https://maps.app.goo.gl/ur8L7CY7WmxvSpxb9" class="submenu-contact-info-item d-flex align-items-center gap-3">
                         <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
-                          <img class="icon-18" src="assets/icons/location_dot_outline_primary.svg"
-                            alt="location dot icon" loading="lazy" />
+                          <img class="icon-18" src="assets/icons/location_dot_outline_primary.svg" alt="" />
                         </span>
                         <span class="info-item-text text-base text-onyx-500 font-medium">Kalopul, Kathmandu,
                           Nepal</span>
-                      </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -608,10 +578,10 @@
           </div>
 
           <div class="atech-header-btns d-flex align-items-center gap-4 xl-gap-6">
-            <a href="https://wa.me/+9779851300024" class="whatsapp-btn position-relative" target="_blank"><img
+            <a href="http://wa.me/9779851195578" class="whatsapp-btn position-relative" target="_blank"><img
                 src="assets/images/misc/whatsapp_logo.png" class="icon-32" alt="whatsapp icon" /></a>
             <a href="contact.html" class="btn btn-primary d-none d-xl-inline-flex">Contact Us</a>
-            <button type="button" class="hamburger d-xl-none" aria-label="Open menu" id="mobileSidebarOpenBtn">
+            <button type="button" class="hamburger d-xl-none" id="mobileSidebarOpenBtn">
               <span class="menu-bar"></span>
             </button>
           </div>
@@ -635,8 +605,7 @@
         </div>
         <div class="blog-detail-banner-content w-100">
           <div class="blog-detail-img rounded-28 overflow-hidden">
-            <img src="assets/images/blogs/sample_blog_detail_banner.png" alt="blog image" fetchpriority="high"
-              decoding="async" />
+            <img src="assets/images/blogs/sample_blog_detail_banner.png" alt="" />
           </div>
           <div
             class="blog-detail-head d-flex flex-column xxl-gap-6 lg-gap-5 gap-4 xxl-pb-custom-6 lg-pb-custom-5 pb-custom-4 border-b-gray-200-1">
@@ -646,7 +615,7 @@
             <div class="d-flex align-items-center gap-4 justify-content-between flex-wrap">
               <div class="card-author card-metadata-item d-flex align-items-center gap-3">
                 <div class="card-author-img rounded-full icon-36 overflow-hidden">
-                  <img src="assets/images/misc/reviews_user_1.png" alt="blog author image" />
+                  <img src="assets/images/misc/reviews_user_1.png" alt="" />
                 </div>
                 <span class="text-primary-500 font-semibold text-sm">Uttam Bhandary</span>
               </div>
@@ -656,21 +625,21 @@
                 <div
                   class="card-date card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                   <span class="icon-12">
-                    <img src="assets/icons/calendar_outline_gray_500.svg" alt="calendar icon" loading="lazy" />
+                    <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
                   </span>
                   June 6, 2025
                 </div>
                 <div
                   class="card-readtime card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                   <span class="icon-12">
-                    <img src="assets/icons/clock_filled_gray_500.svg" alt="clock icon" loading="lazy" />
+                    <img src="assets/icons/clock_filled_gray_500.svg" alt="" />
                   </span>
                   10 min
                 </div>
                 <div
                   class="card-views card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                   <span class="icon-12">
-                    <img src="assets/icons/eye_filled_gray_500_icon.svg" alt="eye icon" loading="lazy" />
+                    <img src="assets/icons/eye_filled_gray_500_icon.svg" alt="" />
                   </span>
                   245
                 </div>
@@ -689,8 +658,7 @@
             <input type="text" class="form-control text-base border-0 shadow-none bg-transparent"
               placeholder="Search here ...">
             <button type="submit" class="btn btn-primary icon-btn text-xl btn-rounded icon-40">
-              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-              <span class="visually-hidden">Search</span>
+              <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </div>
 
@@ -698,7 +666,7 @@
             <div
               class="bookmark-widget-head d-flex align-items-center gap-3 justify-content-start bg-primary-500 xl-px-custom-4 px-custom-3 xl-py-custom-3 py-custom-2 rounded-4 mb-custom-7 position-relative">
               <span class="widget-head-icon icon-18">
-                <img src="assets/icons/table_list_outline_white_icon.svg" alt="table list icon" loading="lazy" />
+                <img src="assets/icons/table_list_outline_white_icon.svg" alt="" />
               </span>
               <p class="mb-0 text-white text-lg font-semibold">Table of Contents</p>
             </div>
@@ -740,8 +708,7 @@
             <div class="posts-widget-list d-grid align-items-start gap-3">
               <div class="posts-widget-item d-flex align-items-center gap-4 bg-primary-50 rounded-16">
                 <div class="widget-item-img overflow-hidden rounded-12">
-                  <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card1.png"
-                    alt="blog card image" />
+                  <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card1.png" alt="" />
                 </div>
                 <div class="widget-item-body d-flex flex-column justify-content-between">
                   <div
@@ -749,14 +716,14 @@
                     <div
                       class="card-date card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
-                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="calendar icon" loading="lazy" />
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
                       </span>
                       June 6, 2025
                     </div>
                     <div
                       class="card-readtime card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
-                        <img src="assets/icons/clock_filled_gray_500.svg" alt="clock icon" loading="lazy" />
+                        <img src="assets/icons/clock_filled_gray_500.svg" alt="" />
                       </span>
                       10 min
                     </div>
@@ -767,8 +734,7 @@
               </div>
               <div class="posts-widget-item d-flex align-items-center gap-4 bg-primary-50 rounded-16">
                 <div class="widget-item-img overflow-hidden rounded-12">
-                  <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card2.png"
-                    alt="blog card image" />
+                  <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card2.png" alt="" />
                 </div>
                 <div class="widget-item-body d-flex flex-column justify-content-between">
                   <div
@@ -776,14 +742,14 @@
                     <div
                       class="card-date card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
-                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="calendar icon" loading="lazy" />
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
                       </span>
                       June 6, 2025
                     </div>
                     <div
                       class="card-readtime card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
-                        <img src="assets/icons/clock_filled_gray_500.svg" alt="clock icon" loading="lazy" />
+                        <img src="assets/icons/clock_filled_gray_500.svg" alt="" />
                       </span>
                       10 min
                     </div>
@@ -794,8 +760,7 @@
               </div>
               <div class="posts-widget-item d-flex align-items-center gap-4 bg-primary-50 rounded-16">
                 <div class="widget-item-img overflow-hidden rounded-12">
-                  <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card3.png"
-                    alt="blog card image" />
+                  <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card3.png" alt="" />
                 </div>
                 <div class="widget-item-body d-flex flex-column justify-content-between">
                   <div
@@ -803,14 +768,14 @@
                     <div
                       class="card-date card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
-                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="calendar icon" loading="lazy" />
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
                       </span>
                       June 6, 2025
                     </div>
                     <div
                       class="card-readtime card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
-                        <img src="assets/icons/clock_filled_gray_500.svg" alt="clock icon" loading="lazy" />
+                        <img src="assets/icons/clock_filled_gray_500.svg" alt="" />
                       </span>
                       10 min
                     </div>
@@ -821,8 +786,7 @@
               </div>
               <div class="posts-widget-item d-flex align-items-center gap-4 bg-primary-50 rounded-16">
                 <div class="widget-item-img overflow-hidden rounded-12">
-                  <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card4.png"
-                    alt="blog card image" />
+                  <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card4.png" alt="" />
                 </div>
                 <div class="widget-item-body d-flex flex-column justify-content-between">
                   <div
@@ -830,14 +794,14 @@
                     <div
                       class="card-date card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
-                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="calendar icon" loading="lazy" />
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
                       </span>
                       June 6, 2025
                     </div>
                     <div
                       class="card-readtime card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
-                        <img src="assets/icons/clock_filled_gray_500.svg" alt="clock icon" loading="lazy" />
+                        <img src="assets/icons/clock_filled_gray_500.svg" alt="" />
                       </span>
                       10 min
                     </div>
@@ -963,16 +927,16 @@
               <p class="text-gray-700 text-base font-semibold mb-0">Share:</p>
               <div class="d-flex flex-wrap gap-2 align-items-center">
                 <a href="#" class="icon-28">
-                  <img src="assets/icons/facebook_original.svg" alt="facebook icon" loading="lazy" />
+                  <img src="assets/icons/facebook_original.svg" alt="" />
                 </a>
                 <a href="#" class="icon-28">
-                  <img src="assets/icons/x_original.svg" alt="x icon" loading="lazy" />
+                  <img src="assets/icons/x_original.svg" alt="" />
                 </a>
                 <a href="#" class="icon-28">
-                  <img src="assets/icons/linkedin_original.svg" alt="linkedin icon" loading="lazy" />
+                  <img src="assets/icons/linkedin_original.svg" alt="" />
                 </a>
                 <a href="#" class="icon-28">
-                  <img src="assets/icons/instagram_original.svg" alt="instagram icon" loading="lazy" />
+                  <img src="assets/icons/instagram_original.svg" alt="" />
                 </a>
               </div>
             </div>
@@ -982,7 +946,7 @@
             <div
               class="blog-traverse-prev d-grid align-items-center xxl-py-custom-5 xl-py-custom-4 py-custom-3 xxl-pe-custom-6 xl-pe-custom-5 pe-custom-4 xxl-gap-6 xl-gap-5 sm-gap-4 xs-gap-3 gap-2 border-r-gray-100-1">
               <div class="blog-traverse-img bg-white rounded-12 d-flex align-items-center justify-content-center">
-                <img class="w-auto" src="assets/images/misc/lhamee_sm_thumbnail.png" alt="lhamee thumbnail" />
+                <img class="w-auto" src="assets/images/misc/lhamee_sm_thumbnail.png" alt="" />
               </div>
               <div class="blog-traverse-info d-flex flex-column align-items-start justify-content-center gap-2">
                 <a href="#" class="btn-link btn-link-gray-700">
@@ -1012,7 +976,7 @@
                   E-commerce CMS for Online Shopping Platform</a>
               </div>
               <div class="blog-traverse-img bg-white rounded-12 d-flex align-items-center justify-content-center">
-                <img class="w-auto" src="assets/images/misc/ecommerce_sm_thumbnail.png" alt="ecommerce thumbnail" />
+                <img class="w-auto" src="assets/images/misc/ecommerce_sm_thumbnail.png" alt="" />
               </div>
             </div>
           </div>
@@ -1056,8 +1020,7 @@
             <div class="posts-widget-list d-grid align-items-start gap-3">
               <div class="posts-widget-item d-flex align-items-center gap-4 bg-primary-50 rounded-16">
                 <div class="widget-item-img overflow-hidden rounded-12">
-                  <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card1.png"
-                    alt="blog card image" />
+                  <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card1.png" alt="" />
                 </div>
                 <div class="widget-item-body d-flex flex-column justify-content-between">
                   <div
@@ -1065,14 +1028,14 @@
                     <div
                       class="card-date card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
-                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="calendar icon" loading="lazy" />
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
                       </span>
                       June 6, 2025
                     </div>
                     <div
                       class="card-readtime card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
-                        <img src="assets/icons/clock_filled_gray_500.svg" alt="clock icon" loading="lazy" />
+                        <img src="assets/icons/clock_filled_gray_500.svg" alt="" />
                       </span>
                       10 min
                     </div>
@@ -1083,8 +1046,7 @@
               </div>
               <div class="posts-widget-item d-flex align-items-center gap-4 bg-primary-50 rounded-16">
                 <div class="widget-item-img overflow-hidden rounded-12">
-                  <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card2.png"
-                    alt="blog card image" />
+                  <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card2.png" alt="" />
                 </div>
                 <div class="widget-item-body d-flex flex-column justify-content-between">
                   <div
@@ -1092,14 +1054,14 @@
                     <div
                       class="card-date card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
-                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="calendar icon" loading="lazy" />
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
                       </span>
                       June 6, 2025
                     </div>
                     <div
                       class="card-readtime card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
-                        <img src="assets/icons/clock_filled_gray_500.svg" alt="clock icon" loading="lazy" />
+                        <img src="assets/icons/clock_filled_gray_500.svg" alt="" />
                       </span>
                       10 min
                     </div>
@@ -1110,8 +1072,7 @@
               </div>
               <div class="posts-widget-item d-flex align-items-center gap-4 bg-primary-50 rounded-16">
                 <div class="widget-item-img overflow-hidden rounded-12">
-                  <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card3.png"
-                    alt="blog card image" />
+                  <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card3.png" alt="" />
                 </div>
                 <div class="widget-item-body d-flex flex-column justify-content-between">
                   <div
@@ -1119,14 +1080,14 @@
                     <div
                       class="card-date card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
-                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="calendar icon" loading="lazy" />
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
                       </span>
                       June 6, 2025
                     </div>
                     <div
                       class="card-readtime card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
-                        <img src="assets/icons/clock_filled_gray_500.svg" alt="clock icon" loading="lazy" />
+                        <img src="assets/icons/clock_filled_gray_500.svg" alt="" />
                       </span>
                       10 min
                     </div>
@@ -1137,8 +1098,7 @@
               </div>
               <div class="posts-widget-item d-flex align-items-center gap-4 bg-primary-50 rounded-16">
                 <div class="widget-item-img overflow-hidden rounded-12">
-                  <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card4.png"
-                    alt="blog card image" />
+                  <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card4.png" alt="" />
                 </div>
                 <div class="widget-item-body d-flex flex-column justify-content-between">
                   <div
@@ -1146,14 +1106,14 @@
                     <div
                       class="card-date card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
-                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="calendar icon" loading="lazy" />
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
                       </span>
                       June 6, 2025
                     </div>
                     <div
                       class="card-readtime card-metadata-item px-custom-4 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-start border-r-primary-200-1">
                       <span class="icon-12">
-                        <img src="assets/icons/clock_filled_gray_500.svg" alt="clock icon" loading="lazy" />
+                        <img src="assets/icons/clock_filled_gray_500.svg" alt="" />
                       </span>
                       10 min
                     </div>
@@ -1192,7 +1152,7 @@
             <div
               class="card border-0 blog-card bg-white rounded-28 overflow-hidden xxl-p-custom-4 xl-p-custom-3 p-custom-2 d-flex flex-column gap-3 position-relative shadow-primary-700-10 flex-1">
               <div class="card-img border-0 rounded-20 overflow-hidden position-relative">
-                <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card1.png" alt="blog image" />
+                <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card1.png" alt="" />
                 <div class="card-tags d-flex flex-wrap gap-2 position-absolute">
                   <span
                     class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">Telephony
@@ -1209,21 +1169,20 @@
                     class="card-metadata d-inline-flex align-items-center bg-primary-50 xl-py-custom-3 py-custom-2 xl-px-custom-4 px-custom-2 justify-content-start rounded-100vh me-auto">
                     <div class="card-author card-metadata-item d-flex align-items-center gap-3">
                       <div class="card-author-img rounded-full icon-36 overflow-hidden">
-                        <img src="assets/images/misc/reviews_user_1.png" alt="blog author image" loading="lazy" />
+                        <img src="assets/images/misc/reviews_user_1.png" alt="" />
                       </div>
                       <span class="text-primary-500 font-semibold text-sm">Uttam Bhandary</span>
                     </div>
                     <div
                       class="card-date card-metadata-item bg-primary-50 rounded-24 py-custom-2 xl-px-custom-4 px-custom-3 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-center">
                       <span class="icon-12">
-                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="calendar icon" loading="lazy" />
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
                       </span>
                       June 6, 2025
                     </div>
                   </div>
                 </div>
-                <div
-                  class="card-content content-stylings xxl-my-custom-4 mt-custom-3 mb-custom-2 clamp-line-4 text-base">
+                <div class="card-content content-stylings xxl-my-custom-4 mt-custom-3 mb-custom-2 clamp-line-4 text-base">
                   <p>Making the switch to the cloud? Learn the key differences between cloud-based and traditional
                     on-premise call centers. We cover the pros, cons, costs, and long-term scalability to help you make
                     an informed decision for your organization.</p>
@@ -1236,12 +1195,11 @@
                     </span>
                   </a>
                   <div class="card-links d-flex align-items-center gap-3 justify-content-end">
-                    <a href="#" class="card-link icon-20 mx-0" aria-label="Add to Favorites">
-                      <img src="assets/icons/heart_outline_turquoise_icon.svg" alt="heart icon" loading="lazy" />
+                    <a href="#" class="card-link icon-20 mx-0">
+                      <img src="assets/icons/heart_outline_turquoise_icon.svg" alt="" />
                     </a>
-                    <a href="#" class="card-link icon-20 mx-0" aria-label="Share this post">
-                      <img src="assets/icons/share_nodes_outline_primary_500_icon.svg" alt="share nodes icon"
-                        loading="lazy" />
+                    <a href="#" class="card-link icon-20 mx-0">
+                      <img src="assets/icons/share_nodes_outline_primary_500_icon.svg" alt="" />
                     </a>
                   </div>
                 </div>
@@ -1253,7 +1211,7 @@
             <div
               class="card border-0 blog-card bg-white rounded-28 overflow-hidden xxl-p-custom-4 xl-p-custom-3 p-custom-2 d-flex flex-column gap-3 position-relative shadow-primary-700-10 flex-1">
               <div class="card-img border-0 rounded-20 overflow-hidden position-relative">
-                <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card2.png" alt="blog image" />
+                <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card2.png" alt="" />
                 <div class="card-tags d-flex flex-wrap gap-2 position-absolute">
                   <span
                     class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">Telephony
@@ -1270,21 +1228,20 @@
                     class="card-metadata d-inline-flex align-items-center bg-primary-50 xl-py-custom-3 py-custom-2 xl-px-custom-4 px-custom-2 justify-content-start rounded-100vh me-auto">
                     <div class="card-author card-metadata-item d-flex align-items-center gap-3">
                       <div class="card-author-img rounded-full icon-36 overflow-hidden">
-                        <img src="assets/images/misc/reviews_user_1.png" alt="blog author image" loading="lazy" />
+                        <img src="assets/images/misc/reviews_user_1.png" alt="" />
                       </div>
                       <span class="text-primary-500 font-semibold text-sm">Uttam Bhandary</span>
                     </div>
                     <div
                       class="card-date card-metadata-item bg-primary-50 rounded-24 py-custom-2 xl-px-custom-4 px-custom-3 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-center">
                       <span class="icon-12">
-                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="calendar icon" loading="lazy" />
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
                       </span>
                       June 6, 2025
                     </div>
                   </div>
                 </div>
-                <div
-                  class="card-content content-stylings xxl-my-custom-4 mt-custom-3 mb-custom-2 clamp-line-4 text-base">
+                <div class="card-content content-stylings xxl-my-custom-4 mt-custom-3 mb-custom-2 clamp-line-4 text-base">
                   <p>Making the switch to the cloud? Learn the key differences between cloud-based and traditional
                     on-premise call centers. We cover the pros, cons, costs, and long-term scalability to help you make
                     an informed decision for your organization.</p>
@@ -1297,12 +1254,11 @@
                     </span>
                   </a>
                   <div class="card-links d-flex align-items-center gap-3 justify-content-end">
-                    <a href="#" class="card-link icon-20 mx-0" aria-label="Add to Favorites">
-                      <img src="assets/icons/heart_outline_turquoise_icon.svg" alt="heart icon" loading="lazy" />
+                    <a href="#" class="card-link icon-20 mx-0">
+                      <img src="assets/icons/heart_outline_turquoise_icon.svg" alt="" />
                     </a>
-                    <a href="#" class="card-link icon-20 mx-0" aria-label="Share this post">
-                      <img src="assets/icons/share_nodes_outline_primary_500_icon.svg" alt="share nodes icon"
-                        loading="lazy" />
+                    <a href="#" class="card-link icon-20 mx-0">
+                      <img src="assets/icons/share_nodes_outline_primary_500_icon.svg" alt="" />
                     </a>
                   </div>
                 </div>
@@ -1314,7 +1270,7 @@
             <div
               class="card border-0 blog-card bg-white rounded-28 overflow-hidden xxl-p-custom-4 xl-p-custom-3 p-custom-2 d-flex flex-column gap-3 position-relative shadow-primary-700-10 flex-1">
               <div class="card-img border-0 rounded-20 overflow-hidden position-relative">
-                <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card3.png" alt="blog image" />
+                <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card3.png" alt="" />
                 <div class="card-tags d-flex flex-wrap gap-2 position-absolute">
                   <span
                     class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">Telephony
@@ -1331,21 +1287,20 @@
                     class="card-metadata d-inline-flex align-items-center bg-primary-50 xl-py-custom-3 py-custom-2 xl-px-custom-4 px-custom-2 justify-content-start rounded-100vh me-auto">
                     <div class="card-author card-metadata-item d-flex align-items-center gap-3">
                       <div class="card-author-img rounded-full icon-36 overflow-hidden">
-                        <img src="assets/images/misc/reviews_user_1.png" alt="blog author image" loading="lazy" />
+                        <img src="assets/images/misc/reviews_user_1.png" alt="" />
                       </div>
                       <span class="text-primary-500 font-semibold text-sm">Uttam Bhandary</span>
                     </div>
                     <div
                       class="card-date card-metadata-item bg-primary-50 rounded-24 py-custom-2 xl-px-custom-4 px-custom-3 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-center">
                       <span class="icon-12">
-                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="calendar icon" loading="lazy" />
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
                       </span>
                       June 6, 2025
                     </div>
                   </div>
                 </div>
-                <div
-                  class="card-content content-stylings xxl-my-custom-4 mt-custom-3 mb-custom-2 clamp-line-4 text-base">
+                <div class="card-content content-stylings xxl-my-custom-4 mt-custom-3 mb-custom-2 clamp-line-4 text-base">
                   <p>Making the switch to the cloud? Learn the key differences between cloud-based and traditional
                     on-premise call centers. We cover the pros, cons, costs, and long-term scalability to help you make
                     an informed decision for your organization.</p>
@@ -1358,12 +1313,11 @@
                     </span>
                   </a>
                   <div class="card-links d-flex align-items-center gap-3 justify-content-end">
-                    <a href="#" class="card-link icon-20 mx-0" aria-label="Add to Favorites">
-                      <img src="assets/icons/heart_outline_turquoise_icon.svg" alt="heart icon" loading="lazy" />
+                    <a href="#" class="card-link icon-20 mx-0">
+                      <img src="assets/icons/heart_outline_turquoise_icon.svg" alt="" />
                     </a>
-                    <a href="#" class="card-link icon-20 mx-0" aria-label="Share this post">
-                      <img src="assets/icons/share_nodes_outline_primary_500_icon.svg" alt="share nodes icon"
-                        loading="lazy" />
+                    <a href="#" class="card-link icon-20 mx-0">
+                      <img src="assets/icons/share_nodes_outline_primary_500_icon.svg" alt="" />
                     </a>
                   </div>
                 </div>
@@ -1375,7 +1329,7 @@
             <div
               class="card border-0 blog-card bg-white rounded-28 overflow-hidden xxl-p-custom-4 xl-p-custom-3 p-custom-2 d-flex flex-column gap-3 position-relative shadow-primary-700-10 flex-1">
               <div class="card-img border-0 rounded-20 overflow-hidden position-relative">
-                <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card4.png" alt="blog image" />
+                <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card4.png" alt="" />
                 <div class="card-tags d-flex flex-wrap gap-2 position-absolute">
                   <span
                     class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">Telephony
@@ -1392,21 +1346,20 @@
                     class="card-metadata d-inline-flex align-items-center bg-primary-50 xl-py-custom-3 py-custom-2 xl-px-custom-4 px-custom-2 justify-content-start rounded-100vh me-auto">
                     <div class="card-author card-metadata-item d-flex align-items-center gap-3">
                       <div class="card-author-img rounded-full icon-36 overflow-hidden">
-                        <img src="assets/images/misc/reviews_user_1.png" alt="blog author image" loading="lazy" />
+                        <img src="assets/images/misc/reviews_user_1.png" alt="" />
                       </div>
                       <span class="text-primary-500 font-semibold text-sm">Uttam Bhandary</span>
                     </div>
                     <div
                       class="card-date card-metadata-item bg-primary-50 rounded-24 py-custom-2 xl-px-custom-4 px-custom-3 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-center">
                       <span class="icon-12">
-                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="calendar icon" loading="lazy" />
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
                       </span>
                       June 6, 2025
                     </div>
                   </div>
                 </div>
-                <div
-                  class="card-content content-stylings xxl-my-custom-4 mt-custom-3 mb-custom-2 clamp-line-4 text-base">
+                <div class="card-content content-stylings xxl-my-custom-4 mt-custom-3 mb-custom-2 clamp-line-4 text-base">
                   <p>Making the switch to the cloud? Learn the key differences between cloud-based and traditional
                     on-premise call centers. We cover the pros, cons, costs, and long-term scalability to help you make
                     an informed decision for your organization.</p>
@@ -1419,12 +1372,11 @@
                     </span>
                   </a>
                   <div class="card-links d-flex align-items-center gap-3 justify-content-end">
-                    <a href="#" class="card-link icon-20 mx-0" aria-label="Add to Favorites">
-                      <img src="assets/icons/heart_outline_turquoise_icon.svg" alt="heart icon" loading="lazy" />
+                    <a href="#" class="card-link icon-20 mx-0">
+                      <img src="assets/icons/heart_outline_turquoise_icon.svg" alt="" />
                     </a>
-                    <a href="#" class="card-link icon-20 mx-0" aria-label="Share this post">
-                      <img src="assets/icons/share_nodes_outline_primary_500_icon.svg" alt="share nodes icon"
-                        loading="lazy" />
+                    <a href="#" class="card-link icon-20 mx-0">
+                      <img src="assets/icons/share_nodes_outline_primary_500_icon.svg" alt="" />
                     </a>
                   </div>
                 </div>
@@ -1436,7 +1388,7 @@
             <div
               class="card border-0 blog-card bg-white rounded-28 overflow-hidden xxl-p-custom-4 xl-p-custom-3 p-custom-2 d-flex flex-column gap-3 position-relative shadow-primary-700-10 flex-1">
               <div class="card-img border-0 rounded-20 overflow-hidden position-relative">
-                <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card5.png" alt="blog image" />
+                <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card5.png" alt="" />
                 <div class="card-tags d-flex flex-wrap gap-2 position-absolute">
                   <span
                     class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">Telephony
@@ -1453,21 +1405,20 @@
                     class="card-metadata d-inline-flex align-items-center bg-primary-50 xl-py-custom-3 py-custom-2 xl-px-custom-4 px-custom-2 justify-content-start rounded-100vh me-auto">
                     <div class="card-author card-metadata-item d-flex align-items-center gap-3">
                       <div class="card-author-img rounded-full icon-36 overflow-hidden">
-                        <img src="assets/images/misc/reviews_user_1.png" alt="blog author image" loading="lazy" />
+                        <img src="assets/images/misc/reviews_user_1.png" alt="" />
                       </div>
                       <span class="text-primary-500 font-semibold text-sm">Uttam Bhandary</span>
                     </div>
                     <div
                       class="card-date card-metadata-item bg-primary-50 rounded-24 py-custom-2 xl-px-custom-4 px-custom-3 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-center">
                       <span class="icon-12">
-                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="calendar icon" loading="lazy" />
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
                       </span>
                       June 6, 2025
                     </div>
                   </div>
                 </div>
-                <div
-                  class="card-content content-stylings xxl-my-custom-4 mt-custom-3 mb-custom-2 clamp-line-4 text-base">
+                <div class="card-content content-stylings xxl-my-custom-4 mt-custom-3 mb-custom-2 clamp-line-4 text-base">
                   <p>Making the switch to the cloud? Learn the key differences between cloud-based and traditional
                     on-premise call centers. We cover the pros, cons, costs, and long-term scalability to help you make
                     an informed decision for your organization.</p>
@@ -1480,12 +1431,11 @@
                     </span>
                   </a>
                   <div class="card-links d-flex align-items-center gap-3 justify-content-end">
-                    <a href="#" class="card-link icon-20 mx-0" aria-label="Add to Favorites">
-                      <img src="assets/icons/heart_outline_turquoise_icon.svg" alt="heart icon" loading="lazy" />
+                    <a href="#" class="card-link icon-20 mx-0">
+                      <img src="assets/icons/heart_outline_turquoise_icon.svg" alt="" />
                     </a>
-                    <a href="#" class="card-link icon-20 mx-0" aria-label="Share this post">
-                      <img src="assets/icons/share_nodes_outline_primary_500_icon.svg" alt="share nodes icon"
-                        loading="lazy" />
+                    <a href="#" class="card-link icon-20 mx-0">
+                      <img src="assets/icons/share_nodes_outline_primary_500_icon.svg" alt="" />
                     </a>
                   </div>
                 </div>
@@ -1497,7 +1447,7 @@
             <div
               class="card border-0 blog-card bg-white rounded-28 overflow-hidden xxl-p-custom-4 xl-p-custom-3 p-custom-2 d-flex flex-column gap-3 position-relative shadow-primary-700-10 flex-1">
               <div class="card-img border-0 rounded-20 overflow-hidden position-relative">
-                <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card6.png" alt="blog image" />
+                <img class="w-100 h-100 object-fit-cover" src="assets/images/blogs/blog_card6.png" alt="" />
                 <div class="card-tags d-flex flex-wrap gap-2 position-absolute">
                   <span
                     class="card-tag-item text-white text-xs font-medium rounded-100vh d-inline-flex align-items-center justify-content-center text-center px-custom-3 py-custom-1">Telephony
@@ -1514,21 +1464,20 @@
                     class="card-metadata d-inline-flex align-items-center bg-primary-50 xl-py-custom-3 py-custom-2 xl-px-custom-4 px-custom-2 justify-content-start rounded-100vh me-auto">
                     <div class="card-author card-metadata-item d-flex align-items-center gap-3">
                       <div class="card-author-img rounded-full icon-36 overflow-hidden">
-                        <img src="assets/images/misc/reviews_user_1.png" alt="blog author image" loading="lazy" />
+                        <img src="assets/images/misc/reviews_user_1.png" alt="" />
                       </div>
                       <span class="text-primary-500 font-semibold text-sm">Uttam Bhandary</span>
                     </div>
                     <div
                       class="card-date card-metadata-item bg-primary-50 rounded-24 py-custom-2 xl-px-custom-4 px-custom-3 text-gray-500 font-semibold text-xs gap-2 d-inline-flex align-items-center justify-content-center">
                       <span class="icon-12">
-                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="calendar icon" loading="lazy" />
+                        <img src="assets/icons/calendar_outline_gray_500.svg" alt="" />
                       </span>
                       June 6, 2025
                     </div>
                   </div>
                 </div>
-                <div
-                  class="card-content content-stylings xxl-my-custom-4 mt-custom-3 mb-custom-2 clamp-line-4 text-base">
+                <div class="card-content content-stylings xxl-my-custom-4 mt-custom-3 mb-custom-2 clamp-line-4 text-base">
                   <p>Making the switch to the cloud? Learn the key differences between cloud-based and traditional
                     on-premise call centers. We cover the pros, cons, costs, and long-term scalability to help you make
                     an informed decision for your organization.</p>
@@ -1541,12 +1490,11 @@
                     </span>
                   </a>
                   <div class="card-links d-flex align-items-center gap-3 justify-content-end">
-                    <a href="#" class="card-link icon-20 mx-0" aria-label="Add to Favorites">
-                      <img src="assets/icons/heart_outline_turquoise_icon.svg" alt="heart icon" loading="lazy" />
+                    <a href="#" class="card-link icon-20 mx-0">
+                      <img src="assets/icons/heart_outline_turquoise_icon.svg" alt="" />
                     </a>
-                    <a href="#" class="card-link icon-20 mx-0" aria-label="Share this post">
-                      <img src="assets/icons/share_nodes_outline_primary_500_icon.svg" alt="share nodes icon"
-                        loading="lazy" />
+                    <a href="#" class="card-link icon-20 mx-0">
+                      <img src="assets/icons/share_nodes_outline_primary_500_icon.svg" alt="" />
                     </a>
                   </div>
                 </div>
@@ -1563,21 +1511,20 @@
         <div
           class="cta-block text-center d-flex flex-column align-items-center justify-content-center mx-auto w-100 xxl-gap-10 xl-gap-9 lg-gap-8 md-gap-7 sm-gap-6 xs-gap-5 gap-4">
           <div class="cta-block-content mx-auto w-100">
-            <h2
-              class="cta-block-ttl text-onyx-700 text-7xl-mid font-extrabold xl-mb-custom-5 lg-mb-custom-4 mb-custom-3">
-              Your <span class="text-primary-500 px-custom-1">Project</span>, Our <span
+            <h2 class="cta-block-ttl text-onyx-700 text-7xl-mid font-extrabold xl-mb-custom-5 lg-mb-custom-4 mb-custom-3">Your <span
+                class="text-primary-500 px-custom-1">Project</span>, Our <span
                 class="text-primary-500 px-custom-1">Expertise</span></h2>
             <p class="cta-block-text mb-0 text-onyx-600 font-semibold text-xl">From digital strategy to design and
               development, we’re here to help with any project you have in mind.</p>
           </div>
           <div class="d-flex flex-wrap align-items-center justify-content-center sm-gap-4 gap-3">
-            <a href="#" class="btn btn-xl btn-primary-white btn-rounded btn-quarter-wide">
+            <a href="http://wa.me/9779851195578" class="btn btn-xl btn-primary-white btn-rounded btn-quarter-wide">
               <span class="btn-text">Start a Project</span>
               <span class="btn-icon">
                 <i class="fa-solid fa-arrow-right"></i>
               </span>
             </a>
-            <a href="#" class="btn btn-xl btn-white-primary btn-rounded btn-quarter-wide">
+            <a href="contact.html" class="btn btn-xl btn-white-primary btn-rounded btn-quarter-wide">
               <span class="btn-text">Work With Us</span>
               <span class="btn-icon">
                 <i class="fa-solid fa-arrow-right"></i>
@@ -1586,14 +1533,14 @@
           </div>
         </div>
         <div class="cta-banner">
-          <img src="assets/images/misc/cta_grid_bg.png" alt="call to action grid background" />
+          <img src="assets/images/misc/cta_grid_bg.png" alt="" />
         </div>
       </div>
     </section>
     <!-- END OF CTA TWO - CTA VARIANT ONE -->
 
     <!-- START OF DOWNLOAD SHOWCASE -->
-    <section class="atech-download-showcase position-relative segment-pt-100 segment-pb-200 overflow-hidden"
+    <section class="atech-download-showcase position-relative segment-pt-100 segment-pb-200"
       style="background: url(assets/images/misc/download_showcase_bg.png) center/cover no-repeat;">
       <div class="atech-download-showcase-container container position-relative z-1">
         <div class="download-showcase-grid d-grid align-items-center xl-grid-cols-2 grid-cols-1">
@@ -1624,7 +1571,7 @@
             </div>
           </div>
           <div class="download-showcase-img">
-            <img src="assets/images/misc/app_download_product.png" alt="product/application download image" />
+            <img src="assets/images/misc/app_download_product.png" alt="" />
           </div>
         </div>
       </div>
@@ -1645,22 +1592,24 @@
             straight to your inbox.
           </div>
         </div>
-        <div
+        <form action="">
+          <div
           class="newsletter-bottom bg-white py-custom-2 lg-ps-custom-5 ps-custom-4 pe-custom-2 rounded-12 overflow-hidden d-flex align-items-center justify-content-between mx-auto w-100 xxl-mt-custom-8 xl-mt-custom-7 lg-mt-custom-6 sm-mt-custom-5 mt-custom-4">
           <div class="input-group form-custom bg-white">
             <span class="input-group-text border-0 px-0 bg-transparent">
-              <img src="assets/icons/envelope_outline_gray_400.svg" alt="envelope icon" loading="lazy" />
+              <img src="assets/icons/envelope_outline_gray_400.svg" alt="" />
             </span>
-            <input type="text" class="form-control bg-transparent" placeholder="Enter your email address"
+            <input type="email" class="form-control bg-transparent" placeholder="Enter your email address"
               aria-label="Enter your email address" />
           </div>
-          <button type="button" class="btn btn-lg btn-onyx-900">
+          <button type="submit" class="btn btn-lg btn-onyx-900">
             <span class="btn-icon icon-20">
-              <img src="assets/icons/paper_plane_outline_white.svg" alt="paper plane icon" loading="lazy" />
+              <img src="assets/icons/paper_plane_outline_white.svg" alt="" />
             </span>
             <span class="btn-text">Subscribe</span>
           </button>
         </div>
+        </form>
       </div>
     </section>
     <!-- END OF NEWSLETTER -->
@@ -1670,10 +1619,10 @@
       <div class="atech-footer-top bg-primary-500 d-grid md-grid-cols-2 grid-cols-1">
         <div
           class="tracking-0 d-flex align-items-center justify-content-center gap-3 text-base font-semibold text-white md-py-custom-6 pt-custom-4 pb-custom-0">
-          Saturday - Thursday : 8:30 am - 10:45 payments
+          Sunday - Friday : 10:00 AM - 6:00 PM
         </div>
         <div class="d-flex align-items-center justify-content-center md-py-custom-6 pt-custom-0 pb-custom-2">
-          <a href="#" class="btn btn-link-white">
+          <a href="contact.html" class="btn btn-link-white">
             <span class="btn-text">Get Support</span>
             <span class="btn-icon -rotate-45">
               <i class="fa-solid fa-arrow-right"></i>
@@ -1685,7 +1634,7 @@
         <div class="atech-footer-grid-block d-grid align-items-start container">
           <div class="footer-block-one d-flex flex-column align-items-sm-start align-items-center">
             <a href="index.html" class="footer-brand-logo w-100 d-inline-flex mb-custom-3">
-              <img src="assets/images/site/logo_default.png" alt="aakashtech logo" />
+              <img src="assets/images/site/logo_default.png" alt="" />
             </a>
             <ul
               class="list-unstyled footer-brand-rating d-flex align-items-center justify-content-center gap-x-1 mb-custom-4">
@@ -1713,35 +1662,25 @@
 
             <div class="footer-social-links mt-custom-6">
               <div class="social-link-item d-flex align-items-center gap-3">
-                <a href="#"
-                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden"
-                  aria-label="Facebook">
-                  <img class="icon-16" src="assets/icons/facebook_primary_700.svg" alt="facebook icon" loading="lazy"
-                    aria-hidden="true" />
+                <a href="https://www.facebook.com/AakashSMS/"
+                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
+                  <img class="icon-16" src="assets/icons/facebook_primary_700.svg" alt="facebook icon" />
                 </a>
-                <a href="#"
-                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden"
-                  aria-label="Linkedin">
-                  <img class="icon-16" src="assets/icons/linked_primary_700.svg" alt="linked icon" loading="lazy"
-                    aria-hidden="true" />
+                <a href="https://www.linkedin.com/company/aakashtel"
+                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
+                  <img class="icon-16" src="assets/icons/linkedin_primary_700.svg" alt="linkedin icon" />
                 </a>
-                <a href="#"
-                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden"
-                  aria-label="Whatsapp">
-                  <img class="icon-16" src="assets/icons/whatsapp_primary_700.svg" alt="whatsapp icon" loading="lazy"
-                    aria-hidden="true" />
+                <a href="http://wa.me/9779851195578"
+                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
+                  <img class="icon-16" src="assets/icons/whatsapp_primary_700.svg" alt="whatsapp icon" />
                 </a>
-                <a href="#"
-                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden"
-                  aria-label="Youtube">
-                  <img class="icon-16" src="assets/icons/youtube_primary_700.svg" alt="youtube icon" loading="lazy"
-                    aria-hidden="true" />
+                <a href="https://www.youtube.com/@aakashtel"
+                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
+                  <img class="icon-16" src="assets/icons/youtube_primary_700.svg" alt="youtube icon" />
                 </a>
-                <a href="#"
-                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden"
-                  aria-label="Email">
-                  <img class="icon-16" src="assets/icons/envelope_primary_700.svg" alt="envelope icon" loading="lazy"
-                    aria-hidden="true" />
+                <a href="mailto:info@aakashtech.com.np"
+                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
+                  <img class="icon-16" src="assets/icons/envelope_primary_700.svg" alt="envelope icon" />
                 </a>
               </div>
             </div>
@@ -1758,7 +1697,7 @@
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
+                <a href="process.html" class="footer-block-list-link text-gray-600 font-medium text-base">
                   Our process
                 </a>
               </li>
@@ -1773,12 +1712,12 @@
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
+                <a href="faq.html" class="footer-block-list-link text-gray-600 font-medium text-base">
                   FAQ’s
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
+                <a href="privacy_policy.html" class="footer-block-list-link text-gray-600 font-medium text-base">
                   Privacy & Policy
                 </a>
               </li>
@@ -1790,28 +1729,28 @@
             </h3>
             <ul class="list-unstyled footer-block-list d-flex flex-column lg-gap-2 gap-1">
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
+                <a href="industry_healthcare.html" class="footer-block-list-link text-gray-600 font-medium text-base">
                   Healthcare
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
+                <a href="industry_education.html" class="footer-block-list-link text-gray-600 font-medium text-base">
                   Education
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
-                  Retail
+                <a href="industry_fintech.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  FinTech
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
-                  Ecommerce
+                <a href="industry_ecommerce.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  E-Commerce
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
-                  Logistics
+                <a href="industry_saas.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  SaaS & Startup
                 </a>
               </li>
             </ul>
@@ -1822,33 +1761,33 @@
             </h3>
             <ul class="list-unstyled footer-block-list d-flex flex-column lg-gap-2 gap-1">
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
-                  Web design & development
+                <a href="service_web_design_dev.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  Web Design & Custom Development
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
-                  Mobile App Development
+                <a href="service_mobile_app.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  Mobile App Solutions
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
+                <a href="service_digital_marketing.html" class="footer-block-list-link text-gray-600 font-medium text-base">
                   Digital Marketing & SEO
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
-                  E-commerce development
+                <a href="service_ecommerce.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  E-Commerce Platform Development
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
-                  Social Media Marketing
+                <a href="service_ai.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  AI-Powered Solutions
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
-                  Hire Dedicated Developers
+                <a href="service_blockchain.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  Blockchain & Web3 Development
                 </a>
               </li>
             </ul>
@@ -1864,40 +1803,37 @@
 
             <div
               class="footer-contact-info d-flex flex-column align-items-center align-items-sm-start lg-gap-2 sm-gap-1 gap-0">
-              <div class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
+              <a href="tel:+977 985-1195578" class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
                 <span class="info-item-icon icon-32">
-                  <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="phone icon" loading="lazy" />
+                  <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="" />
                 </span>
                 <span class="text-base text-onyx-500 font-medium">+977 985-1195578</span>
-              </div>
-              <div class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
+              </a>
+              <a href="mailto:info@aakashtech.com.np" class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
                 <span class="info-item-icon icon-32">
-                  <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="envelope icon"
-                    loading="lazy" />
+                  <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="" />
                 </span>
-                <span class="text-base text-onyx-500 font-medium">aakashtech@gmail.com.np</span>
-              </div>
-              <div class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
+                <span class="text-base text-onyx-500 font-medium">info@aakashtech.com.np</span>
+              </a>
+              <a href="https://maps.app.goo.gl/hkjCdWZmws4cbExC8" class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
                 <span class="info-item-icon icon-32">
-                  <img class="icon-18" src="assets/icons/location_dot_outline_primary.svg" alt="location dot icon"
-                    loading="lazy" />
+                  <img class="icon-18" src="assets/icons/location_dot_outline_primary.svg" alt="" />
                 </span>
                 <span class="text-base text-onyx-500 font-medium">Kalopul, Kathmandu, Nepal</span>
-              </div>
-              <div class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
+              </a>
+              <a href="http://wa.me/9779851195578" class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
                 <span class="info-item-icon icon-32">
-                  <img class="icon-18" src="assets/icons/whatsapp_outline_primary.svg" alt="whatsapp icon"
-                    loading="lazy" />
+                  <img class="icon-18" src="assets/icons/whatsapp_outline_primary.svg" alt="" />
                 </span>
                 <span class="text-base text-onyx-500 font-medium">+977 985-1195578</span>
-              </div>
+              </a>
             </div>
           </div>
         </div>
         <div
           class="atech-footer-bottom d-flex align-items-center justify-content-center container text-center text-gray-700 font-medium text-sm tracking-0 opacity-90 xxl-pt-custom-8 xl-pt-custom-7 lg-pt-custom-6 pt-custom-5 xxl-mt-custom-8 xl-mt-custom-7 lg-mt-custom-6 mt-custom-5 border-t-primary-50-1">
           © All Copyright 2025 by
-          <a href="#" class="text-primary-500 font-semibold px-1">AakashTech Pvt. Ltd.</a>
+          <a href="index.html" class="text-primary-500 font-semibold px-1">AakashTech Pvt. Ltd.</a>
         </div>
       </div>
     </footer>

@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const parents = document.querySelectorAll('.atech-menu-parent-inner');
 
     const isDesktop = () =>
-      window.matchMedia(`(min-width: ${BREAKPOINT}px) and (hover: hover) and (pointer: fine)`).matches;
+      window.matchMedia(`(min-width: ${BREAKPOINT}px)`).matches;
     const isMobile = () => !isDesktop();
 
     let currentMode = isDesktop() ? 'desktop' : 'mobile';
@@ -171,8 +171,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // ===== Mode transitions =====
     function enterDesktopMode() {
-      // ensure mobile classes are cleared
-      submenus.forEach(sm => sm.classList.remove('is-open'));
+      submenus.forEach(sm => {
+        sm.classList.remove('is-open');
+        sm.style.opacity = '';
+        sm.style.visibility = '';
+        sm.style.transform = '';
+      });
+    
       parents.forEach(pi => pi.classList.remove('is-open'));
     }
 
@@ -394,7 +399,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initialize each review slider
   clientsReviewsSwiperContainers.forEach((container) => {
     new Swiper(container, {
-      loop: true,
+      loop: false,
       spaceBetween: 0,
       autoplay: {
         delay: 3000,

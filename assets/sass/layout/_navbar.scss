@@ -84,6 +84,11 @@ $z-index-navbar-toggler: 1010;
         }
       }
 
+      @include breakpoint-up(xl){
+        display: block!important;
+        transform: none!important;
+      }
+
       @include breakpoint-down(sm) {
         width: 100%;
         padding: 16px 20px;

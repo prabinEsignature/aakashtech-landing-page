@@ -18,10 +18,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- Preload the stylesheet to start fetching it early -->
-  <link rel="preload"
+  <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
-    as="style"
-      onload="this.onload=null;this.rel='stylesheet'">
+    rel="stylesheet">
   <!-- Fallback for users with JavaScript disabled -->
   <noscript>
     <link
@@ -46,22 +45,21 @@
   <div class="page-wrapper">
     <!-- START OF HEADER -->
     <header
-      class="atech-header py-xl-custom-4 py-custom-3 shadow-menu bg-white position-fixed top-0 start-0 end-0 d-flex align-items-center justify-content-center">
+      class="atech-header py-xl-custom-4 py-custom-3 shadow-menu bg-white position-fixed top-0 start-0 end-0 d-flex align-items-center justify-content-center"
+      role="header">
       <div class="container">
         <nav class="atech-navbar d-flex align-items-center justify-content-between gap-x-4" role="navigation"
           aria-label="Main navigation">
           <a href="index.html" class="navbar-brand">
-            <img class="h-100" src="assets/images/site/logo_default.png" alt="Aakashtech brand logo" />
+            <img class="h-100" src="assets/images/site/logo_default.png" alt="Aakashtel logo" />
           </a>
           <div class="atech-navbar-overlay-bg d-xl-none"></div>
           <div class="atech-menu-parent">
             <div class="d-xl-none d-flex align-items-center justify-content-between border-b-gray-100-1 pb-custom-4">
               <a href="index.html" class="navbar-brand d-inline-flex justify-content-end">
-                <img class="h-auto w-auto ms-auto" src="assets/images/site/logo_default.png"
-                  alt="Aakashtech brand logo" />
+                <img class="h-auto w-auto ms-auto" src="assets/images/site/logo_default.png" alt="Aakashtel logo" />
               </a>
-              <button type="button" class="hamburger d-xl-none is-open" aria-label="Close menu"
-                id="mobileSidebarCloseBtn">
+              <button type="button" class="hamburger d-xl-none is-open" id="mobileSidebarCloseBtn">
                 <span class="menu-bar"></span>
               </button>
             </div>
@@ -81,7 +79,7 @@
                       data-submenu="menu-submenu-services">
                       <span class="menu-link-text">Services</span>
                       <span class="menu-link-icon icon-18">
-                        <img src="assets/icons/chevron_down_onyx.svg" alt="chevron down icon" loading="lazy" />
+                        <img src="assets/icons/chevron_down_onyx.svg" alt="" />
                       </span>
                     </a>
                   </li>
@@ -91,7 +89,7 @@
                       data-submenu="menu-submenu-portfolios">
                       <span class="menu-link-text">Our Portfolio</span>
                       <span class="menu-link-icon icon-18">
-                        <img src="assets/icons/chevron_down_onyx.svg" alt="chevron down icon" loading="lazy" />
+                        <img src="assets/icons/chevron_down_onyx.svg" alt="" />
                       </span>
                     </a>
                   </li>
@@ -118,43 +116,40 @@
                   class="atech-menu-info-list bg-white rounded-20 lg-p-custom-6 p-custom-4 mt-custom-4 d-flex flex-column gap-4 w-100 d-xl-none">
                   <div class="menu-info-item d-flex align-items-center gap-3">
                     <div class="menu-info-item-icon icon-40 rounded-full overflow-hidden bg-primary-100">
-                      <img class="icon-20" src="assets/icons/phone_outline_primary.svg" alt="phone outline primary icon"
-                        loading="lazy">
+                      <img class="icon-20" src="assets/icons/phone_outline_primary.svg" alt="">
                     </div>
                     <div class="menu-info-item-content d-flex flex-column gap-1">
                       <h5 class="text-base font-semibold text-onyx-700 mb-custom-1 mt-0">
                         Have any Questions?
                       </h5>
                       <p class="mb-0 text-sm font-medium text-onyx-600">
-                        +977 985-1195578
+                        <a href="tel:+9779851195578">+977 985-1195578</a>
                       </p>
                     </div>
                   </div>
                   <div class="menu-info-item d-flex align-items-center gap-3">
                     <div class="menu-info-item-icon icon-40 rounded-full overflow-hidden bg-primary-100">
-                      <img class="icon-20" src="assets/icons/envelope_outline_primary.svg"
-                        alt="envelope outline primary icon" loading="lazy">
+                      <img class="icon-20" src="assets/icons/envelope_outline_primary.svg" alt="">
                     </div>
                     <div class="menu-info-item-content d-flex flex-column gap-1">
                       <h5 class="text-base font-semibold text-onyx-700 mb-custom-1 mt-0">
                         Write email
                       </h5>
                       <p class="mb-0 text-sm font-medium text-onyx-600">
-                        aakashtech@gmail.com.np
+                        <a href="mailto:info@aakashtech.com.np">info@aakashtech.com.np</a>
                       </p>
                     </div>
                   </div>
                   <div class="menu-info-item d-flex align-items-center gap-3">
                     <div class="menu-info-item-icon icon-40 rounded-full overflow-hidden bg-primary-100">
-                      <img class="icon-20" src="assets/icons/location_dot_outline_primary.svg" alt="location dot icon"
-                        loading="lazy">
+                      <img class="icon-20" src="assets/icons/location_dot_outline_primary.svg" alt="">
                     </div>
                     <div class="menu-info-item-content d-flex flex-column gap-1">
                       <h5 class="text-base font-semibold text-onyx-700 mb-custom-1 mt-0">
                         Visit Anytime
                       </h5>
                       <p class="mb-0 text-sm font-medium text-onyx-600">
-                        Kalopul, Kathmandu, Nepal
+                        <a href="https://maps.app.goo.gl/aGUFYbvMmYjm2wRA8">Kalopul, Kathmandu, Nepal</a>
                       </p>
                     </div>
                   </div>
@@ -163,26 +158,23 @@
                   <div class="social-link-item d-flex align-items-center gap-4">
                     <a href="#"
                       class="social-link-nav icon-40 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
-                      <img class="icon-20" src="assets/icons/facebook_primary_700.svg" alt="facebook icon"
-                        loading="lazy">
+                      <img class="icon-20" src="assets/icons/facebook_primary_700.svg" alt="">
                     </a>
                     <a href="#"
                       class="social-link-nav icon-40 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
-                      <img class="icon-20" src="assets/icons/linked_primary_700.svg" alt="linkedin icon" loading="lazy">
+                      <img class="icon-20" src="assets/icons/linkedin_primary_700.svg" alt="">
                     </a>
                     <a href="#"
                       class="social-link-nav icon-40 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
-                      <img class="icon-20" src="assets/icons/whatsapp_primary_700.svg" alt="whatsapp icon"
-                        loading="lazy">
+                      <img class="icon-20" src="assets/icons/whatsapp_primary_700.svg" alt="">
                     </a>
                     <a href="#"
                       class="social-link-nav icon-40 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
-                      <img class="icon-20" src="assets/icons/youtube_primary_700.svg" alt="youtube icon" loading="lazy">
+                      <img class="icon-20" src="assets/icons/youtube_primary_700.svg" alt="">
                     </a>
                     <a href="#"
                       class="social-link-nav icon-40 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
-                      <img class="icon-20" src="assets/icons/envelope_primary_700.svg" alt="envelope icon"
-                        loading="lazy">
+                      <img class="icon-20" src="assets/icons/envelope_primary_700.svg" alt="">
                     </a>
                   </div>
                 </div>
@@ -201,8 +193,7 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/custom_software_icon.svg" alt="custom software icon"
-                            loading="lazy" />
+                          <img class="icon-36" src="assets/icons/custom_software_icon.svg" alt="" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -219,8 +210,7 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/mobapp_icon.svg" alt="mobile application icon"
-                            loading="lazy" />
+                          <img class="icon-36" src="assets/icons/mobapp_icon.svg" alt="" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -236,8 +226,7 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/webdev_icon.svg" alt="web development icon"
-                            loading="lazy" />
+                          <img class="icon-36" src="assets/icons/webdev_icon.svg" alt="" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -254,8 +243,7 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/ai_icon.svg" alt="artificial intelligence icon"
-                            loading="lazy" />
+                          <img class="icon-36" src="assets/icons/ai_icon.svg" alt="" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -272,8 +260,7 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/low_code_icon.svg" alt="low code icon"
-                            loading="lazy" />
+                          <img class="icon-36" src="assets/icons/low_code_icon.svg" alt="" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -290,8 +277,7 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/ios_dev_icon.svg" alt="ios development icon"
-                            loading="lazy" />
+                          <img class="icon-36" src="assets/icons/ios_dev_icon.svg" alt="" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -307,8 +293,7 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/staff_aug_icon.svg" alt="staff augmentation icon"
-                            loading="lazy" />
+                          <img class="icon-36" src="assets/icons/staff_aug_icon.svg" alt="" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -325,8 +310,7 @@
                         class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
                         <div
                           class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
-                          <img class="icon-36" src="assets/icons/android_dev_icon.svg" alt="android development icon"
-                            loading="lazy" />
+                          <img class="icon-36" src="assets/icons/android_dev_icon.svg" alt="" />
                         </div>
                         <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
                           <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
@@ -342,28 +326,27 @@
                   </div>
                   <div class="submenu-bottom d-sm-flex d-none xl-pt-custom-5 pt-custom-4 border-t-gray-100-1">
                     <div class="submenu-contact-info d-flex flex-wrap xl-gap-4 gap-2 justify-content-between w-100">
-                      <div class="submenu-contact-info-item d-flex align-items-center gap-3">
+                      <a href="tel:+9779851195578" class="submenu-contact-info-item d-flex align-items-center gap-3">
                         <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
-                          <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="phone icon"
-                            loading="lazy" />
+                          <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="" />
                         </span>
                         <span class="info-item-text text-base text-onyx-500 font-medium">+977 985-1195578</span>
-                      </div>
-                      <div class="submenu-contact-info-item d-flex align-items-center gap-3">
+                      </a>
+                      <a href="mailto:info@aakashtech.com.np"
+                        class="submenu-contact-info-item d-flex align-items-center gap-3">
                         <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
-                          <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="envelope icon"
-                            loading="lazy" />
+                          <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="" />
                         </span>
-                        <span class="info-item-text text-base text-onyx-500 font-medium">aakashtech@gmail.com.np</span>
-                      </div>
-                      <div class="submenu-contact-info-item d-flex align-items-center gap-3">
+                        <span class="info-item-text text-base text-onyx-500 font-medium">info@aakashtech.com.np</span>
+                      </a>
+                      <a href="https://maps.app.goo.gl/ur8L7CY7WmxvSpxb9"
+                        class="submenu-contact-info-item d-flex align-items-center gap-3">
                         <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
-                          <img class="icon-18" src="assets/icons/location_dot_outline_primary.svg"
-                            alt="location dot icon" loading="lazy" />
+                          <img class="icon-18" src="assets/icons/location_dot_outline_primary.svg" alt="" />
                         </span>
                         <span class="info-item-text text-base text-onyx-500 font-medium">Kalopul, Kathmandu,
                           Nepal</span>
-                      </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -385,7 +368,7 @@
                           id="v-pills-port-01-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-01" type="button"
                           role="tab" aria-controls="v-pills-port-01" aria-selected="true">
                           <span class="btn-icon icon-24 d-none d-xl-inline-flex">
-                            <img src="assets/icons/mobapp_tab_icon.svg" alt="mobile application icon" loading="lazy" />
+                            <img src="assets/icons/mobapp_tab_icon.svg" alt="" />
                           </span>
                           <span class="btn-text text-onyx-700 text-sm font-medium">Mobile Apps</span>
                         </button>
@@ -394,7 +377,7 @@
                           id="v-pills-port-02-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-02" type="button"
                           role="tab" aria-controls="v-pills-port-02" aria-selected="false">
                           <span class="btn-icon icon-24 d-none d-xl-inline-flex">
-                            <img src="assets/icons/ecommerce_tab_icon.svg" alt="ecommerce tab icon" loading="lazy" />
+                            <img src="assets/icons/ecommerce_tab_icon.svg" alt="" />
                           </span>
                           <span class="btn-text text-onyx-700 text-sm font-medium">E-commerce</span>
                         </button>
@@ -403,7 +386,7 @@
                           id="v-pills-port-03-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-03" type="button"
                           role="tab" aria-controls="v-pills-port-03" aria-selected="false">
                           <span class="btn-icon icon-24 d-none d-xl-inline-flex">
-                            <img src="assets/icons/uiux_tab_icon.svg" alt="ui ux tab icon" loading="lazy" />
+                            <img src="assets/icons/uiux_tab_icon.svg" alt="" />
                           </span>
                           <span class="btn-text text-onyx-700 text-sm font-medium">UI/UX Design</span>
                         </button>
@@ -412,7 +395,7 @@
                           id="v-pills-port-04-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-04" type="button"
                           role="tab" aria-controls="v-pills-port-04" aria-selected="false">
                           <span class="btn-icon icon-24 d-none d-xl-inline-flex">
-                            <img src="assets/icons/ai_tab_icon.svg" alt="ai tab icon" loading="lazy" />
+                            <img src="assets/icons/ai_tab_icon.svg" alt="" />
                           </span>
                           <span class="btn-text text-onyx-700 text-sm font-medium">AI & Automation</span>
                         </button>
@@ -421,7 +404,7 @@
                           id="v-pills-port-05-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-05" type="button"
                           role="tab" aria-controls="v-pills-port-05" aria-selected="false">
                           <span class="btn-icon icon-24 d-none d-xl-inline-flex">
-                            <img src="assets/icons/crm_tab_icon.svg" alt="crm tab icon" loading="lazy" />
+                            <img src="assets/icons/crm_tab_icon.svg" alt="" />
                           </span>
                           <span class="btn-text text-onyx-700 text-sm font-medium">CRM & ERP</span>
                         </button>
@@ -430,7 +413,7 @@
                           id="v-pills-port-06-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-06" type="button"
                           role="tab" aria-controls="v-pills-port-06" aria-selected="false">
                           <span class="btn-icon icon-24 d-none d-xl-inline-flex">
-                            <img src="assets/icons/finance_tab_icon.svg" alt="finance tab icon" loading="lazy" />
+                            <img src="assets/icons/finance_tab_icon.svg" alt="" />
                           </span>
                           <span class="btn-text text-onyx-700 text-sm font-medium">Finance & Fintech</span>
                         </button>
@@ -447,8 +430,7 @@
                               class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
                               <div
                                 class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
-                                <img src="assets/images/misc/portfolio_thumbnail_1.png" alt="portfolio thumbnail"
-                                  loading="lazy" />
+                                <img src="assets/images/misc/portfolio_thumbnail_1.png" alt="" />
                               </div>
                               <div
                                 class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
@@ -466,8 +448,7 @@
                               class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
                               <div
                                 class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
-                                <img src="assets/images/misc/portfolio_thumbnail_2.png" alt="portfolio thumbnail"
-                                  loading="lazy" />
+                                <img src="assets/images/misc/portfolio_thumbnail_2.png" alt="" />
                               </div>
                               <div
                                 class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
@@ -485,8 +466,7 @@
                               class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
                               <div
                                 class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
-                                <img src="assets/images/misc/portfolio_thumbnail_3.png" alt="portfolio thumbnail"
-                                  loading="lazy" />
+                                <img src="assets/images/misc/portfolio_thumbnail_3.png" alt="" />
                               </div>
                               <div
                                 class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
@@ -504,8 +484,7 @@
                               class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
                               <div
                                 class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
-                                <img src="assets/images/misc/portfolio_thumbnail_1.png" alt="portfolio thumbnail"
-                                  loading="lazy" />
+                                <img src="assets/images/misc/portfolio_thumbnail_1.png" alt="" />
                               </div>
                               <div
                                 class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
@@ -523,8 +502,7 @@
                               class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
                               <div
                                 class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
-                                <img src="assets/images/misc/portfolio_thumbnail_2.png" alt="portfolio thumbnail"
-                                  loading="lazy" />
+                                <img src="assets/images/misc/portfolio_thumbnail_2.png" alt="" />
                               </div>
                               <div
                                 class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
@@ -542,8 +520,7 @@
                               class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
                               <div
                                 class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
-                                <img src="assets/images/misc/portfolio_thumbnail_3.png" alt="portfolio thumbnail"
-                                  loading="lazy" />
+                                <img src="assets/images/misc/portfolio_thumbnail_3.png" alt="" />
                               </div>
                               <div
                                 class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
@@ -575,29 +552,28 @@
                     </div>
                   </div>
                   <div class="submenu-bottom d-sm-flex d-none xl-pt-custom-5 pt-custom-4 border-t-gray-100-1">
-                    <div class="submenu-contact-info d-flex flex-wrap lg-gap-4 gap-3 justify-content-between w-100">
-                      <div class="submenu-contact-info-item d-flex align-items-center gap-3">
+                    <div class="submenu-contact-info d-flex flex-wrap xl-gap-4 gap-2 justify-content-between w-100">
+                      <a href="tel:+9779851195578" class="submenu-contact-info-item d-flex align-items-center gap-3">
                         <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
-                          <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="phone icon"
-                            loading="lazy" />
+                          <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="" />
                         </span>
                         <span class="info-item-text text-base text-onyx-500 font-medium">+977 985-1195578</span>
-                      </div>
-                      <div class="submenu-contact-info-item d-flex align-items-center gap-3">
+                      </a>
+                      <a href="mailto:info@aakashtech.com.np"
+                        class="submenu-contact-info-item d-flex align-items-center gap-3">
                         <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
-                          <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="envelope icon"
-                            loading="lazy" />
+                          <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="" />
                         </span>
-                        <span class="info-item-text text-base text-onyx-500 font-medium">aakashtech@gmail.com.np</span>
-                      </div>
-                      <div class="submenu-contact-info-item d-flex align-items-center gap-3">
+                        <span class="info-item-text text-base text-onyx-500 font-medium">info@aakashtech.com.np</span>
+                      </a>
+                      <a href="https://maps.app.goo.gl/ur8L7CY7WmxvSpxb9"
+                        class="submenu-contact-info-item d-flex align-items-center gap-3">
                         <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
-                          <img class="icon-18" src="assets/icons/location_dot_outline_primary.svg"
-                            alt="location dot icon" loading="lazy" />
+                          <img class="icon-18" src="assets/icons/location_dot_outline_primary.svg" alt="" />
                         </span>
                         <span class="info-item-text text-base text-onyx-500 font-medium">Kalopul, Kathmandu,
                           Nepal</span>
-                      </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -606,10 +582,10 @@
           </div>
 
           <div class="atech-header-btns d-flex align-items-center gap-4 xl-gap-6">
-            <a href="https://wa.me/+9779851300024" class="whatsapp-btn position-relative" target="_blank"><img
+            <a href="http://wa.me/9779851195578" class="whatsapp-btn position-relative" target="_blank"><img
                 src="assets/images/misc/whatsapp_logo.png" class="icon-32" alt="whatsapp icon" /></a>
             <a href="contact.html" class="btn btn-primary d-none d-xl-inline-flex">Contact Us</a>
-            <button type="button" class="hamburger d-xl-none" aria-label="Open menu" id="mobileSidebarOpenBtn">
+            <button type="button" class="hamburger d-xl-none" id="mobileSidebarOpenBtn">
               <span class="menu-bar"></span>
             </button>
           </div>
@@ -645,7 +621,8 @@
               here to help.</div>
           </div>
           <div class="contact-banner-location overflow-hidden">
-            <img class="contact-banner-location-img" src="assets/images/contact/contact_location_img.png" alt="" />
+            <a href="https://maps.app.goo.gl/FwNPRZ15zcefrp1G9"><img class="contact-banner-location-img"
+                src="assets/images/contact/contact_location_img.png" alt="" /></a>
           </div>
         </div>
       </div>
@@ -715,7 +692,9 @@
                       </div>
                       <div class="general-info-item-content d-flex flex-column gap-1">
                         <h5 class="text-base font-semibold text-onyx-700">Write email</h5>
-                        <p class="mb-0 text-sm font-medium text-onyx-600">aakashtech@gmail.com.np</p>
+                        <p class="mb-0 text-sm font-medium text-onyx-600">
+                          <a href="mailto:info@aakashtech.com.np">info@aakashtech.com.np</a>
+                        </p>
                       </div>
                     </div>
                     <div class="general-info-item d-flex align-items-center gap-3">
@@ -734,51 +713,57 @@
                 <h3 class="text-primary-500 text-2xl font-semibold mb-custom-3">Have a project idea?</h3>
                 <h2 class="text-onyx-700 font-extrabold text-4xl">Let’s Build Something Great Together!</h2>
                 <div class="form-custom xxl-mt-custom-10 lg-mt-custom-8 mt-custom-6">
-                  <form action="">
+                  <form action="https://script.google.com/macros/s/AKfycbwbHqcE7CtaawqLXbgcYgUspnuP8371Gbr85Vv5SLSL/dev"
+                    method="POST">
                     <div class="d-grid align-items-start xxl-gap-6 xl-gap-5 lg-gap-4 gap-3">
                       <div class="form-elem">
-                        <label for="" class="form-label">Full Name <span
-                            class="text-gray-500 ms-1">(Optional)</span></label>
-                        <input type="text" class="form-control" placeholder="Enter full name" />
+                        <label class="form-label">
+                          Full Name <span class="text-gray-500 ms-1">(Optional)</span>
+                        </label>
+                        <input type="text" name="full_name" class="form-control" placeholder="Enter full name">
                       </div>
 
                       <div class="form-elem-group md-grid-cols-2 grid-cols-1">
                         <div class="form-elem">
-                          <label for="" class="form-label">Email Address</label>
-                          <input type="text" class="form-control" placeholder="Enter email address" />
+                          <label class="form-label">Email Address <span class="text-primary-500">*</span></label>
+                          <input type="email" name="email" class="form-control" placeholder="Enter email address"
+                            required>
                         </div>
                         <div class="form-elem">
-                          <label for="" class="form-label">Phone number<span
-                              class="text-gray-500 ms-1">(Optional)</span></label>
-                          <input type="text" class="form-control" placeholder="Enter phone number" />
+                          <label class="form-label">
+                            Phone number <span class="text-gray-500 ms-1">(Optional)</span>
+                          </label>
+                          <input type="text" name="phone" class="form-control" placeholder="Enter phone number">
                         </div>
                       </div>
-
                       <div class="form-elem">
-                        <label for="" class="form-label">Company Name<span
-                            class="text-gray-500 ms-1">(Optional)</span></label>
-                        <input type="text" class="form-control" placeholder="Enter company name" />
+                        <label class="form-label">
+                          Company Name <span class="text-gray-500 ms-1">(Optional)</span>
+                        </label>
+                        <input type="text" name="company" class="form-control" placeholder="Enter company name">
                       </div>
-
                       <div class="form-elem">
-                        <label for="" class="form-label">Company Name<span
-                            class="text-gray-500 ms-1">(Optional)</span></label>
-                        <select class="form-select">
+                        <label class="form-label">
+                          Service Interested In <span class="text-primary-500">*</span>
+                        </label>
+                        <select name="service" class="form-select" required>
                           <option value="" selected disabled>Choose any services</option>
-                          <option value="">Web Development</option>
-                          <option value="">App Development</option>
-                          <option value="">Digital Marketing</option>
-                          <option value="">AI Solution</option>
+                          <option value="Web Development">Web Development</option>
+                          <option value="App Development">App Development</option>
+                          <option value="Digital Marketing">Digital Marketing</option>
+                          <option value="AI Solution">AI Solution</option>
                         </select>
                       </div>
-
                       <div class="form-elem">
-                        <label for="" class="form-label">Description / Message<span
-                            class="text-primary-500 ps-1">*</span></label>
-                        <textarea class="form-control" placeholder="Enter description ..."></textarea>
+                        <label class="form-label">
+                          Description / Message <span class="text-primary-500">*</span>
+                        </label>
+                        <textarea name="message" class="form-control" placeholder="Enter description ..."
+                          required></textarea>
                       </div>
                     </div>
-                    <button type="button"
+
+                    <button type="submit"
                       class="btn btn-lg btn-primary xxl-mt-custom-8 xl-mt-custom-7 lg-mt-custom-6 sm-mt-custom-5 mt-custom-4 btn-block">
                       <span class="btn-text">Submit</span>
                       <span class="btn-icon">
@@ -790,6 +775,7 @@
               </div>
             </div>
           </div>
+
           <div class="contact-deliver-segment">
             <h3 class="text-4xl font-extrabold text-onyx-700 text-center">We Deliver</h3>
             <div class="contact-deliver-list mx-auto segment-mt-40 d-grid align-items-start md-grid-cols-4 grid-cols-2">
@@ -847,13 +833,13 @@
               your processes and enhance customer engagement.</p>
           </div>
           <div class="d-flex flex-wrap align-items-center justify-content-center lg-gap-4 gap-3">
-            <a href="#" class="btn btn-xl btn-primary-white btn-rounded btn-quarter-wide">
+            <a href="http://wa.me/9779851195578" class="btn btn-xl btn-primary-white btn-rounded btn-quarter-wide">
               <span class="btn-text">Book a Demo Now</span>
               <span class="btn-icon">
                 <i class="fa-solid fa-arrow-right"></i>
               </span>
             </a>
-            <a href="#" class="btn btn-xl btn-white-primary btn-rounded btn-quarter-wide">
+            <a href="tel:+977 985-1195578" class="btn btn-xl btn-white-primary btn-rounded btn-quarter-wide">
               <span class="btn-text">Talk to an Expert</span>
               <span class="btn-icon">
                 <i class="fa-solid fa-arrow-right"></i>
@@ -1048,22 +1034,24 @@
             straight to your inbox.
           </div>
         </div>
-        <div
-          class="newsletter-bottom bg-white py-custom-2 lg-ps-custom-5 ps-custom-4 pe-custom-2 rounded-12 overflow-hidden d-flex align-items-center justify-content-between mx-auto w-100 xxl-mt-custom-8 xl-mt-custom-7 lg-mt-custom-6 sm-mt-custom-5 mt-custom-4">
-          <div class="input-group form-custom bg-white">
-            <span class="input-group-text border-0 px-0 bg-transparent">
-              <img src="assets/icons/envelope_outline_gray_400.svg" alt="" />
-            </span>
-            <input type="text" class="form-control bg-transparent" placeholder="Enter your email address"
-              aria-label="Enter your email address" />
+        <form action="">
+          <div
+            class="newsletter-bottom bg-white py-custom-2 lg-ps-custom-5 ps-custom-4 pe-custom-2 rounded-12 overflow-hidden d-flex align-items-center justify-content-between mx-auto w-100 xxl-mt-custom-8 xl-mt-custom-7 lg-mt-custom-6 sm-mt-custom-5 mt-custom-4">
+            <div class="input-group form-custom bg-white">
+              <span class="input-group-text border-0 px-0 bg-transparent">
+                <img src="assets/icons/envelope_outline_gray_400.svg" alt="" />
+              </span>
+              <input type="email" class="form-control bg-transparent" placeholder="Enter your email address"
+                aria-label="Enter your email address" />
+            </div>
+            <button type="submit" class="btn btn-lg btn-onyx-900">
+              <span class="btn-icon icon-20">
+                <img src="assets/icons/paper_plane_outline_white.svg" alt="" />
+              </span>
+              <span class="btn-text">Subscribe</span>
+            </button>
           </div>
-          <button type="button" class="btn btn-lg btn-onyx-900">
-            <span class="btn-icon icon-20">
-              <img src="assets/icons/paper_plane_outline_white.svg" alt="" />
-            </span>
-            <span class="btn-text">Subscribe</span>
-          </button>
-        </div>
+        </form>
       </div>
     </section>
     <!-- END OF NEWSLETTER -->
@@ -1073,10 +1061,10 @@
       <div class="atech-footer-top bg-primary-500 d-grid md-grid-cols-2 grid-cols-1">
         <div
           class="tracking-0 d-flex align-items-center justify-content-center gap-3 text-base font-semibold text-white md-py-custom-6 pt-custom-4 pb-custom-0">
-          Saturday - Thursday : 8:30 am - 10:45 payments
+          Sunday - Friday : 10:00 AM - 6:00 PM
         </div>
         <div class="d-flex align-items-center justify-content-center md-py-custom-6 pt-custom-0 pb-custom-2">
-          <a href="#" class="btn btn-link-white">
+          <a href="contact.html" class="btn btn-link-white">
             <span class="btn-text">Get Support</span>
             <span class="btn-icon -rotate-45">
               <i class="fa-solid fa-arrow-right"></i>
@@ -1088,7 +1076,7 @@
         <div class="atech-footer-grid-block d-grid align-items-start container">
           <div class="footer-block-one d-flex flex-column align-items-sm-start align-items-center">
             <a href="index.html" class="footer-brand-logo w-100 d-inline-flex mb-custom-3">
-              <img src="assets/images/site/logo_default.png" alt="Aakashtech brand logo" />
+              <img src="assets/images/site/logo_default.png" alt="" />
             </a>
             <ul
               class="list-unstyled footer-brand-rating d-flex align-items-center justify-content-center gap-x-1 mb-custom-4">
@@ -1116,30 +1104,25 @@
 
             <div class="footer-social-links mt-custom-6">
               <div class="social-link-item d-flex align-items-center gap-3">
-                <a href="#"
-                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden"
-                  aria-label="Facebook">
-                  <img class="icon-16" src="assets/icons/facebook_primary_700.svg" alt="" aria-hidden="true" />
+                <a href="https://www.facebook.com/AakashSMS/"
+                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
+                  <img class="icon-16" src="assets/icons/facebook_primary_700.svg" alt="facebook icon" />
                 </a>
-                <a href="#"
-                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden"
-                  aria-label="Linkedin">
-                  <img class="icon-16" src="assets/icons/linked_primary_700.svg" alt="" aria-hidden="true" />
+                <a href="https://www.linkedin.com/company/aakashtel"
+                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
+                  <img class="icon-16" src="assets/icons/linkedin_primary_700.svg" alt="linkedin icon" />
                 </a>
-                <a href="#"
-                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden"
-                  aria-label="Whatsapp">
-                  <img class="icon-16" src="assets/icons/whatsapp_primary_700.svg" alt="" aria-hidden="true" />
+                <a href="http://wa.me/9779851195578"
+                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
+                  <img class="icon-16" src="assets/icons/whatsapp_primary_700.svg" alt="whatsapp icon" />
                 </a>
-                <a href="#"
-                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden"
-                  aria-label="Youtube">
-                  <img class="icon-16" src="assets/icons/youtube_primary_700.svg" alt="" aria-hidden="true" />
+                <a href="https://www.youtube.com/@aakashtel"
+                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
+                  <img class="icon-16" src="assets/icons/youtube_primary_700.svg" alt="youtube icon" />
                 </a>
-                <a href="#"
-                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden"
-                  aria-label="Email">
-                  <img class="icon-16" src="assets/icons/envelope_primary_700.svg" alt="" aria-hidden="true" />
+                <a href="mailto:info@aakashtech.com.np"
+                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
+                  <img class="icon-16" src="assets/icons/envelope_primary_700.svg" alt="envelope icon" />
                 </a>
               </div>
             </div>
@@ -1156,7 +1139,7 @@
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
+                <a href="process.html" class="footer-block-list-link text-gray-600 font-medium text-base">
                   Our process
                 </a>
               </li>
@@ -1171,12 +1154,12 @@
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
+                <a href="faq.html" class="footer-block-list-link text-gray-600 font-medium text-base">
                   FAQ’s
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
+                <a href="privacy_policy.html" class="footer-block-list-link text-gray-600 font-medium text-base">
                   Privacy & Policy
                 </a>
               </li>
@@ -1188,28 +1171,28 @@
             </h3>
             <ul class="list-unstyled footer-block-list d-flex flex-column lg-gap-2 gap-1">
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
+                <a href="industry_healthcare.html" class="footer-block-list-link text-gray-600 font-medium text-base">
                   Healthcare
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
+                <a href="industry_education.html" class="footer-block-list-link text-gray-600 font-medium text-base">
                   Education
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
-                  Retail
+                <a href="industry_fintech.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  FinTech
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
-                  Ecommerce
+                <a href="industry_ecommerce.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  E-Commerce
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
-                  Logistics
+                <a href="industry_saas.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  SaaS & Startup
                 </a>
               </li>
             </ul>
@@ -1220,33 +1203,35 @@
             </h3>
             <ul class="list-unstyled footer-block-list d-flex flex-column lg-gap-2 gap-1">
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
-                  Web design & development
+                <a href="service_web_design_dev.html"
+                  class="footer-block-list-link text-gray-600 font-medium text-base">
+                  Web Design & Custom Development
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
-                  Mobile App Development
+                <a href="service_mobile_app.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  Mobile App Solutions
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
+                <a href="service_digital_marketing.html"
+                  class="footer-block-list-link text-gray-600 font-medium text-base">
                   Digital Marketing & SEO
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
-                  E-commerce development
+                <a href="service_ecommerce.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  E-Commerce Platform Development
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
-                  Social Media Marketing
+                <a href="service_ai.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  AI-Powered Solutions
                 </a>
               </li>
               <li class="footer-block-list-item">
-                <a href="#" class="footer-block-list-link text-gray-600 font-medium text-base">
-                  Hire Dedicated Developers
+                <a href="service_blockchain.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  Blockchain & Web3 Development
                 </a>
               </li>
             </ul>
@@ -1262,37 +1247,41 @@
 
             <div
               class="footer-contact-info d-flex flex-column align-items-center align-items-sm-start lg-gap-2 sm-gap-1 gap-0">
-              <div class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
+              <a href="tel:+977 985-1195578"
+                class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
                 <span class="info-item-icon icon-32">
                   <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="" />
                 </span>
                 <span class="text-base text-onyx-500 font-medium">+977 985-1195578</span>
-              </div>
-              <div class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
+              </a>
+              <a href="mailto:info@aakashtech.com.np"
+                class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
                 <span class="info-item-icon icon-32">
                   <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="" />
                 </span>
-                <span class="text-base text-onyx-500 font-medium">aakashtech@gmail.com.np</span>
-              </div>
-              <div class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
+                <span class="text-base text-onyx-500 font-medium">info@aakashtech.com.np</span>
+              </a>
+              <a href="https://maps.app.goo.gl/hkjCdWZmws4cbExC8"
+                class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
                 <span class="info-item-icon icon-32">
                   <img class="icon-18" src="assets/icons/location_dot_outline_primary.svg" alt="" />
                 </span>
                 <span class="text-base text-onyx-500 font-medium">Kalopul, Kathmandu, Nepal</span>
-              </div>
-              <div class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
+              </a>
+              <a href="http://wa.me/9779851195578"
+                class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
                 <span class="info-item-icon icon-32">
                   <img class="icon-18" src="assets/icons/whatsapp_outline_primary.svg" alt="" />
                 </span>
                 <span class="text-base text-onyx-500 font-medium">+977 985-1195578</span>
-              </div>
+              </a>
             </div>
           </div>
         </div>
         <div
           class="atech-footer-bottom d-flex align-items-center justify-content-center container text-center text-gray-700 font-medium text-sm tracking-0 opacity-90 xxl-pt-custom-8 xl-pt-custom-7 lg-pt-custom-6 pt-custom-5 xxl-mt-custom-8 xl-mt-custom-7 lg-mt-custom-6 mt-custom-5 border-t-primary-50-1">
           © All Copyright 2025 by
-          <a href="#" class="text-primary-500 font-semibold px-1">AakashTech Pvt. Ltd.</a>
+          <a href="index.html" class="text-primary-500 font-semibold px-1">AakashTech Pvt. Ltd.</a>
         </div>
       </div>
     </footer>
@@ -1313,6 +1302,30 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- CUSTOM JS -->
   <script src="assets/js/main.js"></script>
+  <!-- <script>
+    const form = document.getElementById("contactForm");
+    
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+    
+      const formData = new FormData(form);
+    
+      fetch("https://script.google.com/macros/s/AKfycbwAvBADm7X3-H4XSS7WJVU_puV-cZgdqtScFfgQGvE0CNPMlPZrM-SbiINagMXqeXTVbA/exec", {
+        method: "POST",
+        body: formData
+      })
+      .then(res => res.text())
+      .then(() => {
+        alert("Message sent successfully!");
+        form.reset();
+      })
+      .catch(() => {
+        alert("Something went wrong. Please try again.");
+      });
+    });
+    </script> -->
+
+
 </body>
 
 </html>

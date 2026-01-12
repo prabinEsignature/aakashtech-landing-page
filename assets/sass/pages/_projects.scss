@@ -317,7 +317,8 @@
   background: url($img-path + "projects/product_details_banner_bg.png") top/cover no-repeat;
   position: relative;
   overflow-x: clip;
-  min-height: 734px;
+  // min-height: 734px;
+  min-height: 1000px;
 
   @include breakpoint-down(lg) {
     min-height: auto;
