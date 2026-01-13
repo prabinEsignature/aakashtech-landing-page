@@ -274,7 +274,7 @@ $grid-row-classes: (
 @include grid-and-flexbox-order();
 
 /* TEXT UTILS - CLAMP */
-@for $i from 1 through 4 {
+@for $i from 1 through 8 {
   .clamp-line-#{$i} {
     @include clamp(#{$i});
   }

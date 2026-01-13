@@ -278,6 +278,9 @@ a {
   h6 {
     margin-bottom: 16px !important;
     scroll-margin-top: 100px;
+    font-family: map.get($headings-config, "font-family");
+    font-weight: map.get($headings-config, "font-weight") !important;
+    letter-spacing: map.get($headings-config, "letter-spacing") !important;
   }
 
   p,

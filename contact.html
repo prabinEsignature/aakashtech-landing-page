@@ -713,52 +713,63 @@
                 <h3 class="text-primary-500 text-2xl font-semibold mb-custom-3">Have a project idea?</h3>
                 <h2 class="text-onyx-700 font-extrabold text-4xl">Let’s Build Something Great Together!</h2>
                 <div class="form-custom xxl-mt-custom-10 lg-mt-custom-8 mt-custom-6">
-                  <form action="https://script.google.com/macros/s/AKfycbwbHqcE7CtaawqLXbgcYgUspnuP8371Gbr85Vv5SLSL/dev"
-                    method="POST">
+                  <form action="https://formsubmit.co/info@aakashtech.com.np" method="POST">
+                    <!-- Required hidden fields -->
+                    <input type="hidden" name="_subject" value="New Service Inquiry">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+
                     <div class="d-grid align-items-start xxl-gap-6 xl-gap-5 lg-gap-4 gap-3">
                       <div class="form-elem">
                         <label class="form-label">
                           Full Name <span class="text-gray-500 ms-1">(Optional)</span>
                         </label>
-                        <input type="text" name="full_name" class="form-control" placeholder="Enter full name">
+                        <input type="text" name="Full Name" class="form-control" placeholder="Enter full name">
                       </div>
 
                       <div class="form-elem-group md-grid-cols-2 grid-cols-1">
                         <div class="form-elem">
-                          <label class="form-label">Email Address <span class="text-primary-500">*</span></label>
-                          <input type="email" name="email" class="form-control" placeholder="Enter email address"
+                          <label class="form-label">
+                            Email Address <span class="text-primary-500">*</span>
+                          </label>
+                          <input type="email" name="Email" class="form-control" placeholder="Enter email address"
                             required>
                         </div>
+
                         <div class="form-elem">
                           <label class="form-label">
-                            Phone number <span class="text-gray-500 ms-1">(Optional)</span>
+                            Phone Number <span class="text-gray-500 ms-1">(Optional)</span>
                           </label>
-                          <input type="text" name="phone" class="form-control" placeholder="Enter phone number">
+                          <input type="text" name="Phone" class="form-control" placeholder="Enter phone number">
                         </div>
                       </div>
+
                       <div class="form-elem">
                         <label class="form-label">
                           Company Name <span class="text-gray-500 ms-1">(Optional)</span>
                         </label>
-                        <input type="text" name="company" class="form-control" placeholder="Enter company name">
+                        <input type="text" name="Company" class="form-control" placeholder="Enter company name">
                       </div>
+
                       <div class="form-elem">
                         <label class="form-label">
                           Service Interested In <span class="text-primary-500">*</span>
                         </label>
-                        <select name="service" class="form-select" required>
-                          <option value="" selected disabled>Choose any services</option>
+                        <select name="Service" class="form-select" required>
+                          <option value="" disabled selected>Choose any services</option>
                           <option value="Web Development">Web Development</option>
                           <option value="App Development">App Development</option>
                           <option value="Digital Marketing">Digital Marketing</option>
                           <option value="AI Solution">AI Solution</option>
                         </select>
                       </div>
+
                       <div class="form-elem">
                         <label class="form-label">
                           Description / Message <span class="text-primary-500">*</span>
                         </label>
-                        <textarea name="message" class="form-control" placeholder="Enter description ..."
+                        <textarea name="Message" class="form-control" placeholder="Enter description ..."
                           required></textarea>
                       </div>
                     </div>
@@ -1302,30 +1313,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- CUSTOM JS -->
   <script src="assets/js/main.js"></script>
-  <!-- <script>
-    const form = document.getElementById("contactForm");
-    
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-    
-      const formData = new FormData(form);
-    
-      fetch("https://script.google.com/macros/s/AKfycbwAvBADm7X3-H4XSS7WJVU_puV-cZgdqtScFfgQGvE0CNPMlPZrM-SbiINagMXqeXTVbA/exec", {
-        method: "POST",
-        body: formData
-      })
-      .then(res => res.text())
-      .then(() => {
-        alert("Message sent successfully!");
-        form.reset();
-      })
-      .catch(() => {
-        alert("Something went wrong. Please try again.");
-      });
-    });
-    </script> -->
-
-
 </body>
 
 </html>
