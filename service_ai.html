@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Custom AI Solution Development in Nepal | AakashTech</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
+  <!-- Preconnect to Google Fonts domains for faster DNS lookup and TLS handshake -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Preload the stylesheet to start fetching it early -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <!-- Fallback for users with JavaScript disabled -->
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet">
+  </noscript>
+  <!-- FOOT AWESOME ICON CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap_5.3/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/sass/vendor/normalize.css" />
+  <!-- SWIPER SLIDER -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+
+  <div class="page-wrapper">
+    <!-- START OF HEADER -->
+    <header
+      class="atech-header py-xl-custom-4 py-custom-3 shadow-menu bg-white position-fixed top-0 start-0 end-0 d-flex align-items-center justify-content-center"
+      role="header">
+      <div class="container">
+        <nav class="atech-navbar d-flex align-items-center justify-content-between gap-x-4" role="navigation"
+          aria-label="Main navigation">
+          <a href="index.html" class="navbar-brand">
+            <img class="h-100" src="assets/images/site/logo_default.png" alt="Aakashtel logo" />
+          </a>
+          <div class="atech-navbar-overlay-bg d-xl-none"></div>
+          <div class="atech-menu-parent">
+            <div class="d-xl-none d-flex align-items-center justify-content-between border-b-gray-100-1 pb-custom-4">
+              <a href="index.html" class="navbar-brand d-inline-flex justify-content-end">
+                <img class="h-auto w-auto ms-auto" src="assets/images/site/logo_default.png" alt="Aakashtel logo" />
+              </a>
+              <button type="button" class="hamburger d-xl-none is-open" id="mobileSidebarCloseBtn">
+                <span class="menu-bar"></span>
+              </button>
+            </div>
+            <div class="atech-menu-parent-inner">
+              <div class="atech-menu d-flex align-items-center gap-x-3 bg-primary-50 p-custom-5">
+                <ul
+                  class="atech-menu-list list-unstyled d-flex flex-column flex-xl-row align-items-center gap-x-3 bg-primary-50 w-100">
+                  <li class="atech-menu-item px-3">
+                    <a href="index.html"
+                      class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition">
+                      <span class="menu-link-text">Home</span>
+                    </a>
+                  </li>
+                  <li class="atech-menu-item px-3 position-relative">
+                    <a href="services.html"
+                      class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition"
+                      data-submenu="menu-submenu-services">
+                      <span class="menu-link-text">Services</span>
+                      <span class="menu-link-icon icon-18">
+                        <img src="assets/icons/chevron_down_onyx.svg" alt="" />
+                      </span>
+                    </a>
+                  </li>
+                  <li class="atech-menu-item px-3 position-relative">
+                    <a href="projects.html"
+                      class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition"
+                      data-submenu="menu-submenu-portfolios">
+                      <span class="menu-link-text">Our Portfolio</span>
+                      <span class="menu-link-icon icon-18">
+                        <img src="assets/icons/chevron_down_onyx.svg" alt="" />
+                      </span>
+                    </a>
+                  </li>
+                  <li class="atech-menu-item px-3">
+                    <a href="about.html"
+                      class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition">
+                      <span class="menu-link-text">About Us</span>
+                    </a>
+                  </li>
+                  <li class="atech-menu-item px-3">
+                    <a href="blog.html"
+                      class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition">
+                      <span class="menu-link-text">Blog</span>
+                    </a>
+                  </li>
+                  <li class="atech-menu-item px-3 d-xl-none">
+                    <a href="contact.html"
+                      class="atech-menu-link text-onyx-950 font-medium text-base d-inline-flex align-items-center gap-x-2 default-transition">
+                      <span class="menu-link-text">Contact Us</span>
+                    </a>
+                  </li>
+                </ul>
+                <div
+                  class="atech-menu-info-list bg-white rounded-20 lg-p-custom-6 p-custom-4 mt-custom-4 d-flex flex-column gap-4 w-100 d-xl-none">
+                  <div class="menu-info-item d-flex align-items-center gap-3">
+                    <div class="menu-info-item-icon icon-40 rounded-full overflow-hidden bg-primary-100">
+                      <img class="icon-20" src="assets/icons/phone_outline_primary.svg" alt="" />
+                    </div>
+                    <div class="menu-info-item-content d-flex flex-column gap-1">
+                      <h5 class="text-base font-semibold text-onyx-700 mb-custom-1 mt-0">
+                        Have any Questions?
+                      </h5>
+                      <p class="mb-0 text-sm font-medium text-onyx-600">
+                        +977 985-1195578
+                      </p>
+                    </div>
+                  </div>
+                  <div class="menu-info-item d-flex align-items-center gap-3">
+                    <div class="menu-info-item-icon icon-40 rounded-full overflow-hidden bg-primary-100">
+                      <img class="icon-20" src="assets/icons/envelope_outline_primary.svg" alt="" />
+                    </div>
+                    <div class="menu-info-item-content d-flex flex-column gap-1">
+                      <h5 class="text-base font-semibold text-onyx-700 mb-custom-1 mt-0">
+                        Write email
+                      </h5>
+                      <p class="mb-0 text-sm font-medium text-onyx-600">
+                        <a href="mailto:info@aakashtech.com.np">info@aakashtech.com.np</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="menu-info-item d-flex align-items-center gap-3">
+                    <div class="menu-info-item-icon icon-40 rounded-full overflow-hidden bg-primary-100">
+                      <img class="icon-20" src="assets/icons/location_dot_outline_primary.svg" alt="" />
+                    </div>
+                    <div class="menu-info-item-content d-flex flex-column gap-1">
+                      <h5 class="text-base font-semibold text-onyx-700 mb-custom-1 mt-0">
+                        Visit Anytime
+                      </h5>
+                      <p class="mb-0 text-sm font-medium text-onyx-600">
+                        Kalopul, Kathmandu, Nepal
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="atech-menu-social-links pt-custom-7 pb-custom-2 d-xl-none">
+                  <div class="social-link-item d-flex align-items-center gap-4">
+                    <a href="#"
+                      class="social-link-nav icon-40 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
+                      <img class="icon-20" src="assets/icons/facebook_primary_700.svg" alt="" />
+                    </a>
+                    <a href="#"
+                      class="social-link-nav icon-40 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
+                      <img class="icon-20" src="assets/icons/linked_primary_700.svg" alt="" />
+                    </a>
+                    <a href="#"
+                      class="social-link-nav icon-40 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
+                      <img class="icon-20" src="assets/icons/whatsapp_primary_700.svg" alt="" />
+                    </a>
+                    <a href="#"
+                      class="social-link-nav icon-40 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
+                      <img class="icon-20" src="assets/icons/youtube_primary_700.svg" alt="" />
+                    </a>
+                    <a href="#"
+                      class="social-link-nav icon-40 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
+                      <img class="icon-20" src="assets/icons/envelope_primary_700.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="atech-submenu-list">
+                <div
+                  class="atech-menu-submenu menu-submenu-services position-absolute bg-white xxl-p-custom-8 xl-p-custom-6 p-custom-4 shadow-default rounded-24">
+                  <div class="submenu-top mt-custom-5 mb-custom-3 btn btn-link btn-link-primary-500 d-xl-none">
+                    <span class="btn-icon"><i class="fa-solid fa-arrow-left-long"></i></span>
+                    <span class="btn-text">Our All Services</span>
+                  </div>
+                  <div class="submenu-main">
+                    <div class="submenu-services-list d-grid xl-grid-cols-2 sm-grid-cols-1 gap-0 mb-custom-2">
+                      <a href="service_custom_software.html"
+                        class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
+                        <div
+                          class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                          <img class="icon-36" src="assets/icons/custom_software_icon.svg" alt="" />
+                        </div>
+                        <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
+                          <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
+                            Custom Software Development
+                          </h5>
+                          <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-2">
+                            Build scalable, high-performance software tailored
+                            to solve your business challenges and accelerate
+                            growth.
+                          </p>
+                        </div>
+                      </a>
+                      <a href="service_mobile_app_dev.html"
+                        class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
+                        <div
+                          class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                          <img class="icon-36" src="assets/icons/mobapp_icon.svg" alt="" />
+                        </div>
+                        <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
+                          <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
+                            Mobile App Development
+                          </h5>
+                          <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-2">
+                            Transform your ideas into intuitive, feature-rich
+                            mobile experiences across Android and iOS
+                            platforms.
+                          </p>
+                        </div>
+                      </a>
+                      <a href="service_webdesign_dev.html"
+                        class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
+                        <div
+                          class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                          <img class="icon-36" src="assets/icons/webdev_icon.svg" alt="" />
+                        </div>
+                        <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
+                          <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
+                            Web App Development
+                          </h5>
+                          <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-2">
+                            Launch powerful, user-centric web applications
+                            designed to deliver seamless performance and
+                            lasting impact.
+                          </p>
+                        </div>
+                      </a>
+                      <a href="service_ai.html"
+                        class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
+                        <div
+                          class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                          <img class="icon-36" src="assets/icons/ai_icon.svg" alt="" />
+                        </div>
+                        <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
+                          <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
+                            Artificial Intelligence (AI)
+                          </h5>
+                          <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-2">
+                            Enhance your digital product with AI-powered
+                            features—boosting efficiency, personalization, and
+                            decision-making.
+                          </p>
+                        </div>
+                      </a>
+                      <a href="service_low_no_code.html"
+                        class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
+                        <div
+                          class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                          <img class="icon-36" src="assets/icons/low_code_icon.svg" alt="" />
+                        </div>
+                        <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
+                          <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
+                            Low-Code / No-Code Solutions
+                          </h5>
+                          <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-2">
+                            Fast-track your app development with visual tools
+                            that simplify workflows—ideal for startups and
+                            enterprises alike.
+                          </p>
+                        </div>
+                      </a>
+                      <a href="service_ios_dev.html"
+                        class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
+                        <div
+                          class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                          <img class="icon-36" src="assets/icons/ios_dev_icon.svg" alt="" />
+                        </div>
+                        <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
+                          <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
+                            iOS Development
+                          </h5>
+                          <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-2">
+                            Deliver sleek, responsive, and secure iOS apps
+                            that captivate Apple users and drive business
+                            results.
+                          </p>
+                        </div>
+                      </a>
+                      <a href="services.html"
+                        class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
+                        <div
+                          class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                          <img class="icon-36" src="assets/icons/staff_aug_icon.svg" alt="" />
+                        </div>
+                        <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
+                          <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
+                            Staff Augmentation
+                          </h5>
+                          <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-2">
+                            Scale your tech team quickly with skilled
+                            Aakashtech professionals who integrate seamlessly
+                            into your projects.
+                          </p>
+                        </div>
+                      </a>
+                      <a href="service_android_dev.html"
+                        class="submenu-services-item xxl-p-custom-3 p-custom-2 d-flex align-items-start sm-gap-4 gap-3">
+                        <div
+                          class="submenu-services-item-icon bg-primary-50 rounded-8 d-inline-flex align-items-center justify-content-center">
+                          <img class="icon-36" src="assets/icons/android_dev_icon.svg" alt="" />
+                        </div>
+                        <div class="submenu-services-item-details sm-mt-custom-1 d-flex flex-column sm-gap-2 gap-1">
+                          <h5 class="submenu-services-item-ttl mb-0 font-semibold text-base text-onyx-700">
+                            Android Development
+                          </h5>
+                          <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-2">
+                            Leverage our deep Android expertise to build
+                            dynamic apps optimized for diverse devices and
+                            user needs.
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="submenu-bottom d-sm-flex d-none xl-pt-custom-5 pt-custom-4 border-t-gray-100-1">
+                    <div class="submenu-contact-info d-flex flex-wrap xl-gap-4 gap-2 justify-content-between w-100">
+                      <a href="tel:+9779851195578" class="submenu-contact-info-item d-flex align-items-center gap-3">
+                        <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
+                          <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="" />
+                        </span>
+                        <span class="info-item-text text-base text-onyx-500 font-medium">+977 985-1195578</span>
+                      </a>
+                      <a href="mailto:info@aakashtech.com.np"
+                        class="submenu-contact-info-item d-flex align-items-center gap-3">
+                        <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
+                          <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="" />
+                        </span>
+                        <span class="info-item-text text-base text-onyx-500 font-medium">info@aakashtech.com.np</span>
+                      </a>
+                      <a href="https://maps.app.goo.gl/ur8L7CY7WmxvSpxb9"
+                        class="submenu-contact-info-item d-flex align-items-center gap-3">
+                        <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
+                          <img class="icon-18" src="assets/icons/location_dot_outline_primary.svg" alt="" />
+                        </span>
+                        <span class="info-item-text text-base text-onyx-500 font-medium">Kalopul, Kathmandu,
+                          Nepal</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="atech-menu-submenu menu-submenu-portfolios position-absolute bg-white xxl-p-custom-8 xl-p-custom-6 p-custom-4 shadow-default rounded-24">
+                  <div class="submenu-top mt-custom-5 mb-custom-3 btn btn-link btn-link-primary-500 d-xl-none">
+                    <span class="btn-icon"><i class="fa-solid fa-arrow-left-long"></i></span>
+                    <span class="btn-text">Our All Portfolios</span>
+                  </div>
+                  <div class="submenu-main">
+                    <div
+                      class="d-flex flex-xl-row flex-column align-items-start xxl-gap-10 xl-gap-8 gap-6 xl-mb-custom-6 mb-custom-4">
+                      <div
+                        class="nav flex-xl-column align-items-center align-items-xl-stretch nav-pills xxxl-gap-3 xxl-gap-3 gap-2"
+                        id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button
+                          class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white xl-px-4 px-2 active"
+                          id="v-pills-port-01-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-01" type="button"
+                          role="tab" aria-controls="v-pills-port-01" aria-selected="true">
+                          <span class="btn-icon icon-24 d-none d-xl-inline-flex">
+                            <img src="assets/icons/mobapp_tab_icon.svg" alt="" />
+                          </span>
+                          <span class="btn-text text-onyx-700 text-sm font-medium">Mobile Apps</span>
+                        </button>
+                        <button
+                          class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white xl-px-4 px-2"
+                          id="v-pills-port-02-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-02" type="button"
+                          role="tab" aria-controls="v-pills-port-02" aria-selected="false">
+                          <span class="btn-icon icon-24 d-none d-xl-inline-flex">
+                            <img src="assets/icons/ecommerce_tab_icon.svg" alt="" />
+                          </span>
+                          <span class="btn-text text-onyx-700 text-sm font-medium">E-commerce</span>
+                        </button>
+                        <button
+                          class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white xl-px-4 px-2"
+                          id="v-pills-port-03-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-03" type="button"
+                          role="tab" aria-controls="v-pills-port-03" aria-selected="false">
+                          <span class="btn-icon icon-24 d-none d-xl-inline-flex">
+                            <img src="assets/icons/uiux_tab_icon.svg" alt="" />
+                          </span>
+                          <span class="btn-text text-onyx-700 text-sm font-medium">UI/UX Design</span>
+                        </button>
+                        <button
+                          class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white xl-px-4 px-2"
+                          id="v-pills-port-04-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-04" type="button"
+                          role="tab" aria-controls="v-pills-port-04" aria-selected="false">
+                          <span class="btn-icon icon-24 d-none d-xl-inline-flex">
+                            <img src="assets/icons/ai_tab_icon.svg" alt="" />
+                          </span>
+                          <span class="btn-text text-onyx-700 text-sm font-medium">AI & Automation</span>
+                        </button>
+                        <button
+                          class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white xl-px-4 px-2"
+                          id="v-pills-port-05-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-05" type="button"
+                          role="tab" aria-controls="v-pills-port-05" aria-selected="false">
+                          <span class="btn-icon icon-24 d-none d-xl-inline-flex">
+                            <img src="assets/icons/crm_tab_icon.svg" alt="" />
+                          </span>
+                          <span class="btn-text text-onyx-700 text-sm font-medium">CRM & ERP</span>
+                        </button>
+                        <button
+                          class="nav-link d-flex align-items-center gap-3 border-primary-500-1 rounded-8 bg-white xl-px-4 px-2"
+                          id="v-pills-port-06-tab" data-bs-toggle="pill" data-bs-target="#v-pills-port-06" type="button"
+                          role="tab" aria-controls="v-pills-port-06" aria-selected="false">
+                          <span class="btn-icon icon-24 d-none d-xl-inline-flex">
+                            <img src="assets/icons/finance_tab_icon.svg" alt="" />
+                          </span>
+                          <span class="btn-text text-onyx-700 text-sm font-medium">Finance & Fintech</span>
+                        </button>
+                        <a href="projects.html" class="nav-link btn btn-primary">
+                          <span class="btn-text">All Categories</span>
+                          <span class="btn-icon icon-24 d-inline-flex">
+                            <i class="fa-solid fa-chevron-right"></i> </span></a>
+                      </div>
+                      <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-port-01" role="tabpanel"
+                          aria-labelledby="v-pills-port-01-tab" tabindex="0">
+                          <div class="submenu-portfolios-list d-grid xl-grid-cols-2 grid-cols-1 mb-custom-2">
+                            <a href="project_aakashtel.html"
+                              class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                              <div
+                                class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
+                                <img class="w-100 h-100 object-contain"
+                                  src="assets/images/misc/portfolio_thumbnail_2.png" alt="" />
+                              </div>
+                              <div
+                                class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
+                                <h5
+                                  class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700 clamp-line-2">
+                                  Aakashtel – Intelligent Call Management Platform
+                                </h5>
+                                <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-2">
+                                  Aakashtel is an all-in-one call management software designed to help businesses handle
+                                  customer communication more efficiently and professionally.
+                                </p>
+                              </div>
+                            </a>
+                            <a href="project_lahmee.html"
+                              class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                              <div
+                                class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
+                                <img class="w-100 h-100 object-contain"
+                                  src="assets/images/misc/portfolio_thumbnail_1.png" alt="" />
+                              </div>
+                              <div
+                                class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
+                                <h5
+                                  class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700 clamp-line-2">
+                                  Lahmee - A Matrimony Mobile Application
+                                </h5>
+                                <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-2">
+                                  Lahmee is a modern matrimony mobile application thoughtfully designed to help
+                                  individuals and families in Nepal find meaningful, long-term relationships.
+                                </p>
+                              </div>
+                            </a>
+                            <a href="project_sajhajobs.html"
+                              class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                              <div
+                                class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
+                                <img class="w-100 h-100 object-contain" src="assets/images/projects/sajhajobs_img4.png"
+                                  alt="" />
+                              </div>
+                              <div
+                                class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
+                                <h5
+                                  class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700 clamp-line-2">
+                                  Sajhajobs / Baideshik Rojgar – Comprehensive Foreign Employment Platform
+                                </h5>
+                                <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-2">
+                                  Sajhajobs, also known as Baideshik Rojgar, is a centralized platform connecting Nepali
+                                  job seekers with verified overseas employment opportunities.
+                                </p>
+                              </div>
+                            </a>
+                            <a href="project_humanfit.html"
+                              class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                              <div
+                                class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
+                                <img class="w-100 h-100 object-contain" src="assets/images/projects/humanfit_img4.png"
+                                  alt="" />
+                              </div>
+                              <div
+                                class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
+                                <h5
+                                  class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700 clamp-line-2">
+                                  HumanFit – Single & Multivendor E-commerce Platform
+                                </h5>
+                                <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-2">
+                                  HumanFit is a modern e-commerce platform designed to bring the finest leather clothing
+                                  and accessories to customers with a seamless online shopping experience.
+                                </p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-port-02" role="tabpanel"
+                          aria-labelledby="v-pills-port-02-tab" tabindex="0">
+                          <div class="submenu-portfolios-list d-grid xl-grid-cols-2 grid-cols-1 mb-custom-2">
+                            <a href="project_humanfit.html"
+                              class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                              <div
+                                class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
+                                <img class="w-100 h-100 object-contain" src="assets/images/projects/humanfit_img4.png"
+                                  alt="" />
+                              </div>
+                              <div
+                                class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
+                                <h5
+                                  class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700 clamp-line-2">
+                                  HumanFit – Single & Multivendor E-commerce Platform
+                                </h5>
+                                <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-2">
+                                  HumanFit is a modern e-commerce platform designed to bring the finest leather clothing
+                                  and accessories to customers with a seamless online shopping experience.
+                                </p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-port-03" role="tabpanel"
+                          aria-labelledby="v-pills-port-03-tab" tabindex="0">
+                          <div class="submenu-portfolios-list d-grid xl-grid-cols-2 grid-cols-1 mb-custom-2">
+                            <a href="project_aakashtel.html"
+                              class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                              <div
+                                class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
+                                <img class="w-100 h-100 object-contain"
+                                  src="assets/images/misc/portfolio_thumbnail_2.png" alt="" />
+                              </div>
+                              <div
+                                class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
+                                <h5
+                                  class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700 clamp-line-2">
+                                  Aakashtel – Intelligent Call Management Platform
+                                </h5>
+                                <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-2">
+                                  Aakashtel is an all-in-one call management software designed to help businesses handle
+                                  customer communication more efficiently and professionally.
+                                </p>
+                              </div>
+                            </a>
+                            <a href="project_lahmee.html"
+                              class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                              <div
+                                class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
+                                <img class="w-100 h-100 object-contain"
+                                  src="assets/images/misc/portfolio_thumbnail_1.png" alt="" />
+                              </div>
+                              <div
+                                class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
+                                <h5
+                                  class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700 clamp-line-2">
+                                  Lahmee - A Matrimony Mobile Application
+                                </h5>
+                                <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-2">
+                                  Lahmee is a modern matrimony mobile application thoughtfully designed to help
+                                  individuals and families in Nepal find meaningful, long-term relationships.
+                                </p>
+                              </div>
+                            </a>
+                            <a href="project_sajhajobs.html"
+                              class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                              <div
+                                class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
+                                <img class="w-100 h-100 object-contain" src="assets/images/projects/sajhajobs_img4.png"
+                                  alt="" />
+                              </div>
+                              <div
+                                class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
+                                <h5
+                                  class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700 clamp-line-2">
+                                  Sajhajobs / Baideshik Rojgar – Comprehensive Foreign Employment Platform
+                                </h5>
+                                <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-2">
+                                  Sajhajobs, also known as Baideshik Rojgar, is a centralized platform connecting Nepali
+                                  job seekers with verified overseas employment opportunities.
+                                </p>
+                              </div>
+                            </a>
+                            <a href="project_humanfit.html"
+                              class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                              <div
+                                class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
+                                <img class="w-100 h-100 object-contain" src="assets/images/projects/humanfit_img4.png"
+                                  alt="" />
+                              </div>
+                              <div
+                                class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
+                                <h5
+                                  class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700 clamp-line-2">
+                                  HumanFit – Single & Multivendor E-commerce Platform
+                                </h5>
+                                <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-2">
+                                  HumanFit is a modern e-commerce platform designed to bring the finest leather clothing
+                                  and accessories to customers with a seamless online shopping experience.
+                                </p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-port-04" role="tabpanel"
+                          aria-labelledby="v-pills-port-04-tab" tabindex="0">
+                          <div class="submenu-portfolios-list d-grid xl-grid-cols-2 grid-cols-1 mb-custom-2">
+                            <a href="project_aakashtel.html"
+                              class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                              <div
+                                class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
+                                <img class="w-100 h-100 object-contain"
+                                  src="assets/images/misc/portfolio_thumbnail_2.png" alt="" />
+                              </div>
+                              <div
+                                class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
+                                <h5
+                                  class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700 clamp-line-2">
+                                  Aakashtel – Intelligent Call Management Platform
+                                </h5>
+                                <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-2">
+                                  Aakashtel is an all-in-one call management software designed to help businesses handle
+                                  customer communication more efficiently and professionally.
+                                </p>
+                              </div>
+                            </a>
+                            <a href="project_lahmee.html"
+                              class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                              <div
+                                class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
+                                <img class="w-100 h-100 object-contain"
+                                  src="assets/images/misc/portfolio_thumbnail_1.png" alt="" />
+                              </div>
+                              <div
+                                class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
+                                <h5
+                                  class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700 clamp-line-2">
+                                  Lahmee - A Matrimony Mobile Application
+                                </h5>
+                                <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-2">
+                                  Lahmee is a modern matrimony mobile application thoughtfully designed to help
+                                  individuals and families in Nepal find meaningful, long-term relationships.
+                                </p>
+                              </div>
+                            </a>
+                            <a href="project_sajhajobs.html"
+                              class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                              <div
+                                class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
+                                <img class="w-100 h-100 object-contain" src="assets/images/projects/sajhajobs_img4.png"
+                                  alt="" />
+                              </div>
+                              <div
+                                class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
+                                <h5
+                                  class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700 clamp-line-2">
+                                  Sajhajobs / Baideshik Rojgar – Comprehensive Foreign Employment Platform
+                                </h5>
+                                <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-2">
+                                  Sajhajobs, also known as Baideshik Rojgar, is a centralized platform connecting Nepali
+                                  job seekers with verified overseas employment opportunities.
+                                </p>
+                              </div>
+                            </a>
+                            <a href="project_humanfit.html"
+                              class="submenu-portfolios-item d-flex xl-gap-5 gap-3 align-items-start">
+                              <div
+                                class="submenu-portfolios-item-img overflow-hidden rounded-8 bg-gray-100 d-flex align-items-end justify-content-center">
+                                <img class="w-100 h-100 object-contain" src="assets/images/projects/humanfit_img4.png"
+                                  alt="" />
+                              </div>
+                              <div
+                                class="submenu-portfolios-item-details xl-mt-custom-2 mt-0 d-flex flex-column sm-gap-2 gap-1">
+                                <h5
+                                  class="submenu-portfolios-item-ttl mb-0 font-semibold text-base text-onyx-700 clamp-line-2">
+                                  HumanFit – Single & Multivendor E-commerce Platform
+                                </h5>
+                                <p class="mb-0 text-gray-500 text-sm font-medium clamp-line-2">
+                                  HumanFit is a modern e-commerce platform designed to bring the finest leather clothing
+                                  and accessories to customers with a seamless online shopping experience.
+                                </p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="submenu-bottom d-sm-flex d-none xl-pt-custom-5 pt-custom-4 border-t-gray-100-1">
+                    <div class="submenu-contact-info d-flex flex-wrap xl-gap-4 gap-2 justify-content-between w-100">
+                      <a href="tel:+9779851195578" class="submenu-contact-info-item d-flex align-items-center gap-3">
+                        <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
+                          <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="" />
+                        </span>
+                        <span class="info-item-text text-base text-onyx-500 font-medium">+977 985-1195578</span>
+                      </a>
+                      <a href="mailto:info@aakashtech.com.np"
+                        class="submenu-contact-info-item d-flex align-items-center gap-3">
+                        <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
+                          <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="" />
+                        </span>
+                        <span class="info-item-text text-base text-onyx-500 font-medium">info@aakashtech.com.np</span>
+                      </a>
+                      <a href="https://maps.app.goo.gl/ur8L7CY7WmxvSpxb9"
+                        class="submenu-contact-info-item d-flex align-items-center gap-3">
+                        <span class="info-item-icon icon-40 bg-primary-100 rounded-full">
+                          <img class="icon-18" src="assets/icons/location_dot_outline_primary.svg" alt="" />
+                        </span>
+                        <span class="info-item-text text-base text-onyx-500 font-medium">Kalopul, Kathmandu,
+                          Nepal</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="atech-header-btns d-flex align-items-center gap-4 xl-gap-6">
+            <a href="http://wa.me/9779851195578" class="whatsapp-btn position-relative" target="_blank"><img
+                src="assets/images/misc/whatsapp_logo.png" class="icon-32" alt="whatsapp icon" /></a>
+            <a href="contact.html" class="btn btn-primary d-none d-xl-inline-flex">Contact Us</a>
+            <button type="button" class="hamburger d-xl-none" id="mobileSidebarOpenBtn">
+              <span class="menu-bar"></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- END OF HEADER -->
+
+    <section class="atech-services-details-banner segment-py-80 position-relative page-top-spacing"
+      style="background: url(assets/images/services/service_artificial_intelligence.jpg) center/cover no-repeat;">
+      <div
+        class="atech-services-details-banner-container container d-flex flex-column align-items-center xxl-gap-10 xl-gap-9 lg-gap-8 md-gap-7 sm-gap-6 position-relative z-1">
+        <div class="d-flex flex-column align-items-center">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item text-base font-medium text-white tracking-04"><a href="#"
+                  class="text-white">Home</a></li>
+              <li class="breadcrumb-item text-base font-medium text-white tracking-04 active" aria-current="page">
+                Artificial Intelligence
+              </li>
+            </ol>
+          </nav>
+        </div>
+        <div class="services-details-banner-content segment-py-100 d-grid align-items-start">
+          <div
+            class="segment-heading heading-left d-flex align-items-start justify-content-center flex-column gap-8 position-relative">
+            <div class="segment-heading-top d-flex justify-content-center flex-column">
+              <p
+                class="segment-heading-subtext text-uppercase text-white font-bold text-2xl tracking-03 text-start mb-custom-2">
+                Artificial Intelligence</p>
+              <h3
+                class="segment-heading-text text-8xl font-bold -tracking-02 text-white position-relative after-ttl-border text-start mt-custom-2">
+                Top Custom AI Solution Development Services in Nepal</h3>
+            </div>
+          </div>
+          <div class="content-stylings text-white text-lg p-0">
+            <p>At AakashTech, we provide custom AI solution development services in Nepal that help businesses automate
+              processes, gain intelligent insights, and make data-driven decisions. Our AI-powered solutions are
+              designed to be scalable, secure, and business-focused, enabling organizations to transform operations and
+              deliver smarter digital experiences.
+
+            </p>
+            <p>With intelligent AI systems tailored to your needs, you can reduce manual effort, improve accuracy, and
+              unlock new growth opportunities. Whether you’re exploring artificial intelligence for the first time or
+              scaling existing AI initiatives, AakashTech delivers solutions that create measurable impact.
+
+            </p>
+            <p>No complexity. Just intelligent systems built around your business goals.
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="atech-services-details-one segment-pt-120 segment-pb-100 position-relative">
+      <div class="atech-services-details-one-container container">
+        <div class="services-details-one-head">
+          <h2 class="text-7xl-mid font-bold text-onyx-700 segment-mb-40">Why Choose <span
+              class="text-primary-500">AakashTech</span> as Your AI Solution Development Agency in Nepal?</h2>
+          <div
+            class="services-details-one-head-description content-stylings text-xl font-semibold text-onyx-700 mb-custom-4">
+            Empowering Intelligence. Engineering Innovation. Driving Business Growth.
+          </div>
+        </div>
+
+        <div class="services-details-one-full content-stylings text-lg">
+          <p>Artificial intelligence is redefining how businesses operate. At AakashTech, we specialize in building
+            practical, production-ready AI solutions that solve real-world problems and deliver tangible business value.
+
+          </p>
+          <p>From AI consulting and model design to development, deployment, and optimization, we manage the complete AI
+            solution lifecycle with clarity and precision. Whether you need machine learning models, AI chatbots,
+            computer vision systems, or predictive analytics, our team ensures reliability, performance, and
+            scalability.
+
+          </p>
+          <p>We combine data science expertise with robust engineering, using modern frameworks and tools to create AI
+            solutions that are secure, explainable, and future-ready. With transparent communication and iterative
+            development, you remain informed and involved throughout the journey.
+
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="atech-services-deliverables segment-py-100 bg-primary-700">
+      <div class="atech-services-deliverables-container container">
+        <h2 class="services-section-ttl text-7xl-mid font-extrabold text-white">What do we bring?</h2>
+        <div class="services-deliverables-list d-grid align-items-start md-grid-cols-2 grid-cols-1
+         segment-mt-40 xxl-gap-6 xl-gap-5 gap-4">
+          <div
+            class="deliverables-item d-flex flex-xxl-row flex-column align-items-start xxl-gap-8 xl-gap-6 gap-0 py-custom-8 px-custom-5 bg-white rounded-20 h-100">
+            <div class="deliverables-count d-flex flex-xxl-column align-items-center gap-2">
+              <span class="deliverables-count-value text-center text-8xl font-bold text-gray-200">01</span>
+              <div
+                class="deliverables-count-icon p-custom-3 rounded-8 d-flex align-items-center justify-content-center">
+                <img src="assets/images/services/deliverables_icon1.png" alt="" />
+              </div>
+            </div>
+            <div class="deliverables-description md-mt-custom-4 sm-mt-custom-3 xs-mt-custom-2 mt-custom-1">
+              <h6 class="text-2xl font-bold text-onyx-700 deliverables-ttl mb-custom-3">Proven Expertise in AI & Machine
+                Learning
+              </h6>
+              <div class="deliverables-description-text content-stylings text-lg">
+                Our AI engineers and data scientists build high-performance AI models and intelligent systems using
+                machine learning, deep learning, and natural language processing—customized to your business
+                requirements.
+
+              </div>
+            </div>
+          </div>
+          <div
+            class="deliverables-item d-flex flex-xxl-row flex-column align-items-start xxl-gap-8 xl-gap-6 gap-0 py-custom-8 px-custom-5 bg-white rounded-20 h-100">
+            <div class="deliverables-count d-flex flex-xxl-column align-items-center gap-2">
+              <span class="deliverables-count-value text-center text-8xl font-bold text-gray-200">02</span>
+              <div
+                class="deliverables-count-icon p-custom-3 rounded-8 d-flex align-items-center justify-content-center">
+                <img src="assets/images/services/deliverables_icon2.png" alt="" />
+              </div>
+            </div>
+            <div class="deliverables-description md-mt-custom-4 sm-mt-custom-3 xs-mt-custom-2 mt-custom-1">
+              <h6 class="text-2xl font-bold text-onyx-700 deliverables-ttl mb-custom-3">Transparent, Collaborative
+                Process
+              </h6>
+              <div class="deliverables-description-text content-stylings text-lg">
+                At AakashTech, collaboration is central to our AI development approach. From requirement analysis and
+                data preparation to model training and deployment, we ensure clear communication, visibility, and
+                accountability at every stage.
+
+
+              </div>
+            </div>
+          </div>
+          <div
+            class="deliverables-item d-flex flex-xxl-row flex-column align-items-start xxl-gap-8 xl-gap-6 gap-0 py-custom-8 px-custom-5 bg-white rounded-20 h-100">
+            <div class="deliverables-count d-flex flex-xxl-column align-items-center gap-2">
+              <span class="deliverables-count-value text-center text-8xl font-bold text-gray-200">03</span>
+              <div
+                class="deliverables-count-icon p-custom-3 rounded-8 d-flex align-items-center justify-content-center">
+                <img src="assets/images/services/deliverables_icon3.png" alt="" />
+              </div>
+            </div>
+            <div class="deliverables-description md-mt-custom-4 sm-mt-custom-3 xs-mt-custom-2 mt-custom-1">
+              <h6 class="text-2xl font-bold text-onyx-700 deliverables-ttl mb-custom-3">Agile and Efficient
+                Methodologies
+              </h6>
+              <div class="deliverables-description-text content-stylings text-lg">
+                We follow agile AI development practices, enabling rapid experimentation, continuous improvement, and
+                faster time-to-market while maintaining accuracy and reliability.
+
+              </div>
+            </div>
+          </div>
+          <div
+            class="deliverables-item d-flex flex-xxl-row flex-column align-items-start xxl-gap-8 xl-gap-6 gap-0 py-custom-8 px-custom-5 bg-white rounded-20 h-100">
+            <div class="deliverables-count d-flex flex-xxl-column align-items-center gap-2">
+              <span class="deliverables-count-value text-center text-8xl font-bold text-gray-200">04</span>
+              <div
+                class="deliverables-count-icon p-custom-3 rounded-8 d-flex align-items-center justify-content-center">
+                <img src="assets/images/services/deliverables_icon4.png" alt="" />
+              </div>
+            </div>
+            <div class="deliverables-description md-mt-custom-4 sm-mt-custom-3 xs-mt-custom-2 mt-custom-1">
+              <h6 class="text-2xl font-bold text-onyx-700 deliverables-ttl mb-custom-3">Business-Centric AI Experiences
+              </h6>
+              <div class="deliverables-description-text content-stylings text-lg">
+                Our AI solutions are designed to enhance user experience, decision-making, and operational efficiency,
+                ensuring AI works for people—not the other way around.
+
+              </div>
+            </div>
+          </div>
+          <div
+            class="deliverables-item d-flex flex-xxl-row flex-column align-items-start xxl-gap-8 xl-gap-6 gap-0 py-custom-8 px-custom-5 bg-white rounded-20 h-100">
+            <div class="deliverables-count d-flex flex-xxl-column align-items-center gap-2">
+              <span class="deliverables-count-value text-center text-8xl font-bold text-gray-200">05</span>
+              <div
+                class="deliverables-count-icon p-custom-3 rounded-8 d-flex align-items-center justify-content-center">
+                <img src="assets/images/services/deliverables_icon5.png" alt="" />
+              </div>
+            </div>
+            <div class="deliverables-description md-mt-custom-4 sm-mt-custom-3 xs-mt-custom-2 mt-custom-1">
+              <h6 class="text-2xl font-bold text-onyx-700 deliverables-ttl mb-custom-3">Continuous Optimization &
+                Support
+              </h6>
+              <div class="deliverables-description-text content-stylings text-lg">
+                We provide ongoing monitoring, retraining, and optimization to ensure your AI systems remain accurate,
+                relevant, and effective over time.
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="atech-services-process segment-py-100">
+      <div class="atech-services-process-container container">
+        <h2 class="services-section-ttl text-7xl-mid font-extrabold text-onyx-700 text-center">Our Proven <span
+            class="text-primary-500">Work Process</span></h2>
+        <div class="services-process-list-group segment-mt-60 d-grid align-items-start position-relative">
+          <div class="services-process-list position-relative d-grid lg-grid-cols-3 grid-cols-1 align-items-center">
+            <div class="services-process-item d-flex flex-column xxl-gap-6 lg-gap-5 gap-4 position-relative">
+              <div
+                class="services-process-icon d-flex align-items-center justify-content-center rounded-full position-relative mx-auto">
+                <img class="icon-60" src="assets/images/services/process_icon1.svg" alt="" />
+                <span
+                  class="services-process-count position-absolute d-inline-flex align-items-center justify-content-center rounded-full border-white-2 bg-onyx-700 text-center text-white text-2xl font-bold">01</span>
+              </div>
+              <div
+                class="services-process-details d-flex flex-column align-items-center justify-content-center lg-gap-3 md-gap-2 gap-1 text-center">
+                <h4 class="services-process-ttl text-2xl text-onyx-700 font-semibold">Discovery & Consultation
+                </h4>
+                <p class="mb-0 text-gray-500 text-base font-medium">We start by understanding your business challenges,
+                  data landscape, and AI readiness.
+
+                </p>
+              </div>
+            </div>
+
+            <div class="services-process-item d-flex flex-column xxl-gap-6 lg-gap-5 gap-4 position-relative">
+              <div
+                class="services-process-icon d-flex align-items-center justify-content-center rounded-full position-relative mx-auto">
+                <img class="icon-60" src="assets/images/services/process_icon2.svg" alt="" />
+                <span
+                  class="services-process-count position-absolute d-inline-flex align-items-center justify-content-center rounded-full border-white-2 bg-onyx-700 text-center text-white text-2xl font-bold">02</span>
+              </div>
+              <div
+                class="services-process-details d-flex flex-column align-items-center justify-content-center lg-gap-3 md-gap-2 gap-1 text-center">
+                <h4 class="services-process-ttl text-2xl text-onyx-700 font-semibold">Strategy & Planning
+                </h4>
+                <p class="mb-0 text-gray-500 text-base font-medium">We define AI use cases, solution architecture, and
+                  success metrics aligned with your goals.
+                </p>
+              </div>
+            </div>
+
+            <div class="services-process-item d-flex flex-column xxl-gap-6 lg-gap-5 gap-4 position-relative">
+              <div
+                class="services-process-icon d-flex align-items-center justify-content-center rounded-full position-relative mx-auto">
+                <img class="icon-60" src="assets/images/services/process_icon3.svg" alt="" />
+                <span
+                  class="services-process-count position-absolute d-inline-flex align-items-center justify-content-center rounded-full border-white-2 bg-onyx-700 text-center text-white text-2xl font-bold">03</span>
+              </div>
+              <div
+                class="services-process-details d-flex flex-column align-items-center justify-content-center lg-gap-3 md-gap-2 gap-1 text-center">
+                <h4 class="services-process-ttl text-2xl text-onyx-700 font-semibold">Data Engineering & Preparation
+
+                </h4>
+                <p class="mb-0 text-gray-500 text-base font-medium">We clean, structure, and prepare data to ensure
+                  high-quality model training.
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="services-process-list position-relative d-grid lg-grid-cols-3 grid-cols-1 align-items-center">
+            <div class="services-process-item d-flex flex-column xxl-gap-6 lg-gap-5 gap-4 position-relative">
+              <div
+                class="services-process-icon d-flex align-items-center justify-content-center rounded-full position-relative mx-auto">
+                <img class="icon-60" src="assets/images/services/process_icon4.svg" alt="" />
+                <span
+                  class="services-process-count position-absolute d-inline-flex align-items-center justify-content-center rounded-full border-white-2 bg-onyx-700 text-center text-white text-2xl font-bold">04</span>
+              </div>
+              <div
+                class="services-process-details d-flex flex-column align-items-center justify-content-center lg-gap-3 md-gap-2 gap-1 text-center">
+                <h4 class="services-process-ttl text-2xl text-onyx-700 font-semibold">Model Development & Integration
+
+                </h4>
+                <p class="mb-0 text-gray-500 text-base font-medium">We build, train, and integrate AI models into your
+                  existing systems and workflows.
+
+                </p>
+              </div>
+            </div>
+
+            <div class="services-process-item d-flex flex-column xxl-gap-6 lg-gap-5 gap-4 position-relative">
+              <div
+                class="services-process-icon d-flex align-items-center justify-content-center rounded-full position-relative mx-auto">
+                <img class="icon-60" src="assets/images/services/process_icon5.svg" alt="" />
+                <span
+                  class="services-process-count position-absolute d-inline-flex align-items-center justify-content-center rounded-full border-white-2 bg-onyx-700 text-center text-white text-2xl font-bold">05</span>
+              </div>
+              <div
+                class="services-process-details d-flex flex-column align-items-center justify-content-center lg-gap-3 md-gap-2 gap-1 text-center">
+                <h4 class="services-process-ttl text-2xl text-onyx-700 font-semibold">Testing & Validation
+
+                </h4>
+                <p class="mb-0 text-gray-500 text-base font-medium">We rigorously test models for accuracy, performance,
+                  security, and bias.
+
+                </p>
+              </div>
+            </div>
+
+            <div class="services-process-item d-flex flex-column xxl-gap-6 lg-gap-5 gap-4 position-relative">
+              <div
+                class="services-process-icon d-flex align-items-center justify-content-center rounded-full position-relative mx-auto">
+                <img class="icon-60" src="assets/images/services/process_icon6.svg" alt="" />
+                <span
+                  class="services-process-count position-absolute d-inline-flex align-items-center justify-content-center rounded-full border-white-2 bg-onyx-700 text-center text-white text-2xl font-bold">06</span>
+              </div>
+              <div
+                class="services-process-details d-flex flex-column align-items-center justify-content-center lg-gap-3 md-gap-2 gap-1 text-center">
+                <h4 class="services-process-ttl text-2xl text-onyx-700 font-semibold">Deployment & Optimization
+
+                </h4>
+                <p class="mb-0 text-gray-500 text-base font-medium">We deploy AI solutions and continuously optimize
+                  them for real-world performance.
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="atech-services-details-two segment-py-120 position-relative border-t-primary-100-1">
+      <div class="atech-services-details-two-container d-grid align-items-start container">
+        <div class="services-details-two-head">
+          <h2 class="text-7xl-mid font-bold text-onyx-700 segment-mb-40">Why Choose Tailored AI Solution Development?
+
+          </h2>
+          <div class="services-details-two-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="services-details-two-slider-item">
+                  <img src="assets/images/services/mobile_service_slider_sample_img.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="services-details-two-slider-item">
+                  <img src="assets/images/services/mobile_service_slider_sample_img.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="services-details-two-slider-item">
+                  <img src="assets/images/services/mobile_service_slider_sample_img.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="services-details-two-slider-item">
+                  <img src="assets/images/services/mobile_service_slider_sample_img.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="services-details-two-slider-item">
+                  <img src="assets/images/services/mobile_service_slider_sample_img.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="services-details-two-full content-stylings text-lg">
+          <p>At AakashTech, we believe AI must be purpose-driven and customized to deliver real value. Our tailored AI
+            development services are designed around your industry, data, and business objectives.
+
+          </p>
+          <h3>Custom Machine Learning Solutions
+          </h3>
+          <p>We develop machine learning models for prediction, classification, recommendation, and automation, tailored
+            to your data and use cases.
+
+          </p>
+          <h3>Intelligent Automation & AI Bots
+
+          </h3>
+          <p>Our AI-powered bots automate customer support, internal workflows, and repetitive tasks, improving
+            efficiency and response times.
+
+          </p>
+          <h3>Predictive Analytics & Data Intelligence
+          </h3>
+          <p>We help businesses unlock insights through forecasting, trend analysis, and data-driven decision systems.
+
+          </p>
+          <h3>End-to-End AI Development
+          </h3>
+          <p>From ideation and data strategy to deployment and scaling, we deliver complete AI solutions with
+            transparency and agility.
+
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="atech-services-excellence segment-mb-120">
+      <div class="atech-services-excellence-container container">
+        <h2 class="services-section-ttl text-7xl-mid font-extrabold text-onyx-700 text-start mb-custom-8">Technology
+          Excellence</h2>
+        <p class="text-xl text-gray-700 font-medium">At AakashTech, we leverage cutting-edge AI technologies to build
+          robust, scalable, and secure intelligent systems.
+
+        </p>
+
+        <div
+          class="services-excellence-grid d-grid align-items-start xl-grid-cols-4 md-grid-cols-2 grid-cols-1 lg-gap-5 sm-gap-4 gap-3 xl-mt-custom-8 lg-mt-custom-6 mt-custom-4">
+          <div class="excellence-item xxl-p-custom-7 xl-p-custom-6 p-custom-5 rounded-28 h-100">
+            <div class="excellence-item-icon p-custom-4 d-flex align-items-center justify-content-center rounded-16">
+              <img src="assets/images/services/excellence_icon1.svg" alt="" />
+            </div>
+            <h4
+              class="text-4xl font-bold text-onyx-700 mb-0 xxl-mt-custom-7 xl-mt-custom-6 lg-mt-custom-5 mt-custom-4 xxl-pt-custom-6 xl-pt-custom-5 lg-pt-custom-4 pt-custom-3 border-t-primary-200-1">
+              Advanced Machine Learning & Deep Learning Frameworks
+            </h4>
+          </div>
+          <div class="excellence-item xxl-p-custom-7 xl-p-custom-6 p-custom-5 rounded-28 h-100">
+            <div class="excellence-item-icon p-custom-4 d-flex align-items-center justify-content-center rounded-16">
+              <img src="assets/images/services/excellence_icon2.svg" alt="" />
+            </div>
+            <h4
+              class="text-4xl font-bold text-onyx-700 mb-0 xxl-mt-custom-7 xl-mt-custom-6 lg-mt-custom-5 mt-custom-4 xxl-pt-custom-6 xl-pt-custom-5 lg-pt-custom-4 pt-custom-3 border-t-primary-200-1">
+              Robust Data Engineering & Backend Systems
+            </h4>
+          </div>
+          <div class="excellence-item xxl-p-custom-7 xl-p-custom-6 p-custom-5 rounded-28 h-100">
+            <div class="excellence-item-icon p-custom-4 d-flex align-items-center justify-content-center rounded-16">
+              <img src="assets/images/services/excellence_icon3.svg" alt="" />
+            </div>
+            <h4
+              class="text-4xl font-bold text-onyx-700 mb-0 xxl-mt-custom-7 xl-mt-custom-6 lg-mt-custom-5 mt-custom-4 xxl-pt-custom-6 xl-pt-custom-5 lg-pt-custom-4 pt-custom-3 border-t-primary-200-1">
+              Scalable Cloud-Based AI Infrastructure
+            </h4>
+          </div>
+          <div class="excellence-item xxl-p-custom-7 xl-p-custom-6 p-custom-5 rounded-28 h-100">
+            <div class="excellence-item-icon p-custom-4 d-flex align-items-center justify-content-center rounded-16">
+              <img src="assets/images/services/excellence_icon4.svg" alt="" />
+            </div>
+            <h4
+              class="text-4xl font-bold text-onyx-700 mb-0 xxl-mt-custom-7 xl-mt-custom-6 lg-mt-custom-5 mt-custom-4 xxl-pt-custom-6 xl-pt-custom-5 lg-pt-custom-4 pt-custom-3 border-t-primary-200-1">
+              Reliable Model Deployment & Monitoring Tools
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="atech-services-details-three segment-py-120 position-relative border-t-primary-100-1">
+      <div class="atech-services-details-three-container d-grid align-items-start container">
+        <div class="services-details-three-head d-grid align-items-start xl-grid-cols-2 grid-cols-1">
+          <h2 class="text-7xl-mid font-bold text-onyx-700 segment-mb-40 services-details-three-ttl">Tailored AI Solution Development Services
+          </h2>
+          <div class="services-details-three-lead text-xl">
+            <p>At Aakashtech, we understand that each business is unique and requires personalized mobile solutions. Our
+              expert app developers specialize in delivering tailored development services designed specifically around
+              your company's objectives, industry demands, and user preferences.</p>
+          </div>
+        </div>
+
+        <div class="services-details-three-list">
+          <div
+            class="services-details-three-item xxl-py-custom-6 xl-py-custom-5 lg-py-custom-4 py-custom-3 xxl-px-custom-6 xl-px-custom-5 lg-px-custom-4 px-custom-3 ps-0 d-flex flex-sm-row flex-column align-items-start xxl-gap-8 xl-gap-7 lg-gap-6 md-gap-5 sm-gap-4 gap-3 border-b-gray-200-1">
+            <div
+              class="services-details-three-item-count lg-px-custom-2 ps-0 pe-custom-2 text-primary-150 text-9xl font-bold lg-text-center text-start">
+              01</div>
+            <div class="services-details-three-item-info sm-mt-custom-4 mt-0">
+              <h3 class="text-2xl font-bold text-onyx-700 mb-custom-3">AI Chatbots & Conversational AI
+              </h3>
+              <div class="content-stylings text-lg">
+                <p>We build intelligent chatbots and voice assistants using NLP and generative AI to enhance customer engagement and support.
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="services-details-three-item xxl-py-custom-6 xl-py-custom-5 lg-py-custom-4 py-custom-3 xxl-px-custom-6 xl-px-custom-5 lg-px-custom-4 px-custom-3 ps-0 d-flex flex-sm-row flex-column align-items-start xxl-gap-8 xl-gap-7 lg-gap-6 md-gap-5 sm-gap-4 gap-3 border-b-gray-200-1">
+            <div
+              class="services-details-three-item-count lg-px-custom-2 ps-0 pe-custom-2 text-primary-150 text-9xl font-bold lg-text-center text-start">
+              02</div>
+            <div class="services-details-three-item-info sm-mt-custom-4 mt-0">
+              <h3 class="text-2xl font-bold text-onyx-700 mb-custom-3">Computer Vision Solutions
+              </h3>
+              <div class="content-stylings text-lg">
+                <p>Our computer vision systems enable image recognition, object detection, facial analysis, and video analytics for real-world applications.
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="services-details-three-item xxl-py-custom-6 xl-py-custom-5 lg-py-custom-4 py-custom-3 xxl-px-custom-6 xl-px-custom-5 lg-px-custom-4 px-custom-3 ps-0 d-flex flex-sm-row flex-column align-items-start xxl-gap-8 xl-gap-7 lg-gap-6 md-gap-5 sm-gap-4 gap-3 border-b-gray-200-1">
+            <div
+              class="services-details-three-item-count lg-px-custom-2 ps-0 pe-custom-2 text-primary-150 text-9xl font-bold lg-text-center text-start">
+              03</div>
+            <div class="services-details-three-item-info sm-mt-custom-4 mt-0">
+              <h3 class="text-2xl font-bold text-onyx-700 mb-custom-3">Predictive & Recommendation Systems
+              </h3>
+              <div class="content-stylings text-lg">
+                <p>We develop AI models that deliver personalized recommendations and accurate predictions to drive growth and efficiency.
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="services-details-three-item xxl-py-custom-6 xl-py-custom-5 lg-py-custom-4 py-custom-3 xxl-px-custom-6 xl-px-custom-5 lg-px-custom-4 px-custom-3 ps-0 d-flex flex-sm-row flex-column align-items-start xxl-gap-8 xl-gap-7 lg-gap-6 md-gap-5 sm-gap-4 gap-3 border-b-gray-200-1">
+            <div
+              class="services-details-three-item-count lg-px-custom-2 ps-0 pe-custom-2 text-primary-150 text-9xl font-bold lg-text-center text-start">
+              04</div>
+            <div class="services-details-three-item-info sm-mt-custom-4 mt-0">
+              <h3 class="text-2xl font-bold text-onyx-700 mb-custom-3">Intelligent Business Solutions
+
+              </h3>
+              <div class="content-stylings text-lg">
+                <p>Our AI-powered systems optimize operations, risk assessment, fraud detection, and decision-making across industries.
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="services-details-three-item xxl-py-custom-6 xl-py-custom-5 lg-py-custom-4 py-custom-3 xxl-px-custom-6 xl-px-custom-5 lg-px-custom-4 px-custom-3 ps-0 d-flex flex-sm-row flex-column align-items-start xxl-gap-8 xl-gap-7 lg-gap-6 md-gap-5 sm-gap-4 gap-3 border-b-gray-200-1">
+            <div
+              class="services-details-three-item-count lg-px-custom-2 ps-0 pe-custom-2 text-primary-150 text-9xl font-bold lg-text-center text-start">
+              05</div>
+            <div class="services-details-three-item-info sm-mt-custom-4 mt-0">
+              <h3 class="text-2xl font-bold text-onyx-700 mb-custom-3">AI for Specialized Use Cases
+              </h3>
+              <div class="content-stylings text-lg">
+                <ul>
+                  <li>FinTech AI – Fraud detection, credit scoring, risk analysis
+                  </li>
+                  <li>Healthcare AI – Diagnostics, patient insights, automation
+                  </li>
+                  <li>Retail AI – Demand forecasting, personalization
+                  </li>
+                  <li>Telecom & Enterprise AI – Automation, analytics, optimization
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="atech-track-record segment-py-100">
+      <div class="atech-track-record-container container">
+        <div class="track-record-grid d-grid align-items-center xl-grid-cols-2 grid-cols-1">
+          <div class="track-record-info">
+            <h3 class="text-6xl font-extrabold text-primary-500 track-record-ttl mb-custom-6">A Track Record of Success
+            </h3>
+            <div class="content-stylings text-lg track-record-description">
+              <p>At AakashTech, intelligent solutions drive measurable outcomes.
+
+              </p>
+              <h5>Some Highlights:</h5>
+              <ul>
+                <li>10,000+ Users Impacted by AI-driven systems
+                </li>
+                <li>99.9% System Reliability across AI deployments
+                </li>
+                <li>30+ AI & Automation Solutions Delivered
+
+                </li>
+                <li>Global Client Base across Asia, Europe, and North America
+
+                </li>
+                <li>90%+ Client Retention Rate
+
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="track-record-stats d-grid align-items-center grid-cols-2 xxl-gap-6 xl-gap-5 lg-gap-4 sm-gap-3 gap-2">
+            <div
+              class="record-stats-item bg-white xxxl-py-custom-11 xxl-py-custom-10 xl-py-custom-9 lg-py-custom-8 md-py-custom-7 sm-py-custom-6 xs-py-custom-5 py-custom-4 px-cusotm-6 d-flex flex-column align-items-center justify-content-center rounded-24 border-primary-500-2 text-center px-custom-2">
+              <p class="text-xl font-semibold text-primary-500 sm-mb-custom-2 mb-custom-1">AI Solutions Delivered</p>
+              <div class="text-7xl-mid font-bold text-gray-700">30+</div>
+            </div>
+            <div
+              class="record-stats-item bg-white xxxl-py-custom-11 xxl-py-custom-10 xl-py-custom-9 lg-py-custom-8 md-py-custom-7 sm-py-custom-6 xs-py-custom-5 py-custom-4 px-cusotm-6 d-flex flex-column align-items-center justify-content-center rounded-24 border-primary-500-2 text-center px-custom-2">
+              <p class="text-xl font-semibold text-primary-500 sm-mb-custom-2 mb-custom-1">Data Points Processed</p>
+              <div class="text-7xl-mid font-bold text-gray-700">Billions</div>
+            </div>
+            <div
+              class="record-stats-item bg-white xxxl-py-custom-11 xxl-py-custom-10 xl-py-custom-9 lg-py-custom-8 md-py-custom-7 sm-py-custom-6 xs-py-custom-5 py-custom-4 px-cusotm-6 d-flex flex-column align-items-center justify-content-center rounded-24 border-primary-500-2 text-center px-custom-2">
+              <p class="text-xl font-semibold text-primary-500 sm-mb-custom-2 mb-custom-1">Business Efficiency Gains</p>
+              <div class="text-7xl-mid font-bold text-gray-700">Up to 70%</div>
+            </div>
+            <div
+              class="record-stats-item bg-white xxxl-py-custom-11 xxl-py-custom-10 xl-py-custom-9 lg-py-custom-8 md-py-custom-7 sm-py-custom-6 xs-py-custom-5 py-custom-4 px-cusotm-6 d-flex flex-column align-items-center justify-content-center rounded-24 border-primary-500-2 text-center px-custom-2">
+              <p class="text-xl font-semibold text-primary-500 sm-mb-custom-2 mb-custom-1">AI Expertise</p>
+              <div class="text-7xl-mid font-bold text-gray-700">12+ Years</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- START OF CTA TWO -->
+    <section class="atech-cta-two cta-variant-two segment-py-120 position-relative">
+      <div class="atech-cta-two-container container">
+        <div
+          class="cta-block text-center d-flex flex-column align-items-center justify-content-center mx-auto w-100 xxl-gap-10 xl-gap-9 lg-gap-8 md-gap-6 gap-5">
+          <div class="cta-block-floating-img position-absolute d-flex align-items-end">
+            <img class="w-auto h-auto" src="assets/images/misc/person_calling.png" alt="" />
+          </div>
+          <div class="cta-block-content mx-auto w-100">
+            <h2 class="cta-block-ttl text-onyx-700 text-5xl font-extrabold lg-mb-custom-5 mb-custom-4">Experience the
+              Future of
+              Efficiency</h2>
+            <p class="cta-block-text mb-0 text-onyx-600 font-semibold text-xl">Discover how our solutions can streamline
+              your processes and enhance customer engagement.</p>
+          </div>
+          <div class="d-flex flex-wrap align-items-center justify-content-center lg-gap-4 gap-3">
+            <a href="http://wa.me/9779851195578" class="btn btn-xl btn-primary-white btn-rounded btn-quarter-wide">
+              <span class="btn-text">Book a Demo Now</span>
+              <span class="btn-icon">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
+            <a href="tel:+977 985-1195578" class="btn btn-xl btn-white-primary btn-rounded btn-quarter-wide">
+              <span class="btn-text">Talk to an Expert</span>
+              <span class="btn-icon">
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF CTA TWO -->
+
+    <!-- START OF FAQ -->
+    <section class="atech-faqs segment-pt-120 segment-pb-200 bg-gray-50 position-relative">
+      <div class="atech-faqs-container container d-flex flex-column align-items-center">
+        <div
+          class="segment-heading heading-centered mx-auto d-flex align-items-center justify-content-center flex-column gap-8 position-relative">
+          <div class="segment-heading-top d-flex justify-content-center flex-column position-relative">
+            <h3
+              class="segment-heading-text text-7xl font-bold -tracking-02 text-onyx-700 position-relative after-ttl-border text-center mt-custom-2">
+              Frequently Asked Questions
+            </h3>
+          </div>
+          <div class="segment-heading-bottom text-lg font-medium remove-paragraph-padding content-stylings text-center">
+            Every project tells a story of innovation, collaboration, and
+            growth. Here’s a look at the digital transformations we’ve proudly
+            delivered.
+          </div>
+        </div>
+        <div class="faqs-list mx-auto segment-mt-60 d-grid align-items-start lg-gap-y-4 sm-gap-y-3 gap-y-2 w-100">
+          <div
+            class="faqs-item bg-white xl-py-custom-6 lg-py-custom-5 py-custom-4 xxl-px-custom-7 xl-px-custom-6 lg-px-custom-5 sm-px-custom-4 px-custom-3 rounded-12 shadow-default">
+            <button type="button"
+              class="faqs-item-head d-flex align-items-center justify-content-between lg-gap-4 gap-3 w-100"
+              data-bs-toggle="collapse" data-bs-target="#faqCollapse_01" aria-expanded="false"
+              aria-controls="faqCollapse_01">
+              <div
+                class="faqs-item-head-left d-flex align-items-center justify-content-start lg-gap-x-3 gap-x-2 text-xl font-semibold text-onyx-700">
+                01.
+                <p class="m-0 text-xl font-semibold text-onyx-700 text-start">
+                  What AI solutions does AakashTech provide?
+                </p>
+              </div>
+              <span class="text-xl faqs-item-head-toggler">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-minus"></i>
+              </span>
+            </button>
+            <div class="faqs-item-body collapse" id="faqCollapse_01">
+              <div class="faqs-item-body-text content-stylings text-base font-medium text-onyx-400">
+                We provide AI chatbots, machine learning models, predictive analytics, computer vision systems, and intelligent automation solutions.
+
+              </div>
+            </div>
+          </div>
+          <div
+            class="faqs-item bg-white xl-py-custom-6 lg-py-custom-5 py-custom-4 xxl-px-custom-7 xl-px-custom-6 lg-px-custom-5 sm-px-custom-4 px-custom-3 rounded-12 shadow-default">
+            <button type="button"
+              class="faqs-item-head d-flex align-items-center justify-content-between lg-gap-4 gap-3 w-100"
+              data-bs-toggle="collapse" data-bs-target="#faqCollapse_02" aria-expanded="false"
+              aria-controls="faqCollapse_02">
+              <div
+                class="faqs-item-head-left d-flex align-items-center justify-content-start lg-gap-x-3 gap-x-2 text-xl font-semibold text-onyx-700">
+                02.
+                <p class="m-0 text-xl font-semibold text-onyx-700 text-start">
+                  Do you offer AI development services in Nepal?
+                </p>
+              </div>
+              <span class="text-xl faqs-item-head-toggler">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-minus"></i>
+              </span>
+            </button>
+            <div class="faqs-item-body collapse" id="faqCollapse_02">
+              <div class="faqs-item-body-text content-stylings text-base font-medium text-onyx-400">
+                Yes. We are a leading AI solution development agency in Nepal, serving local and international clients.
+              </div>
+            </div>
+          </div>
+          <div
+            class="faqs-item bg-white xl-py-custom-6 lg-py-custom-5 py-custom-4 xxl-px-custom-7 xl-px-custom-6 lg-px-custom-5 sm-px-custom-4 px-custom-3 rounded-12 shadow-default">
+            <button type="button"
+              class="faqs-item-head d-flex align-items-center justify-content-between lg-gap-4 gap-3 w-100"
+              data-bs-toggle="collapse" data-bs-target="#faqCollapse_03" aria-expanded="false"
+              aria-controls="faqCollapse_03">
+              <div
+                class="faqs-item-head-left d-flex align-items-center justify-content-start lg-gap-x-3 gap-x-2 text-xl font-semibold text-onyx-700">
+                03.
+                <p class="m-0 text-xl font-semibold text-onyx-700 text-start">
+                  Can AI solutions be integrated with existing systems?
+                </p>
+              </div>
+              <span class="text-xl faqs-item-head-toggler">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-minus"></i>
+              </span>
+            </button>
+            <div class="faqs-item-body collapse" id="faqCollapse_03">
+              <div class="faqs-item-body-text content-stylings text-base font-medium text-onyx-400">
+                Absolutely. Our AI solutions are designed for seamless integration with your current software and infrastructure.
+              </div>
+            </div>
+          </div>
+          <div
+            class="faqs-item bg-white xl-py-custom-6 lg-py-custom-5 py-custom-4 xxl-px-custom-7 xl-px-custom-6 lg-px-custom-5 sm-px-custom-4 px-custom-3 rounded-12 shadow-default">
+            <button type="button"
+              class="faqs-item-head d-flex align-items-center justify-content-between lg-gap-4 gap-3 w-100"
+              data-bs-toggle="collapse" data-bs-target="#faqCollapse_04" aria-expanded="false"
+              aria-controls="faqCollapse_04">
+              <div
+                class="faqs-item-head-left d-flex align-items-center justify-content-start lg-gap-x-3 gap-x-2 text-xl font-semibold text-onyx-700">
+                04.
+                <p class="m-0 text-xl font-semibold text-onyx-700 text-start">
+                  Do you provide ongoing AI support and optimization?
+                </p>
+              </div>
+              <span class="text-xl faqs-item-head-toggler">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-minus"></i>
+              </span>
+            </button>
+            <div class="faqs-item-body collapse" id="faqCollapse_04">
+              <div class="faqs-item-body-text content-stylings text-base font-medium text-onyx-400">
+                Yes. We offer continuous monitoring, retraining, and performance optimization services.
+              </div>
+            </div>
+          </div>
+          <div
+            class="faqs-item bg-white xl-py-custom-6 lg-py-custom-5 py-custom-4 xxl-px-custom-7 xl-px-custom-6 lg-px-custom-5 sm-px-custom-4 px-custom-3 rounded-12 shadow-default">
+            <button type="button"
+              class="faqs-item-head d-flex align-items-center justify-content-between lg-gap-4 gap-3 w-100"
+              data-bs-toggle="collapse" data-bs-target="#faqCollapse_05" aria-expanded="false"
+              aria-controls="faqCollapse_05">
+              <div
+                class="faqs-item-head-left d-flex align-items-center justify-content-start lg-gap-x-3 gap-x-2 text-xl font-semibold text-onyx-700">
+                05.
+                <p class="m-0 text-xl font-semibold text-onyx-700 text-start">
+                  Does AakashTech work with international clients?
+                </p>
+              </div>
+              <span class="text-xl faqs-item-head-toggler">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-minus"></i>
+              </span>
+            </button>
+            <div class="faqs-item-body collapse" id="faqCollapse_05">
+              <div class="faqs-item-body-text content-stylings text-base font-medium text-onyx-400">
+                Yes. We deliver AI solutions globally, meeting international quality and compliance standards.
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary segment-mt-40">
+          <span class="btn-text">See more</span>
+          <span class="btn-icon">
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
+        </button>
+      </div>
+    </section>
+    <!-- END OF FAQ -->
+
+    <!-- START OF NEWSLETTER -->
+    <section class="atech-newsletter segment-pt-80 segment-pb-100">
+      <div class="atech-newsletter-container container">
+        <div
+          class="d-flex flex-column justify-content-start align-items-center text-center newsletter-top lg-gap-5 sm-gap-4 xs-gap-3 gap-2 mx-auto w-100">
+          <h3 class="text-7xl text-white font-extrabold">
+            Stay Informed and Inspired
+          </h3>
+          <div class="content-stylings text-white text-xl font-semibold">
+            Join our newsletter to get the latest updates, insights, and
+            exclusive offers. Stay ahead with valuable content delivered
+            straight to your inbox.
+          </div>
+        </div>
+        <form action="">
+          <div
+            class="newsletter-bottom bg-white py-custom-2 lg-ps-custom-5 ps-custom-4 pe-custom-2 rounded-12 overflow-hidden d-flex align-items-center justify-content-between mx-auto w-100 xxl-mt-custom-8 xl-mt-custom-7 lg-mt-custom-6 sm-mt-custom-5 mt-custom-4">
+            <div class="input-group form-custom bg-white">
+              <span class="input-group-text border-0 px-0 bg-transparent">
+                <img src="assets/icons/envelope_outline_gray_400.svg" alt="" />
+              </span>
+              <input type="email" class="form-control bg-transparent" placeholder="Enter your email address"
+                aria-label="Enter your email address" />
+            </div>
+            <button type="submit" class="btn btn-lg btn-onyx-900">
+              <span class="btn-icon icon-20">
+                <img src="assets/icons/paper_plane_outline_white.svg" alt="" />
+              </span>
+              <span class="btn-text">Subscribe</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- END OF NEWSLETTER -->
+
+    <!-- START OF FOOTER -->
+    <footer class="atech-footer">
+      <div class="atech-footer-top bg-primary-500 d-grid md-grid-cols-2 grid-cols-1">
+        <div
+          class="tracking-0 d-flex align-items-center justify-content-center gap-3 text-base font-semibold text-white md-py-custom-6 pt-custom-4 pb-custom-0">
+          Sunday - Friday : 10:00 AM - 6:00 PM
+        </div>
+        <div class="d-flex align-items-center justify-content-center md-py-custom-6 pt-custom-0 pb-custom-2">
+          <a href="contact.html" class="btn btn-link-white">
+            <span class="btn-text">Get Support</span>
+            <span class="btn-icon -rotate-45">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="atech-footer-main segment-pt-80 pb-custom-8">
+        <div class="atech-footer-grid-block d-grid align-items-start container">
+          <div class="footer-block-one d-flex flex-column align-items-sm-start align-items-center">
+            <a href="index.html" class="footer-brand-logo w-100 d-inline-flex mb-custom-3">
+              <img src="assets/images/site/logo_default.png" alt="" />
+            </a>
+            <ul
+              class="list-unstyled footer-brand-rating d-flex align-items-center justify-content-center gap-x-1 mb-custom-4">
+              <li class="text-orange text-sm">
+                <i class="fa-solid fa-star"></i>
+              </li>
+              <li class="text-orange text-sm">
+                <i class="fa-solid fa-star"></i>
+              </li>
+              <li class="text-orange text-sm">
+                <i class="fa-solid fa-star"></i>
+              </li>
+              <li class="text-orange text-sm">
+                <i class="fa-solid fa-star"></i>
+              </li>
+              <li class="text-orange text-sm">
+                <i class="fa-solid fa-star"></i>
+              </li>
+            </ul>
+            <p class="mb-0 footer-brand-text text-gray-700 font-base font-medium text-center text-sm-start">
+              Aakashtech – A future-focused digital agency empowering
+              businesses through smart web and mobile solutions, aligning
+              innovation with your growth goals.
+            </p>
+
+            <div class="footer-social-links mt-custom-6">
+              <div class="social-link-item d-flex align-items-center gap-3">
+                <a href="https://www.facebook.com/AakashSMS/"
+                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
+                  <img class="icon-16" src="assets/icons/facebook_primary_700.svg" alt="facebook icon" />
+                </a>
+                <a href="https://www.linkedin.com/company/aakashtel"
+                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
+                  <img class="icon-16" src="assets/icons/linkedin_primary_700.svg" alt="linkedin icon" />
+                </a>
+                <a href="http://wa.me/9779851195578"
+                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
+                  <img class="icon-16" src="assets/icons/whatsapp_primary_700.svg" alt="whatsapp icon" />
+                </a>
+                <a href="https://www.youtube.com/@aakashtel"
+                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
+                  <img class="icon-16" src="assets/icons/youtube_primary_700.svg" alt="youtube icon" />
+                </a>
+                <a href="mailto:info@aakashtech.com.np"
+                  class="social-link-nav icon-36 d-inline-flex align-items-center justify-content-center bg-primary-100 rounded-full overflow-hidden">
+                  <img class="icon-16" src="assets/icons/envelope_primary_700.svg" alt="envelope icon" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-block-two text-center text-sm-start">
+            <h3 class="footer-block-title text-onyx-700 font-semibold text-xl mb-custom-4">
+              Company
+            </h3>
+            <ul class="list-unstyled footer-block-list d-flex flex-column lg-gap-2 gap-1">
+              <li class="footer-block-list-item">
+                <a href="projects.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  Our Portfolio
+                </a>
+              </li>
+              <li class="footer-block-list-item">
+                <a href="process.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  Our process
+                </a>
+              </li>
+              <li class="footer-block-list-item">
+                <a href="about.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  About Us
+                </a>
+              </li>
+              <li class="footer-block-list-item">
+                <a href="blog.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  Blogs & articles
+                </a>
+              </li>
+              <li class="footer-block-list-item">
+                <a href="faq.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  FAQ’s
+                </a>
+              </li>
+              <li class="footer-block-list-item">
+                <a href="privacy_policy.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  Privacy & Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-block-three text-center text-sm-start">
+            <h3 class="footer-block-title text-onyx-700 font-semibold text-xl mb-custom-4">
+              Industries
+            </h3>
+            <ul class="list-unstyled footer-block-list d-flex flex-column lg-gap-2 gap-1">
+              <li class="footer-block-list-item">
+                <a href="industry_healthcare.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  Healthcare
+                </a>
+              </li>
+              <li class="footer-block-list-item">
+                <a href="industry_education.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  Education
+                </a>
+              </li>
+              <li class="footer-block-list-item">
+                <a href="industry_fintech.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  FinTech
+                </a>
+              </li>
+              <li class="footer-block-list-item">
+                <a href="industry_ecommerce.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  E-Commerce
+                </a>
+              </li>
+              <li class="footer-block-list-item">
+                <a href="industry_saas.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  SaaS & Startup
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-block-four text-center text-sm-start">
+            <h3 class="footer-block-title text-onyx-700 font-semibold text-xl mb-custom-4">
+              Our Services
+            </h3>
+            <ul class="list-unstyled footer-block-list d-flex flex-column lg-gap-2 gap-1">
+              <li class="footer-block-list-item">
+                <a href="service_web_design_dev.html"
+                  class="footer-block-list-link text-gray-600 font-medium text-base">
+                  Web Design & Custom Development
+                </a>
+              </li>
+              <li class="footer-block-list-item">
+                <a href="service_mobile_app.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  Mobile App Solutions
+                </a>
+              </li>
+              <li class="footer-block-list-item">
+                <a href="service_digital_marketing.html"
+                  class="footer-block-list-link text-gray-600 font-medium text-base">
+                  Digital Marketing & SEO
+                </a>
+              </li>
+              <li class="footer-block-list-item">
+                <a href="service_ecommerce.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  E-Commerce Platform Development
+                </a>
+              </li>
+              <li class="footer-block-list-item">
+                <a href="service_ai.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  AI-Powered Solutions
+                </a>
+              </li>
+              <li class="footer-block-list-item">
+                <a href="service_blockchain.html" class="footer-block-list-link text-gray-600 font-medium text-base">
+                  Blockchain & Web3 Development
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-block-five text-center text-sm-start">
+            <h3 class="font-bold footer-block-title text-onyx-700 text-xl mb-custom-4">
+              Let's Connect
+            </h3>
+            <div class="text-base font-medium text-gray-700 mb-custom-5 footer-block-lead">
+              Whether it's support, feedback, or collaboration—drop us a
+              message and we’ll get back to you shortly.
+            </div>
+
+            <div
+              class="footer-contact-info d-flex flex-column align-items-center align-items-sm-start lg-gap-2 sm-gap-1 gap-0">
+              <a href="tel:+977 985-1195578"
+                class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
+                <span class="info-item-icon icon-32">
+                  <img class="icon-18" src="assets/icons/phone_outline_primary.svg" alt="" />
+                </span>
+                <span class="text-base text-onyx-500 font-medium">+977 985-1195578</span>
+              </a>
+              <a href="mailto:info@aakashtech.com.np"
+                class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
+                <span class="info-item-icon icon-32">
+                  <img class="icon-18" src="assets/icons/envelope_outline_primary.svg" alt="" />
+                </span>
+                <span class="text-base text-onyx-500 font-medium">info@aakashtech.com.np</span>
+              </a>
+              <a href="https://maps.app.goo.gl/hkjCdWZmws4cbExC8"
+                class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
+                <span class="info-item-icon icon-32">
+                  <img class="icon-18" src="assets/icons/location_dot_outline_primary.svg" alt="" />
+                </span>
+                <span class="text-base text-onyx-500 font-medium">Kalopul, Kathmandu, Nepal</span>
+              </a>
+              <a href="http://wa.me/9779851195578"
+                class="footer-contact-info-item d-flex align-items-center lg-gap-3 sm-gap-2 gap-1">
+                <span class="info-item-icon icon-32">
+                  <img class="icon-18" src="assets/icons/whatsapp_outline_primary.svg" alt="" />
+                </span>
+                <span class="text-base text-onyx-500 font-medium">+977 985-1195578</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="atech-footer-bottom d-flex align-items-center justify-content-center container text-center text-gray-700 font-medium text-sm tracking-0 opacity-90 xxl-pt-custom-8 xl-pt-custom-7 lg-pt-custom-6 pt-custom-5 xxl-mt-custom-8 xl-mt-custom-7 lg-mt-custom-6 mt-custom-5 border-t-primary-50-1">
+          © All Copyright 2025 by
+          <a href="index.html" class="text-primary-500 font-semibold px-1">AakashTech Pvt. Ltd.</a>
+        </div>
+      </div>
+    </footer>
+    <!-- END OF FOOTER -->
+  </div>
+
+  <!-- JQUERY JS -->
+  <!-- ISOTOPE JS -->
+  <script src="assets/vendor/isotope/isotope.min.js"></script>
+  <!-- BOOTSTRAP JS -->
+  <script src="assets/vendor/bootstrap_5.3/bootstrap.min.js"></script>
+  <script src="assets/vendor/bootstrap_5.3/popper.min.js"></script>
+  <!-- SWIPER JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- GSAP JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/all.min.js"
+    integrity="sha512-fxASHhXi6WjjUR9Hr8qt2IxNW2AzyZOpoPi4+UgVU0lTFNKMQ8INkZaQ5ZED2aAldHuHNaLlaHuwQ1oGT+LHhw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- CUSTOM JS -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    const container = document.querySelector(".services-details-three-list");
+    const items = container.querySelectorAll(".services-details-three-item");
+    const totalHeight = Array.from(items).reduce((sum, item) => sum + item.offsetHeight, 0);
+
+    ScrollTrigger.create({
+      trigger: container,
+      start: "top 100px", // below navbar
+      end: () => "+=" + totalHeight,
+      pin: true,
+      pinSpacing: true,
+      scrub: true
+    });
+
+    items.forEach((item, i) => {
+      gsap.fromTo(
+        item,
+        { autoAlpha: 0, y: 50 },
+        {
+          autoAlpha: 1,
+          y: 0,
+          scrollTrigger: {
+            trigger: item,
+            containerAnimation: ScrollTrigger.getById(container),
+            start: () => "top 100px",
+            end: () => "bottom 100px",
+            toggleActions: "play none none reverse",
+          },
+          duration: 0.5,
+          ease: "power1.out"
+        }
+      );
+    });
+
+  </script>
+</body>
+
+</html>
