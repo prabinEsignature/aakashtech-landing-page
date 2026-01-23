@@ -31681,6 +31681,9 @@ input:-webkit-autofill {
   height: 240px !important;
   overflow: hidden;
 }
+.atech-works .finest-works-slider .finest-work-card .card-body {
+  height: 136px;
+}
 .atech-works .finest-works-slider .finest-work-tags-item:first-child {
   padding-left: 0 !important;
 }
@@ -34215,12 +34218,11 @@ input:-webkit-autofill {
 }
 @media (max-width: 479.98px) {
   .atech-services-teams .services-teams-item .teams-item-info {
-    bottom: 12px;
-    left: 50%;
-    right: auto;
-    max-width: 240px;
-    width: 100%;
-    transform: translateX(-50%);
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    max-width: 100%;
+    width: auto;
   }
 }
 @media (max-width: 1399.98px) {

@@ -106,7 +106,6 @@
   }
 }
 
-
 // ATECH ABOUT MVG SECTION
 .atech-about-mvg {
   background: url($img-path + "about/mvg_bg.png") center/cover no-repeat;
@@ -254,12 +253,16 @@
           }
 
           @include breakpoint-down(xs) {
-            bottom: 12px;
-            left: 50%;
-            right: auto;
-            max-width: 240px;
-            width: 100%;
-            transform: translateX(-50%);
+            bottom: 8px;
+            left: 8px;
+            right: 8px;
+            max-width: 100%;
+            width: auto;
+            // left: 50%;
+            // right: auto;
+            // max-width: 240px;
+            // width: 100%;
+            // transform: translateX(-50%);
           }
 
           &-group {
@@ -285,7 +288,7 @@
           }
         }
 
-        &-img{
+        &-img {
           width: 100%;
           height: 100%;
           object-fit: cover;
