@@ -29660,6 +29660,14 @@ input[type=button].btn-block {
 .atech-clients-reviews-container .swiper-pagination-fraction {
   bottom: 40px;
 }
+@media (max-width: 575.98px) {
+  .atech-clients-reviews-container .swiper-horizontal > .swiper-pagination-bullets,
+  .atech-clients-reviews-container .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .atech-clients-reviews-container .swiper-pagination-custom,
+  .atech-clients-reviews-container .swiper-pagination-fraction {
+    bottom: 8px;
+  }
+}
 
 .form-custom .form-select, .form-custom .form-control {
   height: 52px !important;

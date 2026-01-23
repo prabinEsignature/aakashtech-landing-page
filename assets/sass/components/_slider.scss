@@ -119,4 +119,8 @@
 .atech-clients-reviews-container .swiper-pagination-custom,
 .atech-clients-reviews-container .swiper-pagination-fraction {
     bottom: 40px;
+
+    @include breakpoint-down(sm){
+        bottom: 8px;
+    }
 }
