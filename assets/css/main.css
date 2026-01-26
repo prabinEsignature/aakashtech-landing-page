@@ -28383,6 +28383,12 @@ a:visited, a:link {
 .content-stylings.remove-paragraph-padding p {
   margin-bottom: 0 !important;
 }
+.content-stylings a {
+  color: #3797d5 !important;
+}
+.content-stylings a:hover {
+  text-decoration: underline !important;
+}
 .content-stylings h1,
 .content-stylings h2,
 .content-stylings h3,

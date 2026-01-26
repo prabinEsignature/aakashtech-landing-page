@@ -270,6 +270,14 @@ a {
     }
   }
 
+  a{
+    color: color("primary-500")!important;
+
+    &:hover{
+      text-decoration: underline!important;
+    }
+  }
+
   h1,
   h2,
   h3,
