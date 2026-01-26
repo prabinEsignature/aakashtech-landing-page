@@ -1,0 +1,11 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.faq-tabs {
+  .nav-link {
+    &.active, &:hover, &:focus {
+      color: color("primary-500");
+    }
+  }
+}

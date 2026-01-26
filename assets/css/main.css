@@ -34266,4 +34266,8 @@ input:-webkit-autofill {
 }
 .atech-services-teams .services-teams-item:hover .teams-item-info::after {
   transform: rotate(180deg);
+}
+
+.faq-tabs .nav-link.active, .faq-tabs .nav-link:hover, .faq-tabs .nav-link:focus {
+  color: #3797d5;
 }/*# sourceMappingURL=main.css.map */
