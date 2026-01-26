@@ -320,7 +320,8 @@ a {
   }
 
   ol {
-    list-style: auto !important;
+    // list-style: auto !important;
+    list-style: decimal-leading-zero!important;
     display: grid;
     align-items: flex-start;
     gap: 8px;

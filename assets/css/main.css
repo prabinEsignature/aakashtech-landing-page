@@ -28430,7 +28430,7 @@ a:visited, a:link {
   left: -40px;
 }
 .content-stylings ol {
-  list-style: auto !important;
+  list-style: decimal-leading-zero !important;
   display: grid;
   align-items: flex-start;
   gap: 8px;
@@ -34270,4 +34270,8 @@ input:-webkit-autofill {
 
 .faq-tabs .nav-link.active, .faq-tabs .nav-link:hover, .faq-tabs .nav-link:focus {
   color: #3797d5;
+}
+
+.policies-detail-content .content-stylings ol {
+  padding-left: 28px !important;
 }/*# sourceMappingURL=main.css.map */
